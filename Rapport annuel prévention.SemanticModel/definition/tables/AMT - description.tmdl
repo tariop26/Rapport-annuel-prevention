@@ -1,0 +1,94 @@
+table 'AMT - description'
+	lineageTag: 10542d78-f43e-47e4-ab59-003c810cc689
+
+	column 'Code description AMT'
+		dataType: string
+		lineageTag: 528e7c1f-899f-4666-94af-ffbedac67eca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code description AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Description AMT niveau 1'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e42b8e69-8ae8-498e-b7df-37c89e36d43e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description AMT niveau 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Description AMT niveau 2'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9adf4766-e3a3-4ceb-9e9f-9c88868faa4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description AMT niveau 2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Description amt'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a6597e69-8fd4-4544-88b8-d5c944d71675
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_description_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 87f74190-8640-4837-bd73-a9d2bd26faa9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_description_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_libelle_description_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5a598fcc-91cd-431d-a786-76f5aa0e6aec
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_libelle_description_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie description AMT'
+		lineageTag: a09cde5c-1fbf-45c5-8145-875d5495fdf6
+		sourceLineageTag: Hiérarchie description AMT
+
+		level 'Description AMT niveau 1'
+			lineageTag: d1c9fcdb-0a18-4305-a592-f61b45910f73
+			column: 'Description AMT niveau 1'
+
+		level 'Description AMT niveau 2'
+			lineageTag: 254bff6f-329c-4b1e-b374-2e3143bf7bf9
+			column: 'Description AMT niveau 2'
+
+		level 'Description AMT '
+			lineageTag: e0558454-3385-4766-854f-184c10ceb7b3
+			column: 'Description amt'
+
+	partition 'AMT - description' = entity
+		mode: directQuery
+		source
+			entityName: AMT - description
+			expressionSource: 'DirectQuery à AS – pst38'
+

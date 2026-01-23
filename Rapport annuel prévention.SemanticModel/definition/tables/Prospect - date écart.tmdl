@@ -1,0 +1,113 @@
+table 'Prospect - date écart'
+	lineageTag: c98484cf-ecbe-4a23-a2b3-bc82b528f368
+
+	column 'Année à ce jour (date écart prospect)'
+		dataType: string
+		lineageTag: 096da437-54e0-4a65-96fe-758bbf98875e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date écart prospect)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année mise à l''écart'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 536f9476-4615-4b4b-ba7c-64fc49d74516
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année mise à l'écart
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date mise à l''écart'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: f0a858b5-e4f6-4cc7-86e4-c5ab3613dc24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date mise à l'écart
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_ecarte
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 256feae4-2017-4c8c-ac5d-e0f363e207f0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_ecarte
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour mise à l''écart'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d675f777-424b-497c-a132-623dc4cd8f77
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour mise à l'écart
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois mise à l''écart'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9b722bc9-9c1a-47c7-aa84-b5af424d94ec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois mise à l'écart
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine mise à l''écart'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6fc54f90-efd6-43d4-847e-8b47e49796cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine mise à l'écart
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date mise à l''écart'
+		lineageTag: 7770b99b-ff06-4d4d-875d-24b2d9796385
+		sourceLineageTag: Hiérarchie date mise à l'écart
+
+		level 'Année mise à l''écart'
+			lineageTag: 5b85b51d-73e4-4d72-a2dd-a1bce5d9402d
+			column: 'Année mise à l''écart'
+
+		level 'Mois mise à l''écart'
+			lineageTag: d47fbd64-94e8-4f43-8a5c-c81a045fe97c
+			column: 'Mois mise à l''écart'
+
+		level 'Semaine mise à l''écart'
+			lineageTag: d240c2d1-6bac-4d23-9c7c-a8b07cf72b27
+			column: 'Semaine mise à l''écart'
+
+		level 'Date mise à l''écart'
+			lineageTag: 19f474a0-c3f4-4981-a73d-a6ec10603b50
+			column: 'Date mise à l''écart'
+
+	partition 'Prospect - date écart' = entity
+		mode: directQuery
+		source
+			entityName: Prospect - date écart
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,46 @@
+table 'Changement équipe médicale - après'
+	lineageTag: 15bb51c6-f21e-468a-b300-9a2f0bab4860
+
+	column 'Equipe médicale après'
+		dataType: string
+		lineageTag: c3edeffc-8a75-40d7-a62a-a40b153e6cbb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Equipe médicale après
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur_apres_changement
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: b6cd0efe-b606-41ea-8951-9777aedd5824
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur_apres_changement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Médecin référent après'
+		dataType: string
+		lineageTag: 70c1a897-f56b-4fd6-aee2-1b6848318943
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Médecin référent après
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Changement équipe médicale - après' = entity
+		mode: directQuery
+		source
+			entityName: Changement équipe médicale - après
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

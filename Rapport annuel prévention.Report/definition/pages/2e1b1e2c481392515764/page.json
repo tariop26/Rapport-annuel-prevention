@@ -1,0 +1,142 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "2e1b1e2c481392515764",
+  "displayName": "AMT terminées Centre",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6be48950b4046d0b5c7e",
+        "field": {
+          "GroupRef": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Equipe médicale"
+              }
+            },
+            "Property": "Secteur géographique",
+            "GroupedColumns": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Equipe médicale"
+                    }
+                  },
+                  "Property": "Centre rattachement"
+                }
+              }
+            ]
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "e",
+              "Entity": "Equipe médicale",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "e"
+                          }
+                        },
+                        "Property": "Secteur géographique"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Centre'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "requireSingleSelect": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "6caba2846044c362d448",
+    "type": "Default",
+    "parameters": [
+      {
+        "name": "95b9c7bf402989400b11",
+        "boundFilter": "6be48950b4046d0b5c7e",
+        "qnaSingleSelectRequired": true,
+        "fieldExpr": {
+          "GroupRef": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Equipe médicale"
+              }
+            },
+            "Property": "Secteur géographique",
+            "GroupedColumns": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Equipe médicale"
+                    }
+                  },
+                  "Property": "Centre rattachement"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "266L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

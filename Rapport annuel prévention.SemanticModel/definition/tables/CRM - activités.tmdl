@@ -1,0 +1,137 @@
+table 'CRM - activités'
+	lineageTag: d84ce1e2-1d5f-45c5-a839-e5fc76b4ea48
+
+	measure '# activités' = EXTERNALMEASURE("# activités", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: 5d70f26f-fdab-4565-9678-f50c216f7b8c
+		sourceLineageTag: DirectQuery à AS – pst38.# activités
+		dataCategory: Uncategorized
+
+	measure '# changements de responsable du ticket' = EXTERNALMEASURE("# changements de responsable du ticket", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: 470ddf28-eecc-4401-bedb-740ff314445d
+		sourceLineageTag: DirectQuery à AS – pst38.# changements de responsable du ticket
+		dataCategory: Uncategorized
+
+	measure '# changements de statut du ticket' = EXTERNALMEASURE("# changements de statut du ticket", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: c4274433-c265-4951-a109-8e3d363ba14a
+		sourceLineageTag: DirectQuery à AS – pst38.# changements de statut du ticket
+		dataCategory: Uncategorized
+
+	measure '# comptes rendus' = EXTERNALMEASURE("# comptes rendus", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: 88ca9ba9-7c7a-47ec-bdfd-bda3dcc9764b
+		sourceLineageTag: DirectQuery à AS – pst38.# comptes rendus
+		dataCategory: Uncategorized
+
+	measure '# notes' = EXTERNALMEASURE("# notes", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: ff759499-8201-4a00-bc98-76844f74bf79
+		sourceLineageTag: DirectQuery à AS – pst38.# notes
+		dataCategory: Uncategorized
+
+	column id_auteur_activite_crm
+		dataType: int64
+		lineageTag: fff7e947-7548-4001-b860-6c4ead4195ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_auteur_activite_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_crm_ticket_source
+		dataType: int64
+		lineageTag: 798474af-a63f-4c57-975b-8f0d3a706f76
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_crm_ticket_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_activite_crm
+		dataType: int64
+		lineageTag: 9f74428d-02e8-4880-b22e-4645c89f9a2b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_activite_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		lineageTag: 10160136-ffe4-4bd4-a119-37d6654f364d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_info_crm
+		dataType: int64
+		lineageTag: 87c0ca6f-2950-4756-8bff-1dbef28baa58
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		lineageTag: 5327e2c4-7716-4f19-a9c2-941286075260
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_type_activite_crm
+		dataType: int64
+		lineageTag: b16b3259-a076-49f4-aa05-7914e37508a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_activite_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_centre_convocation
+		dataType: int64
+		lineageTag: d3dd6fbe-fcea-4b66-84cb-dcb6cfd202ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_objet_compte_rendu
+		dataType: int64
+		isHidden
+		lineageTag: 423409ff-9cf7-4f1a-ac09-cd15f3c8830a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_objet_compte_rendu
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'CRM - activités' = entity
+		mode: directQuery
+		source
+			entityName: CRM - activités
+			expressionSource: 'DirectQuery à AS – pst38'
+

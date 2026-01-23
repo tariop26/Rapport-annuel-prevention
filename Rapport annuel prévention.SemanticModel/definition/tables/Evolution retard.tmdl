@@ -1,0 +1,143 @@
+table 'Evolution retard'
+	lineageTag: ffc03b49-a500-4fd0-9c52-a4bd1457abfe
+
+	measure 'Nombre de salariés suivis' = EXTERNALMEASURE("Nombre de salariés suivis", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: a4f5ddb1-0216-406f-902f-298fa08bd0cb
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés suivis
+		dataCategory: Uncategorized
+
+	measure 'Taux de retard' = EXTERNALMEASURE("Taux de retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: 675241ab-debf-43a8-91e9-e7c2d4f82243
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de retard
+		dataCategory: Uncategorized
+
+	column date_historisation
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: c2da9098-a3b7-4a4e-9724-184665aee6fd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_historisation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_categorie_retard
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e7341424-b7da-4c2a-89a9-dd0bdf1d266f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0ec26fd-14a1-4cb6-9e6a-69713e79d4a0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 32705217-e389-41a1-a2fb-d710465b8be2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4fd05b0f-c031-4c13-b105-b1e349273086
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 779205b6-c6c2-4c05-904f-2e60dbf600f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4e724d2f-b0a6-432a-ab6f-6abbe0b6b1ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_calculee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cbc70cd0-6897-4c07-bd7c-2f7cccbaeb37
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_calculee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 42a3781c-1f34-4e14-9e0f-af90fbbb3886
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 03ad933f-d651-4a57-8830-0a7a0ff5eb25
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Evolution retard' = entity
+		mode: directQuery
+		source
+			entityName: Evolution retard
+			expressionSource: 'DirectQuery à AS – pst38'
+

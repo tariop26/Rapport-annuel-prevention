@@ -1,0 +1,136 @@
+table 'AMT - date clôture'
+	lineageTag: 4a49e064-685b-4934-ab9d-a955b1e6a1cb
+
+	column 'Année à ce jour (date clôture AMT)'
+		dataType: string
+		lineageTag: edf99040-e779-4009-acc9-c631fe287ef9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date clôture AMT)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année clôture AMT'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: aa51c442-cb0d-4ee3-8d32-0b0327be48a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année clôture AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date clôture AMT'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 45c70e6c-6a1f-4936-8917-57c9ba3722db
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date clôture AMT
+		sortByColumn: id_date_cloture_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_cloture_amt
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61f9f9b9-d10a-4c83-9ce5-600aa87b0802
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_cloture_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour clôture AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4f58108d-a5c0-4c56-950a-52f8691c1278
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour clôture AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois clôture AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6ba6b34b-4c89-474b-b05b-de35ad60e0f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois clôture AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul clôture AMT'
+		dataType: string
+		lineageTag: a0d18467-f083-4e52-a697-9e04e064954e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul clôture AMT
+		sortByColumn: 'Numéro mois clôture AMT'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro mois clôture AMT'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 54ee280c-2ac2-4480-8976-958b369e93d6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Numéro mois clôture AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine clôture AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 05a67716-9b0b-44a4-9a49-7c1b97eec92b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine clôture AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date clôture AMT'
+		lineageTag: 81adab4f-d177-4be2-91a5-dcbe460a5e8e
+		sourceLineageTag: Hiérarchie date clôture AMT
+
+		level 'Année clôture AMT'
+			lineageTag: 4dc4b55b-ec7a-4f4b-82d9-418de8c31fe3
+			column: 'Année clôture AMT'
+
+		level 'Mois clôture AMT'
+			lineageTag: 6674e7af-49c1-4886-8468-0b774295f6a9
+			column: 'Mois clôture AMT'
+
+		level 'Semaine clôture AMT'
+			lineageTag: fbb5e560-2518-4597-bfe5-6380e48ec25c
+			column: 'Semaine clôture AMT'
+
+		level 'Date clôture AMT'
+			lineageTag: 092ef349-3c7b-4a91-ab03-9f59880cd518
+			column: 'Date clôture AMT'
+
+	partition 'AMT - date clôture' = entity
+		mode: directQuery
+		source
+			entityName: AMT - date clôture
+			expressionSource: 'DirectQuery à AS – pst38'
+

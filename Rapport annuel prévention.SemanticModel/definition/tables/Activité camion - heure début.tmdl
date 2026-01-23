@@ -1,0 +1,61 @@
+table 'Activité camion - heure début'
+	isHidden
+	lineageTag: 3d01bc16-f686-417d-b085-6c5c41e30fb4
+
+	column 'Heure début'
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: a7493d5b-e3ac-46b2-9ba2-9f6dcb2e17d8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure début
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte début'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1247591d-9aa9-49f7-9fef-3405a8df1818
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte début
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_debut_vacation
+		dataType: int64
+		isHidden
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9a8656c8-8c1c-4e85-8fb6-505c1678ed1c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_heure_debut_vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure début'
+		isHidden
+		lineageTag: 8d4d1dfc-5135-4da8-a4a0-a16f5d06faeb
+		sourceLineageTag: Hiérarchie heure début
+
+		level 'Heure début'
+			lineageTag: 45dfa7b1-d63e-48f2-9012-7f142e950202
+			column: 'Heure début'
+
+		level 'Heure exacte début'
+			lineageTag: 0824a31e-d438-482a-b0ca-214183a7684a
+			column: 'Heure exacte début'
+
+		changedProperty = IsHidden
+
+	partition 'Activité camion - heure début' = entity
+		mode: directQuery
+		source
+			entityName: Activité camion - heure début
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

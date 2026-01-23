@@ -1,0 +1,30 @@
+table 'Filtre utilisateur'
+	lineageTag: 53ac95e1-8de9-488b-ae61-fdc47c166a19
+
+	column 'Utilisateur par défaut'
+		dataType: string
+		lineageTag: 4eb511d3-7d62-4321-9b42-c143e9f54252
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Utilisateur par défaut
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		lineageTag: 8c561119-c083-43bf-bd83-2421751b7082
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Filtre utilisateur' = entity
+		mode: directQuery
+		source
+			entityName: Filtre utilisateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

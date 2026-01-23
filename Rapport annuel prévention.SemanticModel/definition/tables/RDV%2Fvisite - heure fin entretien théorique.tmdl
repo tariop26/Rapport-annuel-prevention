@@ -1,0 +1,82 @@
+table 'RDV/visite - heure fin entretien théorique'
+	lineageTag: d573eb95-5ed0-4fa5-a935-eb4886680da9
+
+	column 'Heure exacte fin entretien théorique'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61c4db3a-4846-494f-bc1c-23f06befe882
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte fin entretien théorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Heure fin entretien théorique'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7258a482-7784-48f2-81d1-58c5a1ea0593
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure fin entretien théorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column heure_ouvree
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61d82780-d25e-40d1-8c22-9217a26adcb0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: heure_ouvree
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 22ff23f5-6107-41ff-ae0a-b652b94fb043
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column minute
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0c0e003-b62b-47f9-8240-f40808965145
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: minute
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure fin entretien théorique'
+		lineageTag: b9707067-ac55-4076-be51-7e7bf5103c73
+		sourceLineageTag: Hiérarchie heure fin entretien théorique
+
+		level 'Heure fin entretien théorique'
+			lineageTag: 930d51d3-b73f-4b22-a27f-44004d67e6f8
+			column: 'Heure fin entretien théorique'
+
+		level 'Heure exacte fin entretien théorique'
+			lineageTag: 509bdca9-2a25-4ef2-a8ee-d28aae4f3872
+			column: 'Heure exacte fin entretien théorique'
+
+	partition 'RDV/visite - heure fin entretien théorique' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - heure fin entretien théorique
+			expressionSource: 'DirectQuery à AS – pst38'
+

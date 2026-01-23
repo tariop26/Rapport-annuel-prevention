@@ -1,0 +1,71 @@
+table 'Activité camion - réalisateur vacation'
+	lineageTag: ec9caa3a-da14-42a5-9d0a-4dd3f9eb1b9a
+
+	column id_realisateur_vacation
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: d8f621e6-7529-4a93-8adb-5b5e0f66b601
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_realisateur_vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur vacation'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 48c769cb-6cde-43b1-881f-f126e84fc523
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom réalisateur vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil réalisateur vacation détaillé'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0fb347a0-4c2f-43d0-9f5c-e43141d5d731
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil réalisateur vacation détaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil réalisateur vacation'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 89db7d9c-dee6-4c68-bce0-bde4017989e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil réalisateur vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie réalisateur vacation'
+		lineageTag: 4d5ac688-e776-43f5-b873-fa4bffb9d419
+		sourceLineageTag: Hiérarchie réalisateur vacation
+
+		level 'Profil réalisateur vacation'
+			lineageTag: df648a09-3ea9-4a7c-aec8-4bdfec9c7cdc
+			column: 'Profil réalisateur vacation'
+
+		level 'Profil réalisateur vacation détaillé'
+			lineageTag: afca1aca-b13d-441e-89c2-c9eba96eb90a
+			column: 'Profil réalisateur vacation détaillé'
+
+		level 'Nom réalisateur vacation'
+			lineageTag: 894b7138-dc8a-48d4-ad2d-7417d556bb05
+			column: 'Nom réalisateur vacation'
+
+	partition 'Activité camion - réalisateur vacation' = entity
+		mode: directQuery
+		source
+			entityName: Activité camion - réalisateur vacation
+			expressionSource: 'DirectQuery à AS – pst38'
+

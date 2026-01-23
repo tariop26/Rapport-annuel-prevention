@@ -1,0 +1,38 @@
+table 'RLS - secteur'
+	lineageTag: 7e18f669-2112-42ea-93f6-908c494d46d5
+
+	column email_utilisateur_sst
+		dataType: string
+		lineageTag: d745ddc4-5592-40c7-bacb-94f082b48746
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: email_utilisateur_sst
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		lineageTag: 44570eb9-8ee5-4adb-8e2d-72e1d2923127
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		lineageTag: 1e467506-7ddc-4749-939a-9bbaca7dab45
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_utilisateur_sst
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'RLS - secteur' = entity
+		mode: directQuery
+		source
+			entityName: RLS - secteur
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

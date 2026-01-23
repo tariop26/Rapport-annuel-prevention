@@ -1,0 +1,39 @@
+table 'Plan MEE - contexte'
+	lineageTag: ca8a0a5e-0107-4478-8f8e-c32123c8bc53
+
+	column 'Contexte entreprise renseigné'
+		dataType: string
+		lineageTag: ea43682f-c3e2-4bbf-a1fd-1b9237ba54c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contexte entreprise renseigné
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contre-indication renseignée'
+		dataType: string
+		lineageTag: 0e176beb-cfdd-4265-b7ac-02d8c0679019
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contre-indication renseignée
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_contexte_plan_mee
+		dataType: int64
+		isNullable: false
+		lineageTag: f40d4184-3abd-4568-8425-0a4c07210cae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_contexte_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plan MEE - contexte' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - contexte
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,285 @@
+table Prescription
+	lineageTag: ed306357-78cc-41c3-a3ad-d0f6a5c87a14
+
+	measure '# prescriptions émises hors visite' = EXTERNALMEASURE("# prescriptions émises hors visite", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 6a085840-3357-45a2-bf1d-7101f4e748ae
+		sourceLineageTag: DirectQuery à AS – pst38.# prescriptions émises hors visite
+		dataCategory: Uncategorized
+
+	measure '# prescriptions en attente de résultats' = EXTERNALMEASURE("# prescriptions en attente de résultats", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 1dd1ea34-e52e-4bdc-9ea9-fc3d28c9d2b9
+		sourceLineageTag: DirectQuery à AS – pst38.# prescriptions en attente de résultats
+		dataCategory: Uncategorized
+
+	measure '# prescriptions' = EXTERNALMEASURE("# prescriptions", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: aca67b45-4534-4919-8359-f248c5e48025
+		sourceLineageTag: DirectQuery à AS – pst38.# prescriptions
+		dataCategory: Uncategorized
+
+	measure '# salariés avec prescription' = EXTERNALMEASURE("# salariés avec prescription", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 3a8173dd-b0d6-47be-b1db-42f675223cfc
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés avec prescription
+		dataCategory: Uncategorized
+
+	measure '# visites avec prescription' = EXTERNALMEASURE("# visites avec prescription", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 27b75790-6f9c-4344-bd1e-640fb9ae810d
+		sourceLineageTag: DirectQuery à AS – pst38.# visites avec prescription
+		dataCategory: Uncategorized
+
+	measure '% prescriptions émises hors visite' = EXTERNALMEASURE("% prescriptions émises hors visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: 60db604d-7dd2-41ce-9212-aa9fd0ed5e9b
+		sourceLineageTag: DirectQuery à AS – pst38.% prescriptions émises hors visite
+		dataCategory: Uncategorized
+
+	measure '% prescriptions en attente de résultats' = EXTERNALMEASURE("% prescriptions en attente de résultats", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: 6cbd9122-4c46-4029-96ba-f4101e7aced4
+		sourceLineageTag: DirectQuery à AS – pst38.% prescriptions en attente de résultats
+		dataCategory: Uncategorized
+
+	column en_visite
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: c2e92e48-9da7-4f5e-af57-08523571a690
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: en_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_auteur_prescription
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 92bb7cc9-3f52-4b7a-842b-9b8104e7b249
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_auteur_prescription
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 26ace149-27ab-4f5a-bcc2-f55ab8a7ceeb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_emission
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d1eb5387-8b71-445e-9ace-692b662b1a2a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_emission
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 32a297b3-07a8-41fa-9004-7217c15773f1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d4490528-620b-4ef2-8338-631609df4324
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 326d982a-5f40-4580-81d0-b8fa783c9059
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3f5d6631-b200-441a-8547-4295678ab4ef
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dbedb982-fb2f-411f-b878-818a3e043272
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2c79f00e-4ed8-4562-9a19-6ce2e2df5960
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 15d601d9-a9b6-410a-b401-35c2a10e29b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9d2fc642-fd85-478d-960a-9578bf2b70a7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_prescription
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0bead844-c1be-4acb-aab0-f0cb4de1f688
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_prescription
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 13c00009-a4e1-48ef-b010-f3a120faeae7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 39e35043-da3f-46cf-944a-7791744a2c18
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 168cebd5-b17e-41e3-af25-adec9efb76c0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_prescription
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ebc52540-49d6-456b-ac9c-93847283bce0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_prescription
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_prescription_en_attente_resultat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cac65892-b02f-462a-b25f-ad9dd6e3e96a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_prescription_en_attente_resultat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 31a52d8c-8360-4c55-b183-7274a38a35df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Prescription = entity
+		mode: directQuery
+		source
+			entityName: Prescription
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,68 @@
+table 'Modèle de charge - catégorie AMT'
+	lineageTag: 3c74fab2-6ee1-428f-b207-729f90a7521e
+
+	column 'Catégorie AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: af0f442d-7c75-424a-a3a7-4fea230f82b8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_categorie_amt
+		dataType: int64
+		isNullable: false
+		formatString: #,##0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5c759f07-621d-484e-beba-7708087ccb8e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Sous-catégorie AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f7d7083b-f907-4a62-a610-408c4b2e4196
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous-catégorie AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Statut de réalisation AMT'
+		dataType: string
+		lineageTag: 7c96eaeb-99db-4a8d-80a4-0ac4385aa0a6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut de réalisation AMT
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie catégorie AMT'
+		lineageTag: efaea526-56e0-44c4-95f4-c2c42f3da2b8
+		sourceLineageTag: Hiérarchie catégorie AMT
+
+		level 'Catégorie AMT'
+			lineageTag: 45b96a71-e9f6-4190-ad8d-f209d0fa4e75
+			column: 'Catégorie AMT'
+
+		level 'Sous-catégorie AMT'
+			lineageTag: 1cf3e301-f22e-48f0-b4fd-b9922fe168ca
+			column: 'Sous-catégorie AMT'
+
+	partition 'Modèle de charge - catégorie AMT' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - catégorie AMT
+			expressionSource: 'DirectQuery à AS – pst38'
+

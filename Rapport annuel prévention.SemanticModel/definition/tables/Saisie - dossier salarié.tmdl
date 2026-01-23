@@ -1,0 +1,2351 @@
+table 'Saisie - dossier salarié'
+	lineageTag: 8a7d02d4-0576-498c-8fa0-6ae8f5930283
+
+	measure '# Accidents de travail par dossier' = EXTERNALMEASURE("# Accidents de travail par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 0ea7278b-91cc-452d-8201-1dead64237d5
+		sourceLineageTag: DirectQuery à AS – pst38.# Accidents de travail par dossier
+		dataCategory: Uncategorized
+
+	measure '# Adaptations de poste par dossier' = EXTERNALMEASURE("# Adaptations de poste par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 6c6dd4cf-d864-4e14-b9e3-d16ea4f8990e
+		sourceLineageTag: DirectQuery à AS – pst38.# Adaptations de poste par dossier
+		dataCategory: Uncategorized
+
+	measure '# Affections longue durée par dossier' = EXTERNALMEASURE("# Affections longue durée par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 0aeeec82-5709-47a8-b121-341ec12f04ce
+		sourceLineageTag: DirectQuery à AS – pst38.# Affections longue durée par dossier
+		dataCategory: Uncategorized
+
+	measure '# Allocations Adulte Handicapé par dossier' = EXTERNALMEASURE("# Allocations Adulte Handicapé par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 9e53da26-9ed1-46a8-8d24-90e089d424a2
+		sourceLineageTag: DirectQuery à AS – pst38.# Allocations Adulte Handicapé par dossier
+		dataCategory: Uncategorized
+
+	measure '# Antécédents avec thésaurus par dossier' = EXTERNALMEASURE("# Antécédents avec thésaurus par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 9f2747e5-67dc-45a7-bd0e-4972d66a142c
+		sourceLineageTag: DirectQuery à AS – pst38.# Antécédents avec thésaurus par dossier
+		dataCategory: Uncategorized
+
+	measure '# Antécédents familiaux avec RAS par dossier' = EXTERNALMEASURE("# Antécédents familiaux avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 110ac486-052a-45cc-8235-d55ee54ba757
+		sourceLineageTag: DirectQuery à AS – pst38.# Antécédents familiaux avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Antécédents familiaux par dossier' = EXTERNALMEASURE("# Antécédents familiaux par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 7f4dddac-488e-4fe7-95fb-0af998f524f0
+		sourceLineageTag: DirectQuery à AS – pst38.# Antécédents familiaux par dossier
+		dataCategory: Uncategorized
+
+	measure '# Antécédents personnels avec RAS par dossier' = EXTERNALMEASURE("# Antécédents personnels avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: c3cb021d-b655-4a8c-92fc-ce58621104c0
+		sourceLineageTag: DirectQuery à AS – pst38.# Antécédents personnels avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Antécédents personnels par dossier' = EXTERNALMEASURE("# Antécédents personnels par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: e7ed7a4f-eb1e-4762-ae7a-38df0765bb04
+		sourceLineageTag: DirectQuery à AS – pst38.# Antécédents personnels par dossier
+		dataCategory: Uncategorized
+
+	measure '# Arrêts de travail par dossier' = EXTERNALMEASURE("# Arrêts de travail par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: e9485c41-5fe8-4c88-be39-0af2818fca95
+		sourceLineageTag: DirectQuery à AS – pst38.# Arrêts de travail par dossier
+		dataCategory: Uncategorized
+
+	measure '# Arrêts/Accidents/Maladies pro avec RAS par dossier' = EXTERNALMEASURE("# Arrêts/Accidents/Maladies pro avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: c532de54-d2a5-4b0a-8453-c7fc1c997c5c
+		sourceLineageTag: DirectQuery à AS – pst38.# Arrêts/Accidents/Maladies pro avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Causes d''inaptitude par visite d''inaptitude (dossier)' = EXTERNALMEASURE("# Causes d'inaptitude par visite d'inaptitude (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 63a30357-a500-43e0-88f4-e9cc3c59d50b
+		sourceLineageTag: DirectQuery à AS – pst38.# Causes d'inaptitude par visite d'inaptitude (dossier)
+		dataCategory: Uncategorized
+
+	measure '# Courriers autres par dossier' = EXTERNALMEASURE("# Courriers autres par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: cd4d27ea-e88b-48dd-b273-a0b219c59543
+		sourceLineageTag: DirectQuery à AS – pst38.# Courriers autres par dossier
+		dataCategory: Uncategorized
+
+	measure '# Courriers de prescription par dossier' = EXTERNALMEASURE("# Courriers de prescription par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 1ed8b268-9fb8-4732-bcec-522fd1e6d341
+		sourceLineageTag: DirectQuery à AS – pst38.# Courriers de prescription par dossier
+		dataCategory: Uncategorized
+
+	measure '# Courriers d''orientation par dossier' = EXTERNALMEASURE("# Courriers d'orientation par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 1f9699ff-2487-4022-8b10-dc7245124010
+		sourceLineageTag: DirectQuery à AS – pst38.# Courriers d'orientation par dossier
+		dataCategory: Uncategorized
+
+	measure '# Diplômes et formations par dossier' = EXTERNALMEASURE("# Diplômes et formations par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.1 - Général
+		lineageTag: 01663020-4d92-4c55-af5f-15777dcd2f83
+		sourceLineageTag: DirectQuery à AS – pst38.# Diplômes et formations par dossier
+		dataCategory: Uncategorized
+
+	measure '# Diplômes par dossier' = EXTERNALMEASURE("# Diplômes par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: bb715877-a73b-446f-874c-3d0bd13b164e
+		sourceLineageTag: DirectQuery à AS – pst38.# Diplômes par dossier
+		dataCategory: Uncategorized
+
+	measure '# Dossiers' = EXTERNALMEASURE("# Dossiers", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 320aa697-adac-4fc7-a4a2-d14416f36bec
+		sourceLineageTag: DirectQuery à AS – pst38.# Dossiers
+		dataCategory: Uncategorized
+
+	measure '# Echelles anormales par dossier' = EXTERNALMEASURE("# Echelles anormales par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 09ef0fa1-cbc3-4c70-a38e-c726e435ee6f
+		sourceLineageTag: DirectQuery à AS – pst38.# Echelles anormales par dossier
+		dataCategory: Uncategorized
+
+	measure '# Echelles par dossier' = EXTERNALMEASURE("# Echelles par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: ba32e0ed-65c7-4d2d-9067-164723233271
+		sourceLineageTag: DirectQuery à AS – pst38.# Echelles par dossier
+		dataCategory: Uncategorized
+
+	measure '# Emploi actuel par dossier' = EXTERNALMEASURE("# Emploi actuel par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 2a33ac43-f885-4433-82ff-d2cbad1ceccb
+		sourceLineageTag: DirectQuery à AS – pst38.# Emploi actuel par dossier
+		dataCategory: Uncategorized
+
+	measure '# Emplois antérieurs par dossier' = EXTERNALMEASURE("# Emplois antérieurs par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: e65b05e4-629f-44f4-a997-fc9f23d67624
+		sourceLineageTag: DirectQuery à AS – pst38.# Emplois antérieurs par dossier
+		dataCategory: Uncategorized
+
+	measure '# Examens cliniques avec RAS par dossier' = EXTERNALMEASURE("# Examens cliniques avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.4 - Données de l'examen clinique
+		lineageTag: 17f53f70-b903-4671-8dfc-eca93cd31428
+		sourceLineageTag: DirectQuery à AS – pst38.# Examens cliniques avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Examens cliniques avec thésaurus par dossier' = EXTERNALMEASURE("# Examens cliniques avec thésaurus par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.4 - Données de l'examen clinique
+		lineageTag: c0565f42-99a6-4f67-a16b-01ae019d5fba
+		sourceLineageTag: DirectQuery à AS – pst38.# Examens cliniques avec thésaurus par dossier
+		dataCategory: Uncategorized
+
+	measure '# Examens cliniques par dossier' = EXTERNALMEASURE("# Examens cliniques par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.4 - Données de l'examen clinique
+		lineageTag: ef87c1bb-0b2c-43e5-97e3-a1f825ed1579
+		sourceLineageTag: DirectQuery à AS – pst38.# Examens cliniques par dossier
+		dataCategory: Uncategorized
+
+	measure '# Examens paracliniques en visite par dossier' = EXTERNALMEASURE("# Examens paracliniques en visite par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.5 - Données des examens paracliniques
+		lineageTag: 4450155b-d58e-4c20-ac1d-6138f8f73df3
+		sourceLineageTag: DirectQuery à AS – pst38.# Examens paracliniques en visite par dossier
+		dataCategory: Uncategorized
+
+	measure '# Examens paracliniques pré visite par dossier' = EXTERNALMEASURE("# Examens paracliniques pré visite par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.5 - Données des examens paracliniques
+		lineageTag: 90d7b0c4-ab70-431d-b18c-e805ead2ff73
+		sourceLineageTag: DirectQuery à AS – pst38.# Examens paracliniques pré visite par dossier
+		dataCategory: Uncategorized
+
+	measure '# Examens paracliniques prescrits par dossier' = EXTERNALMEASURE("# Examens paracliniques prescrits par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.5 - Données des examens paracliniques
+		lineageTag: e508d590-b8e8-4ba5-aad0-430a07ec56f4
+		sourceLineageTag: DirectQuery à AS – pst38.# Examens paracliniques prescrits par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emploi actuel déclarées par le salarié par dossier' = EXTERNALMEASURE("# Expositions emploi actuel déclarées par le salarié par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 9f6c91b3-1f1e-47ec-aa18-def7cfc2b63e
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emploi actuel déclarées par le salarié par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emploi actuel déclarées par l''employeur par dossier' = EXTERNALMEASURE("# Expositions emploi actuel déclarées par l'employeur par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: ba42d0e1-f04e-46d9-8b16-3bc2ff8de351
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emploi actuel déclarées par l'employeur par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emploi actuel provenant de l''ancien logiciel par dossier' = EXTERNALMEASURE("# Expositions emploi actuel provenant de l'ancien logiciel par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: adf4cf53-2f2c-451b-81c6-816e0d7fb186
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emploi actuel provenant de l'ancien logiciel par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emploi actuel saisies par le professionnel de santé par dossier' = EXTERNALMEASURE("# Expositions emploi actuel saisies par le professionnel de santé par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: f342865d-4959-4eef-bc06-84511d07df7e
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emploi actuel saisies par le professionnel de santé par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emplois antérieurs déclarées par le salarié par dossier' = EXTERNALMEASURE("# Expositions emplois antérieurs déclarées par le salarié par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 515db0f4-0923-4ac8-9706-0c32efcb1a65
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emplois antérieurs déclarées par le salarié par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emplois antérieurs déclarées par l''employeur par dossier' = EXTERNALMEASURE("# Expositions emplois antérieurs déclarées par l'employeur par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 2e2a65c2-1453-4472-891d-94324b9ed07b
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emplois antérieurs déclarées par l'employeur par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emplois antérieurs provenant de l''ancien logiciel par dossier' = EXTERNALMEASURE("# Expositions emplois antérieurs provenant de l'ancien logiciel par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: e97c3c07-0e51-4a15-a0d7-592d466c4458
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emplois antérieurs provenant de l'ancien logiciel par dossier
+		dataCategory: Uncategorized
+
+	measure '# Expositions emplois antérieurs saisies par le professionnel de santé par dossier' = EXTERNALMEASURE("# Expositions emplois antérieurs saisies par le professionnel de santé par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: f386ed45-98fb-4613-8863-1af97f2d16b1
+		sourceLineageTag: DirectQuery à AS – pst38.# Expositions emplois antérieurs saisies par le professionnel de santé par dossier
+		dataCategory: Uncategorized
+
+	measure '# Gollac complété par dossier' = EXTERNALMEASURE("# Gollac complété par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 4a58ec43-9934-4a72-8b6d-56382371a01f
+		sourceLineageTag: DirectQuery à AS – pst38.# Gollac complété par dossier
+		dataCategory: Uncategorized
+
+	measure '# Habitus par dossier' = EXTERNALMEASURE("# Habitus par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: b7a08214-ffd7-42ed-8f70-3bec16fb50b1
+		sourceLineageTag: DirectQuery à AS – pst38.# Habitus par dossier
+		dataCategory: Uncategorized
+
+	measure '# Incapacités permanentes par dossier' = EXTERNALMEASURE("# Incapacités permanentes par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: f9026a0e-0a19-45ef-852b-49f0ebe16564
+		sourceLineageTag: DirectQuery à AS – pst38.# Incapacités permanentes par dossier
+		dataCategory: Uncategorized
+
+	measure '# Injections vaccinales par dossier' = EXTERNALMEASURE("# Injections vaccinales par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: ae98ae71-e051-4d79-a471-f9c7f0e18f43
+		sourceLineageTag: DirectQuery à AS – pst38.# Injections vaccinales par dossier
+		dataCategory: Uncategorized
+
+	measure '# Invalidités de guerre par dossier' = EXTERNALMEASURE("# Invalidités de guerre par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 4c4107f7-a3de-4c09-9a76-a3405fcc223a
+		sourceLineageTag: DirectQuery à AS – pst38.# Invalidités de guerre par dossier
+		dataCategory: Uncategorized
+
+	measure '# Invalidités par dossier' = EXTERNALMEASURE("# Invalidités par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 97c2e7b3-3645-40e5-9d14-5f801fb8e629
+		sourceLineageTag: DirectQuery à AS – pst38.# Invalidités par dossier
+		dataCategory: Uncategorized
+
+	measure '# Logements par dossier' = EXTERNALMEASURE("# Logements par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 431648b6-7564-4dd8-ae6c-42c913486659
+		sourceLineageTag: DirectQuery à AS – pst38.# Logements par dossier
+		dataCategory: Uncategorized
+
+	measure '# Maladies professionnelles par dossier' = EXTERNALMEASURE("# Maladies professionnelles par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 4da4ddee-ce32-4e84-8e5b-61bba57fe050
+		sourceLineageTag: DirectQuery à AS – pst38.# Maladies professionnelles par dossier
+		dataCategory: Uncategorized
+
+	measure '# Memos par dossier' = EXTERNALMEASURE("# Memos par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 53137605-3777-45f0-a64b-d159ee2725db
+		sourceLineageTag: DirectQuery à AS – pst38.# Memos par dossier
+		dataCategory: Uncategorized
+
+	measure '# Mesures par dossier' = EXTERNALMEASURE("# Mesures par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.5 - Données des examens paracliniques
+		lineageTag: b378032e-5dda-4962-99ac-940016eab837
+		sourceLineageTag: DirectQuery à AS – pst38.# Mesures par dossier
+		dataCategory: Uncategorized
+
+	measure '# Notes d''ancien emploi par dossier' = EXTERNALMEASURE("# Notes d'ancien emploi par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 43dca107-8828-4688-add1-c2e41dea0bfc
+		sourceLineageTag: DirectQuery à AS – pst38.# Notes d'ancien emploi par dossier
+		dataCategory: Uncategorized
+
+	measure '# Notes expositions anciens emplois par dossier' = EXTERNALMEASURE("# Notes expositions anciens emplois par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: cc6637c1-0d05-4d13-be0f-b81c84352827
+		sourceLineageTag: DirectQuery à AS – pst38.# Notes expositions anciens emplois par dossier
+		dataCategory: Uncategorized
+
+	measure '# Notes liées aux expositions par dossier' = EXTERNALMEASURE("# Notes liées aux expositions par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: b85acbdf-6b41-4f77-81d1-bcc3b36f8b3a
+		sourceLineageTag: DirectQuery à AS – pst38.# Notes liées aux expositions par dossier
+		dataCategory: Uncategorized
+
+	measure '# Notes par dossier' = EXTERNALMEASURE("# Notes par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: f062eb25-b4d1-45d5-837a-e871b68f5e34
+		sourceLineageTag: DirectQuery à AS – pst38.# Notes par dossier
+		dataCategory: Uncategorized
+
+	measure '# Notes socio-professionnelles par dossier' = EXTERNALMEASURE("# Notes socio-professionnelles par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 2805d18f-160d-4484-b14f-7c3e5922be96
+		sourceLineageTag: DirectQuery à AS – pst38.# Notes socio-professionnelles par dossier
+		dataCategory: Uncategorized
+
+	measure '# Pathologies avec RAS par dossier' = EXTERNALMEASURE("# Pathologies avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 8a4059d5-fa84-49de-86c8-e02bbc697105
+		sourceLineageTag: DirectQuery à AS – pst38.# Pathologies avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Pathologies avec thésaurus par dossier' = EXTERNALMEASURE("# Pathologies avec thésaurus par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: f29440c2-cd9f-4b7f-be7f-38f21526a8ef
+		sourceLineageTag: DirectQuery à AS – pst38.# Pathologies avec thésaurus par dossier
+		dataCategory: Uncategorized
+
+	measure '# Pathologies par dossier' = EXTERNALMEASURE("# Pathologies par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: b83ba18f-d7ed-4992-9b2f-70e36dec74a0
+		sourceLineageTag: DirectQuery à AS – pst38.# Pathologies par dossier
+		dataCategory: Uncategorized
+
+	measure '# Plaquettes de prévention par dossier' = EXTERNALMEASURE("# Plaquettes de prévention par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 2289405c-414e-4b93-9063-1648232b2670
+		sourceLineageTag: DirectQuery à AS – pst38.# Plaquettes de prévention par dossier
+		dataCategory: Uncategorized
+
+	measure '# Recommandations orales par dossier' = EXTERNALMEASURE("# Recommandations orales par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 5d9e08fd-09f8-41b3-8520-79a6ac95e823
+		sourceLineageTag: DirectQuery à AS – pst38.# Recommandations orales par dossier
+		dataCategory: Uncategorized
+
+	measure '# RQTH par dossier' = EXTERNALMEASURE("# RQTH par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 517c9b1e-a823-4f80-b7e7-ca6a50d91f1b
+		sourceLineageTag: DirectQuery à AS – pst38.# RQTH par dossier
+		dataCategory: Uncategorized
+
+	measure '# Situations administratives par dossier' = EXTERNALMEASURE("# Situations administratives par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 2ed89e9e-f30b-411e-9e6c-1877f0449a45
+		sourceLineageTag: DirectQuery à AS – pst38.# Situations administratives par dossier
+		dataCategory: Uncategorized
+
+	measure '# Situations financières avec RAS par dossier' = EXTERNALMEASURE("# Situations financières avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 004937e4-26d5-4efb-be07-b94cbbb94dc6
+		sourceLineageTag: DirectQuery à AS – pst38.# Situations financières avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Situations financières par dossier' = EXTERNALMEASURE("# Situations financières par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 4338d0bc-f14e-4ee6-ae7d-bff0647aa7af
+		sourceLineageTag: DirectQuery à AS – pst38.# Situations financières par dossier
+		dataCategory: Uncategorized
+
+	measure '# Situations personnelles et familiales par dossier' = EXTERNALMEASURE("# Situations personnelles et familiales par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: c73998f6-3b6c-46d1-8dc0-e159163593a4
+		sourceLineageTag: DirectQuery à AS – pst38.# Situations personnelles et familiales par dossier
+		dataCategory: Uncategorized
+
+	measure '# Statuts vaccinaux par dossier' = EXTERNALMEASURE("# Statuts vaccinaux par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 52d8a6b9-2469-4161-8b59-37afaaadc8c6
+		sourceLineageTag: DirectQuery à AS – pst38.# Statuts vaccinaux par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus accidents de travail par dossier' = EXTERNALMEASURE("# Thésaurus accidents de travail par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: c86bff88-95f4-450f-bf95-49ae5f3447cc
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus accidents de travail par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus antécédents familiaux par dossier' = EXTERNALMEASURE("# Thésaurus antécédents familiaux par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 25dbc3cd-1f3d-43bf-89b1-e558bf914b03
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus antécédents familiaux par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus antécédents personnels par dossier' = EXTERNALMEASURE("# Thésaurus antécédents personnels par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 62ea5412-312d-4b35-a969-7a104017884e
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus antécédents personnels par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus arrêts de travail par dossier' = EXTERNALMEASURE("# Thésaurus arrêts de travail par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: ce0b3431-4b77-483f-a5d5-491db23e7609
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus arrêts de travail par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus cim10 par dossier' = EXTERNALMEASURE("# Thésaurus cim10 par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 0970e8b9-819e-4f3a-9c82-8b3ae9b9dadf
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus cim10 par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus diplômes par dossier' = EXTERNALMEASURE("# Thésaurus diplômes par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 00b2c394-db0f-43dc-9ab0-e09dda627a2a
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus diplômes par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus examens cliniques par dossier' = EXTERNALMEASURE("# Thésaurus examens cliniques par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.4 - Données de l'examen clinique
+		lineageTag: b9a869a1-3f4f-497d-a36f-220f0a00f692
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus examens cliniques par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus hors examens cliniques par dossier' = EXTERNALMEASURE("# Thésaurus hors examens cliniques par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 82b75175-a58a-4462-a88f-f78a83bfdc34
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus hors examens cliniques par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus maladies professionnelles par dossier' = EXTERNALMEASURE("# Thésaurus maladies professionnelles par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: b780e27a-7237-48a4-a029-f9bd91cb1fcf
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus maladies professionnelles par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus par dossier' = EXTERNALMEASURE("# Thésaurus par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: c43331a0-e4cd-4250-85a7-4335919906ed
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus pathologies par dossier' = EXTERNALMEASURE("# Thésaurus pathologies par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 2be28659-17f8-4c3f-aff7-dcfd8132a2f9
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus pathologies par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus situations personnelles et familiales par dossier' = EXTERNALMEASURE("# Thésaurus situations personnelles et familiales par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 5337b7c6-46ed-4cfe-bd05-ef30aef98baa
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus situations personnelles et familiales par dossier
+		dataCategory: Uncategorized
+
+	measure '# Thésaurus traitements par dossier' = EXTERNALMEASURE("# Thésaurus traitements par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: a86ec868-1d53-4e43-88f7-4ff94f0cf37d
+		sourceLineageTag: DirectQuery à AS – pst38.# Thésaurus traitements par dossier
+		dataCategory: Uncategorized
+
+	measure '# Traitements avec RAS par dossier' = EXTERNALMEASURE("# Traitements avec RAS par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: e274b6a0-18cb-434e-8576-9733c769ba37
+		sourceLineageTag: DirectQuery à AS – pst38.# Traitements avec RAS par dossier
+		dataCategory: Uncategorized
+
+	measure '# Traitements par dossier' = EXTERNALMEASURE("# Traitements par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 09e15e73-aa41-4172-b168-1b0e0cfb4fde
+		sourceLineageTag: DirectQuery à AS – pst38.# Traitements par dossier
+		dataCategory: Uncategorized
+
+	measure '# Vécus au travail par dossier' = EXTERNALMEASURE("# Vécus au travail par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: c2cd5bf3-d876-4540-b766-af461a6b54cf
+		sourceLineageTag: DirectQuery à AS – pst38.# Vécus au travail par dossier
+		dataCategory: Uncategorized
+
+	measure '# Victimes civiles de guerre par dossier' = EXTERNALMEASURE("# Victimes civiles de guerre par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: f984a391-5535-46b4-99fa-0cd2da3a989e
+		sourceLineageTag: DirectQuery à AS – pst38.# Victimes civiles de guerre par dossier
+		dataCategory: Uncategorized
+
+	measure '# Victimes de terrorisme par dossier' = EXTERNALMEASURE("# Victimes de terrorisme par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: f81c0065-f5c8-46dd-9ee8-16e32d4ffa64
+		sourceLineageTag: DirectQuery à AS – pst38.# Victimes de terrorisme par dossier
+		dataCategory: Uncategorized
+
+	measure '# Visites par dossier' = EXTERNALMEASURE("# Visites par dossier", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: fa272b6d-209f-4e52-b096-22ef69ffa638
+		sourceLineageTag: DirectQuery à AS – pst38.# Visites par dossier
+		dataCategory: Uncategorized
+
+	measure '% Adaptations de poste avec type renseigné (dossier)' = EXTERNALMEASURE("% Adaptations de poste avec type renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: ca03a35a-52b6-4026-abbb-58a4088ae2a3
+		sourceLineageTag: DirectQuery à AS – pst38.% Adaptations de poste avec type renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Arrêts de travail avec date de début renseignée (dossier)' = EXTERNALMEASURE("% Arrêts de travail avec date de début renseignée (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 09b290ee-51ad-4a87-bb31-0ca85617b75d
+		sourceLineageTag: DirectQuery à AS – pst38.% Arrêts de travail avec date de début renseignée (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Arrêts de travail avec date de fin renseignée (dossier)' = EXTERNALMEASURE("% Arrêts de travail avec date de fin renseignée (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 7a9a947f-147f-4d8b-8ecf-ea31fcb7c6f9
+		sourceLineageTag: DirectQuery à AS – pst38.% Arrêts de travail avec date de fin renseignée (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec description renseignée (dossier)' = EXTERNALMEASURE("% Emploi actuel avec description renseignée (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: e04fcd59-98ee-47bd-8156-81d012f83fa9
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec description renseignée (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec équipement renseigné (dossier)' = EXTERNALMEASURE("% Emploi actuel avec équipement renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 4f6e6f84-03a1-40d3-8cdd-aa3227837aca
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec équipement renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec horaires renseignés (dossier)' = EXTERNALMEASURE("% Emploi actuel avec horaires renseignés (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 5664282a-87f2-49ad-900c-63732152c1cb
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec horaires renseignés (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec lieu renseigné (dossier)' = EXTERNALMEASURE("% Emploi actuel avec lieu renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 415f4669-0be7-4966-9f2b-ba6bf807d503
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec lieu renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec PCS renseigné (dossier)' = EXTERNALMEASURE("% Emploi actuel avec PCS renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 20ade44b-a9f1-4b43-bd3f-2eeeba4e91fd
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec PCS renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec poste renseigné (dossier)' = EXTERNALMEASURE("% Emploi actuel avec poste renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: 33ea3e25-5903-4e28-8454-c3961759d716
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec poste renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec tâches renseignées (dossier)' = EXTERNALMEASURE("% Emploi actuel avec tâches renseignées (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: d5ce6149-5ad4-4b72-b92f-c722eb519748
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec tâches renseignées (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec trajet renseigné (dossier)' = EXTERNALMEASURE("% Emploi actuel avec trajet renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: ac24e544-7f4b-4fec-80e8-d8b39e11b2fc
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec trajet renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emploi actuel avec type de contrat renseigné (dossier)' = EXTERNALMEASURE("% Emploi actuel avec type de contrat renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.3 - Informations concernant l'emploi actuel
+		lineageTag: d0eb2d66-b7c0-4271-a57f-b5cdf4ea3957
+		sourceLineageTag: DirectQuery à AS – pst38.% Emploi actuel avec type de contrat renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec description renseignée (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec description renseignée (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 6b82dca1-e958-40c6-88f5-52241a83998c
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec description renseignée (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec équipement renseigné (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec équipement renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 6c4dea0d-7ddc-4e7f-bbcd-dc409793b4b0
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec équipement renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec horaires renseignés (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec horaires renseignés (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 1c502e63-fd19-4258-95ec-9fb62b87dfac
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec horaires renseignés (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec lieu renseigné (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec lieu renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: ae03e354-2e9d-42ee-8c4d-60109a59910a
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec lieu renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec PCS renseigné (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec PCS renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: f7ad2eb2-41ce-4e76-8a0d-6cd2697593b2
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec PCS renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec poste renseigné (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec poste renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 6d2ab66e-8cbc-4387-b623-453924577d3f
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec poste renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec tâches renseignées (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec tâches renseignées (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 62e40ba6-3532-4f5a-b154-411511a07747
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec tâches renseignées (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec trajet renseigné (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec trajet renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: 046f78c9-7788-4acf-b654-4035b39fdd36
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec trajet renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Emplois antérieurs avec type de contrat renseigné (dossier)' = EXTERNALMEASURE("% Emplois antérieurs avec type de contrat renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\2 - Informations concernant l'emploi et les activités professionnelles\2.2 - Informations concernant les emplois antérieurs
+		lineageTag: f503a0c6-3b61-4256-8a4e-bd68d0d2d4f4
+		sourceLineageTag: DirectQuery à AS – pst38.% Emplois antérieurs avec type de contrat renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Etat global de vaccination renseigné (dossier)' = EXTERNALMEASURE("% Etat global de vaccination renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 59823e25-d454-42af-b57c-614512e9c755
+		sourceLineageTag: DirectQuery à AS – pst38.% Etat global de vaccination renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Examens cliniques avec RAS (dossier)' = EXTERNALMEASURE("% Examens cliniques avec RAS (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.4 - Données de l'examen clinique
+		lineageTag: 3e52742b-b1d2-47f5-895c-9e762e3b3eee
+		sourceLineageTag: DirectQuery à AS – pst38.% Examens cliniques avec RAS (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Examens cliniques avec thésaurus (dossier)' = EXTERNALMEASURE("% Examens cliniques avec thésaurus (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.4 - Données de l'examen clinique
+		lineageTag: ce61d132-02ca-4673-9ae2-9d476cad35e6
+		sourceLineageTag: DirectQuery à AS – pst38.% Examens cliniques avec thésaurus (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Injections vaccinales avec numéro de lot renseigné (dossier)' = EXTERNALMEASURE("% Injections vaccinales avec numéro de lot renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: c776092d-2a7e-47a6-a0e5-26c4f15b1b4b
+		sourceLineageTag: DirectQuery à AS – pst38.% Injections vaccinales avec numéro de lot renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Nom et prénom renseigné (dossier)' = EXTERNALMEASURE("% Nom et prénom renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\1 - Informations socio-administratives
+		lineageTag: 23175b9e-ffb5-4ce3-b788-e185ccefc1fd
+		sourceLineageTag: DirectQuery à AS – pst38.% Nom et prénom renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Notes avec thésaurus (dossier)' = EXTERNALMEASURE("% Notes avec thésaurus (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: fcc4fade-8acd-4aef-bbfe-5894b17f1f59
+		sourceLineageTag: DirectQuery à AS – pst38.% Notes avec thésaurus (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Notes avec thésaurus ou RAS (dossier)' = EXTERNALMEASURE("% Notes avec thésaurus ou RAS (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 10b04569-2a90-4763-91eb-05560b3cc667
+		sourceLineageTag: DirectQuery à AS – pst38.% Notes avec thésaurus ou RAS (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Notes hors examen clinique avec thésaurus ou RAS (dossier)' = EXTERNALMEASURE("% Notes hors examen clinique avec thésaurus ou RAS (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 4a5ce6a7-390a-402f-a1c6-7e12cb30b802
+		sourceLineageTag: DirectQuery à AS – pst38.% Notes hors examen clinique avec thésaurus ou RAS (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Notes sociales avec thésaurus ou RAS (dossier)' = EXTERNALMEASURE("% Notes sociales avec thésaurus ou RAS (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 8fa65ee2-e6b2-45ef-a39a-bf4a5572973d
+		sourceLineageTag: DirectQuery à AS – pst38.% Notes sociales avec thésaurus ou RAS (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Numéro de téléphone renseigné (dossier)' = EXTERNALMEASURE("% Numéro de téléphone renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\1 - Informations socio-administratives
+		lineageTag: 6c38c8cc-1b21-4aa4-9dcb-70bc4ed20617
+		sourceLineageTag: DirectQuery à AS – pst38.% Numéro de téléphone renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Pathologies avec date de début renseignée (dossier)' = EXTERNALMEASURE("% Pathologies avec date de début renseignée (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 140c0f0b-ffbe-49aa-82b6-a1f24ed081d0
+		sourceLineageTag: DirectQuery à AS – pst38.% Pathologies avec date de début renseignée (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Pathologies avec date de fin renseignée (dossier)' = EXTERNALMEASURE("% Pathologies avec date de fin renseignée (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 611bd5d5-a941-4744-bc18-822677602360
+		sourceLineageTag: DirectQuery à AS – pst38.% Pathologies avec date de fin renseignée (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Refus au consentement partage des données (dossier)' = EXTERNALMEASURE("% Refus au consentement partage des données (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\1 - Informations socio-administratives
+		lineageTag: e69e11df-d975-4166-9730-aa5bc91bbbc3
+		sourceLineageTag: DirectQuery à AS – pst38.% Refus au consentement partage des données (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Réponse au consentement partage des données (dossier)' = EXTERNALMEASURE("% Réponse au consentement partage des données (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\1 - Informations socio-administratives
+		lineageTag: ae95eff1-e79c-4508-9dad-c23d7489afbe
+		sourceLineageTag: DirectQuery à AS – pst38.% Réponse au consentement partage des données (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Réponse suivi médecin traitant (dossier)' = EXTERNALMEASURE("% Réponse suivi médecin traitant (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\1 - Informations socio-administratives
+		lineageTag: f3b67162-e5a2-479c-94ba-9e9a83ae0aea
+		sourceLineageTag: DirectQuery à AS – pst38.% Réponse suivi médecin traitant (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Statuts vaccinaux avec état renseigné (dossier)' = EXTERNALMEASURE("% Statuts vaccinaux avec état renseigné (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\3 - Informations recueillies durant les examens médicaux\3.2 - Données de l'interrogatoire
+		lineageTag: 26a322b9-33e3-429d-8787-444dbabfe301
+		sourceLineageTag: DirectQuery à AS – pst38.% Statuts vaccinaux avec état renseigné (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec adaptation de poste (dossier)' = EXTERNALMEASURE("% Visites avec adaptation de poste (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: 1e7f256d-a8aa-4c4a-ad0d-cf12b0adf20f
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec adaptation de poste (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec conclusion (dossier)' = EXTERNALMEASURE("% Visites avec conclusion (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: c4014783-52a4-4a69-b368-06afea1442b7
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec conclusion (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec échelle remplie (dossier)' = EXTERNALMEASURE("% Visites avec échelle remplie (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: fe3d4611-b7af-4ec3-a385-4dde1f7781df
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec échelle remplie (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec examen clinique (dossier)' = EXTERNALMEASURE("% Visites avec examen clinique (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 09ecb1d3-60e5-4f35-b606-76422eb51fc8
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec examen clinique (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec IRDP rempli (dossier)' = EXTERNALMEASURE("% Visites avec IRDP rempli (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 2c6d06a2-6c6d-4943-92ac-0039a3a070b1
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec IRDP rempli (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec IRI rempli (dossier)' = EXTERNALMEASURE("% Visites avec IRI rempli (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: ec605ebe-dc4f-4a06-a97c-3bf2406eda50
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec IRI rempli (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites avec situation administrative (dossier)' = EXTERNALMEASURE("% Visites avec situation administrative (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 1b40ba2a-2386-4d65-a5c7-98c4cfcf070c
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites avec situation administrative (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites de suivi individuel (dossier)' = EXTERNALMEASURE("% Visites de suivi individuel (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: 0089f35f-5fc0-4f47-977a-f465fd74a4d2
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites de suivi individuel (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites d''inaptitude avec cause (dossier)' = EXTERNALMEASURE("% Visites d'inaptitude avec cause (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\4 - Informations concernant les propositions et l'avis du médecin du travail
+		lineageTag: a688a5d8-e515-4af7-866a-1062ae959c8a
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites d'inaptitude avec cause (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites IRDP à risque avec facteurs renseignés (dossier)' = EXTERNALMEASURE("% Visites IRDP à risque avec facteurs renseignés (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: a4ce3b5c-5b40-4502-a7d2-fb14d48b9626
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites IRDP à risque avec facteurs renseignés (dossier)
+		dataCategory: Uncategorized
+
+	measure '% Visites IRI à risque avec facteurs renseignés (dossier)' = EXTERNALMEASURE("% Visites IRI à risque avec facteurs renseignés (dossier)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ %
+		displayFolder: Indicateurs\5 - Synthèse
+		lineageTag: c461dc8e-bd03-4748-af98-102db54297e3
+		sourceLineageTag: DirectQuery à AS – pst38.% Visites IRI à risque avec facteurs renseignés (dossier)
+		dataCategory: Uncategorized
+
+	column 'Date de dernière visite réalisée (dossier)'
+		dataType: dateTime
+		lineageTag: 07633012-62d3-4d4e-8f92-3221f6827d8a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de dernière visite réalisée (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de dernière visite réglementaire réalisée (dossier)'
+		dataType: dateTime
+		lineageTag: 444cc121-37d2-4319-8137-e6ca40d9d033
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de dernière visite réglementaire réalisée (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a209dbc9-d3b5-4692-ab06-05aa606c3576
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: db10b3ea-9189-47da-a7d3-89c34fc3724e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_personne
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 33bca952-2870-479e-956a-ca5c39a586b1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a650cdfc-f124-429d-badc-43b1d03b0c2f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_realisateur_derniere_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 095c1a58-4550-4900-874f-629fadc7dc5b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_realisateur_derniere_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 7f70d114-20c5-4501-8822-26e453f132b3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0a46e56d-5a7f-4ff4-9404-01e4ad9c0c8c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 250aed00-6ecc-4194-9d9f-59a48377711d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5a72ac4c-7b91-4379-96d8-7fb59a2a98c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Accidents de travail (dossier)'
+		dataType: int64
+		lineageTag: 9b0f7214-4fd0-4ed7-9b52-11e1851173c1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Accidents de travail (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Adaptations de poste (dossier)'
+		dataType: int64
+		lineageTag: f1c80664-b077-4e5e-87c4-03907daa5587
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Adaptations de poste (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Adaptations de poste avec type renseigné (dossier)'
+		dataType: int64
+		lineageTag: bf9800fc-7143-4313-8e85-5273246f4029
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Adaptations de poste avec type renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Affection longue durée (dossier)'
+		dataType: int64
+		lineageTag: a644507f-2967-411f-859f-78c27d313d45
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Affection longue durée (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Allocation Adulte Handicapé (dossier)'
+		dataType: int64
+		lineageTag: 3fe551dc-4a5f-468e-94fb-d389129eebce
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Allocation Adulte Handicapé (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Antécédents avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: ad7f0a24-b529-492e-9b7a-d55d925c2ca1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Antécédents avec thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Antécédents familiaux (dossier)'
+		dataType: int64
+		lineageTag: 98aed798-06ca-4e66-b636-a31e1f78b7a4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Antécédents familiaux (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Antécédents familiaux avec RAS (dossier)'
+		dataType: int64
+		lineageTag: e2440b81-78ee-423b-a8bb-5b0577f6af67
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Antécédents familiaux avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Antécédents personnels (dossier)'
+		dataType: int64
+		lineageTag: 93b60ceb-a94b-44ce-a921-b35f469961ce
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Antécédents personnels (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Antécédents personnels avec RAS (dossier)'
+		dataType: int64
+		lineageTag: 45eaa264-893c-443d-917f-2dce2c378a2d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Antécédents personnels avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Arrêts de travail (dossier)'
+		dataType: int64
+		lineageTag: 75e4ee4d-790a-427e-a17f-ebafed177ceb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Arrêts de travail (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Arrêts de travail avec date de debut renseignée (dossier)'
+		dataType: int64
+		lineageTag: a8410525-6d87-431d-9455-d6ba1b3c101e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Arrêts de travail avec date de debut renseignée (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Arrêts de travail avec date de fin renseignée (dossier)'
+		dataType: int64
+		lineageTag: 76343a49-0a2c-4807-ad79-4c0f583b9471
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Arrêts de travail avec date de fin renseignée (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Arrêts/Accidents/Maladies pro avec RAS (dossier)'
+		dataType: int64
+		lineageTag: c0ea0caf-59bf-4e03-b2fd-85a92b26d3f3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Arrêts/Accidents/Maladies pro avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb ATMP (dossier)'
+		dataType: int64
+		lineageTag: b9556c28-18ba-4068-93c0-a25ac761d06c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb ATMP (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Causes inaptitude (dossier)'
+		dataType: int64
+		lineageTag: 96a941d1-3beb-43cc-b976-c906684119d0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Causes inaptitude (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Courriers autres (dossier)'
+		dataType: int64
+		lineageTag: bde2b2a9-95fe-4f80-8407-b81ffc00d753
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Courriers autres (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Courriers de prescription (dossier)'
+		dataType: int64
+		lineageTag: 6ec26eed-4aa1-4ec3-97a3-51d41a5e88ed
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Courriers de prescription (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Courriers d''orientation (dossier)'
+		dataType: int64
+		lineageTag: d7fbfe1d-f925-4e09-bfd9-a569db7d5f6f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Courriers d'orientation (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Diplômes (dossier)'
+		dataType: int64
+		lineageTag: 6b1fc1d7-b519-4dca-9f90-44a3ded1c02f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Diplômes (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Diplômes avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: aea1b49b-bc7d-49a1-8734-35d15242a4d1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Diplômes avec thésaurus (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Echelles anormales (dossier)'
+		dataType: int64
+		lineageTag: c9cd8a06-580a-4fa0-8352-ff26a625339d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Echelles anormales (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Echelles bien-être au travail (dossier)'
+		dataType: int64
+		lineageTag: 5b265214-4427-45b1-88c8-42d2b31207fc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Echelles bien-être au travail (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Echelles santé perçue (dossier)'
+		dataType: int64
+		lineageTag: c6c2a8ac-5c0d-4a77-89ba-cfc73eb1040a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Echelles santé perçue (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Echelles satisfaction (dossier)'
+		dataType: int64
+		lineageTag: bd486aac-39b0-483c-854d-7f38777573e4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Echelles satisfaction (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Echelles stress (dossier)'
+		dataType: int64
+		lineageTag: 97638fcc-e363-4997-a76a-8547806a78a7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Echelles stress (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel (dossier)'
+		dataType: int64
+		lineageTag: 0a972275-ec2b-4aa1-bf81-c7131e01d623
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec description renseignée (dossier)'
+		dataType: int64
+		lineageTag: 6957b5c8-c0c5-4bfc-b85a-a892a5b73c73
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec description renseignée (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec équipement renseigné (dossier)'
+		dataType: int64
+		lineageTag: ee904f2c-cab9-433b-83f9-4add0afc43e8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec équipement renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec horaires renseignés (dossier)'
+		dataType: int64
+		lineageTag: 38e4b2ed-f699-4a11-9011-dc6c897328bd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec horaires renseignés (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec lieu renseigné (dossier)'
+		dataType: int64
+		lineageTag: 466f2348-5b9c-4137-9a71-a955d7d3e189
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec lieu renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec pcs renseigné (dossier)'
+		dataType: int64
+		lineageTag: a7e01a85-98ec-4005-9d4d-25dadf325590
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec pcs renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec poste renseigné (dossier)'
+		dataType: int64
+		lineageTag: 8e911317-2497-4a3f-bae5-1a71f57ca9de
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec poste renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec tâches renseignées (dossier)'
+		dataType: int64
+		lineageTag: 43727405-5a96-4191-825e-aa6c721adf29
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec tâches renseignées (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec trajet renseigné (dossier)'
+		dataType: int64
+		lineageTag: b8e5cef5-8962-4d16-99df-2e202f2e5b03
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec trajet renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emploi actuel avec type renseigné (dossier)'
+		dataType: int64
+		lineageTag: cfd25475-c7d1-4abf-9941-cd727eccf3cd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emploi actuel avec type renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs (dossier)'
+		dataType: int64
+		lineageTag: e8643c72-ae43-442f-81dd-77f6bdd2a372
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec description renseignée (dossier)'
+		dataType: int64
+		lineageTag: 68463cb0-6195-4405-807a-ea876797d3b5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec description renseignée (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec équipement renseigné (dossier)'
+		dataType: int64
+		lineageTag: 84e53357-3295-42a0-9f5b-c642885cb79f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec équipement renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec horaires renseignés (dossier)'
+		dataType: int64
+		lineageTag: 4f4e927d-7ec7-46c1-8567-150f9fa086b1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec horaires renseignés (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec lieu renseigné (dossier)'
+		dataType: int64
+		lineageTag: 383f8370-f182-422e-addc-d93e139ba317
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec lieu renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec pcs renseigné (dossier)'
+		dataType: int64
+		lineageTag: e7c17ad7-f477-4419-9f22-aa01f10a00e0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec pcs renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec poste renseigné (dossier)'
+		dataType: int64
+		lineageTag: 9212f183-93b6-41f8-87bb-4759d51286b3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec poste renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec tâches renseignées (dossier)'
+		dataType: int64
+		lineageTag: b6dd4f90-acf7-4601-a74c-86544067adf9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec tâches renseignées (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec trajet renseigné (dossier)'
+		dataType: int64
+		lineageTag: 8cb7d533-f4e4-4f41-bb0f-2ac643d579fc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec trajet renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Emplois antérieurs avec type renseigné (dossier)'
+		dataType: int64
+		lineageTag: 8e17f3ae-d3e9-4fa9-bcab-11dd0b49b33b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Emplois antérieurs avec type renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Etat global de vaccination renseigné (dossier)'
+		dataType: int64
+		lineageTag: 71a53771-606d-429c-b0e8-cb3388c4f15d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Etat global de vaccination renseigné (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Examens cliniques (dossier)'
+		dataType: int64
+		lineageTag: 15059e9b-93d7-4cbb-be65-0ecdadbf3bd8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Examens cliniques (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Examens cliniques avec RAS (dossier)'
+		dataType: int64
+		lineageTag: be329775-6743-437c-bbf6-a6bce7dbc149
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Examens cliniques avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Examens cliniques avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: e5a4bd5e-a508-4de6-95b8-64874c101fa5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Examens cliniques avec thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Examens paracliniques en visite (dossier)'
+		dataType: int64
+		lineageTag: 61d2e767-00d2-47be-b0d7-c532410161c4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Examens paracliniques en visite (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Examens paracliniques pré visite (dossier)'
+		dataType: int64
+		lineageTag: c500008c-51ec-4f28-8596-89031e754836
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Examens paracliniques pré visite (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Examens paracliniques prescrits (dossier)'
+		dataType: int64
+		lineageTag: 3808ff49-073a-4387-a7cc-e1b3fbdc8bbd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Examens paracliniques prescrits (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emploi actuel ancien logiciel (dossier)'
+		dataType: int64
+		lineageTag: 20a93244-5b12-49dd-88f2-b9386005e9f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emploi actuel ancien logiciel (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emploi actuel déclarées par employeur (dossier)'
+		dataType: int64
+		lineageTag: c1a2c76c-1919-4f7d-8e1e-4a69a9822074
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emploi actuel déclarées par employeur (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emploi actuel déclarées par le salarié (dossier)'
+		dataType: int64
+		lineageTag: 0cf02060-6cb4-47c0-931a-fdada7784be8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emploi actuel déclarées par le salarié (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emploi actuel saisies par le professionnel de santé (dossier)'
+		dataType: int64
+		lineageTag: e49cce69-24e5-4687-a699-5de74f5274d1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emploi actuel saisies par le professionnel de santé (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emplois antérieurs ancien logiciel (dossier)'
+		dataType: int64
+		lineageTag: 4f47f21f-2f42-4272-a4d6-16d6a1c320db
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emplois antérieurs ancien logiciel (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emplois antérieurs déclarées par employeur (dossier)'
+		dataType: int64
+		lineageTag: b4ad16d1-6219-4e37-8976-c43acc64ffcd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emplois antérieurs déclarées par employeur (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emplois antérieurs déclarées par le salarié (dossier)'
+		dataType: int64
+		lineageTag: 219a5542-cbcd-4af2-b6e1-3e603d178ae7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emplois antérieurs déclarées par le salarié (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Expositions emplois antérieurs saisies par le professionnel de santé (dossier)'
+		dataType: int64
+		lineageTag: e497b6a4-fcd4-4193-a09e-461a0b8efd30
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Expositions emplois antérieurs saisies par le professionnel de santé (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Gollac complété (dossier)'
+		dataType: int64
+		lineageTag: cab59a80-d4f9-45a0-bd15-cdf464aca6e0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Gollac complété (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Habitus (dossier)'
+		dataType: int64
+		lineageTag: 72935ed7-f5cb-4c64-a0d6-a7921470278b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Habitus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Incapacité permanente (dossier)'
+		dataType: int64
+		lineageTag: 098147a6-c77b-4c08-a3f0-6b15f0418714
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Incapacité permanente (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Injections vaccinales (dossier)'
+		dataType: int64
+		lineageTag: 9525baca-4889-4daf-ab93-d4a51cd2fdeb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Injections vaccinales (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Injections vaccinales avec numéro de lot renseigné (dossier)'
+		dataType: int64
+		lineageTag: 2ab52612-de6a-4a7e-b6bf-a234e2e8db02
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Injections vaccinales avec numéro de lot renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Invalidité (dossier)'
+		dataType: int64
+		lineageTag: 9a3f6bf9-22fc-4724-8083-0b738ddddec3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Invalidité (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Invalidité guerre (dossier)'
+		dataType: int64
+		lineageTag: 6d56120c-dc13-43c1-b660-e38dfddcd377
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Invalidité guerre (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Logements (dossier)'
+		dataType: int64
+		lineageTag: 36d6ed3a-2972-44a0-8295-7e72e04eb0cb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Logements (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Maladies professionnelles (dossier)'
+		dataType: int64
+		lineageTag: b7edacb6-bf34-4235-81a3-f9450d5fdbc6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Maladies professionnelles (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Memos (dossier)'
+		dataType: int64
+		lineageTag: 00ee4e64-526e-4c2a-98aa-6dd1bc1b5c1f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Memos (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Mesures (dossier)'
+		dataType: int64
+		lineageTag: 1d1e76c8-e5d4-4810-ba00-44c10de8c051
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Mesures (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Nom et prénom renseigné (dossier)'
+		dataType: int64
+		lineageTag: b58642b3-a1cf-43a6-a8d6-c2ed15198807
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Nom et prénom renseigné (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes (dossier)'
+		dataType: int64
+		lineageTag: 1a5cabfa-f326-4082-aa94-b8c39c61e456
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes anciens emplois (dossier)'
+		dataType: int64
+		lineageTag: c998a5d6-d53f-4326-a9eb-a3f83dec03dd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes anciens emplois (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: 0ab403b4-5aeb-447b-bc11-37f4295c805b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes avec thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes expositions anciens emplois (dossier)'
+		dataType: int64
+		lineageTag: 0b109314-243c-4373-bbad-d6f1ac0a538b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes expositions anciens emplois (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes hors examen clinique avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: a7c14348-b9e4-4e8e-992f-08675eace2f8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes hors examen clinique avec thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes liées aux expositions (dossier)'
+		dataType: int64
+		lineageTag: 27427411-e718-49b3-a555-2621b95629cb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes liées aux expositions (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes socio-professionnelles (dossier)'
+		dataType: int64
+		lineageTag: a57d2f8e-5e45-4846-bbef-2cc6d84afc51
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes socio-professionnelles (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Numéro de téléphone renseigné (dossier)'
+		dataType: int64
+		lineageTag: 3046cc90-5b05-45d3-85c8-261e909bebe4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Numéro de téléphone renseigné (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Pathologies (dossier)'
+		dataType: int64
+		lineageTag: 4b7bdb2e-1fee-4de8-8754-1e4016e51550
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Pathologies (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Pathologies avec date de debut renseignée (dossier)'
+		dataType: int64
+		lineageTag: 45c39cd0-fef3-42d3-9899-3845054540bd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Pathologies avec date de debut renseignée (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Pathologies avec date de fin renseignée (dossier)'
+		dataType: int64
+		lineageTag: 5b8f62e8-48fe-4d6f-bdcb-5dedfcd15cdb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Pathologies avec date de fin renseignée (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Pathologies avec RAS (dossier)'
+		dataType: int64
+		lineageTag: 490cc51a-81e1-44c5-b04d-7897966b1eab
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Pathologies avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Pathologies avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: 2465c3c3-5f07-4ee4-bf6a-e0a47a3fee08
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Pathologies avec thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Plaquettes de prévention (dossier)'
+		dataType: int64
+		lineageTag: 3d2cde36-43f2-4851-99ee-71ebd3412767
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Plaquettes de prévention (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Recommandations orales (dossier)'
+		dataType: int64
+		lineageTag: b958e03d-4cd0-4394-9981-d38bb0dc35d9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Recommandations orales (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Refus consentement partage données (dossier)'
+		dataType: int64
+		lineageTag: c5e1a8b4-836d-40bf-a5ef-0d235c57b310
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Refus consentement partage données (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Réponse consentement partage données (dossier)'
+		dataType: int64
+		lineageTag: b9d100f8-fb67-4016-aee8-4a98ccca2193
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Réponse consentement partage données (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Réponse suivi médecin traitant (dossier)'
+		dataType: int64
+		lineageTag: 195d409f-420c-4902-b03d-fff0f509cad3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Réponse suivi médecin traitant (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb RQTH (dossier)'
+		dataType: int64
+		lineageTag: 6294cf6a-0dcd-483f-aee3-692cefd299f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb RQTH (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Situations financières (dossier)'
+		dataType: int64
+		lineageTag: 826c31c7-bed2-41f4-9fdc-7c61c3c384d6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Situations financières (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Situations financières avec RAS (dossier)'
+		dataType: int64
+		lineageTag: 2059a8f4-6088-4cdb-a81c-d29ac870a1aa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Situations financières avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Situations personnelles et familiales (dossier)'
+		dataType: int64
+		lineageTag: 5fe57765-df06-4f6e-803a-8e82c5c0f8a0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Situations personnelles et familiales (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Situations personnelles et familiales avec thésaurus (dossier)'
+		dataType: int64
+		lineageTag: 5ba7bf7e-22d8-46db-9b31-58ede30d31e0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Situations personnelles et familiales avec thésaurus (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Statuts vaccinaux (dossier)'
+		dataType: int64
+		lineageTag: 37ea070c-6b11-4280-a3ae-ee6fdf0c13c0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Statuts vaccinaux (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Statuts vaccinaux avec état renseigné (dossier)'
+		dataType: int64
+		lineageTag: 4400e3c8-e14a-4ec3-b978-4d7022f7241c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Statuts vaccinaux avec état renseigné (dossier)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus (dossier)'
+		dataType: int64
+		lineageTag: f91e59ff-f31a-4173-ab4b-9adba8809f00
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus accidents de travail (dossier)'
+		dataType: int64
+		lineageTag: bc9cc812-dcf1-444d-bc58-ebca192403eb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus accidents de travail (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus antécédents familiaux (dossier)'
+		dataType: int64
+		lineageTag: dd059dd4-0563-496c-8544-b121c98f530c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus antécédents familiaux (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus antécédents personnels (dossier)'
+		dataType: int64
+		lineageTag: 0a6b0ec9-312a-433c-8afc-882efc74c63c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus antécédents personnels (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus arrêts de travail (dossier)'
+		dataType: int64
+		lineageTag: 91f3c9f6-609d-4fdf-aafe-1f5bff5eba10
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus arrêts de travail (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus cim10 (dossier)'
+		dataType: int64
+		lineageTag: d70b087b-b289-47b1-bd3b-9a22849a52db
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus cim10 (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus diplôme (dossier)'
+		dataType: int64
+		lineageTag: 386c5169-4ce3-4d5f-b158-627d7954aac1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus diplôme (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus examens cliniques (dossier)'
+		dataType: int64
+		lineageTag: 20e55bee-3fb9-417e-a120-9d3d6fb1ad0d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus examens cliniques (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus hors examens cliniques (dossier)'
+		dataType: int64
+		lineageTag: 04198848-e46f-4de0-812c-4fd19a1e6cc5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus hors examens cliniques (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus maladies professionnelles (dossier)'
+		dataType: int64
+		lineageTag: dfaba1f2-e082-4cf3-8da8-6de02b70a5bc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus maladies professionnelles (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus pathologies (dossier)'
+		dataType: int64
+		lineageTag: 220abc8c-137a-4189-a5f5-cd9dc17ab5d4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus pathologies (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus situation personnelle et familiale (dossier)'
+		dataType: int64
+		lineageTag: 872b9899-9b37-4a5e-9f92-aa4191d1e742
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus situation personnelle et familiale (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Thésaurus traitements (dossier)'
+		dataType: int64
+		lineageTag: a166530b-cfb2-4ec5-9308-929a1ba8d48f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Thésaurus traitements (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Traitements (dossier)'
+		dataType: int64
+		lineageTag: 1a56ea6b-d63c-41cc-aa58-4e316e4f0adf
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Traitements (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Traitements avec RAS (dossier)'
+		dataType: int64
+		lineageTag: 32fc0374-5a7c-4bfc-8f4a-751c980641f8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Traitements avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Vécus au travail (dossier)'
+		dataType: int64
+		lineageTag: d139d352-2418-4eac-b97d-3d361afb19cb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Vécus au travail (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Victime civile guerre (dossier)'
+		dataType: int64
+		lineageTag: 4d952918-293e-4e49-86ae-f6d13efa9d0b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Victime civile guerre (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Victime terrorisme (dossier)'
+		dataType: int64
+		lineageTag: c1cfed28-b581-43bf-a598-145431c62749
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Victime terrorisme (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites (dossier)'
+		dataType: int64
+		lineageTag: 00e7fe21-d13a-4f0e-a40c-423108abb7a3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec adaptation de poste (dossier)'
+		dataType: int64
+		lineageTag: 37aa6fdc-2795-4101-9369-62f403bcb1d0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec adaptation de poste (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec conclusion (dossier)'
+		dataType: int64
+		lineageTag: 86b52b60-bc10-427b-a85a-05aef19a0273
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec conclusion (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec échelle (dossier)'
+		dataType: int64
+		lineageTag: fbb61267-a637-4e37-b606-1f687494e04f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec échelle (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec examen clinique (dossier)'
+		dataType: int64
+		lineageTag: c788c158-f653-4941-b408-8cce5bd1d2d2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec examen clinique (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec facteur IRDP (dossier)'
+		dataType: int64
+		lineageTag: bf2b8970-4d6d-4bc4-86b1-3f53b0298890
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec facteur IRDP (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec facteur IRI (dossier)'
+		dataType: int64
+		lineageTag: 92156a5c-e6b3-4d39-8933-96e5836bf88f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec facteur IRI (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec inaptitude (dossier)'
+		dataType: int64
+		lineageTag: 6d0e128e-4624-4931-9228-e058e094eb32
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec inaptitude (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec inaptitude avec cause (dossier)'
+		dataType: int64
+		lineageTag: d652ebe5-40b5-4569-bf4c-77461f94bf6c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec inaptitude avec cause (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec IRDP (dossier)'
+		dataType: int64
+		lineageTag: 7ad464c8-616c-4c87-8657-d65d5a2e9a1a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec IRDP (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec IRDP à risque (dossier)'
+		dataType: int64
+		lineageTag: 362a9304-ef02-49cc-ab35-e397251cdac5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec IRDP à risque (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec IRI (dossier)'
+		dataType: int64
+		lineageTag: 8c902d23-363f-4231-8928-a5440b396f30
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec IRI (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec IRI à risque (dossier)'
+		dataType: int64
+		lineageTag: aa8929b8-da2c-4b17-9464-5bc28583a537
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec IRI à risque (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites avec situation administrative (dossier)'
+		dataType: int64
+		lineageTag: f6e030af-0df0-4ca3-85af-6694278bd2e2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites avec situation administrative (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Visites de suivi individuel (dossier)'
+		dataType: int64
+		lineageTag: b9e8693c-76ef-4497-95b0-e3e0bd7b906f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Visites de suivi individuel (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_enceinte
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 9b54f656-bbe7-4517-8ba3-a24f06dd7cb4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_enceinte
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_travailleur_de_nuit
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3d720dd4-fe87-4d88-b77a-ac20e25bb044
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_travailleur_de_nuit
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_travailleur_handicape
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0264830e-db0b-4e89-893d-ee2f8e79bd1b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_travailleur_handicape
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 050d99b9-f7ad-450c-a1dd-8c79b8bc5f50
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes de santé hors examen clinique (dossier)'
+		dataType: int64
+		isHidden
+		lineageTag: 087b867f-313b-4274-a5ee-1a73be1ce9b3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes de santé hors examen clinique (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes de santé hors examen clinique avec RAS (dossier)'
+		dataType: int64
+		isHidden
+		lineageTag: c0a930c1-a7c7-461a-aba1-884dbfc5480e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes de santé hors examen clinique avec RAS (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'nb Notes de santé hors examen clinique avec thésaurus (dossier)'
+		dataType: int64
+		isHidden
+		lineageTag: 7fac7247-a608-4058-91e7-82292fa7a6b5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb Notes de santé hors examen clinique avec thésaurus (dossier)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Saisie - dossier salarié' = entity
+		mode: directQuery
+		source
+			entityName: Saisie - dossier salarié
+			expressionSource: 'DirectQuery à AS – pst38'
+

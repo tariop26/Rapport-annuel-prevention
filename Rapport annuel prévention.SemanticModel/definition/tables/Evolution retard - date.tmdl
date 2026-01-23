@@ -1,0 +1,102 @@
+table 'Evolution retard - date'
+	lineageTag: 2297db21-65c0-494f-943c-ae75efb75d1f
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 86c42fc6-0b83-4f0f-ad1c-80ef123884cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3b41f1fc-84ea-4d2c-ac08-6a260054fa0e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f04bbbd3-f7f8-424f-a14b-ea75e826fa17
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jour
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4b527b6e-f596-4bee-929e-a8be65cdeae1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ab52faa1-e864-4732-bf7d-c8452a77b62c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e5599850-9e28-4a5a-bfd3-7a3a081995a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date - évolution retard'
+		lineageTag: a067df27-61fe-4b00-8993-2c003d3874ca
+		sourceLineageTag: Hiérarchie date - évolution retard
+
+		level Année
+			lineageTag: 4c175ce1-ad67-481d-9ef7-4d31b567ae92
+			column: Année
+
+		level Mois
+			lineageTag: 55036ff5-9028-4fdb-aac3-d5f9f2cec888
+			column: Mois
+
+		level Semaine
+			lineageTag: 9e9242d5-4f61-402e-b64b-59992b3eaa0e
+			column: Semaine
+
+		level Date
+			lineageTag: 0a62eaff-7be6-46e5-8d1a-0d7748f7dabe
+			column: Date
+
+	partition 'Evolution retard - date' = entity
+		mode: directQuery
+		source
+			entityName: Evolution retard - date
+			expressionSource: 'DirectQuery à AS – pst38'
+

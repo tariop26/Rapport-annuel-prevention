@@ -1,0 +1,97 @@
+table 'Salarié - informations nominatives'
+	lineageTag: 13ccdfdc-843b-4a93-b4d9-1b36d32ebbd8
+
+	column 'Année de naissance'
+		dataType: int64
+		lineageTag: 1ede8aef-c9d0-4122-917f-90a22dfe76b4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année de naissance
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie d''âge'
+		dataType: string
+		lineageTag: 6b9e6019-2e97-4728-a5b2-dbb94b264b19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie d'âge
+		sortByColumn: tri_categorie_age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de naissance'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 25747ffc-2a7d-4a2f-86e7-17e3a903de6b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de naissance
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		isNullable: false
+		lineageTag: 2617095c-00e8-445d-a3a5-2c67bf08bd60
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Matricule salarié'
+		dataType: string
+		lineageTag: 864449e4-2196-4dad-8310-c09e8d39a271
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Matricule salarié
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom de naissance'
+		dataType: string
+		lineageTag: daea6a94-f745-410f-82d4-e4f34de0baa9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom de naissance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nom
+		dataType: string
+		lineageTag: 0e44608a-bbfd-4b47-85f2-54433b040a76
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom
+
+		annotation SummarizationSetBy = Automatic
+
+	column Prénom
+		dataType: string
+		lineageTag: b23f80f7-ca94-4dd6-94f2-84045128875f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Prénom
+
+		annotation SummarizationSetBy = Automatic
+
+	column tri_categorie_age
+		dataType: int64
+		lineageTag: 8cfb6649-7e57-4685-9735-f5263b8498c0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: tri_categorie_age
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Salarié - informations nominatives' = entity
+		mode: directQuery
+		source
+			entityName: Salarié - informations nominatives
+			expressionSource: 'DirectQuery à AS – pst38'
+

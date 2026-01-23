@@ -1,0 +1,66 @@
+table 'CRM - activité - type'
+	lineageTag: 464355af-d6bf-45b7-88b8-ed98f83f45e4
+
+	column 'Catégorie activité'
+		dataType: string
+		lineageTag: 93c06178-6041-40f4-be23-728b4323fdc6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_type_activite_crm
+		dataType: int64
+		isNullable: false
+		lineageTag: c55b9170-babd-4696-b973-00670f7964c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_activite_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Résultat appel'
+		dataType: string
+		lineageTag: 5bdc1610-fc70-41b7-8881-60eba4ee94d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Résultat appel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Type activité'
+		dataType: string
+		lineageTag: be8b8dd0-afcc-4af1-b964-327d1bad6f99
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie type activité'
+		lineageTag: 35644c79-3f16-451f-809f-cc4337eaba24
+		sourceLineageTag: Hiérarchie type activité
+
+		level 'Catégorie activité'
+			lineageTag: 7f1f26e2-6f75-412d-87eb-0cb1253f3995
+			column: 'Catégorie activité'
+
+		level 'Type activité'
+			lineageTag: 448d54a5-39ee-4d60-b3c5-4267c4fca636
+			column: 'Type activité'
+
+	partition 'CRM - activité - type' = entity
+		mode: directQuery
+		source
+			entityName: CRM - activité - type
+			expressionSource: 'DirectQuery à AS – pst38'
+

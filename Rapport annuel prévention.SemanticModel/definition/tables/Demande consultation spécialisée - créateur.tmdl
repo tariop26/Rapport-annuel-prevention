@@ -1,0 +1,74 @@
+table 'Demande consultation spécialisée - créateur'
+	lineageTag: 8c450e69-cc4d-44be-a6cc-2dd149074153
+
+	column id_createur_demande_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: bbc00ade-567d-40e0-98ca-b86b1a404b54
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom créateur demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 18847ef4-acfc-4fb0-8298-1b1dee17fa5e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom créateur demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil créateur demande visite détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: cd6cadb2-5bb1-4e04-a460-6cdfb94648f2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil créateur demande visite détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil créateur demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 298837c8-463f-4e5d-b0f0-224a02cf91f3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil créateur demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie créateur demande visite'
+		lineageTag: 7c169754-3094-4fa8-945c-987e720e777a
+		sourceLineageTag: Hiérarchie créateur demande visite
+
+		level 'Profil créateur demande visite'
+			lineageTag: ef1b4dde-71c0-476c-9359-5a4d3591bf85
+			column: 'Profil créateur demande visite'
+
+		level 'Profil créateur demande visite détaillé'
+			lineageTag: c7e33bb0-4360-4161-8bb0-d98ae5b95580
+			column: 'Profil créateur demande visite détaillé'
+
+		level 'Nom créateur demande visite'
+			lineageTag: 9ff132da-e212-4da2-b045-a23371aeac8b
+			column: 'Nom créateur demande visite'
+
+	partition 'Demande consultation spécialisée - créateur' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - créateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

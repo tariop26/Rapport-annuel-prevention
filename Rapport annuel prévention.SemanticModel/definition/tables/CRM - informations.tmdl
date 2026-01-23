@@ -1,0 +1,39 @@
+table 'CRM - informations'
+	lineageTag: 430fe300-5ba5-4b5c-be33-b34741436d5b
+
+	column 'Contexte CRM'
+		dataType: string
+		lineageTag: f2cb37a6-e29a-4e5c-8a1a-9ef70b375446
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contexte CRM
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CRM padoa'
+		dataType: string
+		lineageTag: e7870935-f6ec-4f7f-a909-eef073023a69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CRM padoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_crm
+		dataType: int64
+		isNullable: false
+		lineageTag: 46e0f231-f0e4-4d72-8b13-7a4a397cf54c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	partition 'CRM - informations' = entity
+		mode: directQuery
+		source
+			entityName: CRM - informations
+			expressionSource: 'DirectQuery à AS – pst38'
+

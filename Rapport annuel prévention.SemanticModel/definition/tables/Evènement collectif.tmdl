@@ -1,0 +1,249 @@
+table 'Evènement collectif'
+	lineageTag: f2a0f460-f8a5-4e96-84e5-63cbf2fe2466
+
+	measure '# évènements collectifs' = EXTERNALMEASURE("# évènements collectifs", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: a391447d-9d04-4432-860a-36f3a8b94892
+		sourceLineageTag: DirectQuery à AS – pst38.# évènements collectifs
+		dataCategory: Uncategorized
+
+	measure '# salariés convoqués évènement collectif' = EXTERNALMEASURE("# salariés convoqués évènement collectif", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 88f584e1-5b25-4afc-a3e0-1e6a3c73c7ed
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés convoqués évènement collectif
+		dataCategory: Uncategorized
+
+	measure '# salariés venus évènement collectif' = EXTERNALMEASURE("# salariés venus évènement collectif", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: d813a676-d06f-4c5b-9edf-a9954aff90e8
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés venus évènement collectif
+		dataCategory: Uncategorized
+
+	measure '% absentéisme évènement collectif' = EXTERNALMEASURE("% absentéisme évènement collectif", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs
+		lineageTag: 141da14c-75b3-4b32-ac70-9c43cc8551f6
+		sourceLineageTag: DirectQuery à AS – pst38.% absentéisme évènement collectif
+		dataCategory: Uncategorized
+
+	measure 'Durée évènement collectif' = EXTERNALMEASURE("Durée évènement collectif", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 695bf6bf-3bfe-4b71-8d8f-c509e86cdb0a
+		sourceLineageTag: DirectQuery à AS – pst38.Durée évènement collectif
+		dataCategory: Uncategorized
+
+	column duree_evenement_collectif
+		dataType: double
+		formatString: #,##0.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 78ed3c22-e9ee-4e52-aca9-20d2ac54ab78
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_evenement_collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_evenement_collectif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bb908cf4-9b68-4a3b-915f-58ddc4f82759
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_evenement_collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ac11d686-82a0-458f-afb5-815582d98916
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_evenement_collectif_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e58fb077-5ad6-4a31-9eb6-47f20cbadd9d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_evenement_collectif_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3c399671-aba3-42c6-bc48-c42a1f868387
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d9cd526a-8d12-410c-be73-28a8f940e328
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 05133de2-f079-413b-8eb4-c19813fa9380
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 60a215e2-8914-461c-8443-bc24edf98b39
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5bcaaaf2-d6cf-4912-936f-5e196a27a91b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d13dae3c-7542-459f-8751-0ddd1ba961d6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_participation_evenement_collectif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cdad8e00-a2ee-4813-aa0b-338d378adfda
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_participation_evenement_collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_presence_evenement_collectif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 329150f0-3198-4b85-bfa2-e6e1eb07a912
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_presence_evenement_collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column presence_evenement_collectif
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 78d595fa-02ec-49f0-a743-1edcab2df5c0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: presence_evenement_collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f081c59f-2c32-453c-9253-16122cff03bd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_participant_evenement_amt_unique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e9d835b6-70f3-4b1e-92ac-cbc820bd64bb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_participant_evenement_amt_unique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_evenement_collectif_unique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 839cec70-28d7-4b7b-a650-2f516959f68d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_evenement_collectif_unique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_participant_evenement_collectif_unique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7da3ce9e-09cc-4edd-ad36-d52f8fa111e9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_participant_evenement_collectif_unique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Evènement collectif' = entity
+		mode: directQuery
+		source
+			entityName: Evènement collectif
+			expressionSource: 'DirectQuery à AS – pst38'
+

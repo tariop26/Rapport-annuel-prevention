@@ -1,0 +1,83 @@
+table 'Orientation - type orientation'
+	lineageTag: f25d5ded-acec-4a06-8896-8f82ec25d58b
+
+	column 'Catégorie orientation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: db5e8837-521d-4a35-9782-9a9b01f3ca57
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie orientation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_orientation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: e53720aa-09f5-4d78-9917-71c27828e4ba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_orientation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type orientation détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: efd3ed73-9a47-4b9c-95ee-e30afbeb4971
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type orientation détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type orientation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4468478d-b5a4-4897-8867-fcaca7cb9f9a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type orientation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modèle d''orientation'
+		dataType: string
+		lineageTag: 2b8159d4-3556-4fb7-935e-eddc76fcf956
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modèle d'orientation
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type orientation'
+		lineageTag: fb9f98f7-194e-40ef-96fe-cf8f9ae134dd
+		sourceLineageTag: Hiérarchie type orientation
+
+		level 'Catégorie orientation'
+			lineageTag: 245f330a-e75f-4901-a982-4b95954f9dd1
+			column: 'Catégorie orientation'
+
+		level 'Type orientation'
+			lineageTag: 90766d31-f069-4cd8-8bff-89467c8a48ef
+			column: 'Type orientation'
+
+		level 'Type orientation détaillé'
+			lineageTag: 71fd1dcc-a4b9-454a-a7e3-b550a3d0f333
+			column: 'Type orientation détaillé'
+
+	partition 'Orientation - type orientation' = entity
+		mode: directQuery
+		source
+			entityName: Orientation - type orientation
+			expressionSource: 'DirectQuery à AS – pst38'
+

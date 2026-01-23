@@ -1,0 +1,90 @@
+table 'Evènement collectif - date'
+	lineageTag: 091ce29c-fa35-4ff3-9b92-ff21d795e437
+
+	column 'Année évènement collectif'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 40870acf-b813-4321-b539-f976e3b4ddcf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année évènement collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date évènement collectif'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: d1684a7a-01a0-454b-b1ad-7480f0ef821e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date évènement collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_evenement_collectif
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61c22192-3183-44a2-8d77-454ba872ab67
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_evenement_collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois évènement collectif'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 381cae35-5ddd-4e39-bfed-11aff0a8f20e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois évènement collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine évènement collectif'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 82fc98ef-451f-47d1-a748-4f74a2f805aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine évènement collectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date évènement collectif'
+		lineageTag: 019560b6-ecad-473a-88ea-527044ee9db5
+		sourceLineageTag: Hiérarchie date évènement collectif
+
+		level 'Année évènement collectif'
+			lineageTag: b2e234fb-54ef-4db4-9c4a-847b0734da73
+			column: 'Année évènement collectif'
+
+		level 'Mois évènement collectif'
+			lineageTag: 598a47ac-4c5e-42ec-8984-45c6107bcf58
+			column: 'Mois évènement collectif'
+
+		level 'Semaine évènement collectif'
+			lineageTag: eff0d253-848e-4aeb-8c1c-08453f269c97
+			column: 'Semaine évènement collectif'
+
+		level 'Date évènement collectif'
+			lineageTag: fc8779f2-a0f0-4503-bb22-8bf476652ecc
+			column: 'Date évènement collectif'
+
+	partition 'Evènement collectif - date' = entity
+		mode: directQuery
+		source
+			entityName: Evènement collectif - date
+			expressionSource: 'DirectQuery à AS – pst38'
+

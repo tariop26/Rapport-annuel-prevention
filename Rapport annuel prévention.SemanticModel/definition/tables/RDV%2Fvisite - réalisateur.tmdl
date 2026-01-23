@@ -1,0 +1,116 @@
+table 'RDV/visite - réalisateur'
+	lineageTag: 09f55e74-794b-401a-929a-c9d6a23f0f39
+
+	column 'Email réalisateur'
+		dataType: string
+		lineageTag: b9b770a9-8d1c-4444-8078-634c76f06eb8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email réalisateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fonction réalisateur'
+		dataType: string
+		lineageTag: b61c7600-b84d-4c42-b11c-18bb38b5b442
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction réalisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		isNullable: false
+		lineageTag: 19e1db49-7316-44d4-af87-0fc30ac4cabc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur'
+		dataType: string
+		lineageTag: c2d14182-d29f-46b8-9fd3-b546ddcf40d9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom réalisateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil actif'
+		dataType: string
+		lineageTag: 312ff54f-7e66-4cdf-b8c1-c89d65391a55
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil actif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil réalisateur détaillé'
+		dataType: string
+		lineageTag: 4e7b3a28-ac14-46f4-a6f5-ddb57d45b36d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil réalisateur détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil réalisateur'
+		dataType: string
+		lineageTag: e4a81851-255f-4211-a3bf-cb5cf77d1bd3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil réalisateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Role réalisateur'
+		dataType: string
+		lineageTag: 5bf2f57c-027f-4844-be0e-82f133cfa00c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Role réalisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie profil réalisateur'
+		lineageTag: 952718ab-9d19-43b5-b6f0-bfea95e9e461
+		sourceLineageTag: Hiérarchie profil réalisateur
+
+		level 'Profil réalisateur'
+			lineageTag: 914f67fb-6834-4c58-8145-99e6a8b87d75
+			column: 'Profil réalisateur'
+
+		level 'Profil réalisateur détaillé'
+			lineageTag: 495314ee-006b-4d9b-96a1-3d89f6fa2248
+			column: 'Profil réalisateur détaillé'
+
+	hierarchy 'Hiérarchie réalisateur'
+		lineageTag: 0cd8dc8b-1e19-4760-944b-139e2bfd01f0
+		sourceLineageTag: Hiérarchie réalisateur
+
+		level 'Role réalisateur'
+			lineageTag: bd615d00-b43e-494f-99b2-a1fd3184c659
+			column: 'Role réalisateur'
+
+		level 'Nom réalisateur'
+			lineageTag: 833d609e-a032-48b8-a5a1-d31e6795cac6
+			column: 'Nom réalisateur'
+
+	partition 'RDV/visite - réalisateur' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - réalisateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

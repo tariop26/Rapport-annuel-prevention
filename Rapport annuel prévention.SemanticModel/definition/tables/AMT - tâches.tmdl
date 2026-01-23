@@ -1,0 +1,83 @@
+table 'AMT - tâches'
+	lineageTag: a4d02ac8-5b1c-4c01-ac17-6a0d65879724
+
+	column 'Catégorie tâche AMT'
+		dataType: string
+		lineageTag: eb841b6d-c655-4fe8-9297-3738b5ad6bc1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie tâche AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Code tâche AMT'
+		dataType: string
+		lineageTag: a84747b8-4904-4d3f-b17a-9775ed91a873
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code tâche AMT
+
+		annotation SummarizationSetBy = User
+
+	column id_groupe_tache_amt
+		dataType: int64
+		lineageTag: b7b7cec3-a16e-473f-a35f-c93d9c9de009
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_tache_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_libelle_tache_amt
+		dataType: int64
+		lineageTag: 00c56022-9221-47f8-a29c-31bf822bff3d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_libelle_tache_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Statut tâche AMT'
+		dataType: string
+		lineageTag: 3f34a6f7-4a4a-4f5d-b86a-2267dc1679e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut tâche AMT
+
+		annotation SummarizationSetBy = User
+
+	column 'Tâche AMT'
+		dataType: string
+		lineageTag: dc2e1ced-8282-4277-b468-964bb50df8c6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Tâche AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie tâche AMT'
+		lineageTag: a1c81654-b53f-4c30-97fa-979a7fac3a00
+		sourceLineageTag: Hiérarchie tâche AMT
+
+		level 'Catégorie tâche AMT'
+			lineageTag: 270bbf63-9294-4a33-ac04-a2277e2134e9
+			column: 'Catégorie tâche AMT'
+
+		level 'Tâche AMT'
+			lineageTag: b0ba0743-2dd7-4181-9de4-1ddb34edeb95
+			column: 'Tâche AMT'
+
+	partition 'AMT - tâches' = entity
+		mode: directQuery
+		source
+			entityName: AMT - tâches
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,138 @@
+table Utilisateur
+	lineageTag: d89305d6-d5a1-4f02-9b50-d87e0aa9fdd5
+
+	column date_debut_acces_medical
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8ec77fc7-837c-4212-94d3-53c8100432c6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_debut_acces_medical
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_fin_acces_medical
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: d2e21c5a-085a-4cf6-ab70-1db37e7961f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_fin_acces_medical
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Email utilisateur'
+		dataType: string
+		lineageTag: 877cc3d1-f03d-427a-99c5-3869d92a72ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email utilisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fonction utilisateur'
+		dataType: string
+		lineageTag: e2dcf0e1-7a29-45ad-8a67-b1d1e558853f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction utilisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1f89f098-2cf6-472e-9b52-4e89a6dae6da
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom utilisateur'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8f31cb60-c845-4515-bac1-b2d99c4c78c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom utilisateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil actif'
+		dataType: string
+		lineageTag: 16389592-54db-46e1-938f-f16ebbdd4144
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil actif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil utilisateur detaillé'
+		dataType: string
+		lineageTag: d389166f-9e1d-4819-b57a-965f81c3f61a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil utilisateur detaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil utilisateur'
+		dataType: string
+		lineageTag: ccbbd247-212a-4067-825d-4b6bfd3c284d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil utilisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Role utilisateur'
+		dataType: string
+		lineageTag: d945ceb9-6429-4507-b060-e9e418bca3af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Role utilisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie profil utilisateur'
+		lineageTag: ab85111e-a966-4356-af9a-7e5215503a72
+		sourceLineageTag: Hiérarchie profil utilisateur
+
+		level 'Profil utilisateur'
+			lineageTag: 309e7b5b-59ae-40e5-9a0a-8a21bb19e332
+			column: 'Profil utilisateur'
+
+		level 'Profil utilisateur detaillé'
+			lineageTag: 827efb81-0a9e-4a2d-8e46-f8f95eac6573
+			column: 'Profil utilisateur detaillé'
+
+	hierarchy 'Hiérarchie utilisateur'
+		lineageTag: 86bd5e4d-7eaa-4012-afd7-c785ca277475
+		sourceLineageTag: Hiérarchie utilisateur
+
+		level 'Role utilisateur'
+			lineageTag: 39db72b2-a1a4-40fd-8138-909c6b60354c
+			column: 'Role utilisateur'
+
+		level 'Nom utilisateur'
+			lineageTag: 9c8a59c7-c55b-4be9-b5dd-45b820265c11
+			column: 'Nom utilisateur'
+
+	partition Utilisateur = entity
+		mode: directQuery
+		source
+			entityName: Utilisateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

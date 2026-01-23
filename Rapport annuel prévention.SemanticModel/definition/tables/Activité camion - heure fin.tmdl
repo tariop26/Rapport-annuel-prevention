@@ -1,0 +1,61 @@
+table 'Activité camion - heure fin'
+	isHidden
+	lineageTag: 96ecc088-1190-4f74-b137-5a69aee4c674
+
+	column 'Heure exacte fin'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0a8ed304-eb4d-44de-a20b-881bc9aea5de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte fin
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Heure fin'
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2d5ad5e1-bbbe-44ee-8599-1bc8c484fb19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure fin
+
+		annotation SummarizationSetBy = User
+
+	column id_heure_fin_vacation
+		dataType: int64
+		isHidden
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1f5f6dd5-bd0a-429d-9db6-7484030ccf85
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_heure_fin_vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure fin'
+		isHidden
+		lineageTag: 6239c6b0-6283-43fa-a199-547099faee81
+		sourceLineageTag: Hiérarchie heure fin
+
+		level 'Heure fin'
+			lineageTag: ad315895-9ddd-479a-93ca-a02743e658d6
+			column: 'Heure fin'
+
+		level 'Heure exacte fin'
+			lineageTag: 5f600ad6-fc3b-446b-bc5e-02a671bdf23d
+			column: 'Heure exacte fin'
+
+		changedProperty = IsHidden
+
+	partition 'Activité camion - heure fin' = entity
+		mode: directQuery
+		source
+			entityName: Activité camion - heure fin
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

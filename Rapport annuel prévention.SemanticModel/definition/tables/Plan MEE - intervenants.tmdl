@@ -1,0 +1,117 @@
+table 'Plan MEE - intervenants'
+	lineageTag: eb36c3e4-3d41-4bcf-9a2b-0f8c2c4b4ff5
+
+	column 'Fonction intervenant plan MEE'
+		dataType: string
+		lineageTag: ccde6268-19e9-40d2-a3f4-0b4997b73597
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction intervenant plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_intervenant_plan_mee
+		dataType: int64
+		lineageTag: e4e05cd6-8cdf-446b-805b-13fe9f36f813
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_intervenant_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom intervenant plan MEE'
+		dataType: string
+		lineageTag: 56494c8f-f98d-4350-952f-739a5c91eba2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom intervenant plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil intervenant MEE détaillé'
+		dataType: string
+		lineageTag: a49dcdeb-8438-4171-b726-7cf38f54490c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil intervenant MEE détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil intervenant MEE'
+		dataType: string
+		lineageTag: dfcd253a-4efa-4f63-a76a-6d5d2798343a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil intervenant MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle intervenant plan MEE'
+		dataType: string
+		lineageTag: e8654803-75bf-4ebc-a30b-36e55e298f2c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle intervenant plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_intervenant_mee
+		dataType: string
+		isHidden
+		lineageTag: 0d876271-7fb5-4d53-84d3-74837425e998
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: email_intervenant_mee
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_intervenant_mee
+		dataType: int64
+		isHidden
+		lineageTag: 3f6151c5-5486-4629-88bc-44e61133538d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_intervenant_mee
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie intervenant plan MEE'
+		lineageTag: e887fa7a-bd15-43f4-8ca2-d2aeae240509
+		sourceLineageTag: Hiérarchie intervenant plan MEE
+
+		level 'Rôle intervenant plan MEE'
+			lineageTag: 80a6969c-a458-45b5-b13f-1bb7138389f4
+			column: 'Rôle intervenant plan MEE'
+
+		level 'Nom intervenant plan MEE'
+			lineageTag: feea37a5-84b8-4b68-b529-3fb33091adbe
+			column: 'Nom intervenant plan MEE'
+
+	hierarchy 'Hiérarchie profil intervenant MEE'
+		lineageTag: 841d6979-c828-4991-a2f2-c71da313b009
+		sourceLineageTag: Hiérarchie profil intervenant MEE
+
+		level 'Profil intervenant MEE'
+			lineageTag: 48513f25-bd4b-4410-9ded-b6892be3bfde
+			column: 'Profil intervenant MEE'
+
+		level 'Profil intervenant MEE détaillé'
+			lineageTag: bcf40cd1-c72c-4b11-9b5f-4bb8b5ed213e
+			column: 'Profil intervenant MEE détaillé'
+
+	partition 'Plan MEE - intervenants' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - intervenants
+			expressionSource: 'DirectQuery à AS – pst38'
+

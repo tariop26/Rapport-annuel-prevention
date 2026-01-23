@@ -1,0 +1,91 @@
+table 'Documents émis - date début validité'
+	lineageTag: 4af72983-8061-41bf-86a6-267a5d3c7428
+
+	column 'Année début validité'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3eeee96e-0e66-4455-9310-23d99971d544
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année début validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date début validité'
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 070cd5ad-264a-41c4-9430-c1dd0ad9bf87
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date début validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 370d7018-eb0a-4438-b62e-73543ab52a80
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois début validité'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 94d616e6-bde2-49b4-8579-c560cdd375ad
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois début validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine début validité'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2a276e0d-9623-4cfc-9529-acdda00f6fa9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine début validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date début validité'
+		lineageTag: 3b444d75-8636-4a7e-be86-df49fffbc134
+		sourceLineageTag: Hiérarchie date début validité
+
+		level 'Année début validité'
+			lineageTag: 1b1c157b-c834-48a8-a7b9-8e2d0bd18259
+			column: 'Année début validité'
+
+		level 'Mois début validité'
+			lineageTag: 37f6921d-f2f5-4eba-83b2-24dfe348b5fa
+			column: 'Mois début validité'
+
+		level 'Semaine début validité'
+			lineageTag: 926077b7-4082-4cdc-8a74-067c17272a27
+			column: 'Semaine début validité'
+
+		level 'Date début validité'
+			lineageTag: 563a5c7f-52c1-41f5-9d3e-7da3f9b0573d
+			column: 'Date début validité'
+
+	partition 'Documents émis - date début validité' = entity
+		mode: directQuery
+		source
+			entityName: Documents émis - date début validité
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,35 @@
+table 'Choisir Période'
+	lineageTag: 8ad3767a-1b67-4d45-aa39-538554819199
+
+	column ID
+		dataType: int64
+		isKey
+		formatString: 0
+		lineageTag: 1e4add96-59f8-418e-99a6-edb23d3976ba
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Libellé
+		dataType: string
+		lineageTag: bf7c1d83-7e38-4570-b848-5a3892483e72
+		isDefaultLabel
+		summarizeBy: none
+		sourceColumn: Libellé
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Choisir Période' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlTSUTI21Dc0UorViVYyAvIMjRRy8zOLlWJjAQ==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [ID = _t, Libellé = _t]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"ID", Int64.Type}, {"Libellé", type text}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

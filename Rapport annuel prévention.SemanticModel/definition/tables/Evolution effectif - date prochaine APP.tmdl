@@ -1,0 +1,91 @@
+table 'Evolution effectif - date prochaine APP'
+	lineageTag: e401a1d8-3e48-4083-ac50-98e2184349cb
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0a501bbb-f9ac-4447-a54a-925211c8bba6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: b6c88bb2-8dd4-4c15-b8b5-57f29080161f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c31c8147-be47-433d-9a00-c7a8ffb1083a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ee9201ae-dacd-4566-997c-8479d2183935
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a38e5c56-1b0b-4ba2-bb99-1c9cc7295abc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date - prochaine APP'
+		lineageTag: da9328da-b0aa-4e89-8a6d-067fec559cfc
+		sourceLineageTag: Hiérarchie date - prochaine APP
+
+		level 'Année prochaine APP'
+			lineageTag: b4826de5-8d06-4361-8c89-c0487e7e1f75
+			column: Année
+
+		level 'Mois prochaine APP'
+			lineageTag: 47a56f04-e0f2-4a72-9539-b243f0081883
+			column: Mois
+
+		level 'Date prochaine APP'
+			lineageTag: 15896b1d-bafe-4d5c-aaa8-aa42fc04829f
+			column: Date
+
+		changedProperty = IsHidden
+
+	partition 'Evolution effectif - date prochaine APP' = entity
+		mode: directQuery
+		source
+			entityName: Evolution effectif - date prochaine APP
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

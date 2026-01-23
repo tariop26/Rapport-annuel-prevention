@@ -1,0 +1,1582 @@
+table Adhérents
+	lineageTag: e4dfde9e-6174-4a00-acb4-a7f84ab955f0
+
+	measure '# AMT terminées depuis 5 ans' = EXTERNALMEASURE("# AMT terminées depuis 5 ans", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Score card\Comptages
+		lineageTag: 74d2a16d-3d1d-481c-bbe3-debdd058daf7
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT terminées depuis 5 ans
+		dataCategory: Uncategorized
+
+	measure '# salariés avec adaptation de poste depuis 5 ans' = EXTERNALMEASURE("# salariés avec adaptation de poste depuis 5 ans", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Score card\Comptages
+		lineageTag: 3579454f-f5c3-4939-b33e-835cd971cc1a
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés avec adaptation de poste depuis 5 ans
+		dataCategory: Uncategorized
+
+	measure '# salariés avec avis d''inaptitude depuis 5 ans' = EXTERNALMEASURE("# salariés avec avis d'inaptitude depuis 5 ans", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Score card\Comptages
+		lineageTag: 3a687764-3d31-45bf-bfeb-5d94103ced87
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés avec avis d'inaptitude depuis 5 ans
+		dataCategory: Uncategorized
+
+	measure '# situations de travail actives' = EXTERNALMEASURE("# situations de travail actives", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Score card\Comptages
+		lineageTag: 059c6032-acc1-4f36-a54f-ec2054dda5c2
+		sourceLineageTag: DirectQuery à AS – pst38.# situations de travail actives
+		dataCategory: Uncategorized
+
+	measure '# visite reprise par salarié' = EXTERNALMEASURE("# visite reprise par salarié", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\09 - Score card\Comptages
+		lineageTag: ac901cf5-caba-4480-a249-2bdcad5527ad
+		sourceLineageTag: DirectQuery à AS – pst38.# visite reprise par salarié
+		dataCategory: Uncategorized
+
+	measure '% adhérents AMT (hors FE) moins de 4 ans' = EXTERNALMEASURE("% adhérents AMT (hors FE) moins de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT (hors FE)
+		lineageTag: 0cdc4024-60d0-43a4-9658-257de1c6882d
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents AMT (hors FE) moins de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% adhérents AMT (hors FE) plus de 4 ans' = EXTERNALMEASURE("% adhérents AMT (hors FE) plus de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT (hors FE)
+		lineageTag: 03c0c0bc-7411-4ed6-ba8f-50c723c70a83
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents AMT (hors FE) plus de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% adhérents AMT de prévention primaire de moins de 4 ans' = EXTERNALMEASURE("% adhérents AMT de prévention primaire de moins de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 0c29d0dd-7a7a-4ae8-9274-cb6d822e6728
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents AMT de prévention primaire de moins de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% adhérents AMT de prévention primaire de plus de 4 ans' = EXTERNALMEASURE("% adhérents AMT de prévention primaire de plus de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: c1efd466-4cf5-480e-8776-b96964fcb19a
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents AMT de prévention primaire de plus de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% adhérents aucune AMT (hors FE) terminée (renseignée)' = EXTERNALMEASURE("% adhérents aucune AMT (hors FE) terminée (renseignée)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT (hors FE)
+		lineageTag: eacfa98f-a244-43de-9afb-2751f20f5641
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents aucune AMT (hors FE) terminée (renseignée)
+		dataCategory: Uncategorized
+
+	measure '% adhérents aucune AMT de prévention primaire terminée (renseignée)' = EXTERNALMEASURE("% adhérents aucune AMT de prévention primaire terminée (renseignée)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: fd28d1fa-7dcd-4173-b4de-df1e90243a4d
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents aucune AMT de prévention primaire terminée (renseignée)
+		dataCategory: Uncategorized
+
+	measure '% adhérents aucune FE renseignée' = EXTERNALMEASURE("% adhérents aucune FE renseignée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: b580f366-58cb-4203-a049-c67be1834cc4
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents aucune FE renseignée
+		dataCategory: Uncategorized
+
+	measure '% adhérents FE moins de 4 ans' = EXTERNALMEASURE("% adhérents FE moins de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: cb70afb9-b09e-43fe-b6c0-0319270c062e
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents FE moins de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% adhérents FE plus de 4 ans' = EXTERNALMEASURE("% adhérents FE plus de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 345a6ab6-5613-44d5-b68c-1bdf405a64b1
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents FE plus de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% contrats précaires' = EXTERNALMEASURE("% contrats précaires", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: d98001ac-00e0-4403-aee2-19d03411fe91
+		sourceLineageTag: DirectQuery à AS – pst38.% contrats précaires
+		dataCategory: Uncategorized
+
+	measure '% CSE déclaré' = EXTERNALMEASURE("% CSE déclaré", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: 21aa3176-c4f6-4fb5-a776-9e786d7b88f5
+		sourceLineageTag: DirectQuery à AS – pst38.% CSE déclaré
+		dataCategory: Uncategorized
+
+	measure '% DU déclaré' = EXTERNALMEASURE("% DU déclaré", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: df7eed60-b2e9-496c-a1a3-018ca57621ab
+		sourceLineageTag: DirectQuery à AS – pst38.% DU déclaré
+		dataCategory: Uncategorized
+
+	measure '% retard visite' = EXTERNALMEASURE("% retard visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: f0aa0a9f-7374-4873-ade1-c073f77b5894
+		sourceLineageTag: DirectQuery à AS – pst38.% retard visite
+		dataCategory: Uncategorized
+
+	measure '% salarié avec situation de travail' = EXTERNALMEASURE("% salarié avec situation de travail", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: 5d48168d-db6a-497f-9370-c6f5440e8230
+		sourceLineageTag: DirectQuery à AS – pst38.% salarié avec situation de travail
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec AMT (hors FE) moins de 4 ans' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec AMT (hors FE) moins de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT (hors FE)
+		lineageTag: f9d19b69-25b9-4683-a1cc-a7f1f1fbc3d7
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec AMT (hors FE) moins de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec AMT (hors FE) plus de 4 ans' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec AMT (hors FE) plus de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT (hors FE)
+		lineageTag: ffee0749-b9b1-4b68-8343-31e9cf9c51c6
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec AMT (hors FE) plus de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec AMT de prévention primaire de moins de 4 ans' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec AMT de prévention primaire de moins de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: b398abd7-52c0-4790-bcd2-4c5697f85d6d
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec AMT de prévention primaire de moins de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec AMT de prévention primaire de plus de 4 ans' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec AMT de prévention primaire de plus de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: cc7582f4-1153-4d7e-b299-ee9f72d58d3a
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec AMT de prévention primaire de plus de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec FE moins de 4 ans' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec FE moins de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 0a66dc47-5c7f-4edd-b627-5045b8bdc30f
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec FE moins de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec FE plus de 4 ans' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec FE plus de 4 ans", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: ed03233e-9b7e-4fe2-b3fd-55beba34b1b6
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec FE plus de 4 ans
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) sans AMT (hors FE) terminée' = EXTERNALMEASURE("% salariés suivis (hors intérim) sans AMT (hors FE) terminée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT (hors FE)
+		lineageTag: 573fd35b-cd60-4a5c-8330-b6f00889db2b
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) sans AMT (hors FE) terminée
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) sans AMT de prévention primaire terminée' = EXTERNALMEASURE("% salariés suivis (hors intérim) sans AMT de prévention primaire terminée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 0e5b63d7-197e-4fc7-87a5-b032abbfb289
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) sans AMT de prévention primaire terminée
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) sans FE renseignée' = EXTERNALMEASURE("% salariés suivis (hors intérim) sans FE renseignée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: cc7a0665-5a57-4589-86b7-4985c710ebbe
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) sans FE renseignée
+		dataCategory: Uncategorized
+
+	measure '% SIR/SIA' = EXTERNALMEASURE("% SIR/SIA", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: 437f3e02-5e35-42c9-90c3-55aa95a069e3
+		sourceLineageTag: DirectQuery à AS – pst38.% SIR/SIA
+		dataCategory: Uncategorized
+
+	measure 'Âge moyen salarié' = EXTERNALMEASURE("Âge moyen salarié", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Score card\Anciennetés
+		lineageTag: feb65537-ab1f-4cb2-8b1e-9f58f98016a8
+		sourceLineageTag: DirectQuery à AS – pst38.Âge moyen salarié
+		dataCategory: Uncategorized
+
+	measure 'Ancienneté dernière AMT (hors FE)' = EXTERNALMEASURE("Ancienneté dernière AMT (hors FE)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\09 - Score card\Anciennetés
+		lineageTag: e492301a-ecd0-4fd6-8d85-64b0a5cb8ad4
+		sourceLineageTag: DirectQuery à AS – pst38.Ancienneté dernière AMT (hors FE)
+		dataCategory: Uncategorized
+
+	measure 'Ancienneté dernière AMT' = EXTERNALMEASURE("Ancienneté dernière AMT", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\09 - Score card\Anciennetés
+		lineageTag: 56510a4c-22b7-4d85-a3e4-275764bfed87
+		sourceLineageTag: DirectQuery à AS – pst38.Ancienneté dernière AMT
+		dataCategory: Uncategorized
+
+	measure 'Ancienneté FE' = EXTERNALMEASURE("Ancienneté FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\09 - Score card\Anciennetés
+		lineageTag: 41484e8b-9791-4b75-866a-e16d8d1ab134
+		sourceLineageTag: DirectQuery à AS – pst38.Ancienneté FE
+		dataCategory: Uncategorized
+
+	measure 'Ancienneté moyenne salarié' = EXTERNALMEASURE("Ancienneté moyenne salarié", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\09 - Score card\Anciennetés
+		lineageTag: 202e2c50-1974-434f-885e-6df678cc474b
+		sourceLineageTag: DirectQuery à AS – pst38.Ancienneté moyenne salarié
+		dataCategory: Uncategorized
+
+	measure 'Dernier effectif actif' = EXTERNALMEASURE("Dernier effectif actif", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs\08 - Dernier effectif actif
+		lineageTag: ca49e3c8-6d18-4a98-85cf-c080ede0678e
+		sourceLineageTag: DirectQuery à AS – pst38.Dernier effectif actif
+		dataCategory: Uncategorized
+
+	measure 'Effectif de référence actuel' = EXTERNALMEASURE("Effectif de référence actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Effectif déclaré actuel
+		lineageTag: 32660416-52f8-4b56-bf33-c05c14d67851
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif de référence actuel
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré actuel' = EXTERNALMEASURE("Effectif déclaré actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Effectif déclaré actuel
+		lineageTag: 8ca728f4-71ba-41d3-8dde-79e8fd989e79
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré actuel
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré facturable exercice comptable actuel' = EXTERNALMEASURE("Effectif déclaré facturable exercice comptable actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs\06 - Effectif déclaré exercice comptable actuel
+		lineageTag: 479d09c2-af16-4a29-a7cf-3e358a4a03c5
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré facturable exercice comptable actuel
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré facturable exercice comptable précédent' = EXTERNALMEASURE("Effectif déclaré facturable exercice comptable précédent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs\07 - Effectif déclaré exercice comptable précédent
+		lineageTag: b2e041a0-7ef6-4616-a694-5996a5fd1e2e
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré facturable exercice comptable précédent
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré précédent' = EXTERNALMEASURE("Effectif déclaré précédent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Effectif déclaré précédent
+		lineageTag: 18d77b5e-025e-4832-9514-5756377dd972
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré précédent
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré total exercice comptable actuel' = EXTERNALMEASURE("Effectif déclaré total exercice comptable actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs\06 - Effectif déclaré exercice comptable actuel
+		lineageTag: 49485f17-5f87-457c-b7ab-f0301cfbd1c9
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré total exercice comptable actuel
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré total exercice comptable précédent' = EXTERNALMEASURE("Effectif déclaré total exercice comptable précédent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs\07 - Effectif déclaré exercice comptable précédent
+		lineageTag: 0e055158-74a0-4c0e-9680-5e73772b4c15
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré total exercice comptable précédent
+		dataCategory: Uncategorized
+
+	measure 'Effectif estimé actuel' = EXTERNALMEASURE("Effectif estimé actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Effectif déclaré actuel
+		lineageTag: 4870b541-7313-48dc-9433-87c8d36bb064
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif estimé actuel
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi - hors intérim' = EXTERNALMEASURE("Effectif suivi - hors intérim", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: 90f335bf-7387-410b-94df-1a2bc045c8c0
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi - intérim uniquement' = EXTERNALMEASURE("Effectif suivi - intérim uniquement", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: e08e04f8-ab2b-419b-81c1-8c58c772ae23
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SI - hors intérim' = EXTERNALMEASURE("Effectif suivi SI - hors intérim", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: 8aba3627-5dd6-434a-84ff-ae3380f0b25e
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SI - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SI - intérim uniquement' = EXTERNALMEASURE("Effectif suivi SI - intérim uniquement", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: 46b37636-1474-4540-abbe-4d144ff104ef
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SI - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SI total' = EXTERNALMEASURE("Effectif suivi SI total", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: 7969769e-fd07-468b-a1a1-db4a0e43f6a4
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SI total
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SIA - hors intérim' = EXTERNALMEASURE("Effectif suivi SIA - hors intérim", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: 0a63c4ee-d053-41f1-814d-d2ff476fe4dc
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SIA - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SIA - intérim uniquement' = EXTERNALMEASURE("Effectif suivi SIA - intérim uniquement", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: d7fb3dc1-1597-4a41-b8dd-f9ce4c7f8a15
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SIA - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SIA total' = EXTERNALMEASURE("Effectif suivi SIA total", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: b549a9e0-2908-4584-84a2-6fc65f9a784c
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SIA total
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SIR - hors intérim' = EXTERNALMEASURE("Effectif suivi SIR - hors intérim", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: fe0b5cf5-2ac3-4043-a2f3-cdb99e02c82d
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SIR - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SIR - intérim uniquement' = EXTERNALMEASURE("Effectif suivi SIR - intérim uniquement", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: c85749e9-f844-4d7f-bdb8-f2cb203f38fb
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SIR - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi SIR total' = EXTERNALMEASURE("Effectif suivi SIR total", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: dd5232ec-09cb-4943-a7a5-2cb244e1bba1
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi SIR total
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi total' = EXTERNALMEASURE("Effectif suivi total", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: 694f4ba0-00d7-4391-a76f-6f727c42dfd1
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi total
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents actifs ou suspendus' = EXTERNALMEASURE("Nombre d'adhérents actifs ou suspendus", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Nombre d'adhérents
+		lineageTag: c464dd62-3824-4a8f-b79a-3c5759145a29
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents actifs ou suspendus
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents actuel' = EXTERNALMEASURE("Nombre d'adhérents actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Nombre d'adhérents
+		lineageTag: 195523ea-060b-4ebc-8003-c2f9b34e0194
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents actuel
+		dataCategory: Uncategorized
+
+	measure 'Nombre de collections actuel' = EXTERNALMEASURE("Nombre de collections actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Nombre d'adhérents
+		lineageTag: 993fcecd-25f6-4a17-8655-fba9282c5405
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de collections actuel
+		dataCategory: Uncategorized
+
+	measure 'Nombre de SdT actives' = EXTERNALMEASURE("Nombre de SdT actives", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Nombre de SdT
+		lineageTag: fa34543a-da67-431d-8af2-71464c8a6b9e
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de SdT actives
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''entités juridiques actuel' = EXTERNALMEASURE("Nombre d'entités juridiques actuel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Nombre d'adhérents
+		lineageTag: aeec9e8e-53d0-4864-bcf7-4a87dbe36407
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'entités juridiques actuel
+		dataCategory: Uncategorized
+
+	measure 'Taux SI - hors intérim' = EXTERNALMEASURE("Taux SI - hors intérim", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: 7392b709-398a-4bde-afac-46d69952f675
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SI - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Taux SI - intérim uniquement' = EXTERNALMEASURE("Taux SI - intérim uniquement", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: 20f2e939-dcd5-47cb-9faf-20ba4516e5ee
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SI - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Taux SI total' = EXTERNALMEASURE("Taux SI total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: 16004e7d-523c-479a-b30c-e4c1ff064dc4
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SI total
+		dataCategory: Uncategorized
+
+	measure 'Taux SIA - hors intérim' = EXTERNALMEASURE("Taux SIA - hors intérim", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: 9c61ed98-f274-41b4-b934-3512d2a243c8
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SIA - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Taux SIA - intérim uniquement' = EXTERNALMEASURE("Taux SIA - intérim uniquement", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: 92ec5539-070e-4bb3-8d31-1940ae2de539
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SIA - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Taux SIA total' = EXTERNALMEASURE("Taux SIA total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: 061b4ace-37c7-45ec-bdf2-d50c51aaf343
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SIA total
+		dataCategory: Uncategorized
+
+	measure 'Taux SIR - hors intérim' = EXTERNALMEASURE("Taux SIR - hors intérim", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.2. Hors intérimaires
+		lineageTag: 006755c1-93da-4d96-bdd7-a1953cf86e2a
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SIR - hors intérim
+		dataCategory: Uncategorized
+
+	measure 'Taux SIR - intérim uniquement' = EXTERNALMEASURE("Taux SIR - intérim uniquement", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.3. Intérimaires uniquement
+		lineageTag: dc86d110-20d1-4b8d-8f84-00cbea1de4a6
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SIR - intérim uniquement
+		dataCategory: Uncategorized
+
+	measure 'Taux SIR total' = EXTERNALMEASURE("Taux SIR total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\02 - Effectif suivi\2.1. Total
+		lineageTag: 78e22431-8851-4814-a68d-34556aa50be3
+		sourceLineageTag: DirectQuery à AS – pst38.Taux SIR total
+		dataCategory: Uncategorized
+
+	measure 'Turn over' = EXTERNALMEASURE("Turn over", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: 1326a46b-173f-46b8-abc1-34c4737c0b43
+		sourceLineageTag: DirectQuery à AS – pst38.Turn over
+		dataCategory: Uncategorized
+
+	measure 'Valeur moyenne par entreprise de la satisfaction salarié' = EXTERNALMEASURE("Valeur moyenne par entreprise de la satisfaction salarié", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\09 - Score card
+		lineageTag: 597a1f7b-99f7-4fff-b9e2-7f7c0afc7c4f
+		sourceLineageTag: DirectQuery à AS – pst38.Valeur moyenne par entreprise de la satisfaction salarié
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif' = EXTERNALMEASURE("Variation effectif", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\09 - Score card\Taux
+		lineageTag: f5d37ccc-0645-4721-be06-899d2fba2827
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif
+		dataCategory: Uncategorized
+
+	measure '# adhérents AMT de prévention primaire à jour' = EXTERNALMEASURE("# adhérents AMT de prévention primaire à jour", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: eee94026-5fd6-4a8b-ab61-3fc4c845bd89
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents AMT de prévention primaire à jour
+		dataCategory: Uncategorized
+
+	measure '# adhérents AMT de prévention primaire en retard' = EXTERNALMEASURE("# adhérents AMT de prévention primaire en retard", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: f108cc52-2009-4e41-ab06-bbf4e058132e
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents AMT de prévention primaire en retard
+		dataCategory: Uncategorized
+
+	measure '# adhérents éligibles AMT de prévention primaire' = EXTERNALMEASURE("# adhérents éligibles AMT de prévention primaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 225dd88b-a27f-4c34-95ae-a7a4405e16b3
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents éligibles AMT de prévention primaire
+		dataCategory: Uncategorized
+
+	measure '# adhérents éligibles FE' = EXTERNALMEASURE("# adhérents éligibles FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: fea2cf9e-3ca8-40fe-b7af-2279433f606c
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents éligibles FE
+		dataCategory: Uncategorized
+
+	measure '# adhérents FE à jour' = EXTERNALMEASURE("# adhérents FE à jour", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: f70c5f49-7ecd-4646-9ca8-f50a973baddd
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents FE à jour
+		dataCategory: Uncategorized
+
+	measure '# adhérents FE en retard' = EXTERNALMEASURE("# adhérents FE en retard", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 478ab721-4706-4396-a2ad-ddfabb78de08
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents FE en retard
+		dataCategory: Uncategorized
+
+	measure '# salariés suivis (hors intérim) avec AMT de prévention primaire à jour' = EXTERNALMEASURE("# salariés suivis (hors intérim) avec AMT de prévention primaire à jour", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 3f00766a-78c7-4d43-b2ed-be08b86c58b3
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés suivis (hors intérim) avec AMT de prévention primaire à jour
+		dataCategory: Uncategorized
+
+	measure '# salariés suivis (hors intérim) avec AMT de prévention primaire en retard' = EXTERNALMEASURE("# salariés suivis (hors intérim) avec AMT de prévention primaire en retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 4981d7cd-7591-41c5-894f-4a6cb4cf63be
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés suivis (hors intérim) avec AMT de prévention primaire en retard
+		dataCategory: Uncategorized
+
+	measure '# salariés suivis (hors intérim) avec FE à jour' = EXTERNALMEASURE("# salariés suivis (hors intérim) avec FE à jour", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 4ef5ab63-f16e-449d-8edf-8c4a855200d7
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés suivis (hors intérim) avec FE à jour
+		dataCategory: Uncategorized
+
+	measure '# salariés suivis (hors intérim) avec FE en retard' = EXTERNALMEASURE("# salariés suivis (hors intérim) avec FE en retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 368a470b-8244-46e9-b918-135b2b4e49c5
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés suivis (hors intérim) avec FE en retard
+		dataCategory: Uncategorized
+
+	measure '# salariés suivis (hors intérim) éligibles AMT de prévention primaire' = EXTERNALMEASURE("# salariés suivis (hors intérim) éligibles AMT de prévention primaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 75c6dba6-4efd-42bb-9342-38984c9c08ef
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés suivis (hors intérim) éligibles AMT de prévention primaire
+		dataCategory: Uncategorized
+
+	measure '# salariés suivis (hors intérim) éligibles FE' = EXTERNALMEASURE("# salariés suivis (hors intérim) éligibles FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 93815d31-8bc3-495c-9d3f-7474af2b6175
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés suivis (hors intérim) éligibles FE
+		dataCategory: Uncategorized
+
+	measure '% adhérents AMT de prévention primaire à jour' = EXTERNALMEASURE("% adhérents AMT de prévention primaire à jour", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: c6369672-2659-431c-96b5-9f1cccbee78b
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents AMT de prévention primaire à jour
+		dataCategory: Uncategorized
+
+	measure '% adhérents AMT de prévention primaire en retard' = EXTERNALMEASURE("% adhérents AMT de prévention primaire en retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: d32bc8a6-713d-4111-bbdb-6d78af6fbb4b
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents AMT de prévention primaire en retard
+		dataCategory: Uncategorized
+
+	measure '% adhérents éligibles AMT de prévention primaire' = EXTERNALMEASURE("% adhérents éligibles AMT de prévention primaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: d444e42d-d1e3-4d2c-95b7-c1ab98fe7ebb
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents éligibles AMT de prévention primaire
+		dataCategory: Uncategorized
+
+	measure '% adhérents FE à jour' = EXTERNALMEASURE("% adhérents FE à jour", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: e0a687fc-2ecd-4429-8a9e-bd040485fdf0
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents FE à jour
+		dataCategory: Uncategorized
+
+	measure '% adhérents FE en retard' = EXTERNALMEASURE("% adhérents FE en retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 5cddcd5e-140c-49c3-bb13-92de68d89031
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents FE en retard
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec AMT de prévention primaire à jour' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec AMT de prévention primaire à jour", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: d942ada8-bf54-4642-801a-bcd7fdabe0bb
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec AMT de prévention primaire à jour
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec AMT de prévention primaire en retard' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec AMT de prévention primaire en retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 8f734d19-5206-409f-a4e3-18a201d92f78
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec AMT de prévention primaire en retard
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec FE à jour' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec FE à jour", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: 8bf1ab34-63c7-4ed0-aa20-5b973b12f587
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec FE à jour
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) avec FE en retard' = EXTERNALMEASURE("% salariés suivis (hors intérim) avec FE en retard", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\FE
+		lineageTag: c8b54b8e-5190-4c7f-932f-b3d527ce7373
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) avec FE en retard
+		dataCategory: Uncategorized
+
+	measure '% salariés suivis (hors intérim) éligibles AMT de prévention primaire' = EXTERNALMEASURE("% salariés suivis (hors intérim) éligibles AMT de prévention primaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\10 - Retard AMT\AMT de prévention primaire
+		lineageTag: 99b8c11a-0d00-4133-b5d6-6b1ec6eaf768
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés suivis (hors intérim) éligibles AMT de prévention primaire
+		dataCategory: Uncategorized
+
+	column age_moyen_salarie
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 3b35d44a-9b5a-4545-aac9-e0a07d02383f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: age_moyen_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT (hors FE) depuis 4 ans'
+		dataType: string
+		lineageTag: 8525d337-2210-4b42-9d54-0479b64c9519
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT (hors FE) depuis 4 ans
+		sortByColumn: tri_amt_hors_fe_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT de prévention primaire depuis 4 ans'
+		dataType: string
+		lineageTag: 0701d714-caae-41c8-83b2-01c7eb1107a3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT de prévention primaire depuis 4 ans
+		sortByColumn: tri_amt_prevention_primaire_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT depuis 4 ans'
+		dataType: string
+		lineageTag: 774c8354-d470-4321-8302-57ce0b179b04
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT depuis 4 ans
+		sortByColumn: tri_amt_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column anciennete_derniere_amt
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 7db9696a-61bb-4195-b7fb-a58004bd6ce7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: anciennete_derniere_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column anciennete_derniere_amt_hors_fe
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 949bda7c-fe2f-42da-9b06-ee6ea1d42627
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: anciennete_derniere_amt_hors_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column anciennete_derniere_amt_prevention_primaire
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 13245ce2-c0a9-48ed-899f-506254fa9a81
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: anciennete_derniere_amt_prevention_primaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column anciennete_fe
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: f2caad05-7f2a-4c07-b726-b6bfb2af3004
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: anciennete_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column au_moins_un_du_effectue
+		dataType: boolean
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 7474f257-c5d8-44c2-b93a-28e535bc5630
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: au_moins_un_du_effectue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column cse_declare
+		dataType: string
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 4abf1b04-5b2a-42dd-b6c2-28a4f1fb7a77
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: cse_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column dernier_effectif_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d71d1c10-43eb-45a5-a9d8-2cb1045c88c2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: dernier_effectif_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DU déclaré'
+		dataType: string
+		lineageTag: 37397983-7ba7-4640-b9fe-a59aa6e03271
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DU déclaré
+
+		annotation SummarizationSetBy = Automatic
+
+	column du_declare
+		dataType: boolean
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 98e2580a-98d5-44b3-be51-c0018aa81da3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: du_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column effectif_declare_courant
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 643f4149-9749-4d40-b735-1e4aaaf55895
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: effectif_declare_courant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column effectif_declare_courant_facturable
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0d0ced96-cee1-4684-825a-53342a2464ad
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: effectif_declare_courant_facturable
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column effectif_declare_precedent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ff805203-cea8-475b-b531-32a1e11643b1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: effectif_declare_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column effectif_declare_precedent_facturable
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 060ca119-1dfe-436a-a055-a0552e36fd41
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: effectif_declare_precedent_facturable
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligibilite_fe
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7bc21356-12cb-4350-92a8-3b6cee0fb401
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: eligibilite_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column entreprise_active
+		dataType: boolean
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 5310cefd-52ee-4943-b076-77a5fd31aa2f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: entreprise_active
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FE depuis 4 ans'
+		dataType: string
+		lineageTag: e717ed2a-d142-449d-8d75-97f459b710ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: FE depuis 4 ans
+		sortByColumn: tri_fe_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: c982c714-6ef5-48bd-902a-9ad800b61df7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 85ea52d0-34d7-43ac-b86e-ef4c2fb394be
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise_collection_regroupante
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: fdc59c8c-a484-4557-bc3f-e1b3f74c05c7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_entreprise_collection_regroupante
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c382accb-f54c-400b-9a09-e9069eb65509
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 580a5f77-2720-478d-8ea8-6b38a71141be
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_adaptation_poste_depuis_5_ans
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 0998d2aa-8660-4a40-9487-5941d5fac668
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_adaptation_poste_depuis_5_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_terminee_depuis_5_ans
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 72898217-b328-40a1-95fb-7fe203e1a476
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_terminee_depuis_5_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_avis_inaptitude_depuis_5_ans
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: f1b91119-e5c2-46d8-a731-8047ef643926
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_avis_inaptitude_depuis_5_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_contrats_precaires
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: dc024eea-45dd-4d9b-ae15-4eabbf3df997
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_contrats_precaires
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_declaration_effectuee
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 10dea7b6-bd06-4665-a564-ee5da60c5e6d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_declaration_effectuee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_interimaire
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2198faed-1ccf-4aee-9cbb-49c47e39fe11
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_interimaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_interimaire_actif_debut_annee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 582bd104-67b6-4a8f-9aa1-0b9adb7f7c97
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_interimaire_actif_debut_annee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_interimaire_si
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c4da18fd-9e1f-4280-9f73-2b97066368aa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_interimaire_si
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_interimaire_sia
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d7833772-f7f8-4e7b-94ba-54e6d0c6e81e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_interimaire_sia
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_interimaire_sir
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d98416b9-f749-4f87-8f08-34cb3ca445ae
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_interimaire_sir
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_moyen_annees_contrat
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 45397284-7f48-4c9f-bd9b-67b9f209c511
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_moyen_annees_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_interimaire
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 791caece-1637-4709-bd10-0d6a62cab028
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_interimaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_interimaire_ancien_logiciel
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 82d7fb51-47cb-4b24-8fcd-78ad1f677e31
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_interimaire_ancien_logiciel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_interimaire_si
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 8d3e5779-b35f-4fb9-bed1-4b98936a40b8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_interimaire_si
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_interimaire_sia
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 9f5071e5-90fb-44c9-b386-ac97087cc1af
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_interimaire_sia
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_interimaire_sir
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 558af295-ba49-4d88-b836-fea10dab0708
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_interimaire_sir
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 32266214-0eb4-4631-87d2-071fe4e02859
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_debut
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 1caca191-bb78-4641-a976-dee90c325459
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_debut
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 64cff83a-97d7-4221-b172-dd1596a119f5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_precedent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b6536f4d-ed27-423b-a50e-dce884e40395
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_en_retard
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 6dcaf588-7a1f-4666-a340-615767d7759f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_en_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_entrant
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: ea7ff3f9-da32-49fe-bad9-7bc832382adc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_entrant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_estime
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e631cf9b-ea47-41e4-995a-b3698d5a7065
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_estime
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_fin
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 66605988-ec53-4341-a3c6-06609b3f58ed
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_fin
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_reference
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: dec55747-ed9c-4e8c-8b33-cb3dfc9874e0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_reference
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sia_ancien_logiciel
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 190d3995-b2de-4e2f-a15f-8ce697fdf3cd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sia_ancien_logiciel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sir_ancien_logiciel
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 337acde3-ff04-4621-a1db-1420c61b5c52
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sir_ancien_logiciel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_situation_travail
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 34d3efdd-a2f4-4528-b478-523e9133434d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_situation_travail
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sortant
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: a24cdae6-4512-46b9-853e-f5d02d9173e4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sortant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_si
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 1feb7185-a429-4d05-b634-cd5128c071aa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_si
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_sia
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: df83c3f0-5d46-43ee-8ce1-fa287fb102ae
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_sia
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_sir
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 435a5f6f-7da2-40ae-ac4c-48ac1dd5ef01
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_sir
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_situation_travail_active
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 252673fd-0cd5-4925-8e96-d1f63d6c193d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_situation_travail_active
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_visite_reprise
+		dataType: int64
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: efe45ee3-6a65-43f3-9075-43253612a2c4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_visite_reprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column salarie_relais_prevention
+		dataType: boolean
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 71104ccc-9196-4786-a82c-40b72a49b9e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: salarie_relais_prevention
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIREN complété'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: cc1c900f-9c2c-4d9a-a91f-126d1ee9af33
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIREN complété
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tri_amt_depuis_4_ans
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 53a4cd2f-3d7f-4ebe-aa2b-695d52cf3284
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_amt_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column tri_amt_hors_fe_depuis_4_ans
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 8005d725-cbea-41f2-a684-8699240034b3
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_amt_hors_fe_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column tri_amt_prevention_primaire_depuis_4_ans
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 94fb7736-4e7f-4124-9401-2222d2f7973f
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_amt_prevention_primaire_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column tri_fe_depuis_4_ans
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 29668981-a2e2-46ef-97ae-7f75b01d2b5d
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_fe_depuis_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column valeur_satisfaction_salarie
+		dataType: double
+		displayFolder: Colonnes techniques\Colonnes score card
+		lineageTag: 9a09cbc0-9d42-480d-b7bb-8188621559a3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: valeur_satisfaction_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_prochaine_amt_prevention_primaire
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: ad087d11-554b-4428-a75d-d9586e26f66d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_prochaine_amt_prevention_primaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_prochaine_fe
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: 4b2afba8-b0b9-4bd5-8b4a-37ed813494a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_prochaine_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligibilite_amt_prevention_primaire
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 490bf2a9-756e-4567-bca5-e016f7da9588
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: eligibilite_amt_prevention_primaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_primaire_a_jour
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: eed8cd2e-f91b-4f90-8971-f0e5dc3476dc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_primaire_a_jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_primaire_en_retard
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5f1e2ed9-a29c-4d62-9cd1-e86bb1dc80ff
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_primaire_en_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_a_jour
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 75201252-3f1f-4c87-868c-a1aa6925b97e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_a_jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_en_retard
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 53721461-a3b3-422f-a573-73313277bef8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_en_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_eligible_amt_primaire
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e2381518-7a36-4d90-8f0c-84241aac0f76
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_eligible_amt_primaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_eligible_fe
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f6e0f013-d502-478d-9efe-c047536e5fb6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_non_eligible_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Adhérents = entity
+		mode: directQuery
+		source
+			entityName: Adhérents
+			expressionSource: 'DirectQuery à AS – pst38'
+

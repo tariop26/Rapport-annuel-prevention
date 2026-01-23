@@ -1,0 +1,58 @@
+table 'Demande consultation spécialisée - type visite demandée'
+	lineageTag: 6efcffbd-4f66-409e-a221-01e099ae8dac
+
+	column id_type_visite_demande
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1c5d93fa-8992-4d0b-aba7-06503af72f92
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type détaillé visite demandée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4d22af6b-ef2a-494e-94df-9de5418673b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type détaillé visite demandée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite demandée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1a7574b7-ff6a-4e38-afa5-e2bcec0dd88e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite demandée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type visite demandée'
+		lineageTag: 5daa1576-7dcd-41a7-95dc-c8a5b7153989
+		sourceLineageTag: Hiérarchie type visite demandée
+
+		level 'Type visite demandée'
+			lineageTag: 3ca8b3cd-613f-43cc-bdf1-b67f395a998a
+			column: 'Type visite demandée'
+
+		level 'Type détaillé visite demandée'
+			lineageTag: 7ee633ff-a0f6-4bdc-a88b-e8b53d340a54
+			column: 'Type détaillé visite demandée'
+
+	partition 'Demande consultation spécialisée - type visite demandée' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - type visite demandée
+			expressionSource: 'DirectQuery à AS – pst38'
+

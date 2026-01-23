@@ -1,0 +1,1177 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "table2__table_calendrier.annéesemaine": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2 - Table Calendrier",
+			          "ConceptualProperty": "Année-Semaine"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table2__table_calendrier.mois_nomannée_tri": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2 - Table Calendrier",
+			          "ConceptualProperty": "Mois Nom-Année (Tri)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv_visite__réalisateur.role_réalisateur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV/visite - réalisateur",
+			          "ConceptualProperty": "Role réalisateur"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv__convocateur_initial.rôle_convocateur_initial_rdv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV - convocateur initial",
+			          "ConceptualProperty": "Rôle convocateur initial RDV"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv_visite__type_visite.catégorie_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV/visite - type visite",
+			          "ConceptualProperty": "Catégorie visite"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salarié__informations_nominatives.matricule_salarié": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salarié - informations nominatives",
+			          "ConceptualProperty": "Matricule salarié"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv__date_première_convocation.date_première_convocation_rdv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV - date première convocation",
+			          "ConceptualProperty": "Date première convocation RDV"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv_visite__date_rdv.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV/visite - date RDV",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "adhérent_actuel.nom_entreprise": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Adhérent (actuel)",
+			          "ConceptualProperty": "Nom entreprise"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "adhérent_actuel.taille_entreprise_dgt_2023_certif": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Adhérent (actuel)",
+			          "ConceptualProperty": "Taille entreprise DGT 2023 (certif)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "demande_visite_adhérent__statut.statut_détaillé_demande_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demande visite adhérent - statut",
+			          "ConceptualProperty": "Statut détaillé demande visite"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salarié__type_suivi.type_suivi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salarié - type suivi",
+			          "ConceptualProperty": "Type suivi"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salarié_actuel.date_visite_calculée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salarié (actuel)",
+			          "ConceptualProperty": "Date visite calculée"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salarié_actuel.mois_de_retard": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salarié (actuel)",
+			          "ConceptualProperty": "Mois de retard"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salarié_actuel.catégorie_visite_calculée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salarié (actuel)",
+			          "ConceptualProperty": "Catégorie visite calculée"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "visite.moyenne_mobile_des_visites_mensuelles_idest_12_mois_précédents": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Visite",
+			          "ConceptualProperty": "Moyenne mobile des visites mensuelles IDEST (12 mois précédents)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "visite.moyenne_mobile_des_visites_mensuelles_médecin_12_mois_précédents": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Visite",
+			          "ConceptualProperty": "Moyenne mobile des visites mensuelles Médecin (12 mois précédents)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "utilisateur.role_utilisateur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Utilisateur",
+			          "ConceptualProperty": "Role utilisateur"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "evolution_effectif.adhérents_sans_fe_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Evolution effectif",
+			          "ConceptualProperty": "# adhérents sans FE (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "evolution_effectif.adhérents_avec_fe_à_mettre_à_jour_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Evolution effectif",
+			          "ConceptualProperty": "# adhérents avec FE à mettre à jour (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table2__table_calendrier.mois_nomannée_long": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2 - Table Calendrier",
+			          "ConceptualProperty": "Mois Nom-Année long"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv_visite__réalisateur.nom_réalisateur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV/visite - réalisateur",
+			          "ConceptualProperty": "Nom réalisateur"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv_visite__centre_convocation.centre_rattachement_rdv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV/visite - centre convocation",
+			          "ConceptualProperty": "Centre rattachement RDV"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rdv_visite__type_visite.type_visite_groupées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RDV/visite - type visite",
+			          "ConceptualProperty": "Type visite groupées"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salarié_actuel.type_détaillé_visite_calculée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salarié (actuel)",
+			          "ConceptualProperty": "Type détaillé visite calculée"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "demande_consultation_spécialisée__date_création.date_création_demande_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demande consultation spécialisée - date création",
+			          "ConceptualProperty": "Date création demande visite"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "demande_consultation_spécialisée__statut.statut_détaillé_demande_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demande consultation spécialisée - statut",
+			          "ConceptualProperty": "Statut détaillé demande visite"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "date_principale.nommoisannee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date principale",
+			          "ConceptualProperty": "NomMoisAnnee"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mois": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "salariés.effectif_suivi_nonintérimaire": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salariés",
+			          "ConceptualProperty": "Effectif suivi non-intérimaire"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "salariés.effectif_suivi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Salariés",
+			          "ConceptualProperty": "Effectif suivi"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.evolution_effectif__effectif_suivi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Evolution Effectif - effectif suivi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Salariés": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.visites_intérimaires": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Visites intérimaires"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.visites_graphique_dynamique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Visites (Graphique Dynamique)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.effectif_graphique_dynamique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Effectif (Graphique Dynamique)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "evolution_effectif.nombre_dadhérents_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Evolution effectif",
+			          "ConceptualProperty": "Nombre d'adhérents fin de période"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Adhérents": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "crm__tickets.tickets": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CRM - tickets",
+			          "ConceptualProperty": "# tickets"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "crm__ticket__statut.statut_ticket_groupes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CRM - ticket - statut",
+			          "ConceptualProperty": "Statut ticket (groupes)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "crm__tickets.durée_moyenne_traitement_tickets_j": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CRM - tickets",
+			          "ConceptualProperty": "Durée moyenne traitement tickets (j)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.délais_réclamations_graphique_dynamique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Délais Réclamations (Graphique Dynamique)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.visites_avec_examen_clinique_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "% Visites avec examen clinique (visite)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.examens_cliniques_par_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "# Examens cliniques par visite"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.examens_cliniques_avec_ras_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "% Examens cliniques avec RAS (visite)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.visites_avec_échelle_remplie_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "% Visites avec échelle remplie (visite)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.visites_avec_adaptation_de_poste_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "% Visites avec adaptation de poste (visite)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.visites_avec_conclusion_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "% Visites avec conclusion (visite)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.recommandations_orales_par_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "# Recommandations orales par visite"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__visite.emploi_actuel_avec_type_de_contrat_renseigné_visite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - visite",
+			          "ConceptualProperty": "% Emploi actuel avec type de contrat renseigné (visite)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "saisie__dossier_salarié.nom_et_prénom_renseigné_dossier": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Saisie - dossier salarié",
+			          "ConceptualProperty": "% Nom et prénom renseigné (dossier)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.visites_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Visites Période"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.emploi_avec_contrat_renseigné": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% emploi avec contrat renseigné"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.emploi_avec_description_renseignée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% emploi avec description renseignée"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.effectif_avec_ins_qualifié": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% effectif avec INS qualifié"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.visites_avec_conclusion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% visites avec conclusion"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.visites_avec_irdp_rempli": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% visites avec IRDP rempli"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "utilisateur.profil_utilisateur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Utilisateur",
+			          "ConceptualProperty": "Profil utilisateur"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.column100": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "100%"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.adhérents_avec_fe_à_mettre_à_jour_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "# adhérents avec FE à mettre à jour (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.adhérents_sans_fe_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "# adhérents sans FE (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "evolution_effectif.adhérents_à_jour_de_fe_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Evolution effectif",
+			          "ConceptualProperty": "# adhérents à jour de FE (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.adhérents_à_jour_de_fe_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Adhérents à jour de FE (graph)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Adhérents à jour de FE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.adhérents_avec_fe_a_mettre_à_jour_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Adhérents avec FE a mettre à jour (graph)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Adhérents avec FE a mettre à jour": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.adhérents_sans_fe_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Adhérents sans FE (graph)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Adhérents sans FE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.nouveaux_adhérents_sans_fe_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Nouveaux adhérents sans FE (graph)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nouveaux adhérents sans FE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "evolution_effectif.adhérents_à_jour_damt_primaire_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Evolution effectif",
+			          "ConceptualProperty": "# adhérents à jour d'AMT primaire (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "evolution_effectif.adhérents_en_retard_damt_primaire_fin_de_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Evolution effectif",
+			          "ConceptualProperty": "# adhérents en retard d'AMT primaire (fin de période)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.nbre_damt_terminées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Nbre d'AMT terminées"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.taux_dorientations_pdp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux d'orientations PDP"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.ratio_plan_mee_sans_solution___plan_mee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ratio plan MEE sans solution / plan MEE"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.ratio_refus_du_salarié___plan_mee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ratio refus du salarié / plan MEE"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.ratio_maintien_au_poste___plan_mee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ratio maintien au poste / plan MEE"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.ratio_reclassement___plan_mee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ratio reclassement / plan MEE"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.ratio_maintien_dans_lemploi___plan_mee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ratio maintien dans l'emploi / plan MEE"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "demande_consultation_spécialisée.demandes_consultation_spécialisée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demande consultation spécialisée",
+			          "ConceptualProperty": "# demandes consultation spécialisée"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "amt_v2.amt_terminées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AMT v2",
+			          "ConceptualProperty": "# AMT terminées"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AMT terminées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "APP terminées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "FE terminées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "AMT sensi terminées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "AMT DU terminées": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.objectif_app_2026_simu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Objectif APP 2026 (Simu)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Objectif 2026": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.adhérents_à_jour_dapp_réalisé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% Adhérents à jour de APP (Réalisé)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% Adhérents à jour d'APP": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.adhérents_à_jour_de_fe_réalisé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% Adhérents à jour de FE (Réalisé)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% Adhérents à jour de FE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.objectif_fe_2026_simu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Objectif FE 2026 (Simu)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Objectif 2026": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.objectif_taux_de_service_2026_simu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Objectif Taux de service 2026 (Simu)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.taux_de_service_réalisé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux de service (Réalisé)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.salariés_en_retard": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Salariés en retard"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.taux_de_convocation_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux de convocation (graph)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.taux_annexes_4_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux annexes 4 (graph)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.visites_sur_effectif_graphique_dynamique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Visites sur effectif (Graphique Dynamique)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.taux_inaptitude_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux inaptitude (graph)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.rdv_sur_effectif_graphique_dynamique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "RDV sur effectif (Graphique Dynamique)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.adhérents_concernés_amt_graph": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Adhérents concernés AMT (Graph)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.amt_graphique_dynamique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "AMT (Graphique Dynamique)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.amt_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "AMT Période"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.evénements_collectifs_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Evénements collectifs Période"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.orientations_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Orientations Période"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.amt_en_cours_ayant_atteint_le_statut_à_valider": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "AMT en cours ayant atteint le statut à valider"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "APP en cours ayant atteint le statut à valider": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.amt_du": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% AMT DU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "des AMT sont relatives au DU": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.amt_sensi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% AMT sensi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "des AMT terminées sont des sensibilisations": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.amt_app": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% AMT APP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "des AMT terminées sont des APP": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "date_principale.nom_mois_annee": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date principale",
+			          "ConceptualProperty": "Nom Mois Annee"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "mesures.temps_format_horaire": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Temps Format Horaire"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "temps_travail__type_zone.type_de_zone_travail_hors_travail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Temps travail - type zone",
+			          "ConceptualProperty": "Type de zone (travail/hors travail)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "amt__modèle.modèle_app_fe_autres": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AMT - modèle",
+			          "ConceptualProperty": "Modèle (APP, FE, Autres)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Modèle d'AMT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.amt_n1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "AMT N-1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FE N-1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

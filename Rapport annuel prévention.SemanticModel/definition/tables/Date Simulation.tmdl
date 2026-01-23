@@ -1,0 +1,118 @@
+table 'Date Simulation'
+	lineageTag: 8cd4abc3-4c01-4f74-9914-efb02f270a68
+
+	column Date
+		formatString: General Date
+		lineageTag: 142edc92-6178-4c17-99eb-f7dff6eceda7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: eda4633d-5c88-491e-aebc-fcc0d446edbf
+			defaultHierarchy: LocalDateTable_13d0872c-18e5-4745-a23e-88cbd44fa1f1.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		formatString: 0
+		lineageTag: 5c23b8e6-8132-4f53-8407-ca03b894d9f0
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Année]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois Num'
+		formatString: 0
+		lineageTag: 144017cb-18c5-46bc-aa2f-d48181757b2c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mois Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois Nom'
+		lineageTag: f237bc15-2c1f-421a-b3cc-9c608747e9a9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mois Nom]
+		sortByColumn: 'Mois Num'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois Court'
+		lineageTag: ca0c96d0-fdec-4d46-a594-3c3089e46e0b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mois Court]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: b1a258fa-85cc-43c1-aaf9-ca7ed654de6c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année-Mois
+		lineageTag: 4ebcb9cf-76f6-4bdb-9183-3e68f00a8cd0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Année-Mois]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois Année'
+		lineageTag: b7e15cda-dbf7-44c3-9093-825fac8fcc5d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mois Année]
+		sortByColumn: 'Tri Mois année'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour Semaine'
+		formatString: 0
+		lineageTag: 6841c70b-9bd4-4751-a5b1-700868df94ce
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Jour Semaine]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tri Mois année'
+		lineageTag: b35c5113-f24c-49d7-bfb9-59a76e6e45f4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Tri Mois année]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Date Simulation' = calculated
+		mode: import
+		source = ```
+				
+				VAR DateDebut = DATE(2023, 12, 31) 
+				VAR DateFin = DATE(2029, 12, 31)
+				
+				RETURN
+				ADDCOLUMNS(
+				    CALENDAR(DateDebut, DateFin),
+				    "Année", YEAR([Date]),
+				    "Mois Num", MONTH([Date]),
+				    "Mois Nom", FORMAT([Date], "mmmm"),
+				    "Mois Court", FORMAT([Date], "mmm"),
+				    "Trimestre", "T" & QUARTER([Date]),
+				    "Année-Mois", FORMAT([Date], "yyyy-MM"), 
+				    "Mois Année", FORMAT([Date], "mmm yyyy"), 
+				    "Jour Semaine", WEEKDAY([Date], 2), -- La virgule doit être ici, AVANT le commentaire
+				    "Tri Mois année", FORMAT([Date], "yyyyMM") -- Format YYYYMM (ex: 202401) pour un tri sans erreur
+				)
+				```
+
+	annotation PBI_Id = fd7143ab719f43949e1f23a04a8fb81f
+

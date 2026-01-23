@@ -1,0 +1,74 @@
+table 'Plan MEE - dispositifs'
+	lineageTag: 603b5ecd-e15f-410e-9c14-2619464b1af3
+
+	column 'Catégorie BOETH'
+		dataType: string
+		lineageTag: ffef001e-1f3c-40bb-8682-e4a7c4670026
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie BOETH
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie dispositif MEE'
+		dataType: string
+		lineageTag: 5dccb3b8-79ec-4322-af0b-c0fbc0bafdd4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie dispositif MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Droit dispositif MEE'
+		dataType: string
+		lineageTag: 6a849539-5565-408a-a335-f2bdab9952ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Droit dispositif MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_dispositif_plan_mee
+		dataType: int64
+		lineageTag: 6bc8af3f-5604-44b8-9a21-96ad211a764f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_dispositif_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif de non réalisation du dispositif'
+		dataType: string
+		lineageTag: 12d920ec-eeeb-4e09-b020-26ffaf121336
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif de non réalisation du dispositif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom dispositif MEE'
+		dataType: string
+		lineageTag: fcaab3b5-ff53-4fc8-a361-73fe0f620979
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom dispositif MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut dispositif MEE'
+		dataType: string
+		lineageTag: 6518aa63-d8d2-4ef1-ad4b-e87c9f47d223
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut dispositif MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plan MEE - dispositifs' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - dispositifs
+			expressionSource: 'DirectQuery à AS – pst38'
+

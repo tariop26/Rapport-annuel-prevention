@@ -1,0 +1,432 @@
+table 'Temps travail'
+	lineageTag: fbe016cb-c3d0-410f-b6dc-d0daa673e386
+
+	measure 'Nombre d''annulations excusées' = EXTERNALMEASURE("Nombre d'annulations excusées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Nombre de RDV/visites
+		lineageTag: 31df23b3-a548-42d0-b39f-fa2c9b02a858
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'annulations excusées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''annulations non excusées' = EXTERNALMEASURE("Nombre d'annulations non excusées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Nombre de RDV/visites
+		lineageTag: 83f28968-9448-4cf1-a6c9-1d93730d246c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'annulations non excusées
+		dataCategory: Uncategorized
+
+	measure 'Nombre de créneaux' = EXTERNALMEASURE("Nombre de créneaux", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Nombre de RDV/visites
+		lineageTag: 8c6f2928-6836-4a4e-8aed-9f9b3fbdb10f
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de créneaux
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites réalisées' = EXTERNALMEASURE("Nombre de visites réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Nombre de RDV/visites
+		lineageTag: 6021250b-8277-4fa8-b1d4-5c52219e8b5d
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites réalisées
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen de visites réalisées par heure de vacation' = EXTERNALMEASURE("Nombre moyen de visites réalisées par heure de vacation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.00
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: 63f23648-4a05-4e53-94c9-6ae55470978b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen de visites réalisées par heure de vacation
+		dataCategory: Uncategorized
+
+	measure 'Taux activité en zone non clinique' = EXTERNALMEASURE("Taux activité en zone non clinique", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux zones non clinique
+		lineageTag: 2464e411-ade3-4f69-b7b0-5791672301c9
+		sourceLineageTag: DirectQuery à AS – pst38.Taux activité en zone non clinique
+		dataCategory: Uncategorized
+
+	measure 'Taux activité hors zone non clinique' = EXTERNALMEASURE("Taux activité hors zone non clinique", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux zones non clinique
+		lineageTag: 06400ee9-4244-431a-8cd6-ea42e5fe21cd
+		sourceLineageTag: DirectQuery à AS – pst38.Taux activité hors zone non clinique
+		dataCategory: Uncategorized
+
+	measure 'Taux AMT (zone non clinique)' = EXTERNALMEASURE("Taux AMT (zone non clinique)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux zones non clinique
+		lineageTag: f934f7b8-b6e5-4936-90b0-6f247983c2b1
+		sourceLineageTag: DirectQuery à AS – pst38.Taux AMT (zone non clinique)
+		dataCategory: Uncategorized
+
+	measure 'Taux annulation excusée (vacation)' = EXTERNALMEASURE("Taux annulation excusée (vacation)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: 5bc4df3d-862f-40f4-9a9e-0abbc4bb0832
+		sourceLineageTag: DirectQuery à AS – pst38.Taux annulation excusée (vacation)
+		dataCategory: Uncategorized
+
+	measure 'Taux annulation non excusée (vacation)' = EXTERNALMEASURE("Taux annulation non excusée (vacation)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: d6a9e102-88c6-446f-a56c-98a8d602afb1
+		sourceLineageTag: DirectQuery à AS – pst38.Taux annulation non excusée (vacation)
+		dataCategory: Uncategorized
+
+	measure 'Taux de vacations' = EXTERNALMEASURE("Taux de vacations", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux de répartition
+		lineageTag: 73f3d0e0-7818-48c4-babc-64c7b0ee35c1
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de vacations
+		dataCategory: Uncategorized
+
+	measure 'Taux de zones non-cliniques' = EXTERNALMEASURE("Taux de zones non-cliniques", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux de répartition
+		lineageTag: 2ed18092-7dad-4069-a523-5f0fbaf1e85d
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de zones non-cliniques
+		dataCategory: Uncategorized
+
+	measure 'Taux d''effectivité (zone non clinique)' = EXTERNALMEASURE("Taux d'effectivité (zone non clinique)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux zones non clinique
+		lineageTag: a744b192-549f-4494-8234-47f66407b835
+		sourceLineageTag: DirectQuery à AS – pst38.Taux d'effectivité (zone non clinique)
+		dataCategory: Uncategorized
+
+	measure 'Taux d''indisponibilité' = EXTERNALMEASURE("Taux d'indisponibilité", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux de répartition
+		lineageTag: 608fe398-09e4-45a5-bd1c-742353961c89
+		sourceLineageTag: DirectQuery à AS – pst38.Taux d'indisponibilité
+		dataCategory: Uncategorized
+
+	measure 'Taux hors zone' = EXTERNALMEASURE("Taux hors zone", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux de répartition
+		lineageTag: f48e011e-5bc2-4264-b56d-d0a6bcb5c279
+		sourceLineageTag: DirectQuery à AS – pst38.Taux hors zone
+		dataCategory: Uncategorized
+
+	measure 'Taux non exploité (vacation)' = EXTERNALMEASURE("Taux non exploité (vacation)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: 33b2c1bb-7137-4583-92a1-010d83616f55
+		sourceLineageTag: DirectQuery à AS – pst38.Taux non exploité (vacation)
+		dataCategory: Uncategorized
+
+	measure 'Taux non exploité (zone non clinique)' = EXTERNALMEASURE("Taux non exploité (zone non clinique)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux zones non clinique
+		lineageTag: 111849f5-98f6-4c82-9855-ea503c039d01
+		sourceLineageTag: DirectQuery à AS – pst38.Taux non exploité (zone non clinique)
+		dataCategory: Uncategorized
+
+	measure 'Taux RDV déplacé (vacation)' = EXTERNALMEASURE("Taux RDV déplacé (vacation)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: 9a7113c6-3c98-460c-9eb4-f90c7983b934
+		sourceLineageTag: DirectQuery à AS – pst38.Taux RDV déplacé (vacation)
+		dataCategory: Uncategorized
+
+	measure 'Taux RDV en vacation' = EXTERNALMEASURE("Taux RDV en vacation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: d270209c-f39e-4bc1-911b-70e20eab6fc6
+		sourceLineageTag: DirectQuery à AS – pst38.Taux RDV en vacation
+		dataCategory: Uncategorized
+
+	measure 'Taux RDV hors vacation' = EXTERNALMEASURE("Taux RDV hors vacation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: f10771fe-83a2-4e79-ae15-d643587a6411
+		sourceLineageTag: DirectQuery à AS – pst38.Taux RDV hors vacation
+		dataCategory: Uncategorized
+
+	measure 'Taux temps connexe (zone non clinique)' = EXTERNALMEASURE("Taux temps connexe (zone non clinique)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux zones non clinique
+		lineageTag: bfaac08b-6827-41a0-a0ba-6d35f5e1ea15
+		sourceLineageTag: DirectQuery à AS – pst38.Taux temps connexe (zone non clinique)
+		dataCategory: Uncategorized
+
+	measure 'Taux visite réalisée (vacation)' = EXTERNALMEASURE("Taux visite réalisée (vacation)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux liés aux vacations
+		lineageTag: f2dceef5-81df-40dc-9629-8da10ff73013
+		sourceLineageTag: DirectQuery à AS – pst38.Taux visite réalisée (vacation)
+		dataCategory: Uncategorized
+
+	measure 'Temps total AMT (en heures)' = EXTERNALMEASURE("Temps total AMT (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: f1f40f3d-2ffb-4e38-93ad-8e642791bab0
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total AMT (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total annulations excusées (en heures)' = EXTERNALMEASURE("Temps total annulations excusées (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 98451a79-4493-4b2c-bba1-ee5aa533d923
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total annulations excusées (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total annulations non excusées (en heures)' = EXTERNALMEASURE("Temps total annulations non excusées (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 9d9508fd-b15c-48af-8102-945657480a16
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total annulations non excusées (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total créneaux (en heures)' = EXTERNALMEASURE("Temps total créneaux (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 0b85ca4f-11ec-4083-9843-aab84538a520
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total créneaux (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total en zone (en heures)' = EXTERNALMEASURE("Temps total en zone (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 3a7ef85b-812b-4e4c-8649-f8b70567e26d
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total en zone (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total non exploité (en heures)' = EXTERNALMEASURE("Temps total non exploité (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: e4812ea2-615b-40cd-a701-a923500ac640
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total non exploité (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total RDV déplacé (en heures)' = EXTERNALMEASURE("Temps total RDV déplacé (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 93ab8657-6f1c-4ce0-896c-9ea408462fef
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total RDV déplacé (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total temps connexes (en heures)' = EXTERNALMEASURE("Temps total temps connexes (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 3e404dcf-3aeb-4586-a66d-1a8583c4839c
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total temps connexes (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total vacation (en heures)' = EXTERNALMEASURE("Temps total vacation (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: eddc2e0f-4857-4abc-9c07-7120e1e5389c
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total vacation (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total visites réalisées (en heures)' = EXTERNALMEASURE("Temps total visites réalisées (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 98005a0f-2c97-4650-b238-fd3a52411113
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total visites réalisées (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Temps total zone d''activité non clinique (en heures)' = EXTERNALMEASURE("Temps total zone d'activité non clinique (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Temps totaux en heures
+		lineageTag: 402996b2-d675-4389-bf67-d8829eac2b9a
+		sourceLineageTag: DirectQuery à AS – pst38.Temps total zone d'activité non clinique (en heures)
+		dataCategory: Uncategorized
+
+	column code_type_zone_creneau
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d3ff40c0-6cbf-4fc1-a6ae-6e9cc9d47c34
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_type_zone_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée créneau'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b4eebc1b-9893-452c-b168-3e537a5a6652
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée créneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column duree_creneau
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8a365480-75ad-4db7-814a-1f167a2f6cff
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0beeb8c3-a552-49d8-9641-c44540dc1e5b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creneau
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 111e84ba-76d6-4736-9b61-3e1933971a36
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_debut_creneau
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 36d42393-8ba1-4090-b970-3602d4a9cd42
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_debut_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_fin_creneau
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2df40b9b-51b0-48f6-b88b-63b68f4ee377
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_fin_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_motif_annulation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4dcc8a2b-b23c-46b1-8c23-af5ad7593db3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_motif_annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_planning
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3edff38a-f227-4c7b-b979-51bf68a390c7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_planning
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cad4c81a-b945-47ac-8be3-6a06eba79e79
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_zone
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 400c12a6-6014-4422-8f02-9ac8318e45da
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_zone
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d597b186-2a9c-4a04-bbb6-b691b301af59
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_zone_planning
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5b767464-61c9-4111-b990-57abe83e07a4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_zone_planning
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_creneau
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6d8f3aa9-b5fe-48ad-bb11-60913cb7e927
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_creneau
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7e0291bc-1a8d-432c-8de5-71371f2688e1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: type_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_zone_planning
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: dd8e398e-ca5f-4a41-815f-a2242d4c93ef
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: type_zone_planning
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Temps travail' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail
+			expressionSource: 'DirectQuery à AS – pst38'
+

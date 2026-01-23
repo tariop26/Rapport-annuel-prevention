@@ -1,0 +1,106 @@
+table 'RDV - date annulation'
+	lineageTag: b037fb47-803c-4d00-aa08-a1857090685f
+
+	column 'Année annulation RDV'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 77e74011-cf8a-4b34-92b2-3bd98c186b39
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année annulation RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date annulation RDV'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 23df5ff0-90aa-4179-93e9-70bd9ab233da
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date annulation RDV
+		sortByColumn: id_date_annulation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_annulation_rdv
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: daef2003-1326-4ed7-a797-e2791632f13e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_annulation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour annulation RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6161fe26-bf6b-4edf-8387-720f0de47ef7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour annulation RDV
+		sortByColumn: id_date_annulation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois annulation RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1b4e94cd-2091-4124-8765-b6ba116f2e4c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois annulation RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine annulation RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b284cde2-414a-4fd2-9f61-a5b34fc30218
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine annulation RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date annulation RDV'
+		lineageTag: ebf64577-fb8e-4f1c-a7d0-63c5c84c6eb9
+		sourceLineageTag: Hiérarchie date annulation RDV
+
+		level 'Année annulation RDV'
+			lineageTag: 1461f00d-0cee-4f20-9635-e089b49f05a0
+			column: 'Année annulation RDV'
+
+		level 'Mois annulation RDV'
+			lineageTag: bfdff3d2-063c-4a66-827e-fd276fc6072f
+			column: 'Mois annulation RDV'
+
+		level 'Semaine annulation RDV'
+			lineageTag: 76f4a7b6-daba-437b-af34-ab7c7ca2407f
+			column: 'Semaine annulation RDV'
+
+		level 'Date annulation RDV'
+			lineageTag: c3db07fc-019f-4a07-8ee2-024cbccb24a1
+			column: 'Date annulation RDV'
+
+	partition 'RDV - date annulation' = entity
+		mode: directQuery
+		source
+			entityName: RDV - date annulation
+			expressionSource: 'DirectQuery à AS – pst38'
+

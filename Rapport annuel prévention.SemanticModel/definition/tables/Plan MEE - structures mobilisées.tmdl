@@ -1,0 +1,29 @@
+table 'Plan MEE - structures mobilisées'
+	lineageTag: aff173c4-0267-4679-96b5-96f16789bac4
+
+	column id_groupe_structure_mobilisee_plan_mee
+		dataType: int64
+		lineageTag: 58961c78-4304-4b64-8f6a-f9eda656b134
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_structure_mobilisee_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Structure mobilisee'
+		dataType: string
+		lineageTag: 675c0f74-5a86-4e6e-bb1d-df31f8e41a14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Structure mobilisee
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plan MEE - structures mobilisées' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - structures mobilisées
+			expressionSource: 'DirectQuery à AS – pst38'
+

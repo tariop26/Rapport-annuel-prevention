@@ -1,0 +1,51 @@
+table 'Facturation - article'
+	lineageTag: 17205b74-63f4-4169-bdec-80bd2e74ccdd
+
+	column 'Code article sage'
+		dataType: string
+		lineageTag: 9a6eb15f-56d9-4346-ae39-966cbc6eca73
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code article sage
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_article
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7281b5cc-15de-4573-9bcf-6ab0595b0b39
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_article
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type article'
+		dataType: string
+		lineageTag: 2fa716e0-57cf-4a30-9f6a-e60b89346438
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type article
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type facturation'
+		dataType: string
+		lineageTag: 9301c52d-5b90-444d-9a49-dc5266101de3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type facturation
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Facturation - article' = entity
+		mode: directQuery
+		source
+			entityName: Facturation - article
+			expressionSource: 'DirectQuery à AS – pst38'
+

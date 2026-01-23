@@ -1,0 +1,113 @@
+table 'Prospect - date adhésion'
+	lineageTag: cb3d863a-3208-4bf8-8bc4-c21b18f52133
+
+	column 'Année à ce jour (date adhésion)'
+		dataType: string
+		lineageTag: a2999aaf-e40b-4822-858b-e5840fbe75e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date adhésion)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année adhésion'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a5a741d6-be04-405b-9257-ddacedc88702
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année adhésion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date adhésion'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0fecfd6-136c-4747-9bd8-909b71065077
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date adhésion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_adhésion
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: b8ae7838-95e3-4fc2-8743-5dad4d540c2e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_adhésion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour adhésion'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: fb5d183a-fb96-4809-b508-ac4428f30e09
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour adhésion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois adhésion'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 768fccbb-aec5-48d2-9c73-9641d21dc76e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois adhésion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine adhésion'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bbd64810-74dd-42e9-a380-53fb6e233e57
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine adhésion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date adhésion'
+		lineageTag: 75a28118-22df-4061-8ef4-23546c4a5ed2
+		sourceLineageTag: Hiérarchie date adhésion
+
+		level 'Année adhésion'
+			lineageTag: 6484e6a9-69b0-48d2-b44d-221fdbb9787b
+			column: 'Année adhésion'
+
+		level 'Mois adhésion'
+			lineageTag: 06f908be-8d68-4067-8b0b-45bc01434238
+			column: 'Mois adhésion'
+
+		level 'Semaine adhésion'
+			lineageTag: bac7a58c-a20f-4c40-ab47-1d6a341fa1da
+			column: 'Semaine adhésion'
+
+		level 'Date adhésion'
+			lineageTag: fac11e19-e6fc-4497-988f-cc8180a96081
+			column: 'Date adhésion'
+
+	partition 'Prospect - date adhésion' = entity
+		mode: directQuery
+		source
+			entityName: Prospect - date adhésion
+			expressionSource: 'DirectQuery à AS – pst38'
+

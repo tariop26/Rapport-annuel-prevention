@@ -1,0 +1,108 @@
+table 'Demande consultation spécialisée - date traitement'
+	lineageTag: 015023e4-e075-4a2f-b78b-e27f43ab2df0
+
+	column 'Année traitement demande visite'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b3ff0565-6f50-4459-aad1-c07d9830bba6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année traitement demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date traitement demande visite'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0efb8ca8-8326-4881-b20a-dfba3473d43f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date traitement demande visite
+
+		changedProperty = IsHidden
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column id_date_traitement_demande_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2da8c504-05d6-4439-a6aa-d0dd44ff981a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_traitement_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour traitement demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 29ca7007-5df3-4c37-b98b-e33e77dba42a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour traitement demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois traitement demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 931fb8d5-8f4b-4c53-a999-782065efefb8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois traitement demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine traitement demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 43a935a5-135f-4aec-9eb8-5c7735fd96c9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine traitement demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date traitement demande visite'
+		lineageTag: 94d94830-8712-449f-b4c5-5b92869910e5
+		sourceLineageTag: Hiérarchie date traitement demande visite
+
+		level 'Année traitement demande visite'
+			lineageTag: ac8d1f13-d8f0-4362-b293-81020e396729
+			column: 'Année traitement demande visite'
+
+		level 'Mois traitement demande visite'
+			lineageTag: 12dbf566-7d83-4d9a-a409-d465152f6218
+			column: 'Mois traitement demande visite'
+
+		level 'Semaine traitement demande visite'
+			lineageTag: 5286ab2e-5b74-4e2f-a15d-78576b87f806
+			column: 'Semaine traitement demande visite'
+
+		level 'Date traitement demande visite'
+			lineageTag: 5bb1689b-9bf9-4fcc-a61e-2c4e5620108d
+			column: 'Date traitement demande visite'
+
+	partition 'Demande consultation spécialisée - date traitement' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - date traitement
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,76 @@
+table 'Saisonniers - type visite'
+	lineageTag: 518b2ec8-9aa5-436a-af8b-98959f17d400
+
+	column 'Catégorie visite'
+		dataType: string
+		lineageTag: 04073171-2dff-4123-b24d-b85b34cf99df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_reglementaire_saison
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: e43650a5-ba93-483d-841e-8b4a5f56a3a6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_reglementaire_saison
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle réalisateur visite'
+		dataType: string
+		lineageTag: 91d5cc5d-6f12-497d-82c3-0c41ed0402d4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle réalisateur visite
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 60b9b31e-da78-48f2-81c3-dbe6cca52ae5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bc63ead9-6007-4faf-857c-cf7eb46b7fc6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie - type visite'
+		lineageTag: e2000cc6-fd8f-49b7-8431-37b88e126a3f
+		sourceLineageTag: Hiérarchie - type visite
+
+		level 'Type visite'
+			lineageTag: 937cb4b5-47c3-41cb-9e29-9a6597475ae4
+			column: 'Type visite'
+
+		level 'Type visite détaillé'
+			lineageTag: d3f31808-d208-4cd9-af0c-2ad2c3ccffdb
+			column: 'Type visite détaillé'
+
+	partition 'Saisonniers - type visite' = entity
+		mode: directQuery
+		source
+			entityName: Saisonniers - type visite
+			expressionSource: 'DirectQuery à AS – pst38'
+

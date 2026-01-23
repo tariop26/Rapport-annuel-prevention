@@ -1,0 +1,30 @@
+table 'Filtre médecin référent'
+	lineageTag: 565b6fd2-d67a-4b25-9c1c-4c6a0f78aee7
+
+	column 'Médecin référent par défaut'
+		dataType: string
+		lineageTag: c8f3c825-3e91-4175-88e0-bc2f2d800a4c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Médecin référent par défaut
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		lineageTag: 76bf4452-182c-43a9-8a00-552911c4513b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Filtre médecin référent' = entity
+		mode: directQuery
+		source
+			entityName: Filtre médecin référent
+			expressionSource: 'DirectQuery à AS – pst38'
+

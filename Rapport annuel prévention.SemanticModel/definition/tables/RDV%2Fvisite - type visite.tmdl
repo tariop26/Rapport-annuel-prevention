@@ -1,0 +1,199 @@
+table 'RDV/visite - type visite'
+	lineageTag: 32d32ca9-6990-4383-aacb-080c91fab09e
+
+	column 'Catégorie visite'
+		dataType: string
+		lineageTag: 7b088bd5-4eb1-481d-93e1-7e4872031ff8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_visite
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7f27c027-ab3c-4ef0-8cd7-4bb6ad99ba3d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 33e36088-e37f-4bad-8a2b-59b7c1099b5c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0f6b6b5a-e8f7-49d7-b177-03b7230e72f5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"RDV/visite - type visite","TableItemName":"Type visite groupées","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Type visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7c5eb84f-4baa-4014-8857-976c72d7aa7f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite aléa'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e602b741-59fd-4e0e-b214-aa1d7a46b806
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite aléa
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite réalisable par (nouvelle réglementation)'
+		dataType: string
+		lineageTag: 31bf4021-c0ff-4123-81fb-7f7f332c6525
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite réalisable par (nouvelle réglementation)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite réalisable par'
+		dataType: string
+		lineageTag: 65ee117a-104e-40a9-81e2-366eae3f5f71
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite réalisable par
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"RDV/visite - type visite","TableItemName":"Visite réalisable par :","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Type visite groupées' =
+			SWITCH(
+				TRUE,
+				ISBLANK('RDV/visite - type visite'[Type visite détaillé]),
+				"(Vide)",
+				'RDV/visite - type visite'[Type visite détaillé] IN {"Demande de l'employeur",
+					"Demande de l'IDEST",
+					"Demande du salarié"},
+				"A la demande (autres)",
+				'RDV/visite - type visite'[Type visite détaillé] IN {"Demande du méd. du travail"},
+				"A la demande du méd. du travail",
+				'RDV/visite - type visite'[Type visite détaillé] IN {"Visite de fin de carrière",
+					"Visite de fin d'exposition"},
+				"Fin de carrière / Fin d'exposition",
+				'RDV/visite - type visite'[Type visite détaillé] IN {"Pré-reprise à la demande du med. conseil",
+					"Pré-reprise à la demande du med. du travail",
+					"Pré-reprise à la demande du med. traitant",
+					"Pré-reprise à la demande du salarié"},
+				"Pré-reprise",
+				'RDV/visite - type visite'[Type visite détaillé] IN {"Reprise (information non précisée)",
+					"Reprise après accident pro",
+					"Reprise après maladie non professionnelle",
+					"Reprise après maladie professionnelle",
+					"Reprise après maternité"},
+				"Reprise",
+				"Autre"
+			)
+		lineageTag: a1d6ddd7-a225-4ff0-a209-9ba6052b950d
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "RDV/visite - type visite"
+				          }
+				        },
+				        "Property": "Type visite détaillé"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"r","Entity":"RDV/visite - type visite"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Type visite détaillé"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"A la demande (autres)","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Type visite détaillé"}}],"Values":[[{"Literal":{"Value":"'Demande de l''employeur'"}}],[{"Literal":{"Value":"'Demande de l''IDEST'"}}],[{"Literal":{"Value":"'Demande du salarié'"}}]]}}},{"DisplayName":"A la demande du méd. du travail","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Type visite détaillé"}}],"Values":[[{"Literal":{"Value":"'Demande du méd. du travail'"}}]]}}},{"DisplayName":"Fin de carrière / Fin d'exposition","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Type visite détaillé"}}],"Values":[[{"Literal":{"Value":"'Visite de fin de carrière'"}}],[{"Literal":{"Value":"'Visite de fin d''exposition'"}}]]}}},{"DisplayName":"Pré-reprise","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Type visite détaillé"}}],"Values":[[{"Literal":{"Value":"'Pré-reprise à la demande du med. conseil'"}}],[{"Literal":{"Value":"'Pré-reprise à la demande du med. du travail'"}}],[{"Literal":{"Value":"'Pré-reprise à la demande du med. traitant'"}}],[{"Literal":{"Value":"'Pré-reprise à la demande du salarié'"}}]]}}},{"DisplayName":"Reprise","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Type visite détaillé"}}],"Values":[[{"Literal":{"Value":"'Reprise (information non précisée)'"}}],[{"Literal":{"Value":"'Reprise après accident pro'"}}],[{"Literal":{"Value":"'Reprise après maladie non professionnelle'"}}],[{"Literal":{"Value":"'Reprise après maladie professionnelle'"}}],[{"Literal":{"Value":"'Reprise après maternité'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite réalisable par :' =
+			SWITCH(
+				TRUE,
+				ISBLANK('RDV/visite - type visite'[Visite réalisable par]),
+				"(Vide)",
+				'RDV/visite - type visite'[Visite réalisable par] IN {"Médecin et IDEST"},
+				"RDV pour IDEST",
+				'RDV/visite - type visite'[Visite réalisable par] IN {"Médecin uniquement"},
+				"RDV pour médecin",
+				"Autre"
+			)
+		lineageTag: 3bfd3747-5408-4a69-bfa1-8444c37f0b25
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "RDV/visite - type visite"
+				          }
+				        },
+				        "Property": "Visite réalisable par"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"r","Entity":"RDV/visite - type visite"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Visite réalisable par"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"RDV pour IDEST","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Visite réalisable par"}}],"Values":[[{"Literal":{"Value":"'Médecin et IDEST'"}}]]}}},{"DisplayName":"RDV pour médecin","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"r"}},"Property":"Visite réalisable par"}}],"Values":[[{"Literal":{"Value":"'Médecin uniquement'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type visite'
+		lineageTag: 028292d3-ef90-4f3c-a079-ab885cda7849
+		sourceLineageTag: Hiérarchie type visite
+
+		level 'Type visite'
+			lineageTag: 10eb759d-1e0a-474b-a7eb-38991a22f3e2
+			column: 'Type visite'
+
+		level 'Type visite détaillé'
+			lineageTag: 55f98688-7372-4780-8064-bf45b07211df
+			column: 'Type visite détaillé'
+
+	partition 'RDV/visite - type visite' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - type visite
+			expressionSource: 'DirectQuery à AS – pst38'
+

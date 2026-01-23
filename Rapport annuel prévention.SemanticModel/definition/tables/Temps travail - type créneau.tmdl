@@ -1,0 +1,160 @@
+table 'Temps travail - type créneau'
+	lineageTag: 52d0d4ab-ed69-4615-9899-15265903dcbc
+
+	column 'Annulation du créneau'
+		dataType: string
+		lineageTag: 961381e0-cc42-4c43-b9f8-ce0b230d2e31
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Annulation du créneau
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_type_zone_creneau
+		dataType: string
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c039c3e0-d0b6-47b9-b0d1-01191c60b3b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_type_zone_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format de la zone du planning'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 43f6b661-8864-4e85-810c-fff1224a1787
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format de la zone du planning
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format des visites de la vacation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bb74ee95-d140-468d-9160-57185f6b7148
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format des visites de la vacation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type créneau détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7f00132c-0d99-46b4-9108-84afd554fc60
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type créneau détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type créneau'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5968f5bb-e000-4aff-b342-a565e1efe069
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type créneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Temps travail - type créneau","TableItemName":"Type créneau (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Type zone planning'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: dc08d625-58b5-4edd-b3b2-2855b04fc55a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type zone planning
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type créneau (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Temps travail - type créneau'[Type créneau]),
+				"(Vide)",
+				'Temps travail - type créneau'[Type créneau] IN {"Absence",
+					"Congés payés / RTT",
+					"Non travaillé",
+					"Récupération"},
+				"Non travaillé",
+				'Temps travail - type créneau'[Type créneau]
+			)
+		lineageTag: 2df1e3b7-9630-4c4d-b432-9afd5965d475
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Temps travail - type créneau"
+				          }
+				        },
+				        "Property": "Type créneau"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"t","Entity":"Temps travail - type créneau"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"Type créneau"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Non travaillé","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"Type créneau"}}],"Values":[[{"Literal":{"Value":"'Absence'"}}],[{"Literal":{"Value":"'Congés payés / RTT'"}}],[{"Literal":{"Value":"'Non travaillé'"}}],[{"Literal":{"Value":"'Récupération'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type créneau planning'
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1c43a1f9-03e6-4168-90db-2ca75747fd54
+		sourceLineageTag: Hiérarchie type créneau planning
+
+		level 'Type zone planning'
+			lineageTag: a98b6409-6d43-4ff1-a6d2-e418baf4c456
+			column: 'Type zone planning'
+
+		level 'Type créneau'
+			lineageTag: 1576260b-4d2b-4c4e-9ba8-a9054b56a51c
+			column: 'Type créneau'
+
+		level 'Type temps connexe'
+			lineageTag: bdb93b6a-2c92-4242-8263-1a7c4bd1bae4
+			column: 'Type créneau détaillé'
+
+		changedProperty = IsHidden
+
+	hierarchy 'Hiérarchie type créneau'
+		lineageTag: 56bb930b-b642-4406-9200-e23bf4426092
+		sourceLineageTag: Hiérarchie type créneau
+
+		level 'Type créneau'
+			lineageTag: a019c793-cce1-4478-9e5a-1fb01d7299ad
+			column: 'Type créneau'
+
+		level 'Type créneau détaillé'
+			lineageTag: d9925b9d-1078-4ffc-9e24-942df7e4daf1
+			column: 'Type créneau détaillé'
+
+	partition 'Temps travail - type créneau' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - type créneau
+			expressionSource: 'DirectQuery à AS – pst38'
+

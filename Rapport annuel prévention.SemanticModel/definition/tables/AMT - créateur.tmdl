@@ -1,0 +1,87 @@
+table 'AMT - créateur'
+	lineageTag: c5ac21a2-f0d5-4062-8d78-d9441b2c1d50
+
+	column id_createur_amt
+		dataType: int64
+		isNullable: false
+		lineageTag: 823e0ab7-f3e6-41bc-98c1-57224d2f49e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom créateur AMT'
+		dataType: string
+		lineageTag: fc9e6e85-0087-42c8-a29d-8680b1e7f6a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom créateur AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil créateur AMT détaillé'
+		dataType: string
+		lineageTag: 65b4c51d-46dd-4095-8bc5-7a5eacbda4e5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil créateur AMT détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil créateur AMT'
+		dataType: string
+		lineageTag: 2ab441e8-72cf-4e6f-9876-368bf65a1449
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil créateur AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle créateur AMT'
+		dataType: string
+		lineageTag: ce8b4800-44ee-45d9-b5d0-8a042a273840
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle créateur AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie créateur AMT'
+		lineageTag: db97cefc-4949-45f4-8c9f-e329b6900877
+		sourceLineageTag: Hiérarchie créateur AMT
+
+		level 'Rôle créateur AMT'
+			lineageTag: 5f2867fb-00a0-4fe4-8d20-dd67aacbc60c
+			column: 'Rôle créateur AMT'
+
+		level 'Nom créateur AMT'
+			lineageTag: fcc0acd5-a7be-4dbc-9b5e-a49b61855dc5
+			column: 'Nom créateur AMT'
+
+	hierarchy 'Hiérarchie profil créateur AMT'
+		lineageTag: b9e5821b-5a95-42f5-91f8-763560c33212
+		sourceLineageTag: Hiérarchie profil créateur AMT
+
+		level 'Profil créateur AMT'
+			lineageTag: 08f026c3-50db-48c4-92f5-b18f7ea4aa86
+			column: 'Profil créateur AMT'
+
+		level 'Profil créateur AMT détaillé'
+			lineageTag: 134f32c8-995c-41c1-853e-d6649a682b2c
+			column: 'Profil créateur AMT détaillé'
+
+	partition 'AMT - créateur' = entity
+		mode: directQuery
+		source
+			entityName: AMT - créateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

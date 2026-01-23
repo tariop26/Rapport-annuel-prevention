@@ -1,0 +1,64 @@
+table 'CRM - ticket - informations'
+	lineageTag: b1c4ed5d-16b1-428a-bf96-ffd4118b62a5
+
+	column 'Catégorie ticket'
+		dataType: string
+		lineageTag: 23744b7d-dd3c-4eea-baa3-5e3a53d5732e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_info_crm_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: 9905a8dc-df1c-47f2-9852-0ad23af5e2cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_crm_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Type ticket'
+		dataType: string
+		lineageTag: 13649853-62d0-4c62-980d-36e9eae703a7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Visibilité ticket'
+		dataType: string
+		lineageTag: 48e12755-0ce4-4b82-b99c-c371c3722160
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visibilité ticket
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie type ticket'
+		lineageTag: c8a826dc-88bc-4d58-9b17-f7ac79575abd
+		sourceLineageTag: Hiérarchie type ticket
+
+		level 'Catégorie ticket'
+			lineageTag: 4d60f512-a2ec-4e88-b3c2-57a7d8956cd2
+			column: 'Catégorie ticket'
+
+		level 'Type ticket'
+			lineageTag: b51c4682-e5d0-4c4a-b7f9-9f0a4d6f36f0
+			column: 'Type ticket'
+
+	partition 'CRM - ticket - informations' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - informations
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,113 @@
+table 'Plan MEE - date début'
+	lineageTag: 97f9b5d4-1823-4cd9-b699-cf3b189ab086
+
+	column 'Année à ce jour (date début plan MEE)'
+		dataType: string
+		lineageTag: 95483937-54c3-43e4-9aba-8726358f82c8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date début plan MEE)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année début plan MEE'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 423ae39b-2edf-4c12-9c13-8e811639966a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année début plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date début plan MEE'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: b6ded4e6-bef0-446a-8b58-ad219a5c0367
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date début plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_debut_plan_mee
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 27b6231e-53dd-4b20-a091-2ef337e02165
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_debut_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour début plan MEE'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 54ef13f3-c57c-4f59-a1a8-f3168c6eaa18
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour début plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois début plan MEE'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 88af51c6-cb66-4587-b290-8d5ba774d399
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois début plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine début plan MEE'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 797a0920-0e65-48e9-83bd-67527d4655c0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine début plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date début plan MEE'
+		lineageTag: bb8a744e-1fed-4922-bcad-efb1dfb159c8
+		sourceLineageTag: Hiérarchie date début plan MEE
+
+		level 'Année début plan MEE'
+			lineageTag: fe1d78e4-6867-4b98-b2c1-d495c7cffffd
+			column: 'Année début plan MEE'
+
+		level 'Mois début plan MEE'
+			lineageTag: 6d256859-24c2-4124-b559-0d96081ac04e
+			column: 'Mois début plan MEE'
+
+		level 'Semaine début plan MEE'
+			lineageTag: 2fa37253-34de-4843-ae7f-4062b5210260
+			column: 'Semaine début plan MEE'
+
+		level 'Date début plan MEE'
+			lineageTag: 59422c89-8d79-4c7d-8048-240886451b08
+			column: 'Date début plan MEE'
+
+	partition 'Plan MEE - date début' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - date début
+			expressionSource: 'DirectQuery à AS – pst38'
+

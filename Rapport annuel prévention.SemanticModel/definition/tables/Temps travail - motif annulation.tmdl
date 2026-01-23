@@ -1,0 +1,67 @@
+table 'Temps travail - motif annulation'
+	lineageTag: 7e438963-7f03-4597-815a-3aaa91d81cd5
+
+	column 'Catégorie annulation'
+		dataType: string
+		lineageTag: d64df35e-10c0-40d6-959a-1078557a1749
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie annulation
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_motif_annulation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 448157d8-3e1c-4d08-9133-b3eda6a441be
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_motif_annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif annulation détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 83498cda-e585-4b96-992d-0b0040c2fb6a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif annulation détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif annulation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: cd68a516-0e1e-4041-a425-063cbc685dbf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie motif annulation'
+		lineageTag: b8eda577-6992-4d59-9f0b-a7e8edde68b9
+		sourceLineageTag: Hiérarchie motif annulation
+
+		level 'Motif annulation'
+			lineageTag: 7105cfd1-6f85-48f6-8064-83f096bb79a9
+			column: 'Motif annulation'
+
+		level 'Motif annulation détaillé'
+			lineageTag: 40cdcfde-7920-4e7d-951c-caae5367249e
+			column: 'Motif annulation détaillé'
+
+	partition 'Temps travail - motif annulation' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - motif annulation
+			expressionSource: 'DirectQuery à AS – pst38'
+

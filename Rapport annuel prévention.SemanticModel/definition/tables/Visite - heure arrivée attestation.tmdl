@@ -1,0 +1,58 @@
+table 'Visite - heure arrivée attestation'
+	lineageTag: f7e42884-1906-40f0-9920-14d4b2617a3b
+
+	column 'Heure arrivée attestation'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2b9cbb3b-a81e-427a-8da3-ddd70f49136b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure arrivée attestation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte arrivée attestation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 81344a27-7da1-4d5d-8d40-518a399978b6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte arrivée attestation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2f399fc8-1590-42aa-8064-f441a27293b3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure arrivée attestation'
+		lineageTag: bdcfc9e5-0eca-457a-8ef3-406320fd29f5
+		sourceLineageTag: Hiérarchie heure arrivée attestation
+
+		level 'Heure arrivée attestation'
+			lineageTag: 402cf4bd-cd5e-4b3b-8d02-c67100d13b8f
+			column: 'Heure arrivée attestation'
+
+		level 'Heure exacte arrivée attestation'
+			lineageTag: dd355d5f-4464-46ac-841e-99df930e8a0e
+			column: 'Heure exacte arrivée attestation'
+
+	partition 'Visite - heure arrivée attestation' = entity
+		mode: directQuery
+		source
+			entityName: Visite - heure arrivée attestation
+			expressionSource: 'DirectQuery à AS – pst38'
+

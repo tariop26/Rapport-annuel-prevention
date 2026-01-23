@@ -1,0 +1,59 @@
+table ETP
+	lineageTag: d268f5f8-1b45-4a5d-b165-ae84dca5aeca
+
+	column 'Date début validité'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: af38f32a-e8eb-45bf-ab7c-6aace6363101
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date début validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date fin validité'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 997e394a-e2ae-4f72-ab37-aa4552d895a0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETP
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: c66677c1-056a-414c-b134-2346a786592b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ETP
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 006c943f-8a5d-47ff-98a7-f15773e1f9a7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ETP = entity
+		mode: directQuery
+		source
+			entityName: ETP
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

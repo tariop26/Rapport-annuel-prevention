@@ -1,0 +1,87 @@
+table 'CRM - ticket - date échéance'
+	lineageTag: 0e982a37-a64b-4cab-86b6-04d7f8c1e42d
+
+	column 'Année échéance ticket'
+		dataType: int64
+		lineageTag: 06a287a9-b1d0-4a36-9774-3c296ad92cf5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année échéance ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date échéance ticket'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		lineageTag: 17a0a12d-98f9-48b3-8731-bd7f62fc65ef
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date échéance ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_echeance_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: 6eed7475-d3dc-41fe-b274-038a42040182
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_echeance_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois échéance ticket'
+		dataType: string
+		lineageTag: 2d408fdc-5132-4e8f-9c3f-23c05d559def
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois échéance ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Semaine échéance ticket'
+		dataType: string
+		lineageTag: 88c3a627-bbb2-4b53-99f3-2eecd5c860e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine échéance ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie date échéance ticket'
+		lineageTag: c32d2026-973f-423e-882f-fa758fa4b12a
+		sourceLineageTag: Hiérarchie date échéance ticket
+
+		level 'Année échéance ticket'
+			lineageTag: a71e8c5e-ad9d-444b-bf8a-87d2720a7a5f
+			column: 'Année échéance ticket'
+
+		level 'Mois échéance ticket'
+			lineageTag: dc47d26d-b97e-4393-87d2-6b766e56a662
+			column: 'Mois échéance ticket'
+
+		level 'Semaine échéance ticket'
+			lineageTag: bcbed0a7-a24a-41ff-90f0-055a8aa12934
+			column: 'Semaine échéance ticket'
+
+		level 'Date échéance ticket'
+			lineageTag: d52aaddc-6913-4ee0-94d1-147a60335393
+			column: 'Date échéance ticket'
+
+	partition 'CRM - ticket - date échéance' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - date échéance
+			expressionSource: 'DirectQuery à AS – pst38'
+

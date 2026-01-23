@@ -1,0 +1,70 @@
+table 'CRM - ticket - responsable'
+	lineageTag: 1faf427f-3c7f-4f71-bd70-02f583750bb6
+
+	column id_responsable_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: 53b9bf4b-c139-41f4-928e-cdcbe5858f9c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_responsable_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom responsable ticket'
+		dataType: string
+		lineageTag: e9d7ba62-cc2e-4813-ac65-a114014959de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom responsable ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil responsable ticket détaillé'
+		dataType: string
+		lineageTag: 85486051-fe96-400d-8bef-7dc989d98416
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil responsable ticket détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil responsable ticket'
+		dataType: string
+		lineageTag: a038509b-0235-4573-b820-973e9a496568
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil responsable ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie responsable ticket'
+		lineageTag: d0a0cbb4-af6e-4c85-9964-d796efc7e678
+		sourceLineageTag: Hiérarchie responsable ticket
+
+		level 'Profil responsable ticket'
+			lineageTag: ef4c9d8a-7371-43a3-af5a-612aaf9ad8c9
+			column: 'Profil responsable ticket'
+
+		level 'Profil responsable ticket détaillé'
+			lineageTag: 6481ae25-840b-4f55-bce9-94bb34d68077
+			column: 'Profil responsable ticket détaillé'
+
+		level 'Nom responsable ticket'
+			lineageTag: 57571105-e866-4de5-9f09-4a81b649cd4e
+			column: 'Nom responsable ticket'
+
+	partition 'CRM - ticket - responsable' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - responsable
+			expressionSource: 'DirectQuery à AS – pst38'
+

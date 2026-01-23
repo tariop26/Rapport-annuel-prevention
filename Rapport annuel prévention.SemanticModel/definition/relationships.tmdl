@@ -1,0 +1,1684 @@
+relationship 3922a8d5-9440-47c6-83f3-e989ed894236
+	toCardinality: many
+	fromColumn: 'Adhérent (actuel)'.id_etiquette_entreprise
+	toColumn: 'Adhérent - étiquette'.id_etiquette_entreprise
+
+relationship 6000c63d-adcd-417a-8dc5-f2d106267b70
+	fromColumn: Adhérents.id_medecin_referent
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship dbd4fe4d-4fbc-4b4c-97be-07066e60ddfc
+	fromColumn: Adhérents.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 5cec8821-2042-4baf-b403-c7bbf8ec1b7b
+	fromColumn: Adhérents.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 2be22fa7-da80-4e1f-8ef8-df7f2a98b68a
+	fromColumn: Adhérents.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship e57ea7db-083b-47f5-a60a-f8f5309d92f7
+	fromColumn: AMT.id_date_creation_amt
+	toColumn: 'AMT - date création'.id_date_creation_amt
+
+relationship 807a26ac-ea05-4974-b373-cb09375084f7
+	fromColumn: AMT.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 8f90e7a3-9231-4828-a4fa-619de1b1c094
+	fromColumn: AMT.id_date_demande_amt
+	toColumn: 'AMT - date demande'.id_date_demande_amt
+
+relationship 30a87d20-3266-4e02-b443-34b1d8192daf
+	fromColumn: AMT.id_date_cloture_amt
+	toColumn: 'Date principale'.id_date
+
+relationship 20b62ea4-6607-4358-bb67-365bb81b235a
+	fromColumn: AMT.id_date_cloture_amt
+	toColumn: 'AMT - date clôture'.id_date_cloture_amt
+
+relationship 71e1f7b5-a272-42fa-a9d0-5d4779011d3b
+	fromColumn: AMT.id_date_echeance_amt
+	toColumn: 'AMT - date échéance'.id_date_echeance_amt
+
+relationship 59d2fc30-5c93-4537-9db7-31ed6c51e7e3
+	fromColumn: AMT.id_date_derniere_intervention_amt
+	toColumn: 'AMT - date dernière intervention'.id_date_derniere_intervention_amt
+
+relationship f8fd0042-8634-47c2-8c2b-679ad00f2450
+	fromColumn: AMT.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 7806ef5a-d244-4ac7-a572-b355d8cce2c9
+	toCardinality: many
+	fromColumn: AMT.id_etiquette_amt
+	toColumn: 'AMT - étiquette'.id_etiquette_amt
+
+relationship 71d9a4f0-a9ab-49ee-979b-b9bf89ded693
+	toCardinality: many
+	fromColumn: AMT.id_groupe_tache_amt
+	toColumn: 'AMT - tâches'.id_groupe_tache_amt
+
+relationship 06071fce-05b7-4394-a54d-a4f45fa5142c
+	toCardinality: many
+	fromColumn: AMT.id_groupe_description_amt
+	toColumn: 'AMT - description'.id_groupe_description_amt
+
+relationship 806d51b4-059d-469e-a8f9-1e95bef5ad74
+	fromColumn: AMT.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 5ef6f416-46de-4689-aa91-cd529dde927c
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: AMT.code_amt
+	toColumn: 'AMT - indicateurs par intervenant'.code_amt
+
+relationship fa748601-6137-470b-8a10-f3c7a0e405a5
+	fromColumn: 'AMT v2'.id_date_cloture_amt
+	toColumn: 'AMT - date clôture'.id_date_cloture_amt
+
+relationship b9d5379d-330b-4338-b5ea-59274f9b75d0
+	fromColumn: 'AMT v2'.id_date_cloture_amt
+	toColumn: 'Date principale'.id_date
+
+relationship cd63b80c-4e3a-4262-ad27-5f5b08fbbac4
+	fromColumn: 'AMT v2'.id_demandeur_amt
+	toColumn: 'AMT - demandeur'.id_demandeur_amt
+
+relationship c60d2798-a019-489a-bc3a-1369e54dbd28
+	fromColumn: 'AMT v2'.id_statut_amt
+	toColumn: 'AMT - statut'.id_statut_amt
+
+relationship 1fdecad0-edaa-4e66-bdc2-0102c78c5dc4
+	fromColumn: 'AMT v2'.id_intervenant_amt
+	toColumn: 'AMT - intervenant'.id_utilisateur_sst
+
+relationship 91a1f07e-a098-4e66-930f-4c7da9452c98
+	fromColumn: 'AMT v2'.id_date_derniere_intervention_amt
+	toColumn: 'AMT - date dernière intervention'.id_date_derniere_intervention_amt
+
+relationship 0c366c99-9100-451a-bffe-c422cb67596d
+	fromColumn: 'AMT v2'.id_titre_amt
+	toColumn: 'AMT - titre'.id_titre_amt
+
+relationship f518e734-32fd-4ff5-a6eb-242d0a8fd3db
+	toCardinality: many
+	fromColumn: 'AMT v2'.id_groupe_tache_amt
+	toColumn: 'AMT - tâches'.id_groupe_tache_amt
+
+relationship 14563d21-a0cf-4a95-a6da-0d4de42ce128
+	toCardinality: many
+	fromColumn: 'AMT v2'.id_etiquette_amt
+	toColumn: 'AMT - étiquette'.id_etiquette_amt
+
+relationship 6b757605-165c-4026-bd50-dff9e393091e
+	toCardinality: many
+	fromColumn: 'AMT v2'.id_groupe_description_amt
+	toColumn: 'AMT - description'.id_groupe_description_amt
+
+relationship 49414a6a-0c68-46ed-bcfa-e3db4dfd8328
+	fromColumn: 'AMT v2'.id_date_demande_amt
+	toColumn: 'AMT - date demande'.id_date_demande_amt
+
+relationship 9adb1ea2-ba8e-4d99-8028-6b9790310243
+	fromColumn: 'AMT v2'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 7d154548-8f63-4955-a838-b3c8f639372b
+	fromColumn: 'AMT v2'.id_intervenant_amt
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 1a1b53bc-77a5-4510-b485-e7195e24f12b
+	fromColumn: 'AMT v2'.id_modele_amt
+	toColumn: 'AMT - modèle'.id_modele_amt
+
+relationship 6741dbe7-a5d0-4807-9821-dc4e0b1af876
+	fromColumn: 'AMT v2'.id_date_echeance_amt
+	toColumn: 'AMT - date échéance'.id_date_echeance_amt
+
+relationship 9fb15717-ffe6-4049-a367-1d256e44c536
+	fromColumn: 'AMT v2'.id_createur_amt
+	toColumn: 'AMT - créateur'.id_createur_amt
+
+relationship 218ae500-4bda-41bb-adb2-6832421f6129
+	fromColumn: 'AMT v2'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 5c4d451e-9c50-40f3-9b7c-d75f7eb4ca7e
+	fromColumn: 'AMT v2'.id_date_creation_amt
+	toColumn: 'AMT - date création'.id_date_creation_amt
+
+relationship b402adaa-91b4-49c2-8de9-93871e6135c6
+	fromColumn: 'AMT v2'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 20b65830-b3b2-4aac-a13a-ce42955997f0
+	fromColumn: 'Changement équipe médicale'.id_date_changement_secteur
+	toColumn: 'Date principale'.id_date
+
+relationship fc11b801-0ffb-436b-bdb3-762d4aa9a5ea
+	fromColumn: 'Changement équipe médicale'.id_secteur_apres_changement
+	toColumn: 'Changement équipe médicale - après'.id_secteur_apres_changement
+
+relationship 2aad20af-0d1f-447b-b473-3e922e764fba
+	fromColumn: 'Changement équipe médicale'.id_secteur_avant_changement
+	toColumn: 'Changement équipe médicale - avant'.id_secteur_avant_changement
+
+relationship ac27c0ab-62ee-400e-b581-5aedb799019c
+	fromColumn: 'Changement équipe médicale'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship db0feb0f-c00a-480f-9460-567874352a5e
+	fromColumn: 'CRM - activités'.id_date_activite_crm
+	toColumn: 'Date principale'.id_date
+
+relationship ab055f27-0e8f-4168-a8fc-4b828df84cf2
+	fromColumn: 'CRM - activités'.id_date_activite_crm
+	toColumn: 'CRM - activité - date'.id_date_activite_crm
+
+relationship 0aa7b05c-c88a-4b1a-a62b-3ac599c9f3d1
+	fromColumn: 'CRM - activités'.id_type_activite_crm
+	toColumn: 'CRM - activité - type'.id_type_activite_crm
+
+relationship faab561a-ed37-474e-8cd1-36c086027273
+	fromColumn: 'CRM - activités'.id_info_crm
+	toColumn: 'CRM - informations'.id_info_crm
+
+relationship c57982b0-3430-4e1b-b9ae-699392493f2a
+	fromColumn: 'CRM - activités'.id_auteur_activite_crm
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 5b32650e-b66e-4134-9eec-6a797a0a0dc5
+	fromColumn: 'CRM - activités'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 7cac1ac8-50ac-45b2-a98a-b4dee9d37a36
+	fromColumn: 'CRM - activités'.id_auteur_activite_crm
+	toColumn: 'CRM - activité - auteur'.id_auteur_activite_crm
+
+relationship ef7532e5-8bac-4047-9ffc-2f5353f3fa44
+	fromColumn: 'CRM - activités'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 3a74552c-8449-4a50-a33e-439a49a58bf2
+	fromColumn: 'CRM - activités'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 268f24e8-8313-488f-8cc8-d5a4ad665175
+	fromColumn: 'CRM - tickets'.id_createur_ticket
+	toColumn: 'CRM - ticket - créateur'.id_createur_ticket
+
+relationship ed53943f-30cc-4012-b370-8264091b8ca5
+	fromColumn: 'CRM - tickets'.id_statut_ticket
+	toColumn: 'CRM - ticket - statut'.id_statut_ticket
+
+relationship 4b28bffb-f73e-49b7-b510-a16cd3d922da
+	fromColumn: 'CRM - tickets'.id_info_crm_ticket
+	toColumn: 'CRM - ticket - informations'.id_info_crm_ticket
+
+relationship f9537cbe-a0e0-4ed1-9dde-362cb6f81fee
+	fromColumn: 'CRM - tickets'.id_info_crm
+	toColumn: 'CRM - informations'.id_info_crm
+
+relationship 22efecd8-6dea-46b4-b2ce-a3e654e19d22
+	fromColumn: 'CRM - tickets'.id_date_cloture_ticket
+	toColumn: 'CRM - ticket - date clôture'.id_date_cloture_ticket
+
+relationship 20fb602f-e9cf-4c5b-b22c-54fee58c0352
+	fromColumn: 'CRM - tickets'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship c638f340-c55e-4dbe-9364-bfb61fdad1c9
+	fromColumn: 'CRM - tickets'.id_createur_ticket
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 2051b22c-8462-48c8-9ad2-f1f670b02ca6
+	fromColumn: 'CRM - tickets'.id_date_creation_ticket
+	toColumn: 'CRM - ticket - date création'.id_date_creation_ticket
+
+relationship 8f82cc07-2323-402a-8b46-c0c262281dd0
+	fromColumn: 'CRM - tickets'.id_date_creation_ticket
+	toColumn: 'Date principale'.id_date
+
+relationship 607b78bc-71e2-4051-a15a-c273c2d84796
+	fromColumn: 'CRM - tickets'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 3cce2fa0-6628-4d14-b80b-eb66a741e206
+	fromColumn: 'CRM - tickets'.id_responsable_ticket
+	toColumn: 'CRM - ticket - responsable'.id_responsable_ticket
+
+relationship 8054b886-4a80-445f-87ed-3c9e5cb7659b
+	fromColumn: 'CRM - tickets'.id_date_echeance_ticket
+	toColumn: 'CRM - ticket - date échéance'.id_date_echeance_ticket
+
+relationship 27476f69-1fdb-487d-9367-98aebaa2c57d
+	fromColumn: 'CRM - tickets'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 5cb947fe-edbb-4af2-9644-02ef52aeeb03
+	fromColumn: 'Demande visite adhérent'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 352afb23-9ee4-4857-8b75-c4e0a35ead11
+	fromColumn: 'Demande visite adhérent'.id_type_visite_demande
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship 93e9b079-3539-47fc-8bc9-79a918b349d8
+	fromColumn: 'Demande visite adhérent'.'Date création demande'
+	toColumn: 'Date principale'.Date
+
+relationship 8ca07dcf-75f8-4972-b29d-3ede265d370d
+	fromColumn: 'Demande visite adhérent'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 020e7242-47a0-4507-967c-3b68e9d00404
+	fromColumn: 'Demande visite adhérent'.id_thesaurus_poste
+	toColumn: 'Salarié - thésaurus poste'.id_thesaurus_poste
+
+relationship 27c0c099-adef-4ef6-8fd1-4aff7c928b81
+	fromColumn: 'Demande visite adhérent'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship ad3de510-9537-4fc7-bea9-f3a63cab21e3
+	fromColumn: 'Demande visite adhérent'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 72656238-15bc-4497-9d74-4bc65fe5b9c1
+	fromColumn: 'Demande visite adhérent'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship f2e5dde0-c347-4170-a744-cbaaa767214e
+	fromColumn: 'Demande visite adhérent'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 5b03634e-c936-4d84-b455-3a9dc7a01801
+	fromColumn: 'Demande visite adhérent'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 9bfce763-d3dd-4b5f-9397-0f646558df5a
+	fromColumn: 'Demande visite adhérent'.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship abb754bb-9e50-43e6-86a9-9051e8fae86b
+	fromColumn: 'Demande visite adhérent'.id_validateur_demande_visite
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship c45f58fc-f39b-480d-81d7-5f736781a632
+	fromColumn: 'Demande visite adhérent'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 36a41cc4-8c95-4b55-a1d6-09fa8a275f12
+	fromColumn: 'Demande visite adhérent'.id_statut_demande_visite
+	toColumn: 'Demande visite adhérent - statut'.id_statut_demande_visite
+
+relationship c28cb6f1-e3ce-48cf-ad07-92a46c5435ff
+	toCardinality: many
+	fromColumn: 'Documents émis'.id_document
+	toColumn: 'Documents émis - adaptation poste'.id_document
+
+relationship b500c91b-042b-4802-81c1-c43051243b29
+	fromColumn: 'Documents émis'.id_signataire_document
+	toColumn: 'Document émis - signataire'.id_utilisateur_sst
+
+relationship 3b5a24ff-014d-45b7-b09d-d794d2584c42
+	fromColumn: 'Documents émis'.id_date_emission
+	toColumn: 'Document émis - date émission'.id_date
+
+relationship b345ea28-ebd5-4295-bd69-15affdee971f
+	fromColumn: 'Documents émis'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship 0a3d1080-1fe4-4bf8-a181-c6ea4230dbfc
+	fromColumn: 'Documents émis'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship bc1cee7e-a200-46f4-9455-46e27b5c2531
+	fromColumn: 'Documents émis'.id_type_document
+	toColumn: 'Documents émis - type document'.id_type_document
+
+relationship 105172a8-e16b-4529-8c5a-ed3fe3a8152e
+	fromColumn: 'Documents émis'.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship e3d3d9cf-cb8d-4967-853b-99aeef5ab027
+	fromColumn: 'Documents émis'.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship 1f292eb8-9605-4973-88ae-ffef8ee6887f
+	fromColumn: 'Documents émis'.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship d9f2b3b6-8aea-4d81-a652-abe22e4ada6f
+	fromColumn: 'Documents émis'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 9f1a8138-6ddd-480a-bbae-cb321a57e520
+	fromColumn: 'Documents émis'.id_date_fin_validite
+	toColumn: 'Documents émis - date fin validité'.id_date
+
+relationship 2783dd43-b875-4491-9c34-f4afb1096a6b
+	fromColumn: 'Documents émis'.id_date_emission
+	toColumn: 'Date principale'.id_date
+
+relationship 0fbacac8-bd6b-408a-be64-ca693188ea22
+	fromColumn: 'Documents émis'.id_date_debut_validite
+	toColumn: 'Documents émis - date début validité'.id_date
+
+relationship 7eead77b-7338-483f-90e7-555728856de7
+	fromColumn: 'Documents émis'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 7c966502-a6a4-49b4-be0b-bda5094ab374
+	fromColumn: 'Documents émis'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 2b622f6e-8b2b-48f9-ad17-fb22da4f545b
+	fromColumn: 'Documents émis'.id_thesaurus_poste
+	toColumn: 'Salarié - thésaurus poste'.id_thesaurus_poste
+
+relationship 7ab5acb6-af2d-40d6-9bf4-4f948d0046ba
+	fromColumn: 'Documents émis'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 682fb0f1-12f8-472e-9fbf-9f75b4fe4316
+	fromColumn: 'Documents émis'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 0c54480a-97a4-4ec8-ab55-897c6abcc011
+	fromColumn: 'Documents émis'.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship 574d90fa-ef9f-49d5-828b-35404bc11490
+	fromColumn: 'Documents émis'.id_signataire_document
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship ad6bd013-7180-4b4e-96f9-0e70870fd0f7
+	fromColumn: 'Documents émis'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 68078521-8ab9-4135-a0f7-697c3477cbb6
+	fromColumn: DPAE.id_entreprise_dpae
+	toColumn: 'DPAE - entreprise'.id_entreprise_dpae
+
+relationship d2f8c0ab-ca89-4f41-a5f8-32656785424e
+	fromColumn: DPAE.id_date_import_dpae
+	toColumn: 'DPAE - date import'.id_date_import_dpae
+
+relationship 19a35974-7216-44e2-ba33-fbe9a64f0011
+	fromColumn: DPAE.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 7adad2c0-ad1a-448b-9083-21ac01694e3a
+	fromColumn: DPAE.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 7bd4b239-8140-4103-834d-4a9f94a9263a
+	fromColumn: DPAE.id_date_import_dpae
+	toColumn: 'Date principale'.id_date
+
+relationship 8f24d920-2767-483d-b89c-b65e04e0253f
+	fromColumn: DUERP.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 439bede9-a4a4-4947-840c-461cc80b794d
+	fromColumn: DUERP.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 8457e0dd-7afd-4ad3-a28b-7454e019f242
+	fromColumn: DUERP.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 02f2a586-7702-42bb-878d-8f240e306804
+	fromColumn: 'Déclaration effectif'.id_medecin_referent
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 46b13525-f597-43d8-9d14-34eefb7658c9
+	fromColumn: 'Déclaration effectif'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 763d6d99-7692-4d88-821d-c97b9bef2850
+	fromColumn: 'Déclaration effectif'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 7c679f0a-700a-4a3b-ba36-d47cee0b605f
+	fromColumn: 'Déclaration effectif'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 4a0d16ad-ce38-455e-a289-858a8b7d6751
+	fromColumn: 'Effectif au 31/12'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 16477700-ed95-41f6-b8c9-fc26fb222a28
+	fromColumn: 'Effectif au 31/12'.id_date_effectif
+	toColumn: 'Date principale'.id_date
+
+relationship 26531e6b-85ec-44ce-a846-55d851d89001
+	fromColumn: 'Effectif au 31/12'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 1204a2d7-4fdf-4431-b557-1ba516c24022
+	fromColumn: 'Effectif au 31/12'.id_medecin_referent
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship b18ad62b-3541-4e4c-92c0-19b03771ebed
+	toCardinality: many
+	fromColumn: 'Effectif au 31/12'.code_groupe_determinant_suivi
+	toColumn: 'Déterminant suivi au 31/12'.code_groupe_determinant_suivi
+
+relationship 09e0147e-1f42-4d85-8078-facf3d557419
+	fromColumn: 'Evolution effectif'.date_observation
+	toColumn: 'Date principale'.Date
+
+relationship d64d3503-56a9-4e43-8894-eb45121c023e
+	fromColumn: 'Evolution effectif'.date_observation
+	toColumn: 'Evolution effectif - date'.Date
+
+relationship cd373e09-1134-453d-855b-d0b14c5d7466
+	fromColumn: 'Evolution effectif'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 39c7dad5-2dff-4b45-86ac-c77c8d91d559
+	fromColumn: 'Evolution effectif'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 0068fada-536e-41b1-a92e-7477e608ade2
+	fromColumn: 'Evolution effectif'.id_medecin_referent
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 80443490-9016-4c94-81b5-ed3974e99ff0
+	fromColumn: 'Evolution effectif'.id_date_prochaine_fe
+	toColumn: 'Evolution effectif - date prochaine FE'.id_date
+
+relationship c0c029bc-f377-47b3-9931-d7f4da19a613
+	fromColumn: 'Evolution effectif'.id_date_prochaine_amt_prevention_primaire
+	toColumn: 'Evolution effectif - date prochaine APP'.id_date
+
+relationship daf41353-96b4-42a1-b747-a0908bda62f7
+	fromColumn: 'Evolution effectif'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship b8b000ae-c718-44cd-8574-57b0a954d9df
+	fromColumn: 'Evolution retard'.id_type_visite_calculee
+	toColumn: 'Evolution retard - type visite calculée'.id_type_visite_calculee
+
+relationship 14232105-862d-478a-b998-4d645030d341
+	fromColumn: 'Evolution retard'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 078ad535-9f22-42e8-bab6-c0a12432f5d3
+	fromColumn: 'Evolution retard'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship f4bd94fa-7b61-4a5e-96ab-3379f6ff1740
+	fromColumn: 'Evolution retard'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 482f6443-bfcd-4880-a90f-acdafd3a6402
+	fromColumn: 'Evolution retard'.date_historisation
+	toColumn: 'Evolution retard - date'.Date
+
+relationship fcdd7a85-8725-4310-bdf8-0ab17ffe2959
+	fromColumn: 'Evolution retard'.date_historisation
+	toColumn: 'Date principale'.Date
+
+relationship 534cef3c-4143-45d2-ac4c-81b244d7c398
+	fromColumn: 'Evolution retard'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship d39cbae4-8ebf-4e70-98fb-f72627c59ced
+	fromColumn: 'Evolution retard'.id_medecin_referent
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship b6ad27e1-20d8-427c-b0f0-fc4768d7f36b
+	fromColumn: 'Evolution retard'.id_categorie_retard
+	toColumn: 'Evolution retard - catégorie retard'.id_categorie_retard
+
+relationship aaf2a956-cd0a-4623-a1ea-ebece5b15b6e
+	fromColumn: 'Evolution retard'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 7c7a6c77-2f50-4ae5-a71c-8ebd0c5a75a0
+	fromColumn: 'Evènement collectif'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 9f09fb04-376b-48e6-a8a1-3982ba409f76
+	fromColumn: 'Evènement collectif'.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship e90b5d74-2d35-4460-89de-c980e54358da
+	fromColumn: 'Evènement collectif'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship dd0183b6-a690-4a39-b2b6-77f0b5c18712
+	fromColumn: 'Evènement collectif'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 93ffc4b5-3fdd-4d26-9995-413abb8725ad
+	fromColumn: 'Evènement collectif'.id_info_evenement_collectif_unique
+	toColumn: 'Evènement collectif - informations'.id_info_evenement_collectif_unique
+
+relationship 9ca67726-1b06-4265-8dbb-1f9f0fb43a3c
+	fromColumn: 'Evènement collectif'.id_date_evenement_collectif
+	toColumn: 'Date principale'.id_date
+
+relationship c2b4c32d-04ea-4eb8-a018-89c090650f9a
+	fromColumn: 'Evènement collectif'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship c85731f6-bad0-4744-8f91-1b6ca2433817
+	fromColumn: 'Evènement collectif'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 36bf8519-7e3f-418a-96f3-9cac8e700fed
+	fromColumn: 'Evènement collectif'.id_date_evenement_collectif
+	toColumn: 'Evènement collectif - date'.id_date_evenement_collectif
+
+relationship 5ed0ea49-e09c-404a-b315-587688dc9d64
+	fromColumn: 'Evènement collectif'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 9fee174d-0e56-4ee7-9bfe-e11cf6bbfdca
+	fromColumn: 'Evènement collectif'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship fee64dd3-75e2-422e-b060-e18bec88fe2c
+	toCardinality: many
+	fromColumn: 'Evènement collectif'.id_groupe_participant_evenement_amt_unique
+	toColumn: 'Evènement collectif - groupe participants'.id_groupe_participant_evenement_amt_unique
+
+relationship e5df60e5-b3c9-4881-b4d9-61ef3a2a5cf5
+	fromColumn: 'Examen complémentaire'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship e8c0e5f8-3fae-4368-a64f-39896d2db896
+	fromColumn: 'Examen complémentaire'.id_realisateur_examen
+	toColumn: 'Examen complémentaire - réalisateur'.id_realisateur_examen
+
+relationship d465ff7d-85a3-40e3-961c-bdacbd56c947
+	fromColumn: 'Examen complémentaire'.id_statut_examen
+	toColumn: 'Examen complémentaire - statut examen'.id_statut_examen
+
+relationship c2978647-457a-48a1-a72b-d58e4a416af8
+	fromColumn: 'Examen complémentaire'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 728d014a-0e14-4dbc-8778-61ae78ff30ea
+	fromColumn: 'Examen complémentaire'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship d467e116-fb1c-47bd-97c2-33c5f16144ae
+	fromColumn: 'Examen complémentaire'.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship eb3a5c7c-a4f8-42f4-b60b-94dda2b83ebb
+	fromColumn: 'Examen complémentaire'.id_realisateur_visite
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship f3025091-08f3-4382-9a23-f05bce640280
+	fromColumn: 'Examen complémentaire'.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship e3a18717-0d7f-4480-9980-981e90bf8452
+	fromColumn: 'Examen complémentaire'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 0602ffc9-6f1f-46ad-a5ee-fdf1591656db
+	fromColumn: 'Examen complémentaire'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 78595070-640a-4c0b-b6b2-90a6c26b1dd6
+	fromColumn: 'Examen complémentaire'.id_thesaurus_poste
+	toColumn: 'Salarié - thésaurus poste'.id_thesaurus_poste
+
+relationship ac97d1eb-2cf4-46fb-808c-7409121134c3
+	fromColumn: 'Examen complémentaire'.id_date_examen
+	toColumn: 'Date principale'.id_date
+
+relationship 824ea312-e1d9-444c-b6af-9cea819f5e44
+	fromColumn: 'Examen complémentaire'.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship b8095b33-36a5-45f2-8c9c-b3d48f4ffab7
+	fromColumn: 'Examen complémentaire'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship b703a2a7-f4a9-40e3-a0d0-3a9b0b2098ce
+	fromColumn: 'Examen complémentaire'.id_date_examen
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship 9d72e57c-ab30-43dd-aa48-22bd840dde1f
+	fromColumn: 'Examen complémentaire'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship dbd25532-04f4-49d8-b0e6-86f63441579d
+	fromColumn: 'Examen complémentaire'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 0f3a932b-56ac-4161-a414-65e4adca5fd2
+	fromColumn: 'Examen complémentaire'.id_realisateur_visite
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship fa13c390-84f0-4806-be4f-f6451eef1ca3
+	fromColumn: Facturation.id_description_acte_facturable
+	toColumn: 'Facturation - description acte facturable'.id_description_acte_facturable
+
+relationship e33f3c0b-1e98-4d68-b037-f912d52bbc5f
+	fromColumn: Facturation.id_date_reference_facturation
+	toColumn: 'Facturation - date référence facturation'.id_date_reference_facturation
+
+relationship 9492b9d1-94b5-4e66-a1e1-e53269507c12
+	fromColumn: Facturation.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 9e3a2993-a64d-4829-a77c-a49a7db64a15
+	fromColumn: Facturation.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 1749c9ed-8120-44e5-8f3b-b9b13ac9f8d6
+	fromColumn: Facturation.id_info_facturation
+	toColumn: 'Facturation - infos acte facturable'.id_info_facturation
+
+relationship 89ea801f-3364-4f2a-952c-b3315dcbbb42
+	fromColumn: Facturation.id_article
+	toColumn: 'Facturation - article'.id_article
+
+relationship 15bee4d5-9d24-46ef-a4bf-9a1c6f415be3
+	fromColumn: Facturation.id_date_facture
+	toColumn: 'Facturation - date facture'.id_date_facture
+
+relationship eaefd9dd-1820-44ca-a556-dd94af23b4f4
+	fromColumn: Facturation.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 7ab34545-9e5f-4fce-aad2-a519cf6beeb2
+	fromColumn: 'Modèle de charge - leviers charge AMT'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 0243458b-6517-4cc8-8901-f7965e0c0a13
+	fromColumn: 'Modèle de charge - leviers charge AMT'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 883f0aac-cb9d-4e60-b2de-c7150720fa4b
+	fromColumn: 'Modèle de charge - leviers charge AMT'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 07eb4a3e-c467-47ed-8047-022d76905c02
+	fromColumn: 'Modèle de charge - prévision charge visites'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 19a11b0b-52c2-4db4-b41e-5bd2b0b124fb
+	fromColumn: 'Modèle de charge - prévision charge visites'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 4c4dee0a-d467-4629-9abd-0493674a447e
+	fromColumn: 'Modèle de charge - prévision charge visites'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 4878deac-4b04-4dfe-a255-10592651f779
+	fromColumn: 'Modèle de charge - prévision charge visites'.id_categorie_visite
+	toColumn: 'Modèle de charge - catégorie visite'.id_categorie_visite
+
+relationship 13a90ce6-6285-4d3e-be23-43e0155b39b8
+	fromColumn: 'Modèle de charge - prévision charge visites'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 4f8049f0-b07b-4182-b552-bc604771e2a2
+	fromColumn: 'Modèle de charge - prévision charge visites'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship b61e1f69-51d7-49e5-87e5-1df590745b49
+	fromColumn: 'Modèle de charge - visites réalisées'.id_categorie_visite
+	toColumn: 'Modèle de charge - catégorie visite'.id_categorie_visite
+
+relationship 63c77f2a-701e-4d67-960c-fcdca62efce6
+	fromColumn: 'Modèle de charge - visites réalisées'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 6e0c1d16-4b88-4e1c-b481-d3f9a332928a
+	fromColumn: 'Modèle de charge - visites réalisées'.id_date_dernier_jour_mois_visite
+	toColumn: 'Date principale'.id_date
+
+relationship ecf64944-c762-4d5d-aefa-005eef6e3591
+	fromColumn: 'Modèle de charge - visites réalisées'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship a3393864-c8cc-4cb1-a128-eed220b854e2
+	fromColumn: 'Modèle de charge - visites réalisées'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 7f8d36e0-fb85-4740-9aea-f865542616f1
+	fromColumn: 'Modèle de charge - visites réalisées'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 3eb0a602-00c4-48d1-9ff5-6bf29b911dff
+	fromColumn: 'Modèle de charge - visites réalisées'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 30d31166-4b1e-4ea6-b1bf-d1a181feedaa
+	fromColumn: Orientation.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship c77a0dde-aae4-43e9-9b18-6a8626f81ef8
+	fromColumn: Orientation.id_auteur_orientation
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship 2529a78f-10cb-4173-9167-c9ed933a6f50
+	fromColumn: Orientation.id_date_emission
+	toColumn: 'Date principale'.id_date
+
+relationship aec5920e-3c88-4868-ac07-3dcc78f467b6
+	fromColumn: Orientation.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship 5a2d309a-7c66-43c2-aa7c-90ca769e252c
+	fromColumn: Orientation.id_type_orientation
+	toColumn: 'Orientation - type orientation'.id_type_orientation
+
+relationship d465efe1-5f9d-4cf0-bf57-53e0d317c357
+	fromColumn: Orientation.id_auteur_orientation
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 5e98c015-3bc0-401d-bb83-c00fcb6efe53
+	fromColumn: Orientation.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship d0d7a612-25cc-4c90-9c31-32886fc195ef
+	fromColumn: Orientation.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship dde25df8-0548-4cec-98a2-72dc24a292d3
+	fromColumn: Orientation.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship 466ba680-f506-4e2c-a6a3-9d268fcd3310
+	fromColumn: Orientation.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 4a991f42-1dc2-4a0d-9885-85685db74238
+	fromColumn: Orientation.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship e9afa9c8-8aa0-4e8f-b841-f336c7736223
+	fromColumn: Orientation.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship f9354f3c-a446-466b-9655-2556ab0bd34b
+	fromColumn: Orientation.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 1e1f057d-823f-42f1-b54f-f24b93291d6b
+	fromColumn: Orientation.id_date_emission
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship 6f0ad7aa-74d9-4850-b329-e9f29d3b4c3a
+	fromColumn: Orientation.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 1b85f591-ab4d-4f53-942e-3d3a6b5e819e
+	fromColumn: Orientation.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 4363cbbe-d430-4872-b431-5e7a3f3826ed
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Plan MEE'.id_groupe_structure_mobilisee_plan_mee
+	toColumn: 'Plan MEE - structures mobilisées'.id_groupe_structure_mobilisee_plan_mee
+
+relationship 84026c45-9de2-47ca-8b81-311961fe34e2
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Plan MEE'.id_groupe_dispositif_plan_mee
+	toColumn: 'Plan MEE - dispositifs'.id_groupe_dispositif_plan_mee
+
+relationship 65596573-c553-4e31-8907-838dd9381504
+	fromColumn: 'Plan MEE'.id_createur_plan_mee
+	toColumn: 'Plan MEE - créateur'.id_createur_plan_mee
+
+relationship 914e320e-bc73-467d-a432-d7503feddd61
+	toCardinality: many
+	fromColumn: 'Plan MEE'.id_groupe_intervenant_plan_mee
+	toColumn: 'Plan MEE - intervenants'.id_groupe_intervenant_plan_mee
+
+relationship a1655228-27d4-4f87-9ab2-ca222260fcfe
+	fromColumn: 'Plan MEE'.id_date_fin_plan_mee
+	toColumn: 'Plan MEE - date fin'.id_date_fin_plan_mee
+
+relationship 93bdb89a-3e65-45a0-a3bc-7684a58c1a52
+	fromColumn: 'Plan MEE'.id_info_plan_mee
+	toColumn: 'Plan MEE - informations'.id_info_plan_mee
+
+relationship 4df984b9-0b84-4a2d-a097-930ef057648a
+	fromColumn: 'Plan MEE'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship d9eb3097-c839-4106-9bee-c91e514de21e
+	fromColumn: 'Plan MEE'.id_date_debut_plan_mee
+	toColumn: 'Plan MEE - date début'.id_date_debut_plan_mee
+
+relationship 2a6d0d01-e8b1-4087-8164-6403eac9b416
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Plan MEE'.id_plan_mee_source
+	toColumn: 'Plan MEE - problèmes de santé'.id_plan_mee_source
+
+relationship 8b92e7aa-d484-4605-bad1-687a803e4490
+	fromColumn: 'Plan MEE'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 2973da23-6743-4dfc-b657-ffb005898850
+	fromColumn: 'Plan MEE'.id_date_debut_plan_mee
+	toColumn: 'Date principale'.id_date
+
+relationship 2e863404-cdc7-4483-9ec3-6e0c5d88cd9e
+	toCardinality: many
+	fromColumn: 'Plan MEE'.id_plan_mee_source
+	toColumn: 'Plan MEE - objectifs'.id_plan_mee_source
+
+relationship 02a5a15c-4950-433c-bb7b-99e1c7e5a56e
+	fromColumn: 'Plan MEE'.id_contexte_plan_mee
+	toColumn: 'Plan MEE - contexte'.id_contexte_plan_mee
+
+relationship 8be73eff-0f5f-4f2f-947c-0d0f9b3246bc
+	fromColumn: 'Plan MEE'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship ac8cdd7b-ea9a-43eb-8c0d-07237af8663c
+	fromColumn: 'Plan MEE'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 782b48c6-80f2-453d-b053-1a36504f8bc8
+	fromColumn: 'Plaquette de prévention'.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship ff66d709-035e-470c-8435-cb041f167345
+	fromColumn: 'Plaquette de prévention'.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship 41a01b30-937a-48e0-a278-faa5a2fb0c11
+	fromColumn: 'Plaquette de prévention'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 83c0ccde-6b1b-4ccd-a1bb-b50f788c9f9b
+	fromColumn: 'Plaquette de prévention'.id_auteur_recommandation
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 389463c4-5c85-43d3-820a-f6eca252c4f4
+	fromColumn: 'Plaquette de prévention'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship f5035d58-1296-43e1-86ed-33d1148d87ab
+	fromColumn: 'Plaquette de prévention'.id_date_emission
+	toColumn: 'Date principale'.id_date
+
+relationship f30477d0-32ab-496b-a418-9658df3d66a1
+	fromColumn: 'Plaquette de prévention'.id_type_plaquette_prevention
+	toColumn: 'Plaquette de prévention - type plaquette prévention'.id_type_plaquette_prevention
+
+relationship e3a7d8f6-7875-48f3-b33e-518cd2a36d81
+	fromColumn: 'Plaquette de prévention'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 9b781978-f4cd-484c-843a-cd7b1a9ea95b
+	fromColumn: 'Plaquette de prévention'.id_auteur_recommandation
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship 7c21364a-62de-4a98-a6ef-73fddcdf483b
+	fromColumn: 'Plaquette de prévention'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship b9435abc-845b-4a42-a347-d0a74aa66f2d
+	fromColumn: 'Plaquette de prévention'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship f9744a9a-fbe1-444f-b5ce-c1bcf15026eb
+	fromColumn: 'Plaquette de prévention'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 9eaa8c2b-4054-4bd9-885f-6206be738a0f
+	fromColumn: 'Plaquette de prévention'.id_date_emission
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship 6d941177-d011-4991-8e6c-0454e75afc01
+	fromColumn: 'Plaquette de prévention'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 1cd76346-210f-475e-85e5-e3d1d407d7a3
+	fromColumn: 'Plaquette de prévention'.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship ac06028e-6e98-4bab-ba6c-4f1672631c10
+	fromColumn: 'Plaquette de prévention'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 7f2afc73-9668-4274-bef3-8162eaca0e45
+	fromColumn: Prescription.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship 78eeb82c-9649-42ba-a344-b95d110b7b77
+	fromColumn: Prescription.id_auteur_prescription
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship ea96e9e7-b0d1-4ad2-b7a3-84e1086d9863
+	fromColumn: Prescription.id_auteur_prescription
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 293b0491-334b-49b8-a9ef-230b8b70974f
+	fromColumn: Prescription.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship d298ef11-d5f8-452f-aebe-870d10f95d2c
+	fromColumn: Prescription.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 8e36a851-aac9-45f9-a02b-27228a0b559b
+	fromColumn: Prescription.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 01b5f3e2-106a-4ed1-9aeb-a14854af1095
+	fromColumn: Prescription.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 6a07799e-b90e-4678-82be-81bb7c879b7b
+	fromColumn: Prescription.id_date_emission
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship b58fcb87-0f6c-4a44-9012-d48833c5a781
+	fromColumn: Prescription.id_date_emission
+	toColumn: 'Date principale'.id_date
+
+relationship 6b0ca0f2-0e06-41be-a77f-8d2b20168def
+	fromColumn: Prescription.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 8880518d-430d-40c2-9a22-3fcdea41a7a8
+	fromColumn: Prescription.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 50c2ee0d-752d-46bf-ae96-fc92a6919309
+	fromColumn: Prescription.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship b7e4e373-b366-4be7-a2cd-b02ddefdbf94
+	fromColumn: Prescription.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship bac5ef4b-07c7-43f6-9ae4-d4b490acd69d
+	fromColumn: Prescription.id_type_prescription
+	toColumn: 'Prescription - type prescription'.id_type_prescription
+
+relationship 9e518fdd-b6fa-4942-9dd1-9e35b13fab2f
+	fromColumn: Prescription.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship 58ee1cb3-9ce1-4b98-9181-6e27772f5846
+	fromColumn: Prescription.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 901d5ccf-1a4e-4a60-9850-7a39a617eef2
+	fromColumn: Prospect.id_date_ecarte
+	toColumn: 'Prospect - date écart'.id_date_ecarte
+
+relationship 39f1e7b0-9118-4c2e-a019-79ec1e0d84d6
+	fromColumn: Prospect.id_prospect_source
+	toColumn: 'Prospect (actuel)'.id_prospect_source
+
+relationship 05607e12-6a12-4a92-92a6-c0fe1980496b
+	fromColumn: Prospect.id_date_creation_prospect
+	toColumn: 'Date principale'.id_date
+
+relationship 042f251f-3de3-45ae-b605-eeae7dccd71f
+	fromColumn: Prospect.id_date_adhesion
+	toColumn: 'Prospect - date adhésion'.id_date_adhésion
+
+relationship d0f1a163-011c-45df-9279-4a75331e2e8b
+	fromColumn: Prospect.id_date_creation_prospect
+	toColumn: 'Prospect - date création'.id_date_creation_prospect
+
+relationship 75e6bfc5-16cd-475a-82a2-6b03a07d659f
+	fromColumn: Prospect.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 78f03f87-78e9-4c3d-8321-cae8c0d7eeec
+	fromColumn: Prospect.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 808a00ab-fdeb-4a07-8db5-e0278084cdca
+	fromColumn: RDV.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship aa6cd8ae-2bcf-46fd-bba1-e83be570f760
+	fromColumn: RDV.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship e089cbcb-9ae5-46bf-b03f-72c5e9204a78
+	fromColumn: RDV.id_heure_fin_entretien_theorique
+	toColumn: 'RDV/visite - heure fin entretien théorique'.id_heure
+
+relationship 78c569d3-4a0c-4128-84a4-5801d45867d9
+	fromColumn: RDV.id_heure_debut_entretien_theorique
+	toColumn: 'RDV/visite - heure début entretien théorique'.id_heure
+
+relationship ffd8af55-f025-4d4f-bc1e-c76d8936ad08
+	fromColumn: RDV.id_date_annulation_rdv
+	toColumn: 'RDV - date annulation'.id_date_annulation_rdv
+
+relationship 4428ea4c-3efe-4e09-b689-f49b3afa72b4
+	fromColumn: RDV.id_motif_annulation
+	toColumn: 'RDV - motif annulation'.id_motif_annulation
+
+relationship 70454246-c5e7-4838-9daf-10c34ee51cbf
+	fromColumn: RDV.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship 787bef5c-1947-4a1c-913e-7fe95322f7d8
+	fromColumn: RDV.id_info_rdv
+	toColumn: 'RDV - informations générales'.id_info_rdv
+
+relationship 42e80373-5e60-4eb9-83a4-5022abfe02a3
+	fromColumn: RDV.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship 91ac2c1d-f2e9-4b3f-b710-9a4797525fbd
+	fromColumn: RDV.id_thesaurus_poste
+	toColumn: 'Salarié - thésaurus poste'.id_thesaurus_poste
+
+relationship 3813b6f2-b659-4582-abfc-b6f9c897ba7b
+	fromColumn: RDV.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 3864c0f8-5e69-4054-abd8-928017baeb46
+	fromColumn: RDV.id_date_rdv
+	toColumn: 'Date principale'.id_date
+
+relationship 7ebc102c-8775-4a40-b69b-b1bfc65329c3
+	toCardinality: many
+	fromColumn: RDV.id_groupe_determinant_suivi
+	toColumn: 'RDV/visite - déterminant suivi'.id_groupe_determinant_suivi
+
+relationship d0937836-5731-4080-8f64-d6bdccdd3553
+	fromColumn: RDV.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship e1bb6112-b789-4430-a6ab-8bbe774c09d5
+	fromColumn: RDV.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship 926e6a01-e0df-4a53-b8d0-0b85cd2ac772
+	fromColumn: RDV.id_convocateur_initial_rdv
+	toColumn: 'RDV - convocateur initial'.id_convocateur_initial_rdv
+
+relationship 8a8c2936-e650-4dac-a3e5-ddedb844e458
+	fromColumn: RDV.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship a54f5af2-0220-4fa4-9573-a9f75599642c
+	fromColumn: RDV.id_date_rdv
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship 4d8b8395-4c08-433c-b842-e07c42bc76bd
+	fromColumn: RDV.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship dd47c438-fb30-4057-80c6-d3cb7506bf98
+	fromColumn: RDV.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship a1042230-bb3a-456c-9d1b-cb4f48069cb9
+	fromColumn: RDV.id_date_creation_rdv
+	toColumn: 'RDV - date création'.id_date_creation_rdv
+
+relationship d4a65fbd-9b12-4051-8ef6-f6c89ab2ecbc
+	fromColumn: RDV.id_date_premiere_convocation_rdv
+	toColumn: 'RDV - date première convocation'.id_date_premiere_convocation_rdv
+
+relationship eb199307-8b29-4385-9665-b47e143fbf21
+	fromColumn: RDV.id_date_prise_creneau_adherent
+	toColumn: 'RDV - date prise créneau adhérent'.id_date_prise_creneau_adherent
+
+relationship ed0a9266-240f-4f1b-b606-fa36b191524c
+	fromColumn: RDV.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 63c1483f-be40-4031-9d9c-847882c5fe92
+	fromColumn: RDV.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship a7cae079-9e3e-4306-8a32-2fcb67b30b72
+	fromColumn: RDV.id_realisateur_rdv
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 39b0a3e8-8b46-4a3e-bfc2-944797d37ba5
+	fromColumn: RDV.id_realisateur_rdv
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship 18d02ac8-23ee-4ec3-8713-f0b928f69218
+	fromColumn: 'Saisie - dossier salarié'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 4b7b5f28-f272-494e-884e-26b59a8b2ba6
+	fromColumn: 'Saisie - dossier salarié'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 7f31cd77-15c0-476a-a584-9827bc1b3085
+	fromColumn: 'Saisie - dossier salarié'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 778facc0-8185-4270-bd40-e44a3b6638ac
+	fromColumn: 'Saisie - dossier salarié'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship f31bf05e-f663-4dfb-ad8a-41059926bd8f
+	fromColumn: 'Saisie - dossier salarié'.id_realisateur_derniere_visite
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship 60a531e2-c2a5-4b48-adaf-37fba49f60bb
+	fromColumn: 'Saisie - dossier salarié'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship cdba6eec-aee1-405a-9451-f86e2f792141
+	fromColumn: 'Saisie - dossier salarié'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 29d5433f-6110-4b4f-9ef5-e807b7dac3ab
+	fromColumn: 'Saisie - dossier salarié'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship a92d25e7-ddc1-424c-9de7-d0a7a59747be
+	fromColumn: 'Saisie - dossier salarié'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 279298cd-2b76-4a61-b8b3-f338d788c7a8
+	fromColumn: 'Saisie - visite'.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship f3598a6b-2c38-4368-804e-be797a0b3d5a
+	fromColumn: 'Saisie - visite'.id_realisateur_visite
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship e0712940-3c08-4978-bee9-ad73bb571635
+	fromColumn: 'Saisie - visite'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship e2293182-1f37-480a-9387-8bf9d5cda3c6
+	fromColumn: 'Saisie - visite'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 20417575-536f-4fd9-85dd-06240f0a8408
+	fromColumn: 'Saisie - visite'.id_date_visite
+	toColumn: 'Date principale'.id_date
+
+relationship e5e58568-313a-4dfd-8189-411a5be182ad
+	fromColumn: 'Saisie - visite'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship 0f53df24-f17f-46c7-bf8a-ccd6b7bb0e52
+	fromColumn: 'Saisie - visite'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 7aa74ed2-e035-4161-bb01-7ff11d48e903
+	fromColumn: 'Saisie - visite'.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship 007c4155-664a-40d1-81f6-0cc58d875c99
+	fromColumn: 'Saisie - visite'.id_date_visite
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship a5a7c5ba-390d-4a95-b7f4-a10837246305
+	fromColumn: 'Saisie - visite'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship 90308c4a-ccaa-47d0-b2f2-b777155dc1e8
+	fromColumn: 'Saisie - visite'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 6376548f-3ffa-4a36-b7e7-dd5e766ebf43
+	fromColumn: 'Saisie - visite'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship a208ed6b-0f56-42d0-94b3-77397e7ca6a0
+	fromColumn: 'Saisie - visite'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 9d52eba6-6bfb-45c4-a33d-3d1895f675c9
+	fromColumn: 'Saisie - visite'.id_realisateur_visite
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 8964c496-c19f-4831-8dbc-aaa787633e08
+	fromColumn: Saisonniers.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 674dd477-56aa-4821-93c8-e6379d884d4f
+	fromColumn: Saisonniers.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 60dfc8b0-6f04-498c-a988-b4151a5d28d8
+	fromColumn: Saisonniers.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship e223032b-6608-4dfd-ba79-bb9c2cd4903d
+	fromColumn: Saisonniers.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 8f32c0b7-193c-4061-b3dc-acf22f9b0df7
+	fromColumn: Saisonniers.id_type_visite_reglementaire_saison
+	toColumn: 'Saisonniers - type visite'.id_type_visite_reglementaire_saison
+
+relationship 8ce055cb-3e36-4a08-9519-b6eb6c5613c1
+	fromColumn: Saisonniers.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship 539e3992-9baf-454e-a672-38998d76d7e8
+	fromColumn: Saisonniers.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship 5c979563-dd98-4cba-a12a-aaa0ff63f9b8
+	fromColumn: Saisonniers.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 62a85765-a37c-4469-8360-8ef9673850cc
+	toCardinality: many
+	fromColumn: Salariés.id_groupe_determinant_suivi
+	toColumn: 'Salarié - déterminant suivi'.id_groupe_determinant_suivi
+
+relationship 3933271c-6d2c-417a-a2ab-140aa0ec276a
+	fromColumn: Salariés.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 799f2267-e71b-437b-8dc9-3644ce1eb4ed
+	fromColumn: Salariés.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship e994d5d1-bb21-4f83-9f92-15f0a10517b5
+	fromColumn: Salariés.id_thesaurus_poste
+	toColumn: 'Salarié - thésaurus poste'.id_thesaurus_poste
+
+relationship a6a678bd-3c87-4e81-b476-01f85e2c1dec
+	fromColumn: Salariés.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship b5510849-c950-47c4-8f3a-2bcb42659fc6
+	fromColumn: Salariés.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 2e18e76b-708e-4860-865a-783cf7045cc1
+	fromColumn: Salariés.id_medecin_referent
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 9b7ac4b6-704d-44e4-b4da-da2ad20161cf
+	fromColumn: Salariés.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship f199ed03-b905-4176-a145-5584542392cd
+	fromColumn: 'Temps travail'.id_motif_annulation
+	toColumn: 'Temps travail - motif annulation'.id_motif_annulation
+
+relationship df65148d-2f07-4e14-82fc-fd41474a6cab
+	fromColumn: 'Temps travail'.id_type_zone
+	toColumn: 'Temps travail - type zone'.id_type_zone
+
+relationship 9505a058-4918-41fe-a8f2-d637f767787c
+	fromColumn: 'Temps travail'.id_utilisateur_sst
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 9b27fe84-ae0f-479f-9e99-bcc09bccfd05
+	fromColumn: 'Temps travail'.id_heure_fin_creneau
+	toColumn: 'Temps travail - heure fin créneau'.id_heure_fin_creneau
+
+relationship 4cd3588a-a0c3-4cd8-96c8-2442dfe77306
+	fromColumn: 'Temps travail'.id_heure_debut_creneau
+	toColumn: 'Temps travail - heure début créneau'.id_heure_debut_creneau
+
+relationship 8e503db1-b76c-4319-b8ce-2883933aeb78
+	fromColumn: 'Temps travail'.id_date_creneau
+	toColumn: 'Date principale'.id_date
+
+relationship 1d1e3c76-ea45-424b-b1eb-654ff60c483e
+	fromColumn: 'Temps travail'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship bf315dd4-b39e-46d6-9283-b9eded8d16c1
+	fromColumn: 'Temps travail'.id_date_creneau
+	toColumn: 'Temps travail - date'.id_date
+
+relationship ad6e6d7f-d0d6-41d0-9338-2753df6a00f0
+	fromColumn: 'Temps travail'.id_centre_convocation
+	toColumn: 'Temps travail - centre convocation'.id_centre_convocation
+
+relationship 45ea4a40-17b3-43d1-9166-afb71c31efc1
+	fromColumn: 'Temps travail'.code_type_zone_creneau
+	toColumn: 'Temps travail - type créneau'.code_type_zone_creneau
+
+relationship a9afae06-73cc-4993-9716-cbd86b8eddc7
+	fromColumn: 'Temps travail'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 93f3ff6c-2e4a-42ac-8985-cf8acfc0e783
+	fromColumn: 'Utilisateurs et équipes médicales'.id_utilisateur_sst
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 613ee175-d514-4ddb-84d4-b50fcde0cd9a
+	fromColumn: 'Utilisateurs et équipes médicales'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 335c967c-790f-491f-ae23-35f1b1ad90fa
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Utilisateurs et équipes médicales'.id_utilisateur_sst
+	toColumn: ETP.id_utilisateur_sst
+
+relationship a8041d2a-3afa-497a-b710-d311067ef81d
+	fromColumn: Visite.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship 5667a816-1f7c-4d7e-8efa-185200f16ff5
+	fromColumn: Visite.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship 213442ce-753f-4711-b285-4ce06d1e73c1
+	fromColumn: Visite.id_type_visite
+	toColumn: 'RDV/visite - type visite'.id_type_visite
+
+relationship cbb59427-d929-44be-9db4-3f28acedce55
+	fromColumn: Visite.id_date_archivage
+	toColumn: 'Visite - date archivage'.id_date_archivage
+
+relationship 62fc2c66-87ee-40cb-a522-6ed469adf2bd
+	fromColumn: Visite.id_heure_depart_attestation
+	toColumn: 'Visite - heure départ attestation'.id_heure
+
+relationship 20707c7e-fef1-4fe7-bfd3-fa588bb40f08
+	fromColumn: Visite.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 3e0164a8-2a1f-42d9-9393-75a57d3a6387
+	fromColumn: Visite.id_heure_debut_entretien_theorique
+	toColumn: 'RDV/visite - heure début entretien théorique'.id_heure
+
+relationship cdd18e68-659d-4606-bb3f-7edcb0a3c33e
+	fromColumn: Visite.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship c4a63a8a-2396-4fdb-8fa6-5fce529b27d3
+	fromColumn: Visite.id_heure_convocation_salarie
+	toColumn: 'Visite - heure convocation salarié'.id_heure
+
+relationship b3f30149-1929-4200-b162-5e8caf4c1aa8
+	fromColumn: Visite.id_heure_fin_entretien_theorique
+	toColumn: 'RDV/visite - heure fin entretien théorique'.id_heure
+
+relationship 01bc85c6-afb0-4d2f-b174-574f07ad1639
+	fromColumn: Visite.id_heure_deconnexion_tablette
+	toColumn: 'Visite - heure déconnexion tablette'.id_heure
+
+relationship ca2199ed-2bb2-4324-af87-196d5acf759e
+	fromColumn: Visite.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 37218b12-fe72-44d8-8b4d-377f258fab21
+	fromColumn: Visite.id_heure_connexion_tablette
+	toColumn: 'Visite - heure connexion tablette'.id_heure
+
+relationship c1a132fc-b0ed-4c99-b9c5-d84aac61ba59
+	fromColumn: Visite.id_heure_arrivee_attestation
+	toColumn: 'Visite - heure arrivée attestation'.id_heure
+
+relationship 634cbd44-0c23-4923-9303-ab56ab44f09c
+	toCardinality: many
+	fromColumn: Visite.id_groupe_determinant_suivi
+	toColumn: 'RDV/visite - déterminant suivi'.id_groupe_determinant_suivi
+
+relationship 81378e73-461b-4771-87ed-9ae9674b5741
+	fromColumn: Visite.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship d95a1e5e-7018-4347-b8b3-b782cdd968fe
+	fromColumn: Visite.id_thesaurus_poste
+	toColumn: 'Salarié - thésaurus poste'.id_thesaurus_poste
+
+relationship 90e8b9a3-0164-42ea-b7e8-a225ed2e079e
+	fromColumn: Visite.id_realisateur_visite
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship c4eadccd-e8b7-4319-837c-b3bf3bd104a9
+	fromColumn: Visite.id_realisateur_visite
+	toColumn: 'RDV/visite - réalisateur'.id_utilisateur_sst
+
+relationship 18ae5e2d-ba0b-4948-a066-0ca17e880573
+	fromColumn: Visite.id_date_visite
+	toColumn: 'Date principale'.id_date
+
+relationship e23ceb63-b722-4367-b689-d0d861e1f074
+	fromColumn: Visite.id_date_visite
+	toColumn: 'RDV/visite - date RDV'.id_date
+
+relationship 011f9ccc-fc4b-481c-aa4e-9df02df3984e
+	fromColumn: Visite.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship bc78fdae-e09a-427f-9fb0-2a24f273361a
+	fromColumn: Visite.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship b86eb70e-b97f-460e-8efe-0c145da0bfa7
+	fromColumn: Visite.id_info_visite
+	toColumn: 'RDV/visite - informations visite'.id_info_visite
+
+relationship 1201e2d6-cedc-4a48-9e7a-6ba53b560150
+	fromColumn: Visite.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship adece9fa-4b18-4e83-96b9-cb4057614b8d
+	fromColumn: Visite.id_centre_convocation
+	toColumn: 'RDV/visite - centre convocation'.id_centre_convocation
+
+relationship cb06148c-3aca-4341-8333-69b599aa12b0
+	fromColumn: Visite.id_heure_archivage
+	toColumn: 'Visite - heure archivage'.id_heure
+
+relationship e75adad1-b6a0-404e-ad4f-7525cd4da38e
+	fromColumn: 'Demande consultation spécialisée'.id_poste
+	toColumn: 'Salarié - poste'.id_poste
+
+relationship d172e214-c169-4ac0-b011-8da2176d3611
+	fromColumn: 'Demande consultation spécialisée'.id_date_creation_demande_visite
+	toColumn: 'Date principale'.id_date
+
+relationship c9595126-96ad-4e3d-81bf-4eac517a7a4a
+	fromColumn: 'Demande consultation spécialisée'.id_date_creation_demande_visite
+	toColumn: 'Demande consultation spécialisée - date création'.id_date_creation_demande_visite
+
+relationship 76912542-3095-42ff-8403-59e82ef2d4e0
+	fromColumn: 'Demande consultation spécialisée'.id_type_suivi
+	toColumn: 'Salarié - type suivi'.id_type_suivi
+
+relationship ac756e01-b5d9-4077-be07-a54fc16e37b1
+	fromColumn: 'Demande consultation spécialisée'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship bde03d10-ed69-4d10-943f-9953f227c96a
+	fromColumn: 'Demande consultation spécialisée'.id_createur_demande_visite
+	toColumn: 'Demande consultation spécialisée - créateur'.id_createur_demande_visite
+
+relationship 240857ed-592b-481d-a328-ea622911e475
+	fromColumn: 'Demande consultation spécialisée'.id_salarie2
+	toColumn: 'Salarié - informations nominatives'.id_salarie2
+
+relationship d9e8f07e-8d52-4e06-be72-fbc39a873b33
+	fromColumn: 'Demande consultation spécialisée'.id_type_contrat
+	toColumn: 'Salarié - type contrat'.id_type_contrat
+
+relationship bf2cd4b4-0abc-46f6-b2a9-33f4c1d80507
+	fromColumn: 'Demande consultation spécialisée'.id_createur_demande_visite
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship fdd72b55-7031-44b0-83c8-dd1eb6ac623d
+	fromColumn: 'Demande consultation spécialisée'.id_date_traitement_demande_visite
+	toColumn: 'Demande consultation spécialisée - date traitement'.id_date_traitement_demande_visite
+
+relationship 6924d0c6-4be4-4acc-87b4-de7fff168672
+	fromColumn: 'Demande consultation spécialisée'.id_type_visite_demande
+	toColumn: 'Demande consultation spécialisée - type visite demandée'.id_type_visite_demande
+
+relationship 80cf0f86-cf2b-4e7e-86f6-32181c41b800
+	fromColumn: 'Demande consultation spécialisée'.id_type_visite_origine
+	toColumn: 'Demande consultation spécialisée - type visite origine'.id_type_visite_origine
+
+relationship 44596129-6e68-46c6-be19-45028749a39b
+	fromColumn: 'Demande consultation spécialisée'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 798ebe49-d930-4ab5-85a2-bb4e5d89bf0b
+	fromColumn: 'Demande consultation spécialisée'.id_validateur_demande_visite
+	toColumn: 'Demande consultation spécialisée - validateur'.id_validateur_demande_visite
+
+relationship f0c01a64-0d5c-4079-8a00-b7296eec024e
+	fromColumn: 'Demande consultation spécialisée'.id_pcs
+	toColumn: 'Salarié - CSP'.id_pcs
+
+relationship 48767177-7544-49b7-a752-9a50d6cbf5b2
+	fromColumn: 'Demande consultation spécialisée'.id_salarie2
+	toColumn: 'Salarié (actuel)'.id_salarie2
+
+relationship 01315d28-7537-4a57-a416-32070b7d086a
+	fromColumn: 'Demande consultation spécialisée'.id_statut_demande_visite
+	toColumn: 'Demande consultation spécialisée - statut'.id_statut_demande_visite
+
+relationship dd5f0f18-cf49-40e8-87a4-27c1fc4fc70c
+	fromColumn: 'Demande consultation spécialisée'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship ebd3ad91-3004-46c8-b786-5c8718ac7bff
+	fromColumn: 'Remplissage noa'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship c5842593-6e76-4352-b737-049f7775f5a3
+	fromColumn: 'Remplissage noa'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 5e428ea9-4712-41a4-8339-49288b1b1a22
+	fromColumn: 'Remplissage noa'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 29c9f637-c566-4944-91cd-d77515312baa
+	fromColumn: 'Modèle de charge - AMT réalisées'.id_categorie_amt
+	toColumn: 'Modèle de charge - catégorie AMT'.id_categorie_amt
+
+relationship 1f7468e7-be47-4fe7-8a48-afb9b2b7d14a
+	fromColumn: 'Modèle de charge - AMT réalisées'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship 3bc5a0c5-05a9-4033-9a50-9f8293f5c181
+	fromColumn: 'Modèle de charge - AMT réalisées'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship ddea322f-ea1b-40d1-b606-d47c5ca6b85b
+	fromColumn: 'Modèle de charge - AMT réalisées'.id_date_amt_realisee
+	toColumn: 'Date principale'.id_date
+
+relationship b6db74a4-d699-44e2-930c-b6477fba2fb6
+	fromColumn: 'Modèle de charge - AMT réalisées'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 5582e7e1-c236-4391-a12e-3d4acc7b8bab
+	fromColumn: 'Modèle de charge - prévision charge AMT'.id_centre_convocation
+	toColumn: 'Centre convocation'.id_centre_convocation
+
+relationship 2b323660-491d-474e-b107-2081f2dbea29
+	fromColumn: 'Modèle de charge - prévision charge AMT'.id_categorie_amt
+	toColumn: 'Modèle de charge - catégorie AMT'.id_categorie_amt
+
+relationship 1bf82e95-37ff-4dc4-9687-6e02022c93c4
+	fromColumn: 'Modèle de charge - prévision charge AMT'.id_entreprise
+	toColumn: 'Adhérent (actuel)'.id_entreprise
+
+relationship 75b2322f-a043-4405-8743-dec65ab15cb9
+	fromColumn: 'Modèle de charge - prévision charge AMT'.id_secteur
+	toColumn: 'Equipe médicale'.id_secteur
+
+relationship c495d984-d2b4-4129-9696-34f77ef32563
+	fromColumn: 'Evènement collectif - groupe participants'.id_participant_evenement_amt
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 34a06c09-eaa8-4e83-9c0f-8e7fd3d69c1c
+	fromColumn: 'AMT v2'.id_info_amt_v2
+	toColumn: 'AMT - informations principales'.id_info_amt_v2
+
+relationship fa6b0e1d-6c98-4ee3-9bfe-7486f7717f19
+	fromColumn: 'CRM - activités'.id_objet_compte_rendu
+	toColumn: 'CRM - activité - objet compte rendu'.id_objet_compte_rendu
+
+relationship 74176a34-0c74-4a8f-81c6-bf162759ce60
+	fromColumn: 'Plan MEE - intervenants'.id_intervenant_mee
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship ef2267f0-8e3a-42df-8336-6aa28fd01ca1
+	fromColumn: 'AMT - indicateurs par intervenant'.id_intervenant_amt
+	toColumn: Utilisateur.id_utilisateur_sst
+
+relationship 9c409ab9-70b9-47f2-b562-74d37bafef73
+	fromColumn: 'AMT - indicateurs par intervenant'.id_intervenant_amt
+	toColumn: 'AMT - intervenant'.id_utilisateur_sst
+
+relationship 5f790660-231b-4c07-9241-c7a919d0d82b
+	fromColumn: 'AMT v2'.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship 193bc505-ef6f-4130-b67c-dde4eda4451e
+	fromColumn: 'Demande visite adhérent'.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship ebdad668-3585-4076-9ebb-0fae85649726
+	fromColumn: 'Documents émis'.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship 44ea5b05-7ffe-45da-90a5-05bd7192667a
+	fromColumn: 'Examen complémentaire'.id_type_mesure
+	toColumn: 'Examen complémentaire - type examen'.id_type_mesure
+
+relationship 50005639-a3fe-4a7a-a96b-2580630e5666
+	fromColumn: 'Examen complémentaire'.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship 0e9624ea-b35c-4468-9a15-9728b52af563
+	fromColumn: Orientation.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship e00b63f9-5887-4688-a106-ee7aed653e27
+	fromColumn: 'Plaquette de prévention'.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship ac06e424-bf49-457d-86cb-62f221d1ee00
+	fromColumn: Prescription.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship cbd591d8-5001-4b1a-a40b-8d67d500289a
+	fromColumn: RDV.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship 7be5d5fd-c5d0-4d09-8d20-4960fb3a542e
+	fromColumn: Visite.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship e48a5319-0c9f-445b-ba4e-1a9a2752d39c
+	fromColumn: Visite.id_utilisateur_transfert_salle_attente
+	toColumn: 'Visite - réalisateur transfert'.id_utilisateur_transfert_salle_attente
+
+relationship cf59258c-7fa2-42a2-8728-bf83754fc2ca
+	fromColumn: 'Demande consultation spécialisée'.code_rls_utilisateur_secteur
+	toColumn: 'RLS - utilisateur secteur'.code_rls_utilisateur_secteur
+
+relationship eda4633d-5c88-491e-aebc-fcc0d446edbf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Date Simulation'.Date
+	toColumn: LocalDateTable_13d0872c-18e5-4745-a23e-88cbd44fa1f1.Date
+
+relationship 301d7df8-08f0-8952-9742-b27cfba29eea
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: none
+	fromColumn: 'Equipe médicale'.'Equipe médicale'
+	toColumn: 'EPD pour AMT'.'Équipe médicale'
+

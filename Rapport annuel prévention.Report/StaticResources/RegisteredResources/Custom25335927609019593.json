@@ -1,0 +1,49 @@
+{
+  "name": "Custom",
+  "textClasses": {
+    "callout": {
+      "fontFace": "'Segoe UI', wf_segoe-ui_normal, helvetica, arial, sans-serif",
+      "fontSize": 30
+    },
+    "title": {
+      "color": "#019EE3",
+      "fontFace": "'Segoe UI', wf_segoe-ui_normal, helvetica, arial, sans-serif",
+      "fontSize": 15
+    }
+  },
+  "dataColors": [
+    "#019EE3",
+    "#12239E",
+    "#8CBF2C",
+    "#6B007B",
+    "#E044A7",
+    "#744EC2",
+    "#D9B300",
+    "#D64550"
+  ],
+  "visualStyles": {
+    "*": {
+      "*": {
+        "visualHeader": [
+          {
+            "transparency": 0
+          }
+        ],
+        "outspacePane": [
+          {
+            "backgroundColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "checkboxAndApplyColor": {
+              "solid": {
+                "color": "#8CBF2C"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

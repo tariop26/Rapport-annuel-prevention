@@ -1,0 +1,102 @@
+table 'Evolution effectif - date'
+	lineageTag: c0f3c9f7-03bd-45d3-8e8a-35db76e86300
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b11fe284-fdb6-4bd3-b634-c828148168f0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 147db020-14e7-4252-a0bf-d2d0e6873a20
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4dd109f2-c472-4fa8-bcba-7b9871fa1bf2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jour
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ca9bc8f0-94f2-4e61-9722-3d56de4b6d89
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b43abcad-3df8-4c57-9446-1cd054921f64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 91a71e5d-cf34-41ec-9fb9-ed3394b45388
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date - évolution effectif'
+		lineageTag: 3e6716fd-209f-4236-b837-dbeeabaad327
+		sourceLineageTag: Hiérarchie date - évolution effectif
+
+		level Année
+			lineageTag: 5c801822-5ad0-4e77-aec1-ab98637f64e9
+			column: Année
+
+		level Mois
+			lineageTag: 94cc3e71-c77f-4d2d-8834-c6566ecaee7a
+			column: Mois
+
+		level Semaine
+			lineageTag: 8fc6bb63-ce55-4a06-ad16-53a438a534e6
+			column: Semaine
+
+		level Date
+			lineageTag: 1c80d3f3-e508-4d28-b3d2-0915294caa7f
+			column: Date
+
+	partition 'Evolution effectif - date' = entity
+		mode: directQuery
+		source
+			entityName: Evolution effectif - date
+			expressionSource: 'DirectQuery à AS – pst38'
+

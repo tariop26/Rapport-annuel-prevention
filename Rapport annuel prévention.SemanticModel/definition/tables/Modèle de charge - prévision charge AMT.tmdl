@@ -1,0 +1,164 @@
+table 'Modèle de charge - prévision charge AMT'
+	lineageTag: 6f76d541-39e0-4267-b9ff-07f4b4665b5f
+
+	measure '# AMT estimées' = EXTERNALMEASURE("# AMT estimées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 1657d929-5352-4a11-85c8-7628fc27c1a9
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT estimées
+		dataCategory: Uncategorized
+
+	measure '# APP estimées' = EXTERNALMEASURE("# APP estimées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 09f08cc0-b60e-47f0-b0ad-5237dca2af44
+		sourceLineageTag: DirectQuery à AS – pst38.# APP estimées
+		dataCategory: Uncategorized
+
+	measure '# créations FE estimées' = EXTERNALMEASURE("# créations FE estimées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: ec5ebd95-9f8f-4a51-9a87-7450ed7f2edf
+		sourceLineageTag: DirectQuery à AS – pst38.# créations FE estimées
+		dataCategory: Uncategorized
+
+	measure '# FE estimées' = EXTERNALMEASURE("# FE estimées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 8f0a112c-c205-42c8-b25b-bf66ab7ff62b
+		sourceLineageTag: DirectQuery à AS – pst38.# FE estimées
+		dataCategory: Uncategorized
+
+	measure '# mises à jour FE estimées' = EXTERNALMEASURE("# mises à jour FE estimées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 67fc3383-be00-4fb9-85e3-e92a852aa379
+		sourceLineageTag: DirectQuery à AS – pst38.# mises à jour FE estimées
+		dataCategory: Uncategorized
+
+	column id_categorie_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a80a9143-cebe-4b40-9211-699dc8e8376f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a2b96614-e9ef-448d-a16a-5e9963bb197b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_charge_amt_annuelle
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4a4a5142-6389-47c4-9a2e-39e717432dc9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_charge_amt_annuelle
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f08d1174-c3f1-443f-ad74-d9154e64fbc5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c6e6823e-d671-4259-a9b8-6eaddfe262b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_amt_estimee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7d5b818a-cc0e-4fa5-91a8-6660d90086b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_amt_estimee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_app_estimee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 634eb579-213b-41b5-a22c-24e0c50ddaa4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_app_estimee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_creation_fe_estimee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3c1e0b57-5c82-473b-800f-55f892617e3c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_creation_fe_estimee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_fe_estimee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c081ba5b-0a98-43f4-a453-2b1016098842
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_fe_estimee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_maj_fe_estimee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 00533f36-a75f-49aa-bc03-4acc6b113051
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_maj_fe_estimee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	partition 'Modèle de charge - prévision charge AMT' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - prévision charge AMT
+			expressionSource: 'DirectQuery à AS – pst38'
+

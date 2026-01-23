@@ -1,0 +1,108 @@
+table 'Demande consultation spécialisée - date création'
+	lineageTag: 7be78aff-44e5-4b9a-be25-32ca60184da5
+
+	column 'Année création demande visite'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cfb70492-53ea-4ab0-9e3c-683d4fd694cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année création demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date création demande visite'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 706c2759-04e0-444d-b1ec-23d13f07a2ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création demande visite
+
+		changedProperty = IsHidden
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column id_date_creation_demande_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c44975bd-4ee9-4de2-935b-369c6a8ef3ee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour création demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ad10f154-c22b-4c35-8848-5b73a834be64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour création demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a860301a-5bc3-4b43-8496-f3a828756a8c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine création demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ba04a84c-2a0c-4d62-a784-2edf1b083df4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine création demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date création demande visite'
+		lineageTag: ffdfcae8-0cf2-4552-8d7c-cdcd09965451
+		sourceLineageTag: Hiérarchie date création demande visite
+
+		level 'Année création demande visite'
+			lineageTag: 877f28b9-9b4a-4c09-95a5-2a8265f5a85e
+			column: 'Année création demande visite'
+
+		level 'Mois création demande visite'
+			lineageTag: fe442636-4f2e-4e44-8f10-423df6d7ac1f
+			column: 'Mois création demande visite'
+
+		level 'Semaine création demande visite'
+			lineageTag: 0fcaf3d0-2219-4d98-8818-3eb5af5f35ba
+			column: 'Semaine création demande visite'
+
+		level 'Date création demande visite'
+			lineageTag: 794e419f-2041-4367-9a75-ed004e6a916b
+			column: 'Date création demande visite'
+
+	partition 'Demande consultation spécialisée - date création' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - date création
+			expressionSource: 'DirectQuery à AS – pst38'
+

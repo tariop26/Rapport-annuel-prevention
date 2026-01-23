@@ -1,0 +1,438 @@
+table Prospect
+	lineageTag: e618dab4-4b98-4f42-9ade-861c7f489017
+
+	measure '# adhésion' = EXTERNALMEASURE("# adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: a4f0ad24-854d-4dfa-8610-cf685a897d34
+		sourceLineageTag: DirectQuery à AS – pst38.# adhésion
+		dataCategory: Uncategorized
+
+	measure '# demande de contact' = EXTERNALMEASURE("# demande de contact", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 8dea7d29-ffec-4363-8395-afc43a1424c0
+		sourceLineageTag: DirectQuery à AS – pst38.# demande de contact
+		dataCategory: Uncategorized
+
+	measure '# éligibilité à déterminer' = EXTERNALMEASURE("# éligibilité à déterminer", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 94ad21c6-62ea-4552-8361-eab285d7a8d3
+		sourceLineageTag: DirectQuery à AS – pst38.# éligibilité à déterminer
+		dataCategory: Uncategorized
+
+	measure '# parcours d''adhésion' = EXTERNALMEASURE("# parcours d'adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 40255ae7-a50c-4aba-814c-0b15bc92a5e7
+		sourceLineageTag: DirectQuery à AS – pst38.# parcours d'adhésion
+		dataCategory: Uncategorized
+
+	measure '# prospect créé' = EXTERNALMEASURE("# prospect créé", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: f6e16447-4f7f-44f3-8780-7d5dcfc0ed98
+		sourceLineageTag: DirectQuery à AS – pst38.# prospect créé
+		dataCategory: Uncategorized
+
+	measure '# prospect écarté' = EXTERNALMEASURE("# prospect écarté", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 62ece607-460c-4a69-8ec4-1a7900df026a
+		sourceLineageTag: DirectQuery à AS – pst38.# prospect écarté
+		dataCategory: Uncategorized
+
+	measure '# prospect en cours d''adhésion' = EXTERNALMEASURE("# prospect en cours d'adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 09d3a159-b18b-40c5-8b58-23b64baa7f66
+		sourceLineageTag: DirectQuery à AS – pst38.# prospect en cours d'adhésion
+		dataCategory: Uncategorized
+
+	measure '# salariés SI' = EXTERNALMEASURE("# salariés SI", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: bb127191-8783-4f4d-ad13-9d504f57efcf
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés SI
+		dataCategory: Uncategorized
+
+	measure '# salariés SIA' = EXTERNALMEASURE("# salariés SIA", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: f73f3a77-9f91-4afc-8ffa-8468a19c790a
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés SIA
+		dataCategory: Uncategorized
+
+	measure '# salariés SIR' = EXTERNALMEASURE("# salariés SIR", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 647352e9-8e2d-4ffa-952a-f48c02341557
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés SIR
+		dataCategory: Uncategorized
+
+	measure '# salariés' = EXTERNALMEASURE("# salariés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 79660551-807e-405e-89d7-33e9cd23fba2
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne demande contact (min)' = EXTERNALMEASURE("Durée moyenne demande contact (min)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: e8d131a7-9912-49f7-905e-ff42ba68478d
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne demande contact (min)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne éligibilité à déterminer (min)' = EXTERNALMEASURE("Durée moyenne éligibilité à déterminer (min)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 939e0d76-788b-43ad-b189-f1043d07c117
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne éligibilité à déterminer (min)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne parcours d''adhésion (min)' = EXTERNALMEASURE("Durée moyenne parcours d'adhésion (min)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 93d4001e-743a-4434-b589-32feab248393
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne parcours d'adhésion (min)
+		dataCategory: Uncategorized
+
+	measure 'Gain potentiel du service' = EXTERNALMEASURE("Gain potentiel du service", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0\ \€
+		displayFolder: Indicateurs
+		lineageTag: fae9d700-7465-471f-a603-3d2419048d3e
+		sourceLineageTag: DirectQuery à AS – pst38.Gain potentiel du service
+		dataCategory: Uncategorized
+
+	measure 'Temps moyen passé avant adhésion (j)' = EXTERNALMEASURE("Temps moyen passé avant adhésion (j)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 12363f33-f29e-4b2c-9bdd-e786a21d401e
+		sourceLineageTag: DirectQuery à AS – pst38.Temps moyen passé avant adhésion (j)
+		dataCategory: Uncategorized
+
+	measure 'Temps moyen passé avant mise à l''écart (j)' = EXTERNALMEASURE("Temps moyen passé avant mise à l'écart (j)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 2bfad5f8-e943-4411-8aca-044742535e68
+		sourceLineageTag: DirectQuery à AS – pst38.Temps moyen passé avant mise à l'écart (j)
+		dataCategory: Uncategorized
+
+	measure 'Temps moyen passé prospect en cours d''adhésion (j)' = EXTERNALMEASURE("Temps moyen passé prospect en cours d'adhésion (j)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 10d1a0a9-7d31-48fd-9607-90a21a852aef
+		sourceLineageTag: DirectQuery à AS – pst38.Temps moyen passé prospect en cours d'adhésion (j)
+		dataCategory: Uncategorized
+
+	column 'Durée demande contact (min)'
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: 1654ea20-c118-43db-815f-6ba687fb3985
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée demande contact (min)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée éligibilité à déterminer (min)'
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: aefaa85f-00b1-4024-a0fb-730bb30321ff
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée éligibilité à déterminer (min)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée parcours d''adhésion (min)'
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: 3f60531e-50c6-47f7-bd68-6c487fa971d5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée parcours d'adhésion (min)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Etapes parcours d''adhésion'
+		dataType: string
+		lineageTag: 2f39e103-44b7-4745-ae8c-373cf338b3ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Etapes parcours d'adhésion
+
+		annotation SummarizationSetBy = Automatic
+
+	column gain_potentiel_service
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 89c138e4-55b6-4104-862d-0783ddffea97
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: gain_potentiel_service
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_adhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f3fdbcbf-dee3-4726-87d2-47f80ba5c25a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_adhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_adhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 72ee792a-689b-410f-bea2-885c658270dd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_adhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_prospect
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fe418c54-cdc3-4998-b500-01a001f86891
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_ecarte
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4ce6fc42-9a81-4897-8496-c29c3817968c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_ecarte
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cb5d7016-7410-4562-bb6d-9dfd3b1718b4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_prospect_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c1b6a4f9-005d-48e0-a802-40ce998437e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_prospect_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_adhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 942f972d-4d97-4d59-b23b-15c32d51cc3d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_adhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_contact
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 376bca5e-db24-4faa-8b40-ec50000babc5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_contact
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_ecarte
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a4578d9d-0961-46c5-a58b-a71e9f3fc6f3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_ecarte
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_eligibilite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 264eba81-01e8-4082-9e60-2b71cfed7cf6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_eligibilite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_en_cours
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5cbc38da-ca05-4c74-8033-59eae11b928b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_en_cours
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_parcours_adhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c1bdee10-a617-4037-af47-384ec3e0e00b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_parcours_adhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bfcc1132-f359-45f8-bd09-3d010a713a49
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_si
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fe2ea38d-9334-454b-b02d-be27826cf902
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_si
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sia
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5a412e2c-8920-4150-bbf1-3c0afb858389
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sia
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sir
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 477d54c5-e70a-4113-99fa-6498ec66690f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sir
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temps passé avant adhésion (j)'
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: 528953fd-a59b-442e-84ae-e2130e562c4f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Temps passé avant adhésion (j)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temps passé avant mise à l''écart (j)'
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: 72cde21c-846f-4b17-91a6-24e7b70ed5a2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Temps passé avant mise à l'écart (j)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temps passé prospect en cours d''adhésion (j)'
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: adbd56cf-aa20-405b-b40c-583f5433cd3c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Temps passé prospect en cours d'adhésion (j)
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 62ce787b-0686-40c1-896c-2d36dc0d1d65
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 84dc025f-46d2-4553-85a6-b73d9726208e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Prospect = entity
+		mode: directQuery
+		source
+			entityName: Prospect
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,49 @@
+table 'Examen complémentaire - statut examen'
+	lineageTag: 61d72861-64fb-435e-9b1e-bc4cc2c7264b
+
+	column 'Correction mesure'
+		dataType: string
+		lineageTag: ac56062b-4c9e-4c46-870f-b8dca40e7671
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Correction mesure
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_statut_examen
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 37d4fbdd-7c0a-4e41-9d65-bc75cb0580ba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mode acquisition'
+		dataType: string
+		lineageTag: a688b802-6407-4517-8654-e36249f60700
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode acquisition
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut examen'
+		dataType: string
+		lineageTag: 52fcc834-4fb9-44fe-a695-7599e788b2da
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut examen
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Examen complémentaire - statut examen' = entity
+		mode: directQuery
+		source
+			entityName: Examen complémentaire - statut examen
+			expressionSource: 'DirectQuery à AS – pst38'
+

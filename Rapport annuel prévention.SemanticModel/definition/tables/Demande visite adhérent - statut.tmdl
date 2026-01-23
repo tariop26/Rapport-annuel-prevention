@@ -1,0 +1,98 @@
+table 'Demande visite adhérent - statut'
+	lineageTag: c1ddd348-e00f-464e-b01f-d0a3eafff4f0
+
+	column id_statut_demande_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes techniques
+		lineageTag: ccd188ae-3b73-48a4-b248-99146b0ccfcd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut demande visite'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7e4aa49e-edf0-473d-a26a-d76c208652d1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut détaillé demande visite'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: ee7caa83-da73-47d5-a544-faacd4424e83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut détaillé demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Demande visite adhérent - statut","TableItemName":"Statut détaillé demande visite (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Statut détaillé demande visite (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Demande visite adhérent - statut'[Statut détaillé demande visite]),
+				"(Vide)",
+				'Demande visite adhérent - statut'[Statut détaillé demande visite] IN {"A traiter",
+					"En cours de traitement"},
+				"A traiter / En-cours",
+				'Demande visite adhérent - statut'[Statut détaillé demande visite] IN {"Planifiée"},
+				"RDV accepté (planifié ou réalisé)",
+				'Demande visite adhérent - statut'[Statut détaillé demande visite] IN {"Déclinée"},
+				"RDV décliné",
+				'Demande visite adhérent - statut'[Statut détaillé demande visite]
+			)
+		lineageTag: e8252c21-553b-403f-9b5b-48cca36624a6
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Demande visite adhérent - statut"
+				          }
+				        },
+				        "Property": "Statut détaillé demande visite"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"Demande visite adhérent - statut"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Statut détaillé demande visite"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"A traiter / En-cours","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Statut détaillé demande visite"}}],"Values":[[{"Literal":{"Value":"'A traiter'"}}],[{"Literal":{"Value":"'En cours de traitement'"}}]]}}},{"DisplayName":"RDV accepté (planifié ou réalisé)","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Statut détaillé demande visite"}}],"Values":[[{"Literal":{"Value":"'Planifiée'"}}]]}}},{"DisplayName":"RDV décliné","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Statut détaillé demande visite"}}],"Values":[[{"Literal":{"Value":"'Déclinée'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie statut demande visite'
+		lineageTag: 288361fc-91cd-4d76-a795-ff8b78e80005
+		sourceLineageTag: Hiérarchie statut demande visite
+
+		level 'Statut demande visite'
+			lineageTag: afeca934-aa0e-4b20-9971-ba21ece78bc3
+			column: 'Statut demande visite'
+
+		level 'Statut détaillé demande visite'
+			lineageTag: 3d64c693-0dd1-4e83-b85d-4d462366f3f1
+			column: 'Statut détaillé demande visite'
+
+	partition 'Demande visite adhérent - statut' = entity
+		mode: directQuery
+		source
+			entityName: Demande visite adhérent - statut
+			expressionSource: 'DirectQuery à AS – pst38'
+

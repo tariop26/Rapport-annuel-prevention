@@ -1,0 +1,188 @@
+table 'CRM - tickets'
+	lineageTag: fa64e846-1c13-4952-a896-6672c6243925
+
+	measure '# tickets en retard' = EXTERNALMEASURE("# tickets en retard", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: 0bcaeeef-a4c7-4802-ae7d-316e52a96c53
+		sourceLineageTag: DirectQuery à AS – pst38.# tickets en retard
+		dataCategory: Uncategorized
+
+	measure '# tickets fermés' = EXTERNALMEASURE("# tickets fermés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: df37ed63-83a3-43cd-8cab-74174601579c
+		sourceLineageTag: DirectQuery à AS – pst38.# tickets fermés
+		dataCategory: Uncategorized
+
+	measure '# tickets ouverts' = EXTERNALMEASURE("# tickets ouverts", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: 1191116c-2b00-4053-8b68-ee853f4a2c38
+		sourceLineageTag: DirectQuery à AS – pst38.# tickets ouverts
+		dataCategory: Uncategorized
+
+	measure '# tickets' = EXTERNALMEASURE("# tickets", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		lineageTag: b120fe46-4fcd-40b4-843a-032253510b86
+		sourceLineageTag: DirectQuery à AS – pst38.# tickets
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne retard tickets (j)' = EXTERNALMEASURE("Durée moyenne retard tickets (j)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		lineageTag: af873bca-b5d2-465e-8581-a331879b84c6
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne retard tickets (j)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne traitement tickets (j)' = EXTERNALMEASURE("Durée moyenne traitement tickets (j)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		lineageTag: 73bfcf5c-1997-4324-bd46-9845d878ac81
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne traitement tickets (j)
+		dataCategory: Uncategorized
+
+	column duree_retard_ticket
+		dataType: int64
+		lineageTag: bf8bdc06-2d00-402a-9ef6-9ffb5cee1fb0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: duree_retard_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column duree_traitement_ticket
+		dataType: int64
+		lineageTag: 0de1e96e-eda5-4b50-86d2-3144d182028a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: duree_traitement_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_createur_ticket
+		dataType: int64
+		lineageTag: d24adcc9-512d-49ee-ad56-5076f56617af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_cloture_ticket
+		dataType: int64
+		lineageTag: b7743fe3-fee1-4829-b38f-736b0bb2eaa0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_cloture_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_creation_ticket
+		dataType: int64
+		lineageTag: e660b98b-445a-46ec-9095-5bd6144aad1f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_echeance_ticket
+		dataType: int64
+		lineageTag: 180de97c-1468-413c-9b70-2561bfa51451
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_echeance_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		lineageTag: 76210013-92f0-49cf-910a-b67e379ee849
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_info_crm
+		dataType: int64
+		lineageTag: 1921a1a8-6c7f-401d-8f35-7a275f45cd13
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_info_crm_ticket
+		dataType: int64
+		lineageTag: f1cb3f54-89a8-4743-9d84-d26ed67b6e37
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_crm_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_responsable_ticket
+		dataType: int64
+		lineageTag: 1a791e38-d5bb-40b2-a916-1f8c5bab28e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_responsable_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		lineageTag: ea02f810-3e3b-43ec-a5c0-2f4965d4b962
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_statut_ticket
+		dataType: int64
+		lineageTag: 28dac94b-1b3d-4082-82f0-3586bf45768e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_centre_convocation
+		dataType: int64
+		lineageTag: e8b87b3d-4d8f-4f2e-81ce-791fe23a7a0a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	partition 'CRM - tickets' = entity
+		mode: directQuery
+		source
+			entityName: CRM - tickets
+			expressionSource: 'DirectQuery à AS – pst38'
+

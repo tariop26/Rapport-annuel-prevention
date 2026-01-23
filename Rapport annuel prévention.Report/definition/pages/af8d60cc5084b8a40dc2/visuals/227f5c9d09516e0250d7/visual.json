@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "227f5c9d09516e0250d7",
+  "position": {
+    "x": 0,
+    "y": 0.37037037037036935,
+    "z": 3000,
+    "height": 41.25,
+    "width": 1279,
+    "tabOrder": 0
+  },
+  "visualGroup": {
+    "displayName": "En-tête ",
+    "groupMode": "ScaleMode"
+  }
+}

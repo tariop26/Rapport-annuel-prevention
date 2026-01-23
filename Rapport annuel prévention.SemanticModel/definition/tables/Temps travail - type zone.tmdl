@@ -1,0 +1,114 @@
+table 'Temps travail - type zone'
+	lineageTag: bb7d7003-deab-41f5-8550-4b0243cb6a6f
+
+	column 'Format de la zone'
+		dataType: string
+		lineageTag: 86625d0c-dd59-4f32-8f67-932a423ead62
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format de la zone
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format des visites de la vacation'
+		dataType: string
+		lineageTag: a53e0a01-9ae7-4b04-8f01-4194daa0be21
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format des visites de la vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_zone
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: e1163160-da21-4d7e-a220-1f9fd1940844
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_zone
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous type de zone'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a8efccab-a495-497c-9579-7214230397a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous type de zone
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type de zone'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2d4906e5-65e1-412e-abd5-2125131355e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type de zone
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Temps travail - type zone","TableItemName":"Type de zone (travail/hors travail)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Type de zone (travail/hors travail)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Temps travail - type zone'[Type de zone]),
+				"(Vide)",
+				'Temps travail - type zone'[Type de zone] IN {"Hors zone d'activité non clinique",
+					"Zone d'activité non clinique"},
+				"Heures de travail",
+				'Temps travail - type zone'[Type de zone] IN {"Indisponibilité"},
+				"Heures non travaillées",
+				"Autre"
+			)
+		lineageTag: 211a9908-d45e-432a-b020-b11a64b40ef4
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Temps travail - type zone"
+				          }
+				        },
+				        "Property": "Type de zone"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"t","Entity":"Temps travail - type zone"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"Type de zone"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Heures de travail","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"Type de zone"}}],"Values":[[{"Literal":{"Value":"'Hors zone d''activité non clinique'"}}],[{"Literal":{"Value":"'Zone d''activité non clinique'"}}]]}}},{"DisplayName":"Heures non travaillées","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"Type de zone"}}],"Values":[[{"Literal":{"Value":"'Indisponibilité'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie - type zone'
+		lineageTag: e63d1c6a-e476-4560-a6b3-61d31ddb451d
+		sourceLineageTag: Hiérarchie - type zone
+
+		level 'Type de zone'
+			lineageTag: 75f71718-c07e-408d-b833-4b008bc4de04
+			column: 'Type de zone'
+
+		level 'Sous type de zone'
+			lineageTag: e387c3f0-f3b5-4250-bd3a-f25aac4b96bb
+			column: 'Sous type de zone'
+
+	partition 'Temps travail - type zone' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - type zone
+			expressionSource: 'DirectQuery à AS – pst38'
+

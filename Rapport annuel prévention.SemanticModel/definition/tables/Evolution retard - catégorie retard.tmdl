@@ -1,0 +1,58 @@
+table 'Evolution retard - catégorie retard'
+	lineageTag: db48027a-ebc0-4ab8-a00b-362c68594399
+
+	column 'Catégorie retard'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7fda711f-8f55-4dfd-9021-5270c3622db4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_categorie_retard
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0bfeef11-f2dd-4c00-8f62-6494cc64ad8a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous catégorie retard'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: df8db45c-692b-4fac-96fe-d5e0d7223621
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous catégorie retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie catégorie retard'
+		lineageTag: 7b57903e-aec7-4aa3-9cd7-c58ccad53951
+		sourceLineageTag: Hiérarchie catégorie retard
+
+		level 'Catégorie retard'
+			lineageTag: 37045bbd-6f8b-4d2b-82da-d14852f0e413
+			column: 'Catégorie retard'
+
+		level 'Sous catégorie retard'
+			lineageTag: 4f56e985-2828-48e8-a540-87571da73089
+			column: 'Sous catégorie retard'
+
+	partition 'Evolution retard - catégorie retard' = entity
+		mode: directQuery
+		source
+			entityName: Evolution retard - catégorie retard
+			expressionSource: 'DirectQuery à AS – pst38'
+

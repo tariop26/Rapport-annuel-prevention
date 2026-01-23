@@ -1,0 +1,405 @@
+table 'Documents émis'
+	lineageTag: 0617206c-e954-4c47-b7dc-66e984bdc5a4
+
+	measure 'Nombre d''adaptations de poste' = EXTERNALMEASURE("Nombre d'adaptations de poste", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Adaptations de poste
+		lineageTag: 9ae2db87-ce81-429a-9fb5-d39883217f83
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adaptations de poste
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''avis d''inaptitude' = EXTERNALMEASURE("Nombre d'avis d'inaptitude", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Inaptitudes
+		lineageTag: 339f4761-8b8a-4153-bb5b-05701aadbdfc
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'avis d'inaptitude
+		dataCategory: Uncategorized
+
+	measure 'Nombre de documents avec adaptation de poste' = EXTERNALMEASURE("Nombre de documents avec adaptation de poste", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Adaptations de poste
+		lineageTag: f1473a07-a15c-4153-acc8-7f14a1b6f984
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de documents avec adaptation de poste
+		dataCategory: Uncategorized
+
+	measure 'Nombre de documents émis' = EXTERNALMEASURE("Nombre de documents émis", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Tous les documents
+		lineageTag: 4f5d2d37-8df9-4164-9b93-da9fea634d8a
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de documents émis
+		dataCategory: Uncategorized
+
+	measure 'Nombre de personnes concernées (adaptation de poste)' = EXTERNALMEASURE("Nombre de personnes concernées (adaptation de poste)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Adaptations de poste
+		lineageTag: 12afdb38-d151-421e-8654-221b24ae9f65
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de personnes concernées (adaptation de poste)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de personnes concernées (document)' = EXTERNALMEASURE("Nombre de personnes concernées (document)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Tous les documents
+		lineageTag: 0168195b-a221-44fd-b149-ed26a266e5aa
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de personnes concernées (document)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de personnes concernées (inaptitude)' = EXTERNALMEASURE("Nombre de personnes concernées (inaptitude)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Inaptitudes
+		lineageTag: 7c6adc14-55fb-4a36-aee1-a75eb4d592eb
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de personnes concernées (inaptitude)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés concernés (adaptation de poste)' = EXTERNALMEASURE("Nombre de salariés concernés (adaptation de poste)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Adaptations de poste
+		lineageTag: eb2c2735-6136-4bf4-bda1-506cd81b1fc3
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés concernés (adaptation de poste)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés concernés (document)' = EXTERNALMEASURE("Nombre de salariés concernés (document)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Tous les documents
+		lineageTag: 488968e0-2978-42b1-a524-18259e9ff197
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés concernés (document)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés concernés (inaptitude)' = EXTERNALMEASURE("Nombre de salariés concernés (inaptitude)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Inaptitudes
+		lineageTag: ffa3a87f-51be-4037-8748-7c7d9467b885
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés concernés (inaptitude)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites concernées (adaptation de poste)' = EXTERNALMEASURE("Nombre de visites concernées (adaptation de poste)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Adaptations de poste
+		lineageTag: c142c72b-6a05-4da8-9ebf-ce2245cbcdba
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites concernées (adaptation de poste)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites concernées (document)' = EXTERNALMEASURE("Nombre de visites concernées (document)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Tous les documents
+		lineageTag: eb18527f-8fd3-4c1c-9ee3-d8bd6f06d22c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites concernées (document)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites concernées (inaptitude)' = EXTERNALMEASURE("Nombre de visites concernées (inaptitude)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Inaptitudes
+		lineageTag: 8edcb13a-548e-40c6-828e-57690619d667
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites concernées (inaptitude)
+		dataCategory: Uncategorized
+
+	column conclusion_ancien_logiciel
+		dataType: boolean
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6e4b2ae8-af8d-49aa-a918-d4d36cb994e5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: conclusion_ancien_logiciel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document ancien logiciel'
+		dataType: string
+		lineageTag: 9106003c-c835-457c-8ea7-6fd54ba6df63
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Document ancien logiciel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document confidentiel'
+		dataType: string
+		lineageTag: 38e4aca6-b115-4493-ae59-9d166207950b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Document confidentiel
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f9a68674-9f18-45d1-9044-3bbdb896b32d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_debut_validite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ba0eddb6-6802-48b8-8f22-d32b05d46905
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_debut_validite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_emission
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3e1bd616-645c-4a92-b2c0-7e51af4b7874
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_emission
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_fin_validite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1b544f27-f92f-4903-b7a7-e08285a8fd69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_fin_validite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 115da72c-c725-41dc-9f9f-5934fc8f04e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_document_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 77162637-931b-4c40-b657-14eb672b2954
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_document_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b3056065-c733-4972-8551-ee3405d7f593
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9c4b472e-64e4-4813-93b0-266e66309b34
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bfcb256a-38dd-4f8b-802b-839cb8194f1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_personne
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 82dd819f-2159-44aa-8e91-2c0c6583f0da
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3f3c4b8a-2d00-433d-b2bf-362008c042de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c0641f8d-d9e8-4aae-b3b3-2b3255515dba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: eed244e9-0d4f-4b20-a521-e5be8f38b1dc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_signataire_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3b9bb472-05ba-4764-9f3c-8455232c127a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_signataire_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_thesaurus_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 06829066-aaca-4ba0-8a1c-1ce6a09c5373
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_thesaurus_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3fe249ab-ff34-43d3-b13d-d0c8842ce216
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f4866b6f-bc63-46fb-aa8b-abe35dc917d4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c0b64fa9-14ca-48d2-ba3a-dca063236a41
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 582b9fef-8ac3-48c7-91b5-81dcf9b39a9b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5aee4aa4-ae43-4718-b5da-65c1a3f96e43
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 36a36713-1106-48e0-a792-925d6fcde120
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5f400707-bc3d-4a6d-ae22-edddd7dce7be
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9e3ae2a0-3c38-49b8-b428-6193e883669f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Documents émis' = entity
+		mode: directQuery
+		source
+			entityName: Documents émis
+			expressionSource: 'DirectQuery à AS – pst38'
+

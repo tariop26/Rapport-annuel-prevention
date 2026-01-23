@@ -1,0 +1,103 @@
+table 'Document émis - date émission'
+	lineageTag: b4a658d9-f6ef-49f0-a1d2-20b705abf612
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1b6907e3-520b-4b78-89f7-c3c60cf7d25d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 168840b0-17f5-4196-80dd-c7e44d4d0d7f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: f14ced50-df7c-4952-a510-6f6f857d0b0c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jour
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 09efa30e-96aa-44f5-aede-3e429dd12859
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6a55d293-431d-4453-928b-37294ab89965
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e3d4d8b7-912c-4dff-a153-e35fa801ad47
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date émission'
+		lineageTag: b036e350-bab1-4a8a-85f2-47bfc168f719
+		sourceLineageTag: Hiérarchie date émission
+
+		level 'Année émission'
+			lineageTag: 72a84106-b3da-431c-9031-aafa51f8524e
+			column: Année
+
+		level 'Mois émission'
+			lineageTag: 095584b4-0b83-4266-9fc5-5957b28d6031
+			column: Mois
+
+		level 'Semaine émission'
+			lineageTag: 057eeefc-f59f-4627-9807-4e4e4dfc0986
+			column: Semaine
+
+		level 'Date émission'
+			lineageTag: e3909225-3b77-4c51-9cc0-980d344d922b
+			column: Date
+
+	partition 'Document émis - date émission' = entity
+		mode: directQuery
+		source
+			entityName: Document émis - date émission
+			expressionSource: 'DirectQuery à AS – pst38'
+

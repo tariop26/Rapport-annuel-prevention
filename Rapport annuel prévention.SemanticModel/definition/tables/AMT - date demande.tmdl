@@ -1,0 +1,105 @@
+table 'AMT - date demande'
+	lineageTag: 058ea5c9-efd9-4db3-8e31-d280daa58599
+
+	column 'Année demande AMT'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 026d0031-427b-47ee-90d0-0f52763988cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année demande AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date demande AMT'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 431f5ef5-26ec-49f2-a4ef-4fd43c64bf18
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date demande AMT
+		sortByColumn: id_date_demande_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_demande_amt
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 36629dcf-c703-4571-9602-0c082a7a9def
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_demande_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour demande AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e91b999f-9aee-42ae-8bae-b4dd8b027707
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour demande AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois demande AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: c1b33a74-e000-4d9c-a0d7-43259d4645e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois demande AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine demande AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7f5e8346-b244-4e09-980a-e0aad4aebaee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine demande AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date demande AMT'
+		lineageTag: 4558f247-7429-494f-8831-f19e7acb71a9
+		sourceLineageTag: Hiérarchie date demande AMT
+
+		level 'Année demande AMT'
+			lineageTag: c25ccbba-9352-4416-a7ba-01f6a9dde075
+			column: 'Année demande AMT'
+
+		level 'Mois demande AMT'
+			lineageTag: 5b606636-c276-4732-b5a9-05200db44a05
+			column: 'Mois demande AMT'
+
+		level 'Semaine demande AMT'
+			lineageTag: 18c63532-a329-4cd8-9f33-bc9259583f3f
+			column: 'Semaine demande AMT'
+
+		level 'Date demande AMT'
+			lineageTag: 43995641-9337-4512-919e-a5018a9c0317
+			column: 'Date demande AMT'
+
+	partition 'AMT - date demande' = entity
+		mode: directQuery
+		source
+			entityName: AMT - date demande
+			expressionSource: 'DirectQuery à AS – pst38'
+

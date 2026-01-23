@@ -1,0 +1,465 @@
+table 'Date principale'
+	lineageTag: 79c96304-bcc8-41e9-a45e-21fc56b257a3
+
+	column 'Année à ce jour'
+		dataType: string
+		lineageTag: e5ff2e71-dba3-4acf-9e37-ea2f62adba7b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour
+
+		annotation SummarizationSetBy = User
+
+	column 'Année actuelle'
+		dataType: string
+		lineageTag: 1b055058-d901-40fc-b195-78f65eb68a64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année actuelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6969cb7a-9deb-4fc7-9dff-0acf3712406d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4243ac54-6c93-404d-8c88-812600951709
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Dernière année glissante'
+		dataType: boolean
+		lineageTag: f642a208-a2fa-4fb7-8b95-ec546a467687
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dernière année glissante
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: aa99b880-e414-41ae-b2bb-f21151894ac6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour de la semaine '
+		dataType: string
+		lineageTag: 8328118f-49de-4f78-a677-c3153d73002c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: "Jour de la semaine "
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jour
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9b27c0de-38b4-4d5c-adca-53eec0d134c0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul'
+		dataType: string
+		lineageTag: 5ae74212-a624-43d8-b911-a74b32c88c8c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul
+		sortByColumn: 'Numéro mois'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d4276973-c0f1-4a05-ba13-a3b425435aee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro mois'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fafaa319-78f0-457e-afe2-6deb19fbeb87
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Numéro mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f553ffd4-67cc-47b0-9b74-1660cfa06520
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: 523230f8-613c-478c-a676-525a917ec46e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur Pénultième Semaine' = ```
+			
+			VAR AujourdHui = TODAY()
+			VAR DebutPenultieme = AujourdHui - 14 - WEEKDAY(AujourdHui - 14, 2) + 1
+			VAR FinPenultieme = DebutPenultieme + 6
+			RETURN
+			IF('Date principale'[date] >= DebutPenultieme && 'Date principale'[date] <= FinPenultieme, "Pénultième Semaine", "Autre")
+			
+			```
+		lineageTag: aef2046c-463c-49c2-ab2e-0a79b7556b62
+		summarizeBy: none
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois Formaté' = ```
+			FORMAT('Date principale'[Date], "yyyy-mm", "Fr-fr")
+			
+			```
+		lineageTag: 0a2cd4b4-5a09-4513-bbd4-07b6a5182055
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column MoisNumAnnee = YEAR('Date principale'[Date]) * 10000000 + MONTH('Date principale'[Date])*10000
+		formatString: 0
+		lineageTag: 4ea1a940-b838-48a1-b9b1-565ea4bc558a
+		summarizeBy: sum
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomMoisAnnee = FORMAT('Date principale'[Date], "Mmm 'yy", "Fr-fr")
+		lineageTag: ae6a27f4-6376-4b09-af38-50f1f459094e
+		summarizeBy: none
+		sortByColumn: 'Ordre Mois'
+
+		changedProperty = Name
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomMoisAnneeRaccourci = FORMAT('Date principale'[Date], "Mmm", "Fr-fr")
+		lineageTag: 876cbcc0-5f9d-4028-b0c8-c5e1b17dd370
+		summarizeBy: none
+		sortByColumn: 'Numéro mois'
+
+		changedProperty = Name
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomMoisAnneeRaccourcii = FORMAT('Date principale'[Date], "Mmm 'yy", "Fr-fr")
+		lineageTag: 8e7a3c9c-7d69-4516-aa24-cc2eff4a2cc6
+		summarizeBy: none
+		sortByColumn: 'Numéro mois'
+
+		changedProperty = Name
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ordre Mois' = YEAR('Date principale'[Date]) * 100 + MONTH('Date principale'[Date])
+		formatString: 0
+		lineageTag: ffc54b17-226e-4a37-b0b8-145ab763041d
+		summarizeBy: sum
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Filtre Période 12 mois ajustés' = ```
+			
+			VAR today = TODAY()
+			VAR DateFin = EOMONTH(today, 0) -- Dernier jour du mois actuel
+			VAR DateDebut = DATE(YEAR(DateFin), MONTH(DateFin) - 12, 1) -- Premier jour du mois, 12 mois en arrière
+			RETURN
+			IF(
+			    'Date principale'[Date] >= DateDebut &&
+			    'Date principale'[Date] <= DateFin,
+			    TRUE(),
+			    FALSE()
+			)
+			
+			
+			-- Description :
+			-- Cette colonne vérifie si une date donnée se situe dans les 12 derniers mois complets par rapport à la date maximale de la colonne 'Date principale'.
+			-- Elle retourne TRUE si la date est dans cette période, sinon FALSE.
+			-- Permet d'inclure les données du mois entier M-12 
+			
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 264b0c5b-06b2-47e6-9511-b536208f789a
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Filtre Période 6 mois ajustés' = ```
+			
+			VAR today = TODAY()
+			VAR DateFin = EOMONTH(today, 0) -- Dernier jour du mois actuel
+			VAR DateDebut = DATE(YEAR(DateFin), MONTH(DateFin) - 6, 1) -- Premier jour du mois, 6 mois en arrière
+			RETURN
+			IF(
+			    'Date principale'[Date] >= DateDebut &&
+			    'Date principale'[Date] <= DateFin,
+			    TRUE(),
+			    FALSE()
+			)
+			
+			
+			-- Description :
+			-- Cette colonne vérifie si une date donnée se situe dans les 6 derniers mois complets par rapport à la date maximale de la colonne 'Date principale'.
+			-- Elle retourne TRUE si la date est dans cette période, sinon FALSE.
+			-- Permet d'inclure les données du mois entier M-6. 
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d265e495-8fd9-485d-a7f1-a82c5c1c895d
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur M-1' = ```
+			
+			VAR AujourdHui = TODAY()
+			VAR PremierJourMoisActuel = DATE(YEAR(AujourdHui), MONTH(AujourdHui), 1)
+			VAR PremierJourMoisPrecedent = DATE(YEAR(PremierJourMoisActuel), MONTH(PremierJourMoisActuel) - 1, 1)
+			VAR DernierJourMoisPrecedent = EOMONTH(PremierJourMoisPrecedent, 0)
+			
+			RETURN
+			    IF(
+			        'Date principale'[Date] >= PremierJourMoisPrecedent && 'Date principale'[Date] <= DernierJourMoisPrecedent,
+			        "Mois Précédent",
+			        "Autre"
+			    )
+			
+			    -- Ajout d'une colonne qui indique si la date fait partie du Mois précédent ou non. 
+			
+			```
+		lineageTag: 73763a6a-451d-422f-9b09-41aed7935822
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur M-2' = ```
+			
+			VAR AujourdHui = TODAY()
+			VAR PremierJourMoisActuel = DATE(YEAR(AujourdHui), MONTH(AujourdHui), 1)
+			VAR PremierJourMoisNmoins2 = DATE(YEAR(PremierJourMoisActuel), MONTH(PremierJourMoisActuel) - 2, 1)
+			VAR DernierJourMoisNmoins2 = EOMONTH(PremierJourMoisNmoins2, 0)
+			
+			RETURN
+			    IF(
+			        'Date principale'[Date] >= PremierJourMoisNmoins2 && 'Date principale'[Date] <= DernierJourMoisNmoins2,
+			        "Mois N-2",
+			        "Autre"
+			    )
+			
+			```
+		lineageTag: 9f404f1d-903d-4ae1-a017-f91a79715aa1
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur S-1' = ```
+			
+			VAR AujourdHui = TODAY()
+			VAR DebutSmoins1 = AujourdHui - 7 - WEEKDAY(AujourdHui - 7, 1) + 1
+			VAR FinSmoins1 = DebutSmoins1 + 6
+			
+			RETURN
+			IF('Date principale'[date] >= DebutSmoins1 && 'Date principale'[date] <= FinSmoins1, "S-1", "Autre")
+			
+			```
+		lineageTag: cabc605d-afc7-4000-ba48-f189e776f9dd
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur S-2' = ```
+			
+			VAR AujourdHui = TODAY()
+			VAR DebutPenultieme = AujourdHui - 14 - WEEKDAY(AujourdHui - 14, 1) + 1
+			VAR FinPenultieme = DebutPenultieme + 6
+			
+			RETURN
+			IF('Date principale'[date] >= DebutPenultieme && 'Date principale'[date] <= FinPenultieme, "S-2", "Autre")
+			
+			```
+		lineageTag: f0e32dee-fc7b-43e2-8e6a-8762aabd9d0b
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur S-3' = ```
+			
+			VAR AujourdHui = TODAY()
+			VAR DebutSmoins3 = AujourdHui - 21 - WEEKDAY(AujourdHui - 21, 2) + 1
+			VAR FinSmoins3 = DebutSmoins3 + 6
+			
+			RETURN
+			IF(
+			    'Date principale'[date] >= DebutSmoins3 && 'Date principale'[date] <= FinSmoins3, 
+			    "S-3", 
+			    "Autre"
+			    )
+			
+			```
+		lineageTag: 50653351-e399-41db-9ab0-24a09f542e6d
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstJourOuvré = ```
+			
+			VAR Jour = WEEKDAY('Date principale'[Date], 2) // Lundi=1, Dimanche=7
+			VAR Mois = MONTH('Date principale'[Date])
+			VAR JourDuMois = DAY('Date principale'[Date])
+			VAR Annee = YEAR('Date principale'[Date])
+			
+			// --- Calcul de la date de Pâques (algorithme de Gauss) ---
+			VAR a = MOD(Annee, 19)
+			VAR b = QUOTIENT(Annee, 100)
+			VAR c = MOD(Annee, 100)
+			VAR d = QUOTIENT(b, 4)
+			VAR e = MOD(b, 4)
+			VAR f = QUOTIENT(b + 8, 25)
+			VAR g = QUOTIENT(b - f + 1, 3)
+			VAR h = MOD(19 * a + b - d - g + 15, 30)
+			VAR i = QUOTIENT(c, 4)
+			VAR k = MOD(c, 4)
+			VAR l = MOD(32 + 2 * e + 2 * i - h - k, 7)
+			VAR m = QUOTIENT(a + 11 * h + 22 * l, 451)
+			VAR MoisPaques = QUOTIENT(h + l - 7 * m + 114, 31)
+			VAR JourPaques = MOD(h + l - 7 * m + 114, 31) + 1
+			VAR DatePaques = DATE(Annee, MoisPaques, JourPaques)
+			
+			// --- Jours fériés fixes ---
+			VAR EstFerieFixe =
+			    (Mois = 1 && JourDuMois = 1)      || // 1er janvier
+			    (Mois = 5 && JourDuMois = 1)      || // 1er mai
+			    (Mois = 5 && JourDuMois = 8)      || // 8 mai
+			    (Mois = 7 && JourDuMois = 14)     || // 14 juillet
+			    (Mois = 8 && JourDuMois = 15)     || // Assomption
+			    (Mois = 11 && JourDuMois = 1)     || // Toussaint
+			    (Mois = 11 && JourDuMois = 11)    || // Armistice
+			    (Mois = 12 && JourDuMois = 25)       // Noël
+			
+			// --- Jours fériés mobiles (liés à Pâques) ---
+			VAR EstFerieMobile =
+			    'Date principale'[Date] = DatePaques + 1   || // Lundi de Pâques
+			    'Date principale'[Date] = DatePaques + 39  || // Ascension
+			    'Date principale'[Date] = DatePaques + 50     // Lundi de Pentecôte
+			
+			VAR EstWeekend = Jour IN {6, 7}
+			RETURN
+			IF(EstWeekend || EstFerieFixe || EstFerieMobile, FALSE, TRUE)
+			
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 439e9a8d-a08c-46be-b563-25693a7ef78e
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date'
+		lineageTag: 3c4d9c39-8039-4b15-9998-666ef2e77028
+		sourceLineageTag: Hiérarchie date
+
+		level Année
+			lineageTag: 6257cce4-7903-4f9c-8b9d-600d3c7773de
+			column: Année
+
+		level Mois
+			lineageTag: 77b83237-1311-4759-89bf-8476dd1f86c5
+			column: Mois
+
+		level Semaine
+			lineageTag: ab0063c8-d3f3-4a63-891f-f7cfafa49945
+			column: Semaine
+
+		level Date
+			lineageTag: 0b7fbf7f-bed7-4069-99ca-f7b2bf61ed8b
+			column: Date
+
+	partition 'Date principale' = entity
+		mode: directQuery
+		source
+			entityName: Date principale
+			expressionSource: 'DirectQuery à AS – pst38'
+

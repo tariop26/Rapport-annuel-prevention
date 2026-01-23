@@ -1,0 +1,58 @@
+table 'Demande consultation spécialisée - statut'
+	lineageTag: a7138c19-dbc5-4c8f-8459-fc53a4e34476
+
+	column id_statut_demande_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 76c49f4a-1db6-41f9-b746-becbd93f06cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8fc18e5a-490c-41a8-819d-edfed6e09cb5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut détaillé demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 602e9b89-7f69-4dac-aa1f-385b30525023
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut détaillé demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie statut demande visite'
+		lineageTag: 6995424a-abc3-467d-826f-8e9af5d68a50
+		sourceLineageTag: Hiérarchie statut demande visite
+
+		level 'Statut demande visite'
+			lineageTag: f6fa78f5-2c78-45e7-b391-20f20bedbe97
+			column: 'Statut demande visite'
+
+		level 'Statut détaillé demande visite'
+			lineageTag: 5d21b866-7e66-4c81-b06f-64d186298cfb
+			column: 'Statut détaillé demande visite'
+
+	partition 'Demande consultation spécialisée - statut' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - statut
+			expressionSource: 'DirectQuery à AS – pst38'
+

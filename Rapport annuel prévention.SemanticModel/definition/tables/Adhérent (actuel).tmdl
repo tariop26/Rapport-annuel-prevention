@@ -1,0 +1,2459 @@
+table 'Adhérent (actuel)'
+	lineageTag: f78c11de-e6db-4bb0-9653-ebd366c5bd35
+
+	column Adresse
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: da5c163f-0060-416b-be7b-d3daea4d1410
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Adresse
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ancien service'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: b95c6e8c-1609-42e6-a1c3-89182733c33a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ancien service
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Annee création dossier entreprise'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b0287e53-f01b-4423-a722-ae7c8d307203
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Annee création dossier entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernier DU'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ae3f0d87-f333-42d1-a291-d14538b067ad
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernier DU
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernier statut actif'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a77ef7fb-c814-4f11-bcd7-58177fe0bff3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernier statut actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière AMT'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: dc9f9197-d265-4034-a82d-5b2c8c1f76e1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière connexion portail adhérent'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 024e58b7-f964-4a68-aaff-8c740bbc459a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière connexion portail adhérent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière déclaration'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: abd21425-b28c-4e65-ab28-daae235c2f52
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière FE'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a7dfd430-ab9a-464f-b46d-3bbcb19e45d6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière FE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière radiation'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 42cff0ee-ac47-4aea-8900-e7eb1a652c3e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière radiation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière suspension'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 45c296c5-63be-4025-a0da-0ed01a8635d8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière suspension
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année fin validité déclaration'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: dfb77653-c29a-44c5-859c-2f3492446eff
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année fin validité déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année premier statut actif'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 1c10f2b5-eac9-455b-9664-0d580a8c995d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année premier statut actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Au moins un utilisateur du portail'
+		dataType: string
+		displayFolder: 7 - Connexion au portail adhérent
+		lineageTag: 4c106d17-119d-49ce-82f3-0c9bfea61392
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Au moins un utilisateur du portail
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Au moins une SdT active'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 0cc0d75a-1ae1-4e9b-a8d3-f1bf6ccfa462
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Au moins une SdT active
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie entreprise'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7234f105-be27-4a79-97af-e8282ad21945
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre convocation'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 3c193d88-ec68-49c1-9d37-1659f8768dc8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre rattachement (centre convocation)'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: e8641590-a995-4559-b87d-ef13128cfa19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement (centre convocation)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre rattachement (equipe médicale)'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 498c118f-6fce-42fe-b1f2-82d07997bf19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement (equipe médicale)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code postal'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: 101c5f0f-dfc6-4477-a65d-8bb633bd54cc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code postal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Collection regroupante'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: 5ee32509-5510-4f0f-995a-283cba7a2989
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Collection regroupante
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Connexion au portail'
+		dataType: string
+		displayFolder: 7 - Connexion au portail adhérent
+		lineageTag: bec3d147-9771-45ef-b552-ceb902cb624f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Connexion au portail
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact convocation'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: 6e1af5fd-760a-44e3-950b-5482ecf0cc60
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contact convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact facturation'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: ae4aefcb-6556-49ed-96ae-d524343b333d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contact facturation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact principal'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: 232f5bb8-e150-4fdb-8de5-e4cc2318c319
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contact principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact santé au travail'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: 2f86e44e-fa8e-47bc-bc96-52104934c0f7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contact santé au travail
+
+		annotation SummarizationSetBy = Automatic
+
+	column cse_declare
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: beea665f-c8a5-4741-8702-f73ed6184c52
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: cse_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date création dossier entreprise'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 591e900a-2204-45fd-bbed-d97f5dc562cc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création dossier entreprise
+		sortByColumn: id_date_creation_dossier_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernier DU'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 9ed856ef-797b-46bb-a42f-82bb16c99af2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernier DU
+		sortByColumn: id_date_dernier_duerp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernier passage inactif à actif'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: d824805f-5b62-42f4-b7d7-533e8ac66d5f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernier passage inactif à actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernier statut actif'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 9d7ce6ad-501c-4a25-ae49-636129ae8e8b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernier statut actif
+		sortByColumn: id_date_dernier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière AMT terminée (hors FE)'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: 5 - Prévention
+		lineageTag: c56f7ca1-123a-4ed2-9053-908a69674f99
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière AMT terminée (hors FE)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière AMT'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 28de9c8b-cdef-4d56-8bc5-1cb3cfcaac7b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière AMT
+		sortByColumn: id_date_derniere_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière connexion portail adhérent'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: efdf86ec-e015-47af-8ed8-b089a7d1196d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière connexion portail adhérent
+		sortByColumn: id_date_derniere_connexion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière déclaration'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: b211a799-eee1-4206-99ff-3113a46b8b31
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière déclaration
+		sortByColumn: id_date_derniere_declaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière FE'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 5ab946b9-9775-4c02-a6c8-7b9face071dc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière FE
+		sortByColumn: id_date_fiche_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière radiation'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: f8a77d38-eb78-4c06-8890-ebd1b5b6ae6c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière radiation
+		sortByColumn: id_date_derniere_radiation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière suspension'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 4acd84f1-bd45-4132-92e2-1e65d9c413c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière suspension
+		sortByColumn: id_date_derniere_suspension
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date fin validité déclaration'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: a4f03625-22ec-4213-81fb-eb1f3fd784a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin validité déclaration
+		sortByColumn: id_date_expiration_declaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date premier statut actif'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: e3c1002b-1b8a-4204-9aa1-a7ce92084220
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date premier statut actif
+		sortByColumn: id_date_premier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DE synchronisé avec l''ancien logiciel'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: 58324107-46a9-46b9-92b3-ce9469ef00f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DE synchronisé avec l'ancien logiciel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Echéancier
+		dataType: int64
+		displayFolder: 6 - Facturation
+		lineageTag: 5ebf12b2-87e3-4496-8311-01ad19c69617
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Echéancier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Eligibilité FE'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 05b264a2-bd4a-4107-b82f-a2ef9ceab5b8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Eligibilité FE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Equipe médicale'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 6a36721e-ac61-44b2-8990-0a854975864e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Equipe médicale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Adhérent (actuel)","TableItemName":"Zones et Médecins référents","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Facturation du regroupement'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: aa7d6386-1bec-4b70-abed-d2878c91811f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Facturation du regroupement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format facture'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: bdb9e077-3d5e-41a0-a8d8-c97ec1cab317
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format facture
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gestionnaire administratif actuel (équipe médicale)'
+		dataType: string
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 345f416f-0ee7-424f-ae2e-c36a32a52c66
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Gestionnaire administratif actuel (équipe médicale)
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_dossier_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e4eb0a80-2a2b-41dc-aa7a-1386af82bc0e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_dossier_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_dernier_duerp
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 6139c2f2-b122-4790-b306-c88f3e56d9c9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_dernier_duerp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_dernier_statut_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 914a7d88-ced6-455d-9cfc-b2773d45f3a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_dernier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_derniere_amt
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a7c732ba-e24f-41d0-97a3-c352bec5903e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_derniere_connexion
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d5080759-4434-4441-a8f1-2d1a4b7c917c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_connexion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_derniere_declaration
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 8f070f2f-7144-48b4-a282-57d520d53fde
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_declaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_derniere_radiation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5708c500-4914-46bf-8b7f-8ca256547c55
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_radiation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_derniere_suspension
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f35d4c97-2729-42c8-980c-38076ed88c76
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_suspension
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_expiration_declaration
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 4b3ee7f7-44ba-4a81-acbb-adc6179ae942
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_expiration_declaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_fiche_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 60ab713a-6f90-4d00-8980-fc2434718a83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_fiche_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_premier_statut_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d30c6f30-ef0b-4017-8d17-1d3db12032f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_premier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes techniques
+		lineageTag: 6169dea1-514c-4efa-bd06-ef7446061b45
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise_collection_regroupante
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d049f6d1-cdaa-46cd-8559-27887ba2fed8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_entreprise_collection_regroupante
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_etiquette_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3b7108b8-175f-4792-9255-8f00548a722d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_etiquette_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 38dea642-0e2a-4445-b3b4-f9056296ae75
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Matricule entreprise'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: dfbd9e79-ba3c-40ed-8fc3-fe01df7efddb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Matricule entreprise
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Matricule Sage'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: 0784592e-cda9-4cf4-8584-f513e3f16fa2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Matricule Sage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Médecin référent actuel (équipe médicale)'
+		dataType: string
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 7d46b613-cc0f-4aba-881f-63c76ed9617d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Médecin référent actuel (équipe médicale)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mode de convocation préférentiel'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux
+		lineageTag: 7153bb5e-2218-442e-9bc7-dcdf9e0a4af1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode de convocation préférentiel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mode de déclaration'
+		dataType: string
+		displayFolder: 4 - Déclaration
+		lineageTag: 8eb3278a-b9b8-4400-86cf-c4fd6e019159
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode de déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mode de facturation'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: eeb3c83b-8d53-4e88-9693-6377749fad9c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode de facturation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mode de paiement préférentiel'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: 9c680e09-c709-4c9e-b772-da59c3d927d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode de paiement préférentiel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création dossier entreprise'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: b3db13fb-4589-49b3-bac7-23c325d55334
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création dossier entreprise
+		sortByColumn: numero_mois_creation_dossier_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernier DU'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: f9ea214f-6841-447b-bf15-1a71cd624e19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernier DU
+		sortByColumn: numero_mois_dernier_duerp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernier statut actif'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 35bbba73-5e04-46d2-bc53-7448d355ca5e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernier statut actif
+		sortByColumn: numero_mois_dernier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière AMT'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 85f050fd-57e0-4725-8f60-16c2596f8c69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière AMT
+		sortByColumn: numero_mois_derniere_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière connexion portail adhérent'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7f5aad10-11cf-4be4-80ab-3f623b8d72bc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière connexion portail adhérent
+		sortByColumn: numero_mois_derniere_connexion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière déclaration'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 4e765a65-d73f-4189-ada5-0f46df0f293c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière FE'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 3698660f-762d-4114-b67e-49327e73aa9a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière FE
+		sortByColumn: numero_mois_fiche_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière radiation'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 08f83095-290e-49d7-a26b-8456d8cbc98c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière radiation
+		sortByColumn: numero_mois_derniere_radiation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière suspension'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 2f02413c-bf55-425a-9f80-e9d8c737ff75
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière suspension
+		sortByColumn: numero_mois_derniere_suspension
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois fin validité déclaration'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: b3c860c1-7755-41a1-a15f-80b1b20468e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois fin validité déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois premier statut actif'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 461756bb-a68b-48f7-8434-dd7ecb09ec92
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois premier statut actif
+		sortByColumn: numero_mois_premier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Motif désactivation DU'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: bcca8dd4-64b6-4f22-bcb6-26f968d791ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif désactivation DU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAF niveau 1'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 867ead35-848a-499f-b35b-494861a296b2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NAF niveau 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Adhérent (actuel)","TableItemName":"NAF niveau 1 (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'NAF niveau 2'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: f09b1f8d-36b3-42b1-a4c9-a7c8d80fb63a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NAF niveau 2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAF niveau 3'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 4336659b-25ad-4db9-9ce9-645e189c9cf1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NAF niveau 3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAF niveau 4'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 13396e78-3719-4581-aeb5-7900a6edc805
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NAF niveau 4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAF niveau 5'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 47bbc221-ea38-44a7-a588-4c0307c8d954
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NAF niveau 5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nature du solde'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: d3e50447-8c09-4cf2-bd27-eab4950e77aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nature du solde
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_non_interimaire
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 334cce38-39b8-4844-a6f9-0e92205b84e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_non_interimaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_salarie_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c489bdf0-b4a3-4c8e-9828-5afddc3f9071
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_salarie_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_situation_travail_active
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5f8f840a-9d92-4903-a7db-1278cf18aad0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_situation_travail_active
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Nom collection'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: c2fc86bc-e435-40f2-9570-9b142a1d319d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom collection
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom entreprise'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: bed7e6f7-ccdb-4fd9-978f-b11903ccaba3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom entreprise
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom responsable adhérent'
+		dataType: string
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 7d93fdb5-6474-484e-a55d-ec2974b027f2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom responsable adhérent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre de réferents déclaration'
+		dataType: int64
+		displayFolder: 4 - Déclaration
+		lineageTag: 19cbe73f-6e5a-457d-9cc6-653561e683f9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nombre de réferents déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre de réferents externes déclaration'
+		dataType: int64
+		displayFolder: 4 - Déclaration
+		lineageTag: b201b318-2dcc-4347-9806-ab237fdb0fb3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nombre de réferents externes déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column numero_mois_creation_dossier_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: dec6f63b-552e-4a7b-a93a-b01b0d925ef3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_creation_dossier_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_dernier_duerp
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c6c2dade-d33f-43fe-b082-f6ccd56d401b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_dernier_duerp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_dernier_statut_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 33296916-ea0a-4ca2-ad97-f27751c43840
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_dernier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_derniere_amt
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 090ba9be-f108-4b08-9514-e4b783344df1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_derniere_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_derniere_connexion
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c978ea84-a79e-45b4-9fe0-86ce653bf3ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_derniere_connexion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_derniere_radiation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: bb98f504-24e8-46b8-aa3e-9cbdaeeb2354
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_derniere_radiation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_derniere_suspension
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0a29b92f-eeac-46a1-99fc-844cdb488731
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_derniere_suspension
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_fiche_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: bbc37ab6-e4e9-4b85-9a34-0c3837cbdc04
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_fiche_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_premier_statut_actif
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c0173198-19be-4a32-ac8f-3ebd731bbf4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_premier_statut_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Origine de l''adhérent'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: f252392a-fff0-478d-a33d-66006755242d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine de l'adhérent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pays
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: 6c6e0c64-e741-469e-89db-16dee166b1cf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prélèvement automatique'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: 0b5cf63a-c7db-44a0-814e-8799ee341b24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Prélèvement automatique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Raison sociale'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: 43209331-2cc8-4ba2-bc2b-0e78cae5c7cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Raison sociale
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIREN complété'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: 0b3778a4-d969-4453-bbd5-2eaab6a37f4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIREN complété
+
+		annotation SummarizationSetBy = Automatic
+
+	column SIRET
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: e79cd2ad-9414-4a1a-8265-2598a8017cc6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIRET
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut activation DU'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 65742dfa-0694-4f1e-a77e-70120e27202b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut activation DU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut déclaration détaillé'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: d5fee73d-e6a5-429e-a6bc-8960ddc8ec0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut déclaration détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut déclaration'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 9f4ed2bb-f995-4c72-8ef5-87b83cffe2d7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut entreprise détaillé'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: a6b43153-d4b2-492d-b2f9-a96cc25f84df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut entreprise détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut entreprise'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: f6024ea9-6e07-40e2-881b-a9622f9413b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut FE'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 05f1a467-9541-4c3f-a9c8-39dd1a9d5b90
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut FE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut mandat prélevement'
+		dataType: string
+		displayFolder: 6 - Facturation
+		lineageTag: 43f93831-a8e0-4aa4-a9a5-160f366ce430
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut mandat prélevement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise 2'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux\Autres tranches de taille
+		lineageTag: 8c2a51d4-1496-4e31-9fda-d521249de484
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise 2
+		sortByColumn: tri_taille_entreprise_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise DGT 2023'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux\Autres tranches de taille
+		lineageTag: 3173977b-dd0f-4549-9b02-0e3a7e68d532
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise DGT 2023
+		sortByColumn: tri_taille_entreprise_dgt_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Adhérent (actuel)","TableItemName":"Taille d'entreprise","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Taille entreprise Qualios 2023'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux\Autres tranches de taille
+		lineageTag: 7c41a024-5d2a-43f2-9bbe-3de5cf8ea7e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise Qualios 2023
+		sortByColumn: tri_taille_entreprise_qualios_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux
+		lineageTag: 11864c0a-1c28-4baa-b314-e24eb1ea36ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise
+		sortByColumn: 'Tri taille entreprise'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Télephone contact convocation'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: 0a5a5c6e-0d6f-4828-828f-2b9b7fba3378
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Télephone contact convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Téléphone contact facturation'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: 2c6c31d3-6b13-4fa1-aeae-4def8e2ae5ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Téléphone contact facturation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Télephone contact principal'
+		dataType: string
+		displayFolder: 8 - Contacts dans l'entreprise
+		lineageTag: 12543fd6-5628-421a-bfac-fe560f865922
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Télephone contact principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tri taille entreprise'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 16c6544b-830e-44f5-ad8c-3be0839db1d1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Tri taille entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tri_taille_entreprise_2
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d4205fc3-f407-42dd-9552-70c82dcdb373
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_taille_entreprise_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column tri_taille_entreprise_dgt_2023
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 24868fa2-6e1b-4061-bdb1-da9e90ab196a
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_taille_entreprise_dgt_2023
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column tri_taille_entreprise_qualios_2023
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d6eaafa7-5854-4d49-a428-e1c09e0588d6
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: tri_taille_entreprise_qualios_2023
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Type centre convocation'
+		dataType: string
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 566ea542-2635-4832-8287-9cc662ef1588
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type centre convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type entreprise'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 6bb9d7de-88d9-44ce-9068-1682d09a2c34
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Adhérent (actuel)","TableItemName":"Type d'entreprise","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Utilisateur externe'
+		dataType: string
+		displayFolder: 7 - Connexion au portail adhérent
+		lineageTag: 866e7ddd-058e-48d2-84bf-1f51a9605e35
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Utilisateur externe
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: 037e9219-047d-4207-9be7-7b355c80e8e6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique (centre convocation)'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 8a1ecfe5-dcc5-4ebd-82e4-512b58f76e78
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique (centre convocation)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique (équipe médicale)'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: d9a6e25f-3d9b-4a18-a6a5-85246225678f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique (équipe médicale)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSE déclaré'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux
+		lineageTag: 144a0eeb-c7bb-4ca9-853a-94abd6a72762
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSE déclaré
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernier passage inactif à actif figée certification'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 605325b5-76bb-4274-bbba-30681cbc5e62
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernier passage inactif à actif figée certification
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column siren_consolide
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7396f3dc-d4c3-4b07-bce8-67275d3873cf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: siren_consolide
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column siret_consolide
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 602eb6e1-9726-4eaf-ab54-b2dab4ca002d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: siret_consolide
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille adherent figée certification'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b23485f1-1710-47be-88bb-29537f7ba39c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille adherent figée certification
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Taille SIREN figée certification'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 51c90c2e-43f2-49af-9bb8-76e08a67485b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille SIREN figée certification
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Taille SIRET figée certification'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f25d1849-6b92-4885-b2f3-a5c985b0d7a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille SIRET figée certification
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Code postal lieu travail'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: eabb8312-181d-40dd-ac10-07747617c2d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code postal lieu travail
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DU généré via noa'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 69b88b98-55ae-4c65-b453-1c0bcfebff55
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DU généré via noa
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille d''entreprise' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Adhérent (actuel)'[Taille entreprise DGT 2023]),
+				"(Vide)",
+				'Adhérent (actuel)'[Taille entreprise DGT 2023] IN {"Aucun salarié",
+					"Entre 1 et 10 salariés"},
+				"0-10 salariés",
+				'Adhérent (actuel)'[Taille entreprise DGT 2023] IN {"Entre 11 et 49 salariés"},
+				"11-49 salariés",
+				'Adhérent (actuel)'[Taille entreprise DGT 2023] IN {"Entre 50 et 199 salariés",
+					"Entre 200 et 249 salariés"},
+				"50-249 salariés",
+				'Adhérent (actuel)'[Taille entreprise DGT 2023] IN {"Entre 250 et 299 salariés",
+					"Plus de 300 salariés"},
+				"Plus de 249 salariés",
+				'Adhérent (actuel)'[Taille entreprise DGT 2023]
+			)
+		lineageTag: cd8055d3-cb6d-4e68-953d-1141cfd324eb
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Adhérent (actuel)"
+				          }
+				        },
+				        "Property": "Taille entreprise DGT 2023"
+				      }
+				    }
+				  ]
+				}
+
+		changedProperty = IsHidden
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"Adhérent (actuel)"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Taille entreprise DGT 2023"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"0-10 salariés","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Taille entreprise DGT 2023"}}],"Values":[[{"Literal":{"Value":"'Aucun salarié'"}}],[{"Literal":{"Value":"'Entre 1 et 10 salariés'"}}]]}}},{"DisplayName":"11-49 salariés","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Taille entreprise DGT 2023"}}],"Values":[[{"Literal":{"Value":"'Entre 11 et 49 salariés'"}}]]}}},{"DisplayName":"50-249 salariés","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Taille entreprise DGT 2023"}}],"Values":[[{"Literal":{"Value":"'Entre 50 et 199 salariés'"}}],[{"Literal":{"Value":"'Entre 200 et 249 salariés'"}}]]}}},{"DisplayName":"Plus de 249 salariés","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Taille entreprise DGT 2023"}}],"Values":[[{"Literal":{"Value":"'Entre 250 et 299 salariés'"}}],[{"Literal":{"Value":"'Plus de 300 salariés'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indicateur 4 years ago' =
+			
+			VAR AujourdHui = TODAY()
+			VAR fouryearsago = AujourdHui - 1461
+			RETURN
+			IF([Date dernière FE] < fouryearsago, "FE > 4 ans", "Autre")
+		lineageTag: cc641bfd-4a50-42bf-b893-09683e04a0da
+		summarizeBy: none
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zones et Médecins référents' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Adhérent (actuel)'[Equipe médicale]),
+				"(Vide)",
+				'Adhérent (actuel)'[Equipe médicale] IN {"Dr AMELINE – ANDRICH – MOIRANS",
+					"Dr ANDRICH - MOIRANS",
+					"Dr ANGELLA - MOIRANS",
+					"Dr BONNARDEL - COLOMBE",
+					"Dr CHARMETTANT - MOIRANS",
+					"Dr DESSALCES - VOIRON",
+					"Dr JALLAMION – ANDRICH – MOIRANS",
+					"Dr JALLAMION - VOIRON",
+					"Dr PINZARU - CENTRE HOSPITALIER DE VOIRON",
+					"Dr PINZARU - VOIRON",
+					"Dr POREAU - LA CÔTE",
+					"Dr REMP BONNARDEL - LA CÔTE",
+					"Dr REMP REMY - LA CÔTE",
+					"Dr REMY - COLOMBE",
+					"Dr REMY - PASQUIER"},
+				"Zone Centre - Dr. Dessalces",
+				'Adhérent (actuel)'[Equipe médicale] IN {"Dr BODEA - VERP",
+					"Dr BOUTY - VILLEFONTAINE",
+					"Dr CONIGLIARO - VILLEFONTAINE",
+					"Dr GIFFARD-QUILLON - VERP",
+					"Dr LENCLUD - VILLEFONTAINE",
+					"Dr MARTOS - CREMIEU",
+					"Dr UNGUREANU - VERP"},
+				"Zone Grand Nord - Dr. Martos",
+				'Adhérent (actuel)'[Equipe médicale] IN {"Dr PIERRE MIRCEA Les Abrets",
+					"Dr CLAIR BASSON - NEMERA",
+					"Dr PIERRE MIRCEA - LES ABRETS",
+					"Dr BRONDEX - BOURGOIN",
+					"Dr BRONDEX - YAGUE - BOURGOIN",
+					"Dr CLAIR-BASSON - BOURGOIN",
+					"Dr CLAIR-BASSON - NEMERA",
+					"Dr CLAIR-BASSON - PATHEON",
+					"Dr GAM - LES ABRETS",
+					"Dr JOUCLARD - BOURGOIN",
+					"Dr JOUCLARD - YAGUE - BOURGOIN",
+					"Dr MORRIER - BOURGOIN",
+					"Dr PIERRE - BOURGOIN",
+					"Dr VANMUYSEN - LTDP",
+					"Dr ZAMFIRESCU A - YAGUE - BOURGOIN",
+					"Dr ZAMFIRESCUI - YAGUE - BOURGOIN"},
+				"Zone Nord - Dr. Garin",
+				'Adhérent (actuel)'[Equipe médicale] IN {"Dr ALIC - SMH",
+					"Dr BALTHAZARD - MEYLAN",
+					"Dr BIALLET - SMH",
+					"Dr BIENIEK - GENERAL ELECTRIC",
+					"Dr BIENIEK - SMH",
+					"Dr GARIN - GENERAL ELECTRIC",
+					"Dr CHODJANIA - MEYLAN",
+					"Dr COMPANY - MEYLAN",
+					"Dr DOUCHANT - MEYLAN",
+					"Dr FAURE - SMH",
+					"Dr FERRARI - CLINIQUE BELLEDONNE",
+					"Dr FERRARI - CLINIQUE MUTUALISTE",
+					"Dr FERRARI - SMH",
+					"Dr GARIN - ARTELIA",
+					"Dr GARIN - ATOS",
+					"Dr MAURE - MEYLAN",
+					"Dr PAGNY - SMH",
+					"Dr SHARON - SMH",
+					"Dr THULLIER - FRAMATOME",
+					"Dr THULLIER - MEYLAN",
+					"Dr VAILLANT - SMH"},
+				"Zone Sud Est - Dr. Ferrari",
+				'Adhérent (actuel)'[Equipe médicale] IN {"Dr AMELINE - GRENOBLE",
+					"Dr CONIGLIARO - PDC",
+					"Dr GARIN - VARCES",
+					"Dr GASPARINI - ECHIROLLES",
+					"Dr HUE - BO - AH",
+					"Dr HUE - GRENOBLE",
+					"Dr LIEUTAUD - 2A",
+					"Dr LIEUTAUD - FERROGLOBE",
+					"Dr LIEUTAUD - GRENOBLE",
+					"Dr MALONE - GRENOBLE",
+					"Dr MALONE - LA MURE",
+					"Dr MARTIN - CLINIQUE DES CEDRES",
+					"Dr MARTIN - ECHIROLLES",
+					"Dr ROGES - PDC",
+					"Dr ZAMFIRESCUA - GRENOBLE",
+					"Dr ZAMFIRESCUI - GRENOBLE"},
+				"Zone Sud Ouest - Dr. Conigliaro",
+				"Autre"
+			)
+		lineageTag: e684ac05-8b47-4ffc-b3a1-b233d49ff9d1
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Adhérent (actuel)"
+				          }
+				        },
+				        "Property": "Equipe médicale"
+				      }
+				    }
+				  ]
+				}
+
+		changedProperty = Name
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"Adhérent (actuel)"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Equipe médicale"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Zone Centre - Dr. Dessalces","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr AMELINE – ANDRICH – MOIRANS'"}}],[{"Literal":{"Value":"'Dr ANDRICH - MOIRANS'"}}],[{"Literal":{"Value":"'Dr ANGELLA - MOIRANS'"}}],[{"Literal":{"Value":"'Dr BONNARDEL - COLOMBE'"}}],[{"Literal":{"Value":"'Dr CHARMETTANT - MOIRANS'"}}],[{"Literal":{"Value":"'Dr DESSALCES - VOIRON'"}}],[{"Literal":{"Value":"'Dr JALLAMION – ANDRICH – MOIRANS'"}}],[{"Literal":{"Value":"'Dr JALLAMION - VOIRON'"}}],[{"Literal":{"Value":"'Dr PINZARU - CENTRE HOSPITALIER DE VOIRON'"}}],[{"Literal":{"Value":"'Dr PINZARU - VOIRON'"}}],[{"Literal":{"Value":"'Dr POREAU - LA CÔTE'"}}],[{"Literal":{"Value":"'Dr REMP BONNARDEL - LA CÔTE'"}}],[{"Literal":{"Value":"'Dr REMP REMY - LA CÔTE'"}}],[{"Literal":{"Value":"'Dr REMY - COLOMBE'"}}],[{"Literal":{"Value":"'Dr REMY - PASQUIER'"}}]]}}},{"DisplayName":"Zone Grand Nord - Dr. Martos","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr BODEA - VERP'"}}],[{"Literal":{"Value":"'Dr BOUTY - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr CONIGLIARO - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr GIFFARD-QUILLON - VERP'"}}],[{"Literal":{"Value":"'Dr LENCLUD - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr MARTOS - CREMIEU'"}}],[{"Literal":{"Value":"'Dr UNGUREANU - VERP'"}}]]}}},{"DisplayName":"Zone Nord - Dr. Garin","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr PIERRE MIRCEA Les Abrets'"}}],[{"Literal":{"Value":"'Dr CLAIR BASSON - NEMERA'"}}],[{"Literal":{"Value":"'Dr PIERRE MIRCEA - LES ABRETS'"}}],[{"Literal":{"Value":"'Dr BRONDEX - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr BRONDEX - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - NEMERA'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - PATHEON'"}}],[{"Literal":{"Value":"'Dr GAM - LES ABRETS'"}}],[{"Literal":{"Value":"'Dr JOUCLARD - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr JOUCLARD - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr MORRIER - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr PIERRE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr VANMUYSEN - LTDP'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCU A - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUI - YAGUE - BOURGOIN'"}}]]}}},{"DisplayName":"Zone Sud Est - Dr. Ferrari","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr ALIC - SMH'"}}],[{"Literal":{"Value":"'Dr BALTHAZARD - MEYLAN'"}}],[{"Literal":{"Value":"'Dr BIALLET - SMH'"}}],[{"Literal":{"Value":"'Dr BIENIEK - GENERAL ELECTRIC'"}}],[{"Literal":{"Value":"'Dr BIENIEK - SMH'"}}],[{"Literal":{"Value":"'Dr GARIN - GENERAL ELECTRIC'"}}],[{"Literal":{"Value":"'Dr CHODJANIA - MEYLAN'"}}],[{"Literal":{"Value":"'Dr COMPANY - MEYLAN'"}}],[{"Literal":{"Value":"'Dr DOUCHANT - MEYLAN'"}}],[{"Literal":{"Value":"'Dr FAURE - SMH'"}}],[{"Literal":{"Value":"'Dr FERRARI - CLINIQUE BELLEDONNE'"}}],[{"Literal":{"Value":"'Dr FERRARI - CLINIQUE MUTUALISTE'"}}],[{"Literal":{"Value":"'Dr FERRARI - SMH'"}}],[{"Literal":{"Value":"'Dr GARIN - ARTELIA'"}}],[{"Literal":{"Value":"'Dr GARIN - ATOS'"}}],[{"Literal":{"Value":"'Dr MAURE - MEYLAN'"}}],[{"Literal":{"Value":"'Dr PAGNY - SMH'"}}],[{"Literal":{"Value":"'Dr SHARON - SMH'"}}],[{"Literal":{"Value":"'Dr THULLIER - FRAMATOME'"}}],[{"Literal":{"Value":"'Dr THULLIER - MEYLAN'"}}],[{"Literal":{"Value":"'Dr VAILLANT - SMH'"}}]]}}},{"DisplayName":"Zone Sud Ouest - Dr. Conigliaro","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr AMELINE - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr CONIGLIARO - PDC'"}}],[{"Literal":{"Value":"'Dr GARIN - VARCES'"}}],[{"Literal":{"Value":"'Dr GASPARINI - ECHIROLLES'"}}],[{"Literal":{"Value":"'Dr HUE - BO - AH'"}}],[{"Literal":{"Value":"'Dr HUE - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - 2A'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - FERROGLOBE'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr MALONE - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr MALONE - LA MURE'"}}],[{"Literal":{"Value":"'Dr MARTIN - CLINIQUE DES CEDRES'"}}],[{"Literal":{"Value":"'Dr MARTIN - ECHIROLLES'"}}],[{"Literal":{"Value":"'Dr ROGES - PDC'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUA - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUI - GRENOBLE'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dernière FE refusée'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 27b9bdb3-5c96-431d-b0d0-9ed8f2534aa6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dernière FE refusée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Présence d''un DU'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 12e63d81-8526-44a2-915e-a33cdd72ac9a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Présence d'un DU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Adhérent (actuel)","TableItemName":"Présence d'un DU (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Année dernière APP'
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: f51e3321-80bd-45b1-97c1-6ae4c6436ea8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière APP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière APP'
+		dataType: dateTime
+		isHidden
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: a6845cd6-c062-491a-bb90-4d6c9eb2afe3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière APP
+		sortByColumn: id_date_derniere_app
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_derniere_app
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: feaaeafd-2447-4f00-ba50-84810bb9ed69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_app
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière APP'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 0a701df3-02f9-458a-a252-5125ed36bde9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière APP
+		sortByColumn: numero_mois_derniere_app
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_derniere_app
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: cc5865cb-7419-4c8b-9b45-5cae5cbdc6d8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_derniere_app
+
+		annotation SummarizationSetBy = User
+
+	column 'Type d''entreprise' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Adhérent (actuel)'[Type entreprise]),
+				"(Vide)",
+				'Adhérent (actuel)'[Type entreprise] IN {"Fonction publique d'état",
+					"Fonction publique hospitalière",
+					"Fonction publique territoriale"},
+				"Fonction publique",
+				'Adhérent (actuel)'[Type entreprise] IN {"Intérim"},
+				"Intérim",
+				'Adhérent (actuel)'[Type entreprise] IN {"BTP",
+					"Saisonnière",
+					"Standard",
+					"Travailleur détaché société étrangère",
+					"Travailleur éloigné"},
+				"Offre socle",
+				"Autre"
+			)
+		lineageTag: a9182d33-a954-4248-9d4f-4cd8da78e5b4
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Adhérent (actuel)"
+				          }
+				        },
+				        "Property": "Type entreprise"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"Adhérent (actuel)"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Type entreprise"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Fonction publique","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Type entreprise"}}],"Values":[[{"Literal":{"Value":"'Fonction publique d''état'"}}],[{"Literal":{"Value":"'Fonction publique hospitalière'"}}],[{"Literal":{"Value":"'Fonction publique territoriale'"}}]]}}},{"DisplayName":"Intérim","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Type entreprise"}}],"Values":[[{"Literal":{"Value":"'Intérim'"}}]]}}},{"DisplayName":"Offre socle","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Type entreprise"}}],"Values":[[{"Literal":{"Value":"'BTP'"}}],[{"Literal":{"Value":"'Saisonnière'"}}],[{"Literal":{"Value":"'Standard'"}}],[{"Literal":{"Value":"'Travailleur détaché société étrangère'"}}],[{"Literal":{"Value":"'Travailleur éloigné'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année transmission dernier DU'
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes techniques
+		lineageTag: c198dd63-9e71-4f5f-b080-e09420067f0a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année transmission dernier DU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSSCT déclaré'
+		dataType: string
+		displayFolder: 3 - Axes d'analyse principaux
+		lineageTag: 6d79c0ca-9289-4617-9fdc-5aeed0634ad8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSSCT déclaré
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date transmission dernier DU'
+		dataType: dateTime
+		isHidden
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: b895fbe2-bef0-4206-acc2-3aca6921f2f2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date transmission dernier DU
+		sortByColumn: id_date_transmission_dernier_duerp
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_transmission_dernier_duerp
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes techniques
+		lineageTag: 13489292-b761-4a4f-882e-6ea4e13d287c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_transmission_dernier_duerp
+
+		annotation SummarizationSetBy = User
+
+	column 'Importateur dernier DU'
+		dataType: string
+		displayFolder: 5 - Prévention
+		lineageTag: 78faa1ef-169e-4f87-8565-1d1aa8b9e521
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Importateur dernier DU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois transmission dernier DU'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 875933aa-dc00-4ed7-9f24-fbae6982282e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois transmission dernier DU
+		sortByColumn: numero_mois_transmission_dernier_duerp
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_transmission_dernier_duerp
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes techniques
+		lineageTag: eed0ab31-5e08-4abc-bf12-51628d604f78
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_transmission_dernier_duerp
+
+		annotation SummarizationSetBy = User
+
+	column 'Ville lieu travail'
+		dataType: string
+		displayFolder: 1 - Caractéristiques entreprises
+		lineageTag: ba26b3f0-316b-4262-a4a1-5ec1e502b991
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ville lieu travail
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAF niveau 1 (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Adhérent (actuel)'[NAF niveau 1]),
+				"(Vide)",
+				'Adhérent (actuel)'[NAF niveau 1] IN {"A - Agriculture, sylviculture et pêche",
+					"B - Industries extractives",
+					"D - Production et distribution d'électricité, de gaz, de vapeur et d'air conditionné",
+					"E - Production et distribution d'eau",
+					"F - Construction",
+					"L - Activités immobilières",
+					"Non affecté",
+					"O - Administration publique",
+					"P - Enseignement",
+					"T - Activités des ménages en tant qu'employeurs",
+					"U - Activités extra-territoriales"},
+				"Autres",
+				'Adhérent (actuel)'[NAF niveau 1]
+			)
+		lineageTag: 93815d27-7e95-4f84-b8f7-2553d57423bc
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Adhérent (actuel)"
+				          }
+				        },
+				        "Property": "NAF niveau 1"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"Adhérent (actuel)"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"NAF niveau 1"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Autres","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"NAF niveau 1"}}],"Values":[[{"Literal":{"Value":"'A - Agriculture, sylviculture et pêche'"}}],[{"Literal":{"Value":"'B - Industries extractives'"}}],[{"Literal":{"Value":"'D - Production et distribution d''électricité, de gaz, de vapeur et d''air conditionné'"}}],[{"Literal":{"Value":"'E - Production et distribution d''eau'"}}],[{"Literal":{"Value":"'F - Construction'"}}],[{"Literal":{"Value":"'L - Activités immobilières'"}}],[{"Literal":{"Value":"'Non affecté'"}}],[{"Literal":{"Value":"'O - Administration publique'"}}],[{"Literal":{"Value":"'P - Enseignement'"}}],[{"Literal":{"Value":"'T - Activités des ménages en tant qu''employeurs'"}}],[{"Literal":{"Value":"'U - Activités extra-territoriales'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Présence d''un DU (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Adhérent (actuel)'[Présence d'un DU]),
+				"(Vide)",
+				'Adhérent (actuel)'[Présence d'un DU] IN {"Inconnu",
+					"Non renseigné"},
+				"Inconnu / Non renseigné",
+				'Adhérent (actuel)'[Présence d'un DU]
+			)
+		lineageTag: 4acba88f-701f-466f-9a57-63ba0637f302
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Adhérent (actuel)"
+				          }
+				        },
+				        "Property": "Présence d'un DU"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"Adhérent (actuel)"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Présence d'un DU"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Inconnu / Non renseigné","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Présence d'un DU"}}],"Values":[[{"Literal":{"Value":"'Inconnu'"}}],[{"Literal":{"Value":"'Non renseigné'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie centre convocation actuel'
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 010c0e72-a6ad-4b87-9742-6b4a9b9ddfc4
+		sourceLineageTag: Hiérarchie centre convocation actuel
+
+		level 'Zone géographique (centre convocation)'
+			lineageTag: 82f5a877-9f9b-4cf3-ab53-69267402e28a
+			column: 'Zone géographique (centre convocation)'
+
+		level 'Centre rattachement (centre convocation)'
+			lineageTag: 68fc3f89-533b-43d3-908b-aad60b66de73
+			column: 'Centre rattachement (centre convocation)'
+
+		level 'Centre convocation'
+			lineageTag: c57528bf-068d-44bc-9dd0-d21865ddb049
+			column: 'Centre convocation'
+
+	hierarchy 'Hiérarchie date création dossier entreprise'
+		displayFolder: 3 - Axes d'analyse principaux\Statut entreprise
+		lineageTag: 96eb0b25-8081-4de3-b706-4ab8e970f16a
+		sourceLineageTag: Hiérarchie date création dossier entreprise
+
+		level 'Annee création dossier entreprise'
+			lineageTag: e41dfa99-cc59-4b02-bcae-04cff299ffcb
+			column: 'Annee création dossier entreprise'
+
+		level 'Mois création dossier entreprise'
+			lineageTag: e94f53eb-1b54-47b2-a4dd-5bc239001818
+			column: 'Mois création dossier entreprise'
+
+		level 'Date création dossier entreprise'
+			lineageTag: c63bcf48-4d6b-4a23-bfad-813f55429b0b
+			column: 'Date création dossier entreprise'
+
+	hierarchy 'Hiérarchie date dernier DU'
+		displayFolder: 5 - Prévention
+		lineageTag: 39392d36-ff4c-4480-aa84-bf1d33fad3a7
+		sourceLineageTag: Hiérarchie date dernier DU
+
+		level 'Année dernier DU'
+			lineageTag: 72f27c21-2eb4-4959-9b09-dfe426ce2869
+			column: 'Année dernier DU'
+
+		level 'Mois dernier DU'
+			lineageTag: 13dee269-3b3a-4e6a-8550-b0e6247310ae
+			column: 'Mois dernier DU'
+
+		level 'Date dernier DU'
+			lineageTag: b328bbc0-2089-4ab6-8516-47e799b489ca
+			column: 'Date dernier DU'
+
+	hierarchy 'Hiérarchie date dernier statut actif'
+		displayFolder: 3 - Axes d'analyse principaux\Statut entreprise
+		lineageTag: a8500627-6585-467e-a203-43a3f760c18a
+		sourceLineageTag: Hiérarchie date dernier statut actif
+
+		level 'Année dernier statut actif'
+			lineageTag: e2c8f45d-4d1e-40ca-bcd3-ecb4af3246be
+			column: 'Année dernier statut actif'
+
+		level 'Mois dernier statut actif'
+			lineageTag: 0cbc1379-f718-4e25-8a8e-67267fea33de
+			column: 'Mois dernier statut actif'
+
+		level 'Date dernier statut actif'
+			lineageTag: 105a1ba0-3443-470e-9c93-da197b8ad28b
+			column: 'Date dernier statut actif'
+
+	hierarchy 'Hiérarchie date dernière AMT'
+		displayFolder: 5 - Prévention
+		lineageTag: 0d785a76-a92d-41ab-a979-f79178538459
+		sourceLineageTag: Hiérarchie date dernière AMT
+
+		level 'Année dernière AMT'
+			lineageTag: f4b5125e-b8a1-48e2-b72b-32a1b6dbcbfd
+			column: 'Année dernière AMT'
+
+		level 'Mois dernière AMT'
+			lineageTag: 6cebed18-3293-4993-b3b2-a43fd94c634a
+			column: 'Mois dernière AMT'
+
+		level 'Date dernière AMT'
+			lineageTag: 28f23cfa-2e89-48ab-8d9e-b35008913076
+			column: 'Date dernière AMT'
+
+	hierarchy 'Hiérarchie date dernière connexion portail adhérent'
+		displayFolder: 7 - Connexion au portail adhérent
+		lineageTag: 94fd6a9b-d83c-4911-9fa3-9f937cab7dc1
+		sourceLineageTag: Hiérarchie date dernière connexion portail adhérent
+
+		level 'Année dernière connexion portail adhérent'
+			lineageTag: d6470ac2-2d5f-4f47-a967-ff48b48f2137
+			column: 'Année dernière connexion portail adhérent'
+
+		level 'Mois dernière connexion portail adhérent'
+			lineageTag: 1d6c8ddf-d643-4309-97a8-796ecb47bcb4
+			column: 'Mois dernière connexion portail adhérent'
+
+		level 'Date dernière connexion portail adhérent'
+			lineageTag: f5c0320c-9d67-4245-bc51-ab35e4aa03b5
+			column: 'Date dernière connexion portail adhérent'
+
+	hierarchy 'Hiérarchie date dernière déclaration'
+		displayFolder: 4 - Déclaration
+		lineageTag: 72948736-df19-4ebc-85ed-206cfd0b0caf
+		sourceLineageTag: Hiérarchie date dernière déclaration
+
+		level 'Année dernière déclaration'
+			lineageTag: db664e84-b7a0-4188-9891-4f3988fa3380
+			column: 'Année dernière déclaration'
+
+		level 'Mois dernière déclaration'
+			lineageTag: cb878807-dace-47f6-abd3-602688b8c467
+			column: 'Mois dernière déclaration'
+
+		level 'Date dernière déclaration'
+			lineageTag: 4761c2e4-870d-4b4e-9db1-a862eb703a39
+			column: 'Date dernière déclaration'
+
+	hierarchy 'Hiérarchie date dernière FE'
+		displayFolder: 5 - Prévention
+		lineageTag: bc66d4b5-b619-4631-b293-cddd583bb60d
+		sourceLineageTag: Hiérarchie date dernière FE
+
+		level 'Année dernière FE'
+			lineageTag: fb515d6f-25d1-4c8e-8ab7-f17645a85a85
+			column: 'Année dernière FE'
+
+		level 'Mois dernière FE'
+			lineageTag: b6f51258-0f2d-4bda-a94d-c4c6eff68245
+			column: 'Mois dernière FE'
+
+		level 'Date dernière FE'
+			lineageTag: 06947c2e-0cf4-4cdb-a13b-5f19d1dd627b
+			column: 'Date dernière FE'
+
+	hierarchy 'Hiérarchie date dernière radiation'
+		displayFolder: 3 - Axes d'analyse principaux\Statut entreprise
+		lineageTag: 564bd644-81e8-4245-877f-ab93ca9cb008
+		sourceLineageTag: Hiérarchie date dernière radiation
+
+		level 'Année dernière radiation'
+			lineageTag: 381a7378-f79e-47c1-82df-59a956684308
+			column: 'Année dernière radiation'
+
+		level 'Mois dernière radiation'
+			lineageTag: 698dd466-4d58-456e-9a59-718897d4b185
+			column: 'Mois dernière radiation'
+
+		level 'Date dernière radiation'
+			lineageTag: 09bd13df-b6de-4750-b3e4-4f4acf867e08
+			column: 'Date dernière radiation'
+
+	hierarchy 'Hiérarchie date dernière suspension'
+		displayFolder: 3 - Axes d'analyse principaux\Statut entreprise
+		lineageTag: 633e07ec-0f9b-4bd4-947e-2072cba16293
+		sourceLineageTag: Hiérarchie date dernière suspension
+
+		level 'Année dernière suspension'
+			lineageTag: ed8b78f5-9352-4783-a339-ffeee3e57528
+			column: 'Année dernière suspension'
+
+		level 'Mois dernière suspension'
+			lineageTag: e27e130d-4229-4467-b1ec-3932f26431d3
+			column: 'Mois dernière suspension'
+
+		level 'Date dernière suspension'
+			lineageTag: ec81d256-8f0a-4680-b8a7-98b12d803744
+			column: 'Date dernière suspension'
+
+	hierarchy 'Hiérarchie date fin validité déclaration'
+		displayFolder: 4 - Déclaration
+		lineageTag: 51ae513b-da03-4553-a50d-abd2ebb4dbf2
+		sourceLineageTag: Hiérarchie date fin validité déclaration
+
+		level 'Année fin validité déclaration'
+			lineageTag: 205039d5-fe0b-47ef-b3a3-8669c6e6213a
+			column: 'Année fin validité déclaration'
+
+		level 'Mois fin validité déclaration'
+			lineageTag: b21e6af6-2df5-4b8d-844e-0b9e717aa0ae
+			column: 'Mois fin validité déclaration'
+
+		level 'Date fin validité déclaration'
+			lineageTag: 5307577d-b7c4-425c-baf3-06cd85f6df6c
+			column: 'Date fin validité déclaration'
+
+	hierarchy 'Hiérarchie date premier statut actif'
+		displayFolder: 3 - Axes d'analyse principaux\Statut entreprise
+		lineageTag: f97f6f88-fb00-443b-ac2e-bc2f675f46ed
+		sourceLineageTag: Hiérarchie date premier statut actif
+
+		level 'Année premier statut actif'
+			lineageTag: 7d74aa4e-ce32-4a8f-9711-8e9ff19fbf1b
+			column: 'Année premier statut actif'
+
+		level 'Mois premier statut actif'
+			lineageTag: 9b7230c9-15cc-400b-9d57-d4df103dce82
+			column: 'Mois premier statut actif'
+
+		level 'Date premier statut actif'
+			lineageTag: c68b27b5-20d3-440c-bc2f-fd80129bcd5f
+			column: 'Date premier statut actif'
+
+	hierarchy 'Hiérarchie équipe médicale actuelle'
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 7721ca90-561f-4545-868c-5a07b2cdba45
+		sourceLineageTag: Hiérarchie équipe médicale actuelle
+
+		level 'Zone géographique (équipe médicale)'
+			lineageTag: 2b592d55-a94d-46fc-8dd4-371702368677
+			column: 'Zone géographique (équipe médicale)'
+
+		level 'Centre rattachement (equipe médicale)'
+			lineageTag: 6290e39a-2778-4e3f-b48d-d3478ce6dc03
+			column: 'Centre rattachement (equipe médicale)'
+
+		level 'Equipe médicale'
+			lineageTag: 99e934eb-94d0-4ca2-9552-fbf10559df60
+			column: 'Equipe médicale'
+
+	hierarchy 'Hiérarchie médecin référent actuel'
+		displayFolder: 2 - Equipe médicale et centre actuels
+		lineageTag: 72f7c6df-0c75-47dd-8e57-ed06c9c3ce92
+		sourceLineageTag: Hiérarchie médecin référent actuel
+
+		level 'Médecin référent (équipe médicale)'
+			lineageTag: 4c7fe910-206c-449a-84d3-94adf4984faa
+			column: 'Médecin référent actuel (équipe médicale)'
+
+		level 'Equipe médicale'
+			lineageTag: f87b4673-a2bf-4ff2-8ab4-67cd13754ce3
+			column: 'Equipe médicale'
+
+	hierarchy 'Hiérarchie NAF'
+		displayFolder: 3 - Axes d'analyse principaux
+		lineageTag: 050a99c9-2f70-4b7a-911f-bfed634707d5
+		sourceLineageTag: Hiérarchie NAF
+
+		level 'NAF niveau 1'
+			lineageTag: a57b772e-db88-42e1-849f-57d00bad96d8
+			column: 'NAF niveau 1'
+
+		level 'NAF niveau 2'
+			lineageTag: 31e4b877-8f04-40a8-b7d0-1011361b055a
+			column: 'NAF niveau 2'
+
+		level 'NAF niveau 3'
+			lineageTag: eedc0acd-74a4-488c-909a-c259834798c9
+			column: 'NAF niveau 3'
+
+		level 'NAF niveau 4'
+			lineageTag: 67fe8f88-aad5-4362-9f46-477a5396fa80
+			column: 'NAF niveau 4'
+
+		level 'NAF niveau 5'
+			lineageTag: 11000495-e699-4e32-85e5-d39ec5fc5f38
+			column: 'NAF niveau 5'
+
+	hierarchy 'Hiérarchie statut entreprise'
+		displayFolder: 3 - Axes d'analyse principaux\Statut entreprise
+		lineageTag: b034fa30-852d-42ec-8179-368a99ec9d3b
+		sourceLineageTag: Hiérarchie statut entreprise
+
+		level 'Statut entreprise'
+			lineageTag: 90e19a1a-4ea5-4d97-938f-15006a3dea65
+			column: 'Statut entreprise'
+
+		level 'Statut entreprise détaillé'
+			lineageTag: f5ef1785-8092-408c-a9f2-5c0dd676e397
+			column: 'Statut entreprise détaillé'
+
+	hierarchy 'Hiérarchie type entreprise'
+		displayFolder: 3 - Axes d'analyse principaux
+		lineageTag: 50809b10-e1ec-4c29-bf7f-362d978a33ca
+		sourceLineageTag: Hiérarchie type entreprise
+
+		level 'Catégorie entreprise'
+			lineageTag: ee23cf31-00d7-40dc-8840-8bdddd34af8d
+			column: 'Catégorie entreprise'
+
+		level 'Type entreprise'
+			lineageTag: 0e818cc7-241b-41ac-9ece-5ca951953641
+			column: 'Type entreprise'
+
+	hierarchy 'Statut de la déclaration'
+		displayFolder: 4 - Déclaration
+		lineageTag: d99fdd1d-75e3-42f2-b245-583e9291d2c1
+		sourceLineageTag: Statut de la déclaration
+
+		level 'Statut déclaration'
+			lineageTag: 27a92f89-b358-48e3-87a9-8908e8a0f65a
+			column: 'Statut déclaration'
+
+		level 'Statut déclaration détaillé'
+			lineageTag: 1fc7cc85-f90e-4339-8b1f-5cf8ccc0f50d
+			column: 'Statut déclaration détaillé'
+
+	hierarchy 'Hiérarchie date dernière APP'
+		displayFolder: 5 - Prévention
+		lineageTag: 7be45827-1c4e-4a1c-817e-08c9beed28b8
+		sourceLineageTag: Hiérarchie date dernière APP
+
+		level 'Année dernière APP'
+			lineageTag: 41a9d0cb-96a7-4574-bf6d-6022dd6fa6b9
+			column: 'Année dernière APP'
+
+		level 'Mois dernière APP'
+			lineageTag: df6f8d63-d694-4fa2-a5a2-dcf30bf91897
+			column: 'Mois dernière APP'
+
+		level 'Date dernière APP'
+			lineageTag: d0d331f3-c4b3-46aa-bd41-0ea0cda46620
+			column: 'Date dernière APP'
+
+	hierarchy 'Hiérarchie date transmssion dernier DU'
+		displayFolder: 5 - Prévention
+		lineageTag: da6c8e4f-f503-4bd5-b1c6-9c19b857f63e
+		sourceLineageTag: Hiérarchie date transmssion dernier DU
+
+		level 'Année transmission dernier DU'
+			lineageTag: f82cdf4a-23f9-4d23-9c6d-623f08dc9d3f
+			column: 'Année transmission dernier DU'
+
+		level 'Mois transmission dernier DU'
+			lineageTag: f53c6d3d-c50a-4061-9ecd-8aeb67940834
+			column: 'Mois transmission dernier DU'
+
+		level 'Date transmission dernier DU'
+			lineageTag: 501d1f5b-2ee2-402f-acfb-9896d941a63c
+			column: 'Date transmission dernier DU'
+
+	partition 'Adhérent (actuel)' = entity
+		mode: directQuery
+		source
+			entityName: Adhérent (actuel)
+			expressionSource: 'DirectQuery à AS – pst38'
+

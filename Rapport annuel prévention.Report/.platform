@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Rapport annuel prévention"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a0f51e76-94f6-4b42-8fd9-81cb97117fe0"
+  }
+}

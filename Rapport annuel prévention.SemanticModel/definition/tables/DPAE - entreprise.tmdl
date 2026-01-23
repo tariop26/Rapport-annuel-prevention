@@ -1,0 +1,142 @@
+table 'DPAE - entreprise'
+	lineageTag: 9767255c-faee-4e77-8270-d64e23d9ab71
+
+	column Adresse
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 67c4c632-1796-4a5b-8d54-c3e113be40ef
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Adresse
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code postal'
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: a6ef13e0-21fa-483f-8f5a-1f254cbb9881
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code postal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de dernière radiation'
+		dataType: dateTime
+		displayFolder: 1 - Informations entreprise
+		lineageTag: dfdaf0af-fc4a-47eb-816a-d5a1c7d7f21b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de dernière radiation
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise_dpae
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 49dd624a-2822-4aaa-9805-0a9990544f29
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise_dpae
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom commercial'
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: db5d274e-cb4a-4c3b-8d32-400ad2c55ffa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom commercial
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom entreprise'
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 20e8a821-c19e-4ce5-8317-bfca96025d67
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom entreprise
+
+		annotation SummarizationSetBy = Automatic
+
+	column SIREN
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 20a692f2-0ca5-48fa-ac3d-13969ef8a5ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIREN
+
+		annotation SummarizationSetBy = Automatic
+
+	column SIRET
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 30c49152-f08c-4b6d-900f-6d3edbae1869
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIRET
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut entreprise détaillé'
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 5adfad16-9123-4e9b-a503-dcca0cde2866
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut entreprise détaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut entreprise'
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 3c19fe21-df9e-46a8-8902-7a1e9feebfd5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut entreprise
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut prospect DPAE'
+		dataType: string
+		displayFolder: 2 - Informations DPAE
+		lineageTag: 6959b676-c950-4f48-a11c-d2af5d74f394
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut prospect DPAE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type irrégularité DPAE'
+		dataType: string
+		displayFolder: 2 - Informations DPAE
+		lineageTag: c20b8bf0-449c-4579-a947-1af50d088e3b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type irrégularité DPAE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		displayFolder: 1 - Informations entreprise
+		lineageTag: 263858c7-93d1-4932-acc0-1b99397d99c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DPAE - entreprise' = entity
+		mode: directQuery
+		source
+			entityName: DPAE - entreprise
+			expressionSource: 'DirectQuery à AS – pst38'
+

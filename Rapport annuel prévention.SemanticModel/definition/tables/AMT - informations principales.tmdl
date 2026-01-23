@@ -1,0 +1,172 @@
+table 'AMT - informations principales'
+	lineageTag: f5308ee0-151a-4bd8-afad-61176917b9e4
+
+	column 'AMT avec pièce jointe'
+		dataType: string
+		lineageTag: 19169455-379e-4b16-bd63-bfe05c56d7a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT avec pièce jointe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT prévention primaire'
+		dataType: string
+		lineageTag: d5306bb1-00e7-4789-997f-c93972228cf0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT prévention primaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT relative MEE'
+		dataType: string
+		lineageTag: 647ce23b-b175-4094-8ada-4d75f53293c0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT relative MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine de la création'
+		dataType: string
+		lineageTag: 9b425dea-1476-4069-a23d-527536e9b9bc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine de la création
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine de la demande'
+		dataType: string
+		lineageTag: eae6515b-625c-4d26-9cd4-dad6355e8dc1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine de la demande
+
+		annotation SummarizationSetBy = Automatic
+
+	column Périmètre
+		dataType: string
+		lineageTag: 8d1e61b5-408c-4a39-a915-7bd49554887f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Périmètre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pièce jointe partagée'
+		dataType: string
+		lineageTag: 94e9bf14-268b-46ab-aabf-24a5390b77d8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Pièce jointe partagée
+
+		annotation SummarizationSetBy = Automatic
+
+	column Priorité
+		dataType: string
+		lineageTag: 1f3ca39c-c22b-4315-9b96-153c0642ec23
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Priorité
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rapport envoyé'
+		dataType: string
+		lineageTag: 33dfb774-528a-4ed8-b705-aa9173cca13f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rapport envoyé
+
+		annotation SummarizationSetBy = Automatic
+
+	column Retard
+		dataType: string
+		lineageTag: c628f027-9287-4560-a7db-7cb8a2870780
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Retard
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: 1bdffd6f-aa80-439d-8a65-e4cd605072f8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"AMT - informations principales","TableItemName":"Type (FE ou autre)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Motif abandon AMT'
+		dataType: string
+		lineageTag: a0cd36a1-155c-4785-b3d8-c3d24534814e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif abandon AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous motif abandon AMT'
+		dataType: string
+		lineageTag: 08d4ab58-c72d-4720-9515-3c6d6a69b7e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous motif abandon AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_amt_v2
+		dataType: int64
+		isHidden
+		isNullable: false
+		lineageTag: 3f2166a8-b587-481d-a747-bf6415f2f37d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_amt_v2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type (FE ou autre)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('AMT - informations principales'[Type]),
+				"(Vide)",
+				'AMT - informations principales'[Type] IN {"Fiche d'entreprise"},
+				"FE",
+				"Autre"
+			)
+		lineageTag: 7a70c8a6-d33d-478d-bbf0-76b372bde19e
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "AMT - informations principales"
+				          }
+				        },
+				        "Property": "Type"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"AMT - informations principales"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Type"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"FE","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Type"}}],"Values":[[{"Literal":{"Value":"'Fiche d''entreprise'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'AMT - informations principales' = entity
+		mode: directQuery
+		source
+			entityName: AMT - informations principales
+			expressionSource: 'DirectQuery à AS – pst38'
+

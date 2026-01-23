@@ -1,0 +1,386 @@
+table 'Demande visite adhérent'
+	lineageTag: 6ace331e-30c5-40ea-bded-9d6489f0ab58
+
+	measure 'Délai moyen de planification des visites de reprise (en jours)' = EXTERNALMEASURE("Délai moyen de planification des visites de reprise (en jours)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs
+		lineageTag: ac5de1a9-0eb3-4493-8079-7cbf829a433a
+		sourceLineageTag: DirectQuery à AS – pst38.Délai moyen de planification des visites de reprise (en jours)
+		dataCategory: Uncategorized
+
+	measure 'Délai moyen de traitement de la demande (en jours)' = EXTERNALMEASURE("Délai moyen de traitement de la demande (en jours)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs
+		lineageTag: 159493ab-d3f3-476b-abc0-bb148e790545
+		sourceLineageTag: DirectQuery à AS – pst38.Délai moyen de traitement de la demande (en jours)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de demandes de visite adhérent' = EXTERNALMEASURE("Nombre de demandes de visite adhérent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs
+		lineageTag: ac5632a0-a109-4aea-a4fc-06c3b9577b18
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de demandes de visite adhérent
+		dataCategory: Uncategorized
+
+	measure 'Taux de demande adhérent ayant abouti à une visite' = EXTERNALMEASURE("Taux de demande adhérent ayant abouti à une visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: f2fc404a-2191-4377-8679-8639f8a45bec
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de demande adhérent ayant abouti à une visite
+		dataCategory: Uncategorized
+
+	measure 'Taux de demande de visite adhérent acceptées' = EXTERNALMEASURE("Taux de demande de visite adhérent acceptées", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: c67682be-5710-4bb7-b76b-ba6fa0da756a
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de demande de visite adhérent acceptées
+		dataCategory: Uncategorized
+
+	column 'Annee création demande'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d9e7d00a-ae21-45ce-adc0-ac539c3a5767
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Annee création demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date création demande'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: c0a55322-5d75-4165-8347-795ea65452b3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_rdv_planifie
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: d87755b2-671a-4064-89eb-dac171abf26f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_rdv_planifie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column declare_avant_fin_arret
+		dataType: boolean
+		displayFolder: Colonnes techniques
+		lineageTag: 57b149b7-60e7-49d8-b420-9851396a290b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: declare_avant_fin_arret
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai de planification des visites de reprise (en jours)'
+		dataType: int64
+		lineageTag: a14038e0-45c5-407a-bbed-7293c4f82a2e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Délai de planification des visites de reprise (en jours)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai de planification des visites de reprise selon retard demande de visite (en jours)'
+		dataType: int64
+		isHidden
+		lineageTag: 056ed257-f12e-44ff-9040-7fdbe123ffe7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Délai de planification des visites de reprise selon retard demande de visite (en jours)
+
+		annotation SummarizationSetBy = Automatic
+
+	column delai_traitement_demande
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 9059c293-91c4-4d69-8ac0-f9abed9cee04
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: delai_traitement_demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 7e4ba85b-c19a-45f5-914c-7f256c581872
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2b5c1c95-a494-484c-a4c0-b293fb691a0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 96c0ee34-eaa3-4344-b699-e9f8f6e52603
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3a635215-e5b7-40b0-961e-53c873b0d8f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 620f81e2-8955-4507-82f5-35957a78ec68
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_thesaurus_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5322635f-2c8d-4685-9543-38ab9cadf5e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_thesaurus_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e4a66c43-3621-421a-a4f8-bca0ce46e07b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0b92859d-5550-4bd0-8def-2e348e755798
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_demande
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: afd8f350-a1cb-4502-8dd6-669cf3cdcede
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_validateur_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b8831b7e-8fc8-4ad8-8832-42beb5345a1b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_validateur_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création demande'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7cc12772-c6bb-4976-9db2-e4707ab266b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_acceptee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5fa9f4bc-06ae-4f00-a94e-0b632d6bedf1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_acceptee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 52964493-a7c5-4469-a7df-438a625d09bc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_visite_realisee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b070db1c-1f73-4bf0-acc6-964ebdb0d818
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_visite_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Planification des visites de reprise (selon retard demande de visite)'
+		dataType: string
+		isHidden
+		lineageTag: 11956ca3-b116-481a-ab18-51a09e7d10fb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Planification des visites de reprise (selon retard demande de visite)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Planification des visites de reprise'
+		dataType: string
+		lineageTag: a22ca6c8-23f4-43e4-9b13-94eca5790763
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Planification des visites de reprise
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Retard demande de visite'
+		dataType: string
+		lineageTag: 45394591-a9e3-4892-938b-691c3402ef83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Retard demande de visite
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine création demande'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: ce901c6f-031e-4e67-b884-2bef0959bdb5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine création demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 533f6f0d-4a81-4680-b96f-2bb45bfa8b1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_statut_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 85b64dfd-d151-4b7d-96c0-3cbdb059a991
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 05caeaab-0b23-4a56-a921-399eaac4c547
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date création demande'
+		lineageTag: a2a49e96-e63c-424a-9f8c-9034e5aeb6be
+		sourceLineageTag: Hiérarchie date création demande
+
+		level 'Annee création demande'
+			lineageTag: e709ef64-f659-4fc3-a140-59735665abd2
+			column: 'Annee création demande'
+
+		level 'Mois création demande'
+			lineageTag: 9734ac3a-bd88-4367-8ecc-41ee3e2ddc38
+			column: 'Mois création demande'
+
+		level 'Semaine création demande'
+			lineageTag: 9576e35f-f0ec-49a9-bf0e-a072e5c76279
+			column: 'Semaine création demande'
+
+		level 'Date création demande'
+			lineageTag: 32ff3614-9db7-4518-85df-bca5483f6e87
+			column: 'Date création demande'
+
+	partition 'Demande visite adhérent' = entity
+		mode: directQuery
+		source
+			entityName: Demande visite adhérent
+			expressionSource: 'DirectQuery à AS – pst38'
+

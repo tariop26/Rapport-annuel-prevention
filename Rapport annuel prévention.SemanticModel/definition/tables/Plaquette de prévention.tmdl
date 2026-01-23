@@ -1,0 +1,233 @@
+table 'Plaquette de prévention'
+	lineageTag: cfffabf4-91f3-479f-89c1-9e3f9d70c8dc
+
+	measure '# plaquettes de prévention' = EXTERNALMEASURE("# plaquettes de prévention", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 123f8277-453c-4880-a3fe-9d84a22b6a7e
+		sourceLineageTag: DirectQuery à AS – pst38.# plaquettes de prévention
+		dataCategory: Uncategorized
+
+	measure '# salariés avec plaquette de prévention' = EXTERNALMEASURE("# salariés avec plaquette de prévention", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: d0e6efef-05ff-4f4c-beec-e228ad2e57f2
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés avec plaquette de prévention
+		dataCategory: Uncategorized
+
+	measure '# visites avec plaquette de prévention' = EXTERNALMEASURE("# visites avec plaquette de prévention", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 78fd4148-7837-441d-8cde-928b1e466903
+		sourceLineageTag: DirectQuery à AS – pst38.# visites avec plaquette de prévention
+		dataCategory: Uncategorized
+
+	column id_auteur_recommandation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61af0d65-355f-403d-a450-37b468d5710e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_auteur_recommandation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 74b83925-2932-4826-aa59-cd16f185cc2e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_emission
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 71440ce2-7520-4e55-a753-707308a15ec0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_emission
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f4f2dca5-1dfb-41c5-b370-1806a5b49215
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1945888b-09a8-4fd5-854f-40a494951910
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 54231416-8d77-48e7-ab10-3c4794eacefa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 87a74770-95bb-43ea-8e33-62f7713e92db
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8ea85296-8d97-4380-9635-3c55ecb942e5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9be51277-ca32-4e4d-a783-f22ccb2f37b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2e52dd49-dd7f-4f4a-9e07-291b9abd6982
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5aa1a866-bdc0-408d-98e0-b5fdaf5be69e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_plaquette_prevention
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d73c5bf1-2f1c-43df-9d23-d8e795ffca1b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_plaquette_prevention
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 83b65b1d-c295-4d8a-b664-02687a52e202
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8926aa03-1d5f-4fff-8413-288d422475be
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c3758b90-761b-4dcb-afe7-59acfb46d5ad
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_plaquette_prevention
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 636527a1-8594-4393-a15b-f460a62c8d5f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_plaquette_prevention
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: adc90fa5-712a-478f-909f-771d592329a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plaquette de prévention' = entity
+		mode: directQuery
+		source
+			entityName: Plaquette de prévention
+			expressionSource: 'DirectQuery à AS – pst38'
+

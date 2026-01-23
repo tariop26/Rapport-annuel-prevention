@@ -1,0 +1,900 @@
+table 'Déclaration effectif'
+	lineageTag: 4aad639a-7a26-4a14-bf8e-4dd2d129fd40
+
+	measure 'Délai moyen de renouvellement de la déclaration' = EXTERNALMEASURE("Délai moyen de renouvellement de la déclaration", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: 49804cf5-81a1-41b4-808e-d14f53c69f17
+		sourceLineageTag: DirectQuery à AS – pst38.Délai moyen de renouvellement de la déclaration
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne du parcours de déclaration' = EXTERNALMEASURE("Durée moyenne du parcours de déclaration", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: bd25ce5a-8cba-4b82-9d3e-5f68df5b00bc
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne du parcours de déclaration
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré' = EXTERNALMEASURE("Effectif déclaré", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Effectifs déclarés
+		lineageTag: 5126b02f-363d-4033-bdbe-fce119d096e3
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré
+		dataCategory: Uncategorized
+
+	measure 'Effectif SI déclaré' = EXTERNALMEASURE("Effectif SI déclaré", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Effectifs déclarés
+		lineageTag: 54150949-54ba-4a66-aa9b-ce2197663928
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif SI déclaré
+		dataCategory: Uncategorized
+
+	measure 'Effectif SIA déclaré' = EXTERNALMEASURE("Effectif SIA déclaré", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Effectifs déclarés
+		lineageTag: 10013547-e5f3-4eea-89d0-75e50149874b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif SIA déclaré
+		dataCategory: Uncategorized
+
+	measure 'Effectif SIR déclaré' = EXTERNALMEASURE("Effectif SIR déclaré", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Effectifs déclarés
+		lineageTag: ae61f475-24c3-4539-b7c0-fbff68e8fb9b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif SIR déclaré
+		dataCategory: Uncategorized
+
+	measure 'Montant HT facturable' = EXTERNALMEASURE("Montant HT facturable", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ \€
+		displayFolder: Indicateurs\3 - Facturation
+		lineageTag: c787fc99-81ee-4fbf-bf8d-443bf05e25cf
+		sourceLineageTag: DirectQuery à AS – pst38.Montant HT facturable
+		dataCategory: Uncategorized
+
+	measure 'Montant HT facturé' = EXTERNALMEASURE("Montant HT facturé", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0.00\ \€
+		displayFolder: Indicateurs\3 - Facturation
+		lineageTag: 9b7ecab6-f82b-438f-a078-d280a2fe3d7a
+		sourceLineageTag: DirectQuery à AS – pst38.Montant HT facturé
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents appelés à déclarer' = EXTERNALMEASURE("Nombre d'adhérents appelés à déclarer", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents
+		lineageTag: 9b95667c-6d50-471d-b91d-f76f1fa53905
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents appelés à déclarer
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents ayant déclaré' = EXTERNALMEASURE("Nombre d'adhérents ayant déclaré", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents
+		lineageTag: 8ae5f921-04fd-4910-bb84-432420515bf2
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents ayant déclaré
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents concernés par la campagne' = EXTERNALMEASURE("Nombre d'adhérents concernés par la campagne", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents
+		lineageTag: 58f65d4c-ed25-4952-9550-952a9cc69ba4
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents concernés par la campagne
+		dataCategory: Uncategorized
+
+	column 'Année campagne de déclaration'
+		dataType: int64
+		displayFolder: 1 - Campagne de déclaration
+		lineageTag: 19b14f98-d591-44ed-ac34-9b4f9c70ed83
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année campagne de déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de clôture de l''appel à déclarer'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: c4e61a12-16d6-425e-be10-e1517ba7be51
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de clôture de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de début de déclaration'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: fabfea4d-23e7-4c1e-b658-a68a7b792f84
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de début de déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de déclaration effectuée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: d1a95946-e54e-417a-baca-3bae8ab39670
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de déclaration effectuée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de la dernière étape validée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 624ab650-3a5e-4a09-94f6-fdc880b54fd8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de la dernière étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de la dernière relance'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: abe495bd-ee45-45e3-b49d-5e7bc21c358a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de la dernière relance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de la première étape validée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: a5d6ba5e-9f00-4b09-850f-281538b145c8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de la première étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de l''appel à déclarer'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 5ba0c197-8343-4163-8316-c856cfe21ff1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Au moins un salarié déclaré'
+		dataType: string
+		displayFolder: 4 - Contenu de la déclaration
+		lineageTag: 0317f132-69c3-496e-a120-42ee99d7627f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Au moins un salarié déclaré
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Au moins un SIA'
+		dataType: string
+		displayFolder: 4 - Contenu de la déclaration
+		lineageTag: 46177d83-a253-4c9b-b379-4783b944b7bb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Au moins un SIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Au moins un SIR'
+		dataType: string
+		displayFolder: 4 - Contenu de la déclaration
+		lineageTag: 6c92408e-34d9-4b76-807a-4abc6d13e45c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Au moins un SIR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Au moins une situation de travail'
+		dataType: string
+		displayFolder: 4 - Contenu de la déclaration
+		lineageTag: 3f75801e-27b1-4173-8eaa-9c7d1016eef3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Au moins une situation de travail
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bornes de la campagne de déclaration'
+		dataType: string
+		displayFolder: 1 - Campagne de déclaration
+		lineageTag: 998a9a70-61c8-4d6d-94e1-13c381fc7e13
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Bornes de la campagne de déclaration
+		sortByColumn: 'Année campagne de déclaration'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de clôture de l''appel à déclarer'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: ced9ac0f-c37c-480d-a828-e16dcd3c686b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de clôture de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de début de déclaration'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: 2bee5f09-9f35-484a-971c-fae4a01e10db
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de début de déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de déclaration effectuée'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: 9679cb68-9f82-4961-84d6-d16afc4f547b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de déclaration effectuée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de la dernière étape validée'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: 8424d338-ede6-4651-a83f-dc1c5fb795ce
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de la dernière étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de la dernière relance'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: 174c7a5f-8b32-46df-8048-c5c5aa02f841
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de la dernière relance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de la première étape validée'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: b7d78fc3-8b53-43f0-a761-2d117d8d0e1c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de la première étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de l''appel à déclarer'
+		dataType: dateTime
+		displayFolder: Colonnes techniques
+		lineageTag: 3848be94-84d0-43f2-b51f-345b4394dc29
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Déclaration avec Excel'
+		dataType: string
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: f26a1a6f-71f6-4913-8732-b693cb57e5b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Déclaration avec Excel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai de renouvellement de la déclaration'
+		dataType: int64
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: 41db1983-61bb-4a53-a02a-8371aa8ea08f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Délai de renouvellement de la déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dernier email non réceptionné'
+		dataType: string
+		displayFolder: 2 - Appel à déclarer
+		lineageTag: 1d9f81b1-4855-4ec0-89a0-4bf2a94cbea3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dernier email non réceptionné
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dernière étape validée'
+		dataType: string
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: f7486e44-bbe3-4a51-b358-603485cb65a1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dernière étape validée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée du parcours de déclaration'
+		dataType: int64
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: c3cb182a-2f0a-45f7-a5b6-bea3345796b2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée du parcours de déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_appel_declaration_source
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a8d2794e-805a-45da-9703-f6e169dceee6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_appel_declaration_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_declaration_source
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: be5cbc24-a24f-4b16-9de3-0d58d288020d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_declaration_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 161fb96e-de9d-4ca4-a5ef-939023215e16
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5bb00873-c4fa-4afa-90a2-52a876a3ea92
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 6e0ad0ec-92ac-4984-9d42-299c9bd13a4a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Méthode de déclaration'
+		dataType: string
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: 197fecb4-4213-4a3e-b182-7f7f9a66310f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Méthode de déclaration
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de clôture de l''appel à déclarer'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: de7cd32a-2522-4754-81b4-4c51cffa249b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de clôture de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de début de déclaration'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 9f672c54-1ab3-4bbe-b9fc-d6ebcf6e6d50
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de début de déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de déclaration effectuée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 00711247-5141-4ee0-abce-49ac8b492e84
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de déclaration effectuée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de la dernière étape validée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: d96644ba-556c-4702-803b-ef23342be188
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de la dernière étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de la dernière relance'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: a6d08b1c-d344-4809-90e0-8df68d44a1e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de la dernière relance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de la première étape validée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: f66d066f-a711-41e6-9ded-fd5764d7f2a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de la première étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de l''appel à déclarer'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: a2b9ab11-7c60-4ed1-9673-000717c41339
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_ht_facturable
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 725f7c0c-4b3c-4126-ae6b-364b2c5214a8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: montant_ht_facturable
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_ht_facture
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b04ad958-9644-48fd-a49a-485d2b615850
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: montant_ht_facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_reponse_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 112decab-e32b-4951-9833-2edb7f9bcd2c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_reponse_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 94eeefb1-90f7-4ea5-874b-6b3d1815ea8f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_si_declare
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2ff407e5-a9e6-4179-ba91-cc6bb2068887
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_si_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sia_declare
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b7661d69-3a8b-434e-aac2-d3ed69b36be1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sia_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_sir_declare
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5e8c025f-e185-44cb-b8d7-64cca99f8e29
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_sir_declare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Remplissage du questionnaire'
+		dataType: string
+		displayFolder: 4 - Contenu de la déclaration
+		lineageTag: 0ac3d1ed-6ac9-4833-acff-b9a01af6566f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Remplissage du questionnaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de clôture de l''appel à déclarer'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 25e440a7-8702-4d5c-ab9e-32f98fbef38e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de clôture de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de début de déclaration'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 8d51766b-f56a-4087-9590-fd87fb6405aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de début de déclaration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de déclaration effectuée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: cfeabe98-05e6-4a0e-9601-497d72bc26de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de déclaration effectuée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de la dernière étape validée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 84f0d0ba-8e2c-4d5b-9d0d-2ed91b1e9abf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de la dernière étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de la dernière relance'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: c3a42ffb-cce6-4c9a-b167-5168995c644e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de la dernière relance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de la première étape validée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: e0f47eb4-fcc3-47f0-8edc-19d8f0e14cf4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de la première étape validée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de l''appel à déclarer'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 8dd7dc9b-44ce-469d-95b0-9ccfe2abc470
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine de l'appel à déclarer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut de l''appel à déclarer'
+		dataType: string
+		displayFolder: 1 - Campagne de déclaration
+		lineageTag: 5454c6b1-504a-4651-8c48-618d6cb2e701
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut de l'appel à déclarer
+
+		annotation SummarizationSetBy = Automatic
+
+	column tri_type_derniere_relance
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 425e3744-c4b8-4ec0-9aae-750b9863d6c4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: tri_type_derniere_relance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type de dernière relance'
+		dataType: string
+		displayFolder: 2 - Appel à déclarer
+		lineageTag: c13ab22d-b37a-4c86-b971-d0545ab36cd0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type de dernière relance
+		sortByColumn: tri_type_derniere_relance
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c9fb3e61-64c5-490d-96bc-1695bf1a3842
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom de la campagne de déclaration'
+		dataType: string
+		displayFolder: 1 - Campagne de déclaration
+		lineageTag: 3ad059d7-83e7-4b00-96fb-4219c140cbd8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom de la campagne de déclaration
+		sortByColumn: 'Année campagne de déclaration'
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date de clôture de l''appel à déclarer'
+		displayFolder: 2 - Appel à déclarer
+		lineageTag: f1da7338-ed06-444a-b5d3-83fa154bb318
+		sourceLineageTag: Hiérarchie date de clôture de l'appel à déclarer
+
+		level 'Année de clôture de l''appel à déclarer'
+			lineageTag: 077f0676-20a6-4e32-9843-bc5bb672841c
+			column: 'Année de clôture de l''appel à déclarer'
+
+		level 'Mois de clôture de l''appel à déclarer'
+			lineageTag: 98c724b0-c00a-44af-b767-4d672136b33b
+			column: 'Mois de clôture de l''appel à déclarer'
+
+		level 'Semaine de clôture de l''appel à déclarer'
+			lineageTag: b9b22d2b-c876-4288-aaad-c7ff0a07f285
+			column: 'Semaine de clôture de l''appel à déclarer'
+
+		level 'Date de clôture de l''appel à déclarer'
+			lineageTag: a573b8cb-2ca5-4c4c-823a-76e9f7f6ec29
+			column: 'Date de clôture de l''appel à déclarer'
+
+	hierarchy 'Hiérarchie date de déclaration effectuée'
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: caa3b0b9-4e5d-41b1-b6d8-f4f11d01783d
+		sourceLineageTag: Hiérarchie date de déclaration effectuée
+
+		level 'Année de déclaration effectuée'
+			lineageTag: ae7aa916-c3fa-46dc-a13e-e10cb30dac62
+			column: 'Année de déclaration effectuée'
+
+		level 'Mois de déclaration effectuée'
+			lineageTag: 037fece3-4487-44a7-8704-d8eb93f89c0e
+			column: 'Mois de déclaration effectuée'
+
+		level 'Semaine de déclaration effectuée'
+			lineageTag: 789c01eb-26bf-4133-bd4b-1f7316316750
+			column: 'Semaine de déclaration effectuée'
+
+		level 'Date de déclaration effectuée'
+			lineageTag: 1d9ea924-3e46-4f84-a615-0330cea2fa8e
+			column: 'Date de déclaration effectuée'
+
+	hierarchy 'Hiérarchie date de la dernière étape validée'
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: 3bfe94bf-acd4-4db5-9eb0-748fde5f7a95
+		sourceLineageTag: Hiérarchie date de la dernière étape validée
+
+		level 'Année de la dernière étape de déclaration validée'
+			lineageTag: 9e557371-a9a7-4e76-9262-c55510faaad4
+			column: 'Année de la dernière étape validée'
+
+		level 'Mois de la dernière étape validée'
+			lineageTag: fce89e28-cab6-4ed3-97a5-b421ff708956
+			column: 'Mois de la dernière étape validée'
+
+		level 'Semaine de la dernière étape validée'
+			lineageTag: 97250a2b-c371-4223-bd8c-843439fb5b13
+			column: 'Semaine de la dernière étape validée'
+
+		level 'Date de la dernière étape validée'
+			lineageTag: a5d1c70d-3a98-474e-8257-89a9ae6847fe
+			column: 'Date de la dernière étape validée'
+
+	hierarchy 'Hiérarchie date de la dernière relance'
+		displayFolder: 2 - Appel à déclarer
+		lineageTag: fece21ac-8fbe-4b9b-831b-cf60b820b06a
+		sourceLineageTag: Hiérarchie date de la dernière relance
+
+		level 'Année de la dernière relance'
+			lineageTag: 467779ce-3822-476d-9c5f-9969017c6ac6
+			column: 'Année de la dernière relance'
+
+		level 'Mois de la dernière relance'
+			lineageTag: dc0fca29-d254-4d2f-95d2-9e90bb227cd2
+			column: 'Mois de la dernière relance'
+
+		level 'Semaine de la dernière relance'
+			lineageTag: 9f677b3a-b2f6-4f2f-9598-d59548abb65c
+			column: 'Semaine de la dernière relance'
+
+		level 'Date de la dernière relance'
+			lineageTag: 2d13ad49-87b4-4bd4-aedd-8101c931a9b7
+			column: 'Date de la dernière relance'
+
+	hierarchy 'Hiérarchie date de la première étape validée'
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: 81d731fb-78f0-47d5-9cc8-5251ec8fc15e
+		sourceLineageTag: Hiérarchie date de la première étape validée
+
+		level 'Année de la première étape validée'
+			lineageTag: 003ce8d3-0267-4e0d-95ba-76dbbe001a9c
+			column: 'Année de la première étape validée'
+
+		level 'Mois de la première étape validée'
+			lineageTag: 9a923ab7-ecda-435e-92f0-51ac10067caa
+			column: 'Mois de la première étape validée'
+
+		level 'Semaine de la première étape validée'
+			lineageTag: 3de03d54-a62f-4af0-81ab-8b4de0bbc049
+			column: 'Semaine de la première étape validée'
+
+		level 'Date de la première étape validée'
+			lineageTag: 0f7b78b7-bd74-4feb-8af5-61a3433f6c28
+			column: 'Date de la première étape validée'
+
+	hierarchy 'Hiérarchie date de l''appel à déclarer'
+		displayFolder: 2 - Appel à déclarer
+		lineageTag: 2d6a3443-357d-44d9-b2a6-2418dd6e4d0a
+		sourceLineageTag: Hiérarchie date de l'appel à déclarer
+
+		level 'Année de l''appel à déclarer'
+			lineageTag: a8531882-f194-4915-897a-bf6994f737c1
+			column: 'Année de l''appel à déclarer'
+
+		level 'Mois de l''appel à déclarer'
+			lineageTag: a359e749-01b1-4600-a6bc-3c637617b899
+			column: 'Mois de l''appel à déclarer'
+
+		level 'Semaine de l''appel à déclarer'
+			lineageTag: 08692ce4-d92c-43e2-8ec8-d6947184aaf6
+			column: 'Semaine de l''appel à déclarer'
+
+		level 'Date de l''appel à déclarer'
+			lineageTag: c20b2a51-ba53-4907-a4ef-c36edf9ce0a4
+			column: 'Date de l''appel à déclarer'
+
+	hierarchy 'Hiérarchie date début de déclaration'
+		displayFolder: 3 - Parcours de déclaration
+		lineageTag: 940019a0-8355-4e3b-8157-36583736ee1f
+		sourceLineageTag: Hiérarchie date début de déclaration
+
+		level 'Année de déclaration débutée'
+			lineageTag: a36beb97-cca9-45f8-b43d-3ac416982c06
+			column: 'Année de début de déclaration'
+
+		level 'Mois de déclaration débutée'
+			lineageTag: c4a860b4-956e-4d77-8d1a-e58571148492
+			column: 'Mois de début de déclaration'
+
+		level 'Semaine de déclaration débutée'
+			lineageTag: c4b47685-48d6-4666-ac1c-cd64965414b4
+			column: 'Semaine de début de déclaration'
+
+		level 'Date de déclaration débutée'
+			lineageTag: aee6a5d4-5e2a-48b1-95c2-eb50040d2bc2
+			column: 'Date de début de déclaration'
+
+	partition 'Déclaration effectif' = entity
+		mode: directQuery
+		source
+			entityName: Déclaration effectif
+			expressionSource: 'DirectQuery à AS – pst38'
+

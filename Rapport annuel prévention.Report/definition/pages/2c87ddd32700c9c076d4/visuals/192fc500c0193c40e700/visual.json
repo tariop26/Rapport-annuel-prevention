@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "192fc500c0193c40e700",
+  "position": {
+    "x": 24,
+    "y": 49,
+    "z": 2000,
+    "height": 224.00000000000003,
+    "width": 1240,
+    "tabOrder": 4000
+  },
+  "visualGroup": {
+    "displayName": "AMT",
+    "groupMode": "ScaleMode"
+  }
+}

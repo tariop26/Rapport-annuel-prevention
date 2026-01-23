@@ -1,0 +1,128 @@
+table 'Facturation - date facture'
+	lineageTag: dfa5d192-6094-4954-a93a-7ba013a0bef1
+
+	column 'Année facture'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1a1748e3-e4e4-4f63-b047-903b074404e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date facture'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: b880c93c-ec6d-4854-b9a5-ccd3067d04eb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date facture
+		sortByColumn: id_date_facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_facture
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 52cba85d-9a31-4011-a983-8a3cb67241e4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour facture'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b075302d-6c55-4ba3-a5e4-a8b45a563bed
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour facture
+		sortByColumn: id_date_facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois facture'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6511a039-3be9-4535-8715-aed6f7d7fb44
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul facture'
+		dataType: string
+		lineageTag: ba5c758a-1663-419f-a283-146c6a02e3e6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul facture
+		sortByColumn: 'Numéro mois facture'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro mois facture'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5d10c167-721d-486c-977e-e7ca53c17eae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Numéro mois facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine facture'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 578cfab3-0aef-4783-ae2b-afb9bc70940f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine facture
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date facture'
+		lineageTag: d072ff91-7e9f-43ca-b3eb-68c866e1a83b
+		sourceLineageTag: Hiérarchie date facture
+
+		level 'Année facture'
+			lineageTag: 7629232a-ad9a-42de-9b4b-fce03ecee410
+			column: 'Année facture'
+
+		level 'Mois facture'
+			lineageTag: cb454857-6940-42be-968d-5864e01043b6
+			column: 'Mois facture'
+
+		level 'Semaine facture'
+			lineageTag: c1f1bd91-c596-4a8e-ad19-0cef1f68968a
+			column: 'Semaine facture'
+
+		level 'Date facture'
+			lineageTag: fd728fa6-d7cb-4091-b2ac-ca7823614829
+			column: 'Date facture'
+
+	partition 'Facturation - date facture' = entity
+		mode: directQuery
+		source
+			entityName: Facturation - date facture
+			expressionSource: 'DirectQuery à AS – pst38'
+

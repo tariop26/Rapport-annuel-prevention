@@ -1,0 +1,132 @@
+table 'AMT - modèle'
+	lineageTag: 1a4bdf4f-0ea3-411d-9556-826b20233f87
+
+	column id_modele_amt
+		dataType: int64
+		isNullable: false
+		lineageTag: acdd90e8-717b-426a-a96d-16b01907e37f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_modele_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modèle
+		dataType: string
+		lineageTag: 60b9c9e9-1e66-4a91-8deb-8e645c6f700f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modèle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"AMT - modèle","TableItemName":"Modèle (APP, FE, Autres)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Modèle (APP, FE, Autres)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('AMT - modèle'[Modèle]),
+				"(Vide)",
+				'AMT - modèle'[Modèle] IN {"Aucun modèle",
+					"Conseil - Actions DU - de 50 salariés",
+					"Conseil - Organisationnel",
+					"Conseil - Préconisations FE (Fiches pratiques de risque)",
+					"Conseil - Réglementaire",
+					"Conseil - Situationnel",
+					"Conseil - Technique",
+					"Débriefing suivi TPT IDEST entreprise",
+					"Echange avec employeur",
+					"Echange avec salarié",
+					"Ergo - Etude de poste collective",
+					"Ergo - Etude de poste individuelle",
+					"Ergo - Etude de poste TH",
+					"Ergo - Projet de conception",
+					"Ergo - Projet de conception architectural/industriel",
+					"Etude - Etude de poste  individuelle simplifiée",
+					"Etude - Etude de poste collective",
+					"Etude - Etude de poste individuelle",
+					"Eval - Metrologie",
+					"Eval - Pénibilité",
+					"Eval - Risque chimique",
+					"Eval - Risque particulier",
+					"Eval - Risque physique",
+					"Eval - RPS",
+					"Eval - Traçabilité des expositions",
+					"Info - 1er secours en santé mentale",
+					"Info - Adhérent présentation PST38",
+					"Info - AES",
+					"Info - Analyse des AT",
+					"Info - Co-developpement",
+					"Info - Collective",
+					"Info - Communication adaptée",
+					"Info - Conseils managers",
+					"info - DU",
+					"Info - Enquête interne RPS",
+					"Info - Primo adhérent",
+					"Info - QVCT",
+					"Info - Salarié compétent",
+					"Info - TMS",
+					"Info - Travail de nuit",
+					"Métro - Atmosphérique",
+					"Métro - Bruit",
+					"Métro - Chimique",
+					"Métro - Lumineuse",
+					"Métro - Thermique",
+					"Métro - Ventilation",
+					"RDV de liaison",
+					"Repérage - Analyse FDS",
+					"Repérage - Situations",
+					"Reunion - Autre enquête",
+					"Reunion - Enquête suite AT et MP",
+					"Reunion - Hors CSE",
+					"Réunion - Participation CSE",
+					"Sensi - Action de formation et de prévention saisonniers",
+					"Sensi - Ateliers DU",
+					"Sensi - Autre sujet",
+					"Sensi - Bruit",
+					"Sensi - Eveil musculaire",
+					"Sensi - Prévention de la désinsertion professionnelle",
+					"Sensi - PSST",
+					"Sensi - Risque routier",
+					"Sensi - Risques chimiques",
+					"Sensi - RPS",
+					"Sensi - TMS",
+					"Sensi - Travail sur écran"},
+				"APP",
+				'AMT - modèle'[Modèle] IN {"Fiche entreprise - Création",
+					"Fiche entreprise - Mise à jour"},
+				"FE",
+				"Autre"
+			)
+		lineageTag: 2fc3c31e-d73d-47cb-bbd8-b46c4991bfc7
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "AMT - modèle"
+				          }
+				        },
+				        "Property": "Modèle"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"AMT - modèle"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Modèle"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"APP","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Modèle"}}],"Values":[[{"Literal":{"Value":"'Aucun modèle'"}}],[{"Literal":{"Value":"'Conseil - Actions DU - de 50 salariés'"}}],[{"Literal":{"Value":"'Conseil - Organisationnel'"}}],[{"Literal":{"Value":"'Conseil - Préconisations FE (Fiches pratiques de risque)'"}}],[{"Literal":{"Value":"'Conseil - Réglementaire'"}}],[{"Literal":{"Value":"'Conseil - Situationnel'"}}],[{"Literal":{"Value":"'Conseil - Technique'"}}],[{"Literal":{"Value":"'Débriefing suivi TPT IDEST entreprise'"}}],[{"Literal":{"Value":"'Echange avec employeur'"}}],[{"Literal":{"Value":"'Echange avec salarié'"}}],[{"Literal":{"Value":"'Ergo - Etude de poste collective'"}}],[{"Literal":{"Value":"'Ergo - Etude de poste individuelle'"}}],[{"Literal":{"Value":"'Ergo - Etude de poste TH'"}}],[{"Literal":{"Value":"'Ergo - Projet de conception'"}}],[{"Literal":{"Value":"'Ergo - Projet de conception architectural/industriel'"}}],[{"Literal":{"Value":"'Etude - Etude de poste  individuelle simplifiée'"}}],[{"Literal":{"Value":"'Etude - Etude de poste collective'"}}],[{"Literal":{"Value":"'Etude - Etude de poste individuelle'"}}],[{"Literal":{"Value":"'Eval - Metrologie'"}}],[{"Literal":{"Value":"'Eval - Pénibilité'"}}],[{"Literal":{"Value":"'Eval - Risque chimique'"}}],[{"Literal":{"Value":"'Eval - Risque particulier'"}}],[{"Literal":{"Value":"'Eval - Risque physique'"}}],[{"Literal":{"Value":"'Eval - RPS'"}}],[{"Literal":{"Value":"'Eval - Traçabilité des expositions'"}}],[{"Literal":{"Value":"'Info - 1er secours en santé mentale'"}}],[{"Literal":{"Value":"'Info - Adhérent présentation PST38'"}}],[{"Literal":{"Value":"'Info - AES'"}}],[{"Literal":{"Value":"'Info - Analyse des AT'"}}],[{"Literal":{"Value":"'Info - Co-developpement'"}}],[{"Literal":{"Value":"'Info - Collective'"}}],[{"Literal":{"Value":"'Info - Communication adaptée'"}}],[{"Literal":{"Value":"'Info - Conseils managers'"}}],[{"Literal":{"Value":"'info - DU'"}}],[{"Literal":{"Value":"'Info - Enquête interne RPS'"}}],[{"Literal":{"Value":"'Info - Primo adhérent'"}}],[{"Literal":{"Value":"'Info - QVCT'"}}],[{"Literal":{"Value":"'Info - Salarié compétent'"}}],[{"Literal":{"Value":"'Info - TMS'"}}],[{"Literal":{"Value":"'Info - Travail de nuit'"}}],[{"Literal":{"Value":"'Métro - Atmosphérique'"}}],[{"Literal":{"Value":"'Métro - Bruit'"}}],[{"Literal":{"Value":"'Métro - Chimique'"}}],[{"Literal":{"Value":"'Métro - Lumineuse'"}}],[{"Literal":{"Value":"'Métro - Thermique'"}}],[{"Literal":{"Value":"'Métro - Ventilation'"}}],[{"Literal":{"Value":"'RDV de liaison'"}}],[{"Literal":{"Value":"'Repérage - Analyse FDS'"}}],[{"Literal":{"Value":"'Repérage - Situations'"}}],[{"Literal":{"Value":"'Reunion - Autre enquête'"}}],[{"Literal":{"Value":"'Reunion - Enquête suite AT et MP'"}}],[{"Literal":{"Value":"'Reunion - Hors CSE'"}}],[{"Literal":{"Value":"'Réunion - Participation CSE'"}}],[{"Literal":{"Value":"'Sensi - Action de formation et de prévention saisonniers'"}}],[{"Literal":{"Value":"'Sensi - Ateliers DU'"}}],[{"Literal":{"Value":"'Sensi - Autre sujet'"}}],[{"Literal":{"Value":"'Sensi - Bruit'"}}],[{"Literal":{"Value":"'Sensi - Eveil musculaire'"}}],[{"Literal":{"Value":"'Sensi - Prévention de la désinsertion professionnelle'"}}],[{"Literal":{"Value":"'Sensi - PSST'"}}],[{"Literal":{"Value":"'Sensi - Risque routier'"}}],[{"Literal":{"Value":"'Sensi - Risques chimiques'"}}],[{"Literal":{"Value":"'Sensi - RPS'"}}],[{"Literal":{"Value":"'Sensi - TMS'"}}],[{"Literal":{"Value":"'Sensi - Travail sur écran'"}}]]}}},{"DisplayName":"FE","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"Modèle"}}],"Values":[[{"Literal":{"Value":"'Fiche entreprise - Création'"}}],[{"Literal":{"Value":"'Fiche entreprise - Mise à jour'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'AMT - modèle' = entity
+		mode: directQuery
+		source
+			entityName: AMT - modèle
+			expressionSource: 'DirectQuery à AS – pst38'
+

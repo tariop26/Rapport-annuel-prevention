@@ -1,0 +1,19 @@
+table 'EPD pour AMT'
+	lineageTag: edd36adc-e0e9-4750-a562-1a0404fa33ec
+
+	column 'Équipe médicale'
+		lineageTag: b3c12e11-3df1-4f1c-8d89-606bc14f24ab
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: 0 - AMT import[Équipe médicale]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'EPD pour AMT' = calculated
+		mode: import
+		source =
+				
+				DISTINCT('0 - AMT import'[Équipe médicale])
+
+	annotation PBI_Id = 8a21fd8097b34ecfa4b41c2a3d9c39bf
+

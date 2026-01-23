@@ -1,0 +1,188 @@
+table 'RDV/visite - informations visite'
+	lineageTag: 42aa8596-911e-471f-8cc6-2decc680de22
+
+	column 'Appel visio suspendu'
+		dataType: string
+		displayFolder: Visio
+		lineageTag: 26edae77-23b0-43ab-9338-a8d1dda8cf84
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Appel visio suspendu
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Appel visio terminé par'
+		dataType: string
+		displayFolder: Visio
+		lineageTag: 5bc3b590-dc5a-4fd3-aaac-f883db0c3cd8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Appel visio terminé par
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avis salarie visio'
+		dataType: string
+		displayFolder: Visio
+		lineageTag: 8f2cd41f-9852-4725-9418-1c5af686e154
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Avis salarie visio
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_info_visite
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ddfb7b7f-e5b8-444b-9d7a-ec967d947bda
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Etape dernière déconnexion'
+		dataType: string
+		displayFolder: Visio
+		lineageTag: 44400023-50fa-4b94-b906-0a10cb75d7d9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Etape dernière déconnexion
+		sortByColumn: 'Ordre étape deconnexion'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format visite détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d795ef0a-03cb-4e43-9afe-4e9c4d98d8a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format visite détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 118b2b77-4e66-4656-9474-2db1e27d5280
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: b80ed775-58c6-4b2f-9b28-26b6060a1b91
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ordre étape deconnexion'
+		dataType: int64
+		displayFolder: Visio
+		lineageTag: 60f54ff1-fc81-4407-8d6a-e0d108e2612c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Ordre étape deconnexion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Protocole visite'
+		dataType: string
+		lineageTag: b6ed8e32-e565-466e-a469-81bae2707cbb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Protocole visite
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Raison principale de coupure'
+		dataType: string
+		displayFolder: Visio
+		lineageTag: 033a3a8b-bdc4-4fe9-b727-070b7a139e4b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Raison principale de coupure
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut archivage'
+		dataType: string
+		lineageTag: 31657d30-2e3e-4b3d-8481-ad10d460260d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut archivage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transfert visite IDEST vers médecin'
+		dataType: string
+		lineageTag: e4c65416-e732-4ea7-be00-49f46c0bcab5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Transfert visite IDEST vers médecin
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visio avec audio seulement'
+		dataType: string
+		displayFolder: Visio
+		lineageTag: bdc7aaca-e56f-4697-aca4-ed9b57e6de00
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visio avec audio seulement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite avec revue'
+		dataType: string
+		lineageTag: 7d079a58-79da-4be7-bbbb-1d4009554474
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite avec revue
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite à l''aveugle'
+		dataType: string
+		lineageTag: 89b7d256-56a7-4fd1-9c45-f41e85845e07
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite à l'aveugle
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie format visite'
+		lineageTag: c8a9b888-7bf6-4b01-bb71-963cc36d0368
+		sourceLineageTag: Hiérarchie format visite
+
+		level 'Format visite'
+			lineageTag: 25a1418e-9fce-46de-ae85-21f6fe70e06d
+			column: 'Format visite'
+
+		level 'Format visite détaillé'
+			lineageTag: 2fc125ad-3da4-4794-81bd-376f885323c5
+			column: 'Format visite détaillé'
+
+	partition 'RDV/visite - informations visite' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - informations visite
+			expressionSource: 'DirectQuery à AS – pst38'
+

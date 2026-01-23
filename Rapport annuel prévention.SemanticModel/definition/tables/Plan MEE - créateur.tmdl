@@ -1,0 +1,55 @@
+table 'Plan MEE - créateur'
+	lineageTag: 3e042dc7-cb17-4c08-9a51-228a2ea1fb93
+
+	column id_createur_plan_mee
+		dataType: int64
+		isNullable: false
+		lineageTag: 0fc1aade-c042-46e7-a4e2-47ee7501ee10
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom créateur plan MEE'
+		dataType: string
+		lineageTag: cbb52d7d-b94c-4cfb-85b1-a04ec9ed68f8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom créateur plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle créateur plan MEE'
+		dataType: string
+		lineageTag: 40fe24f5-5bc9-453a-bf3a-b12a306cf9f0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle créateur plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie créateur plan MEE'
+		lineageTag: c989434a-c44e-4655-9f01-917499c56f4d
+		sourceLineageTag: Hiérarchie créateur plan MEE
+
+		level 'Rôle créateur plan MEE'
+			lineageTag: 30ddcb2d-45c6-4f2b-92b0-4f877c285a13
+			column: 'Rôle créateur plan MEE'
+
+		level 'Nom créateur plan MEE'
+			lineageTag: d2c083e8-3ff2-4580-ab20-de385859fac5
+			column: 'Nom créateur plan MEE'
+
+	partition 'Plan MEE - créateur' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - créateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

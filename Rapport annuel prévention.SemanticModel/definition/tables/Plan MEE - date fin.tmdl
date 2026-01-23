@@ -1,0 +1,113 @@
+table 'Plan MEE - date fin'
+	lineageTag: ee249696-0875-44dc-913f-afe0aa441fcb
+
+	column 'Année à ce jour (date fin plan MEE)'
+		dataType: string
+		lineageTag: 56bba47d-5282-41a6-b18d-88d5400f778e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date fin plan MEE)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année fin plan MEE'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7a91c43c-b436-4998-8957-62bf1d212311
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année fin plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date fin plan MEE'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 104c50d4-8ecf-465e-afcb-51a5c0bbfda4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_fin_plan_mee
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c633f929-1a4a-4232-8ca3-297e0493cbfd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_fin_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour fin plan MEE'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: dc103213-79a2-4338-9427-a4bbdf068393
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour fin plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois fin plan MEE'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7c3085c0-a154-47c1-9b61-ae3660c517af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois fin plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine fin plan MEE'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4f9a0417-6d6c-4987-8491-06528af5a5ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine fin plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date fin plan MEE'
+		lineageTag: d8416028-98dc-4287-a274-166cbd82bb7e
+		sourceLineageTag: Hiérarchie date fin plan MEE
+
+		level 'Année fin plan MEE'
+			lineageTag: fb5145ae-657a-47c9-88ab-f9b7e729a8c5
+			column: 'Année fin plan MEE'
+
+		level 'Mois fin plan MEE'
+			lineageTag: d0b470d1-56bc-4ba4-8895-901f8ac99284
+			column: 'Mois fin plan MEE'
+
+		level 'Semaine fin plan MEE'
+			lineageTag: 0db814b8-6700-4114-8fb0-070c2c1b006e
+			column: 'Semaine fin plan MEE'
+
+		level 'Date fin plan MEE'
+			lineageTag: 71f1ccd9-dc2f-471e-9a98-9c7911fe53f0
+			column: 'Date fin plan MEE'
+
+	partition 'Plan MEE - date fin' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - date fin
+			expressionSource: 'DirectQuery à AS – pst38'
+

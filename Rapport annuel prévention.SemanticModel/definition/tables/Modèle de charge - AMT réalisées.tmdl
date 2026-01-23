@@ -1,0 +1,176 @@
+table 'Modèle de charge - AMT réalisées'
+	lineageTag: 26c2dda2-6318-451e-8701-7f7678c9bd7c
+
+	measure '# AMT réalisées' = EXTERNALMEASURE("# AMT réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: ce64fbfa-8a8d-4207-89ac-2b938ee979d3
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT réalisées
+		dataCategory: Uncategorized
+
+	measure '# APP réalisées' = EXTERNALMEASURE("# APP réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 4c27d4a5-c51c-4646-a7bf-96e04417e872
+		sourceLineageTag: DirectQuery à AS – pst38.# APP réalisées
+		dataCategory: Uncategorized
+
+	measure '# créations FE réalisées' = EXTERNALMEASURE("# créations FE réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 1912fa11-0049-4abb-9108-3942ac77a8ad
+		sourceLineageTag: DirectQuery à AS – pst38.# créations FE réalisées
+		dataCategory: Uncategorized
+
+	measure '# FE réalisées' = EXTERNALMEASURE("# FE réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: aae76ca3-7938-41cb-b2cb-af8ddeb20878
+		sourceLineageTag: DirectQuery à AS – pst38.# FE réalisées
+		dataCategory: Uncategorized
+
+	measure '# mises à jour FE réalisées' = EXTERNALMEASURE("# mises à jour FE réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 2fa7a6cf-ff3c-4b47-8be6-be947334d99d
+		sourceLineageTag: DirectQuery à AS – pst38.# mises à jour FE réalisées
+		dataCategory: Uncategorized
+
+	column id_amt_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3a3e4290-9370-4881-b151-be99ad3329d9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_amt_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_categorie_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bc334582-8654-41e1-b78d-23944f2d1783
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e11f0f42-89a4-4587-9892-bc7c2448fd81
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_amt_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 91bb3a07-5d9e-4404-a59b-c223a49b62ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_amt_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c2800374-aee2-4c73-b033-0a3ba7c2a3aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 89f6d3d7-138c-4690-b367-69432e8840ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_amt_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8078804b-b7b0-423b-b39e-6231a77f7991
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_amt_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_app_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 90e8ae41-c32e-4b56-945e-09334f03525e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_app_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_creation_fe_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6bf00153-a22c-48fa-a6ab-704724678ed3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_creation_fe_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_fe_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 489e92a2-fb9a-430c-8f40-bee0319cda3a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_fe_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_maj_fe_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0c0431ad-46e9-47ba-a508-01d1ea5d8f0f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nb_maj_fe_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	partition 'Modèle de charge - AMT réalisées' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - AMT réalisées
+			expressionSource: 'DirectQuery à AS – pst38'
+

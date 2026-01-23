@@ -1,0 +1,157 @@
+table 'AMT - indicateurs par intervenant'
+	lineageTag: 804ba333-3193-492c-a970-f5be9f5bf71c
+
+	measure 'Durée totale estimée chez l''adhérent' = EXTERNALMEASURE("Durée totale estimée chez l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		isHidden
+		displayFolder: Indicateurs
+		lineageTag: 02aaa9b0-d6ee-4271-9675-2304f4447ebd
+		sourceLineageTag: DirectQuery à AS – pst38.Durée totale estimée chez l'adhérent
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Durée totale estimée' = EXTERNALMEASURE("Durée totale estimée", DOUBLE, "DirectQuery à AS – pst38")
+		isHidden
+		displayFolder: Indicateurs
+		lineageTag: 0a00ac37-4c2f-44f5-91a5-14f93c7518bf
+		sourceLineageTag: DirectQuery à AS – pst38.Durée totale estimée
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Durée totale réelle intervention' = EXTERNALMEASURE("Durée totale réelle intervention", DOUBLE, "DirectQuery à AS – pst38")
+		isHidden
+		displayFolder: Indicateurs
+		lineageTag: 63a055e9-7640-450a-9197-d1a66676be59
+		sourceLineageTag: DirectQuery à AS – pst38.Durée totale réelle intervention
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Durée totale réelle redaction' = EXTERNALMEASURE("Durée totale réelle redaction", DOUBLE, "DirectQuery à AS – pst38")
+		isHidden
+		displayFolder: Indicateurs
+		lineageTag: ab5f4792-c2bc-4e46-8ab9-ec499d4b85da
+		sourceLineageTag: DirectQuery à AS – pst38.Durée totale réelle redaction
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Durée totale réelle trajet' = EXTERNALMEASURE("Durée totale réelle trajet", DOUBLE, "DirectQuery à AS – pst38")
+		isHidden
+		displayFolder: Indicateurs
+		lineageTag: 48d1eb99-5297-4f4c-ab89-f246cc1362c9
+		sourceLineageTag: DirectQuery à AS – pst38.Durée totale réelle trajet
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column code_amt
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 090d6bca-b317-4e7d-9858-819321a9c692
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column duree_estimee_action_adherent_intervenant
+		dataType: double
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3c6dc414-88ec-40d6-a489-ee0a7fcfe9c2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_estimee_action_adherent_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column duree_estimee_action_intervenant
+		dataType: double
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1ea2ccca-d8a6-4506-b0a2-03b423d6ebaa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_estimee_action_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column duree_intervention_saisie_manuellement_intervenant
+		dataType: double
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5c9c604b-131b-4406-8975-cb4aba5f7ec2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_intervention_saisie_manuellement_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column duree_redaction_saisie_manuellement_intervenant
+		dataType: double
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: caaabd25-fa72-4ac5-ab0e-11be0a099284
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_redaction_saisie_manuellement_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column duree_trajet_saisie_manuellement_intervenant
+		dataType: double
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3499cc28-d3b9-45ef-bc72-5179a1b46c4f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_trajet_saisie_manuellement_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id_amt_source
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 07413e56-fd82-4e7d-9c18-7bc3b03d7192
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_amt_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_intervenant_amt
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: cb2b98c3-f5f3-42fc-a788-8bbd53b7de9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_intervenant_amt
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'AMT - indicateurs par intervenant' = entity
+		mode: directQuery
+		source
+			entityName: AMT - indicateurs par intervenant
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

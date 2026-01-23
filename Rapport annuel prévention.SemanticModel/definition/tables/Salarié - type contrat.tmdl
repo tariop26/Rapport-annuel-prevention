@@ -1,0 +1,51 @@
+table 'Salarié - type contrat'
+	lineageTag: 44148d4c-3ecf-4955-a859-9a1303cf6ff5
+
+	column id_type_contrat
+		dataType: int64
+		isNullable: false
+		lineageTag: 1e27e41e-923d-44ba-9900-76429b9f39c3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Salarié intérimaire'
+		dataType: string
+		lineageTag: cbaceeb8-a73f-4b01-ba81-b5a9476e7c84
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salarié intérimaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type contrat'
+		dataType: string
+		lineageTag: 504ec7aa-6bbe-4bc5-97a3-5a73b6a1a729
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type contrat
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type contrat'
+		lineageTag: fcd391f8-61c3-4caa-b1a4-92b9d5148abc
+		sourceLineageTag: Hiérarchie type contrat
+
+		level 'Salarié intérimaire'
+			lineageTag: d3baeca0-56f2-43b3-89d0-27d2e650f8f7
+			column: 'Salarié intérimaire'
+
+		level 'Type contrat'
+			lineageTag: 6907ab32-cbbc-4cd1-8018-9fb9693e7a6e
+			column: 'Type contrat'
+
+	partition 'Salarié - type contrat' = entity
+		mode: directQuery
+		source
+			entityName: Salarié - type contrat
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,107 @@
+table 'AMT - intervenant'
+	lineageTag: a7d40773-d9c4-4852-a185-5a04fe4a7135
+
+	column 'Email intervenant'
+		dataType: string
+		lineageTag: c6205fe9-1c63-4d05-a1cb-b824670f6d1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email intervenant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fonction intervenant'
+		dataType: string
+		lineageTag: 62559a56-c354-4aff-bc21-68140951792d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		isNullable: false
+		lineageTag: 73a2ecbc-a2dc-45be-9f61-eb442aa036b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom intervenant'
+		dataType: string
+		lineageTag: 71e4ed4e-610b-44e2-b674-1d15f220644a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom intervenant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil intervenant détaillé'
+		dataType: string
+		lineageTag: f5c0b3ac-9707-4f22-bcb1-2ced6c3aff04
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil intervenant détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil intervenant'
+		dataType: string
+		lineageTag: 728d2505-a9f2-4111-88d4-e0ab2c259326
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil intervenant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Role intervenant'
+		dataType: string
+		lineageTag: a95d2bb8-10d0-4a75-bbe0-207edb1a2366
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Role intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie intervenant'
+		lineageTag: cb383004-c967-4db6-bd5d-ff24be1b3f81
+		sourceLineageTag: Hiérarchie intervenant
+
+		level 'Role intervenant'
+			lineageTag: e423385d-b14e-4ea0-8446-35073cc86a90
+			column: 'Role intervenant'
+
+		level 'Nom intervenant'
+			lineageTag: 719308c4-d601-4fe0-a156-cc9d44cbcb8a
+			column: 'Nom intervenant'
+
+	hierarchy 'Hiérarchie profil intervenant'
+		lineageTag: 43c74f07-e513-4162-8933-a6ec0677b87e
+		sourceLineageTag: Hiérarchie profil intervenant
+
+		level 'Profil intervenant'
+			lineageTag: d1b848eb-034f-4a49-8d3d-e983a7c10a7c
+			column: 'Profil intervenant'
+
+		level 'Profil intervenant détaillé'
+			lineageTag: d674113e-e7ea-4327-8bc9-134407ad4db5
+			column: 'Profil intervenant détaillé'
+
+	partition 'AMT - intervenant' = entity
+		mode: directQuery
+		source
+			entityName: AMT - intervenant
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,101 @@
+table 'Centre convocation'
+	lineageTag: 77d53b71-045a-4a02-89a0-f68225893dee
+
+	column 'Centre convocation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: af090a71-ebe6-4197-8fa9-b3cea0b0238a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre rattachement'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3e6fdf2b-4ec5-4858-8dbb-8e4bed8827e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: string
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8815ef0b-0494-493f-b966-a66f8313ea3b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type centre convocation'
+		dataType: string
+		lineageTag: 81ee2aac-a1d4-40d3-9b00-c0473742ec71
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type centre convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61ce479b-0f3e-46ca-a5e4-dac752448a1f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code postal centre convocation'
+		dataType: string
+		lineageTag: 040f6d10-46ee-4c85-8e3b-e335629f91ee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code postal centre convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ville centre convocation'
+		dataType: string
+		lineageTag: 2579d18f-8100-440e-9183-c7d35af1a699
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ville centre convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie centre convocation'
+		lineageTag: 8042f21a-2a10-43e1-91e3-31bedc56f697
+		sourceLineageTag: Hiérarchie centre convocation
+
+		level 'Zone géographique'
+			lineageTag: 0a9d5db0-b4d8-41e2-9b6c-447cdc8a6235
+			column: 'Zone géographique'
+
+		level 'Centre rattachement'
+			lineageTag: ba9bbcb1-3004-4c94-ab81-756160bf182d
+			column: 'Centre rattachement'
+
+		level 'Centre convocation'
+			lineageTag: bffba9a3-6aa8-49a9-926d-c02af54babce
+			column: 'Centre convocation'
+
+	partition 'Centre convocation' = entity
+		mode: directQuery
+		source
+			entityName: Centre convocation
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,271 @@
+table 'Prospect (actuel)'
+	lineageTag: 3d26b399-70ba-4124-be26-15d8cc766457
+
+	column 'Centre rattachement'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 10c3ee37-56ac-4066-9523-0e6beaa4bae4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code postal'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 4cee20a5-a71b-495d-aff9-4aae62e30291
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code postal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact principal'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: ed291635-0a09-4788-a40a-a0fa720d87a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contact principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date création prospect'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Caractéristiques principales
+		lineageTag: 622660a8-d0d5-4dec-ad56-1cf42eedd880
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création prospect
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Equipe médicale'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 21823b99-3234-46cd-9667-52852633cbac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Equipe médicale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gestionnaire administratif'
+		dataType: string
+		displayFolder: Informations équipe médicale
+		lineageTag: de9f2ca7-3028-4f7d-aeef-7670604f043c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Gestionnaire administratif
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 482b4243-2e56-4c7d-b9be-8f9cd23bcba1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_prospect_source
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9a43e1ba-6a50-4d57-bf0f-5edb73178feb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_prospect_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Matricule prospect'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: e441c904-55f2-4707-8e00-1fb5fa36a0a1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Matricule prospect
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Médecin référent'
+		dataType: string
+		displayFolder: Informations équipe médicale
+		lineageTag: d7dc5828-7233-4b9d-ba2f-493aa204fdaa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Médecin référent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mode de paiement adhésion'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 41989e65-1074-4098-b364-d0b1b31c9fa1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode de paiement adhésion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif mise à l''écart'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 5e224591-254f-47e5-8343-15df9dbd252c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif mise à l'écart
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom entreprise'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 62a5500a-6d15-41ac-9983-7205ea6f476f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom entreprise
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine prospect'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 1c772f83-d703-4a0a-a266-9aedce314973
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine prospect
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pays
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 3438ab56-b5d5-4b9c-859d-a9f7102d5dc2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Responsable prospect'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 68b415f4-5ce2-4474-88c3-990e7826aa0c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Responsable prospect
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIREN complété'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: a6247b72-a86e-4f1f-b7db-c8e55ce014c6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIREN complété
+
+		annotation SummarizationSetBy = Automatic
+
+	column SIRET
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: fe663455-4462-46bf-90c8-1890ba414bdf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SIRET
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut prospect actuel'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 916423b1-02fa-4609-a567-40b557c71bb7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut prospect actuel
+		sortByColumn: tri_statut_prospect_actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Téléphone contact principal'
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: f0853717-5006-411f-aa61-81dcabaf0e32
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Téléphone contact principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column tri_statut_prospect_actuel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b54b4887-186b-49e5-8194-639e69a16b84
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: tri_statut_prospect_actuel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		displayFolder: Caractéristiques principales
+		lineageTag: 521b6e66-3ee0-4af1-941f-6f8b390974a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 708cb631-bc4f-438b-b26b-9f3868663a75
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie équipe médicale'
+		displayFolder: Informations équipe médicale
+		lineageTag: 9bba640e-d67e-430b-8758-d9c2aa0b9fd1
+		sourceLineageTag: Hiérarchie équipe médicale
+
+		level 'Zone géographique'
+			lineageTag: 1060e1dc-14de-4eb5-90b8-2608ad8483e2
+			column: 'Zone géographique'
+
+		level 'Centre rattachement'
+			lineageTag: 46d89ef9-baec-4f80-9dfc-2359bad42b64
+			column: 'Centre rattachement'
+
+		level 'Equipe médicale'
+			lineageTag: df9f2422-0ae6-4e46-a47c-8791e2a46c17
+			column: 'Equipe médicale'
+
+	partition 'Prospect (actuel)' = entity
+		mode: directQuery
+		source
+			entityName: Prospect (actuel)
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,58 @@
+table 'Temps travail - heure début créneau'
+	lineageTag: 510b4603-3f1c-4aef-85f6-8a1d6fd6e602
+
+	column 'Heure début créneau'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0d64dd00-966d-485a-97b5-b3d5a66ed7c9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure début créneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte début créneau'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2c17b62a-bcf7-4306-8a53-3f88374be683
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte début créneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_debut_creneau
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3e3be058-2a69-46fa-8961-3d9ea0b4d405
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_debut_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure début créneau'
+		lineageTag: c42b9a31-1c0d-410b-9d82-b80d343cd2e4
+		sourceLineageTag: Hiérarchie heure début créneau
+
+		level 'Heure début créneau'
+			lineageTag: 319cd0d1-4710-4824-8705-20f71cc3916d
+			column: 'Heure début créneau'
+
+		level 'Heure exacte début créneau'
+			lineageTag: 7f318dd7-32f4-4bd0-b0d8-2fdb678e1937
+			column: 'Heure exacte début créneau'
+
+	partition 'Temps travail - heure début créneau' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - heure début créneau
+			expressionSource: 'DirectQuery à AS – pst38'
+

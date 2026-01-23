@@ -1,0 +1,277 @@
+expression 'DirectQuery à AS – pst38' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/cbcaf4b3-d846-498e-acc0-d2759b2e0c4c/padoa_pst38", "pst38"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 57dff2f4-094d-4559-aa94-6097d0bd082e
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":"Activité camion","sourceLineageTag":null}},"objectType":"Table"}]
+
+expression '0 - SPSTI par commune' =
+		let
+		    // Paramètres
+		    url_fichier = "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP-Sectorisation/Documents%20partages/Carto/SPSTI par commune.xlsx",
+		
+		    // Source SharePoint en flux Web (meilleure pliabilité côté source)
+		    src_classeur = Excel.Workbook(Web.Contents(url_fichier), null, false),
+		
+		    // Sélection de la feuille par nom, avec contrôle de présence
+		    tbl_feuille = src_classeur{[Item = "SPSTI par commune", Kind = "Sheet"]}[Data],
+		
+		    // Promotion d'en-têtes
+		    entetes = Table.PromoteHeaders(tbl_feuille, [PromoteAllScalars = true]),
+		    #"Type modifié" = Table.TransformColumnTypes(entetes,{{"SPSTI", type text}, {"LIBELLE", type text}, {"Nom Commune", type text}, {"COMMUNE", type text}}),
+		    #"Colonnes renommées" = Table.RenameColumns(#"Type modifié",{{"COMMUNE", "Code INSEE"}}),
+		    #"Personnalisée ajoutée" = Table.AddColumn(#"Colonnes renommées", "Localisation", each [LIBELLE]& ", Isère, France", type text)
+		in
+		    #"Personnalisée ajoutée"
+	lineageTag: 8a0ae292-8193-4d92-897f-ae9b2605633f
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'Codes postaux / INSEE' =
+		let
+		    Source = Excel.Workbook(Web.Contents("https://pst38.sharepoint.com/sites/a_ETO_DG_DOP-Sectorisation/Documents%20partages/Carto/code%20postaux.xlsx"), null, true),
+		    Tableau1_Table = Source{[Item="Tableau1",Kind="Table"]}[Data],
+		    #"Type modifié" = Table.TransformColumnTypes(Tableau1_Table,{{"Code Postal / CEDEX", Int64.Type}, {"Libellé", type text}, {"Code INSEE", Int64.Type}, {"Type de code", type text}, {"Nom de la commune", type text}, {"Nom du département", type text}, {"NOM EPCI", type text}, {"Nom de la région", type text}}),
+		    #"Colonnes supprimées" = Table.RemoveColumns(#"Type modifié",{"Nom de la région"}),
+		    #"Type modifié1" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"Code INSEE", type text}, {"Code Postal / CEDEX", type text}}),
+		    #"Lignes filtrées" = Table.SelectRows(#"Type modifié1", each ([Nom du département] = "ISERE")),
+		    #"Lignes triées" = Table.Sort(#"Lignes filtrées",{{"Code INSEE", Order.Ascending}}),
+		    #"Valeur remplacée" = Table.ReplaceValue(#"Lignes triées","13532","38400",Replacer.ReplaceText,{"Code Postal / CEDEX"})
+		in
+		    #"Valeur remplacée"
+	lineageTag: cdecb226-0258-484f-b559-d23b02be6410
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Paramètre1 = #"Exemple de fichier" meta [IsParameterQuery=true, BinaryIdentifier=#"Exemple de fichier", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: e2b0d39e-5eb2-4494-ab14-7f0bef10dd0a
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT import\Requêtes d''assistance'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Binary
+
+expression Paramètre2 = #"Exemple de fichier (2)" meta [IsParameterQuery=true, BinaryIdentifier=#"Exemple de fichier (2)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 4ed10aa2-1351-4d6f-b711-b28dbc01ab44
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT par entreprise  import\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Exemple de fichier' =
+		let
+		    // Source SharePoint
+		    Source = SharePoint.Files(
+		        "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP",
+		        [ApiVersion = 15]
+		    ),
+		
+		    // Filtrer tôt sur le chemin du dossier (réduit le volume traité)
+		    FichiersDossierAMT = Table.SelectRows(Source, each ([Folder Path] = "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP/Documents partages/Qualité et indicateurs/0 - Export Padoa/9 - AMT/AMT - Export/") and ([Name] <> "01011900_31122024.csv")),
+		    Navigation1 = FichiersDossierAMT{0}[Content]
+		in
+		    Navigation1
+	lineageTag: f37bf12f-efa9-4f18-ac19-26b3a49e3be9
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT import\Requêtes d''assistance'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer l''exemple de fichier' =
+		let
+		    Source = Csv.Document(Paramètre1,[Delimiter=";", Columns=55, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+		in
+		    #"En-têtes promus"
+	lineageTag: 94d9352f-2b29-4370-83ec-fa07814caa1f
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT import'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'Transformer le fichier' =
+		let
+		    Source = (Paramètre1 as binary) => let
+		    Source = Csv.Document(Paramètre1,[Delimiter=";", Columns=55, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+		in
+		    #"En-têtes promus"
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformer l\u0027exemple de fichier""}" ]
+	lineageTag: 4d9d5cf2-33b5-445a-a054-390a8556491a
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT import\Requêtes d''assistance'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+
+expression '0 - AMT par entreprise  import' =
+		let
+		    // Source SharePoint
+		    Source = SharePoint.Files(
+		        "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP",
+		        [ApiVersion = 15]
+		    ),
+		
+		    // Filtrer tôt sur le chemin du dossier (réduit le volume traité)
+		    FichiersDossierAMT = Table.SelectRows(Source, each ([Folder Path] = "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP/Documents partages/Qualité et indicateurs/0 - Export Padoa/9 - AMT/AMT par entreprise - Export/")),
+		    #"Fichiers masqués filtrés1" = Table.SelectRows(FichiersDossierAMT, each [Attributes]?[Hidden]? <> true),
+		    #"Appeler une fonction personnalisée1" = Table.AddColumn(#"Fichiers masqués filtrés1", "Transformer le fichier (2)", each #"Transformer le fichier (2)"([Content])),
+		    #"Colonnes renommées1" = Table.RenameColumns(#"Appeler une fonction personnalisée1", {"Name", "Source.Name"}),
+		    #"Autres colonnes supprimées1" = Table.SelectColumns(#"Colonnes renommées1", {"Source.Name", "Transformer le fichier (2)"}),
+		    #"Colonne de tables développée1" = Table.ExpandTableColumn(#"Autres colonnes supprimées1", "Transformer le fichier (2)", Table.ColumnNames(#"Transformer le fichier (2)"(#"Exemple de fichier (2)"))),
+		    #"Type modifié" = Table.TransformColumnTypes(#"Colonne de tables développée1",{{"Source.Name", type text}, {"Lien fiche adhérent", type text}, {"Matricule Padoa", Int64.Type}, {"Nom adhérent", type text}, {"Équipe médicale", type text}, {"Zone géographique (centre convocation)", type text}, {"Centre de rattachement (centre convocation)", type text}, {"Centre de convocation", type text}, {"Type entreprise", type text}, {"Taille entreprise", type text}, {"Statut entreprise", type text}, {"Mode de convocation préférentiel", type text}, {"NAF niveau 1", type text}, {"NAF niveau 2", type text}, {"NAF niveau 3", type text}, {"NAF niveau 4", type text}, {"NAF", type text}, {"Identifiant AMT",  Int64.Type}, {"Type AMT", type text}, {"Modèle AMT", type text}, {"Titre AMT", type text}, {"Périmètre AMT", type text}, {"AMT Prévention primaire", type text}, {"Action de maintien en emploi", type text}, {"Origine AMT", type text}, {"Priorité AMT", type text}, {"Statut AMT détaillé", type text}, {"Motif abandon AMT", type text}, {"Sous motif abandon AMT", type text}, {"Déclineur AMT", type text}, {"Liste des intervenants", type text}, {"Date de dernière intervention AMT", type date}, {"Nombre d'évènements", Int64.Type}, {"Statut AMT", type text}, {"Nombre de tâches planifiées", Int64.Type}, {"Avec pièce jointe partagée", type text}, {"Rapport envoyé", type text}, {"Origine de la demande AMT", type text}, {"AMT issue d'une demande", type text}, {"Demandeur AMT", type text}, {"Nombre de tâches réalisées", Int64.Type}, {"Date affectation demande AMT", type date}, {"Date création demande AMT", type date}, {"AMT en retard", type text}, {"Nombre de jours de retard", Int64.Type}, {"Date d'échéance", type date}, {"Date création AMT", type date}, {"Date statut à affecter", type date}, {"Date statut à faire", type date}, {"Date statut à valider", type date}, {"Date statut en cours", type date}, {"Date statut validée", type date}, {"Date statut suspendue", type date}, {"Créateur AMT", type text}, {"Date statut terminée", type date}, {"Date statut abandonnée", type date}, {"Date clôture AMT", type date}, {"Date statut actuel AMT", type date}, {"Avec piece jointe", type text}, {"Nombre de salariés concernés", Int64.Type}, {"Gestionnaire administratif", type text}, {"Médecin référent", type text}, {"Eligibilité à la fiche entreprise", type text}, {"Email contact entreprise", type text}, {"Contact entreprise", type text}, {"Téléphone contact entreprise", type text}, {"Nombre de certificats d'inaptitude délivrés", Int64.Type}, {"Indicateur FE générée avec le module FE Padoa", type any}, {"Date dernière fiche entreprise réalisée", type date}, {"Modalités de l'intervention", type any}, {"Présence du médecin", type any}, {"Projet de service", type text}, {"Thématiques intervention ergonomique", type text}, {"Temps total alloué", Int64.Type}, {"Durée intervention en heures (planning)", type number}, {"Durée trajet en heures (planning)", type number}, {"Durée rédaction en heures (planning)", type number}, {"Durée évènement collectif en heures (planning)", type number}, {"Durée autre évènement en heures (planning)", type number}, {"Durée intervention en heures (ajoutée manuellement)", Int64.Type}, {"Durée trajet en heures (ajoutée manuellement)", Int64.Type}, {"Durée rédaction et autres en heures (ajoutée manuellement)", Int64.Type}}),
+		    #"Autres colonnes supprimées" = Table.SelectColumns(#"Type modifié",{"Matricule Padoa", "Équipe médicale", "Zone géographique (centre convocation)", "Identifiant AMT", "Date statut terminée"}),
+		    #"Lignes filtrées" = Table.SelectRows(#"Autres colonnes supprimées", each [Date statut terminée] > #date(2023, 12, 31))
+		in
+		    #"Lignes filtrées"
+	lineageTag: d679239b-e802-4237-bafc-51f5c8b8d605
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'Exemple de fichier (2)' =
+		let
+		    // Source SharePoint
+		    Source = SharePoint.Files(
+		        "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP",
+		        [ApiVersion = 15]
+		    ),
+		
+		    // Filtrer tôt sur le chemin du dossier (réduit le volume traité)
+		    FichiersDossierAMT = Table.SelectRows(Source, each ([Folder Path] = "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP/Documents partages/Qualité et indicateurs/0 - Export Padoa/9 - AMT/AMT par entreprise - Export/") and ([Name] <> "01011900_31122024.csv")),
+		    Navigation1 = FichiersDossierAMT{0}[Content]
+		in
+		    Navigation1
+	lineageTag: 55994138-727c-46fc-bb8b-929f8f56e7e7
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT par entreprise  import\Requêtes d''assistance'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformer l''exemple de fichier (2)' =
+		let
+		    Source = Csv.Document(Paramètre2,[Delimiter=";", Columns=81, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+		in
+		    #"En-têtes promus"
+	lineageTag: 5cf71d24-6e7f-4732-801c-75fd570be6fb
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT par entreprise  import'
+
+	annotation PBI_ResultType = Table
+
+expression 'Transformer le fichier (2)' =
+		let
+		    Source = (Paramètre2 as binary) => let
+		    Source = Csv.Document(Paramètre2,[Delimiter=";", Columns=81, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+		in
+		    #"En-têtes promus"
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformer l\u0027exemple de fichier (2)""}" ]
+	lineageTag: 7cdb3902-c753-433b-829e-698ee7d4797c
+	queryGroup: 'Transformer le fichier à partir de 0 - AMT par entreprise  import\Requêtes d''assistance'
+
+	annotation PBI_ResultType = Function
+
+expression '0 - Communes' = ```
+		let
+		    // 1. Connexion et typage initial (inchangé mais nettoyage immédiat)
+		    Source = Json.Document(Web.Contents("https://pst38.sharepoint.com/sites/a_ETO_DG_DOP-Sectorisation/Documents%20partages/Carto/Carto PBI/communes-de-lisere.json")),
+		    #"Converti en table" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		    
+		    // 2. Expansion CIBLÉE (On ne prend que ce qui sert : Nom, INSEE, Pop, Surface)
+		    // On ignore volontairement geo_shape et geo_point qui alourdissent la requête
+		    #"Enregistrement développé" = Table.ExpandRecordColumn(#"Converti en table", "Column1", 
+		        {"nom", "numero", "surface", "com_arm_pop_mun"}, 
+		        {"Commune", "Code INSEE", "surface", "com_arm_pop_mun"}
+		    ),
+		    #"Valeur remplacée1" = Table.ReplaceValue(#"Enregistrement développé",".",",",Replacer.ReplaceText,{"surface"}),
+		
+		    // 3. Typage des données
+		    #"Type modifié" = Table.TransformColumnTypes(#"Valeur remplacée1",{
+		        {"Commune", type text}, 
+		        {"Code INSEE", type text}, // INSEE doit être du texte (ex: 38001) pour éviter perte du 0
+		        {"surface", type number}, // Changé en number pour le tri
+		        {"com_arm_pop_mun", type number}
+		    }),
+		
+		    // 4. Nettoyage spécifique (Ex: Les Éparres)
+		    #"Valeur remplacée" = Table.ReplaceValue(#"Type modifié","Les Éparres","Eparres",Replacer.ReplaceText,{"Commune"}),
+		    #"Requêtes fusionnées1" = Table.NestedJoin(#"Valeur remplacée", {"Code INSEE"}, #"Codes postaux / INSEE", {"Code INSEE"}, "Codes postaux / INSEE", JoinKind.LeftOuter),
+		    #"Codes postaux / INSEE développé" = Table.ExpandTableColumn(#"Requêtes fusionnées1", "Codes postaux / INSEE", {"Code Postal / CEDEX"}, {"Code Postal / CEDEX"}),
+		    #"Lignes triées" = Table.Sort(#"Codes postaux / INSEE développé",{{"Code Postal / CEDEX", Order.Ascending}, {"com_arm_pop_mun", Order.Descending}, {"surface", Order.Descending}}),
+		    #"Requêtes fusionnées" = Table.NestedJoin(#"Lignes triées", {"Code INSEE"}, #"0 - SPSTI par commune", {"Code INSEE"}, "0 - SPSTI par commune", JoinKind.LeftOuter),
+		    #"0 - SPSTI par commune développé" = Table.ExpandTableColumn(#"Requêtes fusionnées", "0 - SPSTI par commune", {"SPSTI"}, {"SPSTI"}),
+		    #"Lignes filtrées" = Table.SelectRows(#"0 - SPSTI par commune développé", each ([SPSTI] = "PST38"))
+		in
+		    #"Lignes filtrées"
+		```
+	lineageTag: 6ef8b6c3-46e2-4e9a-99be-853ea3475df0
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression '0 - AMT import' = ```
+		let
+		    // Source SharePoint
+		    Source = SharePoint.Files(
+		        "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP",
+		        [ApiVersion = 15]
+		    ),
+		
+		    // Filtrer tôt sur le chemin du dossier (réduit le volume traité)
+		    FichiersDossierAMT = Table.SelectRows(Source, each ([Folder Path] = "https://pst38.sharepoint.com/sites/a_ETO_DG_DOP/Documents partages/Qualité et indicateurs/0 - Export Padoa/9 - AMT/AMT - Export/")),
+		        #"Fichiers masqués filtrés2" = Table.SelectRows(FichiersDossierAMT, each [Attributes]?[Hidden]? <> true),
+		    #"Appeler une fonction personnalisée2" = Table.AddColumn(#"Fichiers masqués filtrés2", "Transformer le fichier", each #"Transformer le fichier"([Content])),
+		    #"Colonnes renommées1" = Table.RenameColumns(#"Appeler une fonction personnalisée2", {"Name", "Source.Name"}),
+		    #"Autres colonnes supprimées2" = Table.SelectColumns(#"Colonnes renommées1", {"Source.Name", "Transformer le fichier"}),
+		    #"Colonne de tables développée2" = Table.ExpandTableColumn(#"Autres colonnes supprimées2", "Transformer le fichier", Table.ColumnNames(#"Transformer le fichier"(#"Exemple de fichier"))),
+		    // Typage colonnes
+		    TypeModifié = Table.TransformColumnTypes(#"Colonne de tables développée2",{{"Rapport envoyé", type text}, {"Date statut actuel AMT", type date}, {"Date clôture AMT", type date}, {"Date statut abandonnée", type date}, {"Date statut terminée", type date}, {"Date statut en cours", type date}, {"Date statut à faire", type date}, {"Date statut suspendue", type date}, {"Date statut validée", type date}, {"Date statut à valider", type date}, {"Date création AMT", type date}, {"Date statut à affecter", type date}, {"Date d'échéance", type date}, {"Date affectation demande AMT", type date}, {"Date création demande AMT", type date}, {"Identifiant AMT", Int64.Type}, {"Type AMT", type text}, {"Modèle AMT", type text}, {"Périmètre AMT", type text}, {"Titre AMT", type text}, {"Action de maintien en emploi", type text}, {"Origine AMT", type text}, {"Priorité AMT", type text}, {"AMT Prévention primaire", type text}, {"Déclineur AMT", type text}, {"Statut AMT", type text}, {"Statut AMT détaillé", type text}, {"Liste des intervenants", type text}, {"Motif abandon AMT", type text}, {"Sous motif abandon AMT", type text}, {"AMT issue d'une demande", type text}, {"Demandeur AMT", type text}, {"Créateur AMT", type text}, {"Avec piece jointe", type text}, {"Temps total alloué", Int64.Type}, {"Nombre d'évènements", Int64.Type}, {"Nombre de tâches réalisées", Int64.Type}, {"Nombre de tâches planifiées", Int64.Type}, {"Nombre de jours de retard", Int64.Type}, {"Avec pièce jointe partagée", type text}, {"Origine de la demande AMT", type text}, {"Date de dernière intervention AMT", type date}, {"AMT en retard", type text}}),
+		    #"Colonnes supprimées" = Table.RemoveColumns(TypeModifié,{"Avec piece jointe", "Date statut actuel AMT", "Modalités de l'intervention", "Présence du médecin", "Projet de service", "Thématiques intervention ergonomique", "Temps total alloué", "Durée intervention en heures (planning)", "Durée trajet en heures (planning)", "Durée rédaction en heures (planning)", "Durée évènement collectif en heures (planning)", "Durée autre évènement en heures (planning)", "Durée intervention en heures (ajoutée manuellement)", "Durée trajet en heures (ajoutée manuellement)", "Durée rédaction et autres en heures (ajoutée manuellement)", "Source.Name", "Périmètre AMT", "Action de maintien en emploi", "Origine AMT", "Priorité AMT", "Déclineur AMT", "Statut AMT détaillé", "Liste des intervenants", "Nombre d'évènements", "Motif abandon AMT", "Sous motif abandon AMT", "Nombre de tâches réalisées", "Date de dernière intervention AMT", "Nombre de tâches planifiées", "Avec pièce jointe partagée", "Rapport envoyé", "AMT issue d'une demande", "Origine de la demande AMT", "Date d'échéance", "Date création demande AMT", "Date affectation demande AMT", "AMT en retard", "Date statut à affecter", "Nombre de jours de retard", "Titre AMT", "Demandeur AMT"}),
+		    #"Lignes filtrées" = Table.SelectRows(#"Colonnes supprimées", each [Date statut terminée] > #date(2023, 12, 31)),
+		    #"Lignes filtrées1" = Table.SelectRows(#"Lignes filtrées", each ([Statut AMT] = "AMT terminée")),
+		
+		    // Ajout colonne délai 'En-cours' > 'A valider' 
+		    AjoutColonneDélaiEnCoursAValider = Table.AddColumn(#"Lignes filtrées1", "délai 'En-cours' > 'A valider'", each if[Date statut en cours]="01/01/1900" then 0
+		        else if[Date statut à valider]<[Date statut en cours] then 0 else [Date statut à valider]-[Date statut en cours], type duration),
+		
+		    // Ajout colonne "Délai 'A valider' > 'Validée'"
+		    AjoutColonneDélaiAValiderValidee = Table.AddColumn(AjoutColonneDélaiEnCoursAValider, "Délai 'A valider' > 'Validée'", each if[Date statut à valider] = "01/01/1900" then 0 
+		        else if[Date statut validée]<[Date statut à valider] then 0 else [Date statut validée]-[Date statut à valider], type duration),
+		
+		    // Ajout colonne "Délai 'A faire' > 'terminée'"
+		    AjoutColonneDélaiAfaireTerminee = Table.AddColumn(AjoutColonneDélaiAValiderValidee, "Délai 'A faire' > 'Terminée'", each if[Date statut terminée]="01/01/1900" then 0
+		        else if[Date statut terminée]<[Date statut à faire] then 0 else [Date statut terminée]-[Date statut à faire], type duration),
+		
+		    // Ajout colonne "Délai 'A faire' > 'En-cours'"
+		    AjoutColonneDélaiAfaireEnCours = Table.AddColumn(AjoutColonneDélaiAfaireTerminee, "Délai 'A faire' > 'En-cours'", each if[Date statut en cours]="01/01/1900" then 0
+		        else if[Date statut en cours]<[Date statut à faire] then 0 else [Date statut en cours]-[Date statut à faire], type duration),
+		    #"Requêtes fusionnées" = Table.NestedJoin(AjoutColonneDélaiAfaireEnCours, {"Identifiant AMT"}, #"0 - AMT par entreprise  import", {"Identifiant AMT"}, "0 - AMT par entreprise  import", JoinKind.LeftOuter),
+		    #"0 - AMT par entreprise  import développé" = Table.ExpandTableColumn(#"Requêtes fusionnées", "0 - AMT par entreprise  import", {"Matricule Padoa", "Équipe médicale", "Zone géographique (centre convocation)"}, {"Matricule Padoa", "Équipe médicale", "Zone géographique (centre convocation)"})
+		in
+		    #"0 - AMT par entreprise  import développé"
+		```
+	lineageTag: ad35d640-eadd-4462-a434-8f411a3bc151
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

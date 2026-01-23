@@ -1,0 +1,76 @@
+table 'Evènement collectif - informations'
+	lineageTag: b3e824c0-8cf6-44bd-879b-063866e72a60
+
+	column 'Confidentialité évènement collectif'
+		dataType: string
+		lineageTag: c70b71f5-ea09-4038-9657-ecdd6209ef51
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Confidentialité évènement collectif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format évènement collectif'
+		dataType: string
+		lineageTag: ba7b2b9a-d333-4519-93c9-8bef81ddda26
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format évènement collectif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lieu évènement collectif'
+		dataType: string
+		lineageTag: 5bdcd044-dbb1-4ca0-95d0-299855f0b591
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Lieu évènement collectif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type évènement collectif'
+		dataType: string
+		lineageTag: 26693138-79b0-47ac-a5f7-de7235ee8d57
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type évènement collectif
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_evenement_collectif_unique
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 23de5e8a-bce2-47f4-b0c5-b8f976a1545b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_evenement_collectif_unique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modèle AMT'
+		dataType: string
+		lineageTag: 54c9432c-6fea-4dd9-9cdb-35244228e884
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modèle AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type AMT'
+		dataType: string
+		lineageTag: d574f665-c1be-4305-98d8-e066bd6eed03
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Evènement collectif - informations' = entity
+		mode: directQuery
+		source
+			entityName: Evènement collectif - informations
+			expressionSource: 'DirectQuery à AS – pst38'
+

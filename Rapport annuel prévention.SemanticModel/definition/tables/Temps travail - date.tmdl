@@ -1,0 +1,103 @@
+table 'Temps travail - date'
+	lineageTag: 39f3b6fc-f981-403f-9f6b-baa63e8ad51d
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 390b5b90-d8d8-46bc-9939-2e82aae324cf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: df688b22-daa9-4ee0-9595-caf7d2974abb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c34e553e-e2d3-4bb1-9c98-33c52a4c3efa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jour
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1212b54d-22f0-4f44-9fbb-23bc492071c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 71889fb6-ee3a-44bc-99ea-89d3d9f682e8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: fbd09737-c7e8-417a-9ef6-00d10a92c5da
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date - temps travail'
+		lineageTag: 3403e28b-59e0-4245-af58-a7d30f226b75
+		sourceLineageTag: Hiérarchie date - temps travail
+
+		level Année
+			lineageTag: 56dccb6f-a172-4083-b13a-e333e5e8fa23
+			column: Année
+
+		level Mois
+			lineageTag: 45f5d836-f494-4d2a-bb74-bd3026bc5ce3
+			column: Mois
+
+		level Semaine
+			lineageTag: 01b2f945-6fde-4400-a297-656a3c2e0258
+			column: Semaine
+
+		level Date
+			lineageTag: 04695563-4a09-4da6-915f-4ef0bb458267
+			column: Date
+
+	partition 'Temps travail - date' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - date
+			expressionSource: 'DirectQuery à AS – pst38'
+

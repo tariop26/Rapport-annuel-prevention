@@ -1,0 +1,70 @@
+table 'CRM - ticket - créateur'
+	lineageTag: bfa75dc2-1ea4-4a3a-bd62-058b3a1a7f75
+
+	column id_createur_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: 9537ba3a-b464-4950-b8aa-4d5f19ba8845
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom créateur ticket'
+		dataType: string
+		lineageTag: 7fc061da-9566-4778-9acb-a3b56bfc1c8d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom créateur ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil créateur ticket détaillé'
+		dataType: string
+		lineageTag: 8b5144de-29bf-4044-a288-901fd33ec2d4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil créateur ticket détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil créateur ticket'
+		dataType: string
+		lineageTag: b07b46f1-aa9a-45b5-b53c-d77b3dc37659
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil créateur ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie créateur ticket'
+		lineageTag: 2ef419f8-27b5-419d-a656-6feffe3c9e9b
+		sourceLineageTag: Hiérarchie créateur ticket
+
+		level 'Profil créateur ticket'
+			lineageTag: cd7403f3-b3a1-4461-bdf3-26599594bc65
+			column: 'Profil créateur ticket'
+
+		level 'Profil créateur ticket détaillé'
+			lineageTag: efb2e480-58bf-49f5-b84c-1e4085cce695
+			column: 'Profil créateur ticket détaillé'
+
+		level 'Nom créateur ticket'
+			lineageTag: c5cfe9d6-d9eb-417d-aaf3-961b777766d2
+			column: 'Nom créateur ticket'
+
+	partition 'CRM - ticket - créateur' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - créateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

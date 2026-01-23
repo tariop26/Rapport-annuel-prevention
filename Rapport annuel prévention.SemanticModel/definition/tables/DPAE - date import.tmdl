@@ -1,0 +1,90 @@
+table 'DPAE - date import'
+	lineageTag: 93c6a330-ccbe-4885-bf95-0c247dd5187f
+
+	column 'Année import'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 027b6ff8-d14a-4b59-8f55-937aafc5108e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année import
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date import'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: de795fb3-80ee-4396-a32d-003ab721302b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date import
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_import_dpae
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1286e1b6-b1ff-4c6d-95b7-213788248491
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_import_dpae
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois import'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: eea7857c-d662-43b9-8337-2972e8dfa499
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois import
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine import'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f47405e9-fcf2-42e4-a51e-bdba911264d6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine import
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date détection'
+		lineageTag: 9bf80343-0fb6-4f18-bab1-0dbd8510745a
+		sourceLineageTag: Hiérarchie date détection
+
+		level 'Année détection'
+			lineageTag: 49f98c1a-200a-4661-8656-d19741995dea
+			column: 'Année import'
+
+		level 'Mois détection'
+			lineageTag: aac77fe4-03c1-419e-a4ac-bc042e522f7d
+			column: 'Mois import'
+
+		level 'Semaine détection'
+			lineageTag: eeb4bf5b-413b-4740-9f34-31143603c6d3
+			column: 'Semaine import'
+
+		level 'Date détection'
+			lineageTag: bbe3baa1-fbf4-4115-a019-eaa91a695560
+			column: 'Date import'
+
+	partition 'DPAE - date import' = entity
+		mode: directQuery
+		source
+			entityName: DPAE - date import
+			expressionSource: 'DirectQuery à AS – pst38'
+

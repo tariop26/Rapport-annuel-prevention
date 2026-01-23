@@ -1,0 +1,58 @@
+table 'Demande consultation spécialisée - type visite origine'
+	lineageTag: c0b6afeb-3332-4803-b8ff-6b279c5957a0
+
+	column id_type_visite_origine
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9f63ef96-730c-4341-916d-61864d7a1798
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_origine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite origine détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5d23a16e-8f26-417c-be45-8654e7a91ccf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite origine détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite origine'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b8fc3649-4eb1-401c-9165-db1f5a3ac57d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite origine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type visite origine'
+		lineageTag: f440f788-e4bc-45d9-a864-79da42a06e43
+		sourceLineageTag: Hiérarchie type visite origine
+
+		level 'Type visite origine'
+			lineageTag: 7b57caec-bdd3-456e-9bce-35a9541c06cc
+			column: 'Type visite origine'
+
+		level 'Type visite origine détaillé'
+			lineageTag: af60f836-82ed-4ff7-b5af-2f2b89aab4be
+			column: 'Type visite origine détaillé'
+
+	partition 'Demande consultation spécialisée - type visite origine' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - type visite origine
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,107 @@
+table 'Document émis - signataire'
+	lineageTag: 169d34da-c226-42cb-8f6f-da33dc06438f
+
+	column 'Email signataire'
+		dataType: string
+		lineageTag: e6eb6ad8-a266-492c-8077-5ca01d278eb3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email signataire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fonction signataire'
+		dataType: string
+		lineageTag: ddaba738-1cb9-47f7-a9ef-14ec425c3945
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction signataire
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		isNullable: false
+		lineageTag: bd90fd21-01a6-404a-ac6e-f3c52d45b4eb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom signataire'
+		dataType: string
+		lineageTag: 97959968-9ef4-48fd-9f33-01a9a87bdba5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom signataire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil signataire détaillé'
+		dataType: string
+		lineageTag: b434fcc5-bcf6-4d9c-b762-bb82e888533b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil signataire détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil signataire'
+		dataType: string
+		lineageTag: bed62416-ede9-43db-af1c-da7dd3f5bd89
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil signataire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Role signataire'
+		dataType: string
+		lineageTag: 7be314d4-7ad3-4464-8303-ec72828de02d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Role signataire
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie profil signataire'
+		lineageTag: 161f36e3-84b5-4815-930c-cb77cdb7430f
+		sourceLineageTag: Hiérarchie profil signataire
+
+		level 'Profil signataire'
+			lineageTag: dffc3717-f974-425c-a8a7-a951762b1977
+			column: 'Profil signataire'
+
+		level 'Profil signataire détaillé'
+			lineageTag: a62b2afe-0dd5-4529-bcd2-5c17baf92455
+			column: 'Profil signataire détaillé'
+
+	hierarchy 'Hiérarchie signataire'
+		lineageTag: e086a76d-0b55-422e-ab42-dde333e01db1
+		sourceLineageTag: Hiérarchie signataire
+
+		level 'Role signataire'
+			lineageTag: 82077fb6-9b6a-4f92-bdcc-284db7523d49
+			column: 'Role signataire'
+
+		level 'Nom signataire'
+			lineageTag: d1b0c628-45f9-4977-b4b3-456aaa059546
+			column: 'Nom signataire'
+
+	partition 'Document émis - signataire' = entity
+		mode: directQuery
+		source
+			entityName: Document émis - signataire
+			expressionSource: 'DirectQuery à AS – pst38'
+

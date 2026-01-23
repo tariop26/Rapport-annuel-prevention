@@ -1,0 +1,61 @@
+table 'Activité camion - camion'
+	isHidden
+	lineageTag: 8b0ec34f-badd-47d1-b621-2ec7cc548225
+
+	column 'Garage camion'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 8d4e05f7-97e0-4224-80ff-8575246c347b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Garage camion
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_camion
+		dataType: int64
+		isHidden
+		isNullable: false
+		displayFolder: Colonnes techniques
+		lineageTag: 89500388-7869-4657-b45c-2c46fe504c4b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_camion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro série camion'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: d6432e60-ff2c-4d94-8296-c63a417ace15
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Numéro série camion
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie camion'
+		isHidden
+		lineageTag: bb25e1d4-7834-4e6a-87ba-c0a5345763a9
+		sourceLineageTag: Hiérarchie camion
+
+		level 'Garage camion'
+			lineageTag: 78d1cc52-243c-404d-8b34-233d24f89e04
+			column: 'Garage camion'
+
+		level 'Numéro série camion'
+			lineageTag: 17ab5ff0-6799-4428-b653-890a0fea0c10
+			column: 'Numéro série camion'
+
+		changedProperty = IsHidden
+
+	partition 'Activité camion - camion' = entity
+		mode: directQuery
+		source
+			entityName: Activité camion - camion
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

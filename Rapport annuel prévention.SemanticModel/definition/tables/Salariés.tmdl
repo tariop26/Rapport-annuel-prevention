@@ -1,0 +1,283 @@
+table Salariés
+	lineageTag: dcf4a251-b454-4565-aa36-c2aedc96f914
+
+	measure 'Effectif fonction publique' = EXTERNALMEASURE("Effectif fonction publique", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: b68efb4b-0790-439b-99c5-732d843626d6
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif fonction publique
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi (intérim & non intérim)' = EXTERNALMEASURE("Effectif suivi (intérim & non intérim)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: 7840ad96-7860-4ad7-b7f8-3a87f1d00453
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi (intérim & non intérim)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire SI' = EXTERNALMEASURE("Effectif suivi intérimaire SI", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: 3d562b41-8d6d-48b3-bbab-06605d96c83b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire SI
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire SIA' = EXTERNALMEASURE("Effectif suivi intérimaire SIA", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: e5a57751-0b62-4809-9ea0-9ebd61f72f0b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire SIA
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire SIR' = EXTERNALMEASURE("Effectif suivi intérimaire SIR", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: 52c034f8-24fc-45c1-8562-a40e61b1cade
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire SIR
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire total' = EXTERNALMEASURE("Effectif suivi intérimaire total", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: 194ed665-6fa5-40aa-9af5-5e7b27b437c8
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire total
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire' = EXTERNALMEASURE("Effectif suivi intérimaire", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 38a159db-b657-4a4c-9bb0-f6d243f6f053
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non-intérimaire SI' = EXTERNALMEASURE("Effectif suivi non-intérimaire SI", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: dd8edb3b-e25d-4d3f-b593-ad4ec9279532
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non-intérimaire SI
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non-intérimaire SIA' = EXTERNALMEASURE("Effectif suivi non-intérimaire SIA", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: dbe136bf-0692-4b1f-a875-f378c593b9f3
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non-intérimaire SIA
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non-intérimaire SIR' = EXTERNALMEASURE("Effectif suivi non-intérimaire SIR", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: a03317b2-bdac-4ce8-a4a6-4642b78276cc
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non-intérimaire SIR
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non-intérimaire total' = EXTERNALMEASURE("Effectif suivi non-intérimaire total", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages\Modèle de charge
+		lineageTag: cc5b8e0e-e1c8-40a5-87d8-4ad23c5f0dc5
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non-intérimaire total
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non-intérimaire' = EXTERNALMEASURE("Effectif suivi non-intérimaire", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 2d2d995f-0267-404e-92e7-e2ecbb5973ca
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non-intérimaire
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi' = EXTERNALMEASURE("Effectif suivi", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 853c5992-9617-4e9d-bed4-88d1a7e6cc68
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents' = EXTERNALMEASURE("Nombre d'adhérents", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: c36df3f1-61e7-423f-88a1-35415e4c5323
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents
+		dataCategory: Uncategorized
+
+	measure 'Nombre de collections' = EXTERNALMEASURE("Nombre de collections", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 95db31b2-cc59-4922-8665-a3c1c2cdd85d
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de collections
+		dataCategory: Uncategorized
+
+	measure 'Nombre de personnes suivies' = EXTERNALMEASURE("Nombre de personnes suivies", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: bd1dc991-4363-4707-a58f-5dc4ad72e1f7
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de personnes suivies
+		dataCategory: Uncategorized
+
+	measure 'Taux d''agents fonction publique' = EXTERNALMEASURE("Taux d'agents fonction publique", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux
+		lineageTag: a95c070d-6bb8-472d-b533-aa5e61f8c318
+		sourceLineageTag: DirectQuery à AS – pst38.Taux d'agents fonction publique
+		dataCategory: Uncategorized
+
+	measure 'Taux de retard (salariés)' = EXTERNALMEASURE("Taux de retard (salariés)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux
+		lineageTag: 503ca550-4697-4a59-a6e4-487b1180f527
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de retard (salariés)
+		dataCategory: Uncategorized
+
+	measure 'Taux de retard SIR (salariés)' = EXTERNALMEASURE("Taux de retard SIR (salariés)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux
+		lineageTag: ef957dbe-4c03-43c9-a889-432b0dc3ee51
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de retard SIR (salariés)
+		dataCategory: Uncategorized
+
+	measure 'Taux de salariés SIA' = EXTERNALMEASURE("Taux de salariés SIA", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux
+		lineageTag: 9498721d-36fe-4512-acab-57a72fc894fc
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de salariés SIA
+		dataCategory: Uncategorized
+
+	measure 'Taux de salariés SIR' = EXTERNALMEASURE("Taux de salariés SIR", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux
+		lineageTag: 725618c4-6076-44f7-9779-9d5bef1115eb
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de salariés SIR
+		dataCategory: Uncategorized
+
+	measure 'Taux d''intérimaires' = EXTERNALMEASURE("Taux d'intérimaires", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\Taux
+		lineageTag: b92f8ea5-eac4-4724-8096-f7815cec3870
+		sourceLineageTag: DirectQuery à AS – pst38.Taux d'intérimaires
+		dataCategory: Uncategorized
+
+	column id_centre_convocation
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9e1fe240-f56a-435c-ac42-b1e5f9add81a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5f83a05c-835e-4fb9-b9c2-bc5117f34fb5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise_collection_regroupante
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2f77fe2e-80f0-41bb-9791-2d5bc8bc3526
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise_collection_regroupante
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_groupe_determinant_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 76ec19b5-be82-44d7-9f6e-2019f7e00d59
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3e063b37-3a9e-49c1-a4f5-78d572f0e5d0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_personne
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0b836847-2c98-4c90-8926-6861a7be126c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 526c6c3d-229f-4eea-ab76-5b8214791504
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8914e8bd-07dd-435d-a50c-b230690c52c3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_thesaurus_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8c902217-9bf6-4083-8a72-a7532b261fe1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_thesaurus_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4570d9b4-dade-4850-b9b5-4042739eabe9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	partition Salariés = entity
+		mode: directQuery
+		source
+			entityName: Salariés
+			expressionSource: 'DirectQuery à AS – pst38'
+

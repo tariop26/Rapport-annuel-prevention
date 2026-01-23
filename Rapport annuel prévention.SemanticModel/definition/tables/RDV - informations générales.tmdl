@@ -1,0 +1,124 @@
+table 'RDV - informations générales'
+	lineageTag: d81c0ab2-dfbb-481d-a9f6-2e01c6ecc764
+
+	column 'Canal de convocation'
+		dataType: string
+		lineageTag: 893420fc-7a75-41c9-9f68-54d1c7749b6d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Canal de convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_info_rdv
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d42bba36-4401-459f-93a5-f4612836a61a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_info_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Déplacement RDV'
+		dataType: string
+		lineageTag: 68adb249-6419-4086-b449-26973d56a174
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Déplacement RDV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format RDV détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: edcd2059-8dd0-4f74-8ddf-c1c4c0254554
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format RDV détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Format RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: db8599cb-b759-4fde-89a5-51fa929bb5a7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Format RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_rdv
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: be0c5bc8-5508-43c4-8418-f18599ea5a60
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Libération créneau adhérent'
+		dataType: string
+		lineageTag: 027d0815-002d-4a1c-a73d-4aaab01e7a69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Libération créneau adhérent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine RDV'
+		dataType: string
+		lineageTag: 999d3c14-80c4-4768-8e9d-2891dc12511f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine RDV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type créneau adhérent'
+		dataType: string
+		lineageTag: 712782be-84b6-4aa6-ab2f-f16cd1ff8859
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type créneau adhérent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Planificateur RDV'
+		dataType: string
+		lineageTag: 3bdcf8f6-7d03-4641-aca1-b6dcd954c5a3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Planificateur RDV
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie format RDV'
+		lineageTag: 19cc5113-581d-4e78-b16b-ed3054cbbaf8
+		sourceLineageTag: Hiérarchie format RDV
+
+		level 'Format RDV'
+			lineageTag: 95972f99-c053-4adf-a654-290637442238
+			column: 'Format RDV'
+
+		level 'Format RDV détaillé'
+			lineageTag: 53df36ac-4cc1-499c-b4d7-ecbfbd84bca8
+			column: 'Format RDV détaillé'
+
+	partition 'RDV - informations générales' = entity
+		mode: directQuery
+		source
+			entityName: RDV - informations générales
+			expressionSource: 'DirectQuery à AS – pst38'
+

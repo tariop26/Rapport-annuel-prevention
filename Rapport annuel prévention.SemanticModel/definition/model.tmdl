@@ -1,0 +1,218 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		fastCombine
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Transformer le fichier à partir de 0 - AMT import'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformer le fichier à partir de 0 - AMT import\Requêtes d''assistance'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformer le fichier à partir de 0 - AMT par entreprise  import'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Transformer le fichier à partir de 0 - AMT par entreprise  import\Requêtes d''assistance'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation PBI_QueryOrder = ["DirectQuery à AS – pst38","Mesures","Choisir Période","0 - SPSTI par commune","0 - Communes","Codes postaux / INSEE","0 - AMT import","Exemple de fichier","Paramètre1","Transformer l'exemple de fichier","Transformer le fichier","0 - AMT par entreprise  import","Exemple de fichier (2)","Paramètre2","Transformer l'exemple de fichier (2)","Transformer le fichier (2)"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["TMDLView_Desktop","DevMode"]
+
+ref table '! Dernier rafraîchissement des données !'
+ref table 'Adhérent (actuel)'
+ref table 'Adhérent - étiquette'
+ref table Adhérents
+ref table AMT
+ref table 'AMT - créateur'
+ref table 'AMT - date clôture'
+ref table 'AMT - date création'
+ref table 'AMT - date demande'
+ref table 'AMT - date dernière intervention'
+ref table 'AMT - date échéance'
+ref table 'AMT - demandeur'
+ref table 'AMT - description'
+ref table 'AMT - indicateurs par intervenant'
+ref table 'AMT - informations principales'
+ref table 'AMT - intervenant'
+ref table 'AMT - modèle'
+ref table 'AMT - statut'
+ref table 'AMT - titre'
+ref table 'AMT - tâches'
+ref table 'AMT - étiquette'
+ref table 'AMT v2'
+ref table 'Centre convocation'
+ref table 'Changement équipe médicale'
+ref table 'Changement équipe médicale - après'
+ref table 'Changement équipe médicale - avant'
+ref table 'CRM - activité - auteur'
+ref table 'CRM - activité - date'
+ref table 'CRM - activité - type'
+ref table 'CRM - activités'
+ref table 'CRM - informations'
+ref table 'CRM - ticket - créateur'
+ref table 'CRM - ticket - date clôture'
+ref table 'CRM - ticket - date création'
+ref table 'CRM - ticket - date échéance'
+ref table 'CRM - ticket - informations'
+ref table 'CRM - ticket - responsable'
+ref table 'CRM - ticket - statut'
+ref table 'CRM - tickets'
+ref table 'Date principale'
+ref table 'Demande visite adhérent'
+ref table 'Document émis - date émission'
+ref table 'Document émis - signataire'
+ref table 'Documents émis'
+ref table 'Documents émis - adaptation poste'
+ref table 'Documents émis - date début validité'
+ref table 'Documents émis - date fin validité'
+ref table 'Documents émis - type document'
+ref table DPAE
+ref table 'DPAE - date import'
+ref table 'DPAE - entreprise'
+ref table DUERP
+ref table 'Déclaration effectif'
+ref table 'Déterminant suivi au 31/12'
+ref table 'Effectif au 31/12'
+ref table 'Equipe médicale'
+ref table ETP
+ref table 'Evolution effectif'
+ref table 'Evolution effectif - date'
+ref table 'Evolution retard'
+ref table 'Evolution retard - catégorie retard'
+ref table 'Evolution retard - date'
+ref table 'Evolution retard - type visite calculée'
+ref table 'Evènement collectif'
+ref table 'Evènement collectif - date'
+ref table 'Evènement collectif - informations'
+ref table 'Examen complémentaire'
+ref table 'Examen complémentaire - réalisateur'
+ref table 'Examen complémentaire - statut examen'
+ref table 'Examen complémentaire - type examen'
+ref table Facturation
+ref table 'Facturation - article'
+ref table 'Facturation - date facture'
+ref table 'Facturation - date référence facturation'
+ref table 'Facturation - description acte facturable'
+ref table 'Facturation - infos acte facturable'
+ref table 'Filtre médecin référent'
+ref table 'Filtre utilisateur'
+ref table 'Modèle de charge - catégorie visite'
+ref table 'Modèle de charge - leviers charge AMT'
+ref table 'Modèle de charge - prévision charge visites'
+ref table 'Modèle de charge - visites réalisées'
+ref table Orientation
+ref table 'Orientation - type orientation'
+ref table 'Plan MEE'
+ref table 'Plan MEE - contexte'
+ref table 'Plan MEE - créateur'
+ref table 'Plan MEE - date début'
+ref table 'Plan MEE - date fin'
+ref table 'Plan MEE - dispositifs'
+ref table 'Plan MEE - informations'
+ref table 'Plan MEE - intervenants'
+ref table 'Plan MEE - objectifs'
+ref table 'Plan MEE - problèmes de santé'
+ref table 'Plan MEE - structures mobilisées'
+ref table 'Plaquette de prévention'
+ref table 'Plaquette de prévention - type plaquette prévention'
+ref table Prescription
+ref table 'Prescription - type prescription'
+ref table Prospect
+ref table 'Prospect (actuel)'
+ref table 'Prospect - date adhésion'
+ref table 'Prospect - date création'
+ref table 'Prospect - date écart'
+ref table RDV
+ref table 'RDV - convocateur initial'
+ref table 'RDV - date annulation'
+ref table 'RDV - date création'
+ref table 'RDV - date première convocation'
+ref table 'RDV - date prise créneau adhérent'
+ref table 'RDV - informations générales'
+ref table 'RDV - motif annulation'
+ref table 'RDV/visite - centre convocation'
+ref table 'RDV/visite - date RDV'
+ref table 'RDV/visite - déterminant suivi'
+ref table 'RDV/visite - heure début entretien théorique'
+ref table 'RDV/visite - heure fin entretien théorique'
+ref table 'RDV/visite - informations visite'
+ref table 'RDV/visite - réalisateur'
+ref table 'RDV/visite - type visite'
+ref table 'RLS - intervenant AMT'
+ref table 'RLS - secteur'
+ref table 'RLS - utilisateur secteur'
+ref table 'Saisie - dossier salarié'
+ref table 'Saisie - visite'
+ref table Saisonniers
+ref table 'Saisonniers - type visite'
+ref table 'Salarié (actuel)'
+ref table 'Salarié - CSP'
+ref table 'Salarié - déterminant suivi'
+ref table 'Salarié - informations nominatives'
+ref table 'Salarié - poste'
+ref table 'Salarié - thésaurus poste'
+ref table 'Salarié - type contrat'
+ref table 'Salarié - type suivi'
+ref table Salariés
+ref table 'Temps travail'
+ref table 'Temps travail - centre convocation'
+ref table 'Temps travail - date'
+ref table 'Temps travail - heure début créneau'
+ref table 'Temps travail - heure fin créneau'
+ref table 'Temps travail - motif annulation'
+ref table 'Temps travail - type créneau'
+ref table 'Temps travail - type zone'
+ref table Utilisateur
+ref table 'Utilisateurs et équipes médicales'
+ref table Visite
+ref table 'Visite - date archivage'
+ref table 'Visite - heure archivage'
+ref table 'Visite - heure arrivée attestation'
+ref table 'Visite - heure connexion tablette'
+ref table 'Visite - heure convocation salarié'
+ref table 'Visite - heure déconnexion tablette'
+ref table 'Visite - heure départ attestation'
+ref table 'Demande consultation spécialisée'
+ref table 'Demande consultation spécialisée - créateur'
+ref table 'Demande consultation spécialisée - date création'
+ref table 'Demande consultation spécialisée - date traitement'
+ref table 'Demande consultation spécialisée - statut'
+ref table 'Demande consultation spécialisée - type visite demandée'
+ref table 'Demande consultation spécialisée - type visite origine'
+ref table 'Demande consultation spécialisée - validateur'
+ref table 'Evolution effectif - date prochaine APP'
+ref table 'Evolution effectif - date prochaine FE'
+ref table 'Activité camion - camion'
+ref table 'Activité camion - heure début'
+ref table 'Activité camion - heure fin'
+ref table 'Activité camion - informations'
+ref table 'Remplissage noa'
+ref table 'Demande visite adhérent - statut'
+ref table 'Modèle de charge - AMT réalisées'
+ref table 'Modèle de charge - catégorie AMT'
+ref table 'Modèle de charge - prévision charge AMT'
+ref table 'Evènement collectif - groupe participants'
+ref table Mesures
+ref table 'Salariés avec visites PDP (12 mois)'
+ref table 'CRM - activité - objet compte rendu'
+ref table 'Choisir Période'
+ref table 'Activité camion - réalisateur vacation'
+ref table 'Visite - réalisateur transfert'
+ref table 'Date Simulation'
+ref table DateTableTemplate_e7a2b323-de54-4c6e-aa75-487bbd147568
+ref table LocalDateTable_13d0872c-18e5-4745-a23e-88cbd44fa1f1
+ref table 'EPD pour AMT'
+
+ref cultureInfo fr-FR
+

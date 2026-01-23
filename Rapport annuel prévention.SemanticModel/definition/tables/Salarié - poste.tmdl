@@ -1,0 +1,30 @@
+table 'Salarié - poste'
+	lineageTag: f2ca80c2-5a8b-4023-a81f-34f349b485af
+
+	column id_poste
+		dataType: int64
+		isNullable: false
+		lineageTag: 298287e0-8173-4cec-8693-c551018bde0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Poste
+		dataType: string
+		lineageTag: 33122108-2f84-49bd-9954-8340cafe3417
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Poste
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Salarié - poste' = entity
+		mode: directQuery
+		source
+			entityName: Salarié - poste
+			expressionSource: 'DirectQuery à AS – pst38'
+

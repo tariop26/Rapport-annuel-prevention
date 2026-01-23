@@ -1,0 +1,30 @@
+table 'AMT - titre'
+	lineageTag: 8d12ec6b-85ad-4c98-93d2-b2b401223d6a
+
+	column id_titre_amt
+		dataType: int64
+		isNullable: false
+		lineageTag: ce9202b1-fd86-4f7d-8387-0c5b0baf7724
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_titre_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Titre
+		dataType: string
+		lineageTag: 7cdc5d22-5ebf-4e35-9067-34bd5721904d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Titre
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'AMT - titre' = entity
+		mode: directQuery
+		source
+			entityName: AMT - titre
+			expressionSource: 'DirectQuery à AS – pst38'
+

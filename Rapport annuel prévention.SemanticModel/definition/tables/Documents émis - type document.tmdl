@@ -1,0 +1,83 @@
+table 'Documents émis - type document'
+	lineageTag: 15836815-5131-43e8-86c2-d807078820ad
+
+	column 'Catégorie document'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f797ce7e-2393-4892-a45b-11d7d5d54b64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_document
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0490798-0216-4639-bd6e-8b2f1e6d6229
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type document détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: fc873148-eb43-441b-87c2-ab5fab757876
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type document détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type document'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: fea020ab-eeeb-4144-866b-d258a0a337aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modèle de document'
+		dataType: string
+		lineageTag: 77d4add7-5d28-4ea1-bd04-d5abb8e5b299
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modèle de document
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type document'
+		lineageTag: 89abf328-1dc7-4aa0-aee7-0b69361598b7
+		sourceLineageTag: Hiérarchie type document
+
+		level 'Catégorie document'
+			lineageTag: f3f8af12-90d1-4a92-a495-9fe550409f87
+			column: 'Catégorie document'
+
+		level 'Type document'
+			lineageTag: 38e99b7b-50a1-4efd-bb49-3cf504c0d386
+			column: 'Type document'
+
+		level 'Type document détaillé'
+			lineageTag: a2bad981-8908-48e2-a013-7ebaa1c5d82a
+			column: 'Type document détaillé'
+
+	partition 'Documents émis - type document' = entity
+		mode: directQuery
+		source
+			entityName: Documents émis - type document
+			expressionSource: 'DirectQuery à AS – pst38'
+

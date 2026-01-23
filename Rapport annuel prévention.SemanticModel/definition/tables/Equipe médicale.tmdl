@@ -1,0 +1,593 @@
+table 'Equipe médicale'
+	lineageTag: 3e1dd8df-9b0e-456c-ad24-80c69294b99b
+
+	measure 'ETP infimier (effectif suivi)' = EXTERNALMEASURE("ETP infimier (effectif suivi)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\3 - ETP pondérés par effectif suivi
+		lineageTag: bef8d4a4-8566-4671-80a0-43d3b06c84ac
+		sourceLineageTag: DirectQuery à AS – pst38.ETP infimier (effectif suivi)
+		dataCategory: Uncategorized
+
+	measure 'ETP infimier (équipe médicale)' = EXTERNALMEASURE("ETP infimier (équipe médicale)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\2 - ETP pondérés par équipe médicale
+		lineageTag: 71fa306b-8e02-42db-bb15-010c5b393cdf
+		sourceLineageTag: DirectQuery à AS – pst38.ETP infimier (équipe médicale)
+		dataCategory: Uncategorized
+
+	measure 'ETP infimier d''entreprise (effectif suivi)' = EXTERNALMEASURE("ETP infimier d'entreprise (effectif suivi)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\3 - ETP pondérés par effectif suivi
+		lineageTag: 93a03564-03f4-4a7f-adce-823bc34470de
+		sourceLineageTag: DirectQuery à AS – pst38.ETP infimier d'entreprise (effectif suivi)
+		dataCategory: Uncategorized
+
+	measure 'ETP infimier d''entreprise (équipe médicale)' = EXTERNALMEASURE("ETP infimier d'entreprise (équipe médicale)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\2 - ETP pondérés par équipe médicale
+		lineageTag: 0e387c2f-8e15-4e04-ac2b-443cfb8906a3
+		sourceLineageTag: DirectQuery à AS – pst38.ETP infimier d'entreprise (équipe médicale)
+		dataCategory: Uncategorized
+
+	measure 'ETP infimier d''entreprise total' = EXTERNALMEASURE("ETP infimier d'entreprise total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\1 - ETP totaux
+		lineageTag: 6493b82e-23b7-4afb-aefa-04e464cd483c
+		sourceLineageTag: DirectQuery à AS – pst38.ETP infimier d'entreprise total
+		dataCategory: Uncategorized
+
+	measure 'ETP infimier total' = EXTERNALMEASURE("ETP infimier total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\1 - ETP totaux
+		lineageTag: 8d74b761-ebc1-4d00-99b8-37c99f19b6d6
+		sourceLineageTag: DirectQuery à AS – pst38.ETP infimier total
+		dataCategory: Uncategorized
+
+	measure 'ETP médecin (effectif suivi)' = EXTERNALMEASURE("ETP médecin (effectif suivi)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\3 - ETP pondérés par effectif suivi
+		lineageTag: ecd771ce-0871-401c-a40e-c436f21d77d3
+		sourceLineageTag: DirectQuery à AS – pst38.ETP médecin (effectif suivi)
+		dataCategory: Uncategorized
+
+	measure 'ETP médecin (équipe médicale)' = EXTERNALMEASURE("ETP médecin (équipe médicale)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\2 - ETP pondérés par équipe médicale
+		lineageTag: 3188fe80-ead3-4b4d-adff-6dcf87504fe4
+		sourceLineageTag: DirectQuery à AS – pst38.ETP médecin (équipe médicale)
+		dataCategory: Uncategorized
+
+	measure 'ETP médecin total' = EXTERNALMEASURE("ETP médecin total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\1 - ETP totaux
+		lineageTag: ac75eebd-b89c-410a-9112-ba4626733beb
+		sourceLineageTag: DirectQuery à AS – pst38.ETP médecin total
+		dataCategory: Uncategorized
+
+	measure 'ETP préventeur total' = EXTERNALMEASURE("ETP préventeur total", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		isHidden
+		displayFolder: Indicateurs\1 - ETP totaux
+		lineageTag: fb82ad58-4de3-4f74-bd1c-dca145931ff1
+		sourceLineageTag: DirectQuery à AS – pst38.ETP préventeur total
+		dataCategory: Uncategorized
+
+	column 'Centre convocation par défaut de l''équipe médicale'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a9c30fa6-91e2-4aa2-bd6c-af08f743566d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre convocation par défaut de l'équipe médicale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre rattachement'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: fa4701ca-6427-4156-8388-3d3255ff9a73
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Equipe médicale","TableItemName":"Secteur géographique","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Email médecin référent'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 792c0726-f16c-4f59-a5a5-e421969e4fe0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email médecin référent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Equipe médicale'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bb87e687-7924-414c-9d8d-33d0d269991f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Equipe médicale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Equipe médicale","TableItemName":"Equipe médicale (secteur et médecin référent)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column etp_infirmier_entreprise_par_effectif_suivi
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 15d08b33-1ecf-400f-9d44-7faca6176bdb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_infirmier_entreprise_par_effectif_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_infirmier_entreprise_par_secteur
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 88e84ad5-e340-4a18-b2bb-de0ea7a1a9bc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_infirmier_entreprise_par_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_infirmier_par_effectif_suivi
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 896c4b0a-54e6-49e7-bb70-4576bef8e214
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_infirmier_par_effectif_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_infirmier_par_secteur
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: fd597c16-b077-458f-8673-a971d8351bfd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_infirmier_par_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_medecin_par_effectif_suivi
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: cde3aa2e-0d76-4605-88e5-bdd53614a88c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_medecin_par_effectif_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_medecin_par_secteur
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 155386ba-8882-450e-9394-58e4483e6210
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_medecin_par_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_preventeur_total
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: b2546228-fd64-462e-9dad-ef43f79ad525
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_preventeur_total
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etp_total
+		dataType: double
+		formatString: #.0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 37c1b708-0848-4cda-a43b-51f2e9ced6c1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: etp_total
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gestionnaire administratif'
+		dataType: string
+		lineageTag: f62d5e53-4f0c-4156-9886-4c04521f4f73
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Gestionnaire administratif
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 59a16e8a-5023-4c68-9e80-8e9d8815aae1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Médecin référent'
+		dataType: string
+		lineageTag: 4e2dfbb6-48fc-4467-aef3-1bdcfc0bb303
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Médecin référent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut équipe médicale'
+		dataType: string
+		lineageTag: eb965174-2261-41f5-bfbb-bb7ce9e060d6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut équipe médicale
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: dcd2b948-cb02-49ce-94d9-13e817b29adf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Equipe médicale (secteur et médecin référent)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Equipe médicale'[Equipe médicale]),
+				"(Vide)",
+				'Equipe médicale'[Equipe médicale] IN {"Dr AMELINE – ANDRICH – MOIRANS (AMELINE Alexis)",
+					"Dr ANDRICH - MOIRANS",
+					"Dr ANGELLA - MOIRANS",
+					"Dr ANGELLA - MOIRANS (DESSALCES Florence)",
+					"Dr BONNARDEL - COLOMBE",
+					"Dr CHARMETTANT - MOIRANS",
+					"Dr CHARMETTANT - MOIRANS (ANDRICH Barbara)",
+					"Dr CHARMETTANT - MOIRANS (DESSALCES Florence)",
+					"Dr CHARMETTANT - MOIRANS (Non affecté)",
+					"Dr DESSALCES - VOIRON",
+					"Dr JALLAMION – ANDRICH – MOIRANS (JALLAMION Christophe)",
+					"Dr JALLAMION - VOIRON",
+					"Dr MARTIN – ANDRICH – MOIRANS (MARTIN Valérie)",
+					"Dr PINZARU - ANDRICH - MOIRANS  (DESSALCES Florence)",
+					"Dr PINZARU - ANDRICH - MOIRANS (PINZARU Ariadia)",
+					"Dr PINZARU – ANDRICH – MOIRANS (PINZARU Ariadia)",
+					"Dr PINZARU - CENTRE HOSPITALIER DE VOIRON",
+					"Dr PINZARU - VOIRON",
+					"Dr POREAU - LA CÔTE",
+					"Dr POREAU - LA CÔTE (POREAU Brice)",
+					"Dr Poreau - La Côte (POREAU Brice)",
+					"Dr REMP BONNARDEL - LA CÔTE",
+					"Dr REMP REMY - LA CÔTE",
+					"Dr REMY - COLOMBE",
+					"Dr REMY - PASQUIER",
+					"PCA - Dr BONNARDEL - COLOMBE"},
+				"Centre",
+				'Equipe médicale'[Equipe médicale] IN {"Dr LENCLUD - VILLEFONTAINE",
+					"Dr UNGUREANU - VERP",
+					"PCA - Dr ZAMFIRESCU A - VERP",
+					"PCA - Dr ZAMFIRESCU I - VERP",
+					"Dr AMELINE - VERP (AMELINE Alexis)",
+					"Dr AMELINE - VERP (Non affecté)",
+					"Dr ANGELLA - VERP (ANGELLA Stéphane)",
+					"Dr BODEA - VERP",
+					"Dr BOUTY - VILLEFONTAINE",
+					"Dr BOUTY - VILLEFONTAINE (ROSEAU Laure)",
+					"Dr CONIGLIARO - VILLEFONTAINE",
+					"Dr CONIGLIARO - VILLEFONTAINE (Non affecté)",
+					"Dr CREANTOR - VILLEFONTAINE",
+					"Dr GAM - VERP (GARIN Daniel)",
+					"Dr GARIN - VERP (GARIN Daniel)",
+					"Dr GARIN - VERP (Non affecté)",
+					"Dr GIFFARD-QUILLON - VERP",
+					"Dr JALLAMION - VERP (JALLAMION Christophe)",
+					"Dr JALLAMION - VERP (Non affecté)",
+					"Dr LENCLUD - VILLEFONTAINE (LENCLUD Claire)",
+					"Dr MARTIN - VERP (MARTIN Valérie)",
+					"Dr MARTIN - VERP (Non affecté)",
+					"Dr MARTOS - CREMIEU",
+					"Dr ROGES - VILLEFONTAINE (Non affecté)",
+					"Dr ROGES - VILLEFONTAINE (ROGES John)",
+					"Dr ROSEAU - VERP (ROSEAU Laure)",
+					"Dr UNGUREANU - VERP (UNGUREANU Octavian)",
+					"Dr ZAMFIRESCUA - VERP (Non affecté)",
+					"Dr ZAMFIRESCUA - VERP (ZAMFIRESCU Alexandru)",
+					"Dr ZAMFIRESCUI - VERP (Non affecté)",
+					"Dr ZAMFIRESCUI - VERP (ZAMFIRESCU Ioana)",
+					"PCA - Dr BOUTY - VERP",
+					"PCA - Dr JALLAMION - VERP",
+					"PCA - Dr MARTIN - VERP",
+					"PCA - Dr ZAMFIRESCU A - VERP (ZAMFIRESCU Alexandru)",
+					"PCA - Dr ZAMFIRESCU I - VERP (ZAMFIRESCU Ioana)"},
+				"Grand Nord",
+				'Equipe médicale'[Equipe médicale] IN {"Dr ANDRICH - LES ABRETS",
+					"Dr BRONDEX - YAGUE - BOURGOIN",
+					"Dr JOUCLARD - YAGUE - BOURGOIN",
+					"Dr ZAMFIRESCU A - YAGUE - BOURGOIN",
+					"Dr ZAMFIRESCUI - YAGUE - BOURGOIN",
+					"Dr CLAIR-BASSON - BOURGOIN",
+					"Dr CLAIR-BASSON - NEMERA",
+					"Dr CLAIR-BASSON - PATHEON",
+					"Dr GAM - LES ABRETS",
+					"PCA - Dr CLAIR-BASSON - BOURGOIN",
+					"PCA - Dr JOUCLARD - BOURGOIN",
+					"PCA - Dr ZAMFIRESCU A - BOURGOIN",
+					"PCA - Dr ZAMFIRESCUI - BOURGOIN",
+					"Dr ANDRICH - LES ABRETS (ANDRICH Barbara)",
+					"Dr BOUBAKER - LES ABRETS",
+					"Dr BRONDEX - BOURGOIN",
+					"Dr CLAIR-BASSON - BOURGOIN (CLAIR-BASSON Aurelie)",
+					"Dr CLAIR-BASSON - NEMERA  (CLAIR-BASSON Aurelie)",
+					"Dr CLAIR-BASSON - PATHEON (CLAIR-BASSON Aurelie)",
+					"Dr DESSALCES - BOURGOIN (DESSALCES Florence)",
+					"Dr DESSALCES - BOURGOIN (Non affecté)",
+					"Dr GAM - LES ABRETS (GAM Kamal)",
+					"Dr JOUCLARD - BOURGOIN",
+					"Dr MORRIER - BOURGOIN",
+					"Dr PIERRE - BOURGOIN",
+					"Dr PIERRE - MORRIER - BOURGOIN  (PIERRE Isabelle)",
+					"Dr PIERRE - YAGUE - BOURGOIN  (PIERRE Isabelle)",
+					"Dr PIERRE MIRCEA - LES ABRETS (PIERRE Isabelle)",
+					"Dr PINZARU - BOURGOIN (Non affecté)",
+					"Dr PINZARU - BOURGOIN (PINZARU Ariadia)",
+					"Dr ROGES - MORRIER - BOURGOIN  (ROGES John)",
+					"Dr UNGUREANU - BOURGOIN",
+					"Dr VANMUYSEN - LTDP",
+					"Dr YAGUE - BOURGOIN (YAGUE Séverine)",
+					"PCA - Dr BRONDEX - BOURGOIN",
+					"PCA - Dr CLAIR-BASSON - BOURGOIN (CLAIR-BASSON Aurelie)",
+					"PCA - Dr CONIGLIARO - BOURGOIN",
+					"PCA - Dr JOUCLARD - BOURGOIN  (JOUCLARD Véronique)",
+					"PCA - Dr PIERRE - LES ABRETS (PIERRE Isabelle)",
+					"PCA - Dr PINZARU - BOURGOIN",
+					"PCA - Dr POREAU - BOURGOIN",
+					"PCA - Dr ROGES - LTDP",
+					"PCA - Dr VANMUYSEN - LTDP",
+					"PCA - Dr ZAMFIRESCU A - BOURGOIN (ZAMFIRESCU Alexandru)",
+					"PCA - Dr ZAMFIRESCUI - BOURGOIN  (ZAMFIRESCU Ioana)"},
+				"Nord",
+				'Equipe médicale'[Equipe médicale] IN {"Dr FAURE - SMH",
+					"Dr ALIC - SMH",
+					"Dr BALTHAZARD - MEYLAN",
+					"Dr BIALLET - SMH",
+					"Dr BIENIEK - GENERAL ELECTRIC",
+					"Dr BIENIEK - SMH",
+					"Dr CHODJANIA - MEYLAN",
+					"Dr COMPANY - MEYLAN",
+					"Dr DOUCHANT - MEYLAN",
+					"Dr FAURE - SMH (FAURE Hugo)",
+					"Dr FERRARI - AGDUC (FERRARI Laurent)",
+					"Dr FERRARI - CLINIQUE BELLEDONNE",
+					"Dr FERRARI - CLINIQUE MUTUALISTE",
+					"Dr FERRARI - SMH",
+					"Dr GARIN - ARTELIA",
+					"Dr GARIN - ATOS",
+					"Dr MAURE - MEYLAN",
+					"Dr PAGNY - SMH",
+					"Dr PAGNY - SMH - IKEA  (PAGNY Sylvie)",
+					"Dr SHARON - SMH",
+					"Dr THULLIER - FRAMATOME",
+					"Dr THULLIER - GENERAL ELECTRIC (THULLIER Philippe)",
+					"Dr THULLIER - MEYLAN",
+					"Dr VAILLANT - SMH"},
+				"Sud-Est",
+				'Equipe médicale'[Equipe médicale] IN {"Dr GARIN - VARCES",
+					"Dr HUE - BO - AH",
+					"Dr HUE - GRENOBLE",
+					"Dr LIEUTAUD - 2A",
+					"Dr AMELINE - GRENOBLE",
+					"Dr CONIGLIARO - PDC",
+					"Dr GARIN - BO (GARIN Daniel)",
+					"Dr GARIN - VARCES (GARIN Daniel)",
+					"Dr GASPARINI - ECHIROLLES",
+					"Dr HUE - BO - AH (HUE Bianca Monica)",
+					"Dr HUE - GRENOBLE (HUE Bianca Monica)",
+					"Dr JAUFFRET - ECHIROLLES (JAUFFRET Bernard)",
+					"Dr LIEUTAUD - 2A (GARIN Daniel)",
+					"Dr LIEUTAUD - 2A (LIEUTAUD Thomas)",
+					"Dr LIEUTAUD - FERROGLOBE",
+					"Dr LIEUTAUD - GRENOBLE",
+					"Dr MALONE - GRENOBLE",
+					"Dr MALONE - LA MURE",
+					"Dr MARTIN - CLINIQUE DES CEDRES",
+					"Dr MARTIN - CLINIQUE DES CEDRES (ROGES John)",
+					"Dr MARTIN - ECHIROLLES",
+					"Dr PAUTASSO - OISANS",
+					"Dr ROGES - PDC",
+					"Dr ZAMFIRESCUA - GRENOBLE",
+					"Dr ZAMFIRESCUI - GRENOBLE",
+					"PCA - Dr BIENIEK - AH (BIENIEK Virginie)",
+					"PCA - Dr LIEUTAUD - BO - AH  (CONIGLIARO Silvio)",
+					"PCA - Dr LIEUTAUD - BO - AH  (LIEUTAUD Thomas)"},
+				"Sud-Ouest",
+				"Non affecté "
+			)
+		lineageTag: 5b073a62-4f7d-40cc-a1ef-2642ff8bee21
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Equipe médicale"
+				          }
+				        },
+				        "Property": "Equipe médicale"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"e","Entity":"Equipe médicale"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Equipe médicale"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Centre","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr AMELINE – ANDRICH – MOIRANS (AMELINE Alexis)'"}}],[{"Literal":{"Value":"'Dr ANDRICH - MOIRANS'"}}],[{"Literal":{"Value":"'Dr ANGELLA - MOIRANS'"}}],[{"Literal":{"Value":"'Dr ANGELLA - MOIRANS (DESSALCES Florence)'"}}],[{"Literal":{"Value":"'Dr BONNARDEL - COLOMBE'"}}],[{"Literal":{"Value":"'Dr CHARMETTANT - MOIRANS'"}}],[{"Literal":{"Value":"'Dr CHARMETTANT - MOIRANS (ANDRICH Barbara)'"}}],[{"Literal":{"Value":"'Dr CHARMETTANT - MOIRANS (DESSALCES Florence)'"}}],[{"Literal":{"Value":"'Dr CHARMETTANT - MOIRANS (Non affecté)'"}}],[{"Literal":{"Value":"'Dr DESSALCES - VOIRON'"}}],[{"Literal":{"Value":"'Dr JALLAMION – ANDRICH – MOIRANS (JALLAMION Christophe)'"}}],[{"Literal":{"Value":"'Dr JALLAMION - VOIRON'"}}],[{"Literal":{"Value":"'Dr MARTIN – ANDRICH – MOIRANS (MARTIN Valérie)'"}}],[{"Literal":{"Value":"'Dr PINZARU - ANDRICH - MOIRANS  (DESSALCES Florence)'"}}],[{"Literal":{"Value":"'Dr PINZARU - ANDRICH - MOIRANS (PINZARU Ariadia)'"}}],[{"Literal":{"Value":"'Dr PINZARU – ANDRICH – MOIRANS (PINZARU Ariadia)'"}}],[{"Literal":{"Value":"'Dr PINZARU - CENTRE HOSPITALIER DE VOIRON'"}}],[{"Literal":{"Value":"'Dr PINZARU - VOIRON'"}}],[{"Literal":{"Value":"'Dr POREAU - LA CÔTE'"}}],[{"Literal":{"Value":"'Dr POREAU - LA CÔTE (POREAU Brice)'"}}],[{"Literal":{"Value":"'Dr Poreau - La Côte (POREAU Brice)'"}}],[{"Literal":{"Value":"'Dr REMP BONNARDEL - LA CÔTE'"}}],[{"Literal":{"Value":"'Dr REMP REMY - LA CÔTE'"}}],[{"Literal":{"Value":"'Dr REMY - COLOMBE'"}}],[{"Literal":{"Value":"'Dr REMY - PASQUIER'"}}],[{"Literal":{"Value":"'PCA - Dr BONNARDEL - COLOMBE'"}}]]}}},{"DisplayName":"Grand Nord","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr LENCLUD - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr UNGUREANU - VERP'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCU A - VERP'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCU I - VERP'"}}],[{"Literal":{"Value":"'Dr AMELINE - VERP (AMELINE Alexis)'"}}],[{"Literal":{"Value":"'Dr AMELINE - VERP (Non affecté)'"}}],[{"Literal":{"Value":"'Dr ANGELLA - VERP (ANGELLA Stéphane)'"}}],[{"Literal":{"Value":"'Dr BODEA - VERP'"}}],[{"Literal":{"Value":"'Dr BOUTY - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr BOUTY - VILLEFONTAINE (ROSEAU Laure)'"}}],[{"Literal":{"Value":"'Dr CONIGLIARO - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr CONIGLIARO - VILLEFONTAINE (Non affecté)'"}}],[{"Literal":{"Value":"'Dr CREANTOR - VILLEFONTAINE'"}}],[{"Literal":{"Value":"'Dr GAM - VERP (GARIN Daniel)'"}}],[{"Literal":{"Value":"'Dr GARIN - VERP (GARIN Daniel)'"}}],[{"Literal":{"Value":"'Dr GARIN - VERP (Non affecté)'"}}],[{"Literal":{"Value":"'Dr GIFFARD-QUILLON - VERP'"}}],[{"Literal":{"Value":"'Dr JALLAMION - VERP (JALLAMION Christophe)'"}}],[{"Literal":{"Value":"'Dr JALLAMION - VERP (Non affecté)'"}}],[{"Literal":{"Value":"'Dr LENCLUD - VILLEFONTAINE (LENCLUD Claire)'"}}],[{"Literal":{"Value":"'Dr MARTIN - VERP (MARTIN Valérie)'"}}],[{"Literal":{"Value":"'Dr MARTIN - VERP (Non affecté)'"}}],[{"Literal":{"Value":"'Dr MARTOS - CREMIEU'"}}],[{"Literal":{"Value":"'Dr ROGES - VILLEFONTAINE (Non affecté)'"}}],[{"Literal":{"Value":"'Dr ROGES - VILLEFONTAINE (ROGES John)'"}}],[{"Literal":{"Value":"'Dr ROSEAU - VERP (ROSEAU Laure)'"}}],[{"Literal":{"Value":"'Dr UNGUREANU - VERP (UNGUREANU Octavian)'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUA - VERP (Non affecté)'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUA - VERP (ZAMFIRESCU Alexandru)'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUI - VERP (Non affecté)'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUI - VERP (ZAMFIRESCU Ioana)'"}}],[{"Literal":{"Value":"'PCA - Dr BOUTY - VERP'"}}],[{"Literal":{"Value":"'PCA - Dr JALLAMION - VERP'"}}],[{"Literal":{"Value":"'PCA - Dr MARTIN - VERP'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCU A - VERP (ZAMFIRESCU Alexandru)'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCU I - VERP (ZAMFIRESCU Ioana)'"}}]]}}},{"DisplayName":"Nord","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr ANDRICH - LES ABRETS'"}}],[{"Literal":{"Value":"'Dr BRONDEX - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr JOUCLARD - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCU A - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUI - YAGUE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - NEMERA'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - PATHEON'"}}],[{"Literal":{"Value":"'Dr GAM - LES ABRETS'"}}],[{"Literal":{"Value":"'PCA - Dr CLAIR-BASSON - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr JOUCLARD - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCU A - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCUI - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr ANDRICH - LES ABRETS (ANDRICH Barbara)'"}}],[{"Literal":{"Value":"'Dr BOUBAKER - LES ABRETS'"}}],[{"Literal":{"Value":"'Dr BRONDEX - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - BOURGOIN (CLAIR-BASSON Aurelie)'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - NEMERA  (CLAIR-BASSON Aurelie)'"}}],[{"Literal":{"Value":"'Dr CLAIR-BASSON - PATHEON (CLAIR-BASSON Aurelie)'"}}],[{"Literal":{"Value":"'Dr DESSALCES - BOURGOIN (DESSALCES Florence)'"}}],[{"Literal":{"Value":"'Dr DESSALCES - BOURGOIN (Non affecté)'"}}],[{"Literal":{"Value":"'Dr GAM - LES ABRETS (GAM Kamal)'"}}],[{"Literal":{"Value":"'Dr JOUCLARD - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr MORRIER - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr PIERRE - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr PIERRE - MORRIER - BOURGOIN  (PIERRE Isabelle)'"}}],[{"Literal":{"Value":"'Dr PIERRE - YAGUE - BOURGOIN  (PIERRE Isabelle)'"}}],[{"Literal":{"Value":"'Dr PIERRE MIRCEA - LES ABRETS (PIERRE Isabelle)'"}}],[{"Literal":{"Value":"'Dr PINZARU - BOURGOIN (Non affecté)'"}}],[{"Literal":{"Value":"'Dr PINZARU - BOURGOIN (PINZARU Ariadia)'"}}],[{"Literal":{"Value":"'Dr ROGES - MORRIER - BOURGOIN  (ROGES John)'"}}],[{"Literal":{"Value":"'Dr UNGUREANU - BOURGOIN'"}}],[{"Literal":{"Value":"'Dr VANMUYSEN - LTDP'"}}],[{"Literal":{"Value":"'Dr YAGUE - BOURGOIN (YAGUE Séverine)'"}}],[{"Literal":{"Value":"'PCA - Dr BRONDEX - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr CLAIR-BASSON - BOURGOIN (CLAIR-BASSON Aurelie)'"}}],[{"Literal":{"Value":"'PCA - Dr CONIGLIARO - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr JOUCLARD - BOURGOIN  (JOUCLARD Véronique)'"}}],[{"Literal":{"Value":"'PCA - Dr PIERRE - LES ABRETS (PIERRE Isabelle)'"}}],[{"Literal":{"Value":"'PCA - Dr PINZARU - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr POREAU - BOURGOIN'"}}],[{"Literal":{"Value":"'PCA - Dr ROGES - LTDP'"}}],[{"Literal":{"Value":"'PCA - Dr VANMUYSEN - LTDP'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCU A - BOURGOIN (ZAMFIRESCU Alexandru)'"}}],[{"Literal":{"Value":"'PCA - Dr ZAMFIRESCUI - BOURGOIN  (ZAMFIRESCU Ioana)'"}}]]}}},{"DisplayName":"Sud-Est","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr FAURE - SMH'"}}],[{"Literal":{"Value":"'Dr ALIC - SMH'"}}],[{"Literal":{"Value":"'Dr BALTHAZARD - MEYLAN'"}}],[{"Literal":{"Value":"'Dr BIALLET - SMH'"}}],[{"Literal":{"Value":"'Dr BIENIEK - GENERAL ELECTRIC'"}}],[{"Literal":{"Value":"'Dr BIENIEK - SMH'"}}],[{"Literal":{"Value":"'Dr CHODJANIA - MEYLAN'"}}],[{"Literal":{"Value":"'Dr COMPANY - MEYLAN'"}}],[{"Literal":{"Value":"'Dr DOUCHANT - MEYLAN'"}}],[{"Literal":{"Value":"'Dr FAURE - SMH (FAURE Hugo)'"}}],[{"Literal":{"Value":"'Dr FERRARI - AGDUC (FERRARI Laurent)'"}}],[{"Literal":{"Value":"'Dr FERRARI - CLINIQUE BELLEDONNE'"}}],[{"Literal":{"Value":"'Dr FERRARI - CLINIQUE MUTUALISTE'"}}],[{"Literal":{"Value":"'Dr FERRARI - SMH'"}}],[{"Literal":{"Value":"'Dr GARIN - ARTELIA'"}}],[{"Literal":{"Value":"'Dr GARIN - ATOS'"}}],[{"Literal":{"Value":"'Dr MAURE - MEYLAN'"}}],[{"Literal":{"Value":"'Dr PAGNY - SMH'"}}],[{"Literal":{"Value":"'Dr PAGNY - SMH - IKEA  (PAGNY Sylvie)'"}}],[{"Literal":{"Value":"'Dr SHARON - SMH'"}}],[{"Literal":{"Value":"'Dr THULLIER - FRAMATOME'"}}],[{"Literal":{"Value":"'Dr THULLIER - GENERAL ELECTRIC (THULLIER Philippe)'"}}],[{"Literal":{"Value":"'Dr THULLIER - MEYLAN'"}}],[{"Literal":{"Value":"'Dr VAILLANT - SMH'"}}]]}}},{"DisplayName":"Sud-Ouest","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Equipe médicale"}}],"Values":[[{"Literal":{"Value":"'Dr GARIN - VARCES'"}}],[{"Literal":{"Value":"'Dr HUE - BO - AH'"}}],[{"Literal":{"Value":"'Dr HUE - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - 2A'"}}],[{"Literal":{"Value":"'Dr AMELINE - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr CONIGLIARO - PDC'"}}],[{"Literal":{"Value":"'Dr GARIN - BO (GARIN Daniel)'"}}],[{"Literal":{"Value":"'Dr GARIN - VARCES (GARIN Daniel)'"}}],[{"Literal":{"Value":"'Dr GASPARINI - ECHIROLLES'"}}],[{"Literal":{"Value":"'Dr HUE - BO - AH (HUE Bianca Monica)'"}}],[{"Literal":{"Value":"'Dr HUE - GRENOBLE (HUE Bianca Monica)'"}}],[{"Literal":{"Value":"'Dr JAUFFRET - ECHIROLLES (JAUFFRET Bernard)'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - 2A (GARIN Daniel)'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - 2A (LIEUTAUD Thomas)'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - FERROGLOBE'"}}],[{"Literal":{"Value":"'Dr LIEUTAUD - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr MALONE - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr MALONE - LA MURE'"}}],[{"Literal":{"Value":"'Dr MARTIN - CLINIQUE DES CEDRES'"}}],[{"Literal":{"Value":"'Dr MARTIN - CLINIQUE DES CEDRES (ROGES John)'"}}],[{"Literal":{"Value":"'Dr MARTIN - ECHIROLLES'"}}],[{"Literal":{"Value":"'Dr PAUTASSO - OISANS'"}}],[{"Literal":{"Value":"'Dr ROGES - PDC'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUA - GRENOBLE'"}}],[{"Literal":{"Value":"'Dr ZAMFIRESCUI - GRENOBLE'"}}],[{"Literal":{"Value":"'PCA - Dr BIENIEK - AH (BIENIEK Virginie)'"}}],[{"Literal":{"Value":"'PCA - Dr LIEUTAUD - BO - AH  (CONIGLIARO Silvio)'"}}],[{"Literal":{"Value":"'PCA - Dr LIEUTAUD - BO - AH  (LIEUTAUD Thomas)'"}}]]}}},{"DisplayName":"Non affecté "}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secteur géographique' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Equipe médicale'[Centre rattachement]),
+				"(Vide)",
+				'Equipe médicale'[Centre rattachement] IN {"COLOMBE",
+					"LA COTE ST ANDRE",
+					"MOIRANS",
+					"VOIRON"},
+				"Centre",
+				'Equipe médicale'[Centre rattachement] IN {"CRÉMIEU",
+					"LA VERPILLIÈRE",
+					"VILLEFONTAINE"},
+				"Grand Nord",
+				'Equipe médicale'[Centre rattachement] IN {"BOURGOIN-JALLIEU",
+					"LA TOUR DU PIN",
+					"LES ABRETS"},
+				"Nord",
+				'Equipe médicale'[Centre rattachement] IN {"MEYLAN",
+					"ST MARTIN D'HERES"},
+				"Sud Est",
+				'Equipe médicale'[Centre rattachement] IN {"ALPE D'HUEZ",
+					"BOURG D'OISANS",
+					"ECHIROLLES",
+					"GRENOBLE",
+					"LA MURE",
+					"LES DEUX ALPES",
+					"PONT DE CLAIX"},
+				"Sud Ouest",
+				"Autre"
+			)
+		lineageTag: a2b7dd3b-0342-4fd6-8eac-daf7a211f736
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Equipe médicale"
+				          }
+				        },
+				        "Property": "Centre rattachement"
+				      }
+				    }
+				  ]
+				}
+
+		changedProperty = Name
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"e","Entity":"Equipe médicale"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Centre rattachement"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Centre","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Centre rattachement"}}],"Values":[[{"Literal":{"Value":"'COLOMBE'"}}],[{"Literal":{"Value":"'LA COTE ST ANDRE'"}}],[{"Literal":{"Value":"'MOIRANS'"}}],[{"Literal":{"Value":"'VOIRON'"}}]]}}},{"DisplayName":"Grand Nord","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Centre rattachement"}}],"Values":[[{"Literal":{"Value":"'CRÉMIEU'"}}],[{"Literal":{"Value":"'LA VERPILLIÈRE'"}}],[{"Literal":{"Value":"'VILLEFONTAINE'"}}]]}}},{"DisplayName":"Nord","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Centre rattachement"}}],"Values":[[{"Literal":{"Value":"'BOURGOIN-JALLIEU'"}}],[{"Literal":{"Value":"'LA TOUR DU PIN'"}}],[{"Literal":{"Value":"'LES ABRETS'"}}]]}}},{"DisplayName":"Sud Est","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Centre rattachement"}}],"Values":[[{"Literal":{"Value":"'MEYLAN'"}}],[{"Literal":{"Value":"'ST MARTIN D''HERES'"}}]]}}},{"DisplayName":"Sud Ouest","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Centre rattachement"}}],"Values":[[{"Literal":{"Value":"'ALPE D''HUEZ'"}}],[{"Literal":{"Value":"'BOURG D''OISANS'"}}],[{"Literal":{"Value":"'ECHIROLLES'"}}],[{"Literal":{"Value":"'GRENOBLE'"}}],[{"Literal":{"Value":"'LA MURE'"}}],[{"Literal":{"Value":"'LES DEUX ALPES'"}}],[{"Literal":{"Value":"'PONT DE CLAIX'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie équipe médicale'
+		lineageTag: 44d391a0-44d3-4463-bcd8-a8737876d3f9
+		sourceLineageTag: Hiérarchie équipe médicale
+
+		level 'Zone géographique'
+			lineageTag: bf2f1374-25e4-46d8-88aa-acf03202bc6a
+			column: 'Zone géographique'
+
+		level 'Centre rattachement'
+			lineageTag: ba8cb8c3-9cdc-40f2-9035-5f80d0a521e8
+			column: 'Centre rattachement'
+
+		level 'Centre convocation par défaut de l''équipe médicale'
+			lineageTag: 423ddc7c-3fd2-416e-93b4-7e525c48c7de
+			column: 'Centre convocation par défaut de l''équipe médicale'
+
+		level 'Equipe médicale'
+			lineageTag: 59bb0a84-f03c-41fc-a6e9-ac24f5e35847
+			column: 'Equipe médicale'
+
+	hierarchy 'Hiérarchie gestionnaire administratif'
+		lineageTag: 65c32939-2627-4ff6-aee2-0d298d6cdd34
+		sourceLineageTag: Hiérarchie gestionnaire administratif
+
+		level 'Gestionnaire administratif'
+			lineageTag: f8d15faa-adb4-443d-a9f6-806a0cd48404
+			column: 'Gestionnaire administratif'
+
+		level 'Equipe médicale'
+			lineageTag: 86f8f721-5bb5-4a1c-ad3f-50a373c439ca
+			column: 'Equipe médicale'
+
+	hierarchy 'Hiérarchie médecin référent'
+		lineageTag: d753dedb-29bc-4d58-ac34-cb6086497301
+		sourceLineageTag: Hiérarchie médecin référent
+
+		level 'Médecin référent'
+			lineageTag: 01fc3e8f-8a2a-45ff-b8a1-7802411b6b3f
+			column: 'Médecin référent'
+
+		level 'Equipe médicale'
+			lineageTag: 887b8e63-3362-4c8e-b5ce-030407764ea6
+			column: 'Equipe médicale'
+
+	partition 'Equipe médicale' = entity
+		mode: directQuery
+		source
+			entityName: Equipe médicale
+			expressionSource: 'DirectQuery à AS – pst38'
+

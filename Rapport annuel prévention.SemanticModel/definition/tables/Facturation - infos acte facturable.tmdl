@@ -1,0 +1,58 @@
+table 'Facturation - infos acte facturable'
+	lineageTag: 80255d68-575e-4c08-9fe3-92d085892ba4
+
+	column 'Origine acte facturable'
+		dataType: string
+		lineageTag: 4580e738-0ae1-44ad-ab8b-4bdb14464581
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine acte facturable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut acte facturable'
+		dataType: string
+		lineageTag: 49f23979-27b0-4846-bf6a-9ff34a28160c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut acte facturable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type document'
+		dataType: string
+		lineageTag: 45546c9f-9bd3-4d09-8af5-d5debf74ebd7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type document
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_facturation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes intilisées
+		lineageTag: c40feac8-ab4e-4120-9a5b-8e2ad4f7b0d4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code analytique'
+		dataType: string
+		lineageTag: d3977210-d4dd-4606-a71c-b34510170d14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code analytique
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Facturation - infos acte facturable' = entity
+		mode: directQuery
+		source
+			entityName: Facturation - infos acte facturable
+			expressionSource: 'DirectQuery à AS – pst38'
+

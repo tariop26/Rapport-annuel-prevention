@@ -1,0 +1,82 @@
+table 'RDV/visite - heure début entretien théorique'
+	lineageTag: a2d6b768-75db-4196-a6b0-c00363fa9ff1
+
+	column 'Heure début entretien théorique'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7694492e-5c71-4c62-a54b-b3404cf3dd95
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure début entretien théorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte début entretien théorique'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 118e5450-6095-4234-a872-76c3350712d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte début entretien théorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column heure_ouvree
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7a855c7c-42d2-4624-a90a-843dc5b9a6a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: heure_ouvree
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3dde3856-807f-42e6-b288-c1c1634a5e3f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column minute
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: daba4b5e-e458-4bf3-b6d6-09a12f4c2338
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: minute
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure début entretien théorique'
+		lineageTag: 8dea2194-3a8d-43d6-b950-5b48f61fb69f
+		sourceLineageTag: Hiérarchie heure début entretien théorique
+
+		level 'Heure début entretien théorique'
+			lineageTag: 57d310ac-d795-4afb-8da5-a71c9dc6d35f
+			column: 'Heure début entretien théorique'
+
+		level 'Heure exacte début entretien théorique'
+			lineageTag: 09cf76af-3936-4a1e-abe4-394e940c0ab6
+			column: 'Heure exacte début entretien théorique'
+
+	partition 'RDV/visite - heure début entretien théorique' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - heure début entretien théorique
+			expressionSource: 'DirectQuery à AS – pst38'
+

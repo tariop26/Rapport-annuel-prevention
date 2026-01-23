@@ -1,0 +1,199 @@
+table DPAE
+	lineageTag: b7f66bd9-cac4-4e2b-a01a-74ed9b21aa54
+
+	measure '# entreprises concernées (DPAE)' = EXTERNALMEASURE("# entreprises concernées (DPAE)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: bfa270bf-a65c-4044-8d22-d8b612b4ffaa
+		sourceLineageTag: DirectQuery à AS – pst38.# entreprises concernées (DPAE)
+		dataCategory: Uncategorized
+
+	measure '# salariés à traiter' = EXTERNALMEASURE("# salariés à traiter", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 8555a9d5-c0e8-4e15-9ce8-a20fc8165abf
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés à traiter
+		dataCategory: Uncategorized
+
+	measure '# salariés issus DPAE' = EXTERNALMEASURE("# salariés issus DPAE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: c59de178-06a1-4f8c-9de8-c2e77febcdec
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés issus DPAE
+		dataCategory: Uncategorized
+
+	measure '# salariés traités archivés' = EXTERNALMEASURE("# salariés traités archivés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 3d0cc30d-a6c9-43ce-b7c6-351bc9b793f7
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés traités archivés
+		dataCategory: Uncategorized
+
+	measure '# salariés traités créés' = EXTERNALMEASURE("# salariés traités créés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 803056f1-8108-40cb-9804-080971c2d49f
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés traités créés
+		dataCategory: Uncategorized
+
+	measure '# salariés traités' = EXTERNALMEASURE("# salariés traités", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: dbb95be6-702e-482e-b2bd-e454c3216710
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés traités
+		dataCategory: Uncategorized
+
+	measure '% salariés à traiter' = EXTERNALMEASURE("% salariés à traiter", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs
+		lineageTag: c369cd1b-f65e-424f-a552-98d6bad7c8e8
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés à traiter
+		dataCategory: Uncategorized
+
+	measure '% salariés traités archivés' = EXTERNALMEASURE("% salariés traités archivés", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs
+		lineageTag: 634d58d5-0fc9-41e6-b62a-77383c1fe365
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés traités archivés
+		dataCategory: Uncategorized
+
+	measure '% salariés traités créés' = EXTERNALMEASURE("% salariés traités créés", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs
+		lineageTag: 9d7b14ee-0ef2-4255-818d-abb47b1f8f48
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés traités créés
+		dataCategory: Uncategorized
+
+	measure '% salariés traités' = EXTERNALMEASURE("% salariés traités", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs
+		lineageTag: b343bab8-8e83-4109-9662-01c982a599c4
+		sourceLineageTag: DirectQuery à AS – pst38.% salariés traités
+		dataCategory: Uncategorized
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 97326a01-38db-46bd-b1cd-620a1d6fac79
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_import_dpae
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5079cb4b-d564-4c6a-99d2-ddccbdedf213
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_import_dpae
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise_dpae
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d91a88ab-0285-4a31-942b-7b7c316f997d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise_dpae
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_flux_entreprise_dpae
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e589ee1f-7270-4264-8a80-5a748aa682da
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_flux_entreprise_dpae
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5c46d5b2-a74c-4cae-a27d-589f00c51c4c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_a_traiter
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 251f656b-0c3a-4a7a-bd71-3d4654dc9aaf
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_a_traiter
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_entrant
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ecc2cdd9-8a2b-4812-bde3-08339bba51ea
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_entrant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_traite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1587ee89-4e07-4965-be0b-65409d40548d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_traite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_traite_archive
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9f668795-8a2c-4a7a-b2b9-46ec41a6be51
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_traite_archive
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_traite_cree
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bd2dbe8b-223c-48a0-a79c-973f143aae35
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_traite_cree
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DPAE = entity
+		mode: directQuery
+		source
+			entityName: DPAE
+			expressionSource: 'DirectQuery à AS – pst38'
+

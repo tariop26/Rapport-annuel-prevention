@@ -1,0 +1,130 @@
+table 'RDV/visite - date RDV'
+	lineageTag: d45c2325-1360-4230-a591-3949841846d3
+
+	column Année
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 680583ee-b871-48c1-bdcc-6a0a51193d5b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6abdfbec-3c7d-49f7-b066-22a9e13c0881
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = FormatString
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7814d1e5-828f-449c-b698-647e97bf98f9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jour
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: c813a31f-c62f-4e58-ab09-80c087959d4a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul'
+		dataType: string
+		lineageTag: 737daf49-e2d4-4601-96dd-9224bf9df01d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul
+		sortByColumn: 'Numéro mois'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mois
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7f4654e8-6381-4dd6-a245-ef629325b9bb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro mois'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e3ecd861-17d3-40b5-a5ab-bd0b8822ddf7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Numéro mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 36f55c7b-0481-4b87-b899-1d501022c666
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date RDV'
+		lineageTag: 56f015fc-465e-41a4-a146-e06fe8e58eae
+		sourceLineageTag: Hiérarchie date RDV
+
+		level 'Année RDV'
+			lineageTag: 743eb259-2ca5-417f-8d27-9843f8955d79
+			column: Année
+
+		level 'Mois RDV'
+			lineageTag: cc307ae7-7acc-43a8-a1d1-0d30a2a455be
+			column: Mois
+
+		level 'Semaine RDV'
+			lineageTag: f37d5d15-c8bd-4bef-a890-a625d7f1d1c2
+			column: Semaine
+
+		level 'Date RDV'
+			lineageTag: a89626c3-c779-47e1-85a1-423c27c6dd53
+			column: Date
+
+	partition 'RDV/visite - date RDV' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - date RDV
+			expressionSource: 'DirectQuery à AS – pst38'
+

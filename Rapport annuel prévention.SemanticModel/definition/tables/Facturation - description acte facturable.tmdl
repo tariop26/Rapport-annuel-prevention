@@ -1,0 +1,40 @@
+table 'Facturation - description acte facturable'
+	lineageTag: ca3e23b7-c0d9-47e7-b6eb-1befce18860c
+
+	column id_description_acte_facturable
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisés
+		lineageTag: c587c05c-f1dc-4072-af84-9496c747c00a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_description_acte_facturable
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Libellé acte facturable'
+		dataType: string
+		lineageTag: 910e581d-344a-40e1-aa3b-840a8be009e1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Libellé acte facturable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Référence facture'
+		dataType: string
+		lineageTag: 5fca8b73-9eda-4875-947c-7d5b1bd56c43
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Référence facture
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Facturation - description acte facturable' = entity
+		mode: directQuery
+		source
+			entityName: Facturation - description acte facturable
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,79 @@
+table 'Examen complémentaire - réalisateur'
+	lineageTag: ed7108ad-7974-4f81-9c0d-35ead97e53a3
+
+	column 'Email réalisateur examen'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d89d9eb2-e367-40f6-8477-e8a0f4b111b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email réalisateur examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fonction réalisateur examen'
+		dataType: string
+		lineageTag: b29afa2b-9d0d-41cf-aaf6-a9a46a1eea33
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction réalisateur examen
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_realisateur_examen
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3f02b7fd-ad2d-419a-945a-22860793a551
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_realisateur_examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur examen'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7cebf75a-adf2-45c9-8956-7f89dffcb837
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom réalisateur examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle réalisateur examen'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 22828188-f908-4c41-9b96-7db2857f5094
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle réalisateur examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie réalisateur examen'
+		lineageTag: e3489780-05a4-4c83-8395-1f1596f9c387
+		sourceLineageTag: Hiérarchie réalisateur examen
+
+		level 'Rôle réalisateur examen'
+			lineageTag: a144114f-fcef-40d1-9eec-8433eb12d402
+			column: 'Rôle réalisateur examen'
+
+		level 'Nom réalisateur examen'
+			lineageTag: 329df0f3-48e8-49fa-b24f-04ea646a791c
+			column: 'Nom réalisateur examen'
+
+	partition 'Examen complémentaire - réalisateur' = entity
+		mode: directQuery
+		source
+			entityName: Examen complémentaire - réalisateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

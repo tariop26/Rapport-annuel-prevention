@@ -1,0 +1,106 @@
+table 'Visite - date archivage'
+	lineageTag: adabfece-92b6-442e-ac16-bcbf06ceabd8
+
+	column 'Année archivage'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6d57cdb8-add4-40b3-b249-dd50de4ac11d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date archivage'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: ccb64686-17a5-445c-8d35-a59446e36c25
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date archivage
+		sortByColumn: id_date_archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_archivage
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: ffd39702-cddb-44f2-b683-54540cbd79a1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour archivage'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 64d0c039-6e73-42ff-ad29-ca099c614d4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour archivage
+		sortByColumn: id_date_archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois archivage'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0074975-09b5-45a4-a6be-de060b94645b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine archivage'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 193d7c10-a1d9-42de-9da9-1d2cb42ed219
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date archivage'
+		lineageTag: d758a457-0fac-4bca-8543-43d28dc60da9
+		sourceLineageTag: Hiérarchie date archivage
+
+		level 'Année archivage'
+			lineageTag: 5e3e73ce-d1ec-4d3b-b4ea-69fded09dc51
+			column: 'Année archivage'
+
+		level 'Mois archivage'
+			lineageTag: eca1695a-feeb-45bd-929e-90e2be6cbcba
+			column: 'Mois archivage'
+
+		level 'Semaine archivage'
+			lineageTag: 55c52181-494b-4a74-a7c2-8defd6cac51b
+			column: 'Semaine archivage'
+
+		level 'Date archivage'
+			lineageTag: 410234fd-2d43-479f-ac11-8334c636bbd4
+			column: 'Date archivage'
+
+	partition 'Visite - date archivage' = entity
+		mode: directQuery
+		source
+			entityName: Visite - date archivage
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,74 @@
+table 'Demande consultation spécialisée - validateur'
+	lineageTag: 48ba0e62-bdfc-4c94-8b16-0bdbd21f2413
+
+	column id_validateur_demande_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c775418e-9760-400d-870e-480fc4132b27
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_validateur_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom validateur demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ef267c56-9b1b-48aa-aa86-5981865432e3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom validateur demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil validateur demande visite détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 60472710-a1d6-4c1a-8677-6580c629093f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil validateur demande visite détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil validateur demande visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 091bc132-f18d-4003-b914-153dddd624e8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil validateur demande visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie validateur demande visite'
+		lineageTag: dfa67d82-46c1-4378-ae39-f213464da721
+		sourceLineageTag: Hiérarchie validateur demande visite
+
+		level 'Profil validateur demande visite'
+			lineageTag: 0b56c27d-c5ac-4eaa-a360-78806a0e484e
+			column: 'Profil validateur demande visite'
+
+		level 'Profil validateur demande visite détaillé'
+			lineageTag: 6c09064f-b369-4f3a-8b4e-1c65e7a9cb06
+			column: 'Profil validateur demande visite détaillé'
+
+		level 'Nom validateur demande visite'
+			lineageTag: d5bf4397-7a5f-4a5d-8e04-bc0e24d3bb78
+			column: 'Nom validateur demande visite'
+
+	partition 'Demande consultation spécialisée - validateur' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée - validateur
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,293 @@
+table Saisonniers
+	lineageTag: 33c447af-ad11-45b3-ae2a-c3aa8ecb048a
+
+	measure '# saisonniers suivis au moins 1 jour sur la période' = EXTERNALMEASURE("# saisonniers suivis au moins 1 jour sur la période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 6f2d8f31-c84b-42c0-935a-107d10bc3d36
+		sourceLineageTag: DirectQuery à AS – pst38.# saisonniers suivis au moins 1 jour sur la période
+		dataCategory: Uncategorized
+
+	measure '# saisonniers suivis en début de période' = EXTERNALMEASURE("# saisonniers suivis en début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 7d50f2f3-dc2b-493d-8a38-66c512455ab6
+		sourceLineageTag: DirectQuery à AS – pst38.# saisonniers suivis en début de période
+		dataCategory: Uncategorized
+
+	measure '# saisonniers suivis en fin de période' = EXTERNALMEASURE("# saisonniers suivis en fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 8641c3c0-f9a0-4774-96bc-4244f7f84b65
+		sourceLineageTag: DirectQuery à AS – pst38.# saisonniers suivis en fin de période
+		dataCategory: Uncategorized
+
+	column 'Catégorie durée contrat'
+		dataType: string
+		lineageTag: 095341c4-9555-41f8-8a2d-311391a3b523
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie durée contrat
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_debut
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		displayFolder: Colonnes inutilisées
+		lineageTag: c16a8976-152e-400c-a546-514f95ee9e37
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_debut
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_debut_contrat
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: fa30e642-086c-480b-aa66-71490b6c57c5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_debut_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_fin
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		displayFolder: Colonnes inutilisées
+		lineageTag: 77671263-91cc-45cc-97bd-a4214647faf5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_fin
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_fin_contrat
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 68ab2ae3-15d5-4403-a020-b2730bf86712
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_fin_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column duree_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a541ff15-77e2-4ae2-982a-e889cf69ea8d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_derniere_visite_reglementaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3ba517c8-198a-4d98-aa5b-9afe85061b4a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_date_derniere_visite_reglementaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_rdv_reglementaire_saison
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c805c2cd-6d20-4e85-84ba-86b860553182
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_date_rdv_reglementaire_saison
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3ff0d919-d2ba-4620-bcaf-dbc14a1da049
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_personne
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9f3d1e26-3d9b-4985-8d56-b4e209c901dd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fa28801e-2d9f-4dff-a55f-68f74ed8707b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_saisonnier_fige
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f71e06a8-3ebb-406c-a53d-47f5cfbfddd1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_saisonnier_fige
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ae65b45b-c479-4043-a2ef-294cb9ea2ba7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 06a14b53-f893-4ce2-85e1-1ca284fe2d16
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_derniere_visite_reglementaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f00a8a36-832c-48ab-a160-c3af26e09d9e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_type_derniere_visite_reglementaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6a6c11be-ce3f-4e30-a804-4caaefeff190
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_reglementaire_saison
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 636bb9d9-aea0-47df-8f26-f1482d59a8e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_reglementaire_saison
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_derniere_visite_reglementaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 82c9df15-d893-4827-8888-3192d62786f7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_derniere_visite_reglementaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_reglementaire_saison
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ad7ec84a-daaf-4731-bec5-c2c945b26ef5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_reglementaire_saison
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_reglementaire_saison_honore
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 066dd1b1-80fc-4bc3-9ab0-0d79055766d7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_reglementaire_saison_honore
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column saisonnier_suivi_actuellement
+		dataType: boolean
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2839e58b-e565-4ade-a827-0c49ea4e9482
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: saisonnier_suivi_actuellement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: eba33c84-ccf6-476d-8f9f-f7efc8208eb1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Saisonniers = entity
+		mode: directQuery
+		source
+			entityName: Saisonniers
+			expressionSource: 'DirectQuery à AS – pst38'
+

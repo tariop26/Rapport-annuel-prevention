@@ -1,0 +1,46 @@
+table 'Changement équipe médicale - avant'
+	lineageTag: 0be95c6b-eff0-4280-ad7d-7b18cbef3f98
+
+	column 'Equipe médicale avant'
+		dataType: string
+		lineageTag: 8429f9be-2bed-4c17-b24e-6621e6e18f9c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Equipe médicale avant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur_avant_changement
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1ca4b26d-fb3a-40ff-9704-293775d38e51
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur_avant_changement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Médecin référent avant'
+		dataType: string
+		lineageTag: 933dcdf7-5959-4e3d-8072-534fcb934c24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Médecin référent avant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Changement équipe médicale - avant' = entity
+		mode: directQuery
+		source
+			entityName: Changement équipe médicale - avant
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

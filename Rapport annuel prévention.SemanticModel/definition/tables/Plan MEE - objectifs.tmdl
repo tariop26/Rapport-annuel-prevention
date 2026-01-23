@@ -1,0 +1,38 @@
+table 'Plan MEE - objectifs'
+	lineageTag: b187bfca-9225-4dd4-8011-fe75088a588c
+
+	column id_plan_mee_source
+		dataType: int64
+		lineageTag: 38ea536d-1302-4557-ad82-fcff12fc6762
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_plan_mee_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Objectif
+		dataType: string
+		lineageTag: 970401a1-e0e1-44cc-b737-3193662b759b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Objectif
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temporalité objectif'
+		dataType: string
+		lineageTag: 170ff15b-48c3-4f92-9005-c894139f2e5a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Temporalité objectif
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plan MEE - objectifs' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - objectifs
+			expressionSource: 'DirectQuery à AS – pst38'
+

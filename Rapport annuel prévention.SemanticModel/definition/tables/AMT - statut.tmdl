@@ -1,0 +1,55 @@
+table 'AMT - statut'
+	lineageTag: a27967ef-12a7-4cce-be01-c744b4775d02
+
+	column id_statut_amt
+		dataType: int64
+		isNullable: false
+		lineageTag: 58d2394f-a627-41f2-bff1-856a01160efb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut détaillé'
+		dataType: string
+		lineageTag: 9a3859b1-b035-4e10-924d-33b06ee29b5e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Statut
+		dataType: string
+		lineageTag: a51eee66-10b2-441a-b241-3d0b03dbaba8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie statut AMT'
+		lineageTag: 929f6ded-47b4-4268-8b8a-72e5aabc2d7c
+		sourceLineageTag: Hiérarchie statut AMT
+
+		level Statut
+			lineageTag: ed3fbf2a-5c4f-453a-b8f2-6a436b6ab4fb
+			column: Statut
+
+		level 'Statut détaillé'
+			lineageTag: ae8d0642-b17a-43e6-9ca4-e506c3d4d447
+			column: 'Statut détaillé'
+
+	partition 'AMT - statut' = entity
+		mode: directQuery
+		source
+			entityName: AMT - statut
+			expressionSource: 'DirectQuery à AS – pst38'
+

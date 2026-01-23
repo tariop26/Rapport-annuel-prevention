@@ -1,0 +1,277 @@
+table 'Modèle de charge - prévision charge visites'
+	lineageTag: a4106c11-633b-47dc-ab06-31bb7f71ff2b
+
+	measure 'Aléatoire médecin' = EXTERNALMEASURE("Aléatoire médecin", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Visites à réaliser par le médecin
+		lineageTag: f78c2a8d-a325-4859-b6f8-31c89de8da55
+		sourceLineageTag: DirectQuery à AS – pst38.Aléatoire médecin
+		dataCategory: Uncategorized
+
+	measure 'Initiale infirmier' = EXTERNALMEASURE("Initiale infirmier", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Visites réalisables par l'infirmier
+		lineageTag: b898ff79-fb60-4af9-bcbc-dc058cc02fee
+		sourceLineageTag: DirectQuery à AS – pst38.Initiale infirmier
+		dataCategory: Uncategorized
+
+	measure 'Initiale médecin' = EXTERNALMEASURE("Initiale médecin", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Visites à réaliser par le médecin
+		lineageTag: 415e1fd4-7471-447e-b461-66cc8af5f3fa
+		sourceLineageTag: DirectQuery à AS – pst38.Initiale médecin
+		dataCategory: Uncategorized
+
+	measure 'Intérimaire infirmier' = EXTERNALMEASURE("Intérimaire infirmier", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Visites réalisables par l'infirmier
+		lineageTag: 9ffd05fd-6c6d-4a1c-8f50-0f2503d7e655
+		sourceLineageTag: DirectQuery à AS – pst38.Intérimaire infirmier
+		dataCategory: Uncategorized
+
+	measure 'Intérimaire médecin' = EXTERNALMEASURE("Intérimaire médecin", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Visites à réaliser par le médecin
+		lineageTag: 1738ee45-63d1-4487-a85a-5eff66369931
+		sourceLineageTag: DirectQuery à AS – pst38.Intérimaire médecin
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites à réaliser' = EXTERNALMEASURE("Nombre de visites à réaliser", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: b82b9388-3d7d-41ed-9e25-f19ca29e3d87
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites à réaliser
+		dataCategory: Uncategorized
+
+	measure 'Périodique infirmier' = EXTERNALMEASURE("Périodique infirmier", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Visites réalisables par l'infirmier
+		lineageTag: 4e5f189f-f1a3-4188-96ba-0fff3e9603e8
+		sourceLineageTag: DirectQuery à AS – pst38.Périodique infirmier
+		dataCategory: Uncategorized
+
+	measure 'Périodique médecin' = EXTERNALMEASURE("Périodique médecin", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Visites à réaliser par le médecin
+		lineageTag: 00f46b94-68f2-473c-b540-430199da5a5c
+		sourceLineageTag: DirectQuery à AS – pst38.Périodique médecin
+		dataCategory: Uncategorized
+
+	measure 'Retard infirmier' = EXTERNALMEASURE("Retard infirmier", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Visites réalisables par l'infirmier
+		lineageTag: d745faec-9762-41b3-bd26-ce6766afb5cc
+		sourceLineageTag: DirectQuery à AS – pst38.Retard infirmier
+		dataCategory: Uncategorized
+
+	measure 'Retard médecin' = EXTERNALMEASURE("Retard médecin", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Visites à réaliser par le médecin
+		lineageTag: d3e92253-7e93-44fa-926b-68c868bd3f3a
+		sourceLineageTag: DirectQuery à AS – pst38.Retard médecin
+		dataCategory: Uncategorized
+
+	measure 'Visite assistant social' = EXTERNALMEASURE("Visite assistant social", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 5e4e05f9-e388-40d9-8be9-deee0088c752
+		sourceLineageTag: DirectQuery à AS – pst38.Visite assistant social
+		dataCategory: Uncategorized
+
+	measure 'Visite cardiologue' = EXTERNALMEASURE("Visite cardiologue", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 83ca3fe7-341f-4b5b-8bcb-8dc473e9a5cc
+		sourceLineageTag: DirectQuery à AS – pst38.Visite cardiologue
+		dataCategory: Uncategorized
+
+	measure 'Visite conseiller transition professionnelle' = EXTERNALMEASURE("Visite conseiller transition professionnelle", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: c7694dc2-f2b2-449d-aa08-5b3eeb6f055e
+		sourceLineageTag: DirectQuery à AS – pst38.Visite conseiller transition professionnelle
+		dataCategory: Uncategorized
+
+	measure 'Visite ergothérapeute' = EXTERNALMEASURE("Visite ergothérapeute", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 98be66ff-7d53-47f1-8c9f-cfa0576ce589
+		sourceLineageTag: DirectQuery à AS – pst38.Visite ergothérapeute
+		dataCategory: Uncategorized
+
+	measure 'Visite médecin PDP' = EXTERNALMEASURE("Visite médecin PDP", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 587265bd-c421-4005-8c70-c0235e3592cb
+		sourceLineageTag: DirectQuery à AS – pst38.Visite médecin PDP
+		dataCategory: Uncategorized
+
+	measure 'Visite nutritionniste' = EXTERNALMEASURE("Visite nutritionniste", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 0eb76d0b-521e-41ef-a084-1cf5a80c7f71
+		sourceLineageTag: DirectQuery à AS – pst38.Visite nutritionniste
+		dataCategory: Uncategorized
+
+	measure 'Visite pneumologue' = EXTERNALMEASURE("Visite pneumologue", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 046a751c-d2f6-4f62-afb7-69e417e89675
+		sourceLineageTag: DirectQuery à AS – pst38.Visite pneumologue
+		dataCategory: Uncategorized
+
+	measure 'Visite psychologue' = EXTERNALMEASURE("Visite psychologue", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Visites à réaliser par les spécialistes
+		lineageTag: 6fe257a3-29f6-4425-9407-f9459fea1775
+		sourceLineageTag: DirectQuery à AS – pst38.Visite psychologue
+		dataCategory: Uncategorized
+
+	column 'Catégorie visite à réaliser'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bcde5e17-0546-4e41-b9f2-8c834850a47a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite à réaliser
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_categorie_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f79af0d3-d2d7-454d-a102-cf69e2866e94
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3a7a78ab-5319-460f-8b00-34278f4b6664
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5b1cb9f1-3f88-46f9-bbbe-68c8a2cec876
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4379be84-f632-4fe2-8fe9-6e1625f31229
+		dataCategory: Uncategorized
+		summarizeBy: max
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dbdb88d7-f4d2-4c37-86b6-e71a113a948b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b30b2ec3-9a1f-4cc9-841f-bef69b0c2947
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Nombre visites à réaliser'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 93e60d6a-53a9-4c8b-80f3-1c8890a309a8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nombre visites à réaliser
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Rôle réalisateur visite'
+		dataType: string
+		lineageTag: 543d1ea6-6c06-48d5-a936-18bdef1b7145
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle réalisateur visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Sous-catégorie visite à réaliser'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8505e0f5-9594-4db4-ace0-0a9b808a005c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous-catégorie visite à réaliser
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Type suivi détaillé'
+		dataType: string
+		lineageTag: a6e3d881-b523-4b6d-b84c-23a83848b2a3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi détaillé
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie catégorie visite à réaliser'
+		lineageTag: ac2cceb5-4970-4e66-af42-318b439ac5dd
+		sourceLineageTag: Hiérarchie catégorie visite à réaliser
+
+		level 'Catégorie visite à réaliser'
+			lineageTag: 3fc4ddab-7634-4c74-8f2b-4bed5df1f2ef
+			column: 'Catégorie visite à réaliser'
+
+		level 'Sous-catégorie visite à réaliser'
+			lineageTag: d32aa70f-35c0-487a-9919-32bc46d7cc80
+			column: 'Sous-catégorie visite à réaliser'
+
+		changedProperty = IsHidden
+
+	partition 'Modèle de charge - prévision charge visites' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - prévision charge visites
+			expressionSource: 'DirectQuery à AS – pst38'
+

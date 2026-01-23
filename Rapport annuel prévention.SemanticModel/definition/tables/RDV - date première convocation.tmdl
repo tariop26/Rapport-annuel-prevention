@@ -1,0 +1,106 @@
+table 'RDV - date première convocation'
+	lineageTag: c263e940-012f-4413-b945-6910cf91aa94
+
+	column 'Année première convocation RDV'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c52a3da6-50e3-4bf3-a4a0-d5a4a502a8af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année première convocation RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date première convocation RDV'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7306951e-f9d8-438d-9b50-74a4bc830725
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date première convocation RDV
+		sortByColumn: id_date_premiere_convocation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_premiere_convocation_rdv
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 58fbf985-297a-483c-9838-aa4b3b0e18aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_premiere_convocation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour première convocation RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0a8384be-df62-4c0a-91d0-83229b7aa8d0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour première convocation RDV
+		sortByColumn: id_date_premiere_convocation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois première convocation RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4a7ad4f1-69a1-4da0-b1f0-00f55bdff231
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois première convocation RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine première convocation RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 21a62ea0-6378-4983-af35-0f7590705f1b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine première convocation RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie - date première convocation RDV'
+		lineageTag: bb33b76c-a62b-4963-9f3c-aa77f4b26d86
+		sourceLineageTag: Hiérarchie - date première convocation RDV
+
+		level 'Année première convocation RDV'
+			lineageTag: 630b4653-da85-40d5-8a6f-17bd9a769f65
+			column: 'Année première convocation RDV'
+
+		level 'Mois première convocation RDV'
+			lineageTag: 814ef2c1-a3b7-4458-93d0-9db8d2497c37
+			column: 'Mois première convocation RDV'
+
+		level 'Semaine première convocation RDV'
+			lineageTag: 721ed5d0-2a14-4e99-aadf-68a8b6dbe5a8
+			column: 'Semaine première convocation RDV'
+
+		level 'Date première convocation RDV'
+			lineageTag: 34c8d768-865c-45c2-ba89-41fabd86644f
+			column: 'Date première convocation RDV'
+
+	partition 'RDV - date première convocation' = entity
+		mode: directQuery
+		source
+			entityName: RDV - date première convocation
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,105 @@
+table 'AMT - date échéance'
+	lineageTag: b82907f1-d1dc-4c32-9b74-b8d4ce0d58a6
+
+	column 'Année échéance AMT'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 76620f42-91f4-4768-8348-86818ec6951e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année échéance AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date échéance AMT'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 13db4763-5ebd-4566-9186-55ce826c7653
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date échéance AMT
+		sortByColumn: id_date_echeance_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_echeance_amt
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 85e26c84-2e77-4ee7-b1e3-00ef9e91540a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_echeance_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour échéance AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: cb0e0ff8-c40a-49e5-9386-90f70991086e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour échéance AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois échéance AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5d14013f-fefa-4226-8c30-d5ef422163c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois échéance AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine échéance AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f05c2604-d22f-4ff0-9852-271672901e40
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine échéance AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date échéance AMT'
+		lineageTag: 17023d74-7ecc-4521-a7de-3eaf71324cd5
+		sourceLineageTag: Hiérarchie date échéance AMT
+
+		level 'Année échéance AMT'
+			lineageTag: 55caf591-5689-4552-97f6-cc6c407f3ce5
+			column: 'Année échéance AMT'
+
+		level 'Mois échéance AMT'
+			lineageTag: c5a4fbd2-1b08-4921-a09e-3c17402df47d
+			column: 'Mois échéance AMT'
+
+		level 'Semaine échéance AMT'
+			lineageTag: 7374187a-4a59-4b90-93dc-d9c3cf81053e
+			column: 'Semaine échéance AMT'
+
+		level 'Date échéance AMT'
+			lineageTag: 715f8ccc-ae36-4699-b8a2-0efc603c606b
+			column: 'Date échéance AMT'
+
+	partition 'AMT - date échéance' = entity
+		mode: directQuery
+		source
+			entityName: AMT - date échéance
+			expressionSource: 'DirectQuery à AS – pst38'
+

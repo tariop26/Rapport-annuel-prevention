@@ -1,0 +1,106 @@
+table 'RDV - date prise créneau adhérent'
+	lineageTag: 0d11541d-a1e0-40a2-93e0-7273572b1593
+
+	column 'Année prise créneau adhérent'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d569706d-1ac9-4b10-ab47-b8eafaf1a9f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année prise créneau adhérent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date prise créneau adhérent'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6d814c96-70f2-4748-8333-a0e61ab29ad8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date prise créneau adhérent
+		sortByColumn: id_date_prise_creneau_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_prise_creneau_adherent
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: e62465f3-18b2-48ea-b856-d3a29e8db7cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_prise_creneau_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour prise créneau adhérent'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4633295d-3f02-4555-b073-caec4a2caf63
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour prise créneau adhérent
+		sortByColumn: id_date_prise_creneau_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois prise créneau adhérent'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 648b684e-868a-49d9-9f87-d6774685f17c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois prise créneau adhérent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine prise créneau adhérent'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0d56dbfe-833b-44d3-bbc1-3c295d02c85b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine prise créneau adhérent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie - date prise créneau adhérent'
+		lineageTag: 88d2f3c3-a955-40d4-bfc2-3259c5d02d17
+		sourceLineageTag: Hiérarchie - date prise créneau adhérent
+
+		level 'Année prise créneau adhérent'
+			lineageTag: f629e231-3315-4771-ad4e-03cfd36fba2e
+			column: 'Année prise créneau adhérent'
+
+		level 'Mois prise créneau adhérent'
+			lineageTag: 3e688ddc-c447-4654-a20f-365be6177e75
+			column: 'Mois prise créneau adhérent'
+
+		level 'Semaine prise créneau adhérent'
+			lineageTag: 78a07133-a088-450d-bffd-87b7d9ebdb62
+			column: 'Semaine prise créneau adhérent'
+
+		level 'Date prise créneau adhérent'
+			lineageTag: 63677485-ca0e-41bc-96aa-bf58470634e9
+			column: 'Date prise créneau adhérent'
+
+	partition 'RDV - date prise créneau adhérent' = entity
+		mode: directQuery
+		source
+			entityName: RDV - date prise créneau adhérent
+			expressionSource: 'DirectQuery à AS – pst38'
+

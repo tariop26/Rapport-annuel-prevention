@@ -1,0 +1,1518 @@
+table 'Salarié (actuel)'
+	lineageTag: 798cfa81-8f2d-4fc3-a44f-09531fa19ea2
+
+	column 'Année création dernière embauche du salarié'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: fb97fa69-5f85-412a-b03c-72a31ad7cad5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année création dernière embauche du salarié
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année début contrat'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3fd0ad4c-92ac-471a-8152-6a7713e48a8c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année début contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année début exclusion suivi'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ad6aac35-7cc7-416d-83c1-b81412ef9885
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année début exclusion suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année dernière visite réalisée'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 7bec2141-7536-4e72-bc6a-02d9821ded4b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année fin contrat'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c2e72cf0-2faa-45a8-a6da-a5a2597be194
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année fin contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année fin exclusion suivi'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 28542db1-9e57-414c-8104-92c768ca4844
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année fin exclusion suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année visite calculée'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 09ee268c-8bbd-4448-a5a4-fbf43d9c2993
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année visite planifiée'
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 65eb1a67-497d-4f89-8747-8851fc7ca7a5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année visite planifiée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie d''âge actuelle'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 9e7068a5-fb4b-4851-b8d5-8de7baa461ce
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie d'âge actuelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: c94d53db-db08-4fc3-9796-d5c369ebe5ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie retard'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 43b3e02f-8aa5-4adc-bc0d-92f104f269cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie visite calculée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 9c2bb99d-462b-4cd3-a972-1e46b5516f38
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie visite planifiée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 6dd3e7db-769d-4995-853c-81bc5e2725c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite planifiée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code postal'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 055ae44a-3fa4-490f-ae60-6dae268a0721
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code postal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contrat intérimaire (actuel)'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: a3c4793c-5be2-4893-8c2d-338223b0f589
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contrat intérimaire (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 1'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: a45ad79a-f988-4ac3-ab12-5cd0a4161178
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 2'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 352cd328-a7bf-4722-a249-82c2498b90a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 3'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7799471b-4c7b-4bb6-bc50-639b0e520d75
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 4'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 1b678a4b-551c-470f-93aa-dff97a7fa07f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date création dernière embauche du salarié'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 67590fa3-c621-4c84-a625-515cf638700a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création dernière embauche du salarié
+		sortByColumn: id_date_creation_derniere_embauche
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date création technique'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 6edd4f7a-17a8-4783-a082-8ebf85210ed1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création technique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date début contrat'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: c3c97579-3002-4b8b-add2-501a7d1e388e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date début contrat
+		sortByColumn: id_date_debut_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date début exclusion suivi'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 42d6a55e-b032-485a-a2a7-500d4aaab665
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date début exclusion suivi
+		sortByColumn: id_date_debut_exclusion_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière visite réalisée'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: fd7bb198-8c41-4a6d-8f90-7ab1e08f718d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière visite réalisée
+		sortByColumn: id_date_derniere_visite_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date fin contrat'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 89e280ae-adae-456e-ad80-47a3fe067c7b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin contrat
+		sortByColumn: id_date_fin_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date fin exclusion suivi'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: e6bafac1-bc5d-4887-85d9-0c834b28960c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin exclusion suivi
+		sortByColumn: id_date_fin_exclusion_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date visite calculée'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 87292a26-bcf5-4b9f-84c9-76afafe535e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date visite calculée
+		sortByColumn: id_date_visite_calculee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date visite planifiée'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes techniques
+		lineageTag: 441b6d10-0bd5-47da-8e9a-b75ecdfa3e1e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date visite planifiée
+		sortByColumn: id_date_visite_planifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dernière visite réalisée réalisable par'
+		dataType: string
+		displayFolder: 6 - Dernière visite réalisée
+		lineageTag: 542e452a-72aa-4193-b673-c8ba2833f7dd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dernière visite réalisée réalisable par
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Email renseigné'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: f5e629d4-5065-467c-90b3-25a1b8a316f5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email renseigné
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Email vérifié'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 9e273b30-1f13-4959-b1cc-03f9c300f4fa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email vérifié
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_derniere_embauche
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0ec72c7f-add5-428a-83dc-c2a8879053b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_derniere_embauche
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_debut_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d7354297-aac7-46e4-b0c9-60620a42b408
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_debut_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_debut_exclusion_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: bcf00fbd-3080-456e-97bd-f95364ee5588
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_debut_exclusion_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_derniere_visite_realisee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f24b3e9a-6d0b-4d4b-bd39-4d3affcd8c2d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_visite_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_fin_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c952b12d-1124-44f6-b89a-fadd166faa44
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_fin_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_fin_exclusion_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 47628ac2-86e4-4347-b220-27914e81d2f6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_fin_exclusion_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_visite_calculee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f6169eac-91cc-4552-892d-d9822a2e14f0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_visite_calculee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_visite_planifiee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ce5637a6-e689-4844-bfa3-4b483ec47763
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_visite_planifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2932d67a-8802-4b3b-ab0f-7b3340fe342c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_personne
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0c6cc853-5b04-4829-9842-8f5913cfd292
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_salarie2
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes techniques
+		lineageTag: b2783407-935a-4cc4-9d73-7ff0363fa970
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mode exclusion suivi'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: fbe7dece-50c0-4732-858c-7e13b1165859
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mode exclusion suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création dernière embauche du salarié'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 76730ebb-04cb-4b83-8dbc-45c1b4f56d14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création dernière embauche du salarié
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois début contrat'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: efd387b9-30ae-4c44-879a-4a3f105bab4e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois début contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois début exclusion suivi'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 90983c27-0d94-4e8b-ab88-c305ef440374
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois début exclusion suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: c64de4ce-7720-48e6-a71a-51517366e8d6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois fin contrat'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: eb80ce5c-1da7-4d9d-b58a-dd56322a0676
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois fin contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois fin exclusion suivi'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 00a303ec-9cbb-4cd1-b2e6-2d3391b65be5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois fin exclusion suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois visite calculée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 7bb89a07-6a40-4ad4-96cf-feea1757557f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois visite planifiée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: ec531e23-d6b1-4295-bbb6-19e51ed65b9f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois visite planifiée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Motif exclusion suivi'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 56b2e0b2-435a-4f44-bfea-778163bbf1ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif exclusion suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Multi employeur'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 40fc9760-50ec-4991-a556-2949224d7ab7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Multi employeur
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur dernière visite réalisée'
+		dataType: string
+		displayFolder: 6 - Dernière visite réalisée
+		lineageTag: ec99e8b5-52dc-4b00-ada3-a0ad04e77d35
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom réalisateur dernière visite réalisée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur visite planifiée'
+		dataType: string
+		displayFolder: 7 - Visite planifiée
+		lineageTag: 5c44ba87-c511-4794-9901-60a5f63a9827
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom réalisateur visite planifiée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro de sécurité sociale renseigné'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 3dd88436-1ca7-4ed7-a8f1-bc2b58d35e89
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Numéro de sécurité sociale renseigné
+
+		annotation SummarizationSetBy = Automatic
+
+	column numero_mois_creation_derniere_embauche
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: fe971fc0-bc6b-48aa-9509-16f772248775
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_creation_derniere_embauche
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_debut_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 99978fa8-3298-45c7-8fe3-a2a72741a0f6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_debut_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_debut_exclusion_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 99c843e5-11a0-405b-a874-9a95f9945972
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_debut_exclusion_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_derniere_visite_realisee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ba94bc65-b96a-44f6-a120-c65e505477cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_derniere_visite_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_fin_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0099a6fc-b934-45a5-9064-08d9584597ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_fin_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_fin_exclusion_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d5ebdd23-f8aa-4d16-80d5-6fffff8c0431
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_fin_exclusion_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_visite_calculee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2dafe48d-61d1-4db1-b7f7-f87970881475
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_visite_calculee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column numero_mois_visite_planifiee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e1c3180a-e263-4ac5-b731-041bc60b4787
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: numero_mois_visite_planifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Origine visite calculée'
+		dataType: string
+		displayFolder: 5 - Visite calculée
+		lineageTag: 6766a112-7170-4a09-931c-51988dd8e1bc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine visite calculée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Personne ancien logiciel'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: b5614693-50e9-41e1-8c28-9591c058f24a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Personne ancien logiciel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Poste actuel'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 89d0b675-4141-4829-b922-65d2daa28c74
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Poste actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle réalisateur dernière visite réalisée'
+		dataType: string
+		displayFolder: 6 - Dernière visite réalisée
+		lineageTag: 6fd60775-9edf-4844-bdee-550d52ce7fe8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle réalisateur dernière visite réalisée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle réalisateur visite planifiée'
+		dataType: string
+		displayFolder: 7 - Visite planifiée
+		lineageTag: d6a47bb6-5a74-4262-a18e-7be4e0fdd119
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle réalisateur visite planifiée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Salarié a déjà été SIR'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 787051c8-2698-44c1-ab6b-f6041defaef0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salarié a déjà été SIR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Salarié avec visite planifiée'
+		dataType: string
+		displayFolder: 4 - Retard dans le suivi
+		lineageTag: b12edb8a-30ad-4b2a-b1fc-b4eb6b0e7e29
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salarié avec visite planifiée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Salarié avec visite réalisée hors suivi réglementaire'
+		dataType: string
+		displayFolder: 4 - Retard dans le suivi
+		lineageTag: 15124fd4-8a78-46c0-9340-b7fa857aa969
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salarié avec visite réalisée hors suivi réglementaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Salarié suivi'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: fd320337-7bd3-46be-84d6-fbef3081c148
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salarié suivi
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexe
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 4914f85d-006d-4d59-95bf-ed3a0a6670df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sexe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous catégorie retard'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 164ab669-c6c6-403a-99fa-a07cdd59ff2f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous catégorie retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut Affection longue durée'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 2cab81f5-e58e-4715-82a7-a27d46ba2142
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut Affection longue durée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut Incapacité permanente'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: c62e2167-2132-499a-bca8-c6ace1cdbcba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut Incapacité permanente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut Invalidité'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: a967b8a8-aca9-4415-b391-c069e848190f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut Invalidité
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut marital actuel'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 1d606f98-712a-4088-8fe9-e33281ebe640
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut marital actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut RQTH'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: ac9feed3-8036-4e94-8504-fccd84d5c875
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut RQTH
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Suivi mutualisé'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 486035c8-b811-4262-a551-203e68b9e698
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Suivi mutualisé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Téléphone renseigné'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: da8a76e1-3018-466f-81c5-df637bfad19f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Téléphone renseigné
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type contrat actuel'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: eec680b7-2e92-4452-bbd6-b0628c5a4327
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type contrat actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 0c6faf4f-efd6-4dd0-9816-3fcda5cfac95
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type détaillé dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: bdf54cc3-bb66-49c0-bd12-183a60648beb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type détaillé dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type détaillé visite calculée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: a8df3d8d-1fc4-4447-8cd4-55c7b0031c14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type détaillé visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type détaillé visite planifiée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: d2697090-e7c4-4a89-bd96-2891d22191b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type détaillé visite planifiée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type suivi actuel'
+		dataType: string
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 828c8373-f053-4230-94ed-7b17542e1d9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite calculée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 9f7196f2-366a-434d-9fa0-18c1ed5fb052
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite planifiée'
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: ebef62c7-2836-4ebf-a834-41de7c21c317
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite planifiée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite calculée réalisable par'
+		dataType: string
+		displayFolder: 5 - Visite calculée
+		lineageTag: 766494e4-177d-469e-8256-be5df65ff39a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite calculée réalisable par
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Salarié (actuel)","TableItemName":"Visite calculée réalisable par :","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Visite planifiée réalisable par'
+		dataType: string
+		displayFolder: 7 - Visite planifiée
+		lineageTag: 3f83f318-1212-47ce-97ec-2f28c66debb8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite planifiée réalisable par
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0a9a859c-0ef1-4e6c-8522-466c2f5087c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Statut INS'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: bf5e8f53-17bb-4c8d-a231-d6e693f515eb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut INS
+		sortByColumn: 'Ordre qualification statut INS'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois de retard' = DATEDIFF([Date visite calculée],TODAY(),MONTH)
+		formatString: 0
+		lineageTag: 46fe94e6-cd96-4ffe-9445-39937af403fc
+		summarizeBy: sum
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Années de retard' = [Mois de retard]/12
+		lineageTag: b43da813-239f-4e2b-9a79-601a6fdbe4b4
+		summarizeBy: sum
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Catégorie année de retard' =
+			
+			SWITCH(
+			    TRUE(),
+			    'Salarié (actuel)'[Années de retard] < 0, "A jour",
+			    'Salarié (actuel)'[Années de retard] >= 0 && 'Salarié (actuel)'[Années de retard] < 1, "0-1 an",
+			    'Salarié (actuel)'[Années de retard] >= 1 && 'Salarié (actuel)'[Années de retard] < 3, "1-3 ans",
+			    'Salarié (actuel)'[Années de retard] >= 3 && 'Salarié (actuel)'[Années de retard] < 5, "3-5 ans",
+			    'Salarié (actuel)'[Années de retard] >= 5, "Plus de 5 ans"
+			)
+		lineageTag: bd584377-28df-49cf-9d42-34d21106fefb
+		summarizeBy: none
+
+		changedProperty = Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite calculée réalisable par :' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Salarié (actuel)'[Visite calculée réalisable par]),
+				"(Vide)",
+				'Salarié (actuel)'[Visite calculée réalisable par] IN {"Médecin et IDEST"},
+				"IDEST",
+				'Salarié (actuel)'[Visite calculée réalisable par] IN {"Médecin uniquement"},
+				"Médecin",
+				"Autre"
+			)
+		lineageTag: ce0fdab4-7e20-4d1a-8714-cacd1bc2d90c
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Salarié (actuel)"
+				          }
+				        },
+				        "Property": "Visite calculée réalisable par"
+				      }
+				    }
+				  ]
+				}
+
+		changedProperty = IsHidden
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"s","Entity":"Salarié (actuel)"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Visite calculée réalisable par"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"IDEST","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Visite calculée réalisable par"}}],"Values":[[{"Literal":{"Value":"'Médecin et IDEST'"}}]]}}},{"DisplayName":"Médecin","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Visite calculée réalisable par"}}],"Values":[[{"Literal":{"Value":"'Médecin uniquement'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ordre qualification statut INS'
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 972e3e5b-085a-4099-bdf4-4a3c76c8c866
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Ordre qualification statut INS
+
+		annotation SummarizationSetBy = User
+
+	column 'Autorisation accès DMST'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: b9732af8-1aa9-459a-a9ea-b9d72ec3fb89
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Autorisation accès DMST
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Autorisation transmission DMST'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 9059aa58-483d-488e-8a96-3d2315f7c5b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Autorisation transmission DMST
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Interprétation IRDP de Présanse actuel'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: bcd63890-a3b0-4486-a56d-f4b5c3cfbbdd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Interprétation IRDP de Présanse actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IRDP de Présance actuel'
+		dataType: double
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: af588db4-7725-4f86-b969-c75e7638f1d1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: IRDP de Présance actuel
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Niveau IRDP actuel'
+		dataType: string
+		displayFolder: 1 - Caractéristiques personnes
+		lineageTag: 0240f653-3157-4e18-a75d-ffb7c5b4a1ef
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Niveau IRDP actuel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom saississeur dernier évènement INS'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: e91d71b0-1d2d-4c29-ad60-ac5a9d6a7128
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom saississeur dernier évènement INS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil détaillé saississeur dernier évènement INS'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 849c1851-94c1-452d-8bdb-6f1b2b49c510
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil détaillé saississeur dernier évènement INS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil saisisseur dernier évènement INS'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: a0aa4f5b-13dc-4e1c-89b1-4a85771c8e60
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil saisisseur dernier évènement INS
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérachie CSP actuelle'
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 9b5d297e-32cb-4b05-8504-be5f2f6d0c96
+		sourceLineageTag: Hiérachie CSP actuelle
+
+		level 'CSP niveau 1'
+			lineageTag: 799b5eaa-6f0c-42a3-b5f8-2630039f5087
+			column: 'CSP niveau 1'
+
+		level 'CSP niveau 2'
+			lineageTag: 3d1a2e9b-1371-4024-a662-577bcf5815af
+			column: 'CSP niveau 2'
+
+		level 'CSP niveau 3'
+			lineageTag: 955677c1-f9c4-438e-ac5e-579ab325e33f
+			column: 'CSP niveau 3'
+
+		level 'CSP niveau 4'
+			lineageTag: 50488e88-2e9d-4a15-aec9-8b62daf2f847
+			column: 'CSP niveau 4'
+
+	hierarchy 'Hiérarchie date création dernière embauche du salarié'
+		displayFolder: 8 - Date création dernière embauche du salarié
+		lineageTag: 70d42fa2-1793-4310-97f5-354ede6e4bbf
+		sourceLineageTag: Hiérarchie date création dernière embauche du salarié
+
+		level 'Année création dernière embauche du salarié'
+			lineageTag: 433bcb3b-4489-4bb2-9642-3e6320fa8d64
+			column: 'Année création dernière embauche du salarié'
+
+		level 'Mois création dernière embauche du salarié'
+			lineageTag: 2e4332d8-ca0a-4648-bce1-22b4e5c1a5c8
+			column: 'Mois création dernière embauche du salarié'
+
+		level 'Date création dernière embauche du salarié'
+			lineageTag: 1c3ff166-1274-45ba-920b-b5a5c8c53a05
+			column: 'Date création dernière embauche du salarié'
+
+	hierarchy 'Hiérarchie date début contrat actuel'
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 622955df-215f-44bd-a5b1-db608292e47d
+		sourceLineageTag: Hiérarchie date début contrat actuel
+
+		level 'Année début contrat'
+			lineageTag: 9dc5d34a-9125-436b-8268-68e1fa55a648
+			column: 'Année début contrat'
+
+		level 'Mois début contrat'
+			lineageTag: 872e943c-330b-4cf3-ae17-8b0263e52ee9
+			column: 'Mois début contrat'
+
+		level 'Date début contrat'
+			lineageTag: 3d0947b4-5e15-4c80-853d-210d7cc3dbdf
+			column: 'Date début contrat'
+
+	hierarchy 'Hiérarchie date début exclusion suivi'
+		displayFolder: 3 - Exclusion du suivi
+		lineageTag: 41d04a92-419a-4ac2-b3a2-e461924f5009
+		sourceLineageTag: Hiérarchie date début exclusion suivi
+
+		level 'Année début exclusion suivi'
+			lineageTag: 41670e5b-68a4-4934-9846-5df825c03f36
+			column: 'Année début exclusion suivi'
+
+		level 'Mois début exclusion suivi'
+			lineageTag: 48d0d963-0cb9-4748-8440-b47633285990
+			column: 'Mois début exclusion suivi'
+
+		level 'Date début exclusion suivi'
+			lineageTag: 9bb9f3e5-c559-441a-8cff-53a51914d216
+			column: 'Date début exclusion suivi'
+
+	hierarchy 'Hiérarchie date dernière visite réalisée'
+		displayFolder: 6 - Dernière visite réalisée
+		lineageTag: 73ad0cef-baaf-447c-a52f-66b196da15a2
+		sourceLineageTag: Hiérarchie date dernière visite réalisée
+
+		level 'Année dernière visite réalisée'
+			lineageTag: d3b3f9c1-e604-4dc8-b349-787e17db4559
+			column: 'Année dernière visite réalisée'
+
+		level 'Mois dernière visite réalisée'
+			lineageTag: d0502575-685f-4487-a23d-b6eb79adc903
+			column: 'Mois dernière visite réalisée'
+
+		level 'Date dernière visite réalisée'
+			lineageTag: cd8c796e-2a9b-4494-9f53-53362803dbca
+			column: 'Date dernière visite réalisée'
+
+	hierarchy 'Hiérarchie date fin contrat actuel'
+		displayFolder: 2 - Contrat actuel
+		lineageTag: 6c083821-de0c-45a9-a4d6-0e7eff68147d
+		sourceLineageTag: Hiérarchie date fin contrat actuel
+
+		level 'Année fin contrat'
+			lineageTag: cc575013-b9f7-4c9e-84e3-bfc7bf350fbc
+			column: 'Année fin contrat'
+
+		level 'Mois fin contrat'
+			lineageTag: 9ac7f32b-36ad-4e6c-8ef8-044f9e8b778e
+			column: 'Mois fin contrat'
+
+		level 'Date fin contrat'
+			lineageTag: a4becfeb-f950-4570-a5e2-107b04cdeb8f
+			column: 'Date fin contrat'
+
+	hierarchy 'Hiérarchie date fin exclusion suivi'
+		displayFolder: 3 - Exclusion du suivi
+		lineageTag: e99de7da-c51c-4d78-9df4-1d795c8685b6
+		sourceLineageTag: Hiérarchie date fin exclusion suivi
+
+		level 'Année fin exclusion suivi'
+			lineageTag: 360d40f4-a5ff-4685-8710-e19a5f669724
+			column: 'Année fin exclusion suivi'
+
+		level 'Mois fin exclusion suivi'
+			lineageTag: 9f162f74-a8c1-489e-89aa-bdef6b46c2f5
+			column: 'Mois fin exclusion suivi'
+
+		level 'Date fin exclusion suivi'
+			lineageTag: ac76dc34-ae0e-45cd-8442-f4a76a0f6395
+			column: 'Date fin exclusion suivi'
+
+	hierarchy 'Hiérarchie date visite calculée'
+		displayFolder: 5 - Visite calculée
+		lineageTag: 89010311-9ff4-432b-9070-904e95af2821
+		sourceLineageTag: Hiérarchie date visite calculée
+
+		level 'Année visite calculée'
+			lineageTag: a6978302-e984-440f-965c-ccd584511371
+			column: 'Année visite calculée'
+
+		level 'Mois visite calculée'
+			lineageTag: 669ed6a9-c89f-4754-af75-05865572f79a
+			column: 'Mois visite calculée'
+
+		level 'Date visite calculée'
+			lineageTag: 87ea718b-218e-43d0-91a6-da6cfc5492d5
+			column: 'Date visite calculée'
+
+	hierarchy 'Hiérarchie date visite planifiée'
+		displayFolder: 7 - Visite planifiée
+		lineageTag: 0facde76-8e91-4ddf-b89f-dcd2f52d91cb
+		sourceLineageTag: Hiérarchie date visite planifiée
+
+		level 'Année visite planifiée'
+			lineageTag: 897508d1-cd63-40db-956c-647808310375
+			column: 'Année visite planifiée'
+
+		level 'Mois visite planifiée'
+			lineageTag: 8684078b-7c74-4f11-9537-0a3b29d56995
+			column: 'Mois visite planifiée'
+
+		level 'Date visite planifiée'
+			lineageTag: 098c9e6c-9cfe-4759-b35c-b82271e8acb7
+			column: 'Date visite planifiée'
+
+	hierarchy 'Hiérarchie exclusion suivi'
+		displayFolder: 3 - Exclusion du suivi
+		lineageTag: 21c41404-dffc-4fbc-9b64-5f18d68bf167
+		sourceLineageTag: Hiérarchie exclusion suivi
+
+		level 'Mode exclusion suivi'
+			lineageTag: 26cc8b10-6e79-41b2-9293-4103e97bc8a2
+			column: 'Mode exclusion suivi'
+
+		level 'Motif exclusion suivi'
+			lineageTag: da1c811f-46fb-4a11-9a94-cd135dd2ab03
+			column: 'Motif exclusion suivi'
+
+	hierarchy 'Hiérarchie retard'
+		displayFolder: 4 - Retard dans le suivi
+		lineageTag: 239115ca-ac21-4b50-b662-a69ed7d26062
+		sourceLineageTag: Hiérarchie retard
+
+		level 'Catégorie retard'
+			lineageTag: b83061e5-bfec-4b75-b5de-d43bd3cd2e7e
+			column: 'Catégorie retard'
+
+		level 'Sous catégorie retard'
+			lineageTag: 0e595c95-bd9f-4592-bd46-4ea44da8a8f7
+			column: 'Sous catégorie retard'
+
+	hierarchy 'Hiérarchie type dernière visite réalisée'
+		displayFolder: 6 - Dernière visite réalisée
+		lineageTag: aed357ed-f31b-4a62-8bec-9f71daf00432
+		sourceLineageTag: Hiérarchie type dernière visite réalisée
+
+		level 'Catégorie dernière visite réalisée'
+			lineageTag: fc291fd3-b363-4fee-a5e1-b72a727f3627
+			column: 'Catégorie dernière visite réalisée'
+
+		level 'Type dernière visite réalisée'
+			lineageTag: 944b0189-bf47-42ea-8cb4-ba3d5accd7da
+			column: 'Type dernière visite réalisée'
+
+		level 'Type détaillé dernière visite réalisée'
+			lineageTag: eda6277a-864a-4a37-920f-f45fd06b67c8
+			column: 'Type détaillé dernière visite réalisée'
+
+	hierarchy 'Hiérarchie type visite calculée'
+		displayFolder: 5 - Visite calculée
+		lineageTag: ee7dc4cc-ecad-4d3b-b056-614021ea6a4d
+		sourceLineageTag: Hiérarchie type visite calculée
+
+		level 'Catégorie visite calculée'
+			lineageTag: b43239e8-239a-44fe-bad7-a65dbbfb8243
+			column: 'Catégorie visite calculée'
+
+		level 'Type visite calculée'
+			lineageTag: fb241ef2-3e51-4e5c-83a6-4a09aefbf34a
+			column: 'Type visite calculée'
+
+		level 'Type détaillé visite calculée'
+			lineageTag: b4f59019-e030-445e-a1be-a1b511d0832b
+			column: 'Type détaillé visite calculée'
+
+	hierarchy 'Hiérarchie type visite planifiée'
+		displayFolder: 7 - Visite planifiée
+		lineageTag: 3919b516-e7e5-4a04-b6d0-1c8443c846fb
+		sourceLineageTag: Hiérarchie type visite planifiée
+
+		level 'Catégorie visite planifiée'
+			lineageTag: 3149565b-a630-47de-9657-bffb5525d060
+			column: 'Catégorie visite planifiée'
+
+		level 'Type visite planifiée'
+			lineageTag: a52c3780-fdcc-4fc6-b533-2264095b364b
+			column: 'Type visite planifiée'
+
+		level 'Type détaillé visite planifiée'
+			lineageTag: a4396314-25ce-4a45-a4d0-12ecc5851c0b
+			column: 'Type détaillé visite planifiée'
+
+	hierarchy 'Hiérarchie saisisseur dernier évènement INS'
+		displayFolder: 9 - Informations INS
+		lineageTag: ba7b7af5-5be6-454f-884d-aaaf92d37568
+		sourceLineageTag: Hiérarchie saisisseur dernier évènement INS
+
+		level 'Profil saisisseur dernier évènement INS'
+			lineageTag: 13943a27-de48-4450-a978-71861a69c0a1
+			column: 'Profil saisisseur dernier évènement INS'
+
+		level 'Profil détaillé saisisseur dernier évènement INS'
+			lineageTag: ebccc435-63c6-456a-90ae-61613ba88ec7
+			column: 'Profil détaillé saississeur dernier évènement INS'
+
+		level 'Nom saississeur dernier évènement INS'
+			lineageTag: 479b8e76-80a9-4e93-8531-0bd2d0faaba1
+			column: 'Nom saississeur dernier évènement INS'
+
+	partition 'Salarié (actuel)' = entity
+		mode: directQuery
+		source
+			entityName: Salarié (actuel)
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,58 @@
+table 'Temps travail - heure fin créneau'
+	lineageTag: ab333c09-79a6-46d0-b475-e1ea03a0506c
+
+	column 'Heure exacte fin créneau'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 00978684-961b-45fc-8859-8a553370ce17
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte fin créneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Heure fin créneau'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 91e09118-723b-4a50-9da6-d3c52abed09a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure fin créneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_heure_fin_creneau
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1dfa30f2-1aab-413b-81c0-fc85d4850db0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_fin_creneau
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure fin créneau'
+		lineageTag: ac34e4bb-f53f-4b8b-8e34-65d8ecb78015
+		sourceLineageTag: Hiérarchie heure fin créneau
+
+		level 'Heure fin créneau'
+			lineageTag: 9e77ccb2-a886-460a-bc89-729fcd506f0a
+			column: 'Heure fin créneau'
+
+		level 'Heure exacte fin créneau'
+			lineageTag: cf5d8b29-9a21-4387-9899-f4ef0fa973d1
+			column: 'Heure exacte fin créneau'
+
+	partition 'Temps travail - heure fin créneau' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - heure fin créneau
+			expressionSource: 'DirectQuery à AS – pst38'
+

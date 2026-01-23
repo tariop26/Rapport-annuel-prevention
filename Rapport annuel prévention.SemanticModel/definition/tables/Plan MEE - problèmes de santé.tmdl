@@ -1,0 +1,38 @@
+table 'Plan MEE - problèmes de santé'
+	lineageTag: dd581677-641b-4897-90d5-201f0357d6c5
+
+	column 'Catégorie problème de santé'
+		dataType: string
+		lineageTag: 6d6dc4a2-15e8-4bce-9e64-431e40892eb7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie problème de santé
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_plan_mee_source
+		dataType: int64
+		lineageTag: 799d6a5e-9ed3-42f3-8dba-b187ab2ba5ad
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_plan_mee_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine problème de santé'
+		dataType: string
+		lineageTag: e5347b05-5825-4def-8ab4-dfa65215bbc5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine problème de santé
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plan MEE - problèmes de santé' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - problèmes de santé
+			expressionSource: 'DirectQuery à AS – pst38'
+

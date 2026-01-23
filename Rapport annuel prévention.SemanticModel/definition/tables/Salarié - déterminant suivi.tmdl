@@ -1,0 +1,54 @@
+table 'Salarié - déterminant suivi'
+	lineageTag: 54e9a7f7-1d54-4331-89b4-59038cb0c4c3
+
+	column 'Déterminant suivi'
+		dataType: string
+		lineageTag: 779c9529-c28b-483b-92f6-93ff2a4a51dd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Déterminant suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_determinant_suivi
+		dataType: int64
+		lineageTag: 6484778e-a7e5-4991-9aed-8acb97745850
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type suivi'
+		dataType: string
+		lineageTag: f94c8abf-eed6-4c5c-8fab-22257e15f40a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie déterminant suivi'
+		lineageTag: 2fd1e253-e88e-41f2-96e5-92167edd8fc3
+		sourceLineageTag: Hiérarchie déterminant suivi
+
+		level 'Type suivi'
+			lineageTag: a824f119-22fb-42af-afd7-117ba804464a
+			column: 'Type suivi'
+
+		level 'Déterminant suivi'
+			lineageTag: 50f0f96a-2f49-4943-b62d-75e6da700aac
+			column: 'Déterminant suivi'
+
+	partition 'Salarié - déterminant suivi' = entity
+		mode: directQuery
+		source
+			entityName: Salarié - déterminant suivi
+			expressionSource: 'DirectQuery à AS – pst38'
+

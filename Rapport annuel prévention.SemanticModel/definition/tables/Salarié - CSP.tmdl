@@ -1,0 +1,90 @@
+table 'Salarié - CSP'
+	lineageTag: 1d51ae86-680d-4751-8cba-80d39f5cf673
+
+	column 'CSP niveau 1'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: dae23ef9-6c36-4ac4-96d7-14a59953c6bf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 2'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d0c65550-6498-4931-ae91-aa332ab154ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 3'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1b1d0516-326f-4fbb-b969-c5f9df312bd0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CSP niveau 4'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 322adcf8-3ce2-4133-bb74-dd099aa0cc22
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CSP niveau 4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: ac7fca24-5efc-4dd1-871f-7c5f02a8c51d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie CSP'
+		lineageTag: 17f3311a-d099-4ca1-8f56-1dae505f8166
+		sourceLineageTag: Hiérarchie CSP
+
+		level 'CSP niveau 1'
+			lineageTag: 484e9313-e983-43a1-9835-52e059146e02
+			column: 'CSP niveau 1'
+
+		level 'CSP niveau 2'
+			lineageTag: c47815fd-171d-4153-8e7e-0db36f0505f1
+			column: 'CSP niveau 2'
+
+		level 'CSP niveau 3'
+			lineageTag: 6fc8c426-cdf2-4715-9622-7d846dc89e0b
+			column: 'CSP niveau 3'
+
+		level 'CSP niveau 4'
+			lineageTag: baa02a54-657a-4cb9-8156-6895ce4e7980
+			column: 'CSP niveau 4'
+
+	partition 'Salarié - CSP' = entity
+		mode: directQuery
+		source
+			entityName: Salarié - CSP
+			expressionSource: 'DirectQuery à AS – pst38'
+

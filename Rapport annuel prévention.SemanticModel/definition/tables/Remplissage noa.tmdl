@@ -1,0 +1,661 @@
+table 'Remplissage noa'
+	lineageTag: 94739489-6dfa-4888-a359-aa0363f936e3
+
+	measure '# actions de prévention à réaliser par adhérent' = EXTERNALMEASURE("# actions de prévention à réaliser par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: 0dd2b5d0-afd5-4aa5-b89b-dbf220d76bac
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention à réaliser par adhérent
+		dataCategory: Uncategorized
+
+	measure '# actions de prévention à réaliser supplémentaires par adhérent' = EXTERNALMEASURE("# actions de prévention à réaliser supplémentaires par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\5 - Evolution du remplissage
+		lineageTag: 4bff7419-edee-4b5b-b414-a7c283daaa2b
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention à réaliser supplémentaires par adhérent
+		dataCategory: Uncategorized
+
+	measure '# actions de prévention à réaliser' = EXTERNALMEASURE("# actions de prévention à réaliser", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: d84fba5e-dfa5-4126-8655-41e314bc05b1
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention à réaliser
+		dataCategory: Uncategorized
+
+	measure '# actions de prévention réalisées par adhérent' = EXTERNALMEASURE("# actions de prévention réalisées par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: 906bf6b4-9a09-4b52-aa06-0f16dd7d323b
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention réalisées par adhérent
+		dataCategory: Uncategorized
+
+	measure '# actions de prévention réalisées supplémentaires par adhérent' = EXTERNALMEASURE("# actions de prévention réalisées supplémentaires par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\5 - Evolution du remplissage
+		lineageTag: 72d2f913-0422-4ade-85e6-9d66d6a61eb6
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention réalisées supplémentaires par adhérent
+		dataCategory: Uncategorized
+
+	measure '# actions de prévention réalisées' = EXTERNALMEASURE("# actions de prévention réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: cb6bee6c-1eee-421d-ae06-bd7916f988c9
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention réalisées
+		dataCategory: Uncategorized
+
+	measure '# actions de prévention reprises depuis la FE' = EXTERNALMEASURE("# actions de prévention reprises depuis la FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Synergies FE/DU
+		lineageTag: f93fa775-fe6a-4cbd-a773-e99363bffc65
+		sourceLineageTag: DirectQuery à AS – pst38.# actions de prévention reprises depuis la FE
+		dataCategory: Uncategorized
+
+	measure '# adhérents abonnés noa avec DU généré l''année dernière' = EXTERNALMEASURE("# adhérents abonnés noa avec DU généré l'année dernière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents concernés
+		lineageTag: dc81cbd1-c391-427a-bcdd-b80845cce099
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents abonnés noa avec DU généré l'année dernière
+		dataCategory: Uncategorized
+
+	measure '# adhérents abonnés noa avec partage FE activé actuellement' = EXTERNALMEASURE("# adhérents abonnés noa avec partage FE activé actuellement", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents concernés
+		lineageTag: b12a88d4-9fc9-4c94-8554-9d010342e2a2
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents abonnés noa avec partage FE activé actuellement
+		dataCategory: Uncategorized
+
+	measure '# adhérents abonnés noa' = EXTERNALMEASURE("# adhérents abonnés noa", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents concernés
+		lineageTag: 1a1750ee-4534-4d9b-bd1d-96ec9a060fda
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents abonnés noa
+		dataCategory: Uncategorized
+
+	measure '# adhérents avec alerte aucun risque identifié' = EXTERNALMEASURE("# adhérents avec alerte aucun risque identifié", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Alertes de remplissage
+		lineageTag: 70b0b2a3-eb82-4119-b6fc-97be62729350
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents avec alerte aucun risque identifié
+		dataCategory: Uncategorized
+
+	measure '# adhérents avec alerte principale' = EXTERNALMEASURE("# adhérents avec alerte principale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Alertes de remplissage
+		lineageTag: c4e0358d-5e39-45fc-ac8a-7586a05dafef
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents avec alerte principale
+		dataCategory: Uncategorized
+
+	measure '# adhérents avec alerte risque sans unité' = EXTERNALMEASURE("# adhérents avec alerte risque sans unité", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Alertes de remplissage
+		lineageTag: 77bc3e15-ccf5-459b-8310-6e3d55d52d2b
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents avec alerte risque sans unité
+		dataCategory: Uncategorized
+
+	measure '# adhérents avec alerte unité sans risque' = EXTERNALMEASURE("# adhérents avec alerte unité sans risque", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Alertes de remplissage
+		lineageTag: b9f6585b-1edc-4236-9a2e-6dbe6935c9f6
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents avec alerte unité sans risque
+		dataCategory: Uncategorized
+
+	measure '# risques par adhérent' = EXTERNALMEASURE("# risques par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: 51e0a0b7-6dd3-427a-a503-60497b39bd14
+		sourceLineageTag: DirectQuery à AS – pst38.# risques par adhérent
+		dataCategory: Uncategorized
+
+	measure '# risques repris depuis la FE' = EXTERNALMEASURE("# risques repris depuis la FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Synergies FE/DU
+		lineageTag: 319148b0-24ba-481f-920c-755ca3ecda3d
+		sourceLineageTag: DirectQuery à AS – pst38.# risques repris depuis la FE
+		dataCategory: Uncategorized
+
+	measure '# risques supplémentaires par adhérent' = EXTERNALMEASURE("# risques supplémentaires par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\5 - Evolution du remplissage
+		lineageTag: b09874be-8a60-43bd-bc79-00598cc18eb7
+		sourceLineageTag: DirectQuery à AS – pst38.# risques supplémentaires par adhérent
+		dataCategory: Uncategorized
+
+	measure '# risques' = EXTERNALMEASURE("# risques", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: bcff7bab-44dc-42ef-ba88-5602db751f77
+		sourceLineageTag: DirectQuery à AS – pst38.# risques
+		dataCategory: Uncategorized
+
+	measure '# unités de travail par adhérent' = EXTERNALMEASURE("# unités de travail par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: ddd7b0d5-64ca-4f2d-804d-bb8f4595802d
+		sourceLineageTag: DirectQuery à AS – pst38.# unités de travail par adhérent
+		dataCategory: Uncategorized
+
+	measure '# unités de travail reprises depuis la FE' = EXTERNALMEASURE("# unités de travail reprises depuis la FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Synergies FE/DU
+		lineageTag: 98dc8cc7-7c0a-4b69-ab82-8d39b167ef60
+		sourceLineageTag: DirectQuery à AS – pst38.# unités de travail reprises depuis la FE
+		dataCategory: Uncategorized
+
+	measure '# unités de travail supplémentaires par adhérent' = EXTERNALMEASURE("# unités de travail supplémentaires par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0
+		displayFolder: Indicateurs\5 - Evolution du remplissage
+		lineageTag: 9f72b4fb-be54-4dc4-b4a9-9e8c3decb18f
+		sourceLineageTag: DirectQuery à AS – pst38.# unités de travail supplémentaires par adhérent
+		dataCategory: Uncategorized
+
+	measure '# unités de travail' = EXTERNALMEASURE("# unités de travail", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Remplissage actuel
+		lineageTag: 71bd3980-3d66-4e79-87fc-4cdd3a0a1a46
+		sourceLineageTag: DirectQuery à AS – pst38.# unités de travail
+		dataCategory: Uncategorized
+
+	measure '% actions de prévention reprises depuis la FE' = EXTERNALMEASURE("% actions de prévention reprises depuis la FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Synergies FE/DU
+		lineageTag: 1fa43730-2049-461a-9266-f8bc443d1196
+		sourceLineageTag: DirectQuery à AS – pst38.% actions de prévention reprises depuis la FE
+		dataCategory: Uncategorized
+
+	measure '% adhérents abonnés noa avec DU généré l''année dernière' = EXTERNALMEASURE("% adhérents abonnés noa avec DU généré l'année dernière", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - Adhérents concernés
+		lineageTag: c5e08c00-feb0-4b6a-b8bd-121f340ade0e
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents abonnés noa avec DU généré l'année dernière
+		dataCategory: Uncategorized
+
+	measure '% adhérents abonnés noa avec partage FE activé actuellement' = EXTERNALMEASURE("% adhérents abonnés noa avec partage FE activé actuellement", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - Adhérents concernés
+		lineageTag: 08f4bedd-164e-44d9-aec7-d75abe72e900
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents abonnés noa avec partage FE activé actuellement
+		dataCategory: Uncategorized
+
+	measure '% adhérents avec alerte principale' = EXTERNALMEASURE("% adhérents avec alerte principale", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Alertes de remplissage
+		lineageTag: 9e83f2bc-ac29-401b-ab06-00dedc256e7e
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents avec alerte principale
+		dataCategory: Uncategorized
+
+	measure '% risques repris depuis la FE' = EXTERNALMEASURE("% risques repris depuis la FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Synergies FE/DU
+		lineageTag: 576a802a-85e4-4fb6-93e9-ad621732df52
+		sourceLineageTag: DirectQuery à AS – pst38.% risques repris depuis la FE
+		dataCategory: Uncategorized
+
+	measure '% unités de travail reprises depuis la FE' = EXTERNALMEASURE("% unités de travail reprises depuis la FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Synergies FE/DU
+		lineageTag: 2ce3d766-84f8-49aa-bc0a-7b03f5b960df
+		sourceLineageTag: DirectQuery à AS – pst38.% unités de travail reprises depuis la FE
+		dataCategory: Uncategorized
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b40abd45-dd5e-4f44-8871-9d8ecb1e50ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dfd6da0a-8cd8-417f-bf05-06de6b77797c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e54680bc-e707-4e01-aa13-1a11d87b0533
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: de2056b7-898f-4049-9d2a-fcb6eb6c1b96
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_depuis_fe_partiel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 610b6b56-1725-4166-9036-bb35b1989c0f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_depuis_fe_partiel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_depuis_fe_partiel_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fa6fa58a-e012-423c-9f82-b0c4228882df
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_depuis_fe_partiel_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_depuis_fe_total
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3e487840-e470-4778-bd31-5aa9109b9aa9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_depuis_fe_total
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_depuis_fe_total_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dde4b158-c71d-44c7-b24d-a016112102c4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_depuis_fe_total_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_en_retard
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9c60a0c0-891e-47d1-b2d6-019df1e0bd24
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_en_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_en_retard_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 74e3d911-c07f-4955-a09f-adc820ec8fee
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_en_retard_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e3e798e7-6527-4446-92d2-efc8a4967ab9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_planifiee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ab701b2a-96d7-420a-a138-2abebfc475ed
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_planifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_planifiee_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a362bdb7-32dc-46de-be89-d4bb4437ea2b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_planifiee_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4ae06753-8219-42d0-a4d3-30d8d9211c4b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a39b951f-dc0d-439c-9d9f-bb95e758fe55
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_prevention_realisee_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6f931fa2-3af4-437f-b371-46cfc0d6267d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_prevention_realisee_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_alerte_aucun_risque
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 52d46d29-27b9-46fc-91a5-c859f34afb56
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_alerte_aucun_risque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_alerte_principale
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8947c3b9-aebc-406b-9120-f4fbf685c085
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_alerte_principale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_alerte_risque_sans_unite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5ceb42c5-69d1-424e-bc9d-5f8071c6d73f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_alerte_risque_sans_unite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_alerte_unite_sans_risque
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c7c16f2a-2f36-47b4-9017-98438284dce9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_alerte_unite_sans_risque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_entreprise_avec_du_genere_annee_precedente
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 114555fe-ca82-4825-a0b0-48905dad7e53
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_entreprise_avec_du_genere_annee_precedente
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1c64e600-3697-4037-a5a0-04121670fd8a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_depuis_fe_partiel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2e37fde7-ee5c-4280-83a1-aab770d15e03
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_depuis_fe_partiel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_depuis_fe_partiel_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 712e5b8f-ec3a-41d3-acd8-1b0e68fcc368
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_depuis_fe_partiel_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_depuis_fe_total
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b8535cbf-d128-4c45-9fa4-682e384622c9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_depuis_fe_total
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_depuis_fe_total_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 955b58a6-4825-45a1-ba1d-540b7fa0712e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_depuis_fe_total_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 238a6750-106e-4554-acae-a52b450ad5d9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8e79b782-f4f0-4dae-abb4-d5dd5354d184
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_situation_travail
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5af9169a-183f-4291-be14-4768f96ad8d1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_situation_travail
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_situation_travail_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3a950976-9532-4ed0-85fb-8e839ba2f67d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_situation_travail_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 38b467f3-2b54-4e86-a623-26753d2c9ffa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_depuis_fe_partiel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c4270208-43e7-4fdf-bc8e-2cfb9679719c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_depuis_fe_partiel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_depuis_fe_partiel_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 026bb897-974d-4134-b8c3-31eb62de7404
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_depuis_fe_partiel_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_depuis_fe_total
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 422dcd16-7bd9-4c4b-bdfa-e8f2b8121ed4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_depuis_fe_total
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_depuis_fe_total_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7e7d9a6c-7014-4698-9734-999458ba9da7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_depuis_fe_total_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4acfd5da-cd13-453d-9ab2-845f87d0fcb6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_precedent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 64798173-e6c9-455d-bef2-d39d7b93555f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_precedent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column partage_fe_actuel_et_amt_fe
+		dataType: boolean
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2365ef27-46ec-4923-a438-2b85598c5e5b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: partage_fe_actuel_et_amt_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Remplissage noa' = entity
+		mode: directQuery
+		source
+			entityName: Remplissage noa
+			expressionSource: 'DirectQuery à AS – pst38'
+

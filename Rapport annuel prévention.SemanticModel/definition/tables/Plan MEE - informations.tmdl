@@ -1,0 +1,103 @@
+table 'Plan MEE - informations'
+	lineageTag: 89e902b7-7c70-43eb-bc84-538c40bcd4f5
+
+	column 'Catégorie résultat plan MEE'
+		dataType: string
+		lineageTag: b316dba0-a801-4851-a570-39bd7bb9549b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie résultat plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_plan_mee
+		dataType: int64
+		isNullable: false
+		lineageTag: e60abdbb-9210-4821-840c-5a90b4e12848
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordre_statut_plan_mee
+		dataType: int64
+		lineageTag: 6d5fbcde-cc26-4e5c-8990-7b077cd0660f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ordre_statut_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Situation salarié après plan MEE'
+		dataType: string
+		lineageTag: 83e42b0a-a0cc-430f-bd77-bad332175366
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Situation salarié après plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Situation salarié avant plan MEE'
+		dataType: string
+		lineageTag: fa15c04e-7481-4787-b15c-399e4e5e7f25
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Situation salarié avant plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous-catégorie résultat plan MEE'
+		dataType: string
+		lineageTag: 2a446511-bc26-40cb-b961-0df226f31794
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous-catégorie résultat plan MEE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut plan MEE'
+		dataType: string
+		lineageTag: 25c61411-75f6-413a-a697-548632ac6e9f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut plan MEE
+		sortByColumn: ordre_statut_plan_mee
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cellule PDP mobilisée plan MEE'
+		dataType: string
+		lineageTag: 6f78cc3f-fe18-4fe8-b22c-17f3754b995c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Cellule PDP mobilisée plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie résultat plan MEE'
+		lineageTag: ede98388-de7f-4b77-ad35-775b2633f3d0
+		sourceLineageTag: Hiérarchie résultat plan MEE
+
+		level 'Catégorie résultat plan MEE'
+			lineageTag: f97412ce-1433-454d-adb8-957a4bc4bf62
+			column: 'Catégorie résultat plan MEE'
+
+		level 'Sous-catégorie résultat plan MEE'
+			lineageTag: 4a8e2e8d-5a19-4923-a097-bcb33bedf80b
+			column: 'Sous-catégorie résultat plan MEE'
+
+	partition 'Plan MEE - informations' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE - informations
+			expressionSource: 'DirectQuery à AS – pst38'
+

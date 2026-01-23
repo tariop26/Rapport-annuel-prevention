@@ -1,0 +1,58 @@
+table 'Visite - heure déconnexion tablette'
+	lineageTag: b4154cc4-0b68-47c6-943b-4eefc97e63b5
+
+	column 'Heure déconnexion tablette'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: aa9089a3-a403-4191-a1e8-534408baa322
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure déconnexion tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte déconnexion tablette'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f8d9add4-fcea-450a-ad12-73bbf08da424
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte déconnexion tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 877d521a-85da-4cdd-a581-cedc390bc84e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure déconnexion tablette'
+		lineageTag: 23e9ab3c-0c51-4f45-9d26-5cc3d61b191b
+		sourceLineageTag: Hiérarchie heure déconnexion tablette
+
+		level 'Heure déconnexion tablette'
+			lineageTag: e7aeeab5-4a73-4366-bd50-158937fd8574
+			column: 'Heure déconnexion tablette'
+
+		level 'Heure exacte déconnexion tablette'
+			lineageTag: 06ff9fe9-e74b-4c44-a7f5-e5359bf08bf0
+			column: 'Heure exacte déconnexion tablette'
+
+	partition 'Visite - heure déconnexion tablette' = entity
+		mode: directQuery
+		source
+			entityName: Visite - heure déconnexion tablette
+			expressionSource: 'DirectQuery à AS – pst38'
+

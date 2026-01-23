@@ -1,0 +1,30 @@
+table 'Prescription - type prescription'
+	lineageTag: 601dc1bf-6762-427a-9d2d-5c6e5e0c3d1e
+
+	column id_type_prescription
+		dataType: int64
+		isNullable: false
+		lineageTag: b0b1c97f-2b7d-4c4f-80a6-04ffc801bc4b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_prescription
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type prescription'
+		dataType: string
+		lineageTag: 04b35e7d-5f61-4f87-88ab-2fb35bc3aea8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type prescription
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Prescription - type prescription' = entity
+		mode: directQuery
+		source
+			entityName: Prescription - type prescription
+			expressionSource: 'DirectQuery à AS – pst38'
+

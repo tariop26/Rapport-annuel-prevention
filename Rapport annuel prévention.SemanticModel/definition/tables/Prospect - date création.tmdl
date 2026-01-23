@@ -1,0 +1,113 @@
+table 'Prospect - date création'
+	lineageTag: e3d85cb1-a386-4b28-9ec9-7210c09b3f1b
+
+	column 'Année à ce jour (date création prospect)'
+		dataType: string
+		lineageTag: ff9cf927-54c7-4f6f-aeb0-6c2177dba597
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date création prospect)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année création prospect'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: beba704a-37b0-416d-b452-8d6c69950486
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année création prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date création prospect'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 06327aa5-024e-4c7f-aa59-551481b09555
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_prospect
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0ce64004-ec4e-4759-9a64-6d969ece26f3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour création prospect'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: fd9e9dcc-4881-49e6-a9db-8b4c03dab5d1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour création prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création prospect'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6ce1b84a-3fc6-4e63-8c58-617f30fe73f2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine création prospect'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 52c44fa8-3f31-4d43-b6e1-6c3f6e47ec35
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine création prospect
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date création prospect'
+		lineageTag: ff2f2634-bba0-4957-b7d5-6f03f86724ef
+		sourceLineageTag: Hiérarchie date création prospect
+
+		level 'Année création prospect'
+			lineageTag: 606517ec-916f-4023-b292-eb9fc4efa88e
+			column: 'Année création prospect'
+
+		level 'Mois création prospect'
+			lineageTag: e2e8787e-2698-4714-8802-431b5ec2d015
+			column: 'Mois création prospect'
+
+		level 'Semaine création prospect'
+			lineageTag: 68a3636f-4bc9-4d73-9988-0b83ebb4c256
+			column: 'Semaine création prospect'
+
+		level 'Date création prospect'
+			lineageTag: e56883e7-7e1e-47ec-8b96-8271811ebbe6
+			column: 'Date création prospect'
+
+	partition 'Prospect - date création' = entity
+		mode: directQuery
+		source
+			entityName: Prospect - date création
+			expressionSource: 'DirectQuery à AS – pst38'
+

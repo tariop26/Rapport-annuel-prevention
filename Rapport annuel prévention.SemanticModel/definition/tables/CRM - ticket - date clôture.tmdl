@@ -1,0 +1,87 @@
+table 'CRM - ticket - date clôture'
+	lineageTag: 43dff16d-6665-4fa5-8251-e49aa6e8c568
+
+	column 'Année clôture ticket'
+		dataType: int64
+		lineageTag: 0746bd35-a8da-4555-9701-9e4c062e738f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année clôture ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date clôture ticket'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		lineageTag: 690e21b9-16ed-4c40-b893-652abb1b577d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date clôture ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_cloture_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: 5f9848f3-1796-4953-b7f7-8f314ed7764e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_cloture_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois clôture ticket'
+		dataType: string
+		lineageTag: 7af67554-5d2d-4d90-8109-efcb3beeb042
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois clôture ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Semaine clôture ticket'
+		dataType: string
+		lineageTag: 3d667ba6-6758-4ecd-bab1-c0f0fb4b2c64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine clôture ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie date clôture ticket'
+		lineageTag: e3917d83-9ba1-483e-ab45-d12f7a201267
+		sourceLineageTag: Hiérarchie date clôture ticket
+
+		level 'Année clôture ticket'
+			lineageTag: a77fdce2-cdc1-49ad-938f-661bbbd2b6f6
+			column: 'Année clôture ticket'
+
+		level 'Mois clôture ticket'
+			lineageTag: e7d9e072-f680-4b78-8dab-e764d6126600
+			column: 'Mois clôture ticket'
+
+		level 'Semaine clôture ticket'
+			lineageTag: e52d44ca-be35-49f8-a5f8-2b672de6c101
+			column: 'Semaine clôture ticket'
+
+		level 'Date clôture ticket'
+			lineageTag: 6ef6b61b-9694-4002-9b0c-e755101b1759
+			column: 'Date clôture ticket'
+
+	partition 'CRM - ticket - date clôture' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - date clôture
+			expressionSource: 'DirectQuery à AS – pst38'
+

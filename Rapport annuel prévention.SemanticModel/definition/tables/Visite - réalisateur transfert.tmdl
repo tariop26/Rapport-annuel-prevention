@@ -1,0 +1,71 @@
+table 'Visite - réalisateur transfert'
+	lineageTag: 331df28f-ed34-4de0-ad45-ca6b123f6101
+
+	column id_utilisateur_transfert_salle_attente
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 95df367c-1481-4ce8-89ef-5872743b163e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_transfert_salle_attente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur transfert'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: c62f5a74-bfa9-4867-a9be-bd221e8a73ad
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom réalisateur transfert
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil réalisateur transfert détaillé'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: c1d43cbc-ad0d-4445-972b-e273d7f96f11
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil réalisateur transfert détaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil réalisateur transfert'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: cfa09a2d-4551-4110-ab02-0d7f1998da36
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil réalisateur transfert
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie réalisateur transfert'
+		lineageTag: 7e39b332-bc9c-48c4-9785-5cd882b00e4d
+		sourceLineageTag: Hiérarchie réalisateur transfert
+
+		level 'Profil réalisateur transfert'
+			lineageTag: 5693b403-f959-45ed-9ba3-fcff9f779da0
+			column: 'Profil réalisateur transfert'
+
+		level 'Profil réalisateur transfert détaillé'
+			lineageTag: a44739fa-1964-4126-abc2-bb070472fd38
+			column: 'Profil réalisateur transfert détaillé'
+
+		level 'Nom réalisateur transfert'
+			lineageTag: 500cb49e-9f95-4a45-93d4-4ecce930a82a
+			column: 'Nom réalisateur transfert'
+
+	partition 'Visite - réalisateur transfert' = entity
+		mode: directQuery
+		source
+			entityName: Visite - réalisateur transfert
+			expressionSource: 'DirectQuery à AS – pst38'
+

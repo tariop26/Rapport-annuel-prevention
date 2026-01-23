@@ -1,0 +1,353 @@
+table 'Demande consultation spécialisée'
+	lineageTag: d713f933-03a2-41f2-a19c-510d8b924b28
+
+	measure '# demandes consultation spécialisée' = EXTERNALMEASURE("# demandes consultation spécialisée", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: fa42cd12-7465-4bc0-9aab-430140a8b760
+		sourceLineageTag: DirectQuery à AS – pst38.# demandes consultation spécialisée
+		dataCategory: Uncategorized
+
+	measure 'Délai moyen planification demande (en jours)' = EXTERNALMEASURE("Délai moyen planification demande (en jours)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 7cfe23de-0180-4162-840d-c5d19cfd2f0f
+		sourceLineageTag: DirectQuery à AS – pst38.Délai moyen planification demande (en jours)
+		dataCategory: Uncategorized
+
+	measure 'Délai moyen traitement demande (en jours)' = EXTERNALMEASURE("Délai moyen traitement demande (en jours)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 3482753e-cd9f-4c95-b637-6c0570e79ba5
+		sourceLineageTag: DirectQuery à AS – pst38.Délai moyen traitement demande (en jours)
+		dataCategory: Uncategorized
+
+	column delai_planification_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 31387c0e-3369-49b7-b266-9cfa1038f182
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: delai_planification_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column delai_traitement_demande
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: fa69a008-0f70-4f68-b927-553bbd72a79f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: delai_traitement_demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_createur_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 43717b4f-f5f2-4e3f-b896-450580975ec9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a05eb9bc-3490-4b7e-ba18-232aef279d17
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_traitement_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ba7ad1fa-4001-4ce6-aa0b-e251f15d538d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_traitement_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c88cb165-bbfc-489d-b2da-a0149994192b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 31ed2ca1-a22b-4f76-8bd5-3ec40505fed6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 8bbc03e3-9e3e-40ae-a75d-5c483b7b1028
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f05880ca-f4fb-4db7-84d0-ef8aecc4126f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 6a3110b0-d4f0-433e-8ca7-796ac040494a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_statut_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 4de867a5-ddd6-4f3d-ac3a-7af50e6293f7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: bbec553f-32c8-41cc-92e1-c3062602578c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 56403f1b-d190-432e-8111-90d85f0a4d79
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_demande
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 036863c7-444a-4211-8a35-d0da10b8489b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_origine
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e9ca74f3-e8d9-4b84-916f-0e8e69471917
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_origine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_validateur_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 714bc8d2-510a-467b-a843-13241cd4c08c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_validateur_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b50f1931-3926-4190-bcf1-54b7b747d548
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite_acceptee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 1d615e3c-f32b-423e-afd5-aff306be65bd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite_acceptee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite_en_attente
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2732ed0d-f0d1-459e-bf8a-86dfeca7e67a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite_en_attente
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite_hors_padoa
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 9ef1e66a-9512-4e3c-af7c-072a52d3584a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite_hors_padoa
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite_rejetee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 7b8e3f2a-a522-4011-9815-7cc7f511c890
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite_rejetee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite_traitee_sans_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 44badbfa-7bbf-45bb-9851-288ae5a2486b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite_traitee_sans_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: e0cd7797-672d-49c5-8fc9-84b44ff7e714
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_annule
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 51022a77-a874-420b-b900-1ebe4e6e14d3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_annule
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_honore
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ec3fdc15-61d5-42a3-84b6-83b4a5f8ed52
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_honore
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0a211342-3f9a-40d6-a6eb-d657a1a49d14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: 1e8b709c-7d3f-4311-aa8b-4dbdb555724c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Demande consultation spécialisée' = entity
+		mode: directQuery
+		source
+			entityName: Demande consultation spécialisée
+			expressionSource: 'DirectQuery à AS – pst38'
+

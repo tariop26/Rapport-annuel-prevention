@@ -1,0 +1,86 @@
+table 'Examen complémentaire - type examen'
+	lineageTag: 758ce56c-ec60-4b54-8f3d-fcbccafea22b
+
+	column 'Type examen'
+		dataType: string
+		lineageTag: ff74b25d-2e5c-4cb9-bde2-edf9542d9d57
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type examen
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Examen complémentaire - type examen","TableItemName":"Type examen (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Type examen (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Examen complémentaire - type examen'[Type examen]),
+				"(Vide)",
+				'Examen complémentaire - type examen'[Type examen] IN {"Audiogramme",
+					"Audiolyser ADL20 connecté",
+					"Audiométrie",
+					"PDD401 connecté"},
+				"Audiométrie",
+				'Examen complémentaire - type examen'[Type examen] IN {"Bandelette urinaire"},
+				"Bandelette urinaire",
+				'Examen complémentaire - type examen'[Type examen] IN {"IMC"},
+				"IMC",
+				'Examen complémentaire - type examen'[Type examen] IN {"Spirolyser Q13 connecté",
+					"Spirométrie"},
+				"Spirométrie",
+				'Examen complémentaire - type examen'[Type examen] IN {"Tension"},
+				"Tension",
+				'Examen complémentaire - type examen'[Type examen] IN {"Astigmatisme",
+					"Autre examen vision",
+					"Champs visuel",
+					"Visiolite connecté",
+					"Vision de loin",
+					"Vision de près",
+					"Vision des couleurs"},
+				"Visiotest",
+				"Autre"
+			)
+		lineageTag: b5cca48c-27d8-4c05-9597-2f9e43c506e2
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Examen complémentaire - type examen"
+				          }
+				        },
+				        "Property": "Type examen"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"e","Entity":"Examen complémentaire - type examen"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Audiométrie","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"Values":[[{"Literal":{"Value":"'Audiogramme'"}}],[{"Literal":{"Value":"'Audiolyser ADL20 connecté'"}}],[{"Literal":{"Value":"'Audiométrie'"}}],[{"Literal":{"Value":"'PDD401 connecté'"}}]]}}},{"DisplayName":"Bandelette urinaire","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"Values":[[{"Literal":{"Value":"'Bandelette urinaire'"}}]]}}},{"DisplayName":"IMC","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"Values":[[{"Literal":{"Value":"'IMC'"}}]]}}},{"DisplayName":"Spirométrie","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"Values":[[{"Literal":{"Value":"'Spirolyser Q13 connecté'"}}],[{"Literal":{"Value":"'Spirométrie'"}}]]}}},{"DisplayName":"Tension","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"Values":[[{"Literal":{"Value":"'Tension'"}}]]}}},{"DisplayName":"Visiotest","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Type examen"}}],"Values":[[{"Literal":{"Value":"'Astigmatisme'"}}],[{"Literal":{"Value":"'Autre examen vision'"}}],[{"Literal":{"Value":"'Champs visuel'"}}],[{"Literal":{"Value":"'Visiolite connecté'"}}],[{"Literal":{"Value":"'Vision de loin'"}}],[{"Literal":{"Value":"'Vision de près'"}}],[{"Literal":{"Value":"'Vision des couleurs'"}}]]}}},{"DisplayName":"Autre"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_mesure
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: df89f2c0-5e38-497d-8f45-9ecb9bf1bb1f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_mesure
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Examen complémentaire - type examen' = entity
+		mode: directQuery
+		source
+			entityName: Examen complémentaire - type examen
+			expressionSource: 'DirectQuery à AS – pst38'
+

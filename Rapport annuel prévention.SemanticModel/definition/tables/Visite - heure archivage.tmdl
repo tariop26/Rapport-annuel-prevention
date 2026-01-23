@@ -1,0 +1,58 @@
+table 'Visite - heure archivage'
+	lineageTag: 49b59b94-121e-4671-8327-2c28cdcd630f
+
+	column 'Heure archivage'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7c317092-f0b6-4585-84e5-439843c18509
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte archivage'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: c098c434-e8d6-49c1-b01e-fc6e19f8c639
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2e4e31fb-078d-4569-9d89-672445471460
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure archivage'
+		lineageTag: b95ceca6-6701-4321-b8bb-b23f7f7a05d9
+		sourceLineageTag: Hiérarchie heure archivage
+
+		level 'Heure archivage'
+			lineageTag: 549bacfb-1ba0-4226-b67e-2b71f80b8746
+			column: 'Heure archivage'
+
+		level 'Heure exacte archivage'
+			lineageTag: e8362ae6-0bfe-4ca2-8253-958bdba98cdf
+			column: 'Heure exacte archivage'
+
+	partition 'Visite - heure archivage' = entity
+		mode: directQuery
+		source
+			entityName: Visite - heure archivage
+			expressionSource: 'DirectQuery à AS – pst38'
+

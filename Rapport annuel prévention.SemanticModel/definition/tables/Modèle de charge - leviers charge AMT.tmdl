@@ -1,0 +1,194 @@
+table 'Modèle de charge - leviers charge AMT'
+	lineageTag: ce87f73e-7238-422e-9858-e03839cc2779
+
+	measure 'Nombre adhérents actifs' = EXTERNALMEASURE("Nombre adhérents actifs", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: fc87d6a0-fa50-46f3-b7c7-d4571789732d
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre adhérents actifs
+		dataCategory: Uncategorized
+
+	measure 'Nombre adhésions dernière année glissante' = EXTERNALMEASURE("Nombre adhésions dernière année glissante", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 11ef31b6-c3e4-4320-ab4a-cb4c4dbf7e89
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre adhésions dernière année glissante
+		dataCategory: Uncategorized
+
+	measure 'Nombre adhésions multiple 4 ans' = EXTERNALMEASURE("Nombre adhésions multiple 4 ans", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 4a761236-0a85-41f0-9ddd-82d0e4720304
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre adhésions multiple 4 ans
+		dataCategory: Uncategorized
+
+	measure 'Nombre salariés commençant adaptation poste dernière année glissante' = EXTERNALMEASURE("Nombre salariés commençant adaptation poste dernière année glissante", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 1f21f08d-43be-4a73-b7a0-dd9d3c7050ba
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre salariés commençant adaptation poste dernière année glissante
+		dataCategory: Uncategorized
+
+	measure 'Nombre salariés déclarés inaptes dernière année glissante' = EXTERNALMEASURE("Nombre salariés déclarés inaptes dernière année glissante", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 432d5f1c-a774-4db8-b6ac-55b15d005f71
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre salariés déclarés inaptes dernière année glissante
+		dataCategory: Uncategorized
+
+	column 'Catégorie entreprise'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 689063fd-7da7-4f17-bb93-723298359bcb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: da43a494-c8d0-47ef-8cb8-29d19e732e50
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d2364808-79f5-4ea6-9b95-e2e0ef3b2709
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0ef88197-49bb-4113-aa89-8f0feec68829
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4fa240b1-ab82-4a3d-82e8-21630a0e7184
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_adhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e4db64ce-f960-4773-9ea3-2368e3065be3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_adhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_adhesion_multiple_4_ans
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 460526d8-89b3-4f80-936f-0a88e96ded98
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_adhesion_multiple_4_ans
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_salarie_adaptation_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 18f93f4e-029c-489b-859e-48cfc4fa0f1a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_adaptation_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_salarie_inaptitude
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6dc57b66-4c61-47e3-b7a3-70b7fdc04bdd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_inaptitude
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Statut entreprise'
+		dataType: string
+		lineageTag: 961faaba-11d3-4586-91b8-0bbab80d4e13
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut entreprise
+
+		annotation SummarizationSetBy = User
+
+	column 'Taille entreprise'
+		dataType: string
+		lineageTag: 538a154c-8b2d-4e82-a750-f8c6f05ef3b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise
+
+		annotation SummarizationSetBy = User
+
+	column 'Type entreprise'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b13ef9e6-efa9-41d8-9a0b-8d4a00b34e6a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie type entreprise'
+		lineageTag: 9aefe59e-60ec-47bc-95b9-f5cc87626534
+		sourceLineageTag: Hiérarchie type entreprise
+
+		level 'Catégorie entreprise'
+			lineageTag: 8cb5254e-8317-46e7-a12f-f1e3476fb684
+			column: 'Catégorie entreprise'
+
+		level 'Type entreprise'
+			lineageTag: a55e4dc4-3fbf-4fe4-a38d-10f61ec4d4a6
+			column: 'Type entreprise'
+
+	partition 'Modèle de charge - leviers charge AMT' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - leviers charge AMT
+			expressionSource: 'DirectQuery à AS – pst38'
+

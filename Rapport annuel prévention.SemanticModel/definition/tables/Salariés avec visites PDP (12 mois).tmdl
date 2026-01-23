@@ -1,0 +1,62 @@
+table 'Salariés avec visites PDP (12 mois)'
+	lineageTag: ead9d4f8-b23d-459f-8339-e634c2f7c419
+
+	column 'Matricule salarié'
+		lineageTag: f947eb30-a438-4314-8741-9adef0cb1544
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Salarié - informations nominatives[Matricule salarié]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom réalisateur'
+		lineageTag: 51cdbef9-42bc-41d5-9df1-5f8552531e86
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: RDV/visite - réalisateur[Nom réalisateur]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Filtre Période 12 mois ajustés'
+		lineageTag: 263216cb-3c70-4604-b0b7-d10a876445c7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Date principale[Filtre Période 12 mois ajustés]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre d''entretien PDP'
+		lineageTag: 9e2aa4b8-a9e9-4d7f-b301-176104c83099
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Nombre d'entretien PDP]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Salariés avec visites PDP (12 mois)' = calculated
+		mode: import
+		source = ```
+				
+				FILTER(
+				    SUMMARIZECOLUMNS(
+				        'Salarié - informations nominatives'[matricule salarié],
+				        'RDV/visite - réalisateur'[Nom réalisateur],
+				        'Date principale'[Filtre Période 12 mois ajustés],
+				        "Nombre d'entretien PDP", [Nbre d'entretiens PDP (12 mois)]
+				    ),
+				    [Nombre d'entretien PDP] > 0
+				)
+				
+				/* Explications :
+				1. SUMMARIZECOLUMNS : Utilisé pour créer une table résumée des données nécessaires.
+				2. FILTER : Applique un filtre sur la table résumée pour ne conserver que les salariés ayant un nombre d'entretiens supérieur à zéro.
+				3. 'RDV/visite - réalisateur'[Nom réalisateur] : Groupe les résultats par réalisateur.
+				4. 'Salarié - informations nominatives'[matricule salarié] : Groupe les résultats par matricule de salarié.
+				5. 'Date principale'[Filtre Période 12 mois ajustés] : Filtre les données pour ne conserver que les enregistrements des 12 derniers mois.
+				6. "Nombre d'entretien PDP" : Calcule le nombre d'entretiens PDP pour chaque groupe.
+				*/
+				
+				```
+
+	annotation PBI_Id = 15d1ab78a0624a9499b10bd298c4a115
+

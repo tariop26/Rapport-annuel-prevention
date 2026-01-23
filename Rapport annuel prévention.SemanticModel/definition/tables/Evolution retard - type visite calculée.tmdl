@@ -1,0 +1,120 @@
+table 'Evolution retard - type visite calculée'
+	lineageTag: e7851f0b-da99-4bf1-b013-7a2e6557f560
+
+	column 'Catégorie visite calculée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f8cfd82e-d7a3-4269-84f9-bc0e41e5b738
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite_calculee
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3cbeafdc-2448-40c1-b39c-b210978582fd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite_calculee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite calculée détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5e636ad2-df8a-46b9-872b-fc7d00ccb012
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite calculée détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type visite calculée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9e539c15-e5e7-4fc2-91bf-fe5c62e21b0a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type visite calculée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite calculée réalisable par'
+		dataType: string
+		lineageTag: bc05f70c-02e0-41f5-9207-a882eef6fd62
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite calculée réalisable par
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Evolution retard - type visite calculée","TableItemName":"Visite calculée réalisable par :","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Visite calculée réalisable par :' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Evolution retard - type visite calculée'[Visite calculée réalisable par]),
+				"(Vide)",
+				'Evolution retard - type visite calculée'[Visite calculée réalisable par] IN {"Médecin et IDEST"},
+				"IDEST",
+				'Evolution retard - type visite calculée'[Visite calculée réalisable par] IN {"Médecin uniquement"},
+				"Médecin",
+				'Evolution retard - type visite calculée'[Visite calculée réalisable par]
+			)
+		lineageTag: 3fac6602-f79e-465c-96c4-3c5e8d18f0ca
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Evolution retard - type visite calculée"
+				          }
+				        },
+				        "Property": "Visite calculée réalisable par"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"e","Entity":"Evolution retard - type visite calculée"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Visite calculée réalisable par"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"IDEST","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Visite calculée réalisable par"}}],"Values":[[{"Literal":{"Value":"'Médecin et IDEST'"}}]]}}},{"DisplayName":"Médecin","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"e"}},"Property":"Visite calculée réalisable par"}}],"Values":[[{"Literal":{"Value":"'Médecin uniquement'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie type visite calculée'
+		lineageTag: 8560cdb7-0576-4e07-a943-eaed329088b0
+		sourceLineageTag: Hiérarchie type visite calculée
+
+		level 'Catégorie visite calculée'
+			lineageTag: 81eb56b4-c98a-4b0d-9042-3ce5e53c92b8
+			column: 'Catégorie visite calculée'
+
+		level 'Type visite calculée'
+			lineageTag: 5b5c5c2b-70fe-4417-bb33-25d320500ef9
+			column: 'Type visite calculée'
+
+		level 'Type visite calculée détaillé'
+			lineageTag: fd277ac9-1300-4c5a-8661-42a85a306167
+			column: 'Type visite calculée détaillé'
+
+	partition 'Evolution retard - type visite calculée' = entity
+		mode: directQuery
+		source
+			entityName: Evolution retard - type visite calculée
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,58 @@
+table 'Visite - heure connexion tablette'
+	lineageTag: 908c34c7-7c96-40e3-836a-52860796d7f8
+
+	column 'Heure connexion tablette'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4fefc3da-6a79-4204-ae9c-3f32c2da0a6c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure connexion tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte connexion tablette'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f10eb0a3-21f0-4b4b-a1b2-7c748bac7509
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte connexion tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9440d241-1bed-4fd3-8bbd-118d964fd44c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure connexion tablette'
+		lineageTag: 6757a404-7a04-48eb-b526-f4ee154667af
+		sourceLineageTag: Hiérarchie heure connexion tablette
+
+		level 'Heure connexion tablette'
+			lineageTag: 3a8a2148-f77a-46c9-a55b-5b879b916c04
+			column: 'Heure connexion tablette'
+
+		level 'Heure exacte connexion tablette'
+			lineageTag: a0145d09-cfd4-4374-b67e-e74c6fcbd447
+			column: 'Heure exacte connexion tablette'
+
+	partition 'Visite - heure connexion tablette' = entity
+		mode: directQuery
+		source
+			entityName: Visite - heure connexion tablette
+			expressionSource: 'DirectQuery à AS – pst38'
+

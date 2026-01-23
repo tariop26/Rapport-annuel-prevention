@@ -1,0 +1,122 @@
+table 'Activité camion - informations'
+	isHidden
+	lineageTag: 481f085d-74ca-45f9-8b84-cb1bedfa150c
+
+	column 'Besoin accueil salarié'
+		dataType: string
+		isHidden
+		lineageTag: f41ccd51-78d2-430b-acca-4fbf64134952
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Besoin accueil salarié
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_activite_camion
+		dataType: int64
+		isHidden
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1ddbd207-b0b5-4459-ac20-2bbf76cd6ed3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_info_activite_camion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif refus demande vacation'
+		dataType: string
+		isHidden
+		lineageTag: 012f62aa-ddb6-460c-ac2c-b3e68b9f1256
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif refus demande vacation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous type indisponibilité'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 734cf1a2-07ba-4099-acb7-6a0e77cccbd3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous type indisponibilité
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut demande vacation détaillé'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3049ef6b-f30c-4146-833f-a5e7972143fd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut demande vacation détaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut demande vacation'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2bdd9f54-8670-4100-a197-c05e1ae3484d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut demande vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type indisponibilité'
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: f582b9da-3153-4750-ac5e-900582e05c26
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type indisponibilité
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie demande vacation'
+		isHidden
+		lineageTag: 5f7df3d9-bd42-4c45-b93c-46fd0969888c
+		sourceLineageTag: Hiérarchie demande vacation
+
+		level 'Statut demande vacation'
+			lineageTag: fb12360d-e779-46ec-a679-c2c273bc79e3
+			column: 'Statut demande vacation'
+
+		level 'Statut demande vacation détaillé'
+			lineageTag: ab0393a3-ff8e-454c-85b8-c058fd251756
+			column: 'Statut demande vacation détaillé'
+
+		changedProperty = IsHidden
+
+	hierarchy 'Hiérarchie type indisponibilité'
+		isHidden
+		lineageTag: 8e624f85-1a2e-406c-b9e8-960877641ef8
+		sourceLineageTag: Hiérarchie type indisponibilité
+
+		level 'Type indisponibilité'
+			lineageTag: a40b4970-4822-4862-baf5-ba5a88a23a26
+			column: 'Type indisponibilité'
+
+		level 'Sous type indisponibilité'
+			lineageTag: d4cfd73a-f0b3-4b4c-8c43-9aecccc3e2e4
+			column: 'Sous type indisponibilité'
+
+		changedProperty = IsHidden
+
+	partition 'Activité camion - informations' = entity
+		mode: directQuery
+		source
+			entityName: Activité camion - informations
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

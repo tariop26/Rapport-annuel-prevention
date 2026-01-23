@@ -1,0 +1,67 @@
+table 'Modèle de charge - catégorie visite'
+	lineageTag: 43cc3662-21c9-4c3d-a94d-fd671521c6af
+
+	column 'Catégorie visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3c42879d-66a1-4e40-8662-fa0321820bd6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_categorie_visite
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 48dede46-61da-477b-b91e-c91e0e2714b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle réalisateur visite'
+		dataType: string
+		lineageTag: d359786e-fa97-46e8-a544-99975fe8fac9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle réalisateur visite
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sous-catégorie visite'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: cbe05840-6da9-4771-a6fb-999a621cfed8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sous-catégorie visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie catégorie visite'
+		lineageTag: 2a998bb9-302d-4005-b5f6-74fcd25f2d3a
+		sourceLineageTag: Hiérarchie catégorie visite
+
+		level 'Catégorie visite'
+			lineageTag: de24c949-d3c2-4c1c-a782-1c63184dfecf
+			column: 'Catégorie visite'
+
+		level 'Sous-catégorie visite'
+			lineageTag: 3c08e05d-4adc-4512-9da2-1b30770f71d1
+			column: 'Sous-catégorie visite'
+
+	partition 'Modèle de charge - catégorie visite' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - catégorie visite
+			expressionSource: 'DirectQuery à AS – pst38'
+

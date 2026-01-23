@@ -1,0 +1,87 @@
+table 'AMT - demandeur'
+	lineageTag: 08334c52-e11b-4125-bf58-82bb2e0924ad
+
+	column id_demandeur_amt
+		dataType: int64
+		isNullable: false
+		lineageTag: 594c2f47-a9fc-4fe5-a863-2e98eb9d113e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_demandeur_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom demandeur AMT'
+		dataType: string
+		lineageTag: 34062234-0263-43c6-8200-054dc77c44c9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom demandeur AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil demandeur AMT détaillé'
+		dataType: string
+		lineageTag: 0083e579-4a3c-4636-8dcc-cf96077983d1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil demandeur AMT détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil demandeur AMT'
+		dataType: string
+		lineageTag: d3513ecc-68b1-4d20-9101-cdb97d1da5ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil demandeur AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle demandeur AMT'
+		dataType: string
+		lineageTag: e17e5906-5ba3-4170-b890-0fb24be819ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle demandeur AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie demandeur AMT'
+		lineageTag: 093c03ff-e758-4426-a53b-2d25edc3a594
+		sourceLineageTag: Hiérarchie demandeur AMT
+
+		level 'Rôle demandeur AMT'
+			lineageTag: 078e4413-d5aa-4bdf-96a1-b606463f8293
+			column: 'Rôle demandeur AMT'
+
+		level 'Nom demandeur AMT'
+			lineageTag: 4790fccd-bf8d-495b-bbda-93876398d4c3
+			column: 'Nom demandeur AMT'
+
+	hierarchy 'Hiérarchie profil demandeur AMT'
+		lineageTag: e7c405d1-d6fe-464c-bf63-984f4505e0c1
+		sourceLineageTag: Hiérarchie profil demandeur AMT
+
+		level 'Profil demandeur AMT'
+			lineageTag: 7dcc11d9-6f8a-4bda-a128-bd369cb0af8b
+			column: 'Profil demandeur AMT'
+
+		level 'Profil demandeur AMT détaillé'
+			lineageTag: 994ff13b-919e-497a-91a9-e4b9716c579c
+			column: 'Profil demandeur AMT détaillé'
+
+	partition 'AMT - demandeur' = entity
+		mode: directQuery
+		source
+			entityName: AMT - demandeur
+			expressionSource: 'DirectQuery à AS – pst38'
+

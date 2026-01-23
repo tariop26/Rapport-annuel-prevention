@@ -1,0 +1,134 @@
+table 'RDV - motif annulation'
+	lineageTag: 8fa9a8ad-3f11-4847-920d-11fa76d80d62
+
+	column 'Annulation facturable'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f7d4078f-7a5d-4f2c-983c-1c37803b6ebc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Annulation facturable
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie annulation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8fc4a5cd-d0ef-42ab-ade8-204271bdc57c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_motif_annulation
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d6b44903-4fd2-4361-89db-40b0f9468cf0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_motif_annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_motif_annulation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3254444e-e857-4a0b-a0fe-483656ba8249
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_motif_annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_motif_annulation_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1004a5d0-171c-4cba-8ecf-e0a8576e954c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_motif_annulation_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif annulation détaillé'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8880ce1a-af24-468a-ac48-5da1801b1dcb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif annulation détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif annulation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0d54166a-171e-44a6-a038-0adc889d0c7b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column motif_annulation_court
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ac9fa5e2-6c0f-45dd-b923-c54734eb2e03
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: motif_annulation_court
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d032cf9a-864d-44e1-b95a-6dffe39d7cdb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: position
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie motif annulation'
+		lineageTag: 3118a73d-23f6-40d1-8d57-5b5c6e309dcc
+		sourceLineageTag: Hiérarchie motif annulation
+
+		level 'Catégorie annulation'
+			lineageTag: 0c4ed9c7-a392-4385-9a51-8cdba6d1e012
+			column: 'Catégorie annulation'
+
+		level 'Motif annulation'
+			lineageTag: f36e52a4-7698-4329-9b4e-eef140563513
+			column: 'Motif annulation'
+
+		level 'Motif annulation détaillé'
+			lineageTag: b190b871-67b1-4090-be21-91899df84ad2
+			column: 'Motif annulation détaillé'
+
+	partition 'RDV - motif annulation' = entity
+		mode: directQuery
+		source
+			entityName: RDV - motif annulation
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,87 @@
+table 'CRM - ticket - date création'
+	lineageTag: 14629d4f-08bc-4a61-9920-be52ef1ca20b
+
+	column 'Année création ticket'
+		dataType: int64
+		lineageTag: 31fdc66d-a5c3-4017-90e5-8dced58c4cc1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année création ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date création ticket'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		lineageTag: 4b328982-1646-48dc-a605-47ca11a5b1b8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_creation_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: 05787118-0c54-46ee-80cb-6bf05c528cf1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois création ticket'
+		dataType: string
+		lineageTag: c1317925-caf7-47ba-a98c-1a6c952283d2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Semaine création ticket'
+		dataType: string
+		lineageTag: 40a7a48e-bf4d-49bd-8e0d-92fd49db8a0e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine création ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie date création ticket'
+		lineageTag: 8a249998-a918-4c66-a315-93c4ea5c7afb
+		sourceLineageTag: Hiérarchie date création ticket
+
+		level 'Année création ticket'
+			lineageTag: 83303cb4-6cea-4dfb-ab86-cac610164c7a
+			column: 'Année création ticket'
+
+		level 'Mois création ticket'
+			lineageTag: d06b2acb-9668-4260-b396-882b97ce0582
+			column: 'Mois création ticket'
+
+		level 'Semaine création ticket'
+			lineageTag: ee20d2c6-433b-4438-b561-67c06d107587
+			column: 'Semaine création ticket'
+
+		level 'Date création ticket'
+			lineageTag: 379572d3-bf93-4654-a528-4a1bfca771d6
+			column: 'Date création ticket'
+
+	partition 'CRM - ticket - date création' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - date création
+			expressionSource: 'DirectQuery à AS – pst38'
+

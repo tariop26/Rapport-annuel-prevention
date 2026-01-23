@@ -1,0 +1,87 @@
+table 'CRM - activité - date'
+	lineageTag: 910f6fe9-4adb-42e7-a870-85ff36221f4a
+
+	column 'Année activité'
+		dataType: int64
+		lineageTag: 7e7ad06d-6ef6-4db0-ba0b-d000c86d155f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date activité'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		lineageTag: e1d35884-13b1-4f09-bd8f-1cb24553b7ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_activite_crm
+		dataType: int64
+		isNullable: false
+		lineageTag: 8fb6bae3-6d53-4956-bb28-e734b7757c31
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_activite_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois activité'
+		dataType: string
+		lineageTag: c3ecf09f-ff8a-40b6-94b1-d75dcfd234d9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Semaine activité'
+		dataType: string
+		lineageTag: f37bf66d-495a-4ea2-8056-449181e36a9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie date activité'
+		lineageTag: b7b07221-c4ff-457d-866f-d3480162e501
+		sourceLineageTag: Hiérarchie date activité
+
+		level 'Année activité'
+			lineageTag: 55f70e73-f978-45a4-9d22-b77ff53cbb3b
+			column: 'Année activité'
+
+		level 'Mois activité'
+			lineageTag: 074d0f91-396d-49d3-a195-8038d3239684
+			column: 'Mois activité'
+
+		level 'Semaine activité'
+			lineageTag: 8d8664f3-bf68-4c56-b8ed-0cc03086fcf2
+			column: 'Semaine activité'
+
+		level 'Date activité'
+			lineageTag: 88837afc-9d7e-40bf-8880-454a1c2889ee
+			column: 'Date activité'
+
+	partition 'CRM - activité - date' = entity
+		mode: directQuery
+		source
+			entityName: CRM - activité - date
+			expressionSource: 'DirectQuery à AS – pst38'
+

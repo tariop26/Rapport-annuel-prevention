@@ -1,0 +1,470 @@
+table 'Plan MEE'
+	lineageTag: 666d9b99-7725-4795-942f-5ef170be7eb0
+
+	measure '# dispositifs MEE (plan MEE)' = EXTERNALMEASURE("# dispositifs MEE (plan MEE)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 2e37bc0d-3abf-4ad8-a02d-e3bacd618b15
+		sourceLineageTag: DirectQuery à AS – pst38.# dispositifs MEE (plan MEE)
+		dataCategory: Uncategorized
+
+	measure '# dispositifs par plan MEE' = EXTERNALMEASURE("# dispositifs par plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: b7e5dc03-b648-4321-b13e-b73c97103b09
+		sourceLineageTag: DirectQuery à AS – pst38.# dispositifs par plan MEE
+		dataCategory: Uncategorized
+
+	measure '# entreprises concernées (plan MEE)' = EXTERNALMEASURE("# entreprises concernées (plan MEE)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 29297c2c-3e34-405f-8e33-0707ebfbc36b
+		sourceLineageTag: DirectQuery à AS – pst38.# entreprises concernées (plan MEE)
+		dataCategory: Uncategorized
+
+	measure '# intervenants par plan MEE' = EXTERNALMEASURE("# intervenants par plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		displayFolder: Indicateurs
+		lineageTag: 8c86bc6e-3564-4b9c-8b67-5e021667ef41
+		sourceLineageTag: DirectQuery à AS – pst38.# intervenants par plan MEE
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# objectifs par plan MEE' = EXTERNALMEASURE("# objectifs par plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 4a1831ca-14ce-4ac5-ae84-881ee4286c3c
+		sourceLineageTag: DirectQuery à AS – pst38.# objectifs par plan MEE
+		dataCategory: Uncategorized
+
+	measure '# plans MEE' = EXTERNALMEASURE("# plans MEE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: bfd0034e-8e27-4a28-a2f2-dd7e8fad32f8
+		sourceLineageTag: DirectQuery à AS – pst38.# plans MEE
+		dataCategory: Uncategorized
+
+	measure '# problèmes de santé par plan MEE' = EXTERNALMEASURE("# problèmes de santé par plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: 392a396a-d841-4c28-9768-4d00828dd1f0
+		sourceLineageTag: DirectQuery à AS – pst38.# problèmes de santé par plan MEE
+		dataCategory: Uncategorized
+
+	measure '# problèmes de santé' = EXTERNALMEASURE("# problèmes de santé", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 255be36e-3701-42af-afd8-f2cc2d3a9156
+		sourceLineageTag: DirectQuery à AS – pst38.# problèmes de santé
+		dataCategory: Uncategorized
+
+	measure '# salariés concernés (plan MEE)' = EXTERNALMEASURE("# salariés concernés (plan MEE)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 9b69d949-f5b4-4fd3-aae9-e6ee295a20fb
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés concernés (plan MEE)
+		dataCategory: Uncategorized
+
+	measure '# structures mobilisées par plan MEE' = EXTERNALMEASURE("# structures mobilisées par plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs
+		lineageTag: d574a3b7-1301-4fb3-9e84-b549226ceaa0
+		sourceLineageTag: DirectQuery à AS – pst38.# structures mobilisées par plan MEE
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne plan MEE (j)' = EXTERNALMEASURE("Durée moyenne plan MEE (j)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: e54eddec-b855-4ea7-94e6-947454f89662
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne plan MEE (j)
+		dataCategory: Uncategorized
+
+	measure 'IRDP moyen après plan MEE' = EXTERNALMEASURE("IRDP moyen après plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs
+		lineageTag: 5eb28472-17a9-44fd-a829-f5cc3bde278b
+		sourceLineageTag: DirectQuery à AS – pst38.IRDP moyen après plan MEE
+		dataCategory: Uncategorized
+
+	measure 'IRDP moyen avant plan MEE' = EXTERNALMEASURE("IRDP moyen avant plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs
+		lineageTag: 684a12d1-0cd8-423b-a993-5e92ebf773d7
+		sourceLineageTag: DirectQuery à AS – pst38.IRDP moyen avant plan MEE
+		dataCategory: Uncategorized
+
+	measure 'IRI moyen après plan MEE' = EXTERNALMEASURE("IRI moyen après plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs
+		lineageTag: a8cbf574-e392-4695-8dd8-489d273b5deb
+		sourceLineageTag: DirectQuery à AS – pst38.IRI moyen après plan MEE
+		dataCategory: Uncategorized
+
+	measure 'IRI moyen avant plan MEE' = EXTERNALMEASURE("IRI moyen avant plan MEE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.00
+		displayFolder: Indicateurs
+		lineageTag: 6ebb0844-8929-410a-9518-716255f710ca
+		sourceLineageTag: DirectQuery à AS – pst38.IRI moyen avant plan MEE
+		dataCategory: Uncategorized
+
+	column 'Ancienneté salarié à ouverture du plan'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: a6195eab-1963-4dd4-997f-228c72648480
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Ancienneté salarié à ouverture du plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Concordance objectif résultat'
+		dataType: string
+		lineageTag: ca78f4fa-aa28-428d-9735-4eac68968e0a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Concordance objectif résultat
+
+		annotation SummarizationSetBy = Automatic
+
+	column duree_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6a1f812a-5cb3-4b83-9f4a-14bc49ca4d21
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: duree_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_contexte_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 11515ee7-4084-43e8-a2f5-86ae7af6265e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_contexte_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_createur_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3fccf3ff-4ee3-48cc-95e0-c9f9799768a1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_createur_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_debut_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d5b980a4-0a9e-4a01-a840-8366d9601993
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_debut_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_fin_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 31f79f99-999d-471e-bfa6-8188cc3204c9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_fin_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 19345d38-5489-4723-8007-7686ffe2e101
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_dispositif_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 622021b5-e731-4f47-b344-3f730a273cb3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_dispositif_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_intervenant_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6edca5c0-28ec-4d20-872a-149caa6d5dbb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_intervenant_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_structure_mobilisee_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fff4f25b-4ded-4d4d-b61d-fc36f75274ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_structure_mobilisee_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fd016461-6c99-4e45-9cf5-6c1c32fde83b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_plan_mee_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ffc4d56f-62e6-4f24-a4bf-26d1a4e91723
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_plan_mee_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 752c8344-3f67-4ace-a34e-5759f20ffefe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ae17660a-b426-477d-83c8-addc1ec5f68a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IRDP après plan MEE'
+		dataType: string
+		lineageTag: d7666b77-17c0-477a-a56e-d7d82353016c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IRDP après plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IRDP avant plan MEE'
+		dataType: string
+		lineageTag: 150c3cc9-792b-4ce2-adec-32d69a1e0e0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IRDP avant plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_changement_objectifs_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5dace7b6-23ed-42a3-9089-73cfa01f62e1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_changement_objectifs_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_dispositif_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ef52c0df-78c3-4796-afd5-a102f4672e82
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_dispositif_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_intervenant_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 45529bc6-41a4-4bad-8861-9d7566ea1908
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_intervenant_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_objectif_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f797240e-3048-40ca-bbdf-af7e75440441
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_objectif_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c7022205-5f15-4669-ad80-5ed22bcd2caa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_probleme_sante_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2ee3dc45-d65a-4d85-bf97-3ba4d66e8534
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_probleme_sante_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_structure_mobilisee_plan_mee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ff41e820-2098-4ec5-90ef-432629dfc9b2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_structure_mobilisee_plan_mee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column niveau_irdp_numerique_actuel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f55e4dba-1283-48b1-b508-06b9bf934f73
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: niveau_irdp_numerique_actuel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column niveau_irdp_numerique_initial
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7f009f57-8b5a-491e-a931-aee5f1b254d1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: niveau_irdp_numerique_initial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 211936ed-9477-4ce1-807a-e5019f811223
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IRI après plan MEE'
+		dataType: string
+		lineageTag: 0d474878-3a81-4291-9fab-ed129e5c454e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IRI après plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'IRI avant plan MEE'
+		dataType: string
+		lineageTag: 92f8a0fd-eb1a-4219-b64d-f7b18a6e8cae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IRI avant plan MEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column niveau_iri_numerique_actuel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d5566dc4-145b-49a5-8c54-e6b7e7d7bc0c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: niveau_iri_numerique_actuel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column niveau_iri_numerique_initial
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 516a2e30-df83-4036-9364-1707a6e1e81f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: niveau_iri_numerique_initial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plan MEE' = entity
+		mode: directQuery
+		source
+			entityName: Plan MEE
+			expressionSource: 'DirectQuery à AS – pst38'
+

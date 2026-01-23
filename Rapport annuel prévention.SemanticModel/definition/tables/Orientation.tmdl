@@ -1,0 +1,280 @@
+table Orientation
+	lineageTag: 9c03d7af-d76f-4b59-8658-5991d11aebd9
+
+	measure '# orientations externes' = EXTERNALMEASURE("# orientations externes", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Par type d'orientation
+		lineageTag: e45bb0c1-8a09-4d50-ba44-ecca708d4073
+		sourceLineageTag: DirectQuery à AS – pst38.# orientations externes
+		dataCategory: Uncategorized
+
+	measure '# orientations hors visite' = EXTERNALMEASURE("# orientations hors visite", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Total
+		lineageTag: 21f1507a-7647-459d-bc4f-058698675e7a
+		sourceLineageTag: DirectQuery à AS – pst38.# orientations hors visite
+		dataCategory: Uncategorized
+
+	measure '# orientations internes' = EXTERNALMEASURE("# orientations internes", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Par type d'orientation
+		lineageTag: fbc2f243-18c9-4e76-9fc9-64d2d07ad9ff
+		sourceLineageTag: DirectQuery à AS – pst38.# orientations internes
+		dataCategory: Uncategorized
+
+	measure '# orientations' = EXTERNALMEASURE("# orientations", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Total
+		lineageTag: 812157e2-ce0d-4400-a3e2-c56a278438e0
+		sourceLineageTag: DirectQuery à AS – pst38.# orientations
+		dataCategory: Uncategorized
+
+	measure '# recommandations orales' = EXTERNALMEASURE("# recommandations orales", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Par type d'orientation
+		lineageTag: e69e5c22-7cbb-4006-a396-080ddd781d3a
+		sourceLineageTag: DirectQuery à AS – pst38.# recommandations orales
+		dataCategory: Uncategorized
+
+	measure '# salariés avec orientation' = EXTERNALMEASURE("# salariés avec orientation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Total
+		lineageTag: 4c293025-3bff-4a9f-8214-ff0ad7a13f33
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés avec orientation
+		dataCategory: Uncategorized
+
+	measure '# visites avec orientation' = EXTERNALMEASURE("# visites avec orientation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Total
+		lineageTag: ebe64dcb-c12b-4a16-a414-0f5fac4f7599
+		sourceLineageTag: DirectQuery à AS – pst38.# visites avec orientation
+		dataCategory: Uncategorized
+
+	measure '% orientations hors visite' = EXTERNALMEASURE("% orientations hors visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - Total
+		lineageTag: 51774a42-892e-40ac-91a0-b89c6b320f40
+		sourceLineageTag: DirectQuery à AS – pst38.% orientations hors visite
+		dataCategory: Uncategorized
+
+	column en_visite
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1164752d-4a6b-4c01-8668-825759a7a51f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: en_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_auteur_orientation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 046bccf2-9b13-41d7-8a8c-a671a709e31f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_auteur_orientation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7085bde1-f017-4f60-832e-3f2b624396cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_emission
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 24601772-9317-42a9-ae46-70af5c4d4001
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_emission
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_document
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 79368b0d-c5b1-4128-b38e-fedb3966d969
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8e6f5e65-b50e-450e-90cf-70f7856fcde9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 70ec51c8-5c12-4b75-977a-f0ec07c33854
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 31d90869-d4f6-4154-acaf-37b04c1934e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d6a36ce3-3b57-452f-a0ca-c4a9bb75de8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5543a942-f2c3-411d-9fee-6ab395abc930
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 64d7022a-012e-48c6-8801-104d40029c3f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 37df9c15-ad77-4d99-863b-a1764da97b3a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_orientation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 73835578-04cc-4e77-b40e-2bac5df11f2f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_orientation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: eefc3ea4-39ef-441b-8053-3cc1ff84c9c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 969e854b-28d3-4c6f-a714-8bd8fccbc8ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cf8faf81-8e6f-490e-b4af-b49b416dde57
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_orientation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6e3ab2f5-b15f-4e5f-89c4-9b10d701492c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_orientation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: a41ab1f8-585e-48ae-876b-6ef00071bf64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Orientation = entity
+		mode: directQuery
+		source
+			entityName: Orientation
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,1370 @@
+table Visite
+	lineageTag: cfae181d-443c-4f5e-ba8d-2e018eb1a2ab
+
+	measure '# Réponses moyen par questionnaire' = EXTERNALMEASURE("# Réponses moyen par questionnaire", DOUBLE, "DirectQuery à AS – pst38")
+		displayFolder: Indicateurs\2. Questionnaires\Comptages
+		lineageTag: f9df84d2-a8bf-4b42-b081-e356af0f876d
+		sourceLineageTag: DirectQuery à AS – pst38.# Réponses moyen par questionnaire
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '1er quartile durée après transfert (en minutes)' = EXTERNALMEASURE("1er quartile durée après transfert (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\03. Durée après transfert
+		lineageTag: 8455b58b-74a7-488e-b4b9-f73c35ce2bde
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée après transfert (en minutes)
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée attente avant tablette (en minutes)' = EXTERNALMEASURE("1er quartile durée attente avant tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\01. Durée attente avant tablette
+		lineageTag: 75fb7277-e41e-48c9-b022-9bff45969538
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée attente avant tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée attente visio' = EXTERNALMEASURE("1er quartile durée attente visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Salle d'attente visio
+		lineageTag: 3a4c99aa-9e92-4495-94ca-658052070222
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée attente visio
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée entretien visio' = EXTERNALMEASURE("1er quartile durée entretien visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Entretien visio
+		lineageTag: 1038b7af-9c49-48c2-a19c-c989587b3284
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée entretien visio
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée pré visite théorique (en minutes)' = EXTERNALMEASURE("1er quartile durée pré visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\05. Durée pré visite théorique
+		lineageTag: 66f0ab35-5392-4015-b887-9fd57006ac17
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée pré visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée présence salarié (en minutes)' = EXTERNALMEASURE("1er quartile durée présence salarié (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\04. Durée présence salarié
+		lineageTag: 786db066-4aee-430f-b933-56baf237390d
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée présence salarié (en minutes)
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée questionnaire' = EXTERNALMEASURE("1er quartile durée questionnaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\07. Durée questionnaire
+		lineageTag: 0bf6d659-2d4b-43cd-a9af-85c7f5294ce3
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée questionnaire
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée sur tablette (en minutes)' = EXTERNALMEASURE("1er quartile durée sur tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\02. Durée sur tablette
+		lineageTag: ad2c858c-9704-4857-b14b-0123d8aa13a7
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée sur tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test audio' = EXTERNALMEASURE("1er quartile durée test audio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\09. Durée test audio
+		lineageTag: 1a36e65f-6fdc-4254-8f9e-a3b072b11633
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test audio
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test couleur ishihara' = EXTERNALMEASURE("1er quartile durée test couleur ishihara", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\11. Durée test couleur ishihara
+		lineageTag: b3e1ab18-f7ac-47cd-beb5-8f4952721436
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test couleur ishihara
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test imc' = EXTERNALMEASURE("1er quartile durée test imc", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\08. Durée test imc
+		lineageTag: 55c58753-6028-4c14-82c9-c865eb9a6141
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test imc
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test pression sanguine' = EXTERNALMEASURE("1er quartile durée test pression sanguine", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\10. Durée test pression sanguine
+		lineageTag: 4accdbf0-2f32-479d-8d7c-d9bdd744f5a4
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test pression sanguine
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test vision astigmate' = EXTERNALMEASURE("1er quartile durée test vision astigmate", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\12. Durée test vision astigmate
+		lineageTag: ed33c640-75d4-407f-8fe4-55b868a18ebe
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test vision astigmate
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test vision de loin' = EXTERNALMEASURE("1er quartile durée test vision de loin", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\14. Durée test vision de loin
+		lineageTag: d3338b84-07b5-46df-8f24-49cc8822248f
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test vision de loin
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée test vision de près' = EXTERNALMEASURE("1er quartile durée test vision de près", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\13. Durée test vision de près
+		lineageTag: dc48f9a3-74ce-40c7-88c7-12eee110ded8
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée test vision de près
+		dataCategory: Uncategorized
+
+	measure '1er quartile durée visite théorique (en minutes)' = EXTERNALMEASURE("1er quartile durée visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\06. Durée visite théorique
+		lineageTag: a9d8fd3b-e150-4e3b-bf13-33aac0176dae
+		sourceLineageTag: DirectQuery à AS – pst38.1er quartile durée visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée après transfert(en minutes)' = EXTERNALMEASURE("3ème quartile durée après transfert(en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\03. Durée après transfert
+		lineageTag: 2b233107-2b77-493d-a214-75972b660f34
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée après transfert(en minutes)
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée attente avant tablette (en minutes)' = EXTERNALMEASURE("3ème quartile durée attente avant tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\01. Durée attente avant tablette
+		lineageTag: 43503317-ce15-434b-8c7a-54e4a8afb870
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée attente avant tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée attente visio' = EXTERNALMEASURE("3ème quartile durée attente visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Salle d'attente visio
+		lineageTag: d4538f72-9201-404f-8ac7-43495e8750f2
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée attente visio
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée entretien visio' = EXTERNALMEASURE("3ème quartile durée entretien visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Entretien visio
+		lineageTag: 551636bc-8ed8-4371-92f5-5acdc596a275
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée entretien visio
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée pré visite théorique (en minutes)' = EXTERNALMEASURE("3ème quartile durée pré visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\05. Durée pré visite théorique
+		lineageTag: cb6dd2a2-9e19-4cb7-a957-75a7a6198fcb
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée pré visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée présence salarié (en minutes)' = EXTERNALMEASURE("3ème quartile durée présence salarié (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\04. Durée présence salarié
+		lineageTag: 210bfcce-8449-4065-8298-15ca965c4687
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée présence salarié (en minutes)
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée questionnaire' = EXTERNALMEASURE("3ème quartile durée questionnaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\07. Durée questionnaire
+		lineageTag: 393caa7a-ac49-4826-beb6-62d7263f1cec
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée questionnaire
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée sur tablette (en minutes)' = EXTERNALMEASURE("3ème quartile durée sur tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\02. Durée sur tablette
+		lineageTag: ae4c56d1-daf3-4b51-9c3f-1022257da1b2
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée sur tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test audio' = EXTERNALMEASURE("3ème quartile durée test audio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\09. Durée test audio
+		lineageTag: 8b7ec376-c6a2-47cf-8a6b-9a320087ffe6
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test audio
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test couleur ishihara' = EXTERNALMEASURE("3ème quartile durée test couleur ishihara", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\11. Durée test couleur ishihara
+		lineageTag: 1ae06eef-11ef-491c-819c-aedeb02d3122
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test couleur ishihara
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test imc' = EXTERNALMEASURE("3ème quartile durée test imc", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\08. Durée test imc
+		lineageTag: 63898077-59bc-4eae-8494-2f9a0401f87d
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test imc
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test pression sanguine' = EXTERNALMEASURE("3ème quartile durée test pression sanguine", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\10. Durée test pression sanguine
+		lineageTag: 951f326f-a1ac-49d4-957e-1230730dff14
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test pression sanguine
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test vision astigmate' = EXTERNALMEASURE("3ème quartile durée test vision astigmate", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\12. Durée test vision astigmate
+		lineageTag: e18de1b1-3612-45aa-8e26-a36407106846
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test vision astigmate
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test vision de loin' = EXTERNALMEASURE("3ème quartile durée test vision de loin", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\14. Durée test vision de loin
+		lineageTag: e1d4cbc3-8ae8-45f3-aa92-6070ad6279e0
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test vision de loin
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée test vision de près' = EXTERNALMEASURE("3ème quartile durée test vision de près", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\13. Durée test vision de près
+		lineageTag: a4199b17-ca59-4a7d-ad71-c2bd9235554d
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée test vision de près
+		dataCategory: Uncategorized
+
+	measure '3ème quartile durée visite théorique (en minutes)' = EXTERNALMEASURE("3ème quartile durée visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\06. Durée visite théorique
+		lineageTag: 550b9159-5fc2-4439-ad24-45ea9c19fbe4
+		sourceLineageTag: DirectQuery à AS – pst38.3ème quartile durée visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Délai moyen de planification des visites d''embauche (en jours)' = EXTERNALMEASURE("Délai moyen de planification des visites d'embauche (en jours)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\3. Parcours salarié
+		lineageTag: 91a67dc7-3ba9-439c-8834-906b74831a44
+		sourceLineageTag: DirectQuery à AS – pst38.Délai moyen de planification des visites d'embauche (en jours)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne après transfert (en minutes)' = EXTERNALMEASURE("Durée moyenne après transfert (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\03. Durée après transfert
+		lineageTag: 13ff1cc1-bb07-4ff2-84fd-3ee748813592
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne après transfert (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne archivage (en jours)' = EXTERNALMEASURE("Durée moyenne archivage (en jours)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié
+		lineageTag: 4e0a24b9-01f7-4937-b129-f1d8fe2a9d05
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne archivage (en jours)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne attente avant tablette (en minutes)' = EXTERNALMEASURE("Durée moyenne attente avant tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\01. Durée attente avant tablette
+		lineageTag: dd1075ff-1842-4e89-80e7-e11f7a9b55f6
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne attente avant tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne attente visio' = EXTERNALMEASURE("Durée moyenne attente visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Salle d'attente visio
+		lineageTag: 6a1353f9-7eee-42f7-b2e7-35162718de96
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne attente visio
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne avant transfert vers salle d''attente (en minutes)' = EXTERNALMEASURE("Durée moyenne avant transfert vers salle d'attente (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié
+		lineageTag: 0e2b8ad0-8a4d-4904-a91b-6166332dd60a
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne avant transfert vers salle d'attente (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne entretien visio' = EXTERNALMEASURE("Durée moyenne entretien visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Entretien visio
+		lineageTag: 78deffe9-81a8-43fc-a4f1-9134f1b7081b
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne entretien visio
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne pré visite théorique (en minutes)' = EXTERNALMEASURE("Durée moyenne pré visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\05. Durée pré visite théorique
+		lineageTag: 2449656c-1c5c-43bd-b5f6-9eb1134288cd
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne pré visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne présence salarié (en minutes)' = EXTERNALMEASURE("Durée moyenne présence salarié (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\04. Durée présence salarié
+		lineageTag: 81d3d4ae-78dd-452c-bbde-3416e81c0c07
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne présence salarié (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne questionnaire' = EXTERNALMEASURE("Durée moyenne questionnaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\07. Durée questionnaire
+		lineageTag: 357bfbc1-77b6-48aa-9aea-4a8caf3a17be
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne questionnaire
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne session Tytocare' = EXTERNALMEASURE("Durée moyenne session Tytocare", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\6. Tytocare
+		lineageTag: 8031f197-5e54-4d53-aeca-36eeb08180ed
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne session Tytocare
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne sur tablette (en minutes)' = EXTERNALMEASURE("Durée moyenne sur tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\02. Durée sur tablette
+		lineageTag: c283b13b-8d93-4c0e-bad0-90346af3e018
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne sur tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test audio' = EXTERNALMEASURE("Durée moyenne test audio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\09. Durée test audio
+		lineageTag: 38350ece-4ffb-4780-803e-36fd86bcbfdb
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test audio
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test couleur ishihara' = EXTERNALMEASURE("Durée moyenne test couleur ishihara", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\11. Durée test couleur ishihara
+		lineageTag: e2513eab-a24d-43c2-a009-ef366651744e
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test couleur ishihara
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test imc' = EXTERNALMEASURE("Durée moyenne test imc", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\08. Durée test imc
+		lineageTag: a3770e55-4522-42ef-abad-70436e32edee
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test imc
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test pression sanguine' = EXTERNALMEASURE("Durée moyenne test pression sanguine", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\10. Durée test pression sanguine
+		lineageTag: c3770b75-1e69-466a-b9a6-8c0b791975a9
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test pression sanguine
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test vision astigmate' = EXTERNALMEASURE("Durée moyenne test vision astigmate", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\12. Durée test vision astigmate
+		lineageTag: b34bb605-eda7-4baa-913b-3cb9b48d5119
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test vision astigmate
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test vision de loin' = EXTERNALMEASURE("Durée moyenne test vision de loin", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\14. Durée test vision de loin
+		lineageTag: ffd48346-e5be-4d5a-86cb-33a0b9a3fb97
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test vision de loin
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne test vision de près' = EXTERNALMEASURE("Durée moyenne test vision de près", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\13. Durée test vision de près
+		lineageTag: 0ce5b41a-fc75-455c-874d-145cc3ba5395
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne test vision de près
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne visite théorique (en minutes)' = EXTERNALMEASURE("Durée moyenne visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\06. Durée visite théorique
+		lineageTag: 47bcb96b-027f-49d9-9dc2-12238a512f41
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée après transfert (en minutes)' = EXTERNALMEASURE("Médiane durée après transfert (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\03. Durée après transfert
+		lineageTag: 0af5efa7-e9ba-46b4-88d2-4f3e6c072fe4
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée après transfert (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée attente avant tablette (en minutes)' = EXTERNALMEASURE("Médiane durée attente avant tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\01. Durée attente avant tablette
+		lineageTag: d4f85329-31f0-4701-98fa-01809b31c6bc
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée attente avant tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée attente visio' = EXTERNALMEASURE("Médiane durée attente visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Salle d'attente visio
+		lineageTag: 68696857-f7da-4939-a85a-5b94c1a50e43
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée attente visio
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée entretien visio' = EXTERNALMEASURE("Médiane durée entretien visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\5. Visio\Entretien visio
+		lineageTag: 7e88bfcb-1be1-4ace-9de4-6d6bbb5700f9
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée entretien visio
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée pré visite théorique (en minutes)' = EXTERNALMEASURE("Médiane durée pré visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\05. Durée pré visite théorique
+		lineageTag: 190657ef-7084-46ee-8e14-c8f3e32e69fe
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée pré visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée présence salarié (en minutes)' = EXTERNALMEASURE("Médiane durée présence salarié (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\04. Durée présence salarié
+		lineageTag: 292aee7e-d65e-4eaa-8a27-7f45096a63ed
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée présence salarié (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée questionnaire' = EXTERNALMEASURE("Médiane durée questionnaire", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\07. Durée questionnaire
+		lineageTag: 33b9139e-053f-4660-aaa9-7e53de9149e0
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée questionnaire
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée sur tablette (en minutes)' = EXTERNALMEASURE("Médiane durée sur tablette (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\02. Durée sur tablette
+		lineageTag: 784759a6-902a-4368-b2fd-5deae2b7db8e
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée sur tablette (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test audio' = EXTERNALMEASURE("Médiane durée test audio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\09. Durée test audio
+		lineageTag: 569472d9-1b39-4d98-bc2b-3cea38a49aee
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test audio
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test couleur ishihara' = EXTERNALMEASURE("Médiane durée test couleur ishihara", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\11. Durée test couleur ishihara
+		lineageTag: 3f614a8b-6460-4e5e-87f5-477a84f192e4
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test couleur ishihara
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test imc' = EXTERNALMEASURE("Médiane durée test imc", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\08. Durée test imc
+		lineageTag: e2e5c3b1-60c7-4b9d-9470-f6b2375d51d2
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test imc
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test pression sanguine' = EXTERNALMEASURE("Médiane durée test pression sanguine", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\10. Durée test pression sanguine
+		lineageTag: 715a857a-267a-41e8-9df7-b0f2efd4ad9a
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test pression sanguine
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test vision astigmate' = EXTERNALMEASURE("Médiane durée test vision astigmate", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\12. Durée test vision astigmate
+		lineageTag: 67f13c04-9834-4fa9-ab66-3ff733326356
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test vision astigmate
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test vision de loin' = EXTERNALMEASURE("Médiane durée test vision de loin", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\14. Durée test vision de loin
+		lineageTag: 209d3da7-5356-41a9-8808-7ce167b58419
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test vision de loin
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée test vision de près' = EXTERNALMEASURE("Médiane durée test vision de près", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\13. Durée test vision de près
+		lineageTag: 6c2181b2-f237-4b06-8d1b-5d16a7353b2c
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée test vision de près
+		dataCategory: Uncategorized
+
+	measure 'Médiane durée visite théorique (en minutes)' = EXTERNALMEASURE("Médiane durée visite théorique (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié\06. Durée visite théorique
+		lineageTag: 24e10d53-2afa-4e06-a74b-7115a61c757d
+		sourceLineageTag: DirectQuery à AS – pst38.Médiane durée visite théorique (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de connexions à la tablette' = EXTERNALMEASURE("Nombre de connexions à la tablette", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: 9c540511-568d-4be2-8c51-239ccc972b5c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de connexions à la tablette
+		dataCategory: Uncategorized
+
+	measure 'Nombre de connexions à l''espace salarié après visite' = EXTERNALMEASURE("Nombre de connexions à l'espace salarié après visite", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: 7cefe485-dc98-4321-83e4-39df38ecc1a3
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de connexions à l'espace salarié après visite
+		dataCategory: Uncategorized
+
+	measure 'Nombre de questionnaires remplis sur l''espace salarié' = EXTERNALMEASURE("Nombre de questionnaires remplis sur l'espace salarié", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2. Questionnaires\Comptages
+		lineageTag: 6435e17f-d7b0-44fd-83d4-cd79f928bb33
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de questionnaires remplis sur l'espace salarié
+		dataCategory: Uncategorized
+
+	measure 'Nombre de questionnaires remplis sur tablette' = EXTERNALMEASURE("Nombre de questionnaires remplis sur tablette", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2. Questionnaires\Comptages
+		lineageTag: 61e470c7-353d-4792-9426-52f5aab385e3
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de questionnaires remplis sur tablette
+		dataCategory: Uncategorized
+
+	measure 'Nombre de questionnaires remplis' = EXTERNALMEASURE("Nombre de questionnaires remplis", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2. Questionnaires\Comptages
+		lineageTag: d56e27f3-dad2-48e3-b46f-2897983a561c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de questionnaires remplis
+		dataCategory: Uncategorized
+
+	measure 'Nombre de sessions Tytocare' = EXTERNALMEASURE("Nombre de sessions Tytocare", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\6. Tytocare
+		lineageTag: 1adca7e1-2c64-4b05-a4a1-fa2114443aae
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de sessions Tytocare
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites avec certification de la liste réduite des expositions' = EXTERNALMEASURE("Nombre de visites avec certification de la liste réduite des expositions", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: c690ae3b-1224-471d-aaa4-e6632b67910a
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites avec certification de la liste réduite des expositions
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites avec revue' = EXTERNALMEASURE("Nombre de visites avec revue", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: 13a35c93-7f1d-4ac0-89a3-fe3cbc906a4b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites avec revue
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites comptant comme mi-carrière' = EXTERNALMEASURE("Nombre de visites comptant comme mi-carrière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: 7e9b0975-fc02-4130-9ece-881018459be9
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites comptant comme mi-carrière
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites comptant comme périodique' = EXTERNALMEASURE("Nombre de visites comptant comme périodique", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: 5083c4fd-9be0-472a-9ea3-756e3e504c8a
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites comptant comme périodique
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites en visio' = EXTERNALMEASURE("Nombre de visites en visio", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: da1b43b3-31ab-4a34-9eec-117251427a91
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites en visio
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites' = EXTERNALMEASURE("Nombre de visites", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1. Général\Comptages
+		lineageTag: e29d9310-cad7-40ec-9c48-88f9e7fd3c0f
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen de plaquettes distribuées par visite' = EXTERNALMEASURE("Nombre moyen de plaquettes distribuées par visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4. Plaquettes
+		lineageTag: dd96d9b2-393b-44ae-ab16-91579380903d
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen de plaquettes distribuées par visite
+		dataCategory: Uncategorized
+
+	measure 'Nombre total de plaquettes distribuées' = EXTERNALMEASURE("Nombre total de plaquettes distribuées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4. Plaquettes
+		lineageTag: be1baff4-8df7-4147-83f6-3aea39c10c63
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre total de plaquettes distribuées
+		dataCategory: Uncategorized
+
+	measure 'Retard moyen avant entretien' = EXTERNALMEASURE("Retard moyen avant entretien", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié
+		lineageTag: c951526a-1b4c-41dc-86dc-12c18df152c9
+		sourceLineageTag: DirectQuery à AS – pst38.Retard moyen avant entretien
+		dataCategory: Uncategorized
+
+	measure 'Retard moyen salarié (en minutes)' = EXTERNALMEASURE("Retard moyen salarié (en minutes)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3. Parcours salarié
+		lineageTag: 5d1b483e-1303-43f5-bf02-039decd74fc5
+		sourceLineageTag: DirectQuery à AS – pst38.Retard moyen salarié (en minutes)
+		dataCategory: Uncategorized
+
+	measure 'Taux de connexion à l''espace salarié après visite' = EXTERNALMEASURE("Taux de connexion à l'espace salarié après visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1. Général\Taux
+		lineageTag: fc08001d-a335-4e49-8157-69bfa46d7f76
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de connexion à l'espace salarié après visite
+		dataCategory: Uncategorized
+
+	measure 'Taux de questionnaires remplis sur l''espace salarié' = EXTERNALMEASURE("Taux de questionnaires remplis sur l'espace salarié", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2. Questionnaires\Taux
+		lineageTag: 0611c149-4f62-4bbc-b915-33825dc3bebc
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de questionnaires remplis sur l'espace salarié
+		dataCategory: Uncategorized
+
+	measure 'Taux de questionnaires remplis sur tablette' = EXTERNALMEASURE("Taux de questionnaires remplis sur tablette", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2. Questionnaires\Taux
+		lineageTag: adc4eaa9-cf47-42f8-9d71-f9310b8a8413
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de questionnaires remplis sur tablette
+		dataCategory: Uncategorized
+
+	measure 'Taux de visites avec connexion à la tablette' = EXTERNALMEASURE("Taux de visites avec connexion à la tablette", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1. Général\Taux
+		lineageTag: 651fff63-4710-4dbe-ade1-ebed8d854cc1
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de visites avec connexion à la tablette
+		dataCategory: Uncategorized
+
+	measure 'Taux de visites avec questionnaire rempli' = EXTERNALMEASURE("Taux de visites avec questionnaire rempli", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2. Questionnaires\Taux
+		lineageTag: 3fc50074-8afc-4024-913e-fe013bb8c7fe
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de visites avec questionnaire rempli
+		dataCategory: Uncategorized
+
+	measure 'Taux de visites avec revue' = EXTERNALMEASURE("Taux de visites avec revue", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1. Général\Taux
+		lineageTag: 0dd3cda6-f901-4a91-aed7-26b4a257278e
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de visites avec revue
+		dataCategory: Uncategorized
+
+	measure 'Taux de visites en visio' = EXTERNALMEASURE("Taux de visites en visio", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1. Général\Taux
+		lineageTag: 442a8bc3-8fbc-4338-994c-5694f3828c4b
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de visites en visio
+		dataCategory: Uncategorized
+
+	column 'Délai de planification des visites d''embauche (en jours)'
+		dataType: int64
+		lineageTag: 82c9fa4c-3d78-4998-8cc5-e2a6204340b3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Délai de planification des visites d'embauche (en jours)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée après tablette'
+		dataType: int64
+		lineageTag: 2d82c44d-103d-4843-a187-986f5ff97ce8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée après tablette
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée après transfert'
+		dataType: int64
+		lineageTag: 49a7a7da-2a6e-4640-b5c2-cde0263402df
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée après transfert
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée archivage'
+		dataType: int64
+		displayFolder: Durées par visite
+		lineageTag: f3d79ed5-6732-4ef8-a7fd-0e6c1be093d5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée attente avant tablette'
+		dataType: int64
+		lineageTag: 7fdb9e62-787b-4516-b141-98b93441eac7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée attente avant tablette
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée avant transfert'
+		dataType: int64
+		lineageTag: 1b3c8332-2a45-401e-be24-358485f3438e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée avant transfert
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée entre fin tablette et transfert'
+		dataType: int64
+		lineageTag: 9086736f-6727-48e8-a5b3-1ab999120b6a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée entre fin tablette et transfert
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée entretien visio'
+		dataType: int64
+		lineageTag: 8fda7b95-c9c0-4906-a672-6c17745ab72f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée entretien visio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée pré visite théorique'
+		dataType: int64
+		displayFolder: Durées par visite
+		lineageTag: 851f9d83-fa44-40c6-9d40-59b35aec91ff
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée pré visite théorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée présence salarié'
+		dataType: int64
+		lineageTag: 1586baab-9b12-471a-9fb0-bd845de82212
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée présence salarié
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée questionnaire'
+		dataType: int64
+		lineageTag: 68f08706-e5c0-401e-978c-786a2cf08389
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée questionnaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée salle d''attente visio'
+		dataType: int64
+		lineageTag: 1812b3cb-5b2f-45c9-aef3-b0d8cb18921c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée salle d'attente visio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée session Tytocare'
+		dataType: int64
+		displayFolder: Durées par visite
+		lineageTag: c7e826fd-7e5e-4408-8f68-51fdeb45b36c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée session Tytocare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée sur tablette'
+		dataType: int64
+		lineageTag: 01ae8c46-ca01-4254-91c7-bdbe836b32e3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée sur tablette
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test audio'
+		dataType: int64
+		lineageTag: a13701dc-84b9-4657-9b66-daa07b38b66d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test audio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test couleur ishihara'
+		dataType: int64
+		lineageTag: abef83cd-b7dc-4b0b-8102-ce257308ad43
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test couleur ishihara
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test imc'
+		dataType: int64
+		lineageTag: ad82894a-740f-40ff-a6df-c7470ae60be6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test imc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test pression sanguine'
+		dataType: int64
+		lineageTag: 84ac6b21-58b7-40bd-b97a-a84c029cc180
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test pression sanguine
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test vision astigmate'
+		dataType: int64
+		lineageTag: ed2c71c1-a5d1-4c82-9789-ac535910b3d0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test vision astigmate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test vision de loin'
+		dataType: int64
+		lineageTag: e83024c6-d891-4f94-a8b6-8d25469b65be
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test vision de loin
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée test vision de près'
+		dataType: int64
+		lineageTag: a99f61d5-eee5-4079-8cb2-0688ac316972
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée test vision de près
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée visite théorique'
+		dataType: int64
+		lineageTag: bf5252a0-ef6d-48a6-ad6a-3734651910da
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée visite théorique
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 351153dd-ad52-4059-af0c-43090284ce24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_archivage
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 89fa3eb2-a22d-487c-86ba-ee4f65dd191e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c74167e8-06bb-4c16-b865-9a04864de81a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 61ae059b-732a-4446-aeb6-ad9a1a3d9d14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_determinant_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2c28e267-015a-4149-acbf-f8a711ef4d45
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_archivage
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8cad3252-5039-42de-85bb-0bb644d3c860
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_archivage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_arrivee_attestation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dd3e826f-03ca-4fec-af44-a69e041ae0e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_arrivee_attestation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_connexion_tablette
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2e150f23-b308-4812-9af5-af79a3cb62df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_connexion_tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_convocation_salarie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9f409599-0df5-458d-90fc-6b9e8647746f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_convocation_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_debut_entretien_theorique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 98312d85-c82b-4374-9c62-b40734fa2a8e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_debut_entretien_theorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_deconnexion_tablette
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fac0e938-7590-4ae5-aea9-30313c836fc6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_deconnexion_tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_depart_attestation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 01ad73fc-6661-4deb-b96c-6c1dc92ef65d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_depart_attestation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_fin_entretien_theorique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2d34c0ac-916c-4315-82b5-b8370decbe2c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_fin_entretien_theorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 97dfe3fe-db80-488c-9c90-47265b31da73
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 24f1fee2-6979-465f-ade5-45b57df8adbe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9c125478-d74b-48cc-acfc-31bdd2222610
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_realisateur_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: daf62aa5-a898-4f36-a3ba-2c5824c5373b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_realisateur_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 60665282-8117-4cd8-bb68-3bc4bab88be9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c66c93c3-a844-47d5-897a-4fa061bfff0c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_thesaurus_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 49dcbad6-8ffe-4f2b-8cab-8f57bbdfa73c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_thesaurus_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0e5e7870-3526-4520-8727-31d6a2dd79aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e8489e54-cbae-4332-a7bf-b8f2d1213082
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d4f6e8af-32f6-45ce-b606-3fff48a7567d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb connexion espace salarié après visite'
+		dataType: int64
+		displayFolder: Indicateurs par visite
+		lineageTag: 06134977-e812-4dfa-a5d0-1c59364b90b6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb connexion espace salarié après visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb connexion tablette'
+		dataType: int64
+		displayFolder: Indicateurs par visite
+		lineageTag: 6ac9015c-4b5d-48a7-9bc8-3a4c1fa22792
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb connexion tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb plaquettes distribuées'
+		dataType: int64
+		displayFolder: Indicateurs par visite
+		lineageTag: 9d8542d3-21cc-447a-b2a5-6fbfb4cd1944
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb plaquettes distribuées
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb questionnaire rempli sur tablette'
+		dataType: int64
+		displayFolder: Indicateurs par visite
+		lineageTag: b9ea9f57-830e-4610-833e-e7a4021e7557
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb questionnaire rempli sur tablette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb questionnaire rempli'
+		dataType: int64
+		displayFolder: Indicateurs par visite
+		lineageTag: 9cf9503a-5a7d-4f14-85a5-72a48031f8cd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb questionnaire rempli
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb réponses questionnaire'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b219d326-0a5d-495f-a34d-f80df0c7f37a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb réponses questionnaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb session Tytocare'
+		dataType: int64
+		displayFolder: Indicateurs par visite
+		lineageTag: 2a5867cf-1547-46c0-9912-aa5462c483d3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb session Tytocare
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_liste_expositions_certifiee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7ad80f32-41ee-4237-ad05-903fa80a5a5a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_liste_expositions_certifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_occasionnelle_comptant_periodique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7dcab1e3-57b4-41d2-957f-6d1b96bf933b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_occasionnelle_comptant_periodique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_revue
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f094cf7b-81ca-496b-9838-49b91a147892
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_revue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3c5d1447-583b-4d86-98a0-f046b309e594
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_visite_comptant_mi_carriere
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8f07b5b0-37b7-4b40-a78e-acc1cb01f011
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_visite_comptant_mi_carriere
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Planification des visites d''embauche'
+		dataType: string
+		lineageTag: 45c17022-02f5-4283-b8e3-040c9b9fec88
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Planification des visites d'embauche
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Questionnaire rempli'
+		dataType: string
+		lineageTag: f53505dc-3fb6-422a-8153-9f6f952e55c8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Questionnaire rempli
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Retard avant entretien'
+		dataType: int64
+		lineageTag: 67d6437e-22ec-44f4-90a1-9017ccbf0f53
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Retard avant entretien
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Retard salarié'
+		dataType: int64
+		lineageTag: 76ef8990-5185-4e40-848d-f670edc286e6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Retard salarié
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite ancien logiciel'
+		dataType: string
+		lineageTag: 0145c3a7-bd39-4396-8412-3cd31382423e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite ancien logiciel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visite avec connexion tablette'
+		dataType: string
+		lineageTag: 3604cc17-43fc-457a-b02b-50302602cb08
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Visite avec connexion tablette
+
+		annotation SummarizationSetBy = Automatic
+
+	column visite_ancien_logiciel
+		dataType: boolean
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3296e4ab-000e-405d-8723-7398013a5570
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: visite_ancien_logiciel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_transfert_salle_attente
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6fc49058-0784-442f-8362-a36de8596337
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_transfert_salle_attente
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: c014733c-3cb6-47ae-a1da-27c8c975428d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Visite = entity
+		mode: directQuery
+		source
+			entityName: Visite
+			expressionSource: 'DirectQuery à AS – pst38'
+

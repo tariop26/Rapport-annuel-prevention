@@ -1,0 +1,57 @@
+table 'Adhérent - étiquette'
+	lineageTag: 9ba2a837-2b60-4270-a23d-daeabb3bc023
+
+	column categorie_etiquette
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: cfe28dd4-5e7e-4304-a744-142a48e39ee5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: categorie_etiquette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column etiquette
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 26b83065-b9c0-4fc6-a174-32e081f1d95e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: etiquette
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_etiquette_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9d9418be-60f7-4045-9a60-ade781420755
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_etiquette_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie étiquette adhérent'
+		lineageTag: fd8ccb57-bd21-406e-886b-38e6be4853e5
+		sourceLineageTag: Hiérarchie étiquette adhérent
+
+		level 'Catégorie étiquette adhérent'
+			lineageTag: a82717cd-c618-4542-9cb1-2b42091d1d7d
+			column: categorie_etiquette
+
+		level 'Etiquette adhérent'
+			lineageTag: fe146c5f-5296-4040-8c60-4d93d302701f
+			column: etiquette
+
+	partition 'Adhérent - étiquette' = entity
+		mode: directQuery
+		source
+			entityName: Adhérent - étiquette
+			expressionSource: 'DirectQuery à AS – pst38'
+

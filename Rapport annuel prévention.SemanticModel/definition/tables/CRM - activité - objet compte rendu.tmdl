@@ -1,0 +1,29 @@
+table 'CRM - activité - objet compte rendu'
+	lineageTag: c2573769-6412-4b29-93a1-0bd3a7baa2e5
+
+	column id_objet_compte_rendu
+		dataType: int64
+		isHidden
+		isNullable: false
+		lineageTag: 51980551-623c-4d4d-8cd2-50721a6679ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_objet_compte_rendu
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Objet compte rendu'
+		dataType: string
+		lineageTag: bd0866e2-759a-450d-99ad-f4914bd259be
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Objet compte rendu
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'CRM - activité - objet compte rendu' = entity
+		mode: directQuery
+		source
+			entityName: CRM - activité - objet compte rendu
+			expressionSource: 'DirectQuery à AS – pst38'
+

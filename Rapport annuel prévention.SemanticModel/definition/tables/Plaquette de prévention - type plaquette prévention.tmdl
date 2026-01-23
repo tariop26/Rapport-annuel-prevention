@@ -1,0 +1,30 @@
+table 'Plaquette de prévention - type plaquette prévention'
+	lineageTag: 60df9a05-afb8-451d-9b3c-1c28e86728c4
+
+	column id_type_plaquette_prevention
+		dataType: int64
+		isNullable: false
+		lineageTag: ddcb908d-69c3-4c7d-ba09-e884d3a7d73c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_plaquette_prevention
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type plaquette prévention'
+		dataType: string
+		lineageTag: c64e7419-05a8-4eb3-84c6-ec8ab5c6d63d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type plaquette prévention
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plaquette de prévention - type plaquette prévention' = entity
+		mode: directQuery
+		source
+			entityName: Plaquette de prévention - type plaquette prévention
+			expressionSource: 'DirectQuery à AS – pst38'
+

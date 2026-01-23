@@ -1,0 +1,70 @@
+table 'CRM - ticket - statut'
+	lineageTag: 48d9ca78-8ce5-4406-b0ba-8cffffe042f5
+
+	column id_statut_ticket
+		dataType: int64
+		isNullable: false
+		lineageTag: cc0de410-f95a-47b8-84ee-24860823b704
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_ticket
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Statut ticket'
+		dataType: string
+		lineageTag: 34114248-1b24-4aa2-9b0a-638d903c031a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut ticket
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"CRM - ticket - statut","TableItemName":"Statut ticket (groupes)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Statut ticket (groupes)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('CRM - ticket - statut'[Statut ticket]),
+				"(Vide)",
+				'CRM - ticket - statut'[Statut ticket] IN {"Fermé"},
+				"Fermé",
+				'CRM - ticket - statut'[Statut ticket] IN {"En attente",
+					"En attente réponse de l'adhérent",
+					"Information sur le ticket inconnue",
+					"Ouvert"},
+				"Ouvert",
+				'CRM - ticket - statut'[Statut ticket]
+			)
+		lineageTag: 49f4443c-4648-4dd3-a343-f7f5706d7597
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "CRM - ticket - statut"
+				          }
+				        },
+				        "Property": "Statut ticket"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"c","Entity":"CRM - ticket - statut"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Statut ticket"}}],"GroupItems":[{"DisplayName":"(Vide)","BlankDefaultPlaceholder":true},{"DisplayName":"Fermé","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Statut ticket"}}],"Values":[[{"Literal":{"Value":"'Fermé'"}}]]}}},{"DisplayName":"Ouvert","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Statut ticket"}}],"Values":[[{"Literal":{"Value":"'En attente'"}}],[{"Literal":{"Value":"'En attente réponse de l''adhérent'"}}],[{"Literal":{"Value":"'Information sur le ticket inconnue'"}}],[{"Literal":{"Value":"'Ouvert'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'CRM - ticket - statut' = entity
+		mode: directQuery
+		source
+			entityName: CRM - ticket - statut
+			expressionSource: 'DirectQuery à AS – pst38'
+

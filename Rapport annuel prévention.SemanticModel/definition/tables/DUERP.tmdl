@@ -1,0 +1,940 @@
+table DUERP
+	lineageTag: 45e180a6-7b74-43a3-a3a9-c2282aca9bff
+
+	measure 'Nombre d''actions de prévention ciblées sur des unités de travail' = EXTERNALMEASURE("Nombre d'actions de prévention ciblées sur des unités de travail", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 89883849-aeee-4664-894a-de6156d71d0b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention ciblées sur des unités de travail
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention collectives' = EXTERNALMEASURE("Nombre d'actions de prévention collectives", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: 8a2d54b9-0e4f-4ecf-a23e-131c3607d3f6
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention collectives
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type adaptation de matériel' = EXTERNALMEASURE("Nombre d'actions de prévention de type adaptation de matériel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: 76558d73-47ed-4037-be10-2d1fc89edc0c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type adaptation de matériel
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type adaptation de poste' = EXTERNALMEASURE("Nombre d'actions de prévention de type adaptation de poste", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 1e752db8-edbc-401a-a86d-ac28783ecc7f
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type adaptation de poste
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type consigne/information' = EXTERNALMEASURE("Nombre d'actions de prévention de type consigne/information", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 85ee9354-58dd-4322-ab40-99c64add526c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type consigne/information
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type équipement de protection' = EXTERNALMEASURE("Nombre d'actions de prévention de type équipement de protection", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 8081b0ef-a6a4-4d93-b938-d836a04e9911
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type équipement de protection
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type formation collective' = EXTERNALMEASURE("Nombre d'actions de prévention de type formation collective", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: b7578a8d-b20a-421d-8def-72cd132c3540
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type formation collective
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type habilitation individuelle' = EXTERNALMEASURE("Nombre d'actions de prévention de type habilitation individuelle", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 6ef72a02-1e6b-4910-b3cc-5215b1f03b11
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type habilitation individuelle
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type modification de l''organisation' = EXTERNALMEASURE("Nombre d'actions de prévention de type modification de l'organisation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Processus
+		lineageTag: e6044610-d874-40ae-9366-fff2c51cfa65
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type modification de l'organisation
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type protection du matériel' = EXTERNALMEASURE("Nombre d'actions de prévention de type protection du matériel", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: 48447f07-bfe8-4ef7-8a9f-8b1a10582385
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type protection du matériel
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention de type rédaction de protocole' = EXTERNALMEASURE("Nombre d'actions de prévention de type rédaction de protocole", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Processus
+		lineageTag: dd890677-0422-4147-b8f2-408390e635e8
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention de type rédaction de protocole
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention en retard' = EXTERNALMEASURE("Nombre d'actions de prévention en retard", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: e7038e01-fa03-4e33-bf3e-8c4f09d4c4b0
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention en retard
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention globales' = EXTERNALMEASURE("Nombre d'actions de prévention globales", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: ba007a3a-62d4-4806-ade5-6ed5896ad4c4
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention globales
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention individuelles' = EXTERNALMEASURE("Nombre d'actions de prévention individuelles", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: f5bb1963-2883-4284-a238-60396ddeaec4
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention individuelles
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention planifiées' = EXTERNALMEASURE("Nombre d'actions de prévention planifiées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 1c8476d6-f806-4871-a250-01238a7d3dbb
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention planifiées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention processus' = EXTERNALMEASURE("Nombre d'actions de prévention processus", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Processus
+		lineageTag: a0201273-1354-45ae-b1b2-d0ead3b5cd28
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention processus
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention provenant du catalogue de prévention' = EXTERNALMEASURE("Nombre d'actions de prévention provenant du catalogue de prévention", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 23942e58-b633-4256-b425-7bf4873b9b03
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention provenant du catalogue de prévention
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention réalisées' = EXTERNALMEASURE("Nombre d'actions de prévention réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 5fcc808e-c3ed-4dc5-8bcf-60463b19d161
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention réalisées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention réglementaires' = EXTERNALMEASURE("Nombre d'actions de prévention réglementaires", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: b12a0f8e-27c4-4a98-88f4-9839efae36d1
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention réglementaires
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''actions de prévention' = EXTERNALMEASURE("Nombre d'actions de prévention", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: baa9453a-5733-4bf7-8654-234480b48c3e
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'actions de prévention
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents (actifs ou suspendus)' = EXTERNALMEASURE("Nombre d'adhérents (actifs ou suspendus)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents et DUERP
+		lineageTag: 169efd49-82f2-478a-bb5c-2e872f054c82
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents (actifs ou suspendus)
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents avec au moins un DUERP généré sur padoa' = EXTERNALMEASURE("Nombre d'adhérents avec au moins un DUERP généré sur padoa", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Adhérents et DUERP
+		lineageTag: 0143a3fe-ed22-42ce-9cff-5cd42163942b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents avec au moins un DUERP généré sur padoa
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents avec une seule unité de travail' = EXTERNALMEASURE("Nombre d'adhérents avec une seule unité de travail", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: c5c3878d-021e-464f-b15e-2aa2f855ebf5
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents avec une seule unité de travail
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques avec annexe' = EXTERNALMEASURE("Nombre de risques avec annexe", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: e4eaa2a6-11c9-4767-93b8-63f3b225524b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques avec annexe
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques avec cotation' = EXTERNALMEASURE("Nombre de risques avec cotation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 487b19bf-276f-426c-94cb-207394e942c9
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques avec cotation
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques avec une description' = EXTERNALMEASURE("Nombre de risques avec une description", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 76511fd3-95e2-41ea-90d7-9dfe20f2a880
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques avec une description
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques avec une gravité corrigée' = EXTERNALMEASURE("Nombre de risques avec une gravité corrigée", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 2c7ecbc2-5080-4e8b-80f1-43b9bc13ab9e
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques avec une gravité corrigée
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques avec une prévention insatisfaisante selon l''adhérent' = EXTERNALMEASURE("Nombre de risques avec une prévention insatisfaisante selon l'adhérent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\2 - Maîtrise des risques
+		lineageTag: 57e59efb-4dcf-473e-a78b-78320474318a
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques avec une prévention insatisfaisante selon l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques avec une prévention satisfaisante selon l''adhérent' = EXTERNALMEASURE("Nombre de risques avec une prévention satisfaisante selon l'adhérent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\2 - Maîtrise des risques
+		lineageTag: 71fcf70e-8bcf-4f5a-a397-9744289da302
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques avec une prévention satisfaisante selon l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques sans avis de l''adhérent sur la prévention' = EXTERNALMEASURE("Nombre de risques sans avis de l'adhérent sur la prévention", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\2 - Maîtrise des risques
+		lineageTag: 3363c474-a013-4fcd-9b03-cb2e35f2eb5d
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques sans avis de l'adhérent sur la prévention
+		dataCategory: Uncategorized
+
+	measure 'Nombre de risques' = EXTERNALMEASURE("Nombre de risques", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 7b7102f2-5792-4563-b54a-18fc0325e742
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de risques
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés dans au moins une unité de travail' = EXTERNALMEASURE("Nombre de salariés dans au moins une unité de travail", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: 7feda712-19fa-4eed-b769-eee429861242
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés dans au moins une unité de travail
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''unités de travail créées avec suggestion puis renommées' = EXTERNALMEASURE("Nombre d'unités de travail créées avec suggestion puis renommées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: b3d6f2a9-44c4-4cc3-a790-b2d2414aca73
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'unités de travail créées avec suggestion puis renommées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''unités de travail créées avec suggestion sans renommage' = EXTERNALMEASURE("Nombre d'unités de travail créées avec suggestion sans renommage", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: 29153610-ea87-4d09-b098-362eb2d408a9
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'unités de travail créées avec suggestion sans renommage
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''unités de travail créées avec suggestion' = EXTERNALMEASURE("Nombre d'unités de travail créées avec suggestion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: de9b6d5e-fe87-4eca-aae8-cb312ae48d32
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'unités de travail créées avec suggestion
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''unités de travail créées sans suggestion' = EXTERNALMEASURE("Nombre d'unités de travail créées sans suggestion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: d181582e-397f-4293-9ba3-09de5a28f3cd
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'unités de travail créées sans suggestion
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''unités de travail' = EXTERNALMEASURE("Nombre d'unités de travail", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: c7b2c6f3-3edc-426b-8ea3-eb3321b379bb
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'unités de travail
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''actions de prévention en retard par adhérent' = EXTERNALMEASURE("Nombre moyen d'actions de prévention en retard par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: b1dd9d48-f5ce-45ab-9801-581d0d6da715
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'actions de prévention en retard par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''actions de prévention globales par adhérent' = EXTERNALMEASURE("Nombre moyen d'actions de prévention globales par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: efcdaf93-b1e1-473b-ad7b-6362d303d697
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'actions de prévention globales par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''actions de prévention planifiées par adhérent' = EXTERNALMEASURE("Nombre moyen d'actions de prévention planifiées par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 49523f53-b0f1-4b01-91ab-8ece8659dd4b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'actions de prévention planifiées par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''actions de prévention réalisées par adhérent' = EXTERNALMEASURE("Nombre moyen d'actions de prévention réalisées par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 7b6f5fdb-e5d6-475b-a596-48d5010da715
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'actions de prévention réalisées par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''actions de prévention réglementaires par adhérent' = EXTERNALMEASURE("Nombre moyen d'actions de prévention réglementaires par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: ae6efc2e-b906-4f61-8f72-78a447e561ae
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'actions de prévention réglementaires par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen de risques par adhérent' = EXTERNALMEASURE("Nombre moyen de risques par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: eb260fe5-a968-43bc-8403-179daa9e1882
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen de risques par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen de situations de travail par adhérent' = EXTERNALMEASURE("Nombre moyen de situations de travail par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: e26ccfa2-53ce-4f95-9a6d-21b0a939f138
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen de situations de travail par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''unités de travail par adhérent' = EXTERNALMEASURE("Nombre moyen d'unités de travail par adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: 5b190aa2-b874-4558-8344-8ca4d99b7d9f
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'unités de travail par adhérent
+		dataCategory: Uncategorized
+
+	measure 'Proportion d''adhérents avec au moins un DUERP généré sur padoa' = EXTERNALMEASURE("Proportion d'adhérents avec au moins un DUERP généré sur padoa", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - Adhérents et DUERP
+		lineageTag: 549ae4a1-186c-42c7-94ca-b1cfc73b821d
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion d'adhérents avec au moins un DUERP généré sur padoa
+		dataCategory: Uncategorized
+
+	measure 'Proportion de risques avec au moins une annexe' = EXTERNALMEASURE("Proportion de risques avec au moins une annexe", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 878b477d-127b-4751-897d-b2ea635dd3fd
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de risques avec au moins une annexe
+		dataCategory: Uncategorized
+
+	measure 'Proportion de risques avec cotation' = EXTERNALMEASURE("Proportion de risques avec cotation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 2b9f3a02-d5dd-4a5a-8dcc-9170d12af151
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de risques avec cotation
+		dataCategory: Uncategorized
+
+	measure 'Proportion de risques avec une description' = EXTERNALMEASURE("Proportion de risques avec une description", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: 817534ba-8ee6-4215-b20f-0683dc9a0fb6
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de risques avec une description
+		dataCategory: Uncategorized
+
+	measure 'Proportion de risques avec une prévention insatisfaisante selon l''adhérent' = EXTERNALMEASURE("Proportion de risques avec une prévention insatisfaisante selon l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\2 - Maîtrise des risques
+		lineageTag: 1fec66fd-8f6b-4970-91af-d502665f1029
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de risques avec une prévention insatisfaisante selon l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Proportion de risques avec une prévention satisfaisante selon l''adhérent' = EXTERNALMEASURE("Proportion de risques avec une prévention satisfaisante selon l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\2 - Maîtrise des risques
+		lineageTag: 80ea97a3-2cc4-4585-8f83-6f42a31a7cd9
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de risques avec une prévention satisfaisante selon l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Proportion de risques sans avis de l''adhérent sur la prévention' = EXTERNALMEASURE("Proportion de risques sans avis de l'adhérent sur la prévention", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\2 - Maîtrise des risques
+		lineageTag: a6c18531-5666-40b0-896c-f2e258f7ee2a
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de risques sans avis de l'adhérent sur la prévention
+		dataCategory: Uncategorized
+
+	measure 'Proportion de salariés suivis hors intérim dans au moins une unité de travail' = EXTERNALMEASURE("Proportion de salariés suivis hors intérim dans au moins une unité de travail", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: 6c95bd28-2b4a-49b8-8296-c92d3314d03d
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion de salariés suivis hors intérim dans au moins une unité de travail
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention ciblées sur des unités de travail' = EXTERNALMEASURE("Proportion des actions de prévention ciblées sur des unités de travail", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: f6001e87-2b9a-45f9-b307-e7b843603d3b
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention ciblées sur des unités de travail
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention collectives' = EXTERNALMEASURE("Proportion des actions de prévention collectives", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: 98d37628-7300-45ab-948f-4456f86d78cc
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention collectives
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type adaptation de matériel' = EXTERNALMEASURE("Proportion des actions de prévention de type adaptation de matériel", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: 4223bdff-d0e5-4d59-b2ab-feda61b77ca7
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type adaptation de matériel
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type adaptation de poste' = EXTERNALMEASURE("Proportion des actions de prévention de type adaptation de poste", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 893dfeef-1058-4553-bb77-d983991b8a6a
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type adaptation de poste
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type consigne/information' = EXTERNALMEASURE("Proportion des actions de prévention de type consigne/information", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 273a5b81-5d0d-410d-b7f8-47ab5b1e7094
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type consigne/information
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type équipement de protection' = EXTERNALMEASURE("Proportion des actions de prévention de type équipement de protection", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 1f81e15e-4a9e-4e2e-ba51-476512fb33a7
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type équipement de protection
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type formation collective' = EXTERNALMEASURE("Proportion des actions de prévention de type formation collective", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: cf8b0bff-a6f6-4837-bb1e-a9a53f382a1f
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type formation collective
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type habilitation individuelle' = EXTERNALMEASURE("Proportion des actions de prévention de type habilitation individuelle", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: 42c88bb3-1901-4aac-9ceb-a77d89ea93bb
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type habilitation individuelle
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type modification de l''organisation' = EXTERNALMEASURE("Proportion des actions de prévention de type modification de l'organisation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Processus
+		lineageTag: dbdb833e-c41a-495a-9c5a-8fb1757e09f8
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type modification de l'organisation
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type protection du matériel' = EXTERNALMEASURE("Proportion des actions de prévention de type protection du matériel", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Collectives
+		lineageTag: 4d8daa7d-52d0-460c-8b08-42e67d653282
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type protection du matériel
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention de type rédaction de protocole' = EXTERNALMEASURE("Proportion des actions de prévention de type rédaction de protocole", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Processus
+		lineageTag: dc96a06f-8bc1-4565-8e8f-7a854ab183c1
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention de type rédaction de protocole
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention individuelles' = EXTERNALMEASURE("Proportion des actions de prévention individuelles", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Individuelles
+		lineageTag: fc758f74-b566-41f7-8675-b09ee1d49e0c
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention individuelles
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention processus' = EXTERNALMEASURE("Proportion des actions de prévention processus", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\2 - Par type\Processus
+		lineageTag: bd949dfd-14b1-4623-b3ca-f6a01bee2cbc
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention processus
+		dataCategory: Uncategorized
+
+	measure 'Proportion des actions de prévention provenant du catalogue' = EXTERNALMEASURE("Proportion des actions de prévention provenant du catalogue", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\4 - Actions de prévention\1 - Général
+		lineageTag: 038074aa-e800-4b38-a177-b94746a00ac9
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des actions de prévention provenant du catalogue
+		dataCategory: Uncategorized
+
+	measure 'Proportion des adhérents avec une seule unité de travail' = EXTERNALMEASURE("Proportion des adhérents avec une seule unité de travail", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: a8c1ef57-acb7-4d70-a7ab-3d57b6afccbb
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des adhérents avec une seule unité de travail
+		dataCategory: Uncategorized
+
+	measure 'Proportion des gravités corrigées par l''adhérent' = EXTERNALMEASURE("Proportion des gravités corrigées par l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Risques\1 - Détail des risques
+		lineageTag: fc80a67a-8c72-465a-a3be-f82ddb89f47f
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des gravités corrigées par l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Proportion des unités de travail créées avec suggestion puis renommées' = EXTERNALMEASURE("Proportion des unités de travail créées avec suggestion puis renommées", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: 1b7d3697-6ba4-42f0-9676-bf7da0f3a93f
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des unités de travail créées avec suggestion puis renommées
+		dataCategory: Uncategorized
+
+	measure 'Proportion des unités de travail créées avec suggestion sans renommage' = EXTERNALMEASURE("Proportion des unités de travail créées avec suggestion sans renommage", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: 6e1a3d53-2fa3-47ea-b838-4475a56bfdb6
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des unités de travail créées avec suggestion sans renommage
+		dataCategory: Uncategorized
+
+	measure 'Proportion des unités de travail créées avec suggestion' = EXTERNALMEASURE("Proportion des unités de travail créées avec suggestion", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: dc4b362e-f27c-4722-b86e-d73af01c7172
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des unités de travail créées avec suggestion
+		dataCategory: Uncategorized
+
+	measure 'Proportion des unités de travail créées sans suggestion' = EXTERNALMEASURE("Proportion des unités de travail créées sans suggestion", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\2 - Unités de travail
+		lineageTag: fc6c8f09-e26d-4b03-9a2d-0fe07213350a
+		sourceLineageTag: DirectQuery à AS – pst38.Proportion des unités de travail créées sans suggestion
+		dataCategory: Uncategorized
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 756bbea8-1d4f-43e9-84a7-dfed449b503e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b8570fa7-80a4-4cdf-beec-961a8233206f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 67bfe123-8891-4403-ad1f-6d66f4a96bfe
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_adaptation_materiel
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1537cefe-88ad-4550-95cd-54690225174d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_adaptation_materiel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_adaptation_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7ec7b8e7-c300-4a17-9404-42c8ebc57bba
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_adaptation_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_catalogue
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1377aa9d-0d35-42d6-805a-f07a3c8e17b9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_catalogue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_collective
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a349141e-611a-4ab6-9081-932199a61ab2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_collective
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_consigne_information
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6c5175b2-b753-41c2-803e-5ce57f573e56
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_consigne_information
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_en_retard
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 65e99b10-8030-4015-8f8c-61fe55c97f64
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_en_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_equipement_protection
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0e96ee32-142a-4f47-a4bf-92c6d538dab2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_equipement_protection
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_formation_collective
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7cf5fce4-ec92-4ae9-8e33-9ca3c684c587
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_formation_collective
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_globale
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ba57469b-a3fd-4384-9225-dc811148b1bc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_globale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_habilitation_individuelle
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a91e473d-d9a9-4fbe-917f-3356cc9084fa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_habilitation_individuelle
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_individuelle
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3363ccd1-f2e0-4561-8852-94d2ae4bdeb0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_individuelle
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_modification_organisation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d3b5a20f-52bb-4064-a81c-4d33ba0b0133
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_modification_organisation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_perimetre_unite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2b0fc8e6-ea27-4d16-a464-f5528105ce1e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_perimetre_unite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_planifiee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 31d635d6-e36e-4b6e-a263-3c3b6e56f36c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_planifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_processus
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 55594c83-85fb-467e-a9ae-212ae522a5cb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_processus
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_protection_collective
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 402194bc-e354-4e54-8f5b-a35363df2136
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_protection_collective
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_realise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ae6bc3da-1d0d-4d0f-af0b-57da6686c96c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_realise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_redaction_protocole
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 70173dd7-884e-4a67-bb45-ba58be3f71e2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_redaction_protocole
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_action_reglementaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 869e2b4c-ecc4-4558-ae2e-b28c0f905c68
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_action_reglementaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_duerp_genere
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dbd26668-cb80-4e56-a60b-bf1ceda04cf8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_duerp_genere
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: acde9f3b-5695-4451-8e97-e86d5aaefdf0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_avec_annexe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ee75c840-23ab-4058-9cc0-a149910beec4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_avec_annexe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_avec_cotation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d20eb659-7308-4d0f-aee0-54cfcef67d43
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_avec_cotation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_avec_description
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 85955e24-db0e-4343-af67-060f37b0679d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_avec_description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_avec_gravite_corrigee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ae359669-d384-4b2b-8de9-ddc8bd084688
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_avec_gravite_corrigee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_avec_prevention_insatisfaisante
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 481b1357-64cd-4b03-a915-ada44d400757
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_avec_prevention_insatisfaisante
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_risque_avec_prevention_satisfaisante
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 40a3221a-3611-4fe1-aaf2-c2ef3c4da7c7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_risque_avec_prevention_satisfaisante
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_affecte_unite_travail
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4240a226-9eed-4f76-99e6-d7741be35696
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_affecte_unite_travail
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4c93763d-4445-483a-bbbb-82263a7b388b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_suggeree
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ea3a8bc3-e88b-4e89-9bf7-01f7b4867184
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_suggeree
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_unite_travail_suggeree_corrigee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7934f5a1-dad0-4d0b-ac54-241230602707
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_unite_travail_suggeree_corrigee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d91ab80c-d6d9-4700-94fe-2897b432e8f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DUERP = entity
+		mode: directQuery
+		source
+			entityName: DUERP
+			expressionSource: 'DirectQuery à AS – pst38'
+

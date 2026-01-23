@@ -1,0 +1,57 @@
+table 'AMT - étiquette'
+	lineageTag: 30f77584-62d8-462e-b641-8cfd08239b03
+
+	column 'Catégorie étiquette AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4bd93f74-cc7a-4c85-9ed7-249a3089826a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie étiquette AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Etiquette AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 92b2bc2b-96a7-442c-a033-6c4778abef0b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Etiquette AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_etiquette_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f02c21f2-5d1f-428c-a8ef-4128ece50a4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_etiquette_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie étiquette AMT'
+		lineageTag: 02c6dc92-1875-4506-b8be-da8783006623
+		sourceLineageTag: Hiérarchie étiquette AMT
+
+		level 'Catégorie étiquette AMT'
+			lineageTag: f84a58a0-7096-4a13-9deb-7928f2fc44c9
+			column: 'Catégorie étiquette AMT'
+
+		level 'Etiquette AMT'
+			lineageTag: 705ba553-86c7-417f-9710-c8b4907afc0a
+			column: 'Etiquette AMT'
+
+	partition 'AMT - étiquette' = entity
+		mode: directQuery
+		source
+			entityName: AMT - étiquette
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,467 @@
+table 'Effectif au 31/12'
+	lineageTag: eaaa5d1a-1a68-4e02-b261-9f7b75bf60a9
+
+	measure 'Effectif fonction publique (31/12)' = EXTERNALMEASURE("Effectif fonction publique (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: a68fb7bf-9019-4aae-9d79-1d9dfed62582
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif fonction publique (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi (31/12)' = EXTERNALMEASURE("Effectif suivi (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 03c7991c-b68d-46e2-b6f8-3db5c9c346a2
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire (31/12)' = EXTERNALMEASURE("Effectif suivi intérimaire (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 6fd7fceb-d27d-4389-81d8-2a073ca20abc
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non-intérimaire (31/12)' = EXTERNALMEASURE("Effectif suivi non-intérimaire (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 07df1e87-a4cb-40a7-bd92-f39cbf2e8e8f
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non-intérimaire (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents (31/12)' = EXTERNALMEASURE("Nombre d'adhérents (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 97dea301-d5d0-42fc-9c8a-73839ea958c1
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de personnes suivies (31/12)' = EXTERNALMEASURE("Nombre de personnes suivies (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 7770cc0a-f98d-4fb7-9164-a7b2ddac1304
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de personnes suivies (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés SIA (31/12)' = EXTERNALMEASURE("Nombre de salariés SIA (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 32ac4ed0-555e-4ea1-9e90-3ff8cfaa7308
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés SIA (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés SIR (31/12)' = EXTERNALMEASURE("Nombre de salariés SIR (31/12)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 733ef724-4cde-4c8c-8f02-6c95dc4cbae6
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés SIR (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Taux d''agents fonction publique (31/12)' = EXTERNALMEASURE("Taux d'agents fonction publique (31/12)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: 8997f7df-4008-4fd4-9289-9894922e8aaa
+		sourceLineageTag: DirectQuery à AS – pst38.Taux d'agents fonction publique (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Taux de salariés SIA (31/12)' = EXTERNALMEASURE("Taux de salariés SIA (31/12)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: d2b11f94-2c63-4f3a-80df-70a44168f0b1
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de salariés SIA (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Taux de salariés SIR (31/12)' = EXTERNALMEASURE("Taux de salariés SIR (31/12)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: 40087215-f6f8-4ab1-85aa-1e6f2fa6ad71
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de salariés SIR (31/12)
+		dataCategory: Uncategorized
+
+	measure 'Taux d''intérimaires (31/12)' = EXTERNALMEASURE("Taux d'intérimaires (31/12)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs
+		lineageTag: 6f36e99c-5925-4cc4-918a-e83f03f08874
+		sourceLineageTag: DirectQuery à AS – pst38.Taux d'intérimaires (31/12)
+		dataCategory: Uncategorized
+
+	column 'Année de la dernière VIP réalisée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f7361502-7702-4951-a505-f8ea3589218e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année de la dernière VIP réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Année de la dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 539541aa-e272-4c23-9b13-75b92c2d05ba
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année de la dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Année effectif'
+		dataType: int64
+		lineageTag: cca8a9bc-4c2d-47e7-9b91-0df254598e79
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Année effectif
+
+		annotation SummarizationSetBy = User
+
+	column 'Catégorie age'
+		dataType: string
+		lineageTag: 5599380f-dee0-4070-9c3a-fcd0beea16cb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Catégorie age
+		sortByColumn: tri_categorie_age
+
+		annotation SummarizationSetBy = User
+
+	column code_groupe_determinant_suivi
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 729a44da-2d37-414a-88ac-e740abb34fcc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date de la dernière VIP réalisée'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 72cf6df9-97c0-4001-ae0c-19ef25763b05
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Date de la dernière VIP réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date de la dernière visite réalisée'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6f714ac5-a17e-48af-8a20-263ae9caafcc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Date de la dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column date_naissance
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1f6c2a3f-a474-466b-86bd-6de45c5ba3ce
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: date_naissance
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_date_effectif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 73cae33e-b4b3-4d76-a881-bd5d480fe98b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_effectif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0a075c2d-64fd-4639-8f7a-f95b7f347257
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c821d66c-c22b-47f0-8b50-e6441fd26542
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ca8d0762-e7d3-4578-8279-3017414ef8e1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column matricule_personne
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 171dfb83-cd62-4344-b53a-102d8765f640
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: matricule_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois de la dernière VIP réalisée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b95daa59-9667-422d-97d4-7d12f22fe1c9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Mois de la dernière VIP réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Mois de la dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b1a02dff-2d7a-4075-9236-ce71cb93c754
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Mois de la dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nb_salarie_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: eb55d1be-cc3a-40fd-ba9d-cbf2262a4c39
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column Poste
+		dataType: string
+		lineageTag: b39de2fb-45d0-45f8-b039-f5d0763afe6e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Poste
+
+		annotation SummarizationSetBy = User
+
+	column 'Salarié multi-employeur (31/12)'
+		dataType: string
+		lineageTag: 44da2a83-f100-4259-be8c-dddeb4ed3f97
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salarié multi-employeur (31/12)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine de la dernière VIP réalisée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ab0b89ae-fd60-44f5-a05c-0fb45ef69bf3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Semaine de la dernière VIP réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Semaine de la dernière visite réalisée'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 45df501d-2766-4b85-89cd-2f35207336c0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Semaine de la dernière visite réalisée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column Sexe
+		dataType: string
+		lineageTag: 1d764f1f-3346-46eb-9524-5849c064aba6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Sexe
+
+		annotation SummarizationSetBy = User
+
+	column 'Taille entreprise (31/12)'
+		dataType: string
+		lineageTag: 00d98284-8f8a-46c3-8c4a-35e3ac7eaee3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise (31/12)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise DGT (31/12)'
+		dataType: string
+		displayFolder: Autres tranches de taille
+		lineageTag: 1a7a1a9c-862b-4ff1-93de-6d32647f0c7b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise DGT (31/12)
+		sortByColumn: 'Tri taille entreprise DGT (31/12)'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise Qualios (31/12)'
+		dataType: string
+		displayFolder: Autres tranches de taille
+		lineageTag: 77ae1acb-abc7-4932-be43-28f06ab67424
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise Qualios (31/12)
+		sortByColumn: 'Tri taille entreprise Qualios (31/12)'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tri taille entreprise DGT (31/12)'
+		dataType: int64
+		lineageTag: 7d7da610-aa7e-4c39-95a0-4a521846ea1f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Tri taille entreprise DGT (31/12)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tri taille entreprise Qualios (31/12)'
+		dataType: int64
+		lineageTag: a6f50644-21fc-4454-bee2-83656ad22b59
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Tri taille entreprise Qualios (31/12)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tri_categorie_age
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 032ca36b-248a-454d-8117-b901667dc7e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: tri_categorie_age
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Type contrat'
+		dataType: string
+		lineageTag: 9ec2ca86-0cf1-49e3-ac62-0613ca2fe599
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Type contrat
+
+		annotation SummarizationSetBy = User
+
+	column 'Type dernière visite'
+		dataType: string
+		lineageTag: 214dffd9-d5c0-4e02-87b4-c5e0c4a55796
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Type dernière visite
+
+		annotation SummarizationSetBy = User
+
+	column 'Type suivi'
+		dataType: string
+		lineageTag: 5b1c7dd2-fe7c-4700-b5f2-7842a1284f22
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Type suivi
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Hiérarchie date de la dernière VIP réalisée'
+		lineageTag: a9902530-9513-4cc8-9f9d-9b055d8079b5
+		sourceLineageTag: Hiérarchie date de la dernière VIP réalisée
+
+		level 'Année de la dernière VIP réalisée'
+			lineageTag: bf75081f-e509-40a9-9f77-ef6a976218a9
+			column: 'Année de la dernière VIP réalisée'
+
+		level 'Mois de la dernière VIP réalisée'
+			lineageTag: 0efccc55-765e-4ee1-acfc-3184ce56ded5
+			column: 'Mois de la dernière VIP réalisée'
+
+		level 'Semaine de la dernière VIP réalisée'
+			lineageTag: 4b84bf68-2961-40a4-a07d-e863d9a911ca
+			column: 'Semaine de la dernière VIP réalisée'
+
+		level 'Date de la dernière VIP réalisée'
+			lineageTag: 3946231f-335e-43d1-a823-29329a115c42
+			column: 'Date de la dernière VIP réalisée'
+
+	hierarchy 'Hiérarchie date de la dernière visite réalisée'
+		lineageTag: c2812bcd-ae6d-4fbe-8f11-81b6e4a78a38
+		sourceLineageTag: Hiérarchie date de la dernière visite réalisée
+
+		level 'Année de la dernière visite réalisée'
+			lineageTag: 27edc6c0-9a44-4901-acd0-f0c13fa34944
+			column: 'Année de la dernière visite réalisée'
+
+		level 'Mois de la dernière visite réalisée'
+			lineageTag: fd9c50d1-97d1-4f36-9ff1-e553369eb70f
+			column: 'Mois de la dernière visite réalisée'
+
+		level 'Semaine de la dernière visite réalisée'
+			lineageTag: f83f9de2-84b0-4c0b-9b4e-125186d0274b
+			column: 'Semaine de la dernière visite réalisée'
+
+		level 'Date de la dernière visite réalisée'
+			lineageTag: 7d6c4614-0c9e-4402-aea8-5dcaa05085d3
+			column: 'Date de la dernière visite réalisée'
+
+	partition 'Effectif au 31/12' = entity
+		mode: directQuery
+		source
+			entityName: Effectif au 31/12
+			expressionSource: 'DirectQuery à AS – pst38'
+

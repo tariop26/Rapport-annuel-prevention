@@ -1,0 +1,70 @@
+table 'CRM - activité - auteur'
+	lineageTag: a50907e7-826f-42ab-a07e-3c0f501d182b
+
+	column id_auteur_activite_crm
+		dataType: int64
+		isNullable: false
+		lineageTag: 2a87d789-4233-4ea1-87f9-a12888dafde4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_auteur_activite_crm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom auteur activité'
+		dataType: string
+		lineageTag: 5daeb017-0846-4217-bd61-26d3049fb31f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom auteur activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil auteur activité détaillé'
+		dataType: string
+		lineageTag: c52570e8-52ed-47a2-8a62-5bc4261c48f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil auteur activité détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil auteur activité'
+		dataType: string
+		lineageTag: 3c4518ce-5c20-4e79-a51b-b00fcb74a30d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil auteur activité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie auteur activité'
+		lineageTag: 76e0b51a-77d8-4013-bc42-6ee5bb039923
+		sourceLineageTag: Hiérarchie auteur activité
+
+		level 'Profil auteur activité'
+			lineageTag: dea01aef-37bb-4b92-bd2c-4bd899cbf450
+			column: 'Profil auteur activité'
+
+		level 'Profil auteur activité détaillé'
+			lineageTag: 161d471a-e12d-4bc9-8606-e75b5446c419
+			column: 'Profil auteur activité détaillé'
+
+		level 'Nom auteur activité'
+			lineageTag: 462cb86e-bdab-4fe1-bf96-2c93334b2451
+			column: 'Nom auteur activité'
+
+	partition 'CRM - activité - auteur' = entity
+		mode: directQuery
+		source
+			entityName: CRM - activité - auteur
+			expressionSource: 'DirectQuery à AS – pst38'
+

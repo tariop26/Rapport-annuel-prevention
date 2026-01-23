@@ -1,0 +1,126 @@
+table 'AMT - date création'
+	lineageTag: f73ea49b-3104-4d1e-842b-08f65d38f653
+
+	column 'Année à ce jour (date création AMT)'
+		dataType: string
+		lineageTag: 72ccc81e-68d6-4fd2-a5d5-d332f5c671ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année à ce jour (date création AMT)
+
+		annotation SummarizationSetBy = User
+
+	column 'Année création AMT'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bed2cd27-3504-4a3c-9e45-e4de2cf7e807
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année création AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date création AMT'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 35b315bd-bb95-4774-906a-b90ccf9528f6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création AMT
+		sortByColumn: id_date_creation_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_amt
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5a4be768-8730-48e5-8fc5-5671129c6d1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour création AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 65af0ebb-7a1b-4e53-b84b-c782fec95e5a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour création AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 80eb5259-d6a5-47bc-b592-a0c37913ec71
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul création AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3f330565-01cf-4cbb-a6f1-d1ee94c78fc3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul création AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine création AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bec9890f-158c-45de-ae9b-1f39c4f87f12
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine création AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date création AMT'
+		lineageTag: 8a036dc3-6157-4f9f-8a80-bd7b3662ab5e
+		sourceLineageTag: Hiérarchie date création AMT
+
+		level 'Année création AMT'
+			lineageTag: c9b0488d-6ee4-4dcd-a027-c92749768aff
+			column: 'Année création AMT'
+
+		level 'Mois création AMT'
+			lineageTag: 192bf65b-94ed-4733-b026-88633fba6770
+			column: 'Mois création AMT'
+
+		level 'Semaine création AMT'
+			lineageTag: 011223d7-f5ef-412a-8f67-37cc691d861d
+			column: 'Semaine création AMT'
+
+		level 'Date création AMT'
+			lineageTag: 507a0857-df23-4ee5-b910-30004cc63e79
+			column: 'Date création AMT'
+
+	partition 'AMT - date création' = entity
+		mode: directQuery
+		source
+			entityName: AMT - date création
+			expressionSource: 'DirectQuery à AS – pst38'
+

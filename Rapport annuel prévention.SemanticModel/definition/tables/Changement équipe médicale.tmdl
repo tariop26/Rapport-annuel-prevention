@@ -1,0 +1,171 @@
+table 'Changement équipe médicale'
+	lineageTag: 80998993-b87d-4fec-be64-fd53648eb292
+
+	measure '# adhérents ayant changé de médecin référent' = EXTERNALMEASURE("# adhérents ayant changé de médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement médecin référent
+		lineageTag: fcbd1b11-6e77-4a38-8b3d-2776926bfcb0
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents ayant changé de médecin référent
+		dataCategory: Uncategorized
+
+	measure '# adhérents ayant changé d''équipe médicale' = EXTERNALMEASURE("# adhérents ayant changé d'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement équipe médicale
+		lineageTag: 6ef931f8-a25c-4b5e-b17b-6aaffdc60c15
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents ayant changé d'équipe médicale
+		dataCategory: Uncategorized
+
+	measure '# changements de médecins référents' = EXTERNALMEASURE("# changements de médecins référents", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement médecin référent
+		lineageTag: 2fd4193a-febb-49fc-af43-9aa30ec02fb3
+		sourceLineageTag: DirectQuery à AS – pst38.# changements de médecins référents
+		dataCategory: Uncategorized
+
+	measure '# changements d''équipes médicales' = EXTERNALMEASURE("# changements d'équipes médicales", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement équipe médicale
+		lineageTag: 0da6e249-6440-46ee-b42d-fdf805c71156
+		sourceLineageTag: DirectQuery à AS – pst38.# changements d'équipes médicales
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire ayant changé de médecin référent' = EXTERNALMEASURE("Effectif suivi intérimaire ayant changé de médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement médecin référent
+		lineageTag: a4fca2ad-75a6-472d-a6af-e3d26ef8f494
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire ayant changé de médecin référent
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire ayant changé d''équipe médicale' = EXTERNALMEASURE("Effectif suivi intérimaire ayant changé d'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement équipe médicale
+		lineageTag: 04100cd9-ea77-4c3a-b705-15faff37d136
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire ayant changé d'équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non intérimaire ayant changé de médecin référent' = EXTERNALMEASURE("Effectif suivi non intérimaire ayant changé de médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement médecin référent
+		lineageTag: 5309c04a-00f4-4022-9f38-4d545fe14c44
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non intérimaire ayant changé de médecin référent
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non intérimaire ayant changé d''équipe médicale' = EXTERNALMEASURE("Effectif suivi non intérimaire ayant changé d'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\Changement équipe médicale
+		lineageTag: ace8eaa3-bcfa-4e88-8bfd-a846028cf23e
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non intérimaire ayant changé d'équipe médicale
+		dataCategory: Uncategorized
+
+	column id_date_changement_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c175f1e6-6faf-4c85-ab4a-827617803441
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_changement_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c8ef7d28-7ef5-499b-aeaa-e76661cf0403
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur_apres_changement
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 13831d6d-e88e-4f41-a0e0-ea3e1387f5ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur_apres_changement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur_avant_changement
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e42f47aa-9f88-461d-b0ec-72472bde9b1e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur_avant_changement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_changement_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 18249380-db60-4321-95f8-7c02629f3609
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_changement_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_changement_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 38e77cf5-0138-48d3-b883-04b20149204a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_changement_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_interimaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4bd5cd0a-b357-49f2-9e6c-0acc0da23be5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_interimaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_non_interimaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9c79ce54-dfa4-4130-93a6-24405472ee77
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_non_interimaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Changement équipe médicale' = entity
+		mode: directQuery
+		source
+			entityName: Changement équipe médicale
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

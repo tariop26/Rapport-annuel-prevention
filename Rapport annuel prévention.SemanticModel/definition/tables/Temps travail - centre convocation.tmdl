@@ -1,0 +1,83 @@
+table 'Temps travail - centre convocation'
+	lineageTag: 180929c1-e347-4f24-8c05-5e4e0d89dc74
+
+	column 'Centre convocation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a7b57647-ee05-42a4-9fb0-5152eb5a20df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre rattachement convocation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: ec18dd40-1e59-466e-b4ab-6bde3f6cdf59
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: c2858e1a-2ca1-4e73-ad60-23fba93a1be2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type centre de convocation'
+		dataType: string
+		lineageTag: 3e8b58ea-5482-4567-9fe8-5bdaf0d41198
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type centre de convocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique convocation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 35003782-1d61-4eeb-bd6f-87618b57339b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie centre convocation'
+		lineageTag: f8f25486-fe11-450e-b4b4-62cfe1704f60
+		sourceLineageTag: Hiérarchie centre convocation
+
+		level 'Zone géographique convocation'
+			lineageTag: 8886c26a-e2ee-42a8-b583-28a30d490861
+			column: 'Zone géographique convocation'
+
+		level 'Centre rattachement convocation'
+			lineageTag: 239bdd1d-0b77-4051-90d9-93b5326eb260
+			column: 'Centre rattachement convocation'
+
+		level 'Centre convocation'
+			lineageTag: 83c20b5d-8d81-4d6d-9312-078892e3feda
+			column: 'Centre convocation'
+
+	partition 'Temps travail - centre convocation' = entity
+		mode: directQuery
+		source
+			entityName: Temps travail - centre convocation
+			expressionSource: 'DirectQuery à AS – pst38'
+

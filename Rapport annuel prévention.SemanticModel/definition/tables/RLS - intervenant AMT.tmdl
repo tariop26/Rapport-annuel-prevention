@@ -1,0 +1,38 @@
+table 'RLS - intervenant AMT'
+	lineageTag: 91f98307-a4f7-4e35-8fb6-2857863a5d2a
+
+	column email_intervenant
+		dataType: string
+		lineageTag: 0b6bbfad-da5e-4711-af96-307b664bd599
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: email_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_intervenant
+		dataType: int64
+		lineageTag: 9760ee84-cd59-4c64-b255-715a8f7055cf
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_intervenant
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_intervenant_amt_unique
+		dataType: int64
+		lineageTag: a051e8ae-76e5-49f0-b6a2-5f4f426fede5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_groupe_intervenant_amt_unique
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'RLS - intervenant AMT' = entity
+		mode: directQuery
+		source
+			entityName: RLS - intervenant AMT
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

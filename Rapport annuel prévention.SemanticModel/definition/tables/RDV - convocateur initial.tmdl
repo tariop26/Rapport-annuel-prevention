@@ -1,0 +1,87 @@
+table 'RDV - convocateur initial'
+	lineageTag: 7f6ffcbe-6a3e-44d7-ad6f-3b3274a196cd
+
+	column id_convocateur_initial_rdv
+		dataType: int64
+		isNullable: false
+		lineageTag: 11a71d61-c99a-4876-a612-1127c1cd431c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_convocateur_initial_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom convocateur initial RDV'
+		dataType: string
+		lineageTag: 8b49a891-dd09-4bfc-a97d-8f2d2f7acdc3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom convocateur initial RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil convocateur initial RDV détaillé'
+		dataType: string
+		lineageTag: 2e72eb71-7b98-4d79-a115-95afface51c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil convocateur initial RDV détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil convocateur initial RDV'
+		dataType: string
+		lineageTag: 396f9168-535e-4e5c-8435-b35d901a478e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil convocateur initial RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle convocateur initial RDV'
+		dataType: string
+		lineageTag: 0bc715ee-14f6-46d5-9337-ab6a2f8b842d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle convocateur initial RDV
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie convocateur initial'
+		lineageTag: 62a8ca6c-ccb6-46f5-9e22-44c61c1aa1dc
+		sourceLineageTag: Hiérarchie convocateur initial
+
+		level 'Rôle convocateur initial RDV'
+			lineageTag: 6fe735d7-82a0-48b0-8366-581703aa0d04
+			column: 'Rôle convocateur initial RDV'
+
+		level 'Nom convocateur initial RDV'
+			lineageTag: 7c54439d-1ca5-4159-b609-dff21bf2ea0d
+			column: 'Nom convocateur initial RDV'
+
+	hierarchy 'Hiérarchie profil convocateur initial'
+		lineageTag: bd77c3f5-b758-47e7-990f-ace475f2973b
+		sourceLineageTag: Hiérarchie profil convocateur initial
+
+		level 'Profil convocateur initial RDV'
+			lineageTag: 1e80c0c2-492f-48b9-a08a-60bf190b919d
+			column: 'Profil convocateur initial RDV'
+
+		level 'Profil convocateur initial RDV détaillé'
+			lineageTag: b7953db5-787c-415f-bcff-70f146f327d4
+			column: 'Profil convocateur initial RDV détaillé'
+
+	partition 'RDV - convocateur initial' = entity
+		mode: directQuery
+		source
+			entityName: RDV - convocateur initial
+			expressionSource: 'DirectQuery à AS – pst38'
+

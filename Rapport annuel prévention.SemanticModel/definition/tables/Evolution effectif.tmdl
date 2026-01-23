@@ -1,0 +1,2219 @@
+table 'Evolution effectif'
+	lineageTag: f748784c-2cd7-4f22-9a09-8d02225bf377
+
+	measure '# adhérents affectés à l''équipe médicale' = EXTERNALMEASURE("# adhérents affectés à l'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Comptages changement équipe médicale
+		lineageTag: ba98631d-c887-46cf-b172-f348ab970261
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents affectés à l'équipe médicale
+		dataCategory: Uncategorized
+
+	measure '# adhérents affectés au médecin adhérent' = EXTERNALMEASURE("# adhérents affectés au médecin adhérent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Comptages changement médecin référent
+		lineageTag: 3ffbe670-8301-4f6c-8165-fda707deb7be
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents affectés au médecin adhérent
+		dataCategory: Uncategorized
+
+	measure '# adhérents désaffectés à au médecin référent' = EXTERNALMEASURE("# adhérents désaffectés à au médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Comptages changement médecin référent
+		lineageTag: 0ca76e7a-07e7-4c3b-a5dc-3ce5064fdd16
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents désaffectés à au médecin référent
+		dataCategory: Uncategorized
+
+	measure '# adhérents désaffectés à l''équipe médicale' = EXTERNALMEASURE("# adhérents désaffectés à l'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Comptages changement équipe médicale
+		lineageTag: a50161d2-1d46-4224-8547-a8781154b9c0
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents désaffectés à l'équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'Effectif de référence début de période' = EXTERNALMEASURE("Effectif de référence début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\06 - Comptages effectif de référence
+		lineageTag: 3ff0d36c-8199-40c9-b3cc-323798dcaa18
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif de référence début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif de référence fin de période' = EXTERNALMEASURE("Effectif de référence fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\06 - Comptages effectif de référence
+		lineageTag: a8b985b1-8402-4bcb-97f2-3c746c0fae35
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif de référence fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré début de période' = EXTERNALMEASURE("Effectif déclaré début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\1 - Total
+		lineageTag: 76c3b3dc-cd98-4ef0-b42d-6d995ec5e7aa
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré fin de période' = EXTERNALMEASURE("Effectif déclaré fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\1 - Total
+		lineageTag: d408adad-a8c0-4311-a477-95f03124351b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré SI début de période' = EXTERNALMEASURE("Effectif déclaré SI début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\2 - SI
+		lineageTag: de074c98-3d7e-4021-8c48-7d58271f372c
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré SI début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré SI fin de période' = EXTERNALMEASURE("Effectif déclaré SI fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\2 - SI
+		lineageTag: fe051b2d-3769-4bd5-8ae6-bfacf48ce3b8
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré SI fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré SIA début de période' = EXTERNALMEASURE("Effectif déclaré SIA début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\3 - SIA
+		lineageTag: c4d97d38-65f1-41ce-8c2a-58c134338d5d
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré SIA début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré SIA fin de période' = EXTERNALMEASURE("Effectif déclaré SIA fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\3 - SIA
+		lineageTag: 962e6090-fe9d-4228-831c-f02b9fa837a1
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré SIA fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré SIR début de période' = EXTERNALMEASURE("Effectif déclaré SIR début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\4 - SIR
+		lineageTag: a3f8a9e8-f78b-45b0-b2ec-be4fa8d95b56
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré SIR début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif déclaré SIR fin de période' = EXTERNALMEASURE("Effectif déclaré SIR fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\4 - SIR
+		lineageTag: daec62ac-7348-4cb1-bf28-842bb6d84b3e
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif déclaré SIR fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif estimé début de période' = EXTERNALMEASURE("Effectif estimé début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Comptages effectif estimé
+		lineageTag: 9fea053e-ebce-4117-8b90-13006a85afa9
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif estimé début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif estimé fin de période' = EXTERNALMEASURE("Effectif estimé fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Comptages effectif estimé
+		lineageTag: 941a89dd-0f51-4f27-b178-983545b01378
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif estimé fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire affecté à l''équipe médicale' = EXTERNALMEASURE("Effectif suivi figé intérimaire affecté à l'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Comptages changement équipe médicale
+		lineageTag: 6d90d0b5-e84b-4267-927f-c25e5e4f1fd8
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire affecté à l'équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire affecté au médecin référent' = EXTERNALMEASURE("Effectif suivi figé intérimaire affecté au médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Comptages changement médecin référent
+		lineageTag: cdcb76c3-d945-457b-b098-1f6d7f7aae5e
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire affecté au médecin référent
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire début de période' = EXTERNALMEASURE("Effectif suivi figé intérimaire début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: 8f45ea7a-8c96-4133-baf1-ef4c6eff84ce
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire désaffecté à l''équipe médicale' = EXTERNALMEASURE("Effectif suivi figé intérimaire désaffecté à l'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Comptages changement équipe médicale
+		lineageTag: c0d06978-074f-44d0-8f44-5e4504a017f0
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire désaffecté à l'équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire désaffecté au médecin référent' = EXTERNALMEASURE("Effectif suivi figé intérimaire désaffecté au médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Comptages changement médecin référent
+		lineageTag: 870ca083-e300-4f84-82d9-6399c1be96ad
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire désaffecté au médecin référent
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire fin de période' = EXTERNALMEASURE("Effectif suivi figé intérimaire fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: fbd2cf51-c959-45b4-9c3f-759ffe6e4213
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire affecté à l''équipe médicale' = EXTERNALMEASURE("Effectif suivi figé non intérimaire affecté à l'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Comptages changement équipe médicale
+		lineageTag: a33a2a42-431f-4f0e-90dd-a6ba76af0669
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire affecté à l'équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire affecté au médecin référent' = EXTERNALMEASURE("Effectif suivi figé non intérimaire affecté au médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Comptages changement médecin référent
+		lineageTag: 02b58302-4c1d-4988-8c02-cfc60c2c357e
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire affecté au médecin référent
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire début de période' = EXTERNALMEASURE("Effectif suivi figé non intérimaire début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: 7b6b8e65-1264-47ed-b019-965ebbb62216
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire désaffecté à l''équipe médicale' = EXTERNALMEASURE("Effectif suivi figé non intérimaire désaffecté à l'équipe médicale", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\09 - Comptages changement équipe médicale
+		lineageTag: 62f4eb20-2c3b-4af4-b84d-9b8b4e876150
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire désaffecté à l'équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire désaffecté au médecin référent' = EXTERNALMEASURE("Effectif suivi figé non intérimaire désaffecté au médecin référent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\10 - Comptages changement médecin référent
+		lineageTag: 5f56ac70-afa1-492a-94fe-e0e22b4e2e74
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire désaffecté au médecin référent
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire fin de période à jour de FE' = EXTERNALMEASURE("Effectif suivi figé non intérimaire fin de période à jour de FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: c78bc324-4cf2-435c-8944-ef5ccc2f66d4
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire fin de période à jour de FE
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire fin de période avec FE non renseignée' = EXTERNALMEASURE("Effectif suivi figé non intérimaire fin de période avec FE non renseignée", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: e8b8716b-046e-43bd-83c0-1544666971ee
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire fin de période avec FE non renseignée
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire fin de période en retard de FE' = EXTERNALMEASURE("Effectif suivi figé non intérimaire fin de période en retard de FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 43a11400-906c-4a50-a252-71469d0405c7
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire fin de période en retard de FE
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire fin de période' = EXTERNALMEASURE("Effectif suivi figé non intérimaire fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: a854717e-bc60-443f-a2cd-2f446ed379d8
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire début de période' = EXTERNALMEASURE("Effectif suivi intérimaire début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\2. Intérimaires
+		lineageTag: ea421bb0-4f0e-41c3-b0b0-2d31c7c3ebaf
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi intérimaire fin de période' = EXTERNALMEASURE("Effectif suivi intérimaire fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\2. Intérimaires
+		lineageTag: 9d3f777b-7e9c-40b3-8208-5bdd1f3ca93b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi intérimaire fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non intérimaire début de période' = EXTERNALMEASURE("Effectif suivi non intérimaire début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\1. Non intérimaires
+		lineageTag: 966e5b6e-0ee2-4448-9b38-d33f535d8ff2
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non intérimaire début de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi non intérimaire fin de période' = EXTERNALMEASURE("Effectif suivi non intérimaire fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\1. Non intérimaires
+		lineageTag: 83c1c4bf-8cc1-456a-b17d-961ba3a1c9bf
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi non intérimaire fin de période
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif de référence car adhésion' = EXTERNALMEASURE("Entrées effectif de référence car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: 0f714c54-cab1-4d0a-bd44-9d51755e0a0a
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif de référence car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré car adhésion' = EXTERNALMEASURE("Entrées effectif déclaré car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: f93c1f5d-2aae-4297-91a6-de9b01de5c22
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SI car adhésion' = EXTERNALMEASURE("Entrées effectif déclaré SI car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: e61ea0c4-e703-40c1-bffd-2b1638dd579a
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SI car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SIA car adhésion' = EXTERNALMEASURE("Entrées effectif déclaré SIA car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: f15d85c9-18cf-4892-83aa-299242a43b69
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SIA car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SIR car adhésion' = EXTERNALMEASURE("Entrées effectif déclaré SIR car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: 22c5e83d-4d62-4167-8c23-4b94edb1795b
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SIR car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif estimé car adhésion' = EXTERNALMEASURE("Entrées effectif estimé car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: 760dfba8-fc67-497d-a194-0073baf1e923
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif estimé car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi figé intérimaire car adhésion' = EXTERNALMEASURE("Entrées effectif suivi figé intérimaire car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: 95e897c4-23b6-4d77-b57c-5bb53df20298
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi figé intérimaire car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi figé non intérimaire car adhésion' = EXTERNALMEASURE("Entrées effectif suivi figé non intérimaire car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: 7901381b-e516-4c49-975a-bfe0d5d9452e
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi figé non intérimaire car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi intérimaire car adhésion' = EXTERNALMEASURE("Entrées effectif suivi intérimaire car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: ad2fadee-544e-4574-8bd2-40eb7c8835fc
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi intérimaire car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi non intérimaire car adhésion' = EXTERNALMEASURE("Entrées effectif suivi non intérimaire car adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: e41bff1c-8155-4117-9422-848fd48bde24
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi non intérimaire car adhésion
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents début de période' = EXTERNALMEASURE("Nombre d'adhérents début de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Comptages adhérents
+		lineageTag: 7671cbf4-5956-4234-91da-3a097141cd60
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents début de période
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents fin de période à jour de FE' = EXTERNALMEASURE("Nombre d'adhérents fin de période à jour de FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 7e49f520-89c1-4b43-a353-991b93d26903
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents fin de période à jour de FE
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents fin de période avec FE non renseignée' = EXTERNALMEASURE("Nombre d'adhérents fin de période avec FE non renseignée", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 5ba8c9a3-72f3-4a2d-8dcd-61fde59c38d1
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents fin de période avec FE non renseignée
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents fin de période en retard de FE' = EXTERNALMEASURE("Nombre d'adhérents fin de période en retard de FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 71dbbbbe-289f-4833-b748-ee8b74287439
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents fin de période en retard de FE
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents fin de période' = EXTERNALMEASURE("Nombre d'adhérents fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Comptages adhérents
+		lineageTag: b8b5d951-f0fa-4049-b11e-16e99b157b18
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents fin de période
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhésions' = EXTERNALMEASURE("Nombre d'adhésions", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs dépréciés
+		lineageTag: b55b6445-0074-4f1a-8c17-d9f3cbdcace0
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhésions
+		dataCategory: Uncategorized
+
+	measure 'Nombre de radiations' = EXTERNALMEASURE("Nombre de radiations", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Comptages adhérents
+		lineageTag: 0568b293-b7be-465f-b71e-4ac2f58a0347
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de radiations
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif de référence car radiation' = EXTERNALMEASURE("Sorties effectif de référence car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\06 - Comptages effectif de référence
+		lineageTag: 36699800-f36a-4ffa-8a3e-6492dc3ae824
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif de référence car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif déclaré car radiation' = EXTERNALMEASURE("Sorties effectif déclaré car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\1 - Total
+		lineageTag: d7c201f7-2c04-4e66-a7ec-86b25cb2d402
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif déclaré car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif déclaré SI car radiation' = EXTERNALMEASURE("Sorties effectif déclaré SI car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\2 - SI
+		lineageTag: 4ed6e4f2-72af-49d1-a4b0-1e78515ccadb
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif déclaré SI car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif déclaré SIA car radiation' = EXTERNALMEASURE("Sorties effectif déclaré SIA car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\3 - SIA
+		lineageTag: a7b3f474-51f8-4b05-8452-6777f41f17cf
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif déclaré SIA car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif déclaré SIR car radiation' = EXTERNALMEASURE("Sorties effectif déclaré SIR car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\4 - SIR
+		lineageTag: f025a6ca-4223-453b-8b4a-a31657e038c6
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif déclaré SIR car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif estimé car radiation' = EXTERNALMEASURE("Sorties effectif estimé car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Comptages effectif estimé
+		lineageTag: f0b210a4-30bd-4aa7-a962-06448043a2a4
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif estimé car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif suivi figé intérimaire car radiation' = EXTERNALMEASURE("Sorties effectif suivi figé intérimaire car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: 2928a7c4-08e9-4278-bee0-eb692fc25004
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif suivi figé intérimaire car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif suivi figé non intérimaire car radiation' = EXTERNALMEASURE("Sorties effectif suivi figé non intérimaire car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: d6ae1e7c-7b6e-4a4e-811a-19e9ed91d29c
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif suivi figé non intérimaire car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif suivi intérimaire car radiation' = EXTERNALMEASURE("Sorties effectif suivi intérimaire car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\2. Intérimaires
+		lineageTag: 42e4f4c1-8373-4b20-9077-ced6a266f9d7
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif suivi intérimaire car radiation
+		dataCategory: Uncategorized
+
+	measure 'Sorties effectif suivi non intérimaire car radiation' = EXTERNALMEASURE("Sorties effectif suivi non intérimaire car radiation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\1. Non intérimaires
+		lineageTag: cc7cfc0a-6940-4efb-b092-0cd1aee6ee1b
+		sourceLineageTag: DirectQuery à AS – pst38.Sorties effectif suivi non intérimaire car radiation
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif de référence car renouvellement déclaration/estimation' = EXTERNALMEASURE("Variation effectif de référence car renouvellement déclaration/estimation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\06 - Comptages effectif de référence
+		lineageTag: d4febf47-1e51-4ca5-ace7-3a1e6ac98e1f
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif de référence car renouvellement déclaration/estimation
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif déclaré car renouvellement déclaration' = EXTERNALMEASURE("Variation effectif déclaré car renouvellement déclaration", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\1 - Total
+		lineageTag: bcbcfd74-4e84-49e2-8504-377d5c476f5c
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif déclaré car renouvellement déclaration
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif déclaré SI car renouvellement déclaration' = EXTERNALMEASURE("Variation effectif déclaré SI car renouvellement déclaration", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\2 - SI
+		lineageTag: 7e5ccdf2-3113-4897-91aa-3cd2a8dfb32e
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif déclaré SI car renouvellement déclaration
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif déclaré SIA car renouvellement déclaration' = EXTERNALMEASURE("Variation effectif déclaré SIA car renouvellement déclaration", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\3 - SIA
+		lineageTag: d49a559d-9a2f-41bd-b5b4-0ca650479c02
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif déclaré SIA car renouvellement déclaration
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif déclaré SIR car renouvellement déclaration' = EXTERNALMEASURE("Variation effectif déclaré SIR car renouvellement déclaration", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\4 - SIR
+		lineageTag: 8e1a5816-813a-41ea-9b6a-2d0c911f921d
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif déclaré SIR car renouvellement déclaration
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif estimé car renouvellement estimation' = EXTERNALMEASURE("Variation effectif estimé car renouvellement estimation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Comptages effectif estimé
+		lineageTag: 8d051500-2e40-46a5-9065-34b33021e228
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif estimé car renouvellement estimation
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif suivi figé intérimaire car embauche/fin contrat' = EXTERNALMEASURE("Variation effectif suivi figé intérimaire car embauche/fin contrat", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: 254c14bf-4be1-41b7-a774-63c97dcc8579
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif suivi figé intérimaire car embauche/fin contrat
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif suivi figé non intérimaire car embauche/fin contrat' = EXTERNALMEASURE("Variation effectif suivi figé non intérimaire car embauche/fin contrat", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: e0851d1d-c39a-48a1-a4e4-8456e45aae3c
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif suivi figé non intérimaire car embauche/fin contrat
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif suivi intérimaire car embauche/fin contrat' = EXTERNALMEASURE("Variation effectif suivi intérimaire car embauche/fin contrat", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\2. Intérimaires
+		lineageTag: 610e4252-2fa8-4afb-82d0-0fccd9a79a82
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif suivi intérimaire car embauche/fin contrat
+		dataCategory: Uncategorized
+
+	measure 'Variation effectif suivi non intérimaire car embauche/fin contrat' = EXTERNALMEASURE("Variation effectif suivi non intérimaire car embauche/fin contrat", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\1. Non intérimaires
+		lineageTag: 264d0369-ce1d-41af-aa39-482f55cf214d
+		sourceLineageTag: DirectQuery à AS – pst38.Variation effectif suivi non intérimaire car embauche/fin contrat
+		dataCategory: Uncategorized
+
+	measure '# adhérents à jour d''AMT primaire (fin de période)' = EXTERNALMEASURE("# adhérents à jour d'AMT primaire (fin de période)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 4cfd7c10-592b-4abf-8579-6df01f7dce86
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents à jour d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '# adhérents à jour de FE (fin de période)' = EXTERNALMEASURE("# adhérents à jour de FE (fin de période)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 0a4a4245-c6fb-4509-8ef8-c852e01a8d68
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents à jour de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '# adhérents éligibles AMT primaire (fin de période)' = EXTERNALMEASURE("# adhérents éligibles AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 793a7405-6fc4-4a1d-8d49-15f5036938d9
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents éligibles AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '# adhérents éligibles FE (fin de période)' = EXTERNALMEASURE("# adhérents éligibles FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 0ba08641-15af-4242-9576-185caf87aa4e
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents éligibles FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '# adhérents en retard d''AMT primaire (fin de période)' = EXTERNALMEASURE("# adhérents en retard d'AMT primaire (fin de période)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: ee709074-ea58-4960-9b1f-fbf3e77d490c
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents en retard d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '# adhérents en retard de FE (fin de période)' = EXTERNALMEASURE("# adhérents en retard de FE (fin de période)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 78d85d1b-141d-4c20-827f-a39c58eac768
+		sourceLineageTag: DirectQuery à AS – pst38.# adhérents en retard de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% adhérents à jour d''AMT primaire (fin de période)' = EXTERNALMEASURE("% adhérents à jour d'AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 66fd4a2a-3311-4cb8-b58b-9e89d67571cb
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents à jour d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% adhérents à jour de FE (fin de période)' = EXTERNALMEASURE("% adhérents à jour de FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: b06f5e9e-5b25-430b-adbc-75eb57edbf72
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents à jour de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% adhérents éligibles AMT primaire (fin de période)' = EXTERNALMEASURE("% adhérents éligibles AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 8f92726d-c1d2-40e8-8270-2bcc5e29a120
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents éligibles AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% adhérents éligibles FE (fin de période)' = EXTERNALMEASURE("% adhérents éligibles FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 14ac83fd-5edb-4403-8abb-a96d7b2685bc
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents éligibles FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% adhérents en retard d''AMT primaire (fin de période)' = EXTERNALMEASURE("% adhérents en retard d'AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 23fd6452-6cbf-44b5-a3d0-5b23574a4a09
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents en retard d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% adhérents en retard de FE (fin de période)' = EXTERNALMEASURE("% adhérents en retard de FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: cc1f0751-2871-4d38-98e2-7ae11bcf0a33
+		sourceLineageTag: DirectQuery à AS – pst38.% adhérents en retard de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% effectif suivi figé non intérimaire à jour d''AMT primaire (fin de période)' = EXTERNALMEASURE("% effectif suivi figé non intérimaire à jour d'AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 07848fd5-eced-47bf-a0e2-047d20c9b41a
+		sourceLineageTag: DirectQuery à AS – pst38.% effectif suivi figé non intérimaire à jour d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% effectif suivi figé non intérimaire à jour de FE (fin de période)' = EXTERNALMEASURE("% effectif suivi figé non intérimaire à jour de FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 272a7a72-cfa4-4c64-8d2b-635a67de101d
+		sourceLineageTag: DirectQuery à AS – pst38.% effectif suivi figé non intérimaire à jour de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% effectif suivi figé non intérimaire éligibles AMT primaire (fin de période) ' = EXTERNALMEASURE("% effectif suivi figé non intérimaire éligibles AMT primaire (fin de période) ", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 45e3504f-c85e-4bb3-a173-1716eb09d6a9
+		sourceLineageTag: "DirectQuery à AS – pst38.% effectif suivi figé non intérimaire éligibles AMT primaire (fin de période) "
+		dataCategory: Uncategorized
+
+	measure '% effectif suivi figé non intérimaire éligibles FE (fin de période) ' = EXTERNALMEASURE("% effectif suivi figé non intérimaire éligibles FE (fin de période) ", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: d57334be-86e4-4224-a943-0e4e204a3c93
+		sourceLineageTag: "DirectQuery à AS – pst38.% effectif suivi figé non intérimaire éligibles FE (fin de période) "
+		dataCategory: Uncategorized
+
+	measure '% effectif suivi figé non intérimaire en retard d''AMT primaire (fin de période)' = EXTERNALMEASURE("% effectif suivi figé non intérimaire en retard d'AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: a8d7b8ce-7193-4dd3-9467-7f0c6191d39a
+		sourceLineageTag: DirectQuery à AS – pst38.% effectif suivi figé non intérimaire en retard d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure '% effectif suivi figé non intérimaire en retard de FE (fin de période)' = EXTERNALMEASURE("% effectif suivi figé non intérimaire en retard de FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 109ebe4c-5b95-4a02-88ff-533e72d1328f
+		sourceLineageTag: DirectQuery à AS – pst38.% effectif suivi figé non intérimaire en retard de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire à jour d''AMT primaire (fin de période)' = EXTERNALMEASURE("Effectif suivi figé non intérimaire à jour d'AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 948b5f36-7976-4a18-a2fa-4799489a5239
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire à jour d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire à jour de FE (fin de période)' = EXTERNALMEASURE("Effectif suivi figé non intérimaire à jour de FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 4db8e49a-6703-4314-8cab-97fee1bddb8c
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire à jour de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire éligibles AMT primaire (fin de période)' = EXTERNALMEASURE("Effectif suivi figé non intérimaire éligibles AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: fa9e00a0-3af3-4d39-9082-11c7985c7e3c
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire éligibles AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire éligibles FE (fin de période)' = EXTERNALMEASURE("Effectif suivi figé non intérimaire éligibles FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: 574186cf-6447-4a0d-a123-45fe8f93d54b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire éligibles FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire en retard d''AMT primaire (fin de période)' = EXTERNALMEASURE("Effectif suivi figé non intérimaire en retard d'AMT primaire (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\08 - Comptages retard AMT primaire
+		lineageTag: 25eaaa59-0a7e-453d-96b9-28d95c6ae5c2
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire en retard d'AMT primaire (fin de période)
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire en retard de FE (fin de période)' = EXTERNALMEASURE("Effectif suivi figé non intérimaire en retard de FE (fin de période)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\07 - Comptages retard FE
+		lineageTag: f34895b1-bb26-46f3-8607-88ade23b715b
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire en retard de FE (fin de période)
+		dataCategory: Uncategorized
+
+	measure '# adhésions' = EXTERNALMEASURE("# adhésions", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Comptages adhérents
+		lineageTag: 3256807c-3fa0-4be0-98bc-1ba0717cf15f
+		sourceLineageTag: DirectQuery à AS – pst38.# adhésions
+		dataCategory: Uncategorized
+
+	measure '# réadhésions' = EXTERNALMEASURE("# réadhésions", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\01 - Comptages adhérents
+		lineageTag: 027d9ef9-c166-4ca4-a7b7-0907797e1bde
+		sourceLineageTag: DirectQuery à AS – pst38.# réadhésions
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif de référence adhésion' = EXTERNALMEASURE("Entrées effectif de référence adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\06 - Comptages effectif de référence
+		lineageTag: e642a19f-b4e8-4083-ab01-4f980e7ad287
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif de référence adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif de référence réadhésion' = EXTERNALMEASURE("Entrées effectif de référence réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\06 - Comptages effectif de référence
+		lineageTag: dfba102b-05eb-48c8-a13d-c85aaa8a9846
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif de référence réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré adhésion' = EXTERNALMEASURE("Entrées effectif déclaré adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\1 - Total
+		lineageTag: caa898bc-c6fc-4733-8936-034bc7185f7b
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré réadhésion' = EXTERNALMEASURE("Entrées effectif déclaré réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\1 - Total
+		lineageTag: aefebf99-086a-4205-a4ea-8fe973a94766
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SI adhésion' = EXTERNALMEASURE("Entrées effectif déclaré SI adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\2 - SI
+		lineageTag: fbaeb158-69d0-4027-b73d-cfe84a0b6208
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SI adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SI réadhésion' = EXTERNALMEASURE("Entrées effectif déclaré SI réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\2 - SI
+		lineageTag: 600f36a6-486c-4185-ac14-8c8d1e4713e2
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SI réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SIA adhésion' = EXTERNALMEASURE("Entrées effectif déclaré SIA adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\3 - SIA
+		lineageTag: e6a89555-408f-4fec-8076-efe86dc3ac0c
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SIA adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SIA réadhésion' = EXTERNALMEASURE("Entrées effectif déclaré SIA réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\3 - SIA
+		lineageTag: 06258efc-ef3f-4446-af92-8fa2ddbc7a2f
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SIA réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SIR adhésion' = EXTERNALMEASURE("Entrées effectif déclaré SIR adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\4 - SIR
+		lineageTag: 9b323c35-5121-47a5-8472-180063392236
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SIR adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif déclaré SIR réadhésion' = EXTERNALMEASURE("Entrées effectif déclaré SIR réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\04 - Comptages effectif déclaré\4 - SIR
+		lineageTag: 8ce76241-f42d-4ba2-b8f0-70e135d86161
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif déclaré SIR réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif estimé adhésion' = EXTERNALMEASURE("Entrées effectif estimé adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Comptages effectif estimé
+		lineageTag: e439e13e-1948-4a6c-a27c-62a325299c6d
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif estimé adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif estimé réadhésion' = EXTERNALMEASURE("Entrées effectif estimé réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\05 - Comptages effectif estimé
+		lineageTag: 4d980a5e-37e1-404b-a2e7-f6091a9d74a2
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif estimé réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi figé intérimaire adhésion' = EXTERNALMEASURE("Entrées effectif suivi figé intérimaire adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: d1230217-723c-4ca1-9c83-a1c5f12d15b5
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi figé intérimaire adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi figé intérimaire réadhésion' = EXTERNALMEASURE("Entrées effectif suivi figé intérimaire réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: c98a757e-f88d-4445-92bb-b80c49728d84
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi figé intérimaire réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi figé non intérimaire adhésion' = EXTERNALMEASURE("Entrées effectif suivi figé non intérimaire adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: 01eb9556-a85d-4ca0-a09a-2910e2cac0f8
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi figé non intérimaire adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi figé non intérimaire réadhésion' = EXTERNALMEASURE("Entrées effectif suivi figé non intérimaire réadhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: 69a0a8bd-1434-457a-b1b9-0e5d68c38348
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi figé non intérimaire réadhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi intérimaire adhésion' = EXTERNALMEASURE("Entrées effectif suivi intérimaire adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\2. Intérimaires
+		lineageTag: f205b635-79e0-4bbe-a1e5-e8bd8f24da1e
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi intérimaire adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi intérimaire readhésion' = EXTERNALMEASURE("Entrées effectif suivi intérimaire readhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\2. Intérimaires
+		lineageTag: 3fdd17c7-c4c2-4165-bb0c-593ed6be8f32
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi intérimaire readhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi non intérimaire adhésion' = EXTERNALMEASURE("Entrées effectif suivi non intérimaire adhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\1. Non intérimaires
+		lineageTag: 93c25abe-e387-4d2c-88ba-518b9e39c2d2
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi non intérimaire adhésion
+		dataCategory: Uncategorized
+
+	measure 'Entrées effectif suivi non intérimaire readhésion' = EXTERNALMEASURE("Entrées effectif suivi non intérimaire readhésion", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\02 - Comptages effectif suivi\1. Non intérimaires
+		lineageTag: 1e5cd64f-922d-470f-a0cb-5eff8f3c7a7b
+		sourceLineageTag: DirectQuery à AS – pst38.Entrées effectif suivi non intérimaire readhésion
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire SI fin de période' = EXTERNALMEASURE("Effectif suivi figé intérimaire SI fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: b4166764-5eef-4fcc-97b2-a74b48940dec
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire SI fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire SIA fin de période' = EXTERNALMEASURE("Effectif suivi figé intérimaire SIA fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: 296be947-6287-45d9-b196-c6ace9a7f35c
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire SIA fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé intérimaire SIR fin de période' = EXTERNALMEASURE("Effectif suivi figé intérimaire SIR fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\2. Intérimaires
+		lineageTag: f4b633c8-e82d-4cec-ab4e-14b31a3ebd0f
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé intérimaire SIR fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire SI fin de période' = EXTERNALMEASURE("Effectif suivi figé non intérimaire SI fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: 90b8566c-ccc3-4da9-b874-92b191538e9c
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire SI fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire SIA fin de période' = EXTERNALMEASURE("Effectif suivi figé non intérimaire SIA fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: 990afabc-bd21-43d1-a110-871ff10d867d
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire SIA fin de période
+		dataCategory: Uncategorized
+
+	measure 'Effectif suivi figé non intérimaire SIR fin de période' = EXTERNALMEASURE("Effectif suivi figé non intérimaire SIR fin de période", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\03 - Comptages effectif suivi figé\1. Non intérimaires
+		lineageTag: 438c7be4-edb9-473c-85b1-d7964bad5ae2
+		sourceLineageTag: DirectQuery à AS – pst38.Effectif suivi figé non intérimaire SIR fin de période
+		dataCategory: Uncategorized
+
+	column anciennete_amt_hors_fe
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7dee3280-2244-4ec0-8ff8-3a9ae7e90ede
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: anciennete_amt_hors_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column anciennete_fe
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0bbfdb7-7ee8-4b35-8045-632a94e2caa3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: anciennete_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date AMT hors Fe'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: bd9665a1-6124-427b-83bb-89aaff7dbb1b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date AMT hors Fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernière fe'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: d501130f-c3eb-4b1c-b8df-56ddd2680397
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_observation
+		dataType: dateTime
+		formatString: mmmm yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 672a4c71-2a0d-4257-b34d-61fa38f0296d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: date_observation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 205cb712-4f08-412a-b549-8d96f58a1eb2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1d7e03ef-8ebb-433d-a2b4-c5d0e67cd3d8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d324e65e-e312-4e7c-8d23-8865d38a0c2e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur_prec
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 412f2071-77fa-4796-bd3d-93817bd516aa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_secteur_prec
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motif radiation'
+		dataType: string
+		lineageTag: 674b553b-705c-47f7-ad92-e060fdda1ef7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Motif radiation
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_adhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b365f9da-7622-4175-a1b5-0a144ba0b7aa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_adhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_affectation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 21755f5a-a042-4777-9d3a-5663ee2145a5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_affectation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_affectation_medecin_referent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: aa787d94-9ff9-4981-b976-c38a5e450bc2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_affectation_medecin_referent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_entreprise_active_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c33907e4-3fee-439c-bae7-e146368e3185
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_entreprise_active_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_entreprise_active_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d5e12f2f-7e07-4ac1-8371-612131901a1a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_entreprise_active_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_a_jour
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1ea743ce-cabb-4d10-92bd-19c796976212
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_a_jour
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_en_retard
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ff9d3637-dbdc-4643-a53e-acffbe38845f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_en_retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_non_renseignee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: eb07c316-0da1-4f7e-951e-469a9f464ff2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_non_renseignee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_radiation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ac9b9cf9-1ff6-4c81-87bf-cc60dc7593a4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_radiation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7099471d-19e7-45aa-9943-8f698fb4cf9c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ae94102b-7331-4d02-97c5-b37392f0ede7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fc105178-b641-4121-9099-5e20ffe94a45
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 382716f5-2e54-408d-a567-e85d3a3490a8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_si_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dc246517-82b8-4dcf-9d09-f698face03ae
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_si_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_si_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 33da5952-3e1a-4834-8617-e291fdd014d8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_si_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_si_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 143e051b-a696-4d69-bc94-7dd5d5827eb2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_si_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_si_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 581394f1-0255-4fbf-9213-f0ff0f084ee1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_si_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sia_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 23004ac9-d71e-4fe6-9974-18d6e2668004
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sia_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sia_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5790d66e-5e18-4f1a-9e2a-a21d21c33597
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sia_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sia_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 42483007-4286-4fa0-9da8-e1100bb55353
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sia_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sia_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8160edfd-d21d-4a91-a2db-3860281b76aa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sia_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sir_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1ddbe514-d4f1-4e15-837b-e07ff64d36ba
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sir_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sir_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 11773477-44cb-41c6-8a15-3e7b97575547
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sir_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sir_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 40a15adc-44d5-49a1-8956-7d261253c35c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sir_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_declare_sir_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3d1441a9-758b-4f86-ab74-70d936c1e328
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_declare_sir_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_estime_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2890f2f8-4452-465e-b1a3-1517d04f7e9f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_estime_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_estime_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7d03f07e-9429-4d4c-b5be-6526e796d990
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_estime_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_estime_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d23b66ae-341a-4e73-8a8f-60a925967e9d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_estime_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_estime_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8db09d05-fb9c-480c-b46a-4c5039d251f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_estime_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_reference_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 174fcedb-e70a-4e24-b6a4-9abb8a0022d7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_reference_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_reference_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 884ef81a-bfe3-4b6a-8fe9-d4b4c5b4385f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_reference_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_reference_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 69a3da09-868b-47d1-a361-c80de0aa7b9b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_reference_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_reference_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e77da587-48e2-4d89-9c11-fc1d2712617e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_reference_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 78bd70cd-c8d0-4a88-b004-1fda31d6638f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b8f826bb-764e-46cb-b4ac-a4127ab30cce
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 24c7e379-2276-49a5-acee-6396023d682d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 560ae08b-afa8-4e10-a6bd-51b46846f294
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e2057d01-baf8-4064-a039-d58d795db82c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 49b2c4b0-86f2-4504-b3df-99b73e5904f3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 089e259e-cab8-4fb1-85b7-5600ae3bfaf5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0db36eaa-1d0f-42d0-afd9-d9d7efeda2be
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_interim_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7a1efd07-9947-4c26-b14b-02838c021c11
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_interim_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_interim_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3a9fc056-5f8b-46ee-92ab-c1fbc31975f1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_interim_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_interim_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c4183abd-f89c-45c3-a4c6-6ca032534367
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_interim_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_interim_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8913a1ce-7e85-4bae-8b28-e20d6fb7ae3b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_interim_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_non_interim_adherent_radie
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4b468864-6fc1-49c2-90b3-a077f7913849
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_non_interim_adherent_radie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_non_interim_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 84c336e8-28f0-466f-8ba5-8b98fb11de47
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_non_interim_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_non_interim_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 05546e84-a4d5-4e9f-9686-95cbb04bd79c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_non_interim_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_non_interim_nouvel_adherent
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4f80f5b5-d366-4294-b392-02a666acace0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_non_interim_nouvel_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_declare_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1e7fa7b5-fe6b-4f65-9e60-952c2f72d26d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_declare_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_declare_si_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c59e82af-d235-467c-974c-9ec2ff2391f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_declare_si_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_declare_sia_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 13474708-0810-49ed-bca2-9d1405b58257
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_declare_sia_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_declare_sir_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2237c256-8b17-48f9-b87a-592ec398fc24
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_declare_sir_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_estime_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f0dad798-61e5-43f7-887b-3f4689ef4682
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_estime_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_reference_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 88ae76c6-ffad-48f3-894f-90d98b0368b0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_reference_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_suivi_fige_interim_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7ea10141-ad9d-48c5-beb1-508c5e8a4b2e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_suivi_fige_interim_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_suivi_fige_non_interim_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f4403ec5-73fa-422b-b1d5-98c2e0fecae0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_suivi_fige_non_interim_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_suivi_interim_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d859b366-7aa5-406c-ac1e-7e7a9bcbbbb7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_suivi_interim_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_variation_salarie_suivi_non_interim_adherent_actif
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 11ac7902-a1b5-4fd1-a1c8-ae8321904c00
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_variation_salarie_suivi_non_interim_adherent_actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_entreprise
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e4cc70ec-1078-4449-b456-1b89f7acb5e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: statut_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column statut_entreprise_detaille
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d9fc010e-e02a-435e-9737-a524d1c72f48
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: statut_entreprise_detaille
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise DGT 2023 (figée)'
+		dataType: string
+		displayFolder: Autres tranches de taille
+		lineageTag: dc8fe4f4-a136-4da7-8c79-14e8d7da3bcb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise DGT 2023 (figée)
+		sortByColumn: 'Tri taille entreprise DGT 2023 (figée)'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise figée (hors intérim)'
+		dataType: string
+		lineageTag: 3cb5698e-2f86-4bc6-8aac-8be0cd7d5952
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise figée (hors intérim)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taille entreprise Qualios 2023 (figée)'
+		dataType: string
+		displayFolder: Autres tranches de taille
+		lineageTag: d22694b8-9c3e-4acc-8961-c09e38283d59
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Taille entreprise Qualios 2023 (figée)
+		sortByColumn: 'Tri taille entreprise Qualios 2023 (figée)'
+
+		annotation SummarizationSetBy = Automatic
+
+	column taille_entreprise_fige_hors_interim
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c0a2fbf9-8c50-45a6-8963-83f4b70038be
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: taille_entreprise_fige_hors_interim
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column taille_entreprise_fige_interim
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9d415a03-da42-4a99-a364-b69a452fd5c6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: taille_entreprise_fige_interim
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tri taille entreprise DGT 2023 (figée)'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 894c9e88-616b-4e2c-b18a-2e540a9a1ce2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Tri taille entreprise DGT 2023 (figée)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tri taille entreprise Qualios 2023 (figée)'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6a4bbb77-6a1a-429e-a615-534405dbcbc1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Tri taille entreprise Qualios 2023 (figée)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date dernier passage inactif à actif'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 79523cc2-e3a7-4b48-bb8b-21d4fee8236d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernier passage inactif à actif
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_prochaine_amt_prevention_primaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 21635b57-eb86-41d4-b21c-e3590810db65
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_prochaine_amt_prevention_primaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_prochaine_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8461653a-2f17-4034-9723-166360389028
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_prochaine_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_prevention_primaire_a_jour_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 474b1286-6dc3-4879-b158-46df33b4eadd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_prevention_primaire_a_jour_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_prevention_primaire_a_jour_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 48d69cdc-4416-4556-bfbb-f3be4f1d821e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_prevention_primaire_a_jour_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_prevention_primaire_en_retard_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8446df90-e812-45eb-b5db-f8a270700f40
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_prevention_primaire_en_retard_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_prevention_primaire_en_retard_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f74c4ccd-a09e-4b00-9cd2-bc69d95464a5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_prevention_primaire_en_retard_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_exclusion_amt_prevention_primaire_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 434a2555-da1e-410a-a0c9-5af9e0fa7069
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_exclusion_amt_prevention_primaire_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_exclusion_amt_prevention_primaire_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9230b1b7-bd88-4f6a-8cfb-0ad79915945b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_exclusion_amt_prevention_primaire_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_exclusion_fe_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d2dcd6bf-3dec-4960-8a82-463f6a3d4a79
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_exclusion_fe_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_exclusion_fe_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 65009399-b15e-44ba-a020-56a8c27d8f50
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_exclusion_fe_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_a_jour_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0018bc45-bd2a-4608-a6bc-77fb7d314958
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_a_jour_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_a_jour_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 35a5a532-e289-4fbc-be04-0b095891fb6a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_a_jour_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_en_retard_debut_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bb34ae6e-8e13-4d00-a6ea-2f22c39a192c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_en_retard_debut_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_en_retard_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8ca8e168-7ab1-4bb2-be37-482b61bcefe3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_en_retard_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_apprenti_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6665064a-2b3b-4d5b-a94f-ff09a90ffc3c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_apprenti_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_independant_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 718ecc6d-0875-489b-9943-6d291d9620f6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_independant_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_multi_employeur_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 25b618fc-c15e-4309-bfa8-12974b56aa7c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_multi_employeur_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_sir_rayon_ionisant_a_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 91d3da51-bfa8-4132-8066-5e8851929f45
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_sir_rayon_ionisant_a_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_sir_rayon_ionisant_a_inb_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6ae99392-8336-4fc1-8488-38ea7a115988
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_sir_rayon_ionisant_a_inb_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_sir_rayon_ionisant_b_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fb4dd32b-9d0f-4510-a166-1c498314faa6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_sir_rayon_ionisant_b_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_sir_rayon_ionisant_b_inb_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e2cbefe2-eeab-4ad5-b066-97963c1d5a57
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_sir_rayon_ionisant_b_inb_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_suivi_mutualise_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 426af50b-6f75-4791-a18e-e7b411fbe080
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_suivi_mutualise_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column siren_consolide
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3fdf2562-4526-40d8-96ca-dcbb1216200e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: siren_consolide
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column siret_consolide
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: b2c09e73-abe9-4363-a9b4-9679bb7ff2b2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: siret_consolide
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_readhesion
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 161c8654-a4be-43eb-86d7-024de3b20570
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_readhesion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a1f541fc-0f84-4119-b67a-9b80cf4799ee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_si_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 24d4a32e-24a4-4d69-8c28-7cd2ee97746d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_si_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_sia_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 578f7b79-ea85-4188-a2e4-6c947c0e3a11
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_sia_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_interim_sir_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6c24760c-16b9-4bdc-a1c6-33fcfae37810
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_interim_sir_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_si_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1528cfed-3cc1-4585-973b-892b494e9e2e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_si_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_sia_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 32ed5d08-bcd7-4a9a-b75e-557bcb950f4e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_sia_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi_fige_non_interim_sir_fin_mois
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 843c52e3-b6cc-44d5-ac35-e5585ba4adaa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi_fige_non_interim_sir_fin_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Evolution effectif' = entity
+		mode: directQuery
+		source
+			entityName: Evolution effectif
+			expressionSource: 'DirectQuery à AS – pst38'
+

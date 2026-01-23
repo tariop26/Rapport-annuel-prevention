@@ -1,0 +1,54 @@
+table 'RDV/visite - déterminant suivi'
+	lineageTag: 7d3bdbac-c03d-47ca-8fdf-7f2356bb4dfe
+
+	column 'Déterminant suivi'
+		dataType: string
+		lineageTag: ce0a078c-5e61-477a-a62d-3d5d333ca95b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Déterminant suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_determinant_suivi
+		dataType: int64
+		lineageTag: 0f9694ae-790d-46b9-a391-8d7ced148a7d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type suivi'
+		dataType: string
+		lineageTag: 1bc970a0-0148-475c-89bd-b5eb60ec074d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie déterminant suivi'
+		lineageTag: eadc1b34-6e28-488d-bc1e-3a6b6932e453
+		sourceLineageTag: Hiérarchie déterminant suivi
+
+		level 'Type suivi'
+			lineageTag: 994a8e5c-9397-4496-9343-27271c834daa
+			column: 'Type suivi'
+
+		level 'Déterminant suivi'
+			lineageTag: 1087fc0c-500f-4d89-9462-5ea4673b460c
+			column: 'Déterminant suivi'
+
+	partition 'RDV/visite - déterminant suivi' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - déterminant suivi
+			expressionSource: 'DirectQuery à AS – pst38'
+

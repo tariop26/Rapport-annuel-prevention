@@ -1,0 +1,1123 @@
+table AMT
+	lineageTag: d6694292-3d19-4731-88ca-5cb472a35089
+
+	measure '# AMT en cours réalisables avec le module FE' = EXTERNALMEASURE("# AMT en cours réalisables avec le module FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Comptage
+		lineageTag: c610410d-a531-41b3-b1fd-ede3930bf2d1
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT en cours réalisables avec le module FE
+		dataCategory: Uncategorized
+
+	measure '# AMT en cours réalisées avec le module FE' = EXTERNALMEASURE("# AMT en cours réalisées avec le module FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Comptage
+		lineageTag: 66224416-2382-43e5-8ff4-ac96af378ab3
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT en cours réalisées avec le module FE
+		dataCategory: Uncategorized
+
+	measure '# AMT terminées avec une FE générée avec le module FE' = EXTERNALMEASURE("# AMT terminées avec une FE générée avec le module FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Comptage
+		lineageTag: 52f8359b-b9cd-499d-8dd1-c99801dfe489
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT terminées avec une FE générée avec le module FE
+		dataCategory: Uncategorized
+
+	measure '# AMT terminées réalisables avec le module FE' = EXTERNALMEASURE("# AMT terminées réalisables avec le module FE", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Comptage
+		lineageTag: fc0ef9e9-3e3a-4a95-a152-fb87be1cab75
+		sourceLineageTag: DirectQuery à AS – pst38.# AMT terminées réalisables avec le module FE
+		dataCategory: Uncategorized
+
+	measure '# salariés couverts (AMT)' = EXTERNALMEASURE("# salariés couverts (AMT)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages
+		lineageTag: 148b6c17-c7a2-4eaf-9740-28fc04b5e515
+		sourceLineageTag: DirectQuery à AS – pst38.# salariés couverts (AMT)
+		dataCategory: Uncategorized
+
+	measure '% AMT en cours réalisées avec le module FE' = EXTERNALMEASURE("% AMT en cours réalisées avec le module FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Taux
+		lineageTag: 46b1d5f7-a506-484c-861e-3c88b65184b0
+		sourceLineageTag: DirectQuery à AS – pst38.% AMT en cours réalisées avec le module FE
+		dataCategory: Uncategorized
+
+	measure '% AMT terminées avec une FE générée avec le module FE' = EXTERNALMEASURE("% AMT terminées avec une FE générée avec le module FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Taux
+		lineageTag: e3a4a06f-827f-45cc-aa39-d1157f8d348a
+		sourceLineageTag: DirectQuery à AS – pst38.% AMT terminées avec une FE générée avec le module FE
+		dataCategory: Uncategorized
+
+	measure '% AMT terminées avec une FE importée avec le module FE' = EXTERNALMEASURE("% AMT terminées avec une FE importée avec le module FE", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		isHidden
+		displayFolder: Indicateurs\5 - Module FE\Taux
+		lineageTag: d0e38c56-7fbb-4db3-b367-2bcdaa6e9d44
+		sourceLineageTag: DirectQuery à AS – pst38.% AMT terminées avec une FE importée avec le module FE
+		dataCategory: Uncategorized
+
+	measure 'Durée estimée totale (en heures)' = EXTERNALMEASURE("Durée estimée totale (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\3 - Durées estimées\Par AMT
+		lineageTag: 0e46a38c-fd3b-4d7f-b8de-6d382351d581
+		sourceLineageTag: DirectQuery à AS – pst38.Durée estimée totale (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée estimée totale chez l''adhérent (en heures)' = EXTERNALMEASURE("Durée estimée totale chez l'adhérent (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\3 - Durées estimées\Par AMT
+		lineageTag: 76a917ea-6bbc-4153-8230-745e30dfa187
+		sourceLineageTag: DirectQuery à AS – pst38.Durée estimée totale chez l'adhérent (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée estimée totale intervenant (en heures)' = EXTERNALMEASURE("Durée estimée totale intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\3 - Durées estimées\Par intervenant
+		lineageTag: d961a6df-04d3-4397-827e-005d32884e7c
+		sourceLineageTag: DirectQuery à AS – pst38.Durée estimée totale intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée estimée totale intervenant chez l''adhérent (en heures)' = EXTERNALMEASURE("Durée estimée totale intervenant chez l'adhérent (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\3 - Durées estimées\Par intervenant
+		lineageTag: 06abef72-0a63-4933-adcf-7c09160d27fd
+		sourceLineageTag: DirectQuery à AS – pst38.Durée estimée totale intervenant chez l'adhérent (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée estimée totale moyenne (en heures)' = EXTERNALMEASURE("Durée estimée totale moyenne (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		isHidden
+		displayFolder: Indicateurs\3 - Durées estimées\Par AMT
+		lineageTag: a7e0d2fe-770c-4180-a2b2-11f3ec11eb6b
+		sourceLineageTag: DirectQuery à AS – pst38.Durée estimée totale moyenne (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée estimée totale moyenne intervenant (en heures)' = EXTERNALMEASURE("Durée estimée totale moyenne intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		isHidden
+		displayFolder: Indicateurs\3 - Durées estimées\Par intervenant
+		lineageTag: b9025d77-52c2-4cc2-891a-032db5d7678d
+		sourceLineageTag: DirectQuery à AS – pst38.Durée estimée totale moyenne intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle évènements planning' = EXTERNALMEASURE("Durée réelle évènements planning", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par AMT
+		lineageTag: f7fd894c-d135-4b2d-9aa9-48bc3709f850
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle évènements planning
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle intervention (en heures)' = EXTERNALMEASURE("Durée réelle intervention (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par AMT
+		lineageTag: 6e2a537a-623f-4b93-9e1a-13e5c840c16a
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle intervention (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle intervention intervenant (en heures)' = EXTERNALMEASURE("Durée réelle intervention intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par intervenant
+		lineageTag: 22b79633-ae03-4fea-892e-a1c0553ab22d
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle intervention intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle rédaction (en heures)' = EXTERNALMEASURE("Durée réelle rédaction (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par AMT
+		lineageTag: d13795d2-1c99-4134-85bb-7a91bc09d818
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle rédaction (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle rédaction intervenant (en heures)' = EXTERNALMEASURE("Durée réelle rédaction intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par intervenant
+		lineageTag: 5d52e505-7fa3-4073-853a-359f7f63bd08
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle rédaction intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle totale (en heures)' = EXTERNALMEASURE("Durée réelle totale (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par AMT
+		lineageTag: d66817a8-9829-4868-9dfa-9e27852038d2
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle totale (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle totale intervenant (en heures)' = EXTERNALMEASURE("Durée réelle totale intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par intervenant
+		lineageTag: d6019569-8c6c-4cca-8e12-bdd109cba9f8
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle totale intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle totale moyenne (en heures)' = EXTERNALMEASURE("Durée réelle totale moyenne (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par AMT
+		lineageTag: 434b3738-3cb4-4df3-965a-749b8bdd6d3d
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle totale moyenne (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle totale moyenne intervenant (en heures)' = EXTERNALMEASURE("Durée réelle totale moyenne intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par intervenant
+		lineageTag: a6812fbc-bd62-4e29-867c-00fd819fdf2e
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle totale moyenne intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle trajet (en heures)' = EXTERNALMEASURE("Durée réelle trajet (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par AMT
+		lineageTag: 57b1b97a-61fa-4c39-80b7-350606da76b9
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle trajet (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Durée réelle trajet intervenant (en heures)' = EXTERNALMEASURE("Durée réelle trajet intervenant (en heures)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\4 - Durées réelles\Par intervenant
+		lineageTag: 4c4255ce-96a7-4824-ba7e-35d1655a6053
+		sourceLineageTag: DirectQuery à AS – pst38.Durée réelle trajet intervenant (en heures)
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''adhérents concernés' = EXTERNALMEASURE("Nombre d'adhérents concernés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages\Périmètre
+		lineageTag: e428afcb-47c6-4276-90b8-533fd991a1bc
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'adhérents concernés
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''AMT annulées' = EXTERNALMEASURE("Nombre d'AMT annulées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\1 - Comptages AMT principaux
+		lineageTag: 86938f6f-af3a-4845-8e66-d9adf9880078
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'AMT annulées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''AMT en cours d''exécution' = EXTERNALMEASURE("Nombre d'AMT en cours d'exécution", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\1 - Comptages AMT principaux
+		lineageTag: 8531ba22-dbe9-4d2b-939d-cab4eb900771
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'AMT en cours d'exécution
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''AMT suspendues' = EXTERNALMEASURE("Nombre d'AMT suspendues", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\1 - Comptages AMT principaux
+		lineageTag: 7b6943d4-e08e-4958-b506-f68240b26617
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'AMT suspendues
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''AMT terminées' = EXTERNALMEASURE("Nombre d'AMT terminées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\1 - Comptages AMT principaux
+		lineageTag: 0f73a798-552c-4fb2-81c1-da8b2e1de0d8
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'AMT terminées
+		dataCategory: Uncategorized
+
+	measure 'Nombre de certificats d''inaptitudes délivrés suite à l''AMT' = EXTERNALMEASURE("Nombre de certificats d'inaptitudes délivrés suite à l'AMT", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages
+		lineageTag: e4436317-391b-4519-bb78-b8c3749144a3
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de certificats d'inaptitudes délivrés suite à l'AMT
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés concernés (AMT)' = EXTERNALMEASURE("Nombre de salariés concernés (AMT)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages
+		lineageTag: 273d35ac-5d23-4592-97a5-cb3eba0ae739
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés concernés (AMT)
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés concernés' = EXTERNALMEASURE("Nombre de salariés concernés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages\Périmètre
+		lineageTag: 89cabecb-1a3e-4d68-8dce-29e011442e79
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés concernés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de tâches planifiées' = EXTERNALMEASURE("Nombre de tâches planifiées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages\Tâches
+		lineageTag: fadb1dc4-8186-4a77-ae83-fe7e3f31ebf0
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de tâches planifiées
+		dataCategory: Uncategorized
+
+	measure 'Nombre de tâches réalisées' = EXTERNALMEASURE("Nombre de tâches réalisées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages\Tâches
+		lineageTag: eb4e7279-5da8-43b4-9cba-41d0202a23ea
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de tâches réalisées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''entreprises concernées (AMT)' = EXTERNALMEASURE("Nombre d'entreprises concernées (AMT)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages
+		lineageTag: 84991276-3aaf-4f95-a151-fab2c193d08c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'entreprises concernées (AMT)
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''évènements' = EXTERNALMEASURE("Nombre d'évènements", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages
+		lineageTag: 99cf7381-71cc-4e25-95f8-5f24d4675bf4
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'évènements
+		dataCategory: Uncategorized
+
+	measure 'Nombre moyen d''intervenants' = EXTERNALMEASURE("Nombre moyen d'intervenants", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages\Intervenants
+		lineageTag: 44d53e65-8000-4797-980b-177f5e0284e0
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre moyen d'intervenants
+		dataCategory: Uncategorized
+
+	measure 'Nombre total d''AMT' = EXTERNALMEASURE("Nombre total d'AMT", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\1 - Comptages AMT principaux
+		lineageTag: fe99a43e-9d4a-47e0-9c4f-d0a3982c3016
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre total d'AMT
+		dataCategory: Uncategorized
+
+	measure 'Nombre total d''intervenants' = EXTERNALMEASURE("Nombre total d'intervenants", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		isHidden
+		displayFolder: Indicateurs\2 - Autres comptages\Intervenants
+		lineageTag: 83ea018d-11be-4efd-86be-2abd05c13143
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre total d'intervenants
+		dataCategory: Uncategorized
+
+	column 'AMT avec pièce jointe'
+		dataType: string
+		displayFolder: 3 - Statut
+		lineageTag: 8e278609-4d7c-4da0-937d-5a9f0589410c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AMT avec pièce jointe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_amt
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 595b19cb-f6bc-4b55-afdb-0b2b2250a8af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée estimée chez l''adhérent'
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5243d4af-18af-4827-839c-152aaef78a33
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée estimée chez l'adhérent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée estimée'
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: ed4da6f7-ac9c-411f-873a-507845174aa7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée estimée
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée évènements'
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: 0c84cbcf-e06f-4504-b50e-a9f5e731b8d9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée évènements
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée réelle intervention'
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: c4249fd4-4106-4f78-9beb-61c8de72b439
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée réelle intervention
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée réelle rédaction'
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: b9bb5e5b-1a99-433a-821e-686b467a54d5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée réelle rédaction
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée réelle trajet'
+		dataType: double
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1969268f-e7cd-4b3e-bf07-2c9490343206
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée réelle trajet
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7c1fafd9-5df4-49e1-bc5c-f9f7455c51a7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 089beded-30ca-423d-84e7-514d111300a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_createur_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d75ce578-cfd0-4e8f-ad55-15ab50b0b2a2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_createur_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_cloture_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ccdc54db-c16d-4bcc-8e58-5a375f09e325
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_cloture_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3a8ede45-d115-4061-a3cf-ad9befdc36f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_demande_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a70c2757-c041-44ea-a94c-6a0ce79fa979
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_demande_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_derniere_intervention_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8dd221df-56f1-4f0d-880b-1c1b0606e1e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_intervention_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_echeance_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b5b68369-e8fd-4170-bf16-35b9c216d196
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_echeance_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_statut_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e5a95b55-14d0-404d-a486-5d2f25dd8ca6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_date_statut_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_demandeur_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cacb1ead-38b3-403c-9d5a-58e37781aef9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_demandeur_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5e1d7045-81c2-4bb4-8686-f688adaaea32
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_etiquette_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9e0e6ae3-1fe2-4e25-9002-dd75b91e22e8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_etiquette_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_description_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cdcc40bf-8f69-4ba8-9650-8449f5691093
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_description_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_tache_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: e012e644-1110-4b6c-9226-992226799199
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_tache_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_modele_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 896708d3-0b82-4a4c-999b-eaaceb7b52c8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_modele_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: be22728c-27f6-474a-b846-b7555414581d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_statut_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 16784643-406b-4c1e-a051-2bedf6289a86
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_statut_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_titre_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8d1867d8-4a4c-49d5-b59d-69060023a2d9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_titre_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Identifiant
+		dataType: int64
+		displayFolder: 1 - Caractéristiques
+		lineageTag: f80881cd-ff36-4ff9-9fe8-e1a659a3c748
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Identifiant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modèle
+		dataType: string
+		displayFolder: 1 - Caractéristiques
+		lineageTag: 9c1a7877-7c92-40da-b478-3d37a7f847e6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modèle
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 016d2ebe-03b5-4da8-8747-7682b04ad9e1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_en_cours
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: efc642a4-8c01-41ac-96ca-b21da618aa89
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_en_cours
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_realisable_module_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d6b41426-c3c4-4ecf-88a5-2046028295a2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_realisable_module_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_suspendue
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d52e1f77-e7f3-4aaa-ae02-368d65eeb48b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_suspendue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_terminee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 93f71bcc-658b-434f-8aef-d513d049fc6d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_terminee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_donnee_saisie_module_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7b3d0514-aaf5-4d8c-a56c-41dcb34497c9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_donnee_saisie_module_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_evenements
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 66c5afd9-c382-4333-8b22-369d90189379
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_evenements
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_generee_module_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 97499565-8fec-4b0c-9b1f-cf42aaa24158
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_generee_module_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_fe_importee_module_fe
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 025960ac-3b99-40a9-9f6a-b21f4b3e53cc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_fe_importee_module_fe
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_concerne
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: ec284a1c-9460-400e-adad-b36db02fb10c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_concerne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_salarie_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 081b5015-6601-4796-8378-adf526dc5b3e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_salarie_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_tache_planifiee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7172705a-1f8d-426c-b418-ce26a45a98c4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_tache_planifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_tache_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7a9f2802-d49d-4fc0-8d15-ea7baa75cf05
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_tache_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom créateur'
+		dataType: string
+		displayFolder: 2 - Origine\Création
+		lineageTag: 65de58eb-bf34-473d-9332-2f9e5f5f02d6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom créateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom demandeur'
+		dataType: string
+		displayFolder: 2 - Origine\Demande
+		lineageTag: 34d0ec86-3a02-420e-9bac-d41fc6366852
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom demandeur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre de certificats d''inaptitude délivrés'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8097c730-362a-46e1-8b16-b289fe4fdeb9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nombre de certificats d'inaptitude délivrés
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre de jours de retard'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 66e2c6b0-b6e4-43b2-ada9-d5fb77cbe3a4
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nombre de jours de retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre d''intervenants'
+		dataType: int64
+		displayFolder: 3 - Statut
+		lineageTag: 4cce65fa-754e-4e23-92ea-be21842ce499
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nombre d'intervenants
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine de la création'
+		dataType: string
+		displayFolder: 2 - Origine\Création
+		lineageTag: 820f30ce-b0ab-4c7d-8239-c690213d451f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine de la création
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origine de la demande'
+		dataType: string
+		displayFolder: 2 - Origine\Demande
+		lineageTag: 43e21d31-3a77-4065-a69e-4832fb0bfa2d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Origine de la demande
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Périmètre
+		dataType: string
+		displayFolder: 1 - Caractéristiques
+		lineageTag: 0d6d3307-077e-4bd6-97c3-f251c843ba24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Périmètre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Priorité
+		dataType: string
+		displayFolder: 1 - Caractéristiques
+		lineageTag: aa09d719-a0b2-47f5-8c34-b7f11a528a1a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Priorité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rapport envoyé'
+		dataType: string
+		displayFolder: 3 - Statut
+		lineageTag: 23a71005-2eb8-48ca-9123-9a0ccdd75588
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rapport envoyé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Retard
+		dataType: string
+		displayFolder: 3 - Statut
+		lineageTag: 5f8c0435-93de-4d88-8103-bc77720bea9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Retard
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle Créateur'
+		dataType: string
+		displayFolder: 2 - Origine\Création
+		lineageTag: 645cf0ac-9cfd-42de-9766-7451fce6c6a5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle Créateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rôle demandeur'
+		dataType: string
+		displayFolder: 2 - Origine\Demande
+		lineageTag: 10e39eb3-d8c6-472f-bb67-90c24cbcdff7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rôle demandeur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut de l''AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8d130dba-f125-4335-b818-214f600dd95a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut de l'AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut détaillé de l''AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a5fd58df-84f1-4514-8f0d-447828a12221
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Statut détaillé de l'AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Titre
+		dataType: string
+		displayFolder: 1 - Caractéristiques
+		lineageTag: 26b593eb-8c33-4e78-96b9-9ccaca3512a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Titre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		displayFolder: 1 - Caractéristiques
+		lineageTag: bf1fad4f-09af-4669-ae0d-d8da070beb17
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_amt_abandonnee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: db51c67d-b412-4bc7-bed1-06024e101ccd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_amt_abandonnee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT a atteint statut ''à valider''' =
+			
+			IF(
+			    OR(
+			        AMT[Statut détaillé de l'AMT] = "AMT à valider",
+			        AMT[Statut détaillé de l'AMT] = "AMT validée"
+			    ),
+			    "Oui",
+			    "Non"
+			)
+		lineageTag: e08264a4-dc96-48e9-90b4-73cf838660d7
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AMT a atteint statut ''à valider'' ou est ''terminé''' = ```
+			
+			IF(
+			    or(
+			    AMT[AMT a atteint statut 'à valider'] = "Oui",
+			    AMT[Statut de l'AMT] = "AMT terminée"
+			    ),
+			    "Oui",
+			    "Non"
+			)
+			
+			```
+		lineageTag: 65fa3d20-a7fd-4f74-89e9-fe27a7eb3163
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_amt_source
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 20c826ae-fac5-4c08-b38b-506eb38daa62
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_amt_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_intervenant_amt_unique
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: ec61aa8e-7025-4eee-babb-86ce6abcce77
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_groupe_intervenant_amt_unique
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_amt_v2
+		dataType: int64
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: e3e3bae1-077b-4bae-bf13-c6c5b9b1e4f6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_info_amt_v2
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie Statut AMT'
+		displayFolder: 3 - Statut
+		lineageTag: 783f0020-fac7-40bd-a732-9744493a1ee7
+		sourceLineageTag: Hiérarchie Statut AMT
+
+		level 'Statut de l''AMT'
+			lineageTag: e512682a-1e06-4ae8-957c-18c34c71a6dd
+			column: 'Statut de l''AMT'
+
+		level 'Statut détaillé de l''AMT'
+			lineageTag: b599d0e6-cbfd-46bc-9cc3-9c1cc8500fb3
+			column: 'Statut détaillé de l''AMT'
+
+		changedProperty = IsHidden
+
+	partition AMT = entity
+		mode: directQuery
+		source
+			entityName: AMT
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

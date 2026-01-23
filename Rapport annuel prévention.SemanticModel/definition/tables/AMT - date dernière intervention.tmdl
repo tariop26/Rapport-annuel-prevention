@@ -1,0 +1,105 @@
+table 'AMT - date dernière intervention'
+	lineageTag: fcc92ea4-a92e-45de-9ee6-7840ffe2d5e2
+
+	column 'Année dernière intervention AMT'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 81ae4e08-d304-4695-a4f9-716d53e7b301
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année dernière intervention AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date dernière intervention AMT'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 26829740-9a74-43d1-890a-840245c3c74d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date dernière intervention AMT
+		sortByColumn: id_date_derniere_intervention_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_derniere_intervention_amt
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: ca56f30e-4a83-4af4-9c2a-729669f58aa2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_derniere_intervention_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour dernière intervention AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 59dc848b-5209-4bd2-ba51-a9f0d7bea93b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour dernière intervention AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois dernière intervention AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: a4afa359-6ebd-4067-97f0-d8cc438892db
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois dernière intervention AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine dernière intervention AMT'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: bb38da2c-059c-4bab-85ec-4a63a6f171b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine dernière intervention AMT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date dernière intervention AMT'
+		lineageTag: 95fa1b9d-d2b3-4f15-8208-35f47c0866c3
+		sourceLineageTag: Hiérarchie date dernière intervention AMT
+
+		level 'Année dernière intervention AMT'
+			lineageTag: 9b034a34-fc10-4f5e-a0cc-9481583e1fca
+			column: 'Année dernière intervention AMT'
+
+		level 'Mois dernière intervention AMT'
+			lineageTag: 74812dde-6b57-4627-b0ad-7281fb8f9660
+			column: 'Mois dernière intervention AMT'
+
+		level 'Semaine dernière intervention AMT'
+			lineageTag: a1d226dd-e32b-4aff-8789-6cdacb6e06b4
+			column: 'Semaine dernière intervention AMT'
+
+		level 'Date dernière intervention AMT'
+			lineageTag: 0705c346-0dda-4e61-9111-1e90c9a339ea
+			column: 'Date dernière intervention AMT'
+
+	partition 'AMT - date dernière intervention' = entity
+		mode: directQuery
+		source
+			entityName: AMT - date dernière intervention
+			expressionSource: 'DirectQuery à AS – pst38'
+

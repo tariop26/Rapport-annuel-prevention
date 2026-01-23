@@ -1,0 +1,83 @@
+table 'RDV/visite - centre convocation'
+	lineageTag: e3466f6f-0b72-4829-a346-a449bc94ab73
+
+	column 'Centre rattachement RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: c4db8f1d-b477-45cf-a534-ee5c6fb7e46c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre rattachement RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Centre RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2cf0d3fb-c66b-4043-ae00-ab686cedd049
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Centre RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: ef8c8b58-9dfd-4039-b757-57475ed3b35d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type centre de convocation RDV'
+		dataType: string
+		lineageTag: d1bca102-75b1-4d7c-8e05-309579265370
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type centre de convocation RDV
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zone géographique RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 4e997f4c-71c5-48d6-afa8-6a57d2090cab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Zone géographique RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie centre RDV'
+		lineageTag: 6456f336-bb58-4a76-b984-5bd07c10bfb8
+		sourceLineageTag: Hiérarchie centre RDV
+
+		level 'Zone géographique RDV'
+			lineageTag: ee3e8ce3-cd31-4c0d-ab7a-3f42106ed770
+			column: 'Zone géographique RDV'
+
+		level 'Centre rattachement RDV'
+			lineageTag: bf604c2c-5f65-4f04-afcc-19bf254210d7
+			column: 'Centre rattachement RDV'
+
+		level 'Centre RDV'
+			lineageTag: 4abcd1a3-2101-461c-9384-7754e2312dc5
+			column: 'Centre RDV'
+
+	partition 'RDV/visite - centre convocation' = entity
+		mode: directQuery
+		source
+			entityName: RDV/visite - centre convocation
+			expressionSource: 'DirectQuery à AS – pst38'
+

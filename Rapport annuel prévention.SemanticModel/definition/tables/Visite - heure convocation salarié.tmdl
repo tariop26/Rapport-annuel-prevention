@@ -1,0 +1,58 @@
+table 'Visite - heure convocation salarié'
+	lineageTag: aaf8a99c-8fce-46a0-bc06-a51d98c370f3
+
+	column 'Heure convocation salarié'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8166416c-30f1-4e09-a90d-c4cb11085432
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure convocation salarié
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte convocation salarié'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: f417c925-1da1-494c-ab2d-4f6d0d571985
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte convocation salarié
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2d5158d9-a38d-4d94-bd64-ad4006904e3d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure convocation salarié'
+		lineageTag: aa003974-ea83-430c-844c-67d54a73c517
+		sourceLineageTag: Hiérarchie heure convocation salarié
+
+		level 'Heure convocation salarié'
+			lineageTag: adba5810-e8e2-4131-8b5a-e037ad34720c
+			column: 'Heure convocation salarié'
+
+		level 'Heure exacte convocation salarié'
+			lineageTag: fa5c1d75-fb81-48c5-a74d-8547b7bcf2e8
+			column: 'Heure exacte convocation salarié'
+
+	partition 'Visite - heure convocation salarié' = entity
+		mode: directQuery
+		source
+			entityName: Visite - heure convocation salarié
+			expressionSource: 'DirectQuery à AS – pst38'
+

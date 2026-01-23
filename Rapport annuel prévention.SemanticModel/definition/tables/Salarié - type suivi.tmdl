@@ -1,0 +1,30 @@
+table 'Salarié - type suivi'
+	lineageTag: a8066b45-b216-4974-a89c-0d61e043988d
+
+	column id_type_suivi
+		dataType: int64
+		isNullable: false
+		lineageTag: 50abaf31-c56b-481c-ab67-d64574fda48f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type suivi'
+		dataType: string
+		lineageTag: 101227d6-5cb4-419e-873b-65749d879aec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Salarié - type suivi' = entity
+		mode: directQuery
+		source
+			entityName: Salarié - type suivi
+			expressionSource: 'DirectQuery à AS – pst38'
+

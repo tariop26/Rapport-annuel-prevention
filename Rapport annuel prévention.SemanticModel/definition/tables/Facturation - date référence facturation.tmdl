@@ -1,0 +1,128 @@
+table 'Facturation - date référence facturation'
+	lineageTag: 545116c6-2ff4-44b9-938a-4e2f4c85d94b
+
+	column 'Année référence facturation'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a0bfa193-cd04-4754-adc7-8967f6d60416
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année référence facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date référence facturation'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 46c6dd7f-8be1-47aa-9fdd-c9953f04d6fd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date référence facturation
+		sortByColumn: id_date_reference_facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_reference_facturation
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1041ef81-9c6b-49bd-8ecb-bcb378a5289d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_reference_facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour référence facturation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2aa4e790-0918-4795-8568-3337a0cdf860
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour référence facturation
+		sortByColumn: id_date_reference_facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois référence facturation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: d3360aae-2801-4931-94f4-f5d9ec8eaba1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois référence facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois seul référence facturation'
+		dataType: string
+		lineageTag: 3eecf39b-a088-4200-87e3-aa7b4470db6f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois seul référence facturation
+		sortByColumn: 'Numéro mois référence facturation'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro mois référence facturation'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 38a9b042-4cbe-4866-9be5-3dd7087da77a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Numéro mois référence facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine référence facturation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: aa3b82b3-e1ec-40fc-a8f1-781d4dc88259
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine référence facturation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date référence facturation'
+		lineageTag: a4236f9a-600b-45af-85c7-bcf5f1d8ef2a
+		sourceLineageTag: Hiérarchie date référence facturation
+
+		level 'Année référence facturation'
+			lineageTag: c0337101-305e-4058-af7e-1bfd389a6597
+			column: 'Année référence facturation'
+
+		level 'Mois référence facturation'
+			lineageTag: 34a241a2-3430-4211-a3ee-d8f903521028
+			column: 'Mois référence facturation'
+
+		level 'Semaine référence facturation'
+			lineageTag: 2978cf1c-b670-486f-bbe5-ae88ee755eee
+			column: 'Semaine référence facturation'
+
+		level 'Date référence facturation'
+			lineageTag: 7f19b37b-2709-4140-a647-ea25fa9df8ff
+			column: 'Date référence facturation'
+
+	partition 'Facturation - date référence facturation' = entity
+		mode: directQuery
+		source
+			entityName: Facturation - date référence facturation
+			expressionSource: 'DirectQuery à AS – pst38'
+

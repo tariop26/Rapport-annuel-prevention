@@ -1,0 +1,46 @@
+table 'Evènement collectif - groupe participants'
+	lineageTag: b43d8b4e-88d7-4e44-8d7a-e8ec47839fec
+
+	column id_groupe_participant_evenement_amt_unique
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 26fb2d26-66f8-4d0f-8c9e-2dfc20a5a5e1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_participant_evenement_amt_unique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_participant_evenement_amt
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 21994e2e-d084-49a6-ab2b-5180356e5dc6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_participant_evenement_amt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_participant_evenement_amt
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5df5e6d6-df6e-43bc-b602-fcb3d3226369
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: email_participant_evenement_amt
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Evènement collectif - groupe participants' = entity
+		mode: directQuery
+		source
+			entityName: Evènement collectif - groupe participants
+			expressionSource: 'DirectQuery à AS – pst38'
+
+	changedProperty = IsHidden
+

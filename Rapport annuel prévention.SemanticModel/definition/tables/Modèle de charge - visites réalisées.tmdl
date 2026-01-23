@@ -1,0 +1,196 @@
+table 'Modèle de charge - visites réalisées'
+	lineageTag: e028f076-91ea-4a64-b21f-b43b677a7fed
+
+	measure '# visites embauches réalisées année dernière' = EXTERNALMEASURE("# visites embauches réalisées année dernière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Année dernière
+		lineageTag: f80e7b72-78a5-4bfc-bb6f-7d4305847c7b
+		sourceLineageTag: DirectQuery à AS – pst38.# visites embauches réalisées année dernière
+		dataCategory: Uncategorized
+
+	measure '# visites embauches réalisées cette année' = EXTERNALMEASURE("# visites embauches réalisées cette année", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Année en cours
+		lineageTag: e612c041-34fa-4bad-b47a-72cf117d03e5
+		sourceLineageTag: DirectQuery à AS – pst38.# visites embauches réalisées cette année
+		dataCategory: Uncategorized
+
+	measure '# visites intérimaires réalisées année dernière' = EXTERNALMEASURE("# visites intérimaires réalisées année dernière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Année dernière
+		lineageTag: aed76cb9-9fd5-4a95-99b9-f515e07368b4
+		sourceLineageTag: DirectQuery à AS – pst38.# visites intérimaires réalisées année dernière
+		dataCategory: Uncategorized
+
+	measure '# visites intérimaires réalisées cette année' = EXTERNALMEASURE("# visites intérimaires réalisées cette année", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Année en cours
+		lineageTag: 4530c869-842f-4208-92b3-54511951df20
+		sourceLineageTag: DirectQuery à AS – pst38.# visites intérimaires réalisées cette année
+		dataCategory: Uncategorized
+
+	measure '# visites occasionnelles réalisées année dernière' = EXTERNALMEASURE("# visites occasionnelles réalisées année dernière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Année dernière
+		lineageTag: 743d1562-6b4d-47a8-a3bc-5cd0173d1228
+		sourceLineageTag: DirectQuery à AS – pst38.# visites occasionnelles réalisées année dernière
+		dataCategory: Uncategorized
+
+	measure '# visites occasionnelles réalisées cette année' = EXTERNALMEASURE("# visites occasionnelles réalisées cette année", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Année en cours
+		lineageTag: 2fefe45a-07f8-4de4-b2f0-92c7a0f7bf89
+		sourceLineageTag: DirectQuery à AS – pst38.# visites occasionnelles réalisées cette année
+		dataCategory: Uncategorized
+
+	measure '# visites périodiques réalisées année dernière' = EXTERNALMEASURE("# visites périodiques réalisées année dernière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Année dernière
+		lineageTag: a80ac34d-27dc-4fef-9162-2810dd2e81b1
+		sourceLineageTag: DirectQuery à AS – pst38.# visites périodiques réalisées année dernière
+		dataCategory: Uncategorized
+
+	measure '# visites périodiques réalisées cette année' = EXTERNALMEASURE("# visites périodiques réalisées cette année", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Année en cours
+		lineageTag: 0cea2dcc-b20e-4821-a467-5aecc8335210
+		sourceLineageTag: DirectQuery à AS – pst38.# visites périodiques réalisées cette année
+		dataCategory: Uncategorized
+
+	measure '# visites réalisées année dernière' = EXTERNALMEASURE("# visites réalisées année dernière", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - Année dernière
+		lineageTag: 683519a9-22c3-4881-ab86-dc0179737d70
+		sourceLineageTag: DirectQuery à AS – pst38.# visites réalisées année dernière
+		dataCategory: Uncategorized
+
+	measure '# visites réalisées cette année' = EXTERNALMEASURE("# visites réalisées cette année", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Année en cours
+		lineageTag: 53996038-9a48-4f21-aaf3-9889ec401239
+		sourceLineageTag: DirectQuery à AS – pst38.# visites réalisées cette année
+		dataCategory: Uncategorized
+
+	column id_categorie_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 30381ffb-4e96-4632-9b22-1df46a50cbde
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_categorie_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bfa44eaf-4dc1-4913-8636-693d0d766fb5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_dernier_jour_mois_visite
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 020d8c01-4391-4daa-b74d-dfe9205a2fcc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_dernier_jour_mois_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 966c1893-b24f-42ab-99f8-243933d20366
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: a4a1c65d-971f-49b9-b395-db3bebb60eec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2e1f09c3-ac4d-4322-a344-1a0cc7b293ed
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: cdffb9e2-1360-4209-97a4-62e9e4a9820b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 40ba3b20-1d76-4d1e-ac54-a1b8d4370290
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_visite_realisee
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fad5a5f4-01f2-41ef-88e1-da34a22cd8c7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_visite_realisee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type suivi détaillé'
+		dataType: string
+		lineageTag: a26ca0dd-22d2-45b6-8778-f4f57cb73a5d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi détaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Modèle de charge - visites réalisées' = entity
+		mode: directQuery
+		source
+			entityName: Modèle de charge - visites réalisées
+			expressionSource: 'DirectQuery à AS – pst38'
+

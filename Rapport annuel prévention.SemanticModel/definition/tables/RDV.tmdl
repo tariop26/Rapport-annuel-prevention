@@ -1,0 +1,1008 @@
+table RDV
+	lineageTag: f2d40097-70ca-4d71-87dc-a4af95526da6
+
+	measure 'Délai médian reconvocation anticipée' = EXTERNALMEASURE("Délai médian reconvocation anticipée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: 2a00d8f1-8fa2-436f-b9ec-da52d4e56078
+		sourceLineageTag: DirectQuery à AS – pst38.Délai médian reconvocation anticipée
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne entre la création du RDV et sa date planifiée' = EXTERNALMEASURE("Durée moyenne entre la création du RDV et sa date planifiée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: 6f46916d-fac4-4916-a638-4294b3665aaa
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne entre la création du RDV et sa date planifiée
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne entre la mise à disposition du créneau et son remplissage par l''adhérent' = EXTERNALMEASURE("Durée moyenne entre la mise à disposition du créneau et son remplissage par l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: 5a8605f3-82ac-49f6-8d79-a718cb35effc
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne entre la mise à disposition du créneau et son remplissage par l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne entre la première convocation du RDV et sa date planifiée' = EXTERNALMEASURE("Durée moyenne entre la première convocation du RDV et sa date planifiée", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: 91abad1b-a89b-483c-a9ff-8bfdcc38e4fe
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne entre la première convocation du RDV et sa date planifiée
+		dataCategory: Uncategorized
+
+	measure 'Durée moyenne entretien théorique' = EXTERNALMEASURE("Durée moyenne entretien théorique", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0
+		displayFolder: Indicateurs\4 - Durées
+		lineageTag: fc9cbf0b-3ba0-4ae4-9b47-861ddc8d5c20
+		sourceLineageTag: DirectQuery à AS – pst38.Durée moyenne entretien théorique
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''annulations techniques' = EXTERNALMEASURE("Nombre d'annulations techniques", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: c08c80c6-ba9c-4970-98bf-351d1e72e0fb
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'annulations techniques
+		dataCategory: Uncategorized
+
+	measure 'Nombre de créneaux adhérent non pourvus excusés' = EXTERNALMEASURE("Nombre de créneaux adhérent non pourvus excusés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Comptages
+		lineageTag: 67e30992-c982-47f0-9f9f-05a52f92a993
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de créneaux adhérent non pourvus excusés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de créneaux adhérent non pourvus non excusés' = EXTERNALMEASURE("Nombre de créneaux adhérent non pourvus non excusés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Comptages
+		lineageTag: 07d0df61-b3ee-480f-a6e3-b2ec794db374
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de créneaux adhérent non pourvus non excusés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de créneaux adhérent non pourvus' = EXTERNALMEASURE("Nombre de créneaux adhérent non pourvus", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Comptages
+		lineageTag: dc48332e-609e-4526-8a30-672c334d5d78
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de créneaux adhérent non pourvus
+		dataCategory: Uncategorized
+
+	measure 'Nombre de créneaux adhérent pourvus' = EXTERNALMEASURE("Nombre de créneaux adhérent pourvus", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Comptages
+		lineageTag: ca42b516-965d-404f-8e54-dc74918866aa
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de créneaux adhérent pourvus
+		dataCategory: Uncategorized
+
+	measure 'Nombre de créneaux adhérent' = EXTERNALMEASURE("Nombre de créneaux adhérent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Comptages
+		lineageTag: 8aa011c7-d951-4ff4-a7c8-f67775fc7b14
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de créneaux adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre de déplacements de RDV après envoi de la convocation' = EXTERNALMEASURE("Nombre de déplacements de RDV après envoi de la convocation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: c2dd0055-6ef0-4fb0-8c81-a969b87eb31c
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de déplacements de RDV après envoi de la convocation
+		dataCategory: Uncategorized
+
+	measure 'Nombre de déplacements de RDV avant envoi de la convocation' = EXTERNALMEASURE("Nombre de déplacements de RDV avant envoi de la convocation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: 9e658e29-4e97-4e8d-a026-b5d0a16b3b7e
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de déplacements de RDV avant envoi de la convocation
+		dataCategory: Uncategorized
+
+	measure 'Nombre de déplacements de RDV par l''adhérent' = EXTERNALMEASURE("Nombre de déplacements de RDV par l'adhérent", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: 6ee1544e-ad88-4309-a91f-561c48d90245
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de déplacements de RDV par l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Nombre de déplacements de RDV par le SST' = EXTERNALMEASURE("Nombre de déplacements de RDV par le SST", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: f7bd14be-15e7-408b-88a5-a946b543fb8f
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de déplacements de RDV par le SST
+		dataCategory: Uncategorized
+
+	measure 'Nombre de déplacements de RDV' = EXTERNALMEASURE("Nombre de déplacements de RDV", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: ba04b9b6-3347-4c7f-882c-54567a164173
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de déplacements de RDV
+		dataCategory: Uncategorized
+
+	measure 'Nombre de prochaine visite avec MdT' = EXTERNALMEASURE("Nombre de prochaine visite avec MdT", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: cf9b1732-cf05-4185-aa45-75deb93f087e
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de prochaine visite avec MdT
+		dataCategory: Uncategorized
+
+	measure 'Nombre de prochaine visite modifiée' = EXTERNALMEASURE("Nombre de prochaine visite modifiée", INTEGER, "DirectQuery à AS – pst38")
+		formatString: 0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: 46af8b60-b20e-4bda-83ba-e4e0f4312f97
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de prochaine visite modifiée
+		dataCategory: Uncategorized
+
+	measure 'Nombre de rappels envoyés' = EXTERNALMEASURE("Nombre de rappels envoyés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Convocations envoyées
+		lineageTag: 2fcf25d9-35e0-48c1-a47e-c1d860d81618
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de rappels envoyés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de RDV annulés excusés' = EXTERNALMEASURE("Nombre de RDV annulés excusés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: ddd2d94c-7ae1-4ca0-a5fd-fa8695b3e9ee
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de RDV annulés excusés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de RDV annulés non excusés' = EXTERNALMEASURE("Nombre de RDV annulés non excusés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: dc2f4537-d216-4371-a72e-0b0b99a7c8a9
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de RDV annulés non excusés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de RDV annulés' = EXTERNALMEASURE("Nombre de RDV annulés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: 04e16f4c-d54b-4e1a-9867-1e2ef4c7484b
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de RDV annulés
+		dataCategory: Uncategorized
+
+	measure 'Nombre de RDV avec convocation' = EXTERNALMEASURE("Nombre de RDV avec convocation", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: 0d63e3fd-2db3-4436-8087-be71a40e0bea
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de RDV avec convocation
+		dataCategory: Uncategorized
+
+	measure 'Nombre de RDV' = EXTERNALMEASURE("Nombre de RDV", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: d85924ba-7efe-442c-a5ef-1885559f13fe
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de RDV
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés convoqués' = EXTERNALMEASURE("Nombre de salariés convoqués", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Convocations envoyées
+		lineageTag: 1ed2e85a-8128-4da9-af5d-d20014b81d8f
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés convoqués
+		dataCategory: Uncategorized
+
+	measure 'Nombre de salariés vus' = EXTERNALMEASURE("Nombre de salariés vus", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\2 - Convocations envoyées
+		lineageTag: f18c8172-fb5f-492f-8dbd-de85e1c41eb3
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de salariés vus
+		dataCategory: Uncategorized
+
+	measure 'Nombre de visites réalisées (RDV)' = EXTERNALMEASURE("Nombre de visites réalisées (RDV)", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\1 - RDV\Comptages
+		lineageTag: 41db24a8-5dc3-408e-8d09-90cd3cbe311d
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre de visites réalisées (RDV)
+		dataCategory: Uncategorized
+
+	measure 'Ratio convoqués / venus' = EXTERNALMEASURE("Ratio convoqués / venus", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #.00
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: c5a28786-3ff6-44aa-b751-a54b77119ba7
+		sourceLineageTag: DirectQuery à AS – pst38.Ratio convoqués / venus
+		dataCategory: Uncategorized
+
+	measure 'Taux annulation non excusée (absentéisme)' = EXTERNALMEASURE("Taux annulation non excusée (absentéisme)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: 039e1b97-7bce-4811-8f66-44e968f49477
+		sourceLineageTag: DirectQuery à AS – pst38.Taux annulation non excusée (absentéisme)
+		dataCategory: Uncategorized
+
+	measure 'Taux créneaux adhérents non pourvus (annulation excusée)' = EXTERNALMEASURE("Taux créneaux adhérents non pourvus (annulation excusée)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Taux
+		lineageTag: e1c4a775-fdcb-44f7-be94-3de25805bc63
+		sourceLineageTag: DirectQuery à AS – pst38.Taux créneaux adhérents non pourvus (annulation excusée)
+		dataCategory: Uncategorized
+
+	measure 'Taux créneaux adhérents non pourvus (annulation non excusée)' = EXTERNALMEASURE("Taux créneaux adhérents non pourvus (annulation non excusée)", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Taux
+		lineageTag: 67d27879-fac0-4794-a42d-4f465029606c
+		sourceLineageTag: DirectQuery à AS – pst38.Taux créneaux adhérents non pourvus (annulation non excusée)
+		dataCategory: Uncategorized
+
+	measure 'Taux créneaux adhérents non pourvus' = EXTERNALMEASURE("Taux créneaux adhérents non pourvus", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Taux
+		lineageTag: fd3e89ab-e4a1-441a-be54-645905e27f99
+		sourceLineageTag: DirectQuery à AS – pst38.Taux créneaux adhérents non pourvus
+		dataCategory: Uncategorized
+
+	measure 'Taux créneaux adhérents pourvus' = EXTERNALMEASURE("Taux créneaux adhérents pourvus", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\3 - Créneaux adhérents\Taux
+		lineageTag: c831d65f-3b93-4a45-a599-e966fa3a96f9
+		sourceLineageTag: DirectQuery à AS – pst38.Taux créneaux adhérents pourvus
+		dataCategory: Uncategorized
+
+	measure 'Taux de déplacements de RDV après envoi de la convocation' = EXTERNALMEASURE("Taux de déplacements de RDV après envoi de la convocation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: a6b33ac2-88c2-44c6-90ea-3c61ed02bebd
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de déplacements de RDV après envoi de la convocation
+		dataCategory: Uncategorized
+
+	measure 'Taux de déplacements de RDV avant envoi de la convocation' = EXTERNALMEASURE("Taux de déplacements de RDV avant envoi de la convocation", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: cedf06fc-f10f-4c34-ba32-1ae02dd8a4eb
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de déplacements de RDV avant envoi de la convocation
+		dataCategory: Uncategorized
+
+	measure 'Taux de déplacements de RDV par l''adhérent' = EXTERNALMEASURE("Taux de déplacements de RDV par l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: 80de9b02-2fde-427e-b8ba-bdba1e37cc84
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de déplacements de RDV par l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Taux de déplacements de RDV par le SST' = EXTERNALMEASURE("Taux de déplacements de RDV par le SST", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: f2ed5f2d-13d0-4471-885b-daaff872f0e9
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de déplacements de RDV par le SST
+		dataCategory: Uncategorized
+
+	measure 'Taux de modification date prochaine visite' = EXTERNALMEASURE("Taux de modification date prochaine visite", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: a4eb5e2a-c2cc-43a4-a6a1-d7e11dafc7d9
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de modification date prochaine visite
+		dataCategory: Uncategorized
+
+	measure 'Taux de visites réalisées délégables IDEST' = EXTERNALMEASURE("Taux de visites réalisées délégables IDEST", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: 27c3ac3a-8139-44ac-acf5-b81daa479e62
+		sourceLineageTag: DirectQuery à AS – pst38.Taux de visites réalisées délégables IDEST
+		dataCategory: Uncategorized
+
+	measure 'Taux prochaine visite modifiée à réaliser par MDT' = EXTERNALMEASURE("Taux prochaine visite modifiée à réaliser par MDT", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: 8099fd5b-873c-483e-9536-89791e90ce10
+		sourceLineageTag: DirectQuery à AS – pst38.Taux prochaine visite modifiée à réaliser par MDT
+		dataCategory: Uncategorized
+
+	measure 'Taux RDV déplacés par l''adhérent' = EXTERNALMEASURE("Taux RDV déplacés par l'adhérent", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: 20c16d86-3935-4b29-bf75-706021a91d65
+		sourceLineageTag: DirectQuery à AS – pst38.Taux RDV déplacés par l'adhérent
+		dataCategory: Uncategorized
+
+	measure 'Taux RDV déplacés par le SST' = EXTERNALMEASURE("Taux RDV déplacés par le SST", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #0.0%
+		displayFolder: Indicateurs\1 - RDV\Taux
+		lineageTag: f6872b4b-664a-4db7-84b5-0f6da4077ec3
+		sourceLineageTag: DirectQuery à AS – pst38.Taux RDV déplacés par le SST
+		dataCategory: Uncategorized
+
+	column 'A revoir par (reconvocation anticipée)'
+		dataType: string
+		lineageTag: 48c3cfc8-6ffc-46be-9797-27d232baf47e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: A revoir par (reconvocation anticipée)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie salarié réglementaire (visite)'
+		dataType: string
+		lineageTag: f865e431-551a-418c-bf8b-d97585e25bd7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Catégorie salarié réglementaire (visite)
+		sortByColumn: ordre_categorie_reglementaire_salarie
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai reconvocation anticipée (en année)'
+		dataType: int64
+		lineageTag: f5c1b691-fe20-4fab-8149-b6090493356b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Délai reconvocation anticipée (en année)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai reconvocation anticipée'
+		dataType: string
+		lineageTag: da85cd30-d912-4d76-b0f3-e9b25d072e92
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Délai reconvocation anticipée
+		sortByColumn: 'Délai reconvocation anticipée (en année)'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai visite après demande'
+		dataType: string
+		displayFolder: Durées
+		lineageTag: 64b99782-e8eb-42a6-8d1b-2646096075a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Délai visite après demande
+
+		annotation SummarizationSetBy = Automatic
+
+	column delai_prochaine_visite_modifiee
+		dataType: int64
+		displayFolder: Durées
+		lineageTag: 24e3cee4-7282-4a38-aa7f-21531c23cbcd
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: delai_prochaine_visite_modifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée entre la création du RDV et sa date planifiée'
+		dataType: int64
+		displayFolder: Durées
+		lineageTag: 22650fdc-3056-48a3-b6f9-358e8d4f1340
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée entre la création du RDV et sa date planifiée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée entre la mise à disposition du créneau et sa prise par l''adhérent'
+		dataType: int64
+		displayFolder: Durées
+		lineageTag: 3cf892bf-6f64-4924-bf28-6c196695252c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée entre la mise à disposition du créneau et sa prise par l'adhérent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée entre la première convocation du RDV et sa date planifiée'
+		dataType: int64
+		displayFolder: Durées
+		lineageTag: 913c3c81-a5f4-4f0a-9a9a-7f681107ffea
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée entre la première convocation du RDV et sa date planifiée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée entretien théorique'
+		dataType: int64
+		displayFolder: Durées
+		lineageTag: 78af3a86-85d8-45fb-8808-ef9d26e41786
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée entretien théorique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée pré-visite théorique'
+		dataType: int64
+		displayFolder: Durées
+		lineageTag: 56a3ae1e-5efe-4468-9df1-c53458854567
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Durée pré-visite théorique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Id vacation'
+		dataType: int64
+		lineageTag: 5ff5da14-73e5-4ff3-8865-2733bf91fee8
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Id vacation
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 5dc809ea-f21b-41a6-b206-f07e221d4c4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_convocateur_initial_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 12b2b82a-aaf6-4996-951c-ddf60ef810cc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_convocateur_initial_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_annulation_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 01215828-c269-4caa-b51d-5dfbd0fdb9f3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_annulation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: dde9bc04-80e6-4d5e-b4fa-7a3b37b7c8e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_premiere_convocation_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 509b8de2-3944-4cf9-809d-fd5fc5d2c70f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_premiere_convocation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_prise_creneau_adherent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f1bf8601-2e92-4c96-ab3e-40a9f0cadcbd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_prise_creneau_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 8f2bbf65-ca6c-4536-b03a-aa3948afae85
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: c2c2cc29-a366-43a5-b3e4-480d7a65c0f2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_groupe_determinant_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 17b87cdc-94e6-41b1-8c70-fac5df33d8df
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_debut_entretien_theorique
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 16468ff5-dffd-4247-badb-9bab44729e26
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_debut_entretien_theorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure_fin_entretien_theorique
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 34784e2a-4c88-4f47-b5ac-22304d3f0343
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure_fin_entretien_theorique
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ccfc272d-abee-458a-8074-de73ac8c703a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a14b058d-39f7-4aca-aacc-48223715a0fb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_motif_annulation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3c4d1e0a-dadc-4f6c-aa86-d164851f66fe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_motif_annulation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3b885002-9e05-4ae1-b83b-f294401dfe74
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 98139034-e563-4628-8a3a-80c191dff318
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 37e94122-a91e-4314-968b-ab6f9fd2d64b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_rdv_source
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3b57c8b5-dd74-47f1-a3bf-97d2334d7890
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_rdv_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_realisateur_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: ced24615-2e9b-4380-9a56-362b8f36e184
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_realisateur_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 86d48a06-54e8-40fe-98b3-caf0a23e2102
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3d9d20f8-9aa8-46fb-b9a4-75d08f82254f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_thesaurus_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 63f3e2c2-1b22-418e-8165-6b5ddf3492f7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_thesaurus_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 124688d6-c6b7-447b-b6c7-baa2c5441b3f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 22e6c5e0-b16d-4217-a2ee-6498c8386fba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 38a0cf7d-e2cd-42cc-9341-f2b79443c921
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_source
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 564a52c3-7436-463f-806e-c68afc280ce6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_creneau_adherent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2082d621-4074-451c-b478-ca51efee717f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_creneau_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_creneau_adherent_non_pourvu
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: fc420520-134d-4db7-a736-dbe21d83ec2b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_creneau_adherent_non_pourvu
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_creneau_adherent_non_pourvu_non_excuse
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 8f11d64b-f2da-4eb7-adeb-b93dfa1983cc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_creneau_adherent_non_pourvu_non_excuse
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_demande_visite_adherent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 753e96e4-16eb-49ce-bf1a-2c69fe887e43
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_demande_visite_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_deplacement
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 988c4a69-4d51-4a81-b0d3-5cf7bf92df9b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_deplacement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_deplacement_avant_envoi_convocation
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 3763d08d-5f90-478f-bfed-4db8dbd6d598
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_deplacement_avant_envoi_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_deplacement_par_adherent
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 2fb5dc50-d91e-4e2d-8a32-7658ed6fe3ed
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_deplacement_par_adherent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_deplacement_par_sst
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 40567b57-2173-4f06-bd0d-f3a81e20aa4f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_deplacement_par_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_invitation_salarie
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0823fd8f-32f0-4391-bedb-9859c0e154de
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_invitation_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_prochaine_visite_modifiee
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 9cc280bb-5ec9-45b3-8875-afb5c7cfcb60
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_prochaine_visite_modifiee
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_prochaine_visite_modifiee_medecin
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 0d562786-73d2-4933-bc5a-2de5ed4db5b6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_prochaine_visite_modifiee_medecin
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rappel_envoye
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a34a78fb-ff10-40ea-bcb8-362cb24fc14c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rappel_envoye
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 09a96b1b-daac-4d28-8018-339ba1859b5c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_annule
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b7edbc38-9746-4805-86d6-7503380dbce3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_annule
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_annule_excuse
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: d04d3f1b-7a2a-4f7e-9bc2-1032f4df064b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_annule_excuse
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_annule_non_excuse
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: 52d32b9f-34c4-4771-a21e-0daab744c44f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_annule_non_excuse
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_convoque
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f52dad04-d070-4693-b53b-5bc684651f52
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_convoque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nb_rdv_honore
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: cd69d04f-dbe0-49ca-b37e-cae0afc43bb9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_rdv_honore
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordre_categorie_reglementaire_salarie
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: a51243a9-3b24-495d-85d9-4e2c6df56cad
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ordre_categorie_reglementaire_salarie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RDV ancien logiciel'
+		dataType: string
+		lineageTag: 20cabcfd-f1dc-4f21-8efc-864e9a6b3291
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: RDV ancien logiciel
+
+		annotation SummarizationSetBy = Automatic
+
+	column rdv_ancien_logiciel
+		dataType: boolean
+		displayFolder: Colonnes techniques
+		lineageTag: b9ef592d-ee91-4a65-94ee-a20504c8d8f3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: rdv_ancien_logiciel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column visite_embauche_delai
+		dataType: string
+		displayFolder: Colonnes techniques
+		lineageTag: 310586f9-cdb3-4ab2-8b71-9e986cca3455
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: visite_embauche_delai
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes techniques
+		lineageTag: f2833057-e6ab-4e0c-8019-aa4f320f8624
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RDV = entity
+		mode: directQuery
+		source
+			entityName: RDV
+			expressionSource: 'DirectQuery à AS – pst38'
+

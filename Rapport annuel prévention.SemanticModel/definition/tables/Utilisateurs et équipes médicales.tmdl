@@ -1,0 +1,222 @@
+table 'Utilisateurs et équipes médicales'
+	lineageTag: ab7ce81e-83e4-4390-82e4-8d4e3a1c901d
+
+	measure 'ETP pondéré par équipe médicale' = EXTERNALMEASURE("ETP pondéré par équipe médicale", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.00
+		displayFolder: Indicateurs
+		lineageTag: 5e5b9ac0-98b5-4099-a178-1529abe8b035
+		sourceLineageTag: DirectQuery à AS – pst38.ETP pondéré par équipe médicale
+		dataCategory: Uncategorized
+
+	measure 'ETP total par utilisateur' = EXTERNALMEASURE("ETP total par utilisateur", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: 0.00
+		displayFolder: Indicateurs
+		lineageTag: 6e17b3c6-c541-46c6-bbca-4952ee36a314
+		sourceLineageTag: DirectQuery à AS – pst38.ETP total par utilisateur
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''équipes médicales concernées' = EXTERNALMEASURE("Nombre d'équipes médicales concernées", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 429ee71b-955c-4c1f-95db-b5d65eb94945
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'équipes médicales concernées
+		dataCategory: Uncategorized
+
+	measure 'Nombre d''utilisateurs concernés' = EXTERNALMEASURE("Nombre d'utilisateurs concernés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs
+		lineageTag: 6b171420-967d-4ab1-b708-34a8b8c30a28
+		sourceLineageTag: DirectQuery à AS – pst38.Nombre d'utilisateurs concernés
+		dataCategory: Uncategorized
+
+	column 'Accès stats (actuel)'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: 5508e0c6-aa91-4522-a125-74db5ae394d1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Accès stats (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date début validité'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 980ba6f2-e18b-4414-8cc0-65d51dd3e8de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date début validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date fin validité'
+		dataType: dateTime
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2c2dd496-9b1e-4568-8b05-ed71cda7a919
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fonction utilisateur médical (actuel)'
+		dataType: string
+		lineageTag: 06aed5ac-9325-4406-87a4-4908d9f77495
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Fonction utilisateur médical (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 54ff7ffa-0931-4b08-a63b-44a9a323f9de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_utilisateur_sst
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f982a46a-0d7d-4f9e-9e0b-80f0e1fafa31
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_utilisateur_sst
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nom utilisateur'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7326e19e-7b82-48be-b3ae-a0e45f92f842
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nom utilisateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil actif (actuel)'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: 552742ca-2a57-46d5-a9af-f2b3cac7c1a2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil actif (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil stats (actuel)'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: acd4b853-a84c-41a1-b458-4e78711e234d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil stats (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil utilisateur détaillé'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: d869c472-242e-4da4-8d37-882e201dab77
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil utilisateur détaillé
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profil utilisateur'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: 9ca4278c-e336-4869-a506-3199c45027a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Profil utilisateur
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Référent (actuel)'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: f7dfcf31-2f4f-4200-87d2-d5736365d8f8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Référent (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Restriction périmètre (actuel)'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: 44c1758a-1a0d-409c-9d18-a2a231dff79c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Restriction périmètre (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Role utilisateur'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: e90fdf54-d70b-4ccb-a41b-04a2faceaeb8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Role utilisateur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Titulaire (actuel)'
+		dataType: string
+		displayFolder: Accès utilisateur par équipe médicale (actuel)
+		lineageTag: 368c96d8-c153-4dbb-9a25-edb1211113ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Titulaire (actuel)
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie profil utilisateur'
+		lineageTag: a1806596-7dbe-4eb1-930a-d841786e9f4a
+		sourceLineageTag: Hiérarchie profil utilisateur
+
+		level 'Profil utilisateur'
+			lineageTag: 657252fc-5994-4492-8e77-235242c4565d
+			column: 'Profil utilisateur'
+
+		level 'Profil utilisateur détaillé'
+			lineageTag: 27eb5adb-12da-44ef-bd8c-e8ff0b22a471
+			column: 'Profil utilisateur détaillé'
+
+	hierarchy 'Hiérarchie utilisateur'
+		lineageTag: be00ff8c-91da-46f8-9c92-27e5caed64fb
+		sourceLineageTag: Hiérarchie utilisateur
+
+		level 'Role utilisateur'
+			lineageTag: f46a5aec-039e-4508-b557-28100c91504a
+			column: 'Role utilisateur'
+
+		level 'Nom utilisateur'
+			lineageTag: 1f8c1237-37d8-4fbd-8c16-a58b4fd2c56b
+			column: 'Nom utilisateur'
+
+	partition 'Utilisateurs et équipes médicales' = entity
+		mode: directQuery
+		source
+			entityName: Utilisateurs et équipes médicales
+			expressionSource: 'DirectQuery à AS – pst38'
+

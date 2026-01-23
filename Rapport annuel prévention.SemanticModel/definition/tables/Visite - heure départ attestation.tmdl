@@ -1,0 +1,58 @@
+table 'Visite - heure départ attestation'
+	lineageTag: fd174664-92cc-4924-9bb5-0e3b272226b5
+
+	column 'Heure départ attestation'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: fa86cc79-f6da-4a78-bc97-51239fc8cd97
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure départ attestation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Heure exacte départ attestation'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 6ca2dcfc-0626-4ba2-acb1-012713619013
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Heure exacte départ attestation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_heure
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: bd3b3080-c685-4fe9-b5b0-3f73d422ebfa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_heure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie heure départ attestation'
+		lineageTag: 74983861-7d63-4397-974e-2a6a29ac91cb
+		sourceLineageTag: Hiérarchie heure départ attestation
+
+		level 'Heure départ attestation'
+			lineageTag: 93fe3923-7c9c-4937-8e59-6a07a34991be
+			column: 'Heure départ attestation'
+
+		level 'Heure exacte départ attestation'
+			lineageTag: 00d1fa39-34a8-4ea9-b6cb-5ea4785809e9
+			column: 'Heure exacte départ attestation'
+
+	partition 'Visite - heure départ attestation' = entity
+		mode: directQuery
+		source
+			entityName: Visite - heure départ attestation
+			expressionSource: 'DirectQuery à AS – pst38'
+

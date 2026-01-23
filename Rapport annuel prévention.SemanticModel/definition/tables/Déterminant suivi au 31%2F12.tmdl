@@ -1,0 +1,54 @@
+table 'Déterminant suivi au 31/12'
+	lineageTag: a645f5d7-24b4-4cd9-ac45-926bcc5031fa
+
+	column code_groupe_determinant_suivi
+		dataType: string
+		lineageTag: 6dc70bba-ede7-49ab-85e6-3579b2976729
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_groupe_determinant_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Déterminant suivi'
+		dataType: string
+		lineageTag: b69ecaf3-7279-4ba9-b3f8-d479ef16f7b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Déterminant suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type suivi'
+		dataType: string
+		lineageTag: 69596e90-b75d-4e0d-bf5d-6a91f4e90a22
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie déterminant suivi'
+		lineageTag: a9b64a5f-96f4-4596-86cd-c47e1910bfa4
+		sourceLineageTag: Hiérarchie déterminant suivi
+
+		level 'Type suivi'
+			lineageTag: 3d83ced4-ff64-4930-9ec7-559dbc69d3e0
+			column: 'Type suivi'
+
+		level 'Déterminant suivi'
+			lineageTag: 62292975-5953-4496-bd15-6c53484036e8
+			column: 'Déterminant suivi'
+
+	partition 'Déterminant suivi au 31/12' = entity
+		mode: directQuery
+		source
+			entityName: Déterminant suivi au 31/12
+			expressionSource: 'DirectQuery à AS – pst38'
+

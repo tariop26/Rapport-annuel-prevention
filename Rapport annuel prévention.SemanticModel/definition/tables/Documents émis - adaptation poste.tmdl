@@ -1,0 +1,42 @@
+table 'Documents émis - adaptation poste'
+	lineageTag: 05101d0a-4502-4090-bc32-ee4a607948dc
+
+	column id_adaptation_poste
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: b630fef8-4d36-47ec-8b5b-1b6e1fdbcc49
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_adaptation_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_document
+		dataType: int64
+		displayFolder: Colonnes techniques
+		lineageTag: f5d2a173-eec3-4b90-8b8e-1f7a178ce60f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type adaptation poste'
+		dataType: string
+		lineageTag: 526415bf-c355-41be-9884-15b1a952d4f5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type adaptation poste
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Documents émis - adaptation poste' = entity
+		mode: directQuery
+		source
+			entityName: Documents émis - adaptation poste
+			expressionSource: 'DirectQuery à AS – pst38'
+

@@ -1,0 +1,91 @@
+table 'Documents émis - date fin validité'
+	lineageTag: e2749089-7eef-40c0-930c-9565f9bfc079
+
+	column 'Année fin validité'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: c5d272c2-dd85-4bf3-8394-1189f5739872
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année fin validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date fin validité'
+		dataType: dateTime
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 912b2856-f12b-449d-aa26-d1b5fda3422c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date fin validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 88212bc1-df7e-4883-99a0-b1ad613d4a03
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois fin validité'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 3d009343-9493-4332-ac88-13a535017676
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois fin validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine fin validité'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5383a9e8-d32c-4964-b62f-852df46d0f90
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine fin validité
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date fin validité'
+		lineageTag: 50185067-d18f-4349-b29c-eaf20d897e6e
+		sourceLineageTag: Hiérarchie date fin validité
+
+		level 'Année fin validité'
+			lineageTag: 54392021-4488-4db5-ad19-3fb1c0af4832
+			column: 'Année fin validité'
+
+		level 'Mois fin validité'
+			lineageTag: d1c42344-60b3-4218-9b51-c737edb55704
+			column: 'Mois fin validité'
+
+		level 'Semaine fin validité'
+			lineageTag: 577c043f-5356-4f8e-be01-bf258bacb996
+			column: 'Semaine fin validité'
+
+		level 'Date fin validité'
+			lineageTag: 8893afd8-f9f0-495e-867c-78e572e8ec25
+			column: 'Date fin validité'
+
+	partition 'Documents émis - date fin validité' = entity
+		mode: directQuery
+		source
+			entityName: Documents émis - date fin validité
+			expressionSource: 'DirectQuery à AS – pst38'
+

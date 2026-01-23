@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "c7c4693ae692080ce8c3",
+  "position": {
+    "x": 24,
+    "y": 376.15976331360946,
+    "z": 1000,
+    "height": 320,
+    "width": 1240,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Salariés",
+    "groupMode": "ScaleMode"
+  }
+}

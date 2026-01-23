@@ -1,0 +1,337 @@
+table 'Examen complémentaire'
+	lineageTag: a330cd8e-12e8-4fa0-bb1f-e59aa47ac5d9
+
+	measure '# examens autres objets connectés' = EXTERNALMEASURE("# examens autres objets connectés", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 018f49de-5836-4987-abdb-60cb804f6dd9
+		sourceLineageTag: DirectQuery à AS – pst38.# examens autres objets connectés
+		dataCategory: Uncategorized
+
+	measure '# examens réalisés après transfert' = EXTERNALMEASURE("# examens réalisés après transfert", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 6c7e2149-8df8-4e17-be4d-bf920b5af1d1
+		sourceLineageTag: DirectQuery à AS – pst38.# examens réalisés après transfert
+		dataCategory: Uncategorized
+
+	measure '# examens réalisés avant transfert' = EXTERNALMEASURE("# examens réalisés avant transfert", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 05cafade-9003-4b0d-ab0a-ebc2170afafe
+		sourceLineageTag: DirectQuery à AS – pst38.# examens réalisés avant transfert
+		dataCategory: Uncategorized
+
+	measure '# examens saisis à la main' = EXTERNALMEASURE("# examens saisis à la main", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: a517bee5-34dc-4e83-afa0-830bbdff9857
+		sourceLineageTag: DirectQuery à AS – pst38.# examens saisis à la main
+		dataCategory: Uncategorized
+
+	measure '# examens' = EXTERNALMEASURE("# examens", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 32141569-dfc5-4355-8371-032d3b4b461f
+		sourceLineageTag: DirectQuery à AS – pst38.# examens
+		dataCategory: Uncategorized
+
+	measure '# tests de repérage' = EXTERNALMEASURE("# tests de repérage", INTEGER, "DirectQuery à AS – pst38")
+		formatString: #,##0
+		displayFolder: Indicateurs\Comptages
+		lineageTag: 40d30e49-08ee-4074-ae4f-3f6637279a60
+		sourceLineageTag: DirectQuery à AS – pst38.# tests de repérage
+		dataCategory: Uncategorized
+
+	measure '% examens autres objets connectés' = EXTERNALMEASURE("% examens autres objets connectés", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\Taux
+		lineageTag: afa0ea08-a2aa-44f3-98f8-f8be6b1c1448
+		sourceLineageTag: DirectQuery à AS – pst38.% examens autres objets connectés
+		dataCategory: Uncategorized
+
+	measure '% examens réalisés après transfert' = EXTERNALMEASURE("% examens réalisés après transfert", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\Taux
+		lineageTag: be38e59b-fe3e-466c-9a6d-4a3ec2f8ee85
+		sourceLineageTag: DirectQuery à AS – pst38.% examens réalisés après transfert
+		dataCategory: Uncategorized
+
+	measure '% examens réalisés avant transfert' = EXTERNALMEASURE("% examens réalisés avant transfert", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\Taux
+		lineageTag: 5f4de1b3-021a-4bdb-a059-a372f78dac23
+		sourceLineageTag: DirectQuery à AS – pst38.% examens réalisés avant transfert
+		dataCategory: Uncategorized
+
+	measure '% examens saisis à la main' = EXTERNALMEASURE("% examens saisis à la main", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\Taux
+		lineageTag: ff2b8c22-9aa3-4e3f-a12b-37f5ccb7f09d
+		sourceLineageTag: DirectQuery à AS – pst38.% examens saisis à la main
+		dataCategory: Uncategorized
+
+	measure '% tests de repérage' = EXTERNALMEASURE("% tests de repérage", DOUBLE, "DirectQuery à AS – pst38")
+		formatString: #,##0.0\ %
+		displayFolder: Indicateurs\Taux
+		lineageTag: 61353d5c-3f74-4323-a9be-c9c6e52e8926
+		sourceLineageTag: DirectQuery à AS – pst38.% tests de repérage
+		dataCategory: Uncategorized
+
+	column id_centre_convocation
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8f85cbbd-5771-447f-b576-ba94afd22848
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_centre_convocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_examen
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 96c10e02-1725-42c1-b0b8-0f1d90865fe9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_entreprise
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f509a4cb-327a-440a-9cd3-4e53c2cb01e4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_entreprise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_examen_complementaire
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8f20f829-09b9-4514-b8c6-fe885ffc7c2d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_examen_complementaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_info_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8c22de3d-8ee5-424b-8f9e-7ed84afaad6e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_info_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pcs
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5785c7ee-b1cd-4ac5-a8a8-01486c3bc726
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_pcs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_personne
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2e35d655-5882-4b06-813c-3c5671cc2e75
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_personne
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2ccb4b28-0a24-4b87-84c6-a57238bda306
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_realisateur_examen
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: dbd60c06-e0f0-4b10-9db9-762a4ae94714
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_realisateur_examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_realisateur_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b0db0363-9705-473f-acca-4d22455ca8e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_realisateur_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_salarie2
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: f7a6d87c-c309-41bc-912c-0b6bb5436710
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_salarie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_secteur
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 09e60e38-c97c-4fca-a61f-e59463065ed5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_statut_examen
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 8d5ea5f2-d5cd-4756-b7f2-f55b3bd300f4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_statut_examen
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_thesaurus_poste
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 2da7d2d5-89da-4fd9-8128-ba651ec969b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_thesaurus_poste
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_contrat
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d94e2c0b-1518-47dd-aeed-db0e48dfc5a1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_contrat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_suivi
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 7f399066-d13e-4a9e-b97d-42ecd20a50f8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_suivi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_visite
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: d5ef5760-7aed-495f-86ad-284a33b19ab4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_visite
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_visite_source
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: b900c4ad-c6b0-4120-8a53-b56e33e80d48
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: id_visite_source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nb examen avant transfert'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: 944a0780-1cd7-4ed0-b0de-3d13daf8ee94
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Nb examen avant transfert
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_type_mesure
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Colonnes inutilisées
+		lineageTag: 9fe075ec-48ec-4cb1-97f1-16e29874a3d2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_type_mesure
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_rls_utilisateur_secteur
+		dataType: string
+		isHidden
+		displayFolder: Colonnes inutilisées
+		lineageTag: 16b53e80-c34f-4b4a-be81-276d305bece7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: code_rls_utilisateur_secteur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Examen complémentaire' = entity
+		mode: directQuery
+		source
+			entityName: Examen complémentaire
+			expressionSource: 'DirectQuery à AS – pst38'
+

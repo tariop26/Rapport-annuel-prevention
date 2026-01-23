@@ -1,0 +1,106 @@
+table 'RDV - date création'
+	lineageTag: 22063dfa-7f22-4404-90d7-03eda7b2a060
+
+	column 'Année  création RDV'
+		dataType: int64
+		displayFolder: Colonnes inutilisées
+		lineageTag: bc94bf3e-058a-41d9-b32b-e9b0e211bd0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Année  création RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column 'Date création RDV'
+		dataType: dateTime
+		isNullable: false
+		formatString: dd/mm/yyyy
+		displayFolder: Colonnes inutilisées
+		lineageTag: 72d20fb7-64b0-4266-a235-a9d7de583675
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date création RDV
+		sortByColumn: id_date_creation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_date_creation_rdv
+		dataType: int64
+		isNullable: false
+		displayFolder: Colonnes inutilisées
+		lineageTag: 5e3d1c30-f815-4ab7-b251-b3b6729ed1dc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_date_creation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jour création RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: adc7d856-4a8b-4d8e-b078-e7b239c2c12f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Jour création RDV
+		sortByColumn: id_date_creation_rdv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mois création RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 1429f658-3ffb-42da-96a1-3a5dc8983cc0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Mois création RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semaine création RDV'
+		dataType: string
+		displayFolder: Colonnes inutilisées
+		lineageTag: 580fc1e2-a938-448a-bd9a-380ef5e5d4ce
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Semaine création RDV
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Hiérarchie date création RDV'
+		lineageTag: 7110ceaa-51cb-48f6-8de8-9514aa1c2108
+		sourceLineageTag: Hiérarchie date création RDV
+
+		level 'Année création RDV'
+			lineageTag: 9b358144-fab4-4b42-b74e-251dd6d94209
+			column: 'Année  création RDV'
+
+		level 'Mois création RDV'
+			lineageTag: c4790c26-f7a2-4cfa-90aa-e9d186d14f75
+			column: 'Mois création RDV'
+
+		level 'Semaine création RDV'
+			lineageTag: 855868ca-6354-41c9-9b06-880f62b5e5a7
+			column: 'Semaine création RDV'
+
+		level 'Date création RDV'
+			lineageTag: a6069227-232a-4520-818d-167282d33caa
+			column: 'Date création RDV'
+
+	partition 'RDV - date création' = entity
+		mode: directQuery
+		source
+			entityName: RDV - date création
+			expressionSource: 'DirectQuery à AS – pst38'
+
