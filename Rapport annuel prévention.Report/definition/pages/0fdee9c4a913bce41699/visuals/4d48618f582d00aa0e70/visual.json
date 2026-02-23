@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "4d48618f582d00aa0e70",
   "position": {
     "x": 16,
@@ -172,7 +172,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -342,7 +342,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 9,
+                      "ColorId": 4,
                       "Percent": 0
                     }
                   }
@@ -368,7 +368,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 9,
+                      "ColorId": 4,
                       "Percent": 0
                     }
                   }

@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "376632add942ede54e7d",
   "position": {
     "x": 760,
     "y": 288,
-    "z": 0,
+    "z": 1000,
     "height": 384,
     "width": 504,
     "tabOrder": 2000

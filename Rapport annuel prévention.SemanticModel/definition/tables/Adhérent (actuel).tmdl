@@ -2119,6 +2119,37 @@ table 'Adhérent (actuel)'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'DU transmis' = ```
+			
+			VAR DateTransmission = 'Adhérent (actuel)'[Date transmission dernier DU] // Stockage de la valeur en variable pour optimiser les performances (calculée une seule fois)
+			VAR DateMin = DATE(1900, 1, 1) // Définition de la date technique minimale souvent utilisée comme valeur par défaut
+			VAR DateMax = DATE(2199, 1, 1) // Définition de la date technique maximale (borne haute de PADOA/SQL)
+			RETURN
+			    IF(
+			        ISBLANK(DateTransmission) // Vérifie si la date est vide
+			        || DateTransmission = DateMin // Vérifie si la date correspond au 01/01/1900
+			        || DateTransmission = DateMax, // Vérifie si la date correspond au 31/12/2199
+			        "DU non transmis", // Résultat si l'une des conditions de "non-validité" est vraie
+			        "DU transmis par l'adhérent" // Résultat si une date réelle et cohérente est détectée
+			    )
+			
+			/* DESCRIPTION DE LA MESURE :
+			Cette mesure évalue la présence du Document Unique (DU) pour chaque adhérent de PST38. 
+			Elle catégorise l'adhérent en "DU non transmis" si la date de transmission est nulle (BLANK) 
+			ou si elle contient des valeurs de remplacement techniques (1900 ou 2199) issues du logiciel PADOA. 
+			Sinon, elle confirme la "DU transmis par l'adhérent".
+			*/
+			```
+		displayFolder: 5 - Prévention
+		lineageTag: cb510f00-ab2d-468d-bcd3-a38f5a87d6cd
+		summarizeBy: none
+
+		changedProperty = DisplayFolder
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
 	hierarchy 'Hiérarchie centre convocation actuel'
 		displayFolder: 2 - Equipe médicale et centre actuels
 		lineageTag: 010c0e72-a6ad-4b87-9742-6b4a9b9ddfc4

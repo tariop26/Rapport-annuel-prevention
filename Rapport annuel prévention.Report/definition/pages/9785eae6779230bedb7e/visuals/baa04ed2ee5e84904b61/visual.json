@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "baa04ed2ee5e84904b61",
   "position": {
     "x": 784,
@@ -196,7 +196,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'TOP 5 des NAF ayant le plus d''adhérents avec FE à créer ou à mettre à jour par NAF'"
+                  "Value": "'TOP 5 des NAF ayant le plus d''adhérents sans FE ou avec FE à mettre à jour par NAF'"
                 }
               }
             },

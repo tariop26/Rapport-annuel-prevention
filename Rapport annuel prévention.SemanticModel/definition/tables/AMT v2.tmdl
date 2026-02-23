@@ -1331,6 +1331,34 @@ table 'AMT v2'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Délai AMT statut à Faire -> En-cours' =
+			
+			DATEDIFF([Date dernier statut à faire], [Date dernier statut en cours], DAY)
+		formatString: 0
+		displayFolder: Date dernier statut AMT
+		lineageTag: c041a3a5-1784-4bd9-8821-c478ebd1a263
+		summarizeBy: sum
+
+		changedProperty = DisplayFolder
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Délai AMT statut Validée -> Terminée' =
+			
+			DATEDIFF([Date dernier statut validé], [Date dernier statut terminé], DAY)
+		formatString: 0
+		displayFolder: Date dernier statut AMT
+		lineageTag: 88b6693f-3752-486d-b135-07e6f0d48020
+		summarizeBy: sum
+
+		changedProperty = DisplayFolder
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'AMT v2' = entity
 		mode: directQuery
 		source

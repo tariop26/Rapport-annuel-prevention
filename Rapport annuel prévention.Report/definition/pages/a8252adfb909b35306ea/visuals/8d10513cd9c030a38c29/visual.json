@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8d10513cd9c030a38c29",
   "position": {
     "x": 736,
     "y": 288,
-    "z": 2000,
+    "z": 1000,
     "height": 416,
     "width": 512,
     "tabOrder": 3000
@@ -89,7 +89,7 @@
             "borderShow": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

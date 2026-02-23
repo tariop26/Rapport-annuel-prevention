@@ -98,7 +98,6 @@
       {
         "name": "2b6c62b4912315e33d0e",
         "boundFilter": "33f4c5c210a8b8e1e746",
-        "asAggregation": false,
         "qnaSingleSelectRequired": true,
         "fieldExpr": {
           "GroupRef": {

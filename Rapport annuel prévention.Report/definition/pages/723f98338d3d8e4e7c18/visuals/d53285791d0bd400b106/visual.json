@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "d53285791d0bd400b106",
+  "position": {
+    "x": 24,
+    "y": 464,
+    "z": 2000,
+    "height": 232,
+    "width": 784,
+    "tabOrder": 10001
+  },
+  "visualGroup": {
+    "displayName": "Groupe délai",
+    "groupMode": "ScaleMode"
+  }
+}

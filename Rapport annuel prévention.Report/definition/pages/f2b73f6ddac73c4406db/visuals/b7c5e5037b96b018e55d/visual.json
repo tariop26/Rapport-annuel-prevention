@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "b7c5e5037b96b018e55d",
   "position": {
-    "x": 24,
-    "y": 464,
-    "z": 5000,
+    "x": 0,
+    "y": 0,
+    "z": 0,
     "height": 232,
     "width": 688,
     "tabOrder": 5000
@@ -334,6 +334,13 @@
                   "Value": "'middle'"
                 }
               }
+            },
+            "calloutSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
             }
           }
         }
@@ -410,6 +417,34 @@
             ],
             "metadata": "Mesures.Délai moyen en-cours > à valider AMT Période",
             "id": "field-a9979a73-8868-c786-92c1-b09d2a9b02b5",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mesures"
+                    }
+                  },
+                  "Property": "Délai moyen à faire > terminée AMT N-1"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période",
+            "id": "field-fa48921f-83b7-72a5-e8c4-30a0378bb8eb",
             "order": 0
           }
         }
@@ -531,6 +566,25 @@
           "selector": {
             "metadata": "Mesures.Délai moyen à validée > validée AMT Période"
           }
+        },
+        {
+          "properties": {
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période"
+          }
         }
       ],
       "referenceLabelValue": [
@@ -649,6 +703,25 @@
             "metadata": "Mesures.Délai moyen en-cours > à valider AMT Période",
             "id": "field-a9979a73-8868-c786-92c1-b09d2a9b02b5"
           }
+        },
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période"
+          }
         }
       ],
       "referenceLabelDetail": [
@@ -683,7 +756,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Délais moyens des APP  (en jours)'"
+                  "Value": "'Délais moyens des APP  (en jours calendaires)'"
                 }
               }
             },
@@ -803,6 +876,7 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "0ab0621f250189168950",
   "filterConfig": {
     "filters": [
       {

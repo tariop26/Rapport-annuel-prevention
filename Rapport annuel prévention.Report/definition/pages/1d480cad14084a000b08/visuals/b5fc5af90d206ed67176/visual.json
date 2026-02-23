@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "b5fc5af90d206ed67176",
   "position": {
     "x": 16,
@@ -77,8 +77,8 @@
                 }
               },
               "queryRef": "Mesures.Adhérents avec FE a mettre à jour (graph)",
-              "nativeQueryRef": "Adhérents avec FE a mettre à jour ",
-              "displayName": "Adhérents avec FE a mettre à jour "
+              "nativeQueryRef": "Adhérents avec FE à mettre à jour ",
+              "displayName": "Adhérents avec FE à mettre à jour "
             },
             {
               "field": {

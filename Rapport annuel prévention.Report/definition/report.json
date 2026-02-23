@@ -66,11 +66,11 @@
                           "Expression": {
                             "Now": {}
                           },
-                          "Amount": -12,
-                          "TimeUnit": 2
+                          "Amount": -1,
+                          "TimeUnit": 3
                         }
                       },
-                      "TimeUnit": 2
+                      "TimeUnit": 3
                     }
                   },
                   "UpperBound": {
@@ -81,10 +81,10 @@
                             "Now": {}
                           },
                           "Amount": -1,
-                          "TimeUnit": 2
+                          "TimeUnit": 3
                         }
                       },
-                      "TimeUnit": 2
+                      "TimeUnit": 3
                     }
                   }
                 }
@@ -264,6 +264,11 @@
         {
           "name": "badge_spec_2217_27944692946563565.png",
           "path": "badge_spec_2217_27944692946563565.png",
+          "type": "Image"
+        },
+        {
+          "name": "badge_spec_22176418773165720841.png",
+          "path": "badge_spec_22176418773165720841.png",
           "type": "Image"
         }
       ]

@@ -1,0 +1,34 @@
+createOrReplace
+
+	ref table Mesures
+
+		measure '% Adhérents ayant transmis leur DU évolution (+/-)' =
+				
+				Var Evolution = [% adhérents ayant transmis leur DU évolution (variation %)]
+				
+				RETURN
+				format(Evolution, "+ 0.0%;- 0.0%;0%")
+			displayFolder: Suivi des indicateurs\AMT
+			lineageTag: c1d144da-3742-4531-bbcd-550abbd7f06x
+
+		measure '% adhérents ayant transmis leur DU évolution (variation %)' =
+				
+				([% Adhérents ayant transmis leur DU] - [% Adhérents ayant transmis leur DU N-1])/[% Adhérents ayant transmis leur DU N-1]
+			formatString: 0.00\ %;-0.00\ %;0.00\ %
+			displayFolder: Suivi des indicateurs\AMT
+			lineageTag: 6b241128-add6-4175-8cb6-8976c571b54x
+
+		measure '% Adhérents ayant transmis leur DU N-1' =
+				
+				DIVIDE(
+				    CALCULATE(
+				    [Adhérents actifs ou suspendus N-1],
+				    'Adhérent (actuel)'[DU transmis] = "DU transmis par l'adhérent"
+				    ),
+				    [Adhérents actifs ou suspendus N-1],
+				    0
+				)
+			formatString: 0.00\ %;-0.00\ %;0.00\ %
+			displayFolder: Suivi des indicateurs\AMT
+			lineageTag: 9b60d56c-0677-49a4-949e-7bb00c81b4x9
+

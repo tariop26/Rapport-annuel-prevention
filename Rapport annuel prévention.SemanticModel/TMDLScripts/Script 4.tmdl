@@ -1,0 +1,22 @@
+createOrReplace
+
+	ref table Mesures
+
+		measure '% Adhérents ayant transmis leur DU' =
+				
+				VAR DateSnapshot = [Date Fin Arrêté]
+				
+				RETURN
+				DIVIDE(
+				    CALCULATE(
+				    [Adhérents actifs ou suspendus],
+				    'Adhérent (actuel)'[DU transmis] = "DU transmis par l'adhérent",
+				    'Date principale'[Date] <= DateSnapshot
+				    ),
+				    [Adhérents actifs ou suspendus],
+				    0
+				)
+			formatString: 0.00\ %;-0.00\ %;0.00\ %
+			displayFolder: Suivi des indicateurs\AMT
+			lineageTag: 197ced19-38cc-4dae-81eb-ad3bb6a6b0d9
+

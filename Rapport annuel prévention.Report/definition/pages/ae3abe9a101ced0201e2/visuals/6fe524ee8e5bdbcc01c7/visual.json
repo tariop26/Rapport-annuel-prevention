@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "6fe524ee8e5bdbcc01c7",
+  "position": {
+    "x": 24,
+    "y": 464,
+    "z": 7000,
+    "height": 232.00000000000006,
+    "width": 703.99999999999989,
+    "tabOrder": 7005
+  },
+  "visualGroup": {
+    "displayName": "Graph délais",
+    "groupMode": "ScaleMode"
+  }
+}

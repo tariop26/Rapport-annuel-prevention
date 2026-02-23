@@ -613,7 +613,7 @@ cultureInfo fr-FR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Adhérents avec FE a mettre à jour": {
+			          "Adhérents avec FE à mettre à jour": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1161,6 +1161,90 @@ cultureInfo fr-FR
 			      "Terms": [
 			        {
 			          "FE N-1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.délai_moyen_a_faire__en_cours_amt_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Délai moyen A faire > En cours AMT Période"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "À faire > En-cours": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.délai_moyen_encours__à_valider_amt_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Délai moyen en-cours > à valider AMT Période"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "En-cours > À valider": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.délai_moyen_à_validée__validée_amt_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Délai moyen à validée > validée AMT Période"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "À valider > Validée": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesures.délai_moyen_validée__terminée_amt_période": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Délai moyen validée > terminée AMT Période"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Validée > Terminée": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

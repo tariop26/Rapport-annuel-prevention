@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "bfa157db651b99929e75",
   "position": {
     "x": 0,
@@ -1338,48 +1338,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "477f203ca3b0217e1994",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mesures"
-              }
-            },
-            "Property": "AMT Période"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "388926dd7e58e4711a13",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mesures"
-              }
-            },
-            "Property": "% réalisation mise à jour de FE"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4f3b03e8e8ec27029bb7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mesures"
-              }
-            },
-            "Property": "FE à mettre à jour dans les 12 mois"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

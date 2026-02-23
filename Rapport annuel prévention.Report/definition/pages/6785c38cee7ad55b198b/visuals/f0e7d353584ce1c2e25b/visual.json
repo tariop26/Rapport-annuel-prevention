@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "f0e7d353584ce1c2e25b",
   "position": {
     "x": 24,
@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 232,
     "width": 688,
-    "tabOrder": 5000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,39 +23,11 @@
                       "Entity": "Mesures"
                     }
                   },
-                  "Property": "Délai moyen à faire > terminée AMT Période"
-                }
-              },
-              "queryRef": "Mesures.Délai moyen à faire > terminée AMT Période",
-              "nativeQueryRef": "Délai moyen à faire > terminée AMT Période"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Mesures"
-                    }
-                  },
                   "Property": "Délai moyen en-cours > à valider AMT Période"
                 }
               },
               "queryRef": "Mesures.Délai moyen en-cours > à valider AMT Période",
               "nativeQueryRef": "Délai moyen en-cours > à valider AMT Période"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Mesures"
-                    }
-                  },
-                  "Property": "Délai moyen à validée > validée AMT Période"
-                }
-              },
-              "queryRef": "Mesures.Délai moyen à validée > validée AMT Période",
-              "nativeQueryRef": "Délai moyen à validée > validée AMT Période"
             }
           ]
         }
@@ -70,7 +42,7 @@
                     "Entity": "Mesures"
                   }
                 },
-                "Property": "Délai moyen à faire > terminée AMT Période"
+                "Property": "Délai moyen en-cours > à valider AMT Période"
               }
             },
             "direction": "Descending"
@@ -171,86 +143,6 @@
                 }
               }
             },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'À faire -> terminée'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période"
-          }
-        },
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'À valider -> validée'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à validée > validée AMT Période"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -309,51 +201,6 @@
           },
           "selector": {
             "id": "default"
-          }
-        },
-        {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période",
-            "id": "field-245d2c40-673a-321b-1afa-e7ac6f945e5a",
-            "order": 0
-          }
-        },
-        {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période",
-            "id": "field-af4aed42-b7ae-c821-c14d-9e804e418f7a",
-            "order": 0
-          }
-        },
-        {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "Mesures.Délai moyen à validée > validée AMT Période",
-            "id": "field-23d0d8df-7e31-7f0c-fb04-0e52ec963e19",
-            "order": 0
           }
         },
         {
@@ -428,145 +275,9 @@
           "selector": {
             "id": "default"
           }
-        },
-        {
-          "properties": {
-            "titleContentType": {
-              "expr": {
-                "Literal": {
-                  "Value": "'custom'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période",
-            "id": "field-af4aed42-b7ae-c821-c14d-9e804e418f7a"
-          }
-        },
-        {
-          "properties": {
-            "titleText": {
-              "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Mesures"
-                    }
-                  },
-                  "Property": "Période (Du au) N-1"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période",
-            "id": "field-af4aed42-b7ae-c821-c14d-9e804e418f7a"
-          }
-        },
-        {
-          "properties": {
-            "titleFontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à validée > validée AMT Période"
-          }
         }
       ],
       "referenceLabelValue": [
-        {
-          "properties": {
-            "valueBold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "valueFontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à validée > validée AMT Période"
-          }
-        },
-        {
-          "properties": {
-            "valueFontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "valueBold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "valuePrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à faire > terminée AMT Période",
-            "id": "field-af4aed42-b7ae-c821-c14d-9e804e418f7a"
-          }
-        },
-        {
-          "properties": {
-            "valuePrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Mesures.Délai moyen à validée > validée AMT Période",
-            "id": "field-23d0d8df-7e31-7f0c-fb04-0e52ec963e19"
-          }
-        },
         {
           "properties": {
             "valueBold": {

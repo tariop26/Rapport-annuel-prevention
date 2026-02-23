@@ -5874,6 +5874,152 @@ table Mesures
 		displayFolder: Suivi des indicateurs\FE
 		lineageTag: 2b3bd769-b507-4b13-81aa-aaa9e7c2c39f
 
+	measure 'Délai moyen A faire > En cours AMT Période' = ```
+			
+			VAR dMax = [Date Fin Arrêté]
+			VAR dMin = EDATE([Date Fin Arrêté],-12)+1
+			VAR DatesPeriode = FILTER(ALL('Date principale'[Date]), 'Date principale'[Date] >= dMin && 'Date principale'[Date] <= dMax)
+			VAR Resultat = 
+			    CALCULATE(
+			        AVERAGE('AMT v2'[Délai AMT statut à Faire -> En-cours]), -- Adaptez le nom de la colonne
+			        FILTER(
+			            'AMT v2', 
+			            [# AMT terminées] >= 1 && 
+			            NOT(ISBLANK('AMT v2'[Délai AMT statut à Faire -> En-cours])) 
+			        )
+			    )
+			RETURN
+			    CALCULATE(
+			        Resultat, 
+			        DatesPeriode
+			    )
+			```
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: d95eefb5-b628-4262-bfdf-1f9386fd16c3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Délai moyen validée > terminée AMT Période' = ```
+			
+			VAR dMax = [Date Fin Arrêté]
+			VAR dMin = EDATE([Date Fin Arrêté],-12)+1
+			VAR DatesPeriode = FILTER(ALL('Date principale'[Date]), 'Date principale'[Date] >= dMin && 'Date principale'[Date] <= dMax)
+			VAR Resultat = 
+			    CALCULATE(
+			        AVERAGE('AMT v2'[Délai AMT statut Validée -> Terminée]), -- Adaptez le nom de la colonne
+			        FILTER(
+			            'AMT v2', 
+			            [# AMT terminées] >= 1 && 
+			            NOT(ISBLANK('AMT v2'[Délai AMT statut Validée -> Terminée])) 
+			        )
+			    )
+			RETURN
+			    CALCULATE(
+			        Resultat, 
+			        DatesPeriode
+			    )
+			```
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 27ffcd01-656e-4422-b20e-62bba2336edc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% Adhérents ayant transmis leur DU' =
+			
+			VAR DateSnapshot = [Date Fin Arrêté]
+			
+			RETURN
+			DIVIDE(
+			    CALCULATE(
+			    [Adhérents actifs ou suspendus],
+			    'Adhérent (actuel)'[DU transmis] = "DU transmis par l'adhérent",
+			    'Date principale'[Date] <= DateSnapshot
+			    ),
+			    [Adhérents actifs ou suspendus],
+			    0
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 197ced19-38cc-4dae-81eb-ad3bb6a6b0d9
+
+	measure '% Adhérents DU non transmis' =
+			
+			VAR DateSnapshot = [Date Fin Arrêté]
+			
+			RETURN
+			DIVIDE(
+			    CALCULATE(
+			    [Adhérents actifs ou suspendus],
+			    'Adhérent (actuel)'[DU transmis] = "DU non transmis",
+			    'Date principale'[Date] <= DateSnapshot
+			    ),
+			    [Adhérents actifs ou suspendus],
+			    0
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 0b746cad-03e5-48c3-a289-d50b495b55a0
+
+	measure '% Adhérents DU non transmis N-1' =
+			
+			DIVIDE(
+			    CALCULATE(
+			    [Adhérents actifs ou suspendus N-1],
+			    'Adhérent (actuel)'[DU transmis] = "DU non transmis"
+			    ),
+			    [Adhérents actifs ou suspendus N-1],
+			    0
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 9b60d56c-0677-49a4-949e-7bb00c81b4e9
+
+	measure '% adhérents DU non transmis évolution (variation %)' =
+			
+			([% Adhérents DU non transmis] - [% Adhérents DU non transmis N-1])/[% Adhérents DU non transmis N-1]
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 6b241128-add6-4175-8cb6-8976c571b54a
+
+	measure '% Adhérents DU non transmis évolution (+/-)' =
+			
+			Var Evolution = [% adhérents DU non transmis évolution (variation %)]
+			
+			RETURN
+			format(Evolution, "+ 0.0%;- 0.0%;0%")
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: c1d144da-3742-4531-bbcd-550abbd7f06c
+
+	measure '% Adhérents ayant transmis leur DU évolution (+/-)' =
+			
+			Var Evolution = [% adhérents ayant transmis leur DU évolution (variation %)]
+			
+			RETURN
+			format(Evolution, "+ 0.0%;- 0.0%;0%")
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: c1d144da-3742-4531-bbcd-550abbd7f06x
+
+	measure '% adhérents ayant transmis leur DU évolution (variation %)' =
+			
+			([% Adhérents ayant transmis leur DU] - [% Adhérents ayant transmis leur DU N-1])/[% Adhérents ayant transmis leur DU N-1]
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 6b241128-add6-4175-8cb6-8976c571b54x
+
+	measure '% Adhérents ayant transmis leur DU N-1' =
+			
+			DIVIDE(
+			    CALCULATE(
+			    [Adhérents actifs ou suspendus N-1],
+			    'Adhérent (actuel)'[DU transmis] = "DU transmis par l'adhérent"
+			    ),
+			    [Adhérents actifs ou suspendus N-1],
+			    0
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Suivi des indicateurs\AMT
+		lineageTag: 9b60d56c-0677-49a4-949e-7bb00c81b4x9
+
 	partition Mesures = m
 		mode: import
 		source =

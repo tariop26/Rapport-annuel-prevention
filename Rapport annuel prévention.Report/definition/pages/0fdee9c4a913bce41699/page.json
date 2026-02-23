@@ -97,7 +97,6 @@
       {
         "name": "5047e820215a5430a47a",
         "boundFilter": "ead52c09755c550a995e",
-        "asAggregation": false,
         "qnaSingleSelectRequired": true,
         "fieldExpr": {
           "GroupRef": {

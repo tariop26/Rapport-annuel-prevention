@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8dc33eef044688b54063",
   "position": {
     "x": 24,
@@ -683,7 +683,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Délais moyens des AMT  (en jours)'"
+                  "Value": "'Délais moyens des AMT  (en jours calendaires)'"
                 }
               }
             },
@@ -802,72 +802,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8b1e16e3bacd0e723dcc",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "0 - AMT import"
-                  }
-                },
-                "Property": "délai 'En-cours' > 'A valider'"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced",
-        "howCreated": "User",
-        "isHiddenInViewMode": true
-      },
-      {
-        "name": "e0edb3f784989e33a42a",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "0 - AMT import"
-                  }
-                },
-                "Property": "Délai 'A valider' > 'Validée'"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced",
-        "howCreated": "User",
-        "isHiddenInViewMode": true
-      },
-      {
-        "name": "3ef9242ddc08d62255b9",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "0 - AMT import"
-                  }
-                },
-                "Property": "Délai 'A faire' > 'Terminée'"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced",
-        "howCreated": "User",
-        "isHiddenInViewMode": true
-      }
-    ]
   }
 }
